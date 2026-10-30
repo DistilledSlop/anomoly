@@ -15,6 +15,7 @@
     "autoarmor": {"status": "coded", "module": "AutoArmor"},
     "nofall": {"status": "coded", "module": "NoFall"},
     "safewalk": {"status": "coded", "module": "SafeWalk"},
+    "noslow": {"status": "partial", "module": "NoSlow", "note": "Removes item-use and block speed-factor penalties; web and honey collision effects remain."},
     "fastladder": {"status": "coded", "module": "FastLadder"},
     "fastplace": {"status": "coded", "module": "FastPlace"},
     "fastbreak": {"status": "coded", "module": "FastBreak"},

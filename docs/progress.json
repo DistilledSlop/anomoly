@@ -1,9 +1,9 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 661,
+    "backlog": 660,
     "coded": 20,
-    "partial": 2
+    "partial": 3
   },
   "total": 683,
   "features": [
@@ -4151,9 +4151,9 @@
       "id": "noslow",
       "name": "NoSlow",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "NoSlow",
+      "note": "Removes item-use and block speed-factor penalties; web and honey collision effects remain.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noslow.md"
     },
     {
