@@ -310,6 +310,12 @@ import dev.anomoly.modules.AutoAuth;
 import dev.anomoly.modules.GuiCloser;
 import dev.anomoly.modules.FastAccel;
 import dev.anomoly.modules.AntiAttack;
+import dev.anomoly.modules.Nametags;
+import dev.anomoly.modules.Crosshair;
+import dev.anomoly.modules.KillFeed;
+import dev.anomoly.modules.PopChams;
+import dev.anomoly.modules.NameProtect;
+import dev.anomoly.modules.ClientSpoof;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -493,6 +499,12 @@ public final class ModuleManager {
         new GuiCloser(),
         new FastAccel(),
         new AntiAttack(),
+        new Nametags(),
+        new Crosshair(),
+        new KillFeed(),
+        new PopChams(),
+        new NameProtect(),
+        new ClientSpoof(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 

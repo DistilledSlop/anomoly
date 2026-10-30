@@ -1,10 +1,10 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "coded": 312,
+    "coded": 318,
     "verified": 84,
-    "backlog": 275,
-    "partial": 12
+    "backlog": 268,
+    "partial": 13
   },
   "total": 683,
   "features": [
@@ -1884,9 +1884,9 @@
       "id": "clientspoof",
       "name": "ClientSpoof",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "ClientSpoof",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/clientspoof.md"
     },
     {
@@ -2001,9 +2001,9 @@
       "id": "crosshair",
       "name": "Crosshair",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Crosshair",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/crosshair.md"
     },
     {
@@ -3369,9 +3369,9 @@
       "id": "killfeed",
       "name": "KillFeed",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "KillFeed",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/killfeed.md"
     },
     {
@@ -3837,18 +3837,18 @@
       "id": "nameprotect",
       "name": "NameProtect",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "NameProtect",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nameprotect.md"
     },
     {
       "id": "nametags",
       "name": "Nametags",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Nametags",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nametags.md"
     },
     {
@@ -4521,9 +4521,9 @@
       "id": "popchams",
       "name": "Pop Chams",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "PopChams",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/popchams.md"
     },
     {
@@ -5007,9 +5007,9 @@
       "id": "serverspoof",
       "name": "Server Spoof",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "ClientSpoof",
+      "note": "Spoofs the reported client brand only; it does not forge the full handshake, resource-pack or plugin-channel behavior Server Spoof describes.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/serverspoof.md"
     },
     {

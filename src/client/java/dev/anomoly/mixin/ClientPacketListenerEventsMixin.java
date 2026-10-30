@@ -31,6 +31,9 @@ public abstract class ClientPacketListenerEventsMixin {
         Minecraft client = Minecraft.getInstance();
         if (packet.getEventId() != 35 || client.level == null || client.player == null) return;
         Entity entity = packet.getEntity(client.level);
-        if (entity instanceof Player player) AnomolyClient.MODULES.get(TotemPopCounter.class).popped(client, player);
+        if (entity instanceof Player player) {
+            AnomolyClient.MODULES.get(TotemPopCounter.class).popped(client, player);
+            AnomolyClient.MODULES.get(dev.anomoly.modules.PopChams.class).popped(client, player);
+        }
     }
 }
