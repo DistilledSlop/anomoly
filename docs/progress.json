@@ -1,10 +1,10 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "coded": 263,
+    "coded": 275,
     "verified": 84,
-    "backlog": 331,
-    "partial": 5
+    "backlog": 318,
+    "partial": 6
   },
   "total": 683,
   "features": [
@@ -66,9 +66,9 @@
       "id": "anchor",
       "name": "Anchor",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "HoleSnap",
+      "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/anchor.md"
     },
     {
@@ -201,9 +201,9 @@
       "id": "anticactus",
       "name": "AntiCactus",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "AvoidHazards",
+      "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/anticactus.md"
     },
     {
@@ -1740,9 +1740,9 @@
       "id": "chatcolors",
       "name": "ChatColors",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "ChatColors",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/chatcolors.md"
     },
     {
@@ -2010,9 +2010,9 @@
       "id": "crosshairarrows",
       "name": "CrosshairArrows",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "CrosshairArrows",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/crosshairarrows.md"
     },
     {
@@ -2073,9 +2073,9 @@
       "id": "damagetint",
       "name": "DamageTint",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "DamageTint",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/damagetint.md"
     },
     {
@@ -2487,9 +2487,9 @@
       "id": "fancychat",
       "name": "Fancy Chat",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "FancyChat",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fancychat.md"
     },
     {
@@ -3423,9 +3423,9 @@
       "id": "lagreducer",
       "name": "LagReducer",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "LagReducer",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/lagreducer.md"
     },
     {
@@ -3513,9 +3513,9 @@
       "id": "liquids",
       "name": "Liquids",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "LiquidInteract",
+      "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/liquids.md"
     },
     {
@@ -5178,9 +5178,9 @@
       "id": "soundblocker",
       "name": "Sound Blocker",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "SoundBlocker",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/soundblocker.md"
     },
     {
@@ -5493,9 +5493,9 @@
       "id": "terrainspeed",
       "name": "TerrainSpeed",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "IceSpeed",
+      "note": "TerrainSpeed's ice behavior is covered by IceSpeed; its ladder and water parts are the separate Fast Ladder and FastSwim modules.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/terrainspeed.md"
     },
     {
@@ -5889,9 +5889,9 @@
       "id": "unfocusedfps",
       "name": "UnfocusedFPS",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "LagReducer",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/unfocusedfps.md"
     },
     {
@@ -5925,9 +5925,9 @@
       "id": "vehiclecontrol",
       "name": "VehicleControl",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "BoatFly",
+      "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/vehiclecontrol.md"
     },
     {
@@ -5961,9 +5961,9 @@
       "id": "viewclip",
       "name": "ViewClip",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "CameraClip",
+      "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/viewclip.md"
     },
     {

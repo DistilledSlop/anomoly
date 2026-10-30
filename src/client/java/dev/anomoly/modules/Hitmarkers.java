@@ -5,7 +5,7 @@ import net.minecraft.client.Minecraft;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
 import net.minecraft.world.entity.Entity;
 
-public final class Hitmarkers extends Module implements HitEvents.Listener {
+public final class Hitmarkers extends Module implements HitEvents.Listener, HudDrawable {
     private long hitAt;
 
     public Hitmarkers() {
@@ -14,9 +14,9 @@ public final class Hitmarkers extends Module implements HitEvents.Listener {
 
     @Override public void onHit(Entity target) { hitAt = System.currentTimeMillis(); }
 
-    public void draw(Minecraft client, GuiGraphicsExtractor graphics) {
+    @Override public void draw(Minecraft client, GuiGraphicsExtractor graphics) {
         long age = System.currentTimeMillis() - hitAt;
-        if (!enabled() || age > 250) return;
+        if (age > 250) return;
         int color = ((int)(255 * (1 - age / 250.0)) << 24) | 0xFFFFFF;
         int cx = graphics.guiWidth() / 2;
         int cy = graphics.guiHeight() / 2;

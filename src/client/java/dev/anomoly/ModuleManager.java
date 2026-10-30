@@ -274,6 +274,12 @@ import dev.anomoly.modules.BlockOutline;
 import dev.anomoly.modules.BreakIndicators;
 import dev.anomoly.modules.NoEntityTrace;
 import dev.anomoly.modules.Multitask;
+import dev.anomoly.modules.CrosshairArrows;
+import dev.anomoly.modules.DamageTint;
+import dev.anomoly.modules.LagReducer;
+import dev.anomoly.modules.SoundBlocker;
+import dev.anomoly.modules.ChatColors;
+import dev.anomoly.modules.FancyChat;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -421,6 +427,12 @@ public final class ModuleManager {
         new BreakIndicators(),
         new NoEntityTrace(),
         new Multitask(),
+        new CrosshairArrows(),
+        new DamageTint(),
+        new LagReducer(),
+        new SoundBlocker(),
+        new ChatColors(),
+        new FancyChat(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 
