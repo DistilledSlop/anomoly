@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 533,
-    "verified": 81,
+    "backlog": 532,
+    "verified": 82,
     "coded": 68,
     "partial": 1
   },
@@ -4395,9 +4395,9 @@
       "id": "parkour",
       "name": "Parkour",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "Parkour",
+      "note": "On a local vanilla 26.3 server, walking off a single-block platform fell below y=121 with Parkour off, while the enabled run rose to y=122.02 at the edge. With a landing path across a one-block gap, the player landed and stayed at y=121; walking on a continuous path kept y=121. See docs/test-evidence/2026-10-30-parkour.md. Sneaking and third-party anticheats remain untested.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/parkour.md"
     },
     {
