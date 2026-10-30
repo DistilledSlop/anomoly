@@ -1,9 +1,9 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 575,
-    "verified": 37,
-    "coded": 70,
+    "backlog": 574,
+    "verified": 39,
+    "coded": 69,
     "partial": 1
   },
   "total": 683,
@@ -588,9 +588,9 @@
       "id": "autobreak",
       "name": "AutoBreak",
       "category": "Player",
-      "status": "coded",
+      "status": "verified",
       "module": "AutoBreak",
-      "note": "",
+      "note": "On a local vanilla 26.3 server, Auto Break mined a dirt block under the crosshair without a held attack key and left a replacement block intact after the player looked away. See docs/test-evidence/2026-10-30-autobreak.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autobreak.md"
     },
     {
@@ -894,9 +894,9 @@
       "id": "automine",
       "name": "Auto Mine",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "AutoBreak",
+      "note": "Auto Mine's targeted-block behavior is exposed as Auto Break. It mined a dirt block without held attack and stopped after the player looked away on a local vanilla 26.3 server. See docs/test-evidence/2026-10-30-autobreak.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/automine.md"
     },
     {
