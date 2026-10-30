@@ -184,6 +184,16 @@ import dev.anomoly.modules.Hitbox;
 import dev.anomoly.modules.Tillaura;
 import dev.anomoly.modules.BonemealAura;
 import dev.anomoly.modules.LiquidFiller;
+import dev.anomoly.modules.StorageEsp;
+import dev.anomoly.modules.BarrierEsp;
+import dev.anomoly.modules.PortalEsp;
+import dev.anomoly.modules.BlockEsp;
+import dev.anomoly.modules.LightOverlay;
+import dev.anomoly.modules.Tracers;
+import dev.anomoly.modules.Breadcrumbs;
+import dev.anomoly.modules.RangeCircle;
+import dev.anomoly.modules.TntTimer;
+import dev.anomoly.modules.HealthTags;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -241,6 +251,16 @@ public final class ModuleManager {
         new Tillaura(),
         new BonemealAura(),
         new LiquidFiller(),
+        new StorageEsp(),
+        new BarrierEsp(),
+        new PortalEsp(),
+        new BlockEsp(),
+        new LightOverlay(),
+        new Tracers(),
+        new Breadcrumbs(),
+        new RangeCircle(),
+        new TntTimer(),
+        new HealthTags(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 

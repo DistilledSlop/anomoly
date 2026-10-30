@@ -1,9 +1,9 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 474,
+    "backlog": 460,
     "verified": 84,
-    "coded": 122,
+    "coded": 136,
     "partial": 3
   },
   "total": 683,
@@ -1281,9 +1281,9 @@
       "id": "barrieresp",
       "name": "BarrierEsp",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "BarrierEsp",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/barrieresp.md"
     },
     {
@@ -1416,9 +1416,9 @@
       "id": "blockesp",
       "name": "BlockESP",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "BlockEsp",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blockesp.md"
     },
     {
@@ -1569,9 +1569,9 @@
       "id": "breadcrumbs",
       "name": "Breadcrumbs",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Breadcrumbs",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/breadcrumbs.md"
     },
     {
@@ -2910,9 +2910,9 @@
       "id": "healthtags",
       "name": "HealthTags",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "HealthTags",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/healthtags.md"
     },
     {
@@ -3477,9 +3477,9 @@
       "id": "lightoverlay",
       "name": "Light Overlay",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "LightOverlay",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/lightoverlay.md"
     },
     {
@@ -3738,9 +3738,9 @@
       "id": "mobspawnesp",
       "name": "MobSpawnEsp",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "LightOverlay",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/mobspawnesp.md"
     },
     {
@@ -4530,9 +4530,9 @@
       "id": "portalesp",
       "name": "PortalEsp",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "PortalEsp",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/portalesp.md"
     },
     {
@@ -4755,9 +4755,9 @@
       "id": "rangecircle",
       "name": "RangeCircle",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "RangeCircle",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/rangecircle.md"
     },
     {
@@ -4926,9 +4926,9 @@
       "id": "search",
       "name": "Search",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "BlockEsp",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/search.md"
     },
     {
@@ -5349,9 +5349,9 @@
       "id": "storageesp",
       "name": "StorageESP",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "StorageEsp",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/storageesp.md"
     },
     {
@@ -5646,9 +5646,9 @@
       "id": "tnttimer",
       "name": "TNTTimer",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "TntTimer",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tnttimer.md"
     },
     {
@@ -5745,9 +5745,9 @@
       "id": "tracers",
       "name": "Tracers",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Tracers",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tracers.md"
     },
     {
@@ -5763,18 +5763,18 @@
       "id": "trail",
       "name": "Trail",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Breadcrumbs",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/trail.md"
     },
     {
       "id": "trails",
       "name": "Trails",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Breadcrumbs",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/trails.md"
     },
     {

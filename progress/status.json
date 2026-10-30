@@ -207,7 +207,21 @@
     "autoanchor": {"status": "coded", "module": "AnchorAura", "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded."},
     "tillaura": {"status": "coded", "module": "Tillaura", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
     "bonemealaura": {"status": "coded", "module": "BonemealAura", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
-    "liquidfiller": {"status": "coded", "module": "LiquidFiller", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."}
+    "liquidfiller": {"status": "coded", "module": "LiquidFiller", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "storageesp": {"status": "coded", "module": "StorageEsp", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "barrieresp": {"status": "coded", "module": "BarrierEsp", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "portalesp": {"status": "coded", "module": "PortalEsp", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "blockesp": {"status": "coded", "module": "BlockEsp", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "search": {"status": "coded", "module": "BlockEsp", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "lightoverlay": {"status": "coded", "module": "LightOverlay", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "mobspawnesp": {"status": "coded", "module": "LightOverlay", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "tracers": {"status": "coded", "module": "Tracers", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "breadcrumbs": {"status": "coded", "module": "Breadcrumbs", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "trail": {"status": "coded", "module": "Breadcrumbs", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "trails": {"status": "coded", "module": "Breadcrumbs", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "rangecircle": {"status": "coded", "module": "RangeCircle", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "tnttimer": {"status": "coded", "module": "TntTimer", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "healthtags": {"status": "coded", "module": "HealthTags", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."}
   },
   "additions": [
     {"id": "anomoly_spear_assist", "name": "Spear Assist", "category": "Combat", "status": "coded", "module": "SpearAssist", "doc": "hacks/spear-assist.md"}
