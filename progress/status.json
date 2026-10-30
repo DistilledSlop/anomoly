@@ -27,6 +27,8 @@
     "twerk": {"status": "coded", "module": "Twerk"},
     "autobowrelease": {"status": "coded", "module": "AutoBowRelease"},
     "autogapple": {"status": "coded", "module": "AutoGApple"},
+    "antiweb": {"status": "coded", "module": "AntiWeb"},
+    "fastfall": {"status": "coded", "module": "FastFall"},
     "fastladder": {"status": "coded", "module": "FastLadder"},
     "fastplace": {"status": "coded", "module": "FastPlace"},
     "fastbreak": {"status": "coded", "module": "FastBreak"},

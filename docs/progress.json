@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 648,
-    "coded": 32,
+    "backlog": 646,
+    "coded": 34,
     "partial": 3
   },
   "total": 683,
@@ -425,8 +425,8 @@
       "id": "antiweb",
       "name": "AntiWeb",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "AntiWeb",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiweb.md"
     },
@@ -2531,8 +2531,8 @@
       "id": "fastfall",
       "name": "Fast Fall",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "FastFall",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastfall.md"
     },

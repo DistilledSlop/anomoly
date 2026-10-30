@@ -2,6 +2,7 @@ package dev.anomoly;
 
 import dev.anomoly.modules.AutoJump;
 import dev.anomoly.modules.AntiReducedDebugInfo;
+import dev.anomoly.modules.AntiWeb;
 import dev.anomoly.modules.AutoArmor;
 import dev.anomoly.modules.AutoF5;
 import dev.anomoly.modules.AutoBowRelease;
@@ -17,6 +18,7 @@ import dev.anomoly.modules.AutoTool;
 import dev.anomoly.modules.FastBreak;
 import dev.anomoly.modules.FastLadder;
 import dev.anomoly.modules.FastPlace;
+import dev.anomoly.modules.FastFall;
 import dev.anomoly.modules.FovOverride;
 import dev.anomoly.modules.KillAura;
 import dev.anomoly.modules.MaxBrightness;
@@ -41,7 +43,7 @@ public final class ModuleManager {
         new TriggerBot(), new KillAura(), new SpearAssist(), new Reach(), new AutoArmor(), new AutoBowRelease(), new AutoGApple(),
         new AutoSprint(), new AutoWalk(), new AutoJump(),
         new AutoSneak(), new AutoRespawn(), new AutoEat(), new AutoFish(), new AntiAFK(), new AutoTool(), new FastPlace(), new FastBreak(), new FastLadder(),
-        new NoFall(), new NoSlow(), new SafeWalk(), new Step(), new MaxBrightness(), new NoHurtCam(), new NoBob(), new AutoF5(),
+        new NoFall(), new NoSlow(), new SafeWalk(), new Step(), new AntiWeb(), new FastFall(), new MaxBrightness(), new NoHurtCam(), new NoBob(), new AutoF5(),
         new FovOverride(), new NoFov(), new PlayerRadar(), new AntiReducedDebugInfo(), new PortalMenu(), new Twerk()
     );
 
