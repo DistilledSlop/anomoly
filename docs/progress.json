@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 547,
-    "verified": 66,
+    "backlog": 546,
+    "verified": 67,
     "coded": 69,
     "partial": 1
   },
@@ -2181,9 +2181,9 @@
       "id": "eagle",
       "name": "Eagle",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "Eagle",
+      "note": "On a local vanilla 26.3 server, at an isolated one-block platform with edge distance 0.2, Eagle's client input produced a growing server sneak_time score at x=50.83 while the score stopped at block center. Holding forward for two seconds moved the player only to x=51.2974 while y=120 and health=20 remained intact. Offhand Auto equipped stone while Eagle was enabled. See docs/test-evidence/2026-10-30-eagle.md. Conditional movement/held-block/pitch settings, complex block shapes, and third-party anticheats remain untested.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/eagle.md"
     },
     {
@@ -4298,7 +4298,7 @@
       "category": "Player",
       "status": "verified",
       "module": "Offhand",
-      "note": "On a local vanilla 26.3 server, Offhand swapped a totem into the offhand, fell back to crystals without totems, restored a displaced shield after low health and nearby-crystal danger cleared, selected crystals, enchanted apples, strength potions, and non-falling blocks through bound mode keys, and moved from strength potion to golden apple when Strength became active during a Kill Aura sword context. See docs/test-evidence/2026-10-30-offhand.md. Fall prediction, primed creepers, Crystal Aura and Scaffold contexts, and third-party anticheats remain untested.",
+      "note": "On a local vanilla 26.3 server, Offhand swapped a totem into the offhand, fell back to crystals without totems, restored a displaced shield after low health and nearby-crystal danger cleared, selected crystals, enchanted apples, strength potions, and non-falling blocks through bound mode keys, and moved from strength potion to golden apple when Strength became active during a Kill Aura sword context. With Eagle enabled, Auto mode equipped stone. See docs/test-evidence/2026-10-30-offhand.md and docs/test-evidence/2026-10-30-eagle.md. Fall prediction, primed creepers, Crystal Aura and Scaffold contexts, and third-party anticheats remain untested.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/offhand.md"
     },
     {

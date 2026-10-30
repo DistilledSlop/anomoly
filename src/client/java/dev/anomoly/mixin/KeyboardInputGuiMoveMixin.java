@@ -2,6 +2,7 @@ package dev.anomoly.mixin;
 
 import dev.anomoly.AnomolyClient;
 import dev.anomoly.modules.GuiMove;
+import dev.anomoly.modules.Eagle;
 import net.minecraft.client.player.KeyboardInput;
 import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.injection.At;
@@ -13,5 +14,6 @@ public abstract class KeyboardInputGuiMoveMixin {
     @Inject(method = "tick", at = @At("TAIL"))
     private void anomoly$moveInGui(CallbackInfo ci) {
         AnomolyClient.MODULES.get(GuiMove.class).apply((KeyboardInput)(Object)this);
+        AnomolyClient.MODULES.get(Eagle.class).apply((KeyboardInput)(Object)this);
     }
 }

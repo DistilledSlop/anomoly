@@ -37,6 +37,7 @@ public final class Offhand extends Module {
     private final BooleanSetting strengthSword = add(new BooleanSetting("strength_sword", "Potion while holding sword", true));
     private final BooleanSetting strengthKillAura = add(new BooleanSetting("strength_kill_aura", "Require Kill Aura for potion", true));
     private final BooleanSetting scaffoldBlock = add(new BooleanSetting("scaffold_block", "Blocks while Scaffold runs", true));
+    private final BooleanSetting eagleBlock = add(new BooleanSetting("eagle_block", "Blocks while Eagle runs", true));
     private LocalPlayer observedPlayer;
     private int startup;
     private int cooldown;
@@ -121,6 +122,8 @@ public final class Offhand extends Module {
 
     private String automatic(Minecraft client, LocalPlayer player) {
         if (scaffoldBlock.get() && AnomolyClient.MODULES.get(Scaffold.class).enabled()
+            && available(player, "Block")) return "Block";
+        if (eagleBlock.get() && AnomolyClient.MODULES.get(Eagle.class).enabled()
             && available(player, "Block")) return "Block";
         if (crystalAura.get() && AnomolyClient.MODULES.get(CrystalAura.class).enabled()
             && available(player, "Crystal")) return "Crystal";
