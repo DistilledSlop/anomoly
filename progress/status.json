@@ -1,5 +1,6 @@
 {
   "catalog": {
+    "freelook": {"status": "coded", "module": "FreeLook"},
     "timechanger": {"status": "coded", "module": "TimeChanger"},
     "noweather": {"status": "coded", "module": "WeatherChanger"},
     "weatherchanger": {"status": "coded", "module": "WeatherChanger"},

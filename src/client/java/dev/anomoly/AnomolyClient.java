@@ -8,6 +8,7 @@ import dev.anomoly.gui.FallbackClickGuiScreen;
 import dev.anomoly.gui.ImGuiRenderer;
 import dev.anomoly.profile.ProfileCollector;
 import dev.anomoly.modules.AutoReconnect;
+import dev.anomoly.modules.FreeLook;
 import dev.anomoly.setting.Setting;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -36,8 +37,10 @@ public final class AnomolyClient implements ClientModInitializer {
     private static KeyMapping guiKey;
     private static KeyMapping panicKey;
     private static KeyMapping zoomKey;
+    private static KeyMapping freeLookKey;
 
     public static boolean zoomHeld() { return zoomKey != null && zoomKey.isDown(); }
+    public static boolean freeLookHeld() { return freeLookKey != null && freeLookKey.isDown(); }
 
     @Override public void onInitializeClient() {
         loadConfig();
@@ -45,6 +48,7 @@ public final class AnomolyClient implements ClientModInitializer {
         guiKey = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.anomoly.gui", 229, KeyMapping.Category.MISC));
         panicKey = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.anomoly.panic", 77, KeyMapping.Category.MISC));
         zoomKey = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.anomoly.zoom", 6, KeyMapping.Category.MISC));
+        freeLookKey = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.anomoly.free_look", 11, KeyMapping.Category.MISC));
         ClientTickEvents.START_CLIENT_TICK.register(client -> {
             MODULES.tick(client);
             PROFILE.tick(client);
@@ -64,7 +68,10 @@ public final class AnomolyClient implements ClientModInitializer {
             }
         });
         ClientPlayConnectionEvents.JOIN.register((handler, sender, client) -> PROFILE.join(client));
-        ClientPlayConnectionEvents.DISCONNECT.register((handler, client) -> PROFILE.leave("connection closed"));
+        ClientPlayConnectionEvents.DISCONNECT.register((handler, client) -> {
+            MODULES.get(FreeLook.class).reset(client);
+            PROFILE.leave("connection closed");
+        });
         LOGGER.info("Anomoly initialized");
     }
 

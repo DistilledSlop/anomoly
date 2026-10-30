@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 618,
-    "coded": 65
+    "backlog": 617,
+    "coded": 66
   },
   "total": 683,
   "features": [
@@ -2746,8 +2746,8 @@
       "id": "freelook",
       "name": "FreeLook",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "FreeLook",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/freelook.md"
     },
