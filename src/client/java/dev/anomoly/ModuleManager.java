@@ -325,6 +325,8 @@ import dev.anomoly.modules.ArrowDmg;
 import dev.anomoly.modules.TpAura;
 import dev.anomoly.modules.AntiHunger;
 import dev.anomoly.modules.Damage;
+import dev.anomoly.modules.TridentFly;
+import dev.anomoly.modules.PacketFly;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -523,6 +525,8 @@ public final class ModuleManager {
         new TpAura(),
         new AntiHunger(),
         new Damage(),
+        new TridentFly(),
+        new PacketFly(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 

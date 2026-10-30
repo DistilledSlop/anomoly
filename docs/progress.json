@@ -1,10 +1,10 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "coded": 329,
+    "coded": 330,
     "verified": 84,
-    "backlog": 256,
-    "partial": 14
+    "backlog": 251,
+    "partial": 18
   },
   "total": 683,
   "features": [
@@ -4359,9 +4359,9 @@
       "id": "packetfly",
       "name": "PacketFly",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "PacketFly",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/packetfly.md"
     },
     {
@@ -4458,9 +4458,9 @@
       "id": "phase",
       "name": "Phase",
       "category": "Exploit",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "PacketFly",
+      "note": "Walking through blocks is covered by PacketFly and NoClip; the server-side exploit details Phase refers to are not implemented.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/phase.md"
     },
     {
@@ -5808,27 +5808,27 @@
       "id": "tridentboost",
       "name": "TridentBoost",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "TridentFly",
+      "note": "Changes only the client-side water check; vanilla servers also check, so the dash may not happen. No gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tridentboost.md"
     },
     {
       "id": "tridentfly",
       "name": "TridentFly",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "TridentFly",
+      "note": "Changes only the client-side water check; vanilla servers also check, so the dash may not happen. No gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tridentfly.md"
     },
     {
       "id": "tridenttweaks",
       "name": "TridentTweaks",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "TridentFly",
+      "note": "Changes only the client-side water check; vanilla servers also check, so the dash may not happen. No gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tridenttweaks.md"
     },
     {

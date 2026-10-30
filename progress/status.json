@@ -425,7 +425,12 @@
     "bowpop": {"status": "coded", "module": "ArrowDmg", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
     "tpaura": {"status": "coded", "module": "TpAura", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
     "damage": {"status": "coded", "module": "Damage", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
-    "antihunger": {"status": "partial", "module": "AntiHunger", "note": "Cancels the sprint-start packet so sprinting is invisible to the server; it does not alter other hunger sources. No gameplay test is recorded."}
+    "antihunger": {"status": "partial", "module": "AntiHunger", "note": "Cancels the sprint-start packet so sprinting is invisible to the server; it does not alter other hunger sources. No gameplay test is recorded."},
+    "tridentfly": {"status": "partial", "module": "TridentFly", "note": "Changes only the client-side water check; vanilla servers also check, so the dash may not happen. No gameplay test is recorded."},
+    "tridentboost": {"status": "partial", "module": "TridentFly", "note": "Changes only the client-side water check; vanilla servers also check, so the dash may not happen. No gameplay test is recorded."},
+    "tridenttweaks": {"status": "partial", "module": "TridentFly", "note": "Changes only the client-side water check; vanilla servers also check, so the dash may not happen. No gameplay test is recorded."},
+    "packetfly": {"status": "coded", "module": "PacketFly", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "phase": {"status": "partial", "module": "PacketFly", "note": "Walking through blocks is covered by PacketFly and NoClip; the server-side exploit details Phase refers to are not implemented."}
   },
   "additions": [
     {"id": "anomoly_spear_assist", "name": "Spear Assist", "category": "Combat", "status": "coded", "module": "SpearAssist", "doc": "hacks/spear-assist.md"}
