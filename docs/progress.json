@@ -2,8 +2,7 @@
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
     "backlog": 622,
-    "coded": 60,
-    "partial": 1
+    "coded": 61
   },
   "total": 683,
   "features": [
@@ -4718,9 +4717,9 @@
       "id": "radar",
       "name": "Radar",
       "category": "Render",
-      "status": "partial",
+      "status": "coded",
       "module": "PlayerRadar",
-      "note": "Lists loaded players in ClickGUI; no world or HUD arrows yet.",
+      "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/radar.md"
     },
     {

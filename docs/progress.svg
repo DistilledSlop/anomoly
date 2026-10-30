@@ -3,9 +3,9 @@
 <desc id="desc">Each tile is a researched feature. Blue is coded, amber partial, green gameplay verified, and gray backlog.</desc>
 <rect width="1200" height="720" rx="15" fill="#0b1220"/>
 <text x="20" y="37" fill="#e7f2ff" font-family="system-ui,sans-serif" font-size="25" font-weight="700">ANOMOLY / HACK PROGRESS</text>
-<text x="20" y="61" fill="#a9bacd" font-family="system-ui,sans-serif" font-size="14">60 coded · 1 partial · 0 gameplay verified · 622 backlog / 683 total</text>
+<text x="20" y="61" fill="#a9bacd" font-family="system-ui,sans-serif" font-size="14">61 coded · 0 partial · 0 gameplay verified · 622 backlog / 683 total</text>
 <rect x="14.00" y="84.00" width="281.82" height="621.00" rx="7" fill="#172235" stroke="#52657d" stroke-width="1"/>
-<text x="22.00" y="103.00" fill="#e7f2ff" font-family="system-ui,sans-serif" font-size="14" font-weight="600">Render  14/166 coded</text>
+<text x="22.00" y="103.00" fill="#e7f2ff" font-family="system-ui,sans-serif" font-size="14" font-weight="600">Render  15/166 coded</text>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antioverlay.md" target="_blank">
 <title>Anti Overlay — coded</title>
 <rect x="21.00" y="113.00" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
@@ -58,13 +58,13 @@
 <title>NoOverlay — coded</title>
 <rect x="110.94" y="143.89" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
 </a>
-<a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/zoom.md" target="_blank">
-<title>Zoom — coded</title>
+<a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/radar.md" target="_blank">
+<title>Radar — coded</title>
 <rect x="140.92" y="143.89" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
 </a>
-<a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/radar.md" target="_blank">
-<title>Radar — partial: Lists loaded players in ClickGUI; no world or HUD arrows yet.</title>
-<rect x="170.90" y="143.89" width="27.98" height="28.89" rx="2" fill="#f2b544"/>
+<a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/zoom.md" target="_blank">
+<title>Zoom — coded</title>
+<rect x="170.90" y="143.89" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/animations.md" target="_blank">
 <title>Animations — backlog</title>
