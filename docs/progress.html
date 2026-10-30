@@ -4,9 +4,9 @@
 </head><body><h1>Anomoly hack progress</h1>
 <p>One tile per researched feature. Tile area is proportional to category size. Blue means coded and compiled, amber means partial, green means gameplay verified, and gray means backlog. Startup validation alone does not count as gameplay verification.</p>
 <img src="progress.svg" alt="Treemap of Anomoly hack progress">
-<p>70 coded, 0 partial, 11 gameplay verified, 602 backlog, 683 total. <a href="progress.json">Raw data</a>.</p>
+<p>70 coded, 0 partial, 14 gameplay verified, 599 backlog, 683 total. <a href="progress.json">Raw data</a>.</p>
 <h2>By category</h2><table><thead><tr><th>Category</th><th>Verified</th><th>Coded</th><th>Partial</th><th>Backlog</th><th>Total</th></tr></thead><tbody>
-<tr><td>Combat</td><td>8</td><td>12</td><td>0</td><td>75</td><td>95</td></tr>
+<tr><td>Combat</td><td>11</td><td>12</td><td>0</td><td>72</td><td>95</td></tr>
 <tr><td>Exploit</td><td>0</td><td>3</td><td>0</td><td>31</td><td>34</td></tr>
 <tr><td>Fun</td><td>0</td><td>1</td><td>0</td><td>16</td><td>17</td></tr>
 <tr><td>Misc</td><td>0</td><td>1</td><td>0</td><td>121</td><td>122</td></tr>
@@ -44,8 +44,8 @@
 <tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autohole.md">AutoHole</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autodisconnect.md">AutoLeave</a></td><td class="coded">coded</td><td>AutoLeave</td></tr>
 <tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autopearl.md">AutoPearl</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autopot.md">AutoPot</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autopotion.md">AutoPotion</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autopot.md">AutoPot</a></td><td class="verified">verified</td><td>AutoPotion implements the AutoPot behavior: at 8 health, it selected and threw one healing splash potion, raising health to 16.5 and restoring the stone slot. Harming potions were ignored. See docs/test-evidence/2026-10-30-potions.md.</td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autopotion.md">AutoPotion</a></td><td class="verified">verified</td><td>At 8 health, AutoPotion selected and threw one healing splash potion, raising health to 16.5 and restoring the stone slot. Harming potions were ignored. See docs/test-evidence/2026-10-30-potions.md.</td></tr>
 <tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autorod.md">AutoRod</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoshoot.md">AutoShoot</a></td><td class="verified">verified</td><td>With stone selected and snowballs in the next hotbar slot, Auto Shoot selected, aimed, and threw without user input until it killed a stationary blaze at about 12 blocks; see docs/test-evidence/2026-10-30-autoshoot.md.</td></tr>
 <tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autosoup.md">AutoSoup</a></td><td class="backlog">backlog</td><td></td></tr>
@@ -103,7 +103,7 @@
 <tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/superknockback.md">SuperKnockback</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/surround.md">Surround</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/swordblock.md">SwordBlock</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/throwpot.md">ThrowPot</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/throwpot.md">ThrowPot</a></td><td class="verified">verified</td><td>A low-health toggle consumed two healing potions and restored stone; a higher-health toggle consumed one. The module disabled itself after each sequence. See docs/test-evidence/2026-10-30-potions.md.</td></tr>
 <tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tickbase.md">TickBase</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tillaura.md">Tillaura</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/timerrange.md">TimerRange</a></td><td class="backlog">backlog</td><td></td></tr>

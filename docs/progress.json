@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 602,
-    "verified": 11,
+    "backlog": 599,
+    "verified": 14,
     "coded": 70
   },
   "total": 683,
@@ -938,18 +938,18 @@
       "id": "autopot",
       "name": "AutoPot",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "AutoPotion",
+      "note": "AutoPotion implements the AutoPot behavior: at 8 health, it selected and threw one healing splash potion, raising health to 16.5 and restoring the stone slot. Harming potions were ignored. See docs/test-evidence/2026-10-30-potions.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autopot.md"
     },
     {
       "id": "autopotion",
       "name": "AutoPotion",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "AutoPotion",
+      "note": "At 8 health, AutoPotion selected and threw one healing splash potion, raising health to 16.5 and restoring the stone slot. Harming potions were ignored. See docs/test-evidence/2026-10-30-potions.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autopotion.md"
     },
     {
@@ -5528,9 +5528,9 @@
       "id": "throwpot",
       "name": "ThrowPot",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "ThrowPot",
+      "note": "A low-health toggle consumed two healing potions and restored stone; a higher-health toggle consumed one. The module disabled itself after each sequence. See docs/test-evidence/2026-10-30-potions.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/throwpot.md"
     },
     {
