@@ -1,9 +1,9 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 379,
+    "backlog": 372,
     "verified": 84,
-    "coded": 217,
+    "coded": 224,
     "partial": 3
   },
   "total": 683,
@@ -2064,9 +2064,9 @@
       "id": "damageparticles",
       "name": "DamageParticles",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "HitParticles",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/damageparticles.md"
     },
     {
@@ -2739,9 +2739,9 @@
       "id": "freecam",
       "name": "FreeCam",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "FreeCam",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/freecam.md"
     },
     {
@@ -2964,36 +2964,36 @@
       "id": "hitbubbles",
       "name": "HitBubbles",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "HitParticles",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/hitbubbles.md"
     },
     {
       "id": "hitfx",
       "name": "HitFX",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "HitParticles",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/hitfx.md"
     },
     {
       "id": "hitmarkers",
       "name": "Hitmarkers",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Hitmarkers",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/hitmarkers.md"
     },
     {
       "id": "hitparticles",
       "name": "HitParticles",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "HitParticles",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/hitparticles.md"
     },
     {
@@ -3360,9 +3360,9 @@
       "id": "killeffect",
       "name": "KillEffect",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "KillEffect",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/killeffect.md"
     },
     {

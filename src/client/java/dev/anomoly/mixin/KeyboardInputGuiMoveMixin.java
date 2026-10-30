@@ -15,5 +15,6 @@ public abstract class KeyboardInputGuiMoveMixin {
     private void anomoly$moveInGui(CallbackInfo ci) {
         AnomolyClient.MODULES.get(GuiMove.class).apply((KeyboardInput)(Object)this);
         AnomolyClient.MODULES.get(Eagle.class).apply((KeyboardInput)(Object)this);
+        dev.anomoly.modules.FreeCam.get().freezeBody((KeyboardInput)(Object)this);
     }
 }

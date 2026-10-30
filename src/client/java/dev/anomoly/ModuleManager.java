@@ -246,6 +246,10 @@ import dev.anomoly.modules.Clip;
 import dev.anomoly.modules.ClickTp;
 import dev.anomoly.modules.SpawnProofer;
 import dev.anomoly.modules.FakePlayer;
+import dev.anomoly.modules.FreeCam;
+import dev.anomoly.modules.Hitmarkers;
+import dev.anomoly.modules.HitParticles;
+import dev.anomoly.modules.KillEffect;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -365,6 +369,10 @@ public final class ModuleManager {
         new ClickTp(),
         new SpawnProofer(),
         new FakePlayer(),
+        new FreeCam(),
+        new Hitmarkers(),
+        new HitParticles(),
+        new KillEffect(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 

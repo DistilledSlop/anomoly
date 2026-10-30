@@ -29,6 +29,7 @@ public abstract class MultiPlayerGameModeAttackMixin {
     @Inject(method = "attack", at = @At("TAIL"))
     private void anomoly$afterAttack(Player player, Entity entity, CallbackInfo ci) {
         AttackHooks.after(anomoly$attackContext, player, entity);
+        if (player == net.minecraft.client.Minecraft.getInstance().player) dev.anomoly.modules.HitEvents.attacked(entity);
         anomoly$attackContext = null;
     }
 }

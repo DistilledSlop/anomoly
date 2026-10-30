@@ -302,7 +302,14 @@
     "armoralert": {"status": "coded", "module": "DurabilityAlert", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
     "respawn": {"status": "coded", "module": "AutoRespawn", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
     "liquidplace": {"status": "coded", "module": "LiquidInteract", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
-    "clientsidetime": {"status": "coded", "module": "TimeChanger", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."}
+    "clientsidetime": {"status": "coded", "module": "TimeChanger", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "freecam": {"status": "coded", "module": "FreeCam", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "hitmarkers": {"status": "coded", "module": "Hitmarkers", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "hitparticles": {"status": "coded", "module": "HitParticles", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "hitfx": {"status": "coded", "module": "HitParticles", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "hitbubbles": {"status": "coded", "module": "HitParticles", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "damageparticles": {"status": "coded", "module": "HitParticles", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "killeffect": {"status": "coded", "module": "KillEffect", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."}
   },
   "additions": [
     {"id": "anomoly_spear_assist", "name": "Spear Assist", "category": "Combat", "status": "coded", "module": "SpearAssist", "doc": "hacks/spear-assist.md"}
