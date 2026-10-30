@@ -438,7 +438,19 @@
     "extraelytra": {"status": "partial", "module": "ElytraRecast", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."},
     "elytra": {"status": "partial", "module": "ElytraRecast", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."},
     "elytratweaks": {"status": "partial", "module": "ElytraRecast", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."},
-    "riding": {"status": "partial", "module": "EntitySpeed", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."}
+    "riding": {"status": "partial", "module": "EntitySpeed", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."},
+    "candlehud": {"status": "coded", "module": "CandleHud", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "companion": {"status": "coded", "module": "Companion", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "hotbar": {"status": "coded", "module": "HotbarBackdrop", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "hud": {"status": "coded", "module": "HudSummary", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "staffboard": {"status": "coded", "module": "StaffBoard", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "radarrewrite": {"status": "coded", "module": "RadarCircle", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "debug": {"status": "coded", "module": "Debug", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "lsd": {"status": "coded", "module": "Lsd", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "rainbowui": {"status": "coded", "module": "Lsd", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "totemeffect": {"status": "coded", "module": "TotemEffect", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "quickperspectiveswap": {"status": "coded", "module": "QuickPerspectiveSwap", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "autoflyme": {"status": "coded", "module": "AutoFlyme", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."}
   },
   "additions": [
     {"id": "anomoly_spear_assist", "name": "Spear Assist", "category": "Combat", "status": "coded", "module": "SpearAssist", "doc": "hacks/spear-assist.md"}

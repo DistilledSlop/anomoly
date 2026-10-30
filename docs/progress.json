@@ -1,9 +1,9 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "coded": 333,
+    "coded": 345,
     "verified": 84,
-    "backlog": 243,
+    "backlog": 231,
     "partial": 23
   },
   "total": 683,
@@ -822,9 +822,9 @@
       "id": "autoflyme",
       "name": "AutoFlyme",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "AutoFlyme",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoflyme.md"
     },
     {
@@ -1686,9 +1686,9 @@
       "id": "candlehud",
       "name": "CandleHud",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "CandleHud",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/candlehud.md"
     },
     {
@@ -1938,9 +1938,9 @@
       "id": "companion",
       "name": "Companion",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Companion",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/companion.md"
     },
     {
@@ -2091,9 +2091,9 @@
       "id": "debug",
       "name": "Debug",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Debug",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/debug.md"
     },
     {
@@ -3036,18 +3036,18 @@
       "id": "hotbar",
       "name": "Hotbar",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "HotbarBackdrop",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/hotbar.md"
     },
     {
       "id": "hud",
       "name": "HUD",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "HudSummary",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/hud.md"
     },
     {
@@ -3567,9 +3567,9 @@
       "id": "lsd",
       "name": "Lsd",
       "category": "Fun",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Lsd",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/lsd.md"
     },
     {
@@ -4701,9 +4701,9 @@
       "id": "quickperspectiveswap",
       "name": "QuickPerspectiveSwap",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "QuickPerspectiveSwap",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/quickperspectiveswap.md"
     },
     {
@@ -4728,9 +4728,9 @@
       "id": "radarrewrite",
       "name": "RadarRewrite",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "RadarCircle",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/radarrewrite.md"
     },
     {
@@ -4746,9 +4746,9 @@
       "id": "rainbowui",
       "name": "RainbowUi",
       "category": "Fun",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Lsd",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/rainbowui.md"
     },
     {
@@ -5313,9 +5313,9 @@
       "id": "staffboard",
       "name": "StaffBoard",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "StaffBoard",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/staffboard.md"
     },
     {
@@ -5700,9 +5700,9 @@
       "id": "totemeffect",
       "name": "TotemEffect",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "TotemEffect",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/totemeffect.md"
     },
     {

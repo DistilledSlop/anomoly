@@ -329,6 +329,17 @@ import dev.anomoly.modules.TridentFly;
 import dev.anomoly.modules.PacketFly;
 import dev.anomoly.modules.SelfFill;
 import dev.anomoly.modules.AutoWindCharge;
+import dev.anomoly.modules.CandleHud;
+import dev.anomoly.modules.Companion;
+import dev.anomoly.modules.HotbarBackdrop;
+import dev.anomoly.modules.HudSummary;
+import dev.anomoly.modules.StaffBoard;
+import dev.anomoly.modules.RadarCircle;
+import dev.anomoly.modules.Debug;
+import dev.anomoly.modules.Lsd;
+import dev.anomoly.modules.TotemEffect;
+import dev.anomoly.modules.QuickPerspectiveSwap;
+import dev.anomoly.modules.AutoFlyme;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -531,6 +542,17 @@ public final class ModuleManager {
         new PacketFly(),
         new SelfFill(),
         new AutoWindCharge(),
+        new CandleHud(),
+        new Companion(),
+        new HotbarBackdrop(),
+        new HudSummary(),
+        new StaffBoard(),
+        new RadarCircle(),
+        new Debug(),
+        new Lsd(),
+        new TotemEffect(),
+        new QuickPerspectiveSwap(),
+        new AutoFlyme(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 

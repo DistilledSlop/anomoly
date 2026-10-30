@@ -34,6 +34,8 @@ public abstract class ClientPacketListenerEventsMixin {
         if (entity instanceof Player player) {
             AnomolyClient.MODULES.get(TotemPopCounter.class).popped(client, player);
             AnomolyClient.MODULES.get(dev.anomoly.modules.PopChams.class).popped(client, player);
+            AnomolyClient.MODULES.get(dev.anomoly.modules.TotemEffect.class).popped(client, player);
+            AnomolyClient.MODULES.get(dev.anomoly.modules.Companion.class).say(player.getName().getString() + " popped!");
         }
     }
 }
