@@ -4,7 +4,7 @@
 </head><body><h1>Anomoly hack progress</h1>
 <p>One tile per catalogued feature. Tile area is proportional to category size. Blue means coded and compiled, amber means partial, green means gameplay verified, and gray means backlog. Startup validation alone does not count as gameplay verification.</p>
 <img src="progress.svg" alt="Treemap of Anomoly hack progress">
-<p>68 coded, 1 partial, 42 gameplay verified, 572 backlog, 683 total. <a href="progress.json">Raw data</a>.</p>
+<p>68 coded, 1 partial, 44 gameplay verified, 570 backlog, 683 total. <a href="progress.json">Raw data</a>.</p>
 <h2>By category</h2><table><thead><tr><th>Category</th><th>Verified</th><th>Coded</th><th>Partial</th><th>Backlog</th><th>Total</th></tr></thead><tbody>
 <tr><td>Combat</td><td>34</td><td>12</td><td>1</td><td>48</td><td>95</td></tr>
 <tr><td>Exploit</td><td>0</td><td>3</td><td>0</td><td>31</td><td>34</td></tr>
@@ -13,7 +13,7 @@
 <tr><td>Movement</td><td>2</td><td>12</td><td>0</td><td>76</td><td>90</td></tr>
 <tr><td>Player</td><td>5</td><td>14</td><td>0</td><td>68</td><td>87</td></tr>
 <tr><td>Render</td><td>0</td><td>22</td><td>0</td><td>144</td><td>166</td></tr>
-<tr><td>World</td><td>1</td><td>3</td><td>0</td><td>68</td><td>72</td></tr>
+<tr><td>World</td><td>3</td><td>3</td><td>0</td><td>66</td><td>72</td></tr>
 </tbody></table>
 <h2>Features</h2><label for="filter">Filter features</label><br><input id="filter" type="search" placeholder="Search name, category, or status">
 <table id="features"><thead><tr><th>Category</th><th>Feature</th><th>Status</th><th>Implementation</th></tr></thead><tbody>
@@ -683,8 +683,8 @@
 <tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nointerpolation.md">NoInterpolation</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nomineanimation.md">NoMineAnimation</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noslowbreak.md">NoSlowBreak</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nuker.md">Nuker</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nukerlegit.md">NukerLegit</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nuker.md">Nuker</a></td><td class="verified">verified</td><td>On a local vanilla 26.3 server, Nuker automatically mined three dirt blocks in range, used an iron shovel for exactly three durability points, restored the selected sword, and preserved the dirt underfoot and a stone block excluded by its filter. See docs/test-evidence/2026-10-30-nuker.md.</td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nukerlegit.md">NukerLegit</a></td><td class="verified">verified</td><td>On a local vanilla 26.3 server, NukerLegit left occluded and behind-view dirt untouched, then mined each after the obstruction was removed or the player turned toward it. It selected an iron shovel and restored the sword after each block. See docs/test-evidence/2026-10-30-nuker.md.</td></tr>
 <tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/packetmine.md">PacketMine</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/projectilepuncher.md">ProjectilePuncher</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/scaffold.md">Scaffold</a></td><td class="verified">verified</td><td>On a local vanilla 26.3 server, Scaffold built a continuous 16-block stone bridge from hotbar material and three more blocks from offhand, restored the selected sword, stopped safely when blocks ran out, and refused to use sand. Optional tower mode built a four-block vertical column and stopped after consuming its material. See docs/test-evidence/2026-10-30-scaffold.md.</td></tr>

@@ -67,6 +67,8 @@
     "nofall": {"status": "coded", "module": "NoFall"},
     "safewalk": {"status": "verified", "module": "SafeWalk", "note": "After registering its existing mixin, a local vanilla 26.3 server kept an Auto Walk player at y=100 and a fixed X position at an air edge with Safe Walk enabled and Scaffold disabled. See docs/test-evidence/2026-10-30-scaffold.md."},
     "scaffold": {"status": "verified", "module": "Scaffold", "note": "On a local vanilla 26.3 server, Scaffold built a continuous 16-block stone bridge from hotbar material and three more blocks from offhand, restored the selected sword, stopped safely when blocks ran out, and refused to use sand. Optional tower mode built a four-block vertical column and stopped after consuming its material. See docs/test-evidence/2026-10-30-scaffold.md."},
+    "nuker": {"status": "verified", "module": "Nuker", "note": "On a local vanilla 26.3 server, Nuker automatically mined three dirt blocks in range, used an iron shovel for exactly three durability points, restored the selected sword, and preserved the dirt underfoot and a stone block excluded by its filter. See docs/test-evidence/2026-10-30-nuker.md."},
+    "nukerlegit": {"status": "verified", "module": "NukerLegit", "note": "On a local vanilla 26.3 server, NukerLegit left occluded and behind-view dirt untouched, then mined each after the obstruction was removed or the player turned toward it. It selected an iron shovel and restored the sword after each block. See docs/test-evidence/2026-10-30-nuker.md."},
     "noslow": {"status": "coded", "module": "NoSlow"},
     "step": {"status": "coded", "module": "Step"},
     "nobob": {"status": "coded", "module": "NoBob"},

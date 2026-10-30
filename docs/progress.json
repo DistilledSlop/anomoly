@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 572,
-    "verified": 42,
+    "backlog": 570,
+    "verified": 44,
     "coded": 68,
     "partial": 1
   },
@@ -4278,18 +4278,18 @@
       "id": "nuker",
       "name": "Nuker",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "Nuker",
+      "note": "On a local vanilla 26.3 server, Nuker automatically mined three dirt blocks in range, used an iron shovel for exactly three durability points, restored the selected sword, and preserved the dirt underfoot and a stone block excluded by its filter. See docs/test-evidence/2026-10-30-nuker.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nuker.md"
     },
     {
       "id": "nukerlegit",
       "name": "NukerLegit",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "NukerLegit",
+      "note": "On a local vanilla 26.3 server, NukerLegit left occluded and behind-view dirt untouched, then mined each after the obstruction was removed or the player turned toward it. It selected an iron shovel and restored the sword after each block. See docs/test-evidence/2026-10-30-nuker.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nukerlegit.md"
     },
     {

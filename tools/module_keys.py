@@ -24,6 +24,8 @@ def expected_text():
         source = (MODULES / f"{class_name}.java").read_text(encoding="utf-8")
         match = re.search(r'super\(\s*"([^"]+)",\s*"([^"]+)"', source)
         if not match:
+            match = re.search(r'this\(\s*"([^"]+)",\s*"([^"]+)"', source)
+        if not match:
             raise ValueError(f"Missing module id/name in {class_name}")
         module_id, module_name = match.groups()
         language[f"key.anomoly.toggle.{module_id}"] = f"Toggle Anomoly {module_name}"
