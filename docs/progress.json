@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 636,
-    "coded": 44,
+    "backlog": 634,
+    "coded": 46,
     "partial": 3
   },
   "total": 683,
@@ -1118,8 +1118,8 @@
       "id": "autosword",
       "name": "AutoSword",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "AutoSword",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autosword.md"
     },
@@ -1190,8 +1190,8 @@
       "id": "autoweapon",
       "name": "AutoWeapon",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "AutoWeapon",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoweapon.md"
     },

@@ -20,6 +20,8 @@ import dev.anomoly.modules.AutoTotem;
 import dev.anomoly.modules.AutoReplenish;
 import dev.anomoly.modules.AutoDeposit;
 import dev.anomoly.modules.AutoDrop;
+import dev.anomoly.modules.AutoWeapon;
+import dev.anomoly.modules.AutoSword;
 import dev.anomoly.modules.ChestStealer;
 import dev.anomoly.modules.ChestCleaner;
 import dev.anomoly.modules.FastBreak;
@@ -49,7 +51,8 @@ import net.minecraft.client.Minecraft;
 
 public final class ModuleManager {
     private final List<Module> modules = List.of(
-        new TriggerBot(), new KillAura(), new SpearAssist(), new Reach(), new AutoArmor(), new AutoBowRelease(), new AutoGApple(), new AutoTotem(),
+        new AutoWeapon(), new AutoSword(), new TriggerBot(), new KillAura(), new SpearAssist(), new Reach(),
+        new AutoArmor(), new AutoBowRelease(), new AutoGApple(), new AutoTotem(),
         new AutoSprint(), new AutoWalk(), new AutoJump(),
         new AutoSneak(), new AutoRespawn(), new AutoEat(), new AutoFish(), new AntiAFK(), new AutoTool(), new AutoReplenish(),
         new AutoDeposit(), new AutoDrop(),
