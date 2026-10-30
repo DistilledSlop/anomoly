@@ -1,10 +1,10 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "coded": 303,
+    "coded": 304,
     "verified": 84,
-    "backlog": 286,
-    "partial": 10
+    "backlog": 284,
+    "partial": 11
   },
   "total": 683,
   "features": [
@@ -2253,9 +2253,9 @@
       "id": "elytrareplace",
       "name": "ElytraReplace",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "ElytraReplace",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytrareplace.md"
     },
     {
@@ -4161,9 +4161,9 @@
       "id": "noslowbreak",
       "name": "NoSlowBreak",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "NoSlowBreak",
+      "note": "Removes the mid-air and underwater mining penalties; the Mining Fatigue penalty is unchanged. No gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noslowbreak.md"
     },
     {

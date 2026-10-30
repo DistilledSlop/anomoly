@@ -395,7 +395,9 @@
     "noclip": {"status": "coded", "module": "NoClip", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
     "bedplates": {"status": "coded", "module": "BedPlates", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
     "hats": {"status": "coded", "module": "Hats", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
-    "skeleton": {"status": "coded", "module": "Skeleton", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."}
+    "skeleton": {"status": "coded", "module": "Skeleton", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "noslowbreak": {"status": "partial", "module": "NoSlowBreak", "note": "Removes the mid-air and underwater mining penalties; the Mining Fatigue penalty is unchanged. No gameplay test is recorded."},
+    "elytrareplace": {"status": "coded", "module": "ElytraReplace", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."}
   },
   "additions": [
     {"id": "anomoly_spear_assist", "name": "Spear Assist", "category": "Combat", "status": "coded", "module": "SpearAssist", "doc": "hacks/spear-assist.md"}

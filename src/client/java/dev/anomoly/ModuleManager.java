@@ -302,6 +302,8 @@ import dev.anomoly.modules.NoClip;
 import dev.anomoly.modules.BedPlates;
 import dev.anomoly.modules.Hats;
 import dev.anomoly.modules.Skeleton;
+import dev.anomoly.modules.NoSlowBreak;
+import dev.anomoly.modules.ElytraReplace;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -477,6 +479,8 @@ public final class ModuleManager {
         new BedPlates(),
         new Hats(),
         new Skeleton(),
+        new NoSlowBreak(),
+        new ElytraReplace(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 
