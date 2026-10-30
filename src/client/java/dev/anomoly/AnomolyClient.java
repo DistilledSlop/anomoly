@@ -78,6 +78,7 @@ public final class AnomolyClient implements ClientModInitializer {
             MODULES.get(dev.anomoly.modules.Soup.class).finishTick(client);
             MODULES.get(dev.anomoly.modules.WTap.class).finishTick(client);
             MODULES.get(AutoBuff.class).finishTick(client);
+            MODULES.get(dev.anomoly.modules.SmartEat.class).finishTick(client);
             MODULES.get(AutoReconnect.class).tickDisconnected(client);
             if (client.gui.screen() instanceof ClickGuiScreen
                 && (ImGuiRenderer.failed() || !ImGuiRenderer.supported())) {
@@ -113,6 +114,7 @@ public final class AnomolyClient implements ClientModInitializer {
             MODULES.get(FreeLook.class).reset(client);
             MODULES.get(ElytraSwap.class).disconnect();
             MODULES.get(AutoBuff.class).disconnect();
+            MODULES.get(dev.anomoly.modules.SmartEat.class).disconnect();
             PROFILE.leave("connection closed");
         });
         LOGGER.info("Anomoly initialized");

@@ -27,7 +27,8 @@ public final class AutoClicker extends Module {
 
     @Override public void tick(Minecraft client) {
         if (client.gui.screen() != null || client.gameMode == null || SoupUse.busy(client)
-            || AnomolyClient.MODULES.get(AutoBuff.class).combatPaused(client)) { reset(); return; }
+            || AnomolyClient.MODULES.get(AutoBuff.class).combatPaused(client)
+            || AnomolyClient.MODULES.get(SmartEat.class).combatPaused(client)) { reset(); return; }
         if (attack.get() && client.options.keyAttack.isDown() && !(client.hitResult instanceof BlockHitResult)
             && !(client.hitResult instanceof EntityHitResult hit && hit.getEntity() instanceof Player player
                 && AnomolyClient.MODULES.get(AntiBot.class).reject(client, player))) {

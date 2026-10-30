@@ -61,6 +61,7 @@ public final class InventoryCleaner extends Module {
         var player = client.player;
         if (client.gameMode == null || player.isSpectator() || player.isUsingItem()
             || AnomolyClient.MODULES.get(AutoBuff.class).busy()
+            || AnomolyClient.MODULES.get(SmartEat.class).busy()
             || !player.containerMenu.getCarried().isEmpty()) return;
         boolean inventory = player.containerMenu instanceof InventoryMenu;
         if (!inventory && !containers.get()) return;

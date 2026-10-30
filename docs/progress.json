@@ -1,10 +1,10 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 544,
+    "backlog": 543,
     "verified": 69,
     "coded": 69,
-    "partial": 1
+    "partial": 2
   },
   "total": 683,
   "features": [
@@ -5115,9 +5115,9 @@
       "id": "smarteat",
       "name": "SmartEat",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "SmartEat",
+      "note": "Automatic food selection was tested on a local vanilla 26.3 server: steak beat bread and rotten flesh, main-inventory food was consumed and the selected stone restored, one golden apple and then a healing potion were used at low health while a second apple remained, offhand steak was eaten, rotten flesh and pufferfish were rejected at hunger 1, and an enchanted apple took priority at health 2. See docs/test-evidence/2026-10-30-smarteat.md. Silent manual offhand eating and its HUD preview are not implemented; third-party anticheats remain untested.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/smarteat.md"
     },
     {

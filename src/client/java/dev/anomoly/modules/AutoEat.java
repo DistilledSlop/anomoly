@@ -1,7 +1,7 @@
 package dev.anomoly.modules;
 
 import dev.anomoly.Module;
-import net.minecraft.client.KeyMapping;
+import dev.anomoly.AnomolyClient;
 import net.minecraft.client.Minecraft;
 import net.minecraft.core.component.DataComponents;
 
@@ -14,19 +14,21 @@ public final class AutoEat extends Module {
 
     @Override public void tick(Minecraft client) {
         boolean shouldEat = client.gui.screen() == null && !SoupUse.busy(client)
+            && !AnomolyClient.MODULES.get(SmartEat.class).enabled()
+            && !AnomolyClient.MODULES.get(AutoBuff.class).busy()
             && client.player.getFoodData().needsFood()
             && client.player.getMainHandItem().has(DataComponents.FOOD);
         if (shouldEat) {
             client.options.keyUse.setDown(true);
             holdingUse = true;
         } else if (holdingUse) {
-            KeyMapping.setAll();
+            client.options.keyUse.setDown(false);
             holdingUse = false;
         }
     }
 
     @Override protected void onDisable(Minecraft client) {
-        if (holdingUse) KeyMapping.setAll();
+        if (holdingUse) client.options.keyUse.setDown(false);
         holdingUse = false;
     }
 }
