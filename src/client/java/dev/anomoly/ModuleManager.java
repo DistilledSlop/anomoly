@@ -297,6 +297,11 @@ import dev.anomoly.modules.LegacyHud;
 import dev.anomoly.modules.VoidEsp;
 import dev.anomoly.modules.SoundEsp;
 import dev.anomoly.modules.NameCollector;
+import dev.anomoly.modules.NoServerPack;
+import dev.anomoly.modules.NoClip;
+import dev.anomoly.modules.BedPlates;
+import dev.anomoly.modules.Hats;
+import dev.anomoly.modules.Skeleton;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -467,6 +472,11 @@ public final class ModuleManager {
         new VoidEsp(),
         new SoundEsp(),
         new NameCollector(),
+        new NoServerPack(),
+        new NoClip(),
+        new BedPlates(),
+        new Hats(),
+        new Skeleton(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 

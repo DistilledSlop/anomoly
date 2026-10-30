@@ -1,9 +1,9 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "coded": 297,
+    "coded": 303,
     "verified": 84,
-    "backlog": 292,
+    "backlog": 286,
     "partial": 10
   },
   "total": 683,
@@ -363,9 +363,9 @@
       "id": "antiserverrp",
       "name": "AntiServerRP",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "NoServerPack",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiserverrp.md"
     },
     {
@@ -1326,9 +1326,9 @@
       "id": "bedplates",
       "name": "BedPlates",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "BedPlates",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bedplates.md"
     },
     {
@@ -2892,9 +2892,9 @@
       "id": "hats",
       "name": "Hats",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Hats",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/hats.md"
     },
     {
@@ -3900,9 +3900,9 @@
       "id": "noclip",
       "name": "NoClip",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "NoClip",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noclip.md"
     },
     {
@@ -4179,9 +4179,9 @@
       "id": "nosrp",
       "name": "No SRP",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "NoServerPack",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nosrp.md"
     },
     {
@@ -5043,9 +5043,9 @@
       "id": "skeleton",
       "name": "Skeleton",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Skeleton",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/skeleton.md"
     },
     {

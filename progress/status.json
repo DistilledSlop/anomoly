@@ -389,7 +389,13 @@
     "multiactions": {"status": "coded", "module": "Multitask", "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded."},
     "murder": {"status": "coded", "module": "MurderMystery", "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded."},
     "worldtweaks": {"status": "partial", "module": "TimeChanger", "note": "Time of day is covered by Time Changer; the fog half is the separate No Fog module."},
-    "customambience": {"status": "partial", "module": "WeatherChanger", "note": "Weather is covered by Weather Changer; other ambience settings are not implemented."}
+    "customambience": {"status": "partial", "module": "WeatherChanger", "note": "Weather is covered by Weather Changer; other ambience settings are not implemented."},
+    "nosrp": {"status": "coded", "module": "NoServerPack", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "antiserverrp": {"status": "coded", "module": "NoServerPack", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "noclip": {"status": "coded", "module": "NoClip", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "bedplates": {"status": "coded", "module": "BedPlates", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "hats": {"status": "coded", "module": "Hats", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "skeleton": {"status": "coded", "module": "Skeleton", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."}
   },
   "additions": [
     {"id": "anomoly_spear_assist", "name": "Spear Assist", "category": "Combat", "status": "coded", "module": "SpearAssist", "doc": "hacks/spear-assist.md"}
