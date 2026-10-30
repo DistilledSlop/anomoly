@@ -1,9 +1,9 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 439,
+    "backlog": 418,
     "verified": 84,
-    "coded": 157,
+    "coded": 178,
     "partial": 3
   },
   "total": 683,
@@ -381,9 +381,9 @@
       "id": "antispam",
       "name": "AntiSpam",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "AntiSpam",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antispam.md"
     },
     {
@@ -507,9 +507,9 @@
       "id": "autoaccept",
       "name": "AutoAccept",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "AutoAccept",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoaccept.md"
     },
     {
@@ -984,9 +984,9 @@
       "id": "autoreply",
       "name": "AutoReply",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "AutoReply",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoreply.md"
     },
     {
@@ -1731,9 +1731,9 @@
       "id": "chatappend",
       "name": "ChatAppend",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "ChatAppend",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/chatappend.md"
     },
     {
@@ -2325,9 +2325,9 @@
       "id": "entityowner",
       "name": "Entity Owner",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "EntityOwner",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/entityowner.md"
     },
     {
@@ -2829,9 +2829,9 @@
       "id": "greentext",
       "name": "GreenText",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "GreenText",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/greentext.md"
     },
     {
@@ -3261,9 +3261,9 @@
       "id": "itemtags",
       "name": "ItemTags",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "ItemTags",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/itemtags.md"
     },
     {
@@ -3288,18 +3288,18 @@
       "id": "jumpcircle",
       "name": "JumpCircle",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "JumpCircle",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/jumpcircle.md"
     },
     {
       "id": "jumpeffect",
       "name": "JumpEffect",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "JumpCircle",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/jumpeffect.md"
     },
     {
@@ -3324,9 +3324,9 @@
       "id": "keybinds",
       "name": "KeyBinds",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "KeyBinds",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/keybinds.md"
     },
     {
@@ -3531,18 +3531,18 @@
       "id": "logoffspot",
       "name": "LogoffSpot",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "LogoutSpots",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/logoffspot.md"
     },
     {
       "id": "logoutspots",
       "name": "Logout Spots",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "LogoutSpots",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/logoutspots.md"
     },
     {
@@ -3612,9 +3612,9 @@
       "id": "marker",
       "name": "Marker",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Waypoints",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/marker.md"
     },
     {
@@ -3648,9 +3648,9 @@
       "id": "messageappend",
       "name": "MessageAppend",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "ChatAppend",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/messageappend.md"
     },
     {
@@ -3729,9 +3729,9 @@
       "id": "mobowner",
       "name": "MobOwners",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "EntityOwner",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/mobowner.md"
     },
     {
@@ -4107,9 +4107,9 @@
       "id": "norender",
       "name": "No Render",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "NoRender",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/norender.md"
     },
     {
@@ -4242,9 +4242,9 @@
       "id": "novignette",
       "name": "NoVignette",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "NoVignette",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/novignette.md"
     },
     {
@@ -4404,9 +4404,9 @@
       "id": "particles",
       "name": "Particles",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "NoRender",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/particles.md"
     },
     {
@@ -5430,9 +5430,9 @@
       "id": "targethud",
       "name": "TargetHud",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "TargetHud",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/targethud.md"
     },
     {
@@ -5619,9 +5619,9 @@
       "id": "timestamps",
       "name": "Timestamps",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Timestamps",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/timestamps.md"
     },
     {
@@ -6042,9 +6042,9 @@
       "id": "waypoints",
       "name": "Waypoints",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Waypoints",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/waypoints.md"
     },
     {

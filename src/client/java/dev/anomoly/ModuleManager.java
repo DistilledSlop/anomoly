@@ -208,6 +208,21 @@ import dev.anomoly.modules.BoatFly;
 import dev.anomoly.modules.LevitationControl;
 import dev.anomoly.modules.Follow;
 import dev.anomoly.modules.SnowShoe;
+import dev.anomoly.modules.Timestamps;
+import dev.anomoly.modules.AntiSpam;
+import dev.anomoly.modules.ChatAppend;
+import dev.anomoly.modules.GreenText;
+import dev.anomoly.modules.AutoAccept;
+import dev.anomoly.modules.AutoReply;
+import dev.anomoly.modules.KeyBinds;
+import dev.anomoly.modules.TargetHud;
+import dev.anomoly.modules.JumpCircle;
+import dev.anomoly.modules.ItemTags;
+import dev.anomoly.modules.EntityOwner;
+import dev.anomoly.modules.NoRender;
+import dev.anomoly.modules.NoVignette;
+import dev.anomoly.modules.Waypoints;
+import dev.anomoly.modules.LogoutSpots;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -289,6 +304,21 @@ public final class ModuleManager {
         new LevitationControl(),
         new Follow(),
         new SnowShoe(),
+        new Timestamps(),
+        new AntiSpam(),
+        new ChatAppend(),
+        new GreenText(),
+        new AutoAccept(),
+        new AutoReply(),
+        new KeyBinds(),
+        new TargetHud(),
+        new JumpCircle(),
+        new ItemTags(),
+        new EntityOwner(),
+        new NoRender(),
+        new NoVignette(),
+        new Waypoints(),
+        new LogoutSpots(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 
