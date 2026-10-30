@@ -10,6 +10,7 @@ import dev.anomoly.profile.ProfileCollector;
 import dev.anomoly.modules.AutoReconnect;
 import dev.anomoly.modules.FreeLook;
 import dev.anomoly.modules.Offhand;
+import dev.anomoly.modules.ElytraSwap;
 import dev.anomoly.setting.Setting;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -108,6 +109,7 @@ public final class AnomolyClient implements ClientModInitializer {
         ClientPlayConnectionEvents.JOIN.register((handler, sender, client) -> PROFILE.join(client));
         ClientPlayConnectionEvents.DISCONNECT.register((handler, client) -> {
             MODULES.get(FreeLook.class).reset(client);
+            MODULES.get(ElytraSwap.class).disconnect();
             PROFILE.leave("connection closed");
         });
         LOGGER.info("Anomoly initialized");

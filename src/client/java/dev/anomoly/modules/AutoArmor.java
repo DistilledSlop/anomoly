@@ -57,7 +57,7 @@ public final class AutoArmor extends Module {
         }
     }
 
-    private static double score(ItemStack stack, EquipmentSlot slot) {
+    static double score(ItemStack stack, EquipmentSlot slot) {
         if (stack.isEmpty() || hasBindingCurse(stack)) return -1;
         Equippable equippable = stack.get(DataComponents.EQUIPPABLE);
         if (equippable == null || equippable.slot() != slot) return -1;
@@ -77,7 +77,7 @@ public final class AutoArmor extends Module {
         return points[0];
     }
 
-    private static boolean hasBindingCurse(ItemStack stack) {
+    static boolean hasBindingCurse(ItemStack stack) {
         for (var entry : stack.getEnchantments().entrySet()) {
             if (entry.getKey().unwrapKey().map(key -> key.identifier().getPath().equals("binding_curse")).orElse(false)) return true;
         }

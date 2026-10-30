@@ -4,14 +4,14 @@
 </head><body><h1>Anomoly hack progress</h1>
 <p>One tile per catalogued feature. Tile area is proportional to category size. Blue means coded and compiled, amber means partial, green means gameplay verified, and gray means backlog. Startup validation alone does not count as gameplay verification.</p>
 <img src="progress.svg" alt="Treemap of Anomoly hack progress">
-<p>69 coded, 1 partial, 67 gameplay verified, 546 backlog, 683 total. <a href="progress.json">Raw data</a>.</p>
+<p>69 coded, 1 partial, 68 gameplay verified, 545 backlog, 683 total. <a href="progress.json">Raw data</a>.</p>
 <h2>By category</h2><table><thead><tr><th>Category</th><th>Verified</th><th>Coded</th><th>Partial</th><th>Backlog</th><th>Total</th></tr></thead><tbody>
 <tr><td>Combat</td><td>34</td><td>12</td><td>1</td><td>48</td><td>95</td></tr>
 <tr><td>Exploit</td><td>0</td><td>3</td><td>0</td><td>31</td><td>34</td></tr>
 <tr><td>Fun</td><td>0</td><td>1</td><td>0</td><td>16</td><td>17</td></tr>
 <tr><td>Misc</td><td>0</td><td>2</td><td>0</td><td>120</td><td>122</td></tr>
 <tr><td>Movement</td><td>5</td><td>12</td><td>0</td><td>73</td><td>90</td></tr>
-<tr><td>Player</td><td>10</td><td>14</td><td>0</td><td>63</td><td>87</td></tr>
+<tr><td>Player</td><td>11</td><td>14</td><td>0</td><td>62</td><td>87</td></tr>
 <tr><td>Render</td><td>0</td><td>22</td><td>0</td><td>144</td><td>166</td></tr>
 <tr><td>World</td><td>18</td><td>3</td><td>0</td><td>51</td><td>72</td></tr>
 </tbody></table>
@@ -413,7 +413,7 @@
 <tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/durabilityalert.md">DurabilityAlert</a></td><td class="verified">verified</td><td>On a local vanilla 26.3 server, a 9%-durability iron helmet caused one chat/log warning, did not repeat immediately, and warned again after a healthy helmet was observed before re-equipping the damaged one. A low-durability held pickaxe did not warn under the armor-only default. See docs/test-evidence/2026-10-30-durabilityalert.md.</td></tr>
 <tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/eagle.md">Eagle</a></td><td class="verified">verified</td><td>On a local vanilla 26.3 server, at an isolated one-block platform with edge distance 0.2, Eagle&#x27;s client input produced a growing server sneak_time score at x=50.83 while the score stopped at block center. Holding forward for two seconds moved the player only to x=51.2974 while y=120 and health=20 remained intact. Offhand Auto equipped stone while Eagle was enabled. See docs/test-evidence/2026-10-30-eagle.md. Conditional movement/held-block/pitch settings, complex block shapes, and third-party anticheats remain untested.</td></tr>
 <tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytrareplace.md">ElytraReplace</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytraswap.md">ElytraSwap</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytraswap.md">ElytraSwap</a></td><td class="verified">verified</td><td>On a local vanilla 26.3 server, bound key presses swapped a diamond chestplate with an inventory elytra and back, swapped the same pair through the offhand, preferred a fresh elytra over one with 2 durability left, refused the worn-only wing, preserved a Binding Curse chestplate, equipped an elytra into an empty chest slot, and chose a netherite chestplate over leather. The saved module state returned to false after each action. See docs/test-evidence/2026-10-30-elytraswap.md. Open menus, full inventories, and third-party anticheats remain untested.</td></tr>
 <tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/expthrower.md">Exp Thrower</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fakeplayer.md">Fake Player</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastinteract.md">Fast Interact</a></td><td class="backlog">backlog</td><td></td></tr>

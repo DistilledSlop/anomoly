@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 546,
-    "verified": 67,
+    "backlog": 545,
+    "verified": 68,
     "coded": 69,
     "partial": 1
   },
@@ -2262,9 +2262,9 @@
       "id": "elytraswap",
       "name": "ElytraSwap",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "ElytraSwap",
+      "note": "On a local vanilla 26.3 server, bound key presses swapped a diamond chestplate with an inventory elytra and back, swapped the same pair through the offhand, preferred a fresh elytra over one with 2 durability left, refused the worn-only wing, preserved a Binding Curse chestplate, equipped an elytra into an empty chest slot, and chose a netherite chestplate over leather. The saved module state returned to false after each action. See docs/test-evidence/2026-10-30-elytraswap.md. Open menus, full inventories, and third-party anticheats remain untested.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytraswap.md"
     },
     {
