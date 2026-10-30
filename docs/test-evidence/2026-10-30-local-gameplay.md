@@ -28,6 +28,10 @@ I then disabled Aimbot, enabled Aim Assist with mob targeting, and reset the pla
 
 These tests verify client view rotation and the Aim Assist attack-key gate against visible mobs on the local vanilla server. They do not establish performance against moving targets, players, or remote anticheats.
 
+## Passive command inventory
+
+With the Plugins module enabled on the local vanilla server as a non-operator, the client read ten root commands from the server-supplied command tree: `help`, `list`, `me`, `msg`, `random`, `teammsg`, `tell`, `tm`, `trigger`, and `w`. The profiler wrote ten `command_literal` events and the offline analyzer reported the same list. The [server profile screenshot](../screenshots/server-profile-opengl-960x600.png) shows the ImGui page with ten visible commands and no namespaced commands. The client sent no command enumeration request. This verifies passive command collection and display; it does not verify identification of a real server plugin.
+
 ## Reproduction
 
 Start a local 26.3 server, then run:

@@ -7,6 +7,7 @@ import dev.anomoly.setting.BooleanSetting;
 import dev.anomoly.setting.FloatSetting;
 import dev.anomoly.setting.Setting;
 import dev.anomoly.setting.StringSetting;
+import dev.anomoly.modules.PluginInspector;
 import imgui.ImGui;
 import imgui.ImGuiIO;
 import imgui.ImGuiStyle;
@@ -195,6 +196,19 @@ public final class ImGuiRenderer {
         ImGui.spacing();
         ImGui.textDisabled("Records normal movement, server brand, corrections and disconnects.");
         ImGui.textDisabled("No active anticheat probes or plugin enumeration packets are sent.");
+        PluginInspector plugins = AnomolyClient.MODULES.get(PluginInspector.class);
+        ImGui.spacing();
+        ImGui.separator();
+        ImGui.textColored(0.38F, 0.94F, 0.79F, 1F, "VISIBLE COMMAND NAMESPACES");
+        if (!plugins.enabled()) ImGui.textDisabled("Enable Plugins under Exploit to inspect the server command tree.");
+        else {
+            ImGui.textWrapped(plugins.namespaces().isEmpty() ? "No namespaced commands exposed by this server."
+                : String.join(", ", plugins.namespaces()));
+            if (ImGui.collapsingHeader("Visible root commands (" + plugins.commands().size() + ")")) {
+                for (String command : plugins.commands()) ImGui.text(command);
+            }
+            ImGui.textDisabled("Only commands sent to this client are visible; namespace is not proof a plugin is installed.");
+        }
     }
 
     private static void drawRadar() {

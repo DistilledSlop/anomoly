@@ -4,6 +4,7 @@ import com.google.gson.Gson;
 import com.google.gson.JsonObject;
 import dev.anomoly.AnomolyClient;
 import dev.anomoly.Module;
+import dev.anomoly.modules.PluginInspector;
 import java.io.BufferedWriter;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -32,6 +33,7 @@ public final class ProfileCollector {
     private long ticks;
     private Vec3 lastPosition;
     private final Set<String> observedChannels = new HashSet<>();
+    private final Set<String> observedCommands = new HashSet<>();
 
     public boolean enabled() { return enabled; }
     public String server() { return server; }
@@ -55,6 +57,7 @@ public final class ProfileCollector {
         ticks = 0;
         lastPosition = null;
         observedChannels.clear();
+        observedCommands.clear();
         String fileName = FILE_TIME.format(Instant.now()) + "-" + server.replaceAll("[^a-zA-Z0-9._-]", "_") + ".jsonl";
         path = FabricLoader.getInstance().getConfigDir().resolve("anomoly").resolve("profiles").resolve(fileName);
         try {
@@ -86,6 +89,13 @@ public final class ProfileCollector {
             JsonObject event = event("movement_sample");
             addPlayer(event, player);
             record(event);
+            for (String command : PluginInspector.visibleCommands(client)) {
+                if (!observedCommands.add(command)) continue;
+                JsonObject discovered = event("command_literal");
+                discovered.addProperty("name", command);
+                if (command.contains(":")) discovered.addProperty("namespace", command.substring(0, command.indexOf(':')));
+                record(discovered);
+            }
         }
     }
 

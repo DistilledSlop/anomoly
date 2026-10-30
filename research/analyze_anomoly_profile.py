@@ -54,6 +54,8 @@ def analyze(path: Path) -> dict:
         "server": next((event.get("server") for event in events if event.get("type") == "join"), "unknown"),
         "brand": next((event.get("value") for event in reversed(events) if event.get("type") == "brand"), "unknown"),
         "observed_channels": sorted({event["id"] for event in events if event.get("type") == "custom_payload_channel"}),
+        "observed_command_namespaces": sorted({event["namespace"] for event in events if event.get("type") == "command_literal" and "namespace" in event}),
+        "observed_root_commands": sorted({event["name"] for event in events if event.get("type") == "command_literal"}),
         "duration_minutes": round(total_ticks / 1200, 2),
         "movement_samples": len(samples),
         "all_position_corrections": len(corrections),

@@ -6,6 +6,7 @@ import dev.anomoly.setting.BooleanSetting;
 import dev.anomoly.setting.FloatSetting;
 import dev.anomoly.setting.Setting;
 import dev.anomoly.setting.StringSetting;
+import dev.anomoly.modules.PluginInspector;
 import java.util.List;
 import java.util.Locale;
 import net.minecraft.client.gui.GuiGraphicsExtractor;
@@ -190,6 +191,9 @@ public final class FallbackClickGuiScreen extends Screen {
             graphics.text(font, "Brand: " + AnomolyClient.PROFILE.brand(), x, 140, 0xFFE2EAF0);
             graphics.text(font, "Position corrections: " + AnomolyClient.PROFILE.corrections(), x, 162, 0xFFE2EAF0);
             graphics.text(font, "Log: " + AnomolyClient.PROFILE.path(), x, 184, 0xFFAAC0D0);
+            PluginInspector plugins = AnomolyClient.MODULES.get(PluginInspector.class);
+            graphics.text(font, "Command namespaces: " + (plugins.enabled()
+                ? String.join(", ", plugins.namespaces()) : "Enable Plugins module"), x, 206, 0xFFAAC0D0);
         } else if (detail != null) {
             graphics.text(font, detail.name(), x, 16, 0xFF61EBC6);
             graphics.text(font, detail.description(), x, 76, 0xFFAAC0D0);

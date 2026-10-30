@@ -3,6 +3,7 @@
     "aimassist": {"status": "verified", "module": "AimAssist", "note": "In a local 26.3 multiplayer world, yaw/pitch changed from 0/0 to -14.04/11.72 while attack was held and a visible mob was within FOV. See docs/test-evidence/2026-10-30-local-gameplay.md."},
     "aimbot": {"status": "verified", "module": "Aimbot", "note": "In a local 26.3 multiplayer world, yaw/pitch changed from 0/0 to -26.57/10.82 toward a stationary visible mob, without an attack key press. See docs/test-evidence/2026-10-30-local-gameplay.md."},
     "antibot": {"status": "coded", "module": "AntiBot", "note": "Conservative player-list, entity-age, and optional invisibility filters shared by automatic combat modules; detection against a real anticheat decoy is unverified."},
+    "plugins": {"status": "coded", "module": "PluginInspector", "note": "Inventories root commands and namespaces already visible in the server command tree, with no extra packets; hidden commands cannot be seen."},
     "antiblind": {"status": "coded", "module": "AntiBlind"},
     "antinausea": {"status": "coded", "module": "AntiWobble"},
     "nopumpkin": {"status": "coded", "module": "NoPumpkin"},

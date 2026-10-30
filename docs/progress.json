@@ -1,9 +1,9 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 611,
+    "backlog": 610,
     "verified": 3,
-    "coded": 69
+    "coded": 70
   },
   "total": 683,
   "features": [
@@ -4511,9 +4511,9 @@
       "id": "plugins",
       "name": "Plugins",
       "category": "Exploit",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "PluginInspector",
+      "note": "Inventories root commands and namespaces already visible in the server command tree, with no extra packets; hidden commands cannot be seen.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/plugins.md"
     },
     {
