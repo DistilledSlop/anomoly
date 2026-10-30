@@ -1,0 +1,1246 @@
+FILE	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientAdvancements.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientAdvancements.java	ClientAdvancements	24
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientAdvancements.java	ClientAdvancements	<init>	2	33
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientAdvancements.java	ClientAdvancements	update	1	38
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientAdvancements.java	ClientAdvancements	progress	0	83
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientAdvancements.java	ClientAdvancements	tree	0	87
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientAdvancements.java	ClientAdvancements	setSelectedTab	2	91
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientAdvancements.java	ClientAdvancements	setListener	1	105
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientAdvancements.java	ClientAdvancements	get	1	113
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientAdvancements.java	ClientAdvancements.Listener	118
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientAdvancements.java	ClientAdvancements.Listener	onAdvancementsUpdated	0	119
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientAdvancements.java	ClientAdvancements.Listener	onAdvancementsCleared	0	121
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientAdvancements.java	ClientAdvancements.Listener	onSelectedTabChanged	1	123
+FILE	/tmp/mc26.3-client/net/minecraft/client/multiplayer/TransferState.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/TransferState.java	TransferState	7
+FILE	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ServerData.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ServerData.java	ServerData	19
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ServerData.java	ServerData	<init>	3	37
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ServerData.java	ServerData	write	0	43
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ServerData.java	ServerData	getResourcePackStatus	0	56
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ServerData.java	ServerData	setResourcePackStatus	1	60
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ServerData.java	ServerData	read	1	64
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ServerData.java	ServerData	getIconBytes	0	72
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ServerData.java	ServerData	setIconBytes	1	76
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ServerData.java	ServerData	isLan	0	80
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ServerData.java	ServerData	isRealm	0	84
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ServerData.java	ServerData	type	0	88
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ServerData.java	ServerData	hasAcceptedCodeOfConduct	1	92
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ServerData.java	ServerData	acceptCodeOfConduct	1	96
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ServerData.java	ServerData	clearCodeOfConduct	0	100
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ServerData.java	ServerData	copyNameIconFrom	1	104
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ServerData.java	ServerData	copyFrom	1	110
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ServerData.java	ServerData	state	0	116
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ServerData.java	ServerData	setState	1	120
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ServerData.java	ServerData	validateIcon	1	124
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ServerData.java	ServerData.ServerPackStatus	139
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ServerData.java	ServerData.ServerPackStatus	<init>	1	155
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ServerData.java	ServerData.ServerPackStatus	getName	0	159
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ServerData.java	ServerData.State	164
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ServerData.java	ServerData.Type	172
+FILE	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientChunkCache.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientChunkCache.java	ClientChunkCache	28
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientChunkCache.java	ClientChunkCache	<init>	2	35
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientChunkCache.java	ClientChunkCache	getLightEngine	0	42
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientChunkCache.java	ClientChunkCache	isValidChunk	3	46
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientChunkCache.java	ClientChunkCache	drop	1	55
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientChunkCache.java	ClientChunkCache	getChunk	4	65
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientChunkCache.java	ClientChunkCache	getLevel	0	76
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientChunkCache.java	ClientChunkCache	replaceBiomes	3	80
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientChunkCache.java	ClientChunkCache	replaceWithPacketData	3	94
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientChunkCache.java	ClientChunkCache	tick	2	116
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientChunkCache.java	ClientChunkCache	updateViewCenter	2	119
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientChunkCache.java	ClientChunkCache	updateViewRadius	1	124
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientChunkCache.java	ClientChunkCache	calculateStorageRange	1	146
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientChunkCache.java	ClientChunkCache	gatherStats	0	150
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientChunkCache.java	ClientChunkCache	getLoadedChunksCount	0	154
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientChunkCache.java	ClientChunkCache	onLightUpdate	2	158
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientChunkCache.java	ClientChunkCache	addedEmptySections	0	162
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientChunkCache.java	ClientChunkCache	removedEmptySections	0	166
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientChunkCache.java	ClientChunkCache	addedLoadedChunks	0	170
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientChunkCache.java	ClientChunkCache	removedLoadedChunks	0	174
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientChunkCache.java	ClientChunkCache	flipUpdateTrackingSets	0	178
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientChunkCache.java	ClientChunkCache	onSectionEmptinessChanged	4	186
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientChunkCache.java	ClientChunkCache.Storage	190
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientChunkCache.java	ClientChunkCache.Storage	<init>	1	204
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientChunkCache.java	ClientChunkCache.Storage	getIndex	2	217
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientChunkCache.java	ClientChunkCache.Storage	replace	2	221
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientChunkCache.java	ClientChunkCache.Storage	drop	2	235
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientChunkCache.java	ClientChunkCache.Storage	onSectionEmptinessChanged	4	244
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientChunkCache.java	ClientChunkCache.Storage	onChunkRemoved	1	255
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientChunkCache.java	ClientChunkCache.Storage	onChunkAdded	1	267
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientChunkCache.java	ClientChunkCache.Storage	refreshEmptySections	1	285
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientChunkCache.java	ClientChunkCache.Storage	markSectionEmpty	1	300
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientChunkCache.java	ClientChunkCache.Storage	markSectionNotEmpty	1	305
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientChunkCache.java	ClientChunkCache.Storage	inRange	2	310
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientChunkCache.java	ClientChunkCache.Storage	getChunk	1	314
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientChunkCache.java	ClientChunkCache.Storage	dumpChunks	1	318
+FILE	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ChunkBatchSizeCalculator.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ChunkBatchSizeCalculator.java	ChunkBatchSizeCalculator	6
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ChunkBatchSizeCalculator.java	ChunkBatchSizeCalculator	onBatchStart	0	13
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ChunkBatchSizeCalculator.java	ChunkBatchSizeCalculator	onBatchFinished	1	17
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ChunkBatchSizeCalculator.java	ChunkBatchSizeCalculator	getDesiredChunksPerTick	0	27
+FILE	/tmp/mc26.3-client/net/minecraft/client/multiplayer/CacheSlot.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/CacheSlot.java	CacheSlot	6
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/CacheSlot.java	CacheSlot	<init>	1	11
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/CacheSlot.java	CacheSlot	compute	1	15
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/CacheSlot.java	CacheSlot	clear	0	27
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/CacheSlot.java	CacheSlot.Cleaner	32
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/CacheSlot.java	CacheSlot.Cleaner	registerForCleaning	1	34
+FILE	/tmp/mc26.3-client/net/minecraft/client/multiplayer/RegistryDataCollector.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/RegistryDataCollector.java	RegistryDataCollector	34
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/RegistryDataCollector.java	RegistryDataCollector	appendContents	2	39
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/RegistryDataCollector.java	RegistryDataCollector	appendTags	1	47
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/RegistryDataCollector.java	RegistryDataCollector	resolveRegistryTags	3	55
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/RegistryDataCollector.java	RegistryDataCollector	loadNewElementsAndTags	3	62
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/RegistryDataCollector.java	RegistryDataCollector	addCrashDetails	3	110
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/RegistryDataCollector.java	RegistryDataCollector	loadOnlyTags	3	135
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/RegistryDataCollector.java	RegistryDataCollector	updateComponents	2	143
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/RegistryDataCollector.java	RegistryDataCollector	collectGameRegistries	3	151
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/RegistryDataCollector.java	RegistryDataCollector.ContentsCollector	170
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/RegistryDataCollector.java	RegistryDataCollector.ContentsCollector	append	2	173
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/RegistryDataCollector.java	RegistryDataCollector.TagCollector	178
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/RegistryDataCollector.java	RegistryDataCollector.TagCollector	append	2	181
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/RegistryDataCollector.java	RegistryDataCollector.TagCollector	forEach	1	185
+FILE	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber	28
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber	<init>	2	34
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber	addFlag	3	39
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber	requestedSubscriptions	0	45
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber	clear	0	69
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber	tick	1	74
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber	onSubscriptionsChanged	1	88
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber	initializeSubscriptions	1	94
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber	getValueMaps	1	100
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber	getValueMap	2	104
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber	getValue	3	111
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber	createDebugValueAccess	1	116
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber.<anonymous>	117
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber.<anonymous>	forEachChunk	2	118
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber.<anonymous>	getChunkValue	2	122
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber.<anonymous>	forEachBlock	2	126
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber.<anonymous>	getBlockValue	2	130
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber.<anonymous>	forEachEntity	2	134
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber.<anonymous>	getEntityValue	2	143
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber.<anonymous>	forEachEvent	2	147
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber	updateChunk	3	162
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber	updateBlock	3	166
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber	updateEntity	3	170
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber	pushEvent	2	174
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber	updateMap	4	181
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber	forEachValue	3	188
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber	dropLevel	0	195
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber	dropChunk	1	200
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber	dropEntity	1	208
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber	entities	0	216
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber	blocks	0	220
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber	chunks	0	224
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber.ValueMap	228
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber.ValueMap	removeValues	1	231
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber.ValueMap	removeKey	1	235
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber.ValueMap	removeKeys	1	239
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber.ValueMap	getValue	1	243
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber.ValueMap	apply	3	248
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber.ValueMap	forEach	1	256
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber.ValueMapType	261
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber.ValueMapType	get	1	263
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber.ValueMaps	266
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber.ValueMaps	purgeExpired	1	272
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber.ValueMaps	dropChunkAndBlocks	1	280
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber.ValueWrapper	286
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientDebugSubscriber.java	ClientDebugSubscriber.ValueWrapper	hasExpired	1	289
+FILE	/tmp/mc26.3-client/net/minecraft/client/multiplayer/KnownPacksManager.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/KnownPacksManager.java	KnownPacksManager	17
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/KnownPacksManager.java	KnownPacksManager	<init>	0	21
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/KnownPacksManager.java	KnownPacksManager	trySelectingPacks	1	31
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/KnownPacksManager.java	KnownPacksManager	createResourceManager	0	47
+FILE	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	149
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	handleBlockChangedAck	1	192
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	onBlockEntityAdded	1	200
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	getGloballyRenderedBlockEntities	0	207
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	setServerVerifiedBlockState	3	211
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	syncBlockState	3	217
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	getBlockStatePredictionHandler	0	228
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	setBlock	4	232
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	<init>	10	246
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	addEnvironmentAttributeLayers	1	273
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	queueLightUpdate	1	283
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	pollLightUpdates	0	287
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	endFlashState	0	301
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	tick	1	305
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	tickWeatherEffects	0	362
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	getPrecipitationAt	1	416
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	removeBlockBreakingProgress	0	425
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	removeProgress	1	441
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	destructionProgress	0	450
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	tickTime	0	454
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	setTimeFromServer	1	460
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	entitiesForRendering	0	464
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	tickEntities	0	468
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	isTickingEntity	1	476
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	shouldTickDeath	1	480
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	tickNonPassenger	1	484
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	tickPassenger	2	495
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	update	0	508
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	unload	1	517
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	onChunkLoaded	1	523
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	clearTintCaches	0	528
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	hasChunk	2	532
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	getEntityCount	0	536
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	addEntity	1	540
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	removeEntity	2	545
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	getPushableEntities	2	553
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	getEntity	1	560
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	disconnect	1	564
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	animateTick	3	569
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	getMarkerParticleTarget	0	581
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	doAnimateTick	7	593
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	trySpawnDripParticles	4	634
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	spawnParticle	4	659
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	spawnFluidParticle	6	670
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	fillReportDetails	1	674
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	playSeededSound	9	685
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	playSeededSound	7	701
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	playLocalSound	5	715
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	playPlayerSound	4	719
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	playLocalSound	8	725
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	playSound	9	738
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	createFireworks	8	759
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	sendPacketToServer	1	778
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	getWorldBorder	0	782
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	recipeAccess	0	786
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	tickRateManager	0	790
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	getRelativeTickSpeed	0	794
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	clockManager	0	799
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	environmentAttributes	0	803
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	getBlockTicks	0	807
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	getFluidTicks	0	811
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	getChunkSource	0	815
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	getMapData	1	819
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	overrideMapData	2	823
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	getScoreboard	0	827
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	sendBlockUpdated	4	831
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	setBlocksDirty	3	835
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	setSectionDirtyWithNeighbors	3	839
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	setSectionRangeDirty	6	843
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	destroyBlockProgress	3	849
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	globalLevelEvent	3	872
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	levelEvent	4	876
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	addParticle	7	890
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	addParticle	9	894
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	addAlwaysVisibleParticle	7	908
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	addAlwaysVisibleParticle	8	914
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	doAddParticle	9	927
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	calculateParticleLevel	1	960
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	players	0	973
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	dragonParts	0	977
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	getUncachedNoiseBiome	3	981
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	getSkyFlashTime	0	985
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	setSkyFlashTime	1	989
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	cardinalLighting	0	993
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	getBlockTint	2	998
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	calculateBlockTint	2	1004
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	setRespawnData	1	1028
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	getRespawnData	0	1032
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	toString	0	1036
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	getLevelData	0	1041
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	gameEvent	3	1045
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	getAllMapData	0	1048
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	addMapData	1	1052
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	getEntities	0	1056
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	gatherChunkSourceStats	0	1060
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	addDestroyBlockEffect	2	1064
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	addBreakingBlockEffects	3	1097
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	addBreakingParticles	3	1110
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	playBreakingSound	2	1146
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	setServerSimulationDistance	1	1157
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	getServerSimulationDistance	0	1161
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	enabledFeatures	0	1165
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	explode	13	1169
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	getSeaLevel	0	1186
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	getClientLeafTintColor	1	1190
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	registerForCleaning	1	1196
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel	trackExplosionEffects	4	1201
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel.ClientLevelData	1205
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel.ClientLevelData	<init>	3	1213
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel.ClientLevelData	getRespawnData	0	1219
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel.ClientLevelData	getGameTime	0	1223
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel.ClientLevelData	setGameTime	1	1227
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel.ClientLevelData	setSpawn	1	1231
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel.ClientLevelData	isHardcore	0	1235
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel.ClientLevelData	getDifficulty	0	1239
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel.ClientLevelData	isDifficultyLocked	0	1243
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel.ClientLevelData	fillCrashReportCategory	2	1247
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel.ClientLevelData	setDifficulty	1	1251
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel.ClientLevelData	setDifficultyLocked	1	1255
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel.ClientLevelData	getHorizonHeight	1	1259
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel.ClientLevelData	voidDarknessOnsetRange	0	1263
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel.EntityCallbacks	1268
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel.EntityCallbacks	onCreated	1	1269
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel.EntityCallbacks	onDestroyed	1	1272
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel.EntityCallbacks	onTickingStart	1	1275
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel.EntityCallbacks	onTickingEnd	1	1279
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel.EntityCallbacks	onTrackingStart	1	1283
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel.EntityCallbacks	onTrackingEnd	1	1295
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientLevel.java	ClientLevel.EntityCallbacks	onSectionChange	1	1308
+FILE	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientRegistryLayer.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientRegistryLayer.java	ClientRegistryLayer	9
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientRegistryLayer.java	ClientRegistryLayer	createRegistryAccess	0	16
+FILE	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	362
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener.<anonymous>	377
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener.<anonymous>	createLiteral	1	378
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener.<anonymous>	createArgument	3	382
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener.<anonymous>	configure	3	393
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	<init>	3	448
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	getSuggestionsProvider	0	474
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	close	0	478
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	clearLevel	0	484
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	clearCacheSlots	0	490
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	recipes	0	501
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleLogin	1	505
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleAddEntity	1	579
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	createEntityFromPacket	1	603
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	postAddEntitySoundInstance	1	618
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleSetEntityMotion	1	634
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleSetEntityData	1	642
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleEntityPositionSync	1	650
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleTeleportEntity	1	677
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleTickingState	1	700
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleTickingStep	1	709
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleSetHeldSlot	1	717
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleMoveEntity	1	724
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleMinecartAlongTrack	1	753
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleRotateMob	1	762
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleRemoveEntities	1	770
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleMovePlayer	1	786
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	setValuesFromPositionPacket	4	800
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleRotatePlayer	1	822
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleChunkBlocksUpdate	1	834
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleLevelChunkWithLight	1	839
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleChunksBiomes	1	854
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	enableChunkLight	3	876
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleForgetLevelChunk	1	890
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	queueLightRemoval	1	897
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleBlockUpdate	1	915
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleConfigurationStart	1	920
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleTakeItemEntity	1	954
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleSystemChat	1	1007
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handlePlayerChat	1	1016
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleDisguisedChat	1	1056
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleDeleteChat	1	1061
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleAnimate	1	1074
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleHurtAnimation	1	1089
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleSwingAnimation	1	1097
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleSetTime	1	1104
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleSetSpawn	1	1113
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleSetEntityPassengersPacket	1	1118
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleAddTransientBlockPacket	1	1152
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleEntityLinkPacket	1	1159
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	findTotem	1	1166
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleEntityEvent	1	1177
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleDamageEvent	1	1202
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleSetHealth	1	1210
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleSetExperience	1	1217
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleRespawn	1	1222
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	determineLevelLoadingReason	3	1316
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleExplosion	1	1331
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleMountScreenOpen	1	1354
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleOpenScreen	1	1371
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleContainerSetSlot	1	1376
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleSetCursorItem	1	1408
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleSetPlayerInventory	1	1416
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleContainerContent	1	1422
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleOpenSignEditor	1	1432
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleBlockEntityData	1	1442
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleContainerSetData	1	1467
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleSetEquipment	1	1475
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleContainerClose	1	1482
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleBlockEvent	1	1487
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleBlockDestruction	1	1492
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleGameEvent	1	1497
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	openDemoIntroScreen	1	1565
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	startWaitingForNewLevel	3	1598
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleMapItemData	1	1612
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleLevelEvent	1	1625
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleUpdateAdvancementsPacket	1	1634
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleSelectAdvancementsTab	1	1639
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleCommands	1	1650
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleStopSoundEvent	1	1655
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleCommandSuggestions	1	1660
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleUpdateRecipes	1	1665
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleLookAt	1	1670
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleTagQueryPacket	1	1678
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleAwardStats	1	1685
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleRecipeBookAdd	1	1699
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleRecipeBookRemove	1	1720
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleRecipeBookSettings	1	1731
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	refreshRecipeBook	1	1738
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleUpdateMobEffect	1	1746
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	updateTags	2	1761
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleUpdateTags	1	1766
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handlePlayerCombatEnd	1	1778
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handlePlayerCombatEnter	1	1781
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handlePlayerCombatKill	1	1784
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleChangeDifficulty	1	1796
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleSetCamera	1	1805
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleInitializeBorder	1	1813
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleSetBorderCenter	1	1829
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleSetBorderLerpSize	1	1834
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleSetBorderSize	1	1839
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleSetBorderWarningDistance	1	1844
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleSetBorderWarningDelay	1	1849
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleTitlesClear	1	1854
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleServerData	1	1862
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleCustomChatCompletions	1	1871
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	setActionBarText	1	1876
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	setTitleText	1	1881
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	setSubtitleText	1	1886
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	setTitlesAnimation	1	1891
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleTabListCustomisation	1	1896
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleRemoveMobEffect	1	1902
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handlePlayerInfoRemove	1	1909
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handlePlayerInfoUpdate	1	1921
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	applyPlayerInfoUpdate	3	1943
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	initializeChatSession	2	1980
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	enforcesSecureChat	0	2002
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	onlineMode	0	2006
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handlePlayerAbilities	1	2010
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleGameRuleValues	1	2021
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleSoundEvent	1	2028
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleSoundEntityEvent	1	2045
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleBossUpdate	1	2055
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleItemCooldown	1	2060
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleMoveVehicle	1	2069
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleOpenBook	1	2088
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleCustomPayload	1	2097
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleUnknownCustomPayload	1	2102
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleAddObjective	1	2106
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleSetScore	1	2128
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleResetScore	1	2143
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleSetDisplayObjective	1	2159
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleSetPlayerTeamPacket	1	2166
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleParticleEvent	1	2206
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	tryAddParticle	7	2249
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleUpdateAttributes	1	2261
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handlePlaceRecipe	1	2287
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleLightUpdatePacket	1	2297
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	applyLightData	4	2305
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleMerchantOffers	1	2318
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleSetChunkCacheRadius	1	2330
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleSetSimulationDistance	1	2337
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleSetChunkCacheCenter	1	2343
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleBlockChangedAck	1	2348
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleBundlePacket	1	2353
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleProjectilePowerPacket	1	2361
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleChunkBatchStart	1	2368
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleChunkBatchFinished	1	2372
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleDebugSample	1	2377
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handlePongResponse	1	2381
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleTestInstanceBlockStatus	1	2385
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleWaypoint	1	2392
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleDebugChunkValue	1	2397
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleDebugBlockValue	1	2402
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleDebugEntityValue	1	2407
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleDebugEvent	1	2415
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleGameTestHighlightPos	1	2420
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	handleLowDiskSpaceWarning	1	2425
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	readSectionList	8	2429
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	getConnection	0	2452
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	isAcceptingMessages	0	2456
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	getListedOnlinePlayers	0	2460
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	getOnlinePlayers	0	2464
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	getOnlinePlayerIds	0	2468
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	getPlayerInfo	1	2472
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	getPlayerInfo	1	2476
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	getSeenPlayers	0	2486
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	getPlayerInfoIgnoreCase	1	2490
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	getLocalGameProfile	0	2500
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	getAdvancements	0	2504
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	getCommands	0	2508
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	getLevel	0	2512
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	getDebugQueryHandler	0	2516
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	levels	0	2520
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	registryAccess	0	2524
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	markMessageAsProcessed	2	2528
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	sendChatAcknowledgement	0	2534
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	sendChat	1	2541
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	sendCommand	1	2549
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	sendUnattendedCommand	2	2565
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	verifyCommand	1	2582
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	isValidCommand	1	2598
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	openSendConfirmationWindow	4	2602
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	openCommandSendConfirmationWindow	3	2623
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	openSignedCommandSendConfirmationWindow	3	2630
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	broadcastClientInformation	1	2644
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	tick	0	2651
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	notifyPlayerLoaded	0	2680
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	getPlayerCompiledSectionCallback	0	2687
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	prepareKeyPair	0	2691
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	setKeyPair	1	2695
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	createDialogAccess	0	2705
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener.<anonymous>	2707
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener.<anonymous>	runCommand	2	2708
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	getServerData	0	2715
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	enabledFeatures	0	2719
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	isFeatureEnabled	1	2723
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	scoreboard	0	2727
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	updateSearchTrees	0	2731
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	searchTrees	0	2735
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	registerForCleaning	1	2739
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	decoratedHashOpsGenenerator	0	2743
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	getWaypointManager	0	2747
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	createDebugValueAccess	0	2751
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	hasClientLoaded	0	2755
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	setClientLoaded	1	2759
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener	clockManager	0	2763
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientPacketListener.java	ClientPacketListener.CommandCheckResult	2767
+FILE	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl	83
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl	<init>	3	100
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl	serverLinks	0	114
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl	onPacketError	2	118
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl	createDisconnectionInfo	2	125
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl	storeDisconnectionReport	2	131
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl	shouldHandleMessage	1	141
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl	handleKeepAlive	1	147
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl	handlePing	1	151
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl	handleCustomPayload	1	156
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl	handleCustomPayload	1	169
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl	handleResourcePackPush	1	171
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl	handleResourcePackPop	1	189
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl	handlePostEffects	1	194
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl	preparePackPrompt	2	203
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl	parseResourcePackUrl	1	207
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl	handleRequestCookie	1	217
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl	handleStoreCookie	1	222
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl	handleCustomReportDetails	1	227
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl	handleServerLinks	1	232
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl	handleShowDialog	1	249
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl	createDialogAccess	0	254
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl	showDialog	2	256
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl	showDialog	3	260
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl	handleClearDialog	1	289
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl	clearDialog	0	294
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl	handleTransfer	1	304
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl	handleDisconnect	1	325
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl	sendDeferredPackets	0	329
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl	send	1	343
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl	onDisconnect	1	347
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl	fillListenerSpecificCrashDetails	2	353
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl	createDisconnectScreen	1	363
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl	serverBrand	0	372
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl	sendWhen	3	376
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl	addOrUpdatePackPrompt	5	384
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl.CommonDialogAccess	393
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl.CommonDialogAccess	disconnect	1	394
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl.CommonDialogAccess	openDialog	2	400
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl.CommonDialogAccess	sendCustomAction	2	405
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl.CommonDialogAccess	serverLinks	0	410
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl.DeferredPacket	416
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl.PackConfirmScreen	419
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl.PackConfirmScreen	<init>	5	423
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl.PackConfirmScreen	update	6	471
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientCommonPacketListenerImpl.java	ClientCommonPacketListenerImpl.PackConfirmScreen.PendingRequest	483
+FILE	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientSuggestionProvider.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientSuggestionProvider.java	ClientSuggestionProvider	37
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientSuggestionProvider.java	ClientSuggestionProvider	<init>	3	45
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientSuggestionProvider.java	ClientSuggestionProvider	getOnlinePlayerNames	0	51
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientSuggestionProvider.java	ClientSuggestionProvider	getCustomTabSuggestions	0	61
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientSuggestionProvider.java	ClientSuggestionProvider	getSelectedEntities	0	71
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientSuggestionProvider.java	ClientSuggestionProvider	getAllTeams	0	77
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientSuggestionProvider.java	ClientSuggestionProvider	getAvailableSounds	0	81
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientSuggestionProvider.java	ClientSuggestionProvider	getAvailablePostEffects	0	85
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientSuggestionProvider.java	ClientSuggestionProvider	permissions	0	89
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientSuggestionProvider.java	ClientSuggestionProvider	suggestRegistryElements	5	93
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientSuggestionProvider.java	ClientSuggestionProvider	customSuggestion	1	106
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientSuggestionProvider.java	ClientSuggestionProvider	prettyPrint	1	117
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientSuggestionProvider.java	ClientSuggestionProvider	prettyPrint	1	121
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientSuggestionProvider.java	ClientSuggestionProvider	getRelevantCoordinates	0	125
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientSuggestionProvider.java	ClientSuggestionProvider	getAbsoluteCoordinates	0	135
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientSuggestionProvider.java	ClientSuggestionProvider	levels	0	145
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientSuggestionProvider.java	ClientSuggestionProvider	registryAccess	0	149
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientSuggestionProvider.java	ClientSuggestionProvider	enabledFeatures	0	153
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientSuggestionProvider.java	ClientSuggestionProvider	completeCustomSuggestions	2	157
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientSuggestionProvider.java	ClientSuggestionProvider	modifyCustomCompletions	2	165
+FILE	/tmp/mc26.3-client/net/minecraft/client/multiplayer/PingDebugMonitor.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/PingDebugMonitor.java	PingDebugMonitor	8
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/PingDebugMonitor.java	PingDebugMonitor	<init>	2	12
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/PingDebugMonitor.java	PingDebugMonitor	tick	0	17
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/PingDebugMonitor.java	PingDebugMonitor	onPongReceived	1	21
+FILE	/tmp/mc26.3-client/net/minecraft/client/multiplayer/CommonListenerCookie.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/CommonListenerCookie.java	CommonListenerCookie	15
+FILE	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientExplosionTracker.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientExplosionTracker.java	ClientExplosionTracker	14
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientExplosionTracker.java	ClientExplosionTracker	track	4	18
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientExplosionTracker.java	ClientExplosionTracker	tick	1	24
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientExplosionTracker.java	ClientExplosionTracker	addParticle	2	40
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientExplosionTracker.java	ClientExplosionTracker.ExplosionInfo	56
+FILE	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientConfigurationPacketListenerImpl.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientConfigurationPacketListenerImpl.java	ClientConfigurationPacketListenerImpl	46
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientConfigurationPacketListenerImpl.java	ClientConfigurationPacketListenerImpl	<init>	3	58
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientConfigurationPacketListenerImpl.java	ClientConfigurationPacketListenerImpl	isAcceptingMessages	0	67
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientConfigurationPacketListenerImpl.java	ClientConfigurationPacketListenerImpl	handleCustomPayload	1	71
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientConfigurationPacketListenerImpl.java	ClientConfigurationPacketListenerImpl	handleUnknownCustomPayload	1	76
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientConfigurationPacketListenerImpl.java	ClientConfigurationPacketListenerImpl	handleRegistryData	1	80
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientConfigurationPacketListenerImpl.java	ClientConfigurationPacketListenerImpl	handleUpdateTags	1	85
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientConfigurationPacketListenerImpl.java	ClientConfigurationPacketListenerImpl	handleEnabledFeatures	1	90
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientConfigurationPacketListenerImpl.java	ClientConfigurationPacketListenerImpl	handleSelectKnownPacks	1	94
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientConfigurationPacketListenerImpl.java	ClientConfigurationPacketListenerImpl	handleResetChat	1	104
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientConfigurationPacketListenerImpl.java	ClientConfigurationPacketListenerImpl	runWithResources	1	108
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientConfigurationPacketListenerImpl.java	ClientConfigurationPacketListenerImpl	handleCodeOfConduct	1	137
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientConfigurationPacketListenerImpl.java	ClientConfigurationPacketListenerImpl	handleConfigurationFinished	1	160
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientConfigurationPacketListenerImpl.java	ClientConfigurationPacketListenerImpl.<anonymous>	195
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientConfigurationPacketListenerImpl.java	ClientConfigurationPacketListenerImpl.<anonymous>	hasInfiniteMaterials	0	196
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientConfigurationPacketListenerImpl.java	ClientConfigurationPacketListenerImpl.<anonymous>	canUseCommandBlocks	0	200
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientConfigurationPacketListenerImpl.java	ClientConfigurationPacketListenerImpl	filterRegistries	2	206
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientConfigurationPacketListenerImpl.java	ClientConfigurationPacketListenerImpl	tick	0	211
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientConfigurationPacketListenerImpl.java	ClientConfigurationPacketListenerImpl	onDisconnect	1	215
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientConfigurationPacketListenerImpl.java	ClientConfigurationPacketListenerImpl	createDialogAccess	0	221
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientConfigurationPacketListenerImpl.java	ClientConfigurationPacketListenerImpl.<anonymous>	223
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientConfigurationPacketListenerImpl.java	ClientConfigurationPacketListenerImpl.<anonymous>	runCommand	2	224
+FILE	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientHandshakePacketListenerImpl.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientHandshakePacketListenerImpl.java	ClientHandshakePacketListenerImpl	57
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientHandshakePacketListenerImpl.java	ClientHandshakePacketListenerImpl	<init>	9	74
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientHandshakePacketListenerImpl.java	ClientHandshakePacketListenerImpl	switchState	1	99
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientHandshakePacketListenerImpl.java	ClientHandshakePacketListenerImpl	handleHello	1	110
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientHandshakePacketListenerImpl.java	ClientHandshakePacketListenerImpl	setEncryption	3	148
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientHandshakePacketListenerImpl.java	ClientHandshakePacketListenerImpl	authenticateServer	1	153
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientHandshakePacketListenerImpl.java	ClientHandshakePacketListenerImpl	handleLoginFinished	1	170
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientHandshakePacketListenerImpl.java	ClientHandshakePacketListenerImpl	onDisconnect	1	203
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientHandshakePacketListenerImpl.java	ClientHandshakePacketListenerImpl	isAcceptingMessages	0	212
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientHandshakePacketListenerImpl.java	ClientHandshakePacketListenerImpl	handleDisconnect	1	216
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientHandshakePacketListenerImpl.java	ClientHandshakePacketListenerImpl	handleCompression	1	220
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientHandshakePacketListenerImpl.java	ClientHandshakePacketListenerImpl	handleCustomQuery	1	226
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientHandshakePacketListenerImpl.java	ClientHandshakePacketListenerImpl	setMinigameName	1	231
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientHandshakePacketListenerImpl.java	ClientHandshakePacketListenerImpl	handleRequestCookie	1	235
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientHandshakePacketListenerImpl.java	ClientHandshakePacketListenerImpl	fillListenerSpecificCrashDetails	2	239
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientHandshakePacketListenerImpl.java	ClientHandshakePacketListenerImpl.State	245
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientHandshakePacketListenerImpl.java	ClientHandshakePacketListenerImpl.State	<init>	2	254
+FILE	/tmp/mc26.3-client/net/minecraft/client/multiplayer/PlayerInfo.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/PlayerInfo.java	PlayerInfo	15
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/PlayerInfo.java	PlayerInfo	<init>	2	26
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/PlayerInfo.java	PlayerInfo	createSkinLookup	1	31
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/PlayerInfo.java	PlayerInfo	getProfile	0	37
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/PlayerInfo.java	PlayerInfo	getChatSession	0	41
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/PlayerInfo.java	PlayerInfo	getMessageValidator	0	45
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/PlayerInfo.java	PlayerInfo	hasVerifiableChat	0	49
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/PlayerInfo.java	PlayerInfo	setChatSession	1	53
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/PlayerInfo.java	PlayerInfo	clearChatSession	1	58
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/PlayerInfo.java	PlayerInfo	fallbackMessageValidator	1	63
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/PlayerInfo.java	PlayerInfo	getGameMode	0	67
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/PlayerInfo.java	PlayerInfo	setGameMode	1	71
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/PlayerInfo.java	PlayerInfo	getLatency	0	75
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/PlayerInfo.java	PlayerInfo	setLatency	1	79
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/PlayerInfo.java	PlayerInfo	getSkin	0	83
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/PlayerInfo.java	PlayerInfo	getTeam	0	91
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/PlayerInfo.java	PlayerInfo	setTabListDisplayName	1	95
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/PlayerInfo.java	PlayerInfo	getTabListDisplayName	0	99
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/PlayerInfo.java	PlayerInfo	setShowHat	1	103
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/PlayerInfo.java	PlayerInfo	showHat	0	107
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/PlayerInfo.java	PlayerInfo	setTabListOrder	1	111
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/PlayerInfo.java	PlayerInfo	getTabListOrder	0	115
+FILE	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	74
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	<init>	2	90
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	adjustPlayer	1	95
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	setLocalMode	2	99
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	setLocalMode	1	105
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	canHurtPlayer	0	118
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	destroyBlock	1	122
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	startDestroyBlock	2	156
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	stopDestroyBlock	0	218
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	continueDestroyBlock	2	234
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	startPrediction	2	290
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	tick	0	298
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	sameDestroyTarget	1	307
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	ensureHasSentCarriedItem	0	312
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	useItemOn	3	320
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	performUseItemOn	3	334
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	useItem	2	385
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	createPlayer	4	418
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	createPlayer	6	422
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	attack	2	435
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	spectate	1	445
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	spectatorNoAction	0	449
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	interact	4	453
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	handleContainerInput	5	460
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	handlePlaceRecipe	3	494
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	handleInventoryButtonClick	2	498
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	handleCreativeModeItemAdd	2	502
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	handleCreativeModeItemDrop	1	508
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	releaseUsingItem	1	520
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	piercingAttack	2	526
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	hasExperience	0	535
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	hasMissTime	0	539
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	isServerControlledInventory	0	543
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	isSpectator	0	547
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	getPreviousPlayerMode	0	551
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	getPlayerMode	0	555
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	isDestroying	0	559
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	getDestroyStage	0	563
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	handlePickItemFromBlock	2	567
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	handlePickItemFromEntity	2	571
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	handleSlotStateChanged	3	575
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/MultiPlayerGameMode.java	MultiPlayerGameMode	dropItem	2	579
+FILE	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientRecipeContainer.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientRecipeContainer.java	ClientRecipeContainer	10
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientRecipeContainer.java	ClientRecipeContainer	<init>	2	14
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientRecipeContainer.java	ClientRecipeContainer	propertySet	1	19
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ClientRecipeContainer.java	ClientRecipeContainer	stonecutterRecipes	0	23
+FILE	/tmp/mc26.3-client/net/minecraft/client/multiplayer/AccountProfileKeyPairManager.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/AccountProfileKeyPairManager.java	AccountProfileKeyPairManager	34
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/AccountProfileKeyPairManager.java	AccountProfileKeyPairManager	<init>	3	43
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/AccountProfileKeyPairManager.java	AccountProfileKeyPairManager	prepareKeyPair	0	48
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/AccountProfileKeyPairManager.java	AccountProfileKeyPairManager	shouldRefreshKeyPair	0	55
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/AccountProfileKeyPairManager.java	AccountProfileKeyPairManager	readOrFetchProfileKeyPair	1	62
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/AccountProfileKeyPairManager.java	AccountProfileKeyPairManager	readProfileKeyPair	0	84
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/AccountProfileKeyPairManager.java	AccountProfileKeyPairManager	writeProfileKeyPair	1	97
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/AccountProfileKeyPairManager.java	AccountProfileKeyPairManager	fetchProfileKeyPair	1	118
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/AccountProfileKeyPairManager.java	AccountProfileKeyPairManager	parsePublicKey	1	130
+FILE	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ProfileKeyPairManager.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ProfileKeyPairManager.java	ProfileKeyPairManager	10
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ProfileKeyPairManager.java	ProfileKeyPairManager.<anonymous>	11
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ProfileKeyPairManager.java	ProfileKeyPairManager.<anonymous>	prepareKeyPair	0	12
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ProfileKeyPairManager.java	ProfileKeyPairManager.<anonymous>	shouldRefreshKeyPair	0	17
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ProfileKeyPairManager.java	ProfileKeyPairManager	create	3	23
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ProfileKeyPairManager.java	ProfileKeyPairManager	prepareKeyPair	0	27
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/ProfileKeyPairManager.java	ProfileKeyPairManager	shouldRefreshKeyPair	0	29
+FILE	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/AddressCheck.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/AddressCheck.java	AddressCheck	10
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/AddressCheck.java	AddressCheck	isAllowed	1	11
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/AddressCheck.java	AddressCheck	isAllowed	1	13
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/AddressCheck.java	AddressCheck	createFromService	0	15
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/AddressCheck.java	AddressCheck.<anonymous>	20
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/AddressCheck.java	AddressCheck.<anonymous>	isAllowed	1	21
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/AddressCheck.java	AddressCheck.<anonymous>	isAllowed	1	28
+FILE	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/ServerNameResolver.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/ServerNameResolver.java	ServerNameResolver	6
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/ServerNameResolver.java	ServerNameResolver	<init>	3	14
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/ServerNameResolver.java	ServerNameResolver	resolveAddress	1	21
+FILE	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/ResolvedServerAddress.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/ResolvedServerAddress.java	ResolvedServerAddress	5
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/ResolvedServerAddress.java	ResolvedServerAddress	getHostName	0	6
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/ResolvedServerAddress.java	ResolvedServerAddress	getHostIp	0	8
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/ResolvedServerAddress.java	ResolvedServerAddress	getPort	0	10
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/ResolvedServerAddress.java	ResolvedServerAddress	asInetSocketAddress	0	12
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/ResolvedServerAddress.java	ResolvedServerAddress	from	1	14
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/ResolvedServerAddress.java	ResolvedServerAddress.<anonymous>	15
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/ResolvedServerAddress.java	ResolvedServerAddress.<anonymous>	getHostName	0	16
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/ResolvedServerAddress.java	ResolvedServerAddress.<anonymous>	getHostIp	0	21
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/ResolvedServerAddress.java	ResolvedServerAddress.<anonymous>	getPort	0	26
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/ResolvedServerAddress.java	ResolvedServerAddress.<anonymous>	asInetSocketAddress	0	31
+FILE	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/ServerAddressResolver.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/ServerAddressResolver.java	ServerAddressResolver	10
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/ServerAddressResolver.java	ServerAddressResolver	resolve	1	23
+FILE	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/ServerRedirectHandler.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/ServerRedirectHandler.java	ServerRedirectHandler	12
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/ServerRedirectHandler.java	ServerRedirectHandler	lookupRedirect	1	17
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/ServerRedirectHandler.java	ServerRedirectHandler	createDnsSrvRedirectHandler	0	19
+FILE	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/ServerAddress.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/ServerAddress.java	ServerAddress	9
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/ServerAddress.java	ServerAddress	<init>	2	14
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/ServerAddress.java	ServerAddress	<init>	1	18
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/ServerAddress.java	ServerAddress	getHost	0	22
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/ServerAddress.java	ServerAddress	getPort	0	30
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/ServerAddress.java	ServerAddress	parseString	1	34
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/ServerAddress.java	ServerAddress	isValidAddress	1	48
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/ServerAddress.java	ServerAddress	parsePort	1	62
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/ServerAddress.java	ServerAddress	toString	0	70
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/ServerAddress.java	ServerAddress	equals	1	75
+METHOD	/tmp/mc26.3-client/net/minecraft/client/multiplayer/resolver/ServerAddress.java	ServerAddress	hashCode	0	84
+FILE	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource	55
+CLASS	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource.<anonymous>	61
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource.<anonymous>	reportUpdate	2	62
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource.<anonymous>	reportFinalResult	2	67
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource	<init>	3	81
+CLASS	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource.<anonymous>	91
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource.<anonymous>	reportUpdate	2	92
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource.<anonymous>	reportFinalResult	2	97
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource	createDownloadNotifier	1	104
+CLASS	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource.<anonymous>	105
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource.<anonymous>	updateToast	0	113
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource.<anonymous>	updateProgress	1	118
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource.<anonymous>	requestStart	0	128
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource.<anonymous>	downloadStart	1	135
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource.<anonymous>	downloadedBytes	1	141
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource.<anonymous>	requestFinished	1	146
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource	createDownloader	4	167
+CLASS	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource.<anonymous>	168
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource.<anonymous>	createDownloadHeaders	0	172
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource.<anonymous>	download	2	190
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource	createUpdateScheduler	1	201
+CLASS	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource.<anonymous>	202
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource.<anonymous>	run	0	206
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource.<anonymous>	runAllUpdates	0	215
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource	createReloadConfig	0	226
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource	loadRequestedPacks	1	230
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource	createRepositorySource	0	251
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource	configureSource	1	255
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource	startReload	1	259
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource	onRecovery	0	277
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource	onRecoveryFailure	0	290
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource	onReloadSuccess	0	298
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource	tryParseSha1Hash	1	305
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource	pushPack	3	309
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource	pushLocalPack	2	314
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource	popPack	1	318
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource	popAll	0	322
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource	createPackResponseSender	1	326
+CLASS	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource.<anonymous>	327
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource.<anonymous>	reportUpdate	2	328
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource.<anonymous>	reportFinalResult	2	339
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource	configureForServerControl	2	355
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource	configureForLocalWorld	0	370
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource	allowServerPacks	0	376
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource	rejectServerPacks	0	380
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource	waitForPackFeedback	1	384
+CLASS	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource.<anonymous>	387
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource.<anonymous>	reportUpdate	2	388
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource.<anonymous>	reportFinalResult	2	393
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource	cleanupAfterDisconnect	0	410
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/DownloadedPackSource.java	DownloadedPackSource	close	0	416
+FILE	/tmp/mc26.3-client/net/minecraft/client/resources/server/PackDownloader.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/resources/server/PackDownloader.java	PackDownloader	9
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/PackDownloader.java	PackDownloader	download	2	10
+FILE	/tmp/mc26.3-client/net/minecraft/client/resources/server/ServerPackManager.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/resources/server/ServerPackManager.java	ServerPackManager	17
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/ServerPackManager.java	ServerPackManager	<init>	5	25
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/ServerPackManager.java	ServerPackManager	registerForUpdate	0	39
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/ServerPackManager.java	ServerPackManager	markExistingPacksAsRemoved	1	43
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/ServerPackManager.java	ServerPackManager	pushPack	3	51
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/ServerPackManager.java	ServerPackManager	pushLocalPack	2	59
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/ServerPackManager.java	ServerPackManager	pushNewPack	2	77
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/ServerPackManager.java	ServerPackManager	acceptPack	1	87
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/ServerPackManager.java	ServerPackManager	findPackInfo	1	92
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/ServerPackManager.java	ServerPackManager	popPack	1	102
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/ServerPackManager.java	ServerPackManager	popAll	0	110
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/ServerPackManager.java	ServerPackManager	allowServerPacks	0	118
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/ServerPackManager.java	ServerPackManager	rejectServerPacks	0	130
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/ServerPackManager.java	ServerPackManager	resetPromptStatus	0	142
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/ServerPackManager.java	ServerPackManager	tick	0	146
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/ServerPackManager.java	ServerPackManager	cleanupRemovedPacks	0	155
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/ServerPackManager.java	ServerPackManager	onDownload	2	174
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/ServerPackManager.java	ServerPackManager	updateDownloads	0	201
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/ServerPackManager.java	ServerPackManager	triggerReloadIfNeeded	0	231
+CLASS	/tmp/mc26.3-client/net/minecraft/client/resources/server/ServerPackManager.java	ServerPackManager.<anonymous>	268
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/ServerPackManager.java	ServerPackManager.<anonymous>	onSuccess	0	269
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/ServerPackManager.java	ServerPackManager.<anonymous>	onFailure	1	285
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/ServerPackManager.java	ServerPackManager.<anonymous>	packsToLoad	0	314
+CLASS	/tmp/mc26.3-client/net/minecraft/client/resources/server/ServerPackManager.java	ServerPackManager.ActivationStatus	322
+CLASS	/tmp/mc26.3-client/net/minecraft/client/resources/server/ServerPackManager.java	ServerPackManager.PackDownloadStatus	328
+CLASS	/tmp/mc26.3-client/net/minecraft/client/resources/server/ServerPackManager.java	ServerPackManager.PackPromptStatus	334
+CLASS	/tmp/mc26.3-client/net/minecraft/client/resources/server/ServerPackManager.java	ServerPackManager.RemovalReason	340
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/ServerPackManager.java	ServerPackManager.RemovalReason	<init>	1	350
+CLASS	/tmp/mc26.3-client/net/minecraft/client/resources/server/ServerPackManager.java	ServerPackManager.ServerPackData	355
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/ServerPackManager.java	ServerPackManager.ServerPackData	<init>	3	365
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/ServerPackManager.java	ServerPackManager.ServerPackData	setRemovalReasonIfNotSet	1	371
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/ServerPackManager.java	ServerPackManager.ServerPackData	isRemoved	0	377
+FILE	/tmp/mc26.3-client/net/minecraft/client/resources/server/PackReloadConfig.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/resources/server/PackReloadConfig.java	PackReloadConfig	7
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/PackReloadConfig.java	PackReloadConfig	scheduleReload	1	8
+CLASS	/tmp/mc26.3-client/net/minecraft/client/resources/server/PackReloadConfig.java	PackReloadConfig.Callbacks	10
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/PackReloadConfig.java	PackReloadConfig.Callbacks	onSuccess	0	11
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/PackReloadConfig.java	PackReloadConfig.Callbacks	onFailure	1	13
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/PackReloadConfig.java	PackReloadConfig.Callbacks	packsToLoad	0	15
+CLASS	/tmp/mc26.3-client/net/minecraft/client/resources/server/PackReloadConfig.java	PackReloadConfig.IdAndPath	18
+FILE	/tmp/mc26.3-client/net/minecraft/client/resources/server/PackLoadFeedback.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/resources/server/PackLoadFeedback.java	PackLoadFeedback	5
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/PackLoadFeedback.java	PackLoadFeedback	reportUpdate	2	6
+METHOD	/tmp/mc26.3-client/net/minecraft/client/resources/server/PackLoadFeedback.java	PackLoadFeedback	reportFinalResult	2	8
+CLASS	/tmp/mc26.3-client/net/minecraft/client/resources/server/PackLoadFeedback.java	PackLoadFeedback.FinalResult	10
+CLASS	/tmp/mc26.3-client/net/minecraft/client/resources/server/PackLoadFeedback.java	PackLoadFeedback.Update	18
+FILE	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	277
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	<init>	1	400
+CLASS	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft.<anonymous>	556
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft.<anonymous>	run	0	559
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	hasShiftDown	0	760
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	hasControlDown	0	764
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	hasAltDown	0	768
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	onResourceLoadFinished	1	772
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	onGameLoadFinished	1	779
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	isGameLoadFinished	0	789
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	countryEqualsISO3	1	793
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	updateTitle	0	801
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	createTitle	0	805
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	createUserApiService	2	831
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	isOfflineDeveloperMode	0	835
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	checkModStatus	0	839
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	loadCriticalShaders	0	843
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	rollbackResourcePacks	2	847
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	clearResourcePacksOnError	3	855
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	abortResourcePackRecovery	0	866
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	addResourcePackLoadFailToast	1	877
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	triggerResourcePackRecovery	1	882
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	run	0	895
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	updateFontOptions	0	957
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getLaunchedVersion	0	961
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	delayCrash	1	965
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	emergencySaveAndCrash	1	969
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	saveReport	2	977
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	saveReport	3	981
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	crash	4	1009
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	saveReportAndShutdownSoundManager	4	1014
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	isEnforceUnicode	0	1023
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	reloadResourcePacks	0	1027
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	reloadResourcePacks	2	1031
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	selfTest	0	1073
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getLevelSource	0	1109
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	exitWorldAndClose	0	1113
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	close	0	1129
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	runTick	1	1167
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	renderFrame	1	1292
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	pauseIfInactive	0	1454
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	constructProfiler	2	1464
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	finishProfilers	2	1492
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	framebufferSizeChanged	0	1505
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	resizeGui	0	1511
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	cursorEntered	0	1523
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	fullscreenStateChanged	1	1528
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getFps	0	1539
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getFrameTimeNs	0	1543
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	sendLowDiskSpaceWarning	0	1547
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	emergencySave	0	1551
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	debugClientMetricsStart	1	1566
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	debugClientMetricsStop	0	1624
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	debugClientMetricsCancel	0	1631
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	archiveProfilingReport	2	1638
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	stop	0	1687
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	isRunning	0	1691
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	pauseGame	1	1695
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	continueAttack	1	1703
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	startAttack	0	1729
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	startUseItem	0	1804
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getMusicManager	0	1870
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	tick	0	1874
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	isLevelRunningNormally	0	1976
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	isMultiplayerServer	0	1980
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	handleKeybinds	0	1984
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getQuickActionsDialog	0	2083
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getTelemetryManager	0	2094
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getMetricsRecorder	0	2098
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getGpuUtilization	0	2102
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getProfileKeyPairManager	0	2106
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	createWorldOpenFlows	0	2110
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	doWorldLoad	5	2114
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	setLevel	1	2175
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	disconnectFromWorld	1	2180
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	disconnectWithSavingScreen	0	2203
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	disconnectWithProgressScreen	0	2207
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	disconnectWithProgressScreen	1	2211
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	disconnect	2	2215
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	disconnect	3	2219
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	clearDownloadedResourcePacks	0	2270
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	clearClientLevel	1	2275
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	setScreenAndShow	1	2301
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	updateLevelInEngines	1	2324
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	updateLevelInEngines	2	2328
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	userProperties	0	2360
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	telemetryOptInExtra	0	2364
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	extraTelemetryAvailable	0	2368
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	allowsTelemetry	0	2372
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	allowsMultiplayer	0	2376
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	allowsRealms	0	2380
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	friendsEnabled	0	2384
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	handleGlobalKeyPress	2	2388
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	toggleFullscreen	0	2407
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	toggleFriendsScreen	0	2416
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	allowFriendRequests	0	2435
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	allowChatOnlyWithFriend	0	2439
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	multiplayerBan	0	2443
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	isNameBanned	0	2447
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	isBlocked	1	2452
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	isFriendOnlyRestricted	1	2456
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	isLocalOrUnknownPlayer	1	2467
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	computeChatAbilities	0	2471
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	isDemo	0	2493
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	canSwitchGameMode	0	2497
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getConnection	0	2501
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	pickBlockOrEntity	0	2505
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	fillReport	1	2520
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	fillReport	5	2543
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	formatSeconds	1	2554
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	fillUptime	1	2558
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	fillSystemReport	5	2565
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getInstance	0	2670
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	delayTextureReload	0	2674
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	updateReportEnvironment	1	2678
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getCurrentServer	0	2684
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	isLocalServer	0	2688
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	hasSingleplayerServer	0	2692
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getSingleplayerServer	0	2696
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	isLocalPlayer	1	2700
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getUser	0	2704
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getProfileResult	0	2708
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getGameProfile	0	2712
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getProxy	0	2717
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getTextureManager	0	2721
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getShaderManager	0	2725
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getResourceManager	0	2729
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getResourcePackRepository	0	2733
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getVanillaPackResources	0	2737
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getDownloadedPackSource	0	2741
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getResourcePackDirectory	0	2745
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getLanguageManager	0	2749
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	isPaused	0	2753
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getGpuWarnlistManager	0	2757
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getSoundManager	0	2761
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getSituationalMusic	0	2765
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getMusicVolume	0	2787
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	services	0	2793
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getSkinManager	0	2797
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getCameraEntity	0	2801
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	setCameraEntity	1	2805
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	shouldEntityAppearGlowing	1	2810
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getRunningThread	0	2815
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	wrapRunnable	1	2819
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	shouldRun	1	2823
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getEntityRenderDispatcher	0	2827
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getBlockEntityRenderDispatcher	0	2831
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getMapRenderer	0	2835
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getFixerUpper	0	2839
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getDeltaTracker	0	2843
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getBlockColors	0	2847
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	showOnlyReducedInfo	0	2851
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getTutorial	0	2855
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	isWindowActive	0	2859
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getHotbarManager	0	2863
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getModelManager	0	2867
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getAtlasManager	0	2871
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getPalettedTextureManager	0	2875
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getMapTextureManager	0	2879
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	grabPanoramixScreenshot	1	2883
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getPlayerSocialManager	0	2965
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getWindow	0	2969
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	textInputManager	0	2973
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	onTextInputFocusChange	2	2977
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	windowSurface	0	2988
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getFramerateLimitTracker	0	2992
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getDebugOverlay	0	2996
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	updateMaxMipLevel	1	3000
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getEntityModels	0	3004
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	isTextFilteringEnabled	0	3008
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	prepareForMultiplayer	0	3012
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getLastInputType	0	3017
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	setLastInputType	1	3021
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getNarrator	0	3025
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getReportingContext	0	3029
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	realmsDataFetcher	0	3033
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	quickPlayLog	0	3037
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	directoryValidator	0	3041
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	playerSkinRenderCache	0	3045
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getTickTargetMillis	1	3049
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getItemModelResolver	0	3060
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	canInterruptScreen	0	3064
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	invalidateSurfaceConfiguration	0	3068
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getLauncherBrand	0	3072
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	packetProcessor	0	3076
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	collectPerTickGizmos	0	3080
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	getPerTickGizmos	0	3084
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	pick	1	3088
+METHOD	/tmp/mc26.3-client/net/minecraft/client/Minecraft.java	Minecraft	showDebugChat	1	3100
+FILE	/tmp/mc26.3-client/net/minecraft/client/MouseHandler.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/MouseHandler.java	MouseHandler	36
+METHOD	/tmp/mc26.3-client/net/minecraft/client/MouseHandler.java	MouseHandler	<init>	1	58
+METHOD	/tmp/mc26.3-client/net/minecraft/client/MouseHandler.java	MouseHandler	onButton	3	63
+METHOD	/tmp/mc26.3-client/net/minecraft/client/MouseHandler.java	MouseHandler	fillMousePositionDetails	2	148
+METHOD	/tmp/mc26.3-client/net/minecraft/client/MouseHandler.java	MouseHandler	onScroll	3	169
+METHOD	/tmp/mc26.3-client/net/minecraft/client/MouseHandler.java	MouseHandler	onDrop	2	205
+METHOD	/tmp/mc26.3-client/net/minecraft/client/MouseHandler.java	MouseHandler	onMove	5	228
+METHOD	/tmp/mc26.3-client/net/minecraft/client/MouseHandler.java	MouseHandler	handleAccumulatedMovement	0	251
+METHOD	/tmp/mc26.3-client/net/minecraft/client/MouseHandler.java	MouseHandler	getScaledXPos	2	302
+METHOD	/tmp/mc26.3-client/net/minecraft/client/MouseHandler.java	MouseHandler	getScaledXPos	1	306
+METHOD	/tmp/mc26.3-client/net/minecraft/client/MouseHandler.java	MouseHandler	getScaledYPos	2	310
+METHOD	/tmp/mc26.3-client/net/minecraft/client/MouseHandler.java	MouseHandler	getScaledYPos	1	314
+METHOD	/tmp/mc26.3-client/net/minecraft/client/MouseHandler.java	MouseHandler	turnPlayer	1	318
+METHOD	/tmp/mc26.3-client/net/minecraft/client/MouseHandler.java	MouseHandler	isLeftPressed	0	347
+METHOD	/tmp/mc26.3-client/net/minecraft/client/MouseHandler.java	MouseHandler	isMiddlePressed	0	351
+METHOD	/tmp/mc26.3-client/net/minecraft/client/MouseHandler.java	MouseHandler	isRightPressed	0	355
+METHOD	/tmp/mc26.3-client/net/minecraft/client/MouseHandler.java	MouseHandler	xpos	0	359
+METHOD	/tmp/mc26.3-client/net/minecraft/client/MouseHandler.java	MouseHandler	ypos	0	363
+METHOD	/tmp/mc26.3-client/net/minecraft/client/MouseHandler.java	MouseHandler	setIgnoreFirstMove	0	367
+METHOD	/tmp/mc26.3-client/net/minecraft/client/MouseHandler.java	MouseHandler	resyncMousePosition	0	371
+METHOD	/tmp/mc26.3-client/net/minecraft/client/MouseHandler.java	MouseHandler	isMouseGrabbed	0	391
+METHOD	/tmp/mc26.3-client/net/minecraft/client/MouseHandler.java	MouseHandler	grabMouse	0	395
+METHOD	/tmp/mc26.3-client/net/minecraft/client/MouseHandler.java	MouseHandler	releaseMouse	0	413
+METHOD	/tmp/mc26.3-client/net/minecraft/client/MouseHandler.java	MouseHandler	cursorEntered	0	422
+METHOD	/tmp/mc26.3-client/net/minecraft/client/MouseHandler.java	MouseHandler	drawDebugMouseInfo	2	426
+CLASS	/tmp/mc26.3-client/net/minecraft/client/MouseHandler.java	MouseHandler.LastClick	434
+FILE	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	118
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	<init>	9	175
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	heal	1	200
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	startRiding	3	203
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	removeVehicle	0	224
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	getViewYRot	1	229
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	tick	0	233
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	displayItemActivation	1	246
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	resetItemActivation	0	250
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	itemActivation	0	254
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	itemUsed	1	258
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	firstPersonHandsAndItems	0	262
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	sendChanges	0	266
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	getCurrentMood	0	286
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	sendPosition	0	296
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	sendIsSprintingIfNeeded	0	335
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	respawn	0	344
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	closeContainer	0	349
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	clientSideCloseContainer	0	354
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	hurtTo	1	359
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	onUpdateAbilities	0	380
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	setReducedDebugInfo	1	384
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	isLocalPlayer	0	389
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	isSuppressingSlidingDownLadder	0	393
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	canSpawnSprintParticle	0	397
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	sendRidingJump	0	401
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	sendOpenInventory	0	405
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	getStats	0	409
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	getRecipeBook	0	413
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	removeRecipeHighlight	1	417
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	permissions	0	424
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	setPermissions	1	428
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	chatAbilities	0	437
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	refreshChatAbilities	0	441
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	sendSystemMessage	1	446
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	sendOverlayMessage	1	450
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	moveTowardsClosestSpace	2	454
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	suffocatesAt	1	483
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	setExperienceValues	3	489
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	setExperienceDisplayStartTickToTickCount	0	499
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	handleEntityEvent	1	507
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	setShowDeathScreen	1	529
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	shouldShowDeathScreen	0	533
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	setDoLimitedCrafting	1	537
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	getDoLimitedCrafting	0	541
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	playSound	3	545
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	startUsingItem	1	549
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	isUsingItem	0	558
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	isSlowDueToUsingItem	0	562
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	itemUseSpeedMultiplier	0	566
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	stopUsingItem	0	570
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	getUsedItemHand	0	575
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	onSyncedDataUpdated	1	579
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	jumpableVehicle	0	596
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	getJumpRidingScale	0	600
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	isTextFilteringEnabled	0	604
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	openTextEdit	2	608
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	openMinecartCommandBlock	1	616
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	openCommandBlock	1	620
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	openStructureBlock	1	624
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	openTestBlock	1	628
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	openTestInstanceBlock	1	632
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	openJigsawBlock	1	636
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	openDialog	1	640
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	openItemGui	2	644
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	crit	1	651
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	magicCrit	1	655
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	isShiftKeyDown	0	659
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	isCrouching	0	663
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	isMovingSlowly	0	667
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	applyInput	0	671
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	modifyInput	1	686
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	modifyInputSpeedForSquareMovement	1	704
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	distanceToUnitSquare	1	716
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	isControlledCamera	0	723
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	resetPos	0	727
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	aiStep	0	745
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	shouldStopRunSprinting	0	901
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	shouldStopSwimSprinting	0	905
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	getActivePortalLocalTransition	0	909
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	tickDeath	0	913
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	handlePortalTransitionEffect	1	920
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	tickSpinningEffect	0	945
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	getSpinningEffectAngle	1	956
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	rideTick	0	960
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	isHandsBusy	0	971
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	move	2	975
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	isAutoJumpEnabled	0	985
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	shouldRotateWithMinecart	0	989
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	updateAutoJump	2	993
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	isHorizontalCollisionMinor	1	1091
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	canAutoJump	0	1108
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	isMoving	0	1118
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	isSprintingPossible	1	1122
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	canStartSprinting	0	1128
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	vehicleCanSprint	1	1137
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	getWaterVision	0	1141
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	onGameModeChanged	1	1157
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	isUnderWater	0	1163
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	updateIsUnderwater	0	1167
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	getRopeHoldPosition	1	1186
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	updateTutorialInventoryAction	3	1198
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	getVisualRotationYInDegrees	0	1202
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	handleCreativeModeItemDrop	1	1206
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	canDropItems	0	1210
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	getDropSpamThrottler	0	1214
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	getLastSentInput	0	1218
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	raycastHitResult	2	1222
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	pick	4	1242
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	filterHitResult	3	1263
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	setActivePostEffects	1	1274
+METHOD	/tmp/mc26.3-client/net/minecraft/client/player/LocalPlayer.java	LocalPlayer	getActivePostEffects	0	1279
+FILE	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	101
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	<init>	4	143
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	close	0	183
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	renderBuffers	0	202
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	featureRenderDispatcher	0	206
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	gameRenderState	0	210
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	setRenderBlockOutline	1	214
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	clearSpectatedEntityPostEffect	0	218
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	toggleSpectatorPostEffect	0	223
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	checkEntityPostEffect	1	227
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	setSpectatedEntityPostEffect	1	244
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	processBlurEffect	0	249
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	preloadUiShader	1	256
+CLASS	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer.<anonymous>	259
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer.<anonymous>	getShader	2	260
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer.<anonymous>	getInclude	1	272
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer.<anonymous>	close	0	277
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	tick	0	290
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	spectatedEntityPostEffect	0	315
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	getRequestedPostEffects	0	319
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	getAppliedPostEffects	0	323
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	onResourceManagerReload	1	328
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	resize	2	332
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	bobHurt	2	339
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	bobView	2	361
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	renderItemInHand	3	375
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	nightVisionScale	2	415
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	update	1	420
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	extract	2	436
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	render	0	463
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	preparePostEffects	1	514
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	applyPostEffects	0	545
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	tryTakeScreenshotIfNeeded	0	556
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	takeAutoScreenshot	1	575
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	shouldRenderBlockOutline	0	602
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	renderLevel	0	628
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	render3dHud	4	671
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	integrate3DHudDepth	0	718
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	extractWindow	0	731
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	extractOptions	0	741
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	extractCamera	2	767
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	resetData	0	777
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	bossOverlayWorldDarkening	1	787
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	mainCamera	0	791
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	lightmap	0	795
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	levelLightmap	0	799
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	overlayTexture	0	803
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	mainRenderTarget	0	807
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	projectPointToScreen	1	811
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	projectHorizonToScreen	0	819
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	lighting	0	833
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	setLevel	1	837
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	panorama	0	845
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	registerPanoramaTextures	1	849
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/GameRenderer.java	GameRenderer	useImprovedTransparency	0	853
+FILE	/tmp/mc26.3-client/net/minecraft/client/renderer/MapRenderer.java
+CLASS	/tmp/mc26.3-client/net/minecraft/client/renderer/MapRenderer.java	MapRenderer	20
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/MapRenderer.java	MapRenderer	<init>	2	28
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/MapRenderer.java	MapRenderer	render	5	33
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/MapRenderer.java	MapRenderer	extractRenderState	3	85
+METHOD	/tmp/mc26.3-client/net/minecraft/client/renderer/MapRenderer.java	MapRenderer	extractDecorationRenderState	1	94

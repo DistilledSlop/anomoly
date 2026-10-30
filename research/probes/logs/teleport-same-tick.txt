@@ -1,0 +1,9 @@
+[06:58:06] [Server thread/INFO] (modid) TP_PROBE ready pos=(0.5, 100.0, 0.5) menu=InventoryMenu
+[06:58:07] [Server thread/INFO] (modid) TP_PROBE issued teleport expected=(0.5, 100.0, 0.5) id=2
+[06:58:07] [Server thread/INFO] (modid) TP_PROBE ack_offset_8 pos=(8.5, 100.0, 0.5) pending=null
+[06:58:07] [Server thread/INFO] (modid) TP_PROBE remote_chest_menu=ChestMenu pos=(8.5, 100.0, 0.5)
+[06:58:07] [Server thread/WARN] (Minecraft) teleport-probe moved too quickly! 992.0,0.0,0.0
+[06:58:07] [Server thread/INFO] (modid) TP_PROBE forced_correction pos=(8.5, 100.0, 0.5) pending=(8.5, 100.0, 0.5) id=3
+[06:58:07] [Server thread/INFO] (modid) TP_PROBE same_tick_chained_ack pos=(16.5, 100.0, 0.5) pending=null
+[06:58:07] [Server thread/INFO] (modid) TP_PROBE chained_chest_menu=ChestMenu pos=(16.5, 100.0, 0.5)
+[06:58:07] [Server thread/INFO] (modid) TP_PROBE next_tick_pos=(16.5, 100.0, 0.5)

@@ -1,0 +1,5 @@
+[13:21:56] [Server thread/INFO] (modid) WAYPOINT_PROBE ready receiver=(0.5, 100.0, 0.5) source=(1000.5, 100.0, 1000.5) source_transmits=true receiver_receives=true
+[13:21:57] [Server thread/INFO] (modid) WAYPOINT_PROBE A receiver=(0.5, 100.0, 0.5) uuid=Left[95f49333-2849-4025-908a-6bf37c51acb3] angle=-0.78539807 operation=TRACK type=AzimuthWaypoint
+[13:21:57] [Server thread/INFO] (modid) WAYPOINT_PROBE A drained=145
+[13:21:57] [Server thread/INFO] (modid) WAYPOINT_PROBE B receiver=(0.5, 100.0, 2000.5) uuid=Left[95f49333-2849-4025-908a-6bf37c51acb3] angle=-2.3561945 operation=TRACK type=AzimuthWaypoint
+[13:21:57] [Server thread/INFO] (modid) WAYPOINT_PROBE B drained=1

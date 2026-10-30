@@ -1,0 +1,7 @@
+# Correction hop for Minecraft 26.3
+
+**Confirmed basis:** [26.3 teleport acknowledgment offset](../exploits/teleport-ack-offset-26.3.md). A client can provoke a vanilla movement correction, then acknowledge its teleport ID with a nearby position that the server accepts. Two eight-block hops and two chest interactions within one server tick, plus next-tick persistence, were reproduced on a local server.
+
+**Client design:** Detect `ClientboundPlayerPositionPacket` and its teleport ID, retain the server destination, and choose a collision-free point within the source-verified movement budget. A conservative mode uses the offset only for a genuine server teleport. An experimental speed mode sends a deliberately invalid move to elicit a correction, waits for the correction packet, and returns an acknowledgment with a bounded forward offset. Track pending IDs and server corrections, and stop when a hop is refused. Pathfinding must use received collision shapes; the local test showed an intervening chest prevents the hop. Add an action queue so a block interaction or attack can occur at the accepted intermediate position.
+
+**Limits:** The helper still applies movement speed, horizontal collision and floating checks. A separate [vertical phase](vertical-phase.md) is possible through the vertical residual error. A remote connection and anti-cheat behavior are untested. Continuous speed and safe maximum offset need benchmark runs before exposing an aggressive preset.

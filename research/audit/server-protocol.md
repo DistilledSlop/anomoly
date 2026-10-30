@@ -1,0 +1,31 @@
+# Minecraft 26.3 server packet-boundary audit
+
+## Scope and method
+
+I prioritized client-originated packet formats and the server methods they reach: login, configuration, game packet dispatch, permissions, menu and item mutation. The [coverage worklist](server-protocol-coverage.json) records declarations in those files and labels individual methods that received a targeted source review. It is **not** a claim that every method in the Minecraft server was manually audited. Clientbound-only codecs, rendering, unrelated item behavior, and menus without a reviewed packet path were removed from this worklist. Source references below are to `/tmp/mc26.3-common/net/minecraft` and the generated 26.3 common sources jar.
+
+I first enumerated all `ServerGamePacketListenerImpl.handle*` entry points and then traced high-value cases through their downstream checks. I read the login and configuration state transitions, command, creative-slot, debug, container, bundle, trade, book and sign paths. Targeted source review is deeper than the static declaration inventory, but only the resource-pack finding received a local runtime probe in this pass.
+
+## Confirmed finding: required resource-pack gate
+
+`ServerCommonPacketListenerImpl.handleResourcePackResponse` (line 106) disconnects a required-pack client only for `DECLINED`. `ServerConfigurationPacketListenerImpl.handleResourcePackResponse` (line 141) finishes the current pack task for any terminal status, without comparing the response UUID to the offered pack or checking for success. `ServerboundResourcePackPacket.Action.isTerminal` (line 42) includes failure statuses. The [standalone finding](../../exploits/required-resource-pack-gate-bypass.md) documents the trust boundary and [probe log](../probes/logs/required-pack-bypass.txt): a random UUID plus `FAILED_DOWNLOAD` finished the required-pack task while the connection stayed open. The probe entered an active task with reflection and an embedded connection; a full remote join has not been tested.
+
+## Other paths reviewed
+
+| Path | Source anchors | Result |
+| --- | --- | --- |
+| Login and player admission | `ServerLoginPacketListenerImpl.handleHello` 118, `handleKey` 169, `verifyLoginAndFinishConnectionSetup` 140, `handleLoginAcknowledgement` 236; `ServerConfigurationPacketListenerImpl.handleConfigurationFinished` 165 | The online-mode path validates the key challenge and session before accepting a profile; player admission is checked before protocol switch and again during configuration. No unprivileged authentication or operator bypass was substantiated. Offline-mode behavior follows server configuration. |
+| Creative item injection and game mode | `ServerGamePacketListenerImpl.handleSetCreativeModeSlot` 2062, `handleChangeGameMode` 2136, `handleSetCommandBlock` 614 | Creative slot writes require `hasInfiniteMaterials`; game-mode requests use a permission check; command block edits require `canUseGameMasterBlocks`. No survival creative-item injection or game-mode escalation was identified. |
+| Menu click and client slot hashes | `ServerGamePacketListenerImpl.handleContainerClick` 1979; `AbstractContainerMenu.setRemoteSlotUnsafe` 292 | Click handling requires the matching menu ID, a valid menu, and a valid slot. Client-supplied changed-slot hashes update remote synchronization hints, not authoritative inventory contents. No dupe was substantiated from that path. |
+| Bundle selection | `ServerGamePacketListenerImpl.handleBundleItemSelectedPacket` 582; `AbstractContainerMenu.setSelectedBundleItemIndex` 314; `BundleItem.toggleSelectedItem` 171; `BundleContents.Mutable.toggleSelectedItem` 254 | This packet omits menu ID and `stillValid` checks and mutates the selected index on the server-side bundle stack. Index bounds are checked, and the selected index is omitted from the bundle codec. A shared-menu selection interference scenario remains a hypothesis; no durable item change or cross-player effect was reproduced. |
+| Merchant offer selection | `ServerGamePacketListenerImpl.handleSelectTrade` 971; `MerchantMenu.tryMoveItems` 176 | The menu must still be valid and the offer index is bounded before moving items. No out-of-range offer or dupe was found. |
+| Book and sign edits | `ServerGamePacketListenerImpl.handleEditBook` 986, `handleSignUpdate` 2089; `SignBlockEntity.updateSignText` | Book text filtering is asynchronous, so the callback acts on the current writable book in the specified owned slot. Sign editing checks wax and editor identity downstream. No cross-player write or privilege escalation was substantiated. |
+| Debug subscriptions | `ServerGamePacketListenerImpl.handleDebugSubscriptionRequest` 2203; `ServerPlayer.requestDebugSubscriptions/debugSubscriptions` 2290–2294; `ServerDebugSubscribers.hasRequiredPermissions` | A client may request debug channels, but effective subscriptions are empty unless the player is OP (or the IDE singleplayer owner). No non-OP debug data leak was identified. |
+| Custom click action | `ServerCommonPacketListenerImpl.handleCustomClickAction` 100; `MinecraftServer.handleCustomClickAction` | The vanilla hook only logs debug information, so it is not a stock privilege route. Mods that override the hook need their own authorization policy. |
+| Command suggestions | `ServerGamePacketListenerImpl.handleCustomCommandSuggestions` 606; `ServerCommandSuggestionsProvider` | The provider bounds outstanding requests and suggestion counts. I found no reliable resource exhaustion or unauthorized command execution in this pass. |
+
+Existing 26.3 findings in `exploits/` already cover attack reach/sight, blind block interaction, survival pick-block, crafter slot validity, tick-end movement, teleport acknowledgment, vertical phase, spear motion, waypoint bearing, maps and chunk visibility. This audit did not duplicate their writeups.
+
+## Limits
+
+The audit considered vanilla 26.3 source and a local Fabric server. Plugin hooks, proxies, anti-cheat, custom menus and full remote sockets can change outcomes. The negative results above mean that these inspected paths did not yield a substantiated exploit; they do not prove the absence of other exploits. The resource-pack behavior may predate 26.3; historical novelty has not been established.

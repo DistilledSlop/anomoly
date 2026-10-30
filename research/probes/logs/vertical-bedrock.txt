@@ -1,0 +1,15 @@
+[07:02:26] [Server thread/INFO] (modid) TP_PROBE ready pos=(0.5, 100.0, 0.5) menu=InventoryMenu
+[07:02:26] [Server thread/INFO] (modid) TP_PROBE issued teleport expected=(0.5, 100.0, 0.5) id=2
+[07:02:26] [Server thread/INFO] (modid) TP_PROBE ack_offset_8 pos=(8.5, 100.0, 0.5) pending=null
+[07:02:26] [Server thread/INFO] (modid) TP_PROBE remote_chest_menu=ChestMenu pos=(8.5, 100.0, 0.5)
+[07:02:26] [Server thread/WARN] (Minecraft) teleport-probe moved too quickly! 992.0,0.0,0.0
+[07:02:26] [Server thread/INFO] (modid) TP_PROBE forced_correction pos=(8.5, 100.0, 0.5) pending=(8.5, 100.0, 0.5) id=3
+[07:02:26] [Server thread/INFO] (modid) TP_PROBE same_tick_chained_ack pos=(16.5, 100.0, 0.5) pending=null
+[07:02:26] [Server thread/INFO] (modid) TP_PROBE chained_chest_menu=ChestMenu pos=(16.5, 100.0, 0.5)
+[07:02:26] [Server thread/INFO] (modid) TP_PROBE next_tick_pos=(16.5, 100.0, 0.5)
+[07:02:26] [Server thread/INFO] (modid) TP_PROBE vertical_roof_cross_pos=(16.5, 104.0, 0.5) roof=Block{minecraft:stone} pending=null
+[07:02:26] [Server thread/INFO] (modid) TP_PROBE vertical_next_tick_pos=(16.5, 104.0, 0.5)
+[07:02:26] [Server thread/INFO] (modid) TP_PROBE vertical_return_pos=(16.5, 100.0, 0.5) roof=Block{minecraft:stone} pending=null
+[07:02:26] [Server thread/INFO] (modid) TP_PROBE vertical_return_next_tick_pos=(16.5, 100.0, 0.5)
+[07:02:26] [Server thread/INFO] (modid) TP_PROBE bedrock_roof_cross_pos=(16.5, 106.0, 0.5) center=Block{minecraft:bedrock} pending=null
+[07:02:26] [Server thread/INFO] (modid) TP_PROBE bedrock_next_tick_pos=(16.5, 106.0, 0.5)

@@ -1,0 +1,7 @@
+[19:18:58] [Server thread/INFO] (modid) LOCATOR_PULSE ready receiver=(0.5, 100.0, 0.5) source=(400.5, 100.0, 400.5) source_transmits=true receiver_receives=true
+[19:18:59] [Server thread/INFO] (modid) LOCATOR_PULSE initial receiver=(0.5, 100.0, 0.5) uuid=Left[88ed7cbe-cc8e-4cbf-b38b-00ca0b15b5dc] angle=-0.7853982 operation=TRACK type=AzimuthWaypoint
+[19:18:59] [Server thread/INFO] (modid) LOCATOR_PULSE initial drained=144
+[19:18:59] [Server thread/INFO] (modid) LOCATOR_PULSE excursion receiver=(0.5, 100.0, 0.5) uuid=Left[88ed7cbe-cc8e-4cbf-b38b-00ca0b15b5dc] angle=-0.795299 operation=TRACK type=AzimuthWaypoint
+[19:18:59] [Server thread/INFO] (modid) LOCATOR_PULSE excursion drained=1
+[19:18:59] [Server thread/INFO] (modid) LOCATOR_PULSE return receiver=(0.5, 100.0, 0.5) uuid=Left[88ed7cbe-cc8e-4cbf-b38b-00ca0b15b5dc] angle=-0.7853982 operation=UPDATE type=AzimuthWaypoint
+[19:18:59] [Server thread/INFO] (modid) LOCATOR_PULSE return drained=1

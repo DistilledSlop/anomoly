@@ -1,0 +1,16 @@
+# Public client baseline and gaps
+
+The comparison is pinned to Meteor source commit `e3a2e77` and Wurst source commit `4fa258b`, cloned on 2026-10-29. Their public trees contain **169 Meteor module registrations** (including nested package files) and **151 Wurst hack registrations**. Wurst also has five additional `Hack.java` files that are not registered in this snapshot. This is a source inventory, not a claim that every module works on 26.3. See [Meteor modules](https://github.com/MeteorDevelopment/meteor-client/tree/master/src/main/java/meteordevelopment/meteorclient/systems/modules) and [Wurst registry](https://github.com/Wurst-Imperium/Wurst7/blob/master/src/main/java/net/wurstclient/hack/HackList.java). The wider eight-client cross-reference is in [cheats](../cheats/README.md).
+
+| Area | Representative public modules | 26.3 research focus |
+| --- | --- | --- |
+| Combat | KillAura, CrystalAura, AnchorAura, BowAimbot, AutoTotem, AutoArmor, Criticals, Surround, AutoTrap | Derive attack eligibility from `AttackRange`; the separate spear `STAB` and held-use paths amplify client-authored movement into range and kinetic damage. |
+| Movement | Speed, Flight, ElytraFly, Blink, NoFall, Step, Scaffold, SafeWalk, Spider, Jesus | 26.3 teleport acknowledgment offsets permit two tested same-tick correction hops; vertical residual error permits tested roof crossing. |
+| World/building | PacketMine, Nuker, VeinMiner, StashFinder, HighwayBuilder, Excavator, AutoBrewer | Combine chunk indexing with block-update and survival pick-block oracles for nearby concealed blocks. |
+| Player/inventory | Reach, SpeedMine, AutoTool, AutoReplenish, AutoEat, AutoFish, InventoryTweaks | Respect server menu state IDs, item cooldown, interaction range, and 26.3 item components. |
+| Render/intel | Xray, StorageESP, ESP, Tracers, Freecam, WallHack, Trajectories, Waypoints | Keep a persistent evidence-backed world index; map updates and distant waypoint bearings can reveal remote holders/players. |
+| Chat/misc | AutoReconnect, PacketLogger, PacketCanceller, AntiAFK | Packet tracing and controlled experiments are essential to validate claims. |
+
+**Research leads beyond the public module lists:** (1) the [26.3 correction hop](correction-hop.md), locally reproduced twice in one server tick; (2) a [same-tick interaction excursion](interaction-excursion.md), locally reproduced with a chest and return; (3) [vertical phase](vertical-phase.md) through stone and bedrock roofs; (4) a [spear momentum burst](spear-momentum-burst.md), with 151 damage measured against a Warden; (5) [locator-bearing triangulation](locator-triangulator.md), confirmed by two local packet captures; (6) the [survival pick-block oracle](pick-block-oracle.md) and [crafter slot race](crafter-slot-race.md). The public registries establish visible module names only, so no claim of absence from every client is made.
+
+**Do not advertise:** `ForceOP`, item generators, creative-flight in survival, or crash modules as universal vanilla exploits. The audited 26.3 server gates creative items, gamemode, flight, admin block edits, and NBT queries. A module name in a public client is not evidence that it works on a stock 26.3 server.

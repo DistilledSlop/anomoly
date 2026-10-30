@@ -1,0 +1,6159 @@
+{
+  "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
+  "counts": {
+    "backlog": 668,
+    "coded": 13,
+    "partial": 2
+  },
+  "total": 683,
+  "features": [
+    {
+      "id": "abortbreaking",
+      "name": "AbortBreaking",
+      "category": "Exploit",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/abortbreaking.md"
+    },
+    {
+      "id": "aimassist",
+      "name": "AimAssist",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/aimassist.md"
+    },
+    {
+      "id": "aimbot",
+      "name": "Aimbot",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/aimbot.md"
+    },
+    {
+      "id": "airjump",
+      "name": "AirJump",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/airjump.md"
+    },
+    {
+      "id": "airplace",
+      "name": "AirPlace",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/airplace.md"
+    },
+    {
+      "id": "ambience",
+      "name": "Ambience",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/ambience.md"
+    },
+    {
+      "id": "anchor",
+      "name": "Anchor",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/anchor.md"
+    },
+    {
+      "id": "anchoraura",
+      "name": "Anchor Aura",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/anchoraura.md"
+    },
+    {
+      "id": "animations",
+      "name": "Animations",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/animations.md"
+    },
+    {
+      "id": "announcer",
+      "name": "Announcer",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/announcer.md"
+    },
+    {
+      "id": "antiafk",
+      "name": "AntiAFK",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiafk.md"
+    },
+    {
+      "id": "antiaim",
+      "name": "Anti Aim",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiaim.md"
+    },
+    {
+      "id": "antianvil",
+      "name": "Anti Anvil",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antianvil.md"
+    },
+    {
+      "id": "antiattack",
+      "name": "AntiAttack",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiattack.md"
+    },
+    {
+      "id": "antibadeffects",
+      "name": "AntiBadEffects",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antibadeffects.md"
+    },
+    {
+      "id": "antiballplace",
+      "name": "AntiBallPlace",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiballplace.md"
+    },
+    {
+      "id": "antibed",
+      "name": "Anti Bed",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antibed.md"
+    },
+    {
+      "id": "antiblind",
+      "name": "AntiBlind",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiblind.md"
+    },
+    {
+      "id": "antibookban",
+      "name": "AntiBookBan",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antibookban.md"
+    },
+    {
+      "id": "antibot",
+      "name": "AntiBot",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antibot.md"
+    },
+    {
+      "id": "antibounce",
+      "name": "AntiBounce",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antibounce.md"
+    },
+    {
+      "id": "anticactus",
+      "name": "AntiCactus",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/anticactus.md"
+    },
+    {
+      "id": "anticheatdetect",
+      "name": "AntiCheatDetect",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/anticheatdetect.md"
+    },
+    {
+      "id": "anticrash",
+      "name": "AntiCrash",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/anticrash.md"
+    },
+    {
+      "id": "antidesync",
+      "name": "Anti Desync",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antidesync.md"
+    },
+    {
+      "id": "antiexploit",
+      "name": "AntiExploit",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiexploit.md"
+    },
+    {
+      "id": "antifire",
+      "name": "Anti Fire",
+      "category": "Exploit",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antifire.md"
+    },
+    {
+      "id": "antihazard",
+      "name": "Anti Hazard",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antihazard.md"
+    },
+    {
+      "id": "antihunger",
+      "name": "AntiHunger",
+      "category": "Exploit",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antihunger.md"
+    },
+    {
+      "id": "antiinteract",
+      "name": "AntiInteract",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiinteract.md"
+    },
+    {
+      "id": "antilegitmiss",
+      "name": "AntiLegitMiss",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antilegitmiss.md"
+    },
+    {
+      "id": "antilevitation",
+      "name": "AntiLevitation",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antilevitation.md"
+    },
+    {
+      "id": "antinausea",
+      "name": "AntiWobble",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antinausea.md"
+    },
+    {
+      "id": "antioverlay",
+      "name": "Anti Overlay",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antioverlay.md"
+    },
+    {
+      "id": "antipacket",
+      "name": "AntiPacket",
+      "category": "Exploit",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antipacket.md"
+    },
+    {
+      "id": "antipacketkick",
+      "name": "Anti Packet Kick",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antipacketkick.md"
+    },
+    {
+      "id": "antiquit",
+      "name": "AntiQuit",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiquit.md"
+    },
+    {
+      "id": "antireduceddebuginfo",
+      "name": "AntiReducedDebugInfo",
+      "category": "Exploit",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antireduceddebuginfo.md"
+    },
+    {
+      "id": "antiserveradd",
+      "name": "AntiServerAdd",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiserveradd.md"
+    },
+    {
+      "id": "antiserverrp",
+      "name": "AntiServerRP",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiserverrp.md"
+    },
+    {
+      "id": "antisoundlag",
+      "name": "Anti Sound Lag",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antisoundlag.md"
+    },
+    {
+      "id": "antispam",
+      "name": "AntiSpam",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antispam.md"
+    },
+    {
+      "id": "antistaff",
+      "name": "AntiStaff",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antistaff.md"
+    },
+    {
+      "id": "antivanish",
+      "name": "Anti Vanish",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antivanish.md"
+    },
+    {
+      "id": "antivoid",
+      "name": "AntiVoid",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antivoid.md"
+    },
+    {
+      "id": "antiwaterpush",
+      "name": "AntiWaterPush",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiwaterpush.md"
+    },
+    {
+      "id": "antiweb",
+      "name": "AntiWeb",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiweb.md"
+    },
+    {
+      "id": "armoralert",
+      "name": "ArmorAlert",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/armoralert.md"
+    },
+    {
+      "id": "armorhud",
+      "name": "ArmorHud",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/armorhud.md"
+    },
+    {
+      "id": "armorswitch",
+      "name": "ArmorSwitch",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/armorswitch.md"
+    },
+    {
+      "id": "arrowdmg",
+      "name": "ArrowDmg",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/arrowdmg.md"
+    },
+    {
+      "id": "arrowdodge",
+      "name": "Arrow Dodge",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/arrowdodge.md"
+    },
+    {
+      "id": "aspect",
+      "name": "Aspect",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/aspect.md"
+    },
+    {
+      "id": "aspectratio",
+      "name": "AspectRatio",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/aspectratio.md"
+    },
+    {
+      "id": "attributeswap",
+      "name": "Attribute Swap",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/attributeswap.md"
+    },
+    {
+      "id": "autoaccept",
+      "name": "AutoAccept",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoaccept.md"
+    },
+    {
+      "id": "autoaccount",
+      "name": "AutoAccount",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoaccount.md"
+    },
+    {
+      "id": "autoanchor",
+      "name": "AutoAnchor",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoanchor.md"
+    },
+    {
+      "id": "autoanvil",
+      "name": "Auto Anvil",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoanvil.md"
+    },
+    {
+      "id": "autoarmor",
+      "name": "AutoArmor",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoarmor.md"
+    },
+    {
+      "id": "autoauth",
+      "name": "AutoAuth",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoauth.md"
+    },
+    {
+      "id": "autobed",
+      "name": "AutoBed",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autobed.md"
+    },
+    {
+      "id": "autobow",
+      "name": "AutoBow",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autobow.md"
+    },
+    {
+      "id": "autobowrelease",
+      "name": "AutoBowRelease",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autobowrelease.md"
+    },
+    {
+      "id": "autobreak",
+      "name": "AutoBreak",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autobreak.md"
+    },
+    {
+      "id": "autobreed",
+      "name": "Auto Breed",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autobreed.md"
+    },
+    {
+      "id": "autobrewer",
+      "name": "Auto Brewer",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autobrewer.md"
+    },
+    {
+      "id": "autobuff",
+      "name": "AutoBuff",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autobuff.md"
+    },
+    {
+      "id": "autobuild",
+      "name": "AutoBuild",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autobuild.md"
+    },
+    {
+      "id": "autochatgame",
+      "name": "AutoChatGame",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autochatgame.md"
+    },
+    {
+      "id": "autocheat",
+      "name": "Auto Cheat",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autocheat.md"
+    },
+    {
+      "id": "autocity",
+      "name": "Auto City",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autocity.md"
+    },
+    {
+      "id": "autoclicker",
+      "name": "AutoClicker",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoclicker.md"
+    },
+    {
+      "id": "autocomplete",
+      "name": "AutoComplete",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autocomplete.md"
+    },
+    {
+      "id": "autoconfig",
+      "name": "AutoConfig",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoconfig.md"
+    },
+    {
+      "id": "autocrafter",
+      "name": "AutoCrafter",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autocrafter.md"
+    },
+    {
+      "id": "autocrystalbase",
+      "name": "AutoCrystalBase",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autocrystalbase.md"
+    },
+    {
+      "id": "autocrystalinfo",
+      "name": "AutoCrystalInfo",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autocrystalinfo.md"
+    },
+    {
+      "id": "autodeposit",
+      "name": "AutoDeposit",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autodeposit.md"
+    },
+    {
+      "id": "autodisable",
+      "name": "AutoDisable",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autodisable.md"
+    },
+    {
+      "id": "autodisconnect",
+      "name": "AutoLeave",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autodisconnect.md"
+    },
+    {
+      "id": "autododge",
+      "name": "AutoDodge",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autododge.md"
+    },
+    {
+      "id": "autodrop",
+      "name": "AutoDrop",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autodrop.md"
+    },
+    {
+      "id": "autoeat",
+      "name": "Auto Eat",
+      "category": "Player",
+      "status": "coded",
+      "module": "AutoEat",
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoeat.md"
+    },
+    {
+      "id": "autoeject",
+      "name": "Auto Eject",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoeject.md"
+    },
+    {
+      "id": "autoexp",
+      "name": "Auto Exp",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoexp.md"
+    },
+    {
+      "id": "autoez",
+      "name": "AutoEZ",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoez.md"
+    },
+    {
+      "id": "autof5",
+      "name": "AutoF5",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autof5.md"
+    },
+    {
+      "id": "autofarm",
+      "name": "AutoFarm",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autofarm.md"
+    },
+    {
+      "id": "autofish",
+      "name": "AutoFish",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autofish.md"
+    },
+    {
+      "id": "autoflyme",
+      "name": "AutoFlyme",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoflyme.md"
+    },
+    {
+      "id": "autogap",
+      "name": "Auto Gap",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autogap.md"
+    },
+    {
+      "id": "autogapple",
+      "name": "AutoGApple",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autogapple.md"
+    },
+    {
+      "id": "autogear",
+      "name": "AutoGear",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autogear.md"
+    },
+    {
+      "id": "autohole",
+      "name": "AutoHole",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autohole.md"
+    },
+    {
+      "id": "autojump",
+      "name": "Auto Jump",
+      "category": "Movement",
+      "status": "coded",
+      "module": "AutoJump",
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autojump.md"
+    },
+    {
+      "id": "autolibrarian",
+      "name": "AutoLibrarian",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autolibrarian.md"
+    },
+    {
+      "id": "automend",
+      "name": "Auto Mend",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/automend.md"
+    },
+    {
+      "id": "automine",
+      "name": "Auto Mine",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/automine.md"
+    },
+    {
+      "id": "automobheal",
+      "name": "AutoMobHeal",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/automobheal.md"
+    },
+    {
+      "id": "automount",
+      "name": "Auto Mount",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/automount.md"
+    },
+    {
+      "id": "autonametag",
+      "name": "Auto Nametag",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autonametag.md"
+    },
+    {
+      "id": "autopearl",
+      "name": "AutoPearl",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autopearl.md"
+    },
+    {
+      "id": "autopot",
+      "name": "AutoPot",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autopot.md"
+    },
+    {
+      "id": "autopotion",
+      "name": "AutoPotion",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autopotion.md"
+    },
+    {
+      "id": "autoqueue",
+      "name": "AutoQueue",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoqueue.md"
+    },
+    {
+      "id": "autoreconnect",
+      "name": "Auto Reconnect",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoreconnect.md"
+    },
+    {
+      "id": "autoreplenish",
+      "name": "Auto Replenish",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoreplenish.md"
+    },
+    {
+      "id": "autoreply",
+      "name": "AutoReply",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoreply.md"
+    },
+    {
+      "id": "autorespawn",
+      "name": "AutoRespawn",
+      "category": "Player",
+      "status": "coded",
+      "module": "AutoRespawn",
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autorespawn.md"
+    },
+    {
+      "id": "autorod",
+      "name": "AutoRod",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autorod.md"
+    },
+    {
+      "id": "autosex",
+      "name": "AutoSex",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autosex.md"
+    },
+    {
+      "id": "autoshear",
+      "name": "Auto Shearer",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoshear.md"
+    },
+    {
+      "id": "autoshoot",
+      "name": "AutoShoot",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoshoot.md"
+    },
+    {
+      "id": "autoshop",
+      "name": "AutoShop",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoshop.md"
+    },
+    {
+      "id": "autosign",
+      "name": "Auto Sign",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autosign.md"
+    },
+    {
+      "id": "autosmelter",
+      "name": "Auto Smelter",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autosmelter.md"
+    },
+    {
+      "id": "autosneak",
+      "name": "Sneak",
+      "category": "Movement",
+      "status": "coded",
+      "module": "AutoSneak",
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autosneak.md"
+    },
+    {
+      "id": "autosorter",
+      "name": "AutoSorter",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autosorter.md"
+    },
+    {
+      "id": "autosoup",
+      "name": "AutoSoup",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autosoup.md"
+    },
+    {
+      "id": "autosurround",
+      "name": "AutoSurround",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autosurround.md"
+    },
+    {
+      "id": "autoswim",
+      "name": "AutoSwim",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoswim.md"
+    },
+    {
+      "id": "autoswitch",
+      "name": "AutoSwitch",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoswitch.md"
+    },
+    {
+      "id": "autosword",
+      "name": "AutoSword",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autosword.md"
+    },
+    {
+      "id": "autotool",
+      "name": "AutoTool",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autotool.md"
+    },
+    {
+      "id": "autototem",
+      "name": "Auto Totem",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autototem.md"
+    },
+    {
+      "id": "autotrader",
+      "name": "AutoTrader",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autotrader.md"
+    },
+    {
+      "id": "autotrap",
+      "name": "AutoTrap",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autotrap.md"
+    },
+    {
+      "id": "autotunnel",
+      "name": "AutoTunnel",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autotunnel.md"
+    },
+    {
+      "id": "autowalk",
+      "name": "AutoWalk",
+      "category": "Movement",
+      "status": "coded",
+      "module": "AutoWalk",
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autowalk.md"
+    },
+    {
+      "id": "autowasp",
+      "name": "Auto Wasp",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autowasp.md"
+    },
+    {
+      "id": "autoweapon",
+      "name": "AutoWeapon",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoweapon.md"
+    },
+    {
+      "id": "autoweb",
+      "name": "Auto Web",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoweb.md"
+    },
+    {
+      "id": "autowindcharge",
+      "name": "AutoWindCharge",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autowindcharge.md"
+    },
+    {
+      "id": "autowither",
+      "name": "AutoWither",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autowither.md"
+    },
+    {
+      "id": "avoid",
+      "name": "Avoid",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/avoid.md"
+    },
+    {
+      "id": "avoidhazards",
+      "name": "AvoidHazards",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/avoidhazards.md"
+    },
+    {
+      "id": "background",
+      "name": "Background",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/background.md"
+    },
+    {
+      "id": "backtrack",
+      "name": "Backtrack",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/backtrack.md"
+    },
+    {
+      "id": "baritone",
+      "name": "Baritone",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/baritone.md"
+    },
+    {
+      "id": "baritonesettings",
+      "name": "BaritoneSettings",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/baritonesettings.md"
+    },
+    {
+      "id": "barrieresp",
+      "name": "BarrierEsp",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/barrieresp.md"
+    },
+    {
+      "id": "basefinder",
+      "name": "BaseFinder",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/basefinder.md"
+    },
+    {
+      "id": "beaconselector",
+      "name": "BeaconSelector",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/beaconselector.md"
+    },
+    {
+      "id": "bedaura",
+      "name": "Bed Aura",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bedaura.md"
+    },
+    {
+      "id": "beddefender",
+      "name": "BedDefender",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/beddefender.md"
+    },
+    {
+      "id": "bedplates",
+      "name": "BedPlates",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bedplates.md"
+    },
+    {
+      "id": "betterbeacons",
+      "name": "Better Beacons",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/betterbeacons.md"
+    },
+    {
+      "id": "betterchat",
+      "name": "BetterChat",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/betterchat.md"
+    },
+    {
+      "id": "betterinventory",
+      "name": "BetterInventory",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/betterinventory.md"
+    },
+    {
+      "id": "bettertab",
+      "name": "BetterTab",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bettertab.md"
+    },
+    {
+      "id": "bettertitle",
+      "name": "BetterTitle",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bettertitle.md"
+    },
+    {
+      "id": "bettertooltips",
+      "name": "Better Tooltips",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bettertooltips.md"
+    },
+    {
+      "id": "blink",
+      "name": "Blink",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blink.md"
+    },
+    {
+      "id": "blockbounce",
+      "name": "BlockBounce",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blockbounce.md"
+    },
+    {
+      "id": "blocker",
+      "name": "Blocker",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blocker.md"
+    },
+    {
+      "id": "blockesp",
+      "name": "BlockESP",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blockesp.md"
+    },
+    {
+      "id": "blockhighlight",
+      "name": "BlockHighLight",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blockhighlight.md"
+    },
+    {
+      "id": "blockin",
+      "name": "BlockIn",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blockin.md"
+    },
+    {
+      "id": "blockoutline",
+      "name": "BlockOutline",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blockoutline.md"
+    },
+    {
+      "id": "blockselection",
+      "name": "Block Selection",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blockselection.md"
+    },
+    {
+      "id": "blocktrap",
+      "name": "BlockTrap",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blocktrap.md"
+    },
+    {
+      "id": "blocktweaks",
+      "name": "BlockTweaks",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blocktweaks.md"
+    },
+    {
+      "id": "blockwalk",
+      "name": "BlockWalk",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blockwalk.md"
+    },
+    {
+      "id": "blur",
+      "name": "Blur",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blur.md"
+    },
+    {
+      "id": "boatfly",
+      "name": "BoatFly",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/boatfly.md"
+    },
+    {
+      "id": "bonemealaura",
+      "name": "BonemealAura",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bonemealaura.md"
+    },
+    {
+      "id": "bookbot",
+      "name": "BookBot",
+      "category": "Exploit",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bookbot.md"
+    },
+    {
+      "id": "borders",
+      "name": "Borders",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/borders.md"
+    },
+    {
+      "id": "bossstack",
+      "name": "Boss Stack",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bossstack.md"
+    },
+    {
+      "id": "bowaimbot",
+      "name": "Bow Aimbot",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bowaimbot.md"
+    },
+    {
+      "id": "bowpop",
+      "name": "BowPop",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bowpop.md"
+    },
+    {
+      "id": "bowspam",
+      "name": "Bow Spam",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bowspam.md"
+    },
+    {
+      "id": "breadcrumbs",
+      "name": "Breadcrumbs",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/breadcrumbs.md"
+    },
+    {
+      "id": "breakdelay",
+      "name": "Break Delay",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/breakdelay.md"
+    },
+    {
+      "id": "breaker",
+      "name": "Breaker",
+      "category": "Fun",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/breaker.md"
+    },
+    {
+      "id": "breakesp",
+      "name": "BreakESP",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/breakesp.md"
+    },
+    {
+      "id": "breakhighlight",
+      "name": "BreakHighLight",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/breakhighlight.md"
+    },
+    {
+      "id": "breakindicators",
+      "name": "Break Indicators",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/breakindicators.md"
+    },
+    {
+      "id": "build",
+      "name": "Build",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/build.md"
+    },
+    {
+      "id": "buildheight",
+      "name": "Build Height",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/buildheight.md"
+    },
+    {
+      "id": "buildrandom",
+      "name": "BuildRandom",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/buildrandom.md"
+    },
+    {
+      "id": "bunnyhop",
+      "name": "BunnyHop",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bunnyhop.md"
+    },
+    {
+      "id": "burrow",
+      "name": "Burrow",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/burrow.md"
+    },
+    {
+      "id": "cameraclip",
+      "name": "CameraClip",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/cameraclip.md"
+    },
+    {
+      "id": "cameratweaks",
+      "name": "Camera Tweaks",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/cameratweaks.md"
+    },
+    {
+      "id": "candlehud",
+      "name": "CandleHud",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/candlehud.md"
+    },
+    {
+      "id": "capes",
+      "name": "Capes",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/capes.md"
+    },
+    {
+      "id": "cavefinder",
+      "name": "CaveFinder",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/cavefinder.md"
+    },
+    {
+      "id": "chams",
+      "name": "Chams",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/chams.md"
+    },
+    {
+      "id": "chat",
+      "name": "Chat",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/chat.md"
+    },
+    {
+      "id": "chatappend",
+      "name": "ChatAppend",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/chatappend.md"
+    },
+    {
+      "id": "chatcolors",
+      "name": "ChatColors",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/chatcolors.md"
+    },
+    {
+      "id": "chattranslator",
+      "name": "ChatTranslator",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/chattranslator.md"
+    },
+    {
+      "id": "chatutils",
+      "name": "ChatUtils",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/chatutils.md"
+    },
+    {
+      "id": "chestaura",
+      "name": "ChestAura",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/chestaura.md"
+    },
+    {
+      "id": "chestcleaner",
+      "name": "ChestCleaner",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/chestcleaner.md"
+    },
+    {
+      "id": "chestcounter",
+      "name": "ChestCounter",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/chestcounter.md"
+    },
+    {
+      "id": "cheststealer",
+      "name": "ChestStealer",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/cheststealer.md"
+    },
+    {
+      "id": "chestswap",
+      "name": "Chest Swap",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/chestswap.md"
+    },
+    {
+      "id": "choruscontrol",
+      "name": "ChorusControl",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/choruscontrol.md"
+    },
+    {
+      "id": "chorusexploit",
+      "name": "ChorusExploit",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/chorusexploit.md"
+    },
+    {
+      "id": "cityesp",
+      "name": "City Esp",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/cityesp.md"
+    },
+    {
+      "id": "clickaura",
+      "name": "ClickAura",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/clickaura.md"
+    },
+    {
+      "id": "clickgui",
+      "name": "ClickGUI",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/clickgui.md"
+    },
+    {
+      "id": "clicktp",
+      "name": "ClickTp",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/clicktp.md"
+    },
+    {
+      "id": "clientsettings",
+      "name": "ClientSettings",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/clientsettings.md"
+    },
+    {
+      "id": "clientsidetime",
+      "name": "ClientSideTime",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/clientsidetime.md"
+    },
+    {
+      "id": "clientspoof",
+      "name": "ClientSpoof",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/clientspoof.md"
+    },
+    {
+      "id": "clip",
+      "name": "Clip",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/clip.md"
+    },
+    {
+      "id": "collisions",
+      "name": "Collisions",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/collisions.md"
+    },
+    {
+      "id": "colors",
+      "name": "Colors",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/colors.md"
+    },
+    {
+      "id": "colorsigns",
+      "name": "ColorSigns",
+      "category": "Exploit",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/colorsigns.md"
+    },
+    {
+      "id": "combinemobs",
+      "name": "CombineMobs",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/combinemobs.md"
+    },
+    {
+      "id": "companion",
+      "name": "Companion",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/companion.md"
+    },
+    {
+      "id": "config",
+      "name": "Config",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/config.md"
+    },
+    {
+      "id": "cooldowns",
+      "name": "Cooldowns",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/cooldowns.md"
+    },
+    {
+      "id": "coords",
+      "name": "Coords",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/coords.md"
+    },
+    {
+      "id": "copsandcrims",
+      "name": "CopsAndCrims",
+      "category": "Fun",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/copsandcrims.md"
+    },
+    {
+      "id": "crashchest",
+      "name": "CrashChest",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/crashchest.md"
+    },
+    {
+      "id": "criticals",
+      "name": "Criticals",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/criticals.md"
+    },
+    {
+      "id": "crosshair",
+      "name": "Crosshair",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/crosshair.md"
+    },
+    {
+      "id": "crosshairarrows",
+      "name": "CrosshairArrows",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/crosshairarrows.md"
+    },
+    {
+      "id": "crystalaura",
+      "name": "CrystalAura",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/crystalaura.md"
+    },
+    {
+      "id": "crystalview",
+      "name": "CrystalView",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/crystalview.md"
+    },
+    {
+      "id": "customambience",
+      "name": "CustomAmbience",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/customambience.md"
+    },
+    {
+      "id": "customfont",
+      "name": "CustomFont",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/customfont.md"
+    },
+    {
+      "id": "damage",
+      "name": "Damage",
+      "category": "Exploit",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/damage.md"
+    },
+    {
+      "id": "damageparticles",
+      "name": "DamageParticles",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/damageparticles.md"
+    },
+    {
+      "id": "damagetint",
+      "name": "DamageTint",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/damagetint.md"
+    },
+    {
+      "id": "dankbobbing",
+      "name": "DankBobbing",
+      "category": "Fun",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/dankbobbing.md"
+    },
+    {
+      "id": "debug",
+      "name": "Debug",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/debug.md"
+    },
+    {
+      "id": "debugrecorder",
+      "name": "DebugRecorder",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/debugrecorder.md"
+    },
+    {
+      "id": "derp",
+      "name": "Derp",
+      "category": "Fun",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/derp.md"
+    },
+    {
+      "id": "disabler",
+      "name": "Disabler",
+      "category": "Exploit",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/disabler.md"
+    },
+    {
+      "id": "discordpresence",
+      "name": "Discord Presence",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/discordpresence.md"
+    },
+    {
+      "id": "discordrpc",
+      "name": "Discord RPC",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/discordrpc.md"
+    },
+    {
+      "id": "dolphin",
+      "name": "Dolphin",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/dolphin.md"
+    },
+    {
+      "id": "dronecontrol",
+      "name": "DroneControl",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/dronecontrol.md"
+    },
+    {
+      "id": "dupe",
+      "name": "Dupe",
+      "category": "Exploit",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/dupe.md"
+    },
+    {
+      "id": "durabilityalert",
+      "name": "DurabilityAlert",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/durabilityalert.md"
+    },
+    {
+      "id": "eagle",
+      "name": "Eagle",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/eagle.md"
+    },
+    {
+      "id": "easypearl",
+      "name": "EasyPearl",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/easypearl.md"
+    },
+    {
+      "id": "ebattesratte",
+      "name": "EbatteSratte",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/ebattesratte.md"
+    },
+    {
+      "id": "echestfarmer",
+      "name": "Echest Farmer",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/echestfarmer.md"
+    },
+    {
+      "id": "elytra",
+      "name": "Elytra+",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytra.md"
+    },
+    {
+      "id": "elytraboost",
+      "name": "Elytra Boost",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytraboost.md"
+    },
+    {
+      "id": "elytrafly",
+      "name": "ElytraFly",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytrafly.md"
+    },
+    {
+      "id": "elytrarecast",
+      "name": "ElytraRecast",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytrarecast.md"
+    },
+    {
+      "id": "elytrareplace",
+      "name": "ElytraReplace",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytrareplace.md"
+    },
+    {
+      "id": "elytraswap",
+      "name": "ElytraSwap",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytraswap.md"
+    },
+    {
+      "id": "elytratarget",
+      "name": "ElytraTarget",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytratarget.md"
+    },
+    {
+      "id": "elytratweaks",
+      "name": "ElytraTweaks",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytratweaks.md"
+    },
+    {
+      "id": "enchantcolor",
+      "name": "Enchant Color",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/enchantcolor.md"
+    },
+    {
+      "id": "endermanlook",
+      "name": "Enderman Look",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/endermanlook.md"
+    },
+    {
+      "id": "entities",
+      "name": "Entities",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/entities.md"
+    },
+    {
+      "id": "entitycontrol",
+      "name": "EntityControl",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/entitycontrol.md"
+    },
+    {
+      "id": "entityowner",
+      "name": "Entity Owner",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/entityowner.md"
+    },
+    {
+      "id": "entityspeed",
+      "name": "EntitySpeed",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/entityspeed.md"
+    },
+    {
+      "id": "environment",
+      "name": "Environment",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/environment.md"
+    },
+    {
+      "id": "esp",
+      "name": "ESP",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/esp.md"
+    },
+    {
+      "id": "excavator",
+      "name": "Excavator",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/excavator.md"
+    },
+    {
+      "id": "expthrower",
+      "name": "Exp Thrower",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/expthrower.md"
+    },
+    {
+      "id": "extendedfirework",
+      "name": "ExtendedFirework",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/extendedfirework.md"
+    },
+    {
+      "id": "extinguish",
+      "name": "Extinguish",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/extinguish.md"
+    },
+    {
+      "id": "extrachat",
+      "name": "ExtraChat",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/extrachat.md"
+    },
+    {
+      "id": "extrachest",
+      "name": "ExtraChest",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/extrachest.md"
+    },
+    {
+      "id": "extracraft",
+      "name": "ExtraCraft",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/extracraft.md"
+    },
+    {
+      "id": "extraelytra",
+      "name": "ExtraElytra",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/extraelytra.md"
+    },
+    {
+      "id": "extrascreenshot",
+      "name": "ExtraScreenshot",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/extrascreenshot.md"
+    },
+    {
+      "id": "extrasign",
+      "name": "ExtraSign",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/extrasign.md"
+    },
+    {
+      "id": "extratab",
+      "name": "ExtraTab",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/extratab.md"
+    },
+    {
+      "id": "extratooltips",
+      "name": "ExtraTooltips",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/extratooltips.md"
+    },
+    {
+      "id": "fakelag",
+      "name": "FakeLag",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fakelag.md"
+    },
+    {
+      "id": "fakeplayer",
+      "name": "Fake Player",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fakeplayer.md"
+    },
+    {
+      "id": "fancychat",
+      "name": "Fancy Chat",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fancychat.md"
+    },
+    {
+      "id": "fastaccel",
+      "name": "FastAccel",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastaccel.md"
+    },
+    {
+      "id": "fastbreak",
+      "name": "FastBreak",
+      "category": "World",
+      "status": "coded",
+      "module": "FastBreak",
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastbreak.md"
+    },
+    {
+      "id": "fastclimb",
+      "name": "Fast Climb",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastclimb.md"
+    },
+    {
+      "id": "fastexp",
+      "name": "FastExp",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastexp.md"
+    },
+    {
+      "id": "fastfall",
+      "name": "Fast Fall",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastfall.md"
+    },
+    {
+      "id": "fastinteract",
+      "name": "Fast Interact",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastinteract.md"
+    },
+    {
+      "id": "fastladder",
+      "name": "FastLadder",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastladder.md"
+    },
+    {
+      "id": "fastlatency",
+      "name": "FastLatency",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastlatency.md"
+    },
+    {
+      "id": "fastplace",
+      "name": "FastPlace",
+      "category": "World",
+      "status": "coded",
+      "module": "FastPlace",
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastplace.md"
+    },
+    {
+      "id": "fastprojectile",
+      "name": "FastProjectile",
+      "category": "Exploit",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastprojectile.md"
+    },
+    {
+      "id": "fastswim",
+      "name": "FastSwim",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastswim.md"
+    },
+    {
+      "id": "fastuse",
+      "name": "FastUse",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastuse.md"
+    },
+    {
+      "id": "feedaura",
+      "name": "FeedAura",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/feedaura.md"
+    },
+    {
+      "id": "feettrap",
+      "name": "FeetTrap",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/feettrap.md"
+    },
+    {
+      "id": "fightbot",
+      "name": "FightBot",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fightbot.md"
+    },
+    {
+      "id": "fish",
+      "name": "Fish",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fish.md"
+    },
+    {
+      "id": "flagcheck",
+      "name": "FlagCheck",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/flagcheck.md"
+    },
+    {
+      "id": "flamethrower",
+      "name": "Flamethrower",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/flamethrower.md"
+    },
+    {
+      "id": "flight",
+      "name": "Fly",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/flight.md"
+    },
+    {
+      "id": "follow",
+      "name": "Follow",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/follow.md"
+    },
+    {
+      "id": "font",
+      "name": "Font",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/font.md"
+    },
+    {
+      "id": "forceop",
+      "name": "ForceOp",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/forceop.md"
+    },
+    {
+      "id": "forceplace",
+      "name": "ForcePlace",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/forceplace.md"
+    },
+    {
+      "id": "fov",
+      "name": "FOV",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fov.md"
+    },
+    {
+      "id": "fovmodifier",
+      "name": "FOVModifier",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fovmodifier.md"
+    },
+    {
+      "id": "fpscounter",
+      "name": "FpsCounter",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fpscounter.md"
+    },
+    {
+      "id": "franky",
+      "name": "Franky",
+      "category": "Exploit",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/franky.md"
+    },
+    {
+      "id": "freecam",
+      "name": "FreeCam",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/freecam.md"
+    },
+    {
+      "id": "freelook",
+      "name": "FreeLook",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/freelook.md"
+    },
+    {
+      "id": "freeze",
+      "name": "Freeze",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/freeze.md"
+    },
+    {
+      "id": "fucker",
+      "name": "Fucker",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fucker.md"
+    },
+    {
+      "id": "fullbright",
+      "name": "FullBright",
+      "category": "Render",
+      "status": "partial",
+      "module": "MaxBrightness",
+      "note": "Only raises vanilla gamma to its maximum.",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fullbright.md"
+    },
+    {
+      "id": "gamemode",
+      "name": "Gamemode",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/gamemode.md"
+    },
+    {
+      "id": "gappleshud",
+      "name": "GapplesHud",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/gappleshud.md"
+    },
+    {
+      "id": "ghost",
+      "name": "Ghost",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/ghost.md"
+    },
+    {
+      "id": "ghosthand",
+      "name": "GhostHand",
+      "category": "Exploit",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/ghosthand.md"
+    },
+    {
+      "id": "glide",
+      "name": "Glide",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/glide.md"
+    },
+    {
+      "id": "greentext",
+      "name": "GreenText",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/greentext.md"
+    },
+    {
+      "id": "greeter",
+      "name": "Greeter",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/greeter.md"
+    },
+    {
+      "id": "guicloser",
+      "name": "GUICloser",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/guicloser.md"
+    },
+    {
+      "id": "guimove",
+      "name": "Gui Move",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/guimove.md"
+    },
+    {
+      "id": "handderp",
+      "name": "HandDerp",
+      "category": "Fun",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/handderp.md"
+    },
+    {
+      "id": "handnoclip",
+      "name": "HandNoClip",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/handnoclip.md"
+    },
+    {
+      "id": "handview",
+      "name": "Hand View",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/handview.md"
+    },
+    {
+      "id": "hats",
+      "name": "Hats",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/hats.md"
+    },
+    {
+      "id": "headroll",
+      "name": "HeadRoll",
+      "category": "Fun",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/headroll.md"
+    },
+    {
+      "id": "healthtags",
+      "name": "HealthTags",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/healthtags.md"
+    },
+    {
+      "id": "heaven",
+      "name": "Heaven",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/heaven.md"
+    },
+    {
+      "id": "highjump",
+      "name": "HighJump",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/highjump.md"
+    },
+    {
+      "id": "highwaybuilder",
+      "name": "Highway Builder",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/highwaybuilder.md"
+    },
+    {
+      "id": "hitbox",
+      "name": "Hitbox",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/hitbox.md"
+    },
+    {
+      "id": "hitboxignore",
+      "name": "HitboxIgnore",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/hitboxignore.md"
+    },
+    {
+      "id": "hitbubbles",
+      "name": "HitBubbles",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/hitbubbles.md"
+    },
+    {
+      "id": "hitfx",
+      "name": "HitFX",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/hitfx.md"
+    },
+    {
+      "id": "hitmarkers",
+      "name": "Hitmarkers",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/hitmarkers.md"
+    },
+    {
+      "id": "hitparticles",
+      "name": "HitParticles",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/hitparticles.md"
+    },
+    {
+      "id": "holeanchor",
+      "name": "HoleAnchor",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/holeanchor.md"
+    },
+    {
+      "id": "holeesp",
+      "name": "HoleESP",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/holeesp.md"
+    },
+    {
+      "id": "holefill",
+      "name": "HoleFiller",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/holefill.md"
+    },
+    {
+      "id": "holesnap",
+      "name": "HoleSnap",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/holesnap.md"
+    },
+    {
+      "id": "hotbar",
+      "name": "Hotbar",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/hotbar.md"
+    },
+    {
+      "id": "hud",
+      "name": "HUD",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/hud.md"
+    },
+    {
+      "id": "hudeditor",
+      "name": "HudEditor",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/hudeditor.md"
+    },
+    {
+      "id": "hunt",
+      "name": "Hunt",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/hunt.md"
+    },
+    {
+      "id": "icespeed",
+      "name": "IceSpeed",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/icespeed.md"
+    },
+    {
+      "id": "ignite",
+      "name": "Ignite",
+      "category": "Exploit",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/ignite.md"
+    },
+    {
+      "id": "infinichat",
+      "name": "InfiniChat",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/infinichat.md"
+    },
+    {
+      "id": "infinityminer",
+      "name": "Infinity Miner",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/infinityminer.md"
+    },
+    {
+      "id": "instabuild",
+      "name": "InstaBuild",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/instabuild.md"
+    },
+    {
+      "id": "instantbunker",
+      "name": "InstantBunker",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/instantbunker.md"
+    },
+    {
+      "id": "instantrebreak",
+      "name": "Instant Rebreak",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/instantrebreak.md"
+    },
+    {
+      "id": "invcleaner",
+      "name": "InvCleaner",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/invcleaner.md"
+    },
+    {
+      "id": "inventory",
+      "name": "Inventory",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/inventory.md"
+    },
+    {
+      "id": "inventorycleaner",
+      "name": "InventoryCleaner",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/inventorycleaner.md"
+    },
+    {
+      "id": "inventoryinfo",
+      "name": "InventoryInfo",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/inventoryinfo.md"
+    },
+    {
+      "id": "inventorytracker",
+      "name": "InventoryTracker",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/inventorytracker.md"
+    },
+    {
+      "id": "inventorytweaks",
+      "name": "Inventory Tweaks",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/inventorytweaks.md"
+    },
+    {
+      "id": "invwalk",
+      "name": "InventoryMove",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/invwalk.md"
+    },
+    {
+      "id": "itemchams",
+      "name": "ItemChams",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/itemchams.md"
+    },
+    {
+      "id": "itemesp",
+      "name": "ItemESP",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/itemesp.md"
+    },
+    {
+      "id": "itemgenerator",
+      "name": "ItemGenerator",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/itemgenerator.md"
+    },
+    {
+      "id": "itemhighlight",
+      "name": "Item Highlight",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/itemhighlight.md"
+    },
+    {
+      "id": "itemphysics",
+      "name": "Item Physics",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/itemphysics.md"
+    },
+    {
+      "id": "itemsaver",
+      "name": "Item Saver",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/itemsaver.md"
+    },
+    {
+      "id": "itemscroller",
+      "name": "ItemScroller",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/itemscroller.md"
+    },
+    {
+      "id": "itemtags",
+      "name": "ItemTags",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/itemtags.md"
+    },
+    {
+      "id": "jesus",
+      "name": "Jesus",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/jesus.md"
+    },
+    {
+      "id": "jetpack",
+      "name": "Jetpack",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/jetpack.md"
+    },
+    {
+      "id": "jumpcircle",
+      "name": "JumpCircle",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/jumpcircle.md"
+    },
+    {
+      "id": "jumpeffect",
+      "name": "JumpEffect",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/jumpeffect.md"
+    },
+    {
+      "id": "kaboom",
+      "name": "Kaboom",
+      "category": "Exploit",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/kaboom.md"
+    },
+    {
+      "id": "keepsprint",
+      "name": "KeepSprint",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/keepsprint.md"
+    },
+    {
+      "id": "keybinds",
+      "name": "KeyBinds",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/keybinds.md"
+    },
+    {
+      "id": "kick",
+      "name": "Kick",
+      "category": "Exploit",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/kick.md"
+    },
+    {
+      "id": "killaura",
+      "name": "KillAura",
+      "category": "Combat",
+      "status": "coded",
+      "module": "KillAura",
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/killaura.md"
+    },
+    {
+      "id": "killauralegit",
+      "name": "KillauraLegit",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/killauralegit.md"
+    },
+    {
+      "id": "killeffect",
+      "name": "KillEffect",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/killeffect.md"
+    },
+    {
+      "id": "killfeed",
+      "name": "KillFeed",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/killfeed.md"
+    },
+    {
+      "id": "killpotion",
+      "name": "KillPotion",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/killpotion.md"
+    },
+    {
+      "id": "killstats",
+      "name": "KillStats",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/killstats.md"
+    },
+    {
+      "id": "lag",
+      "name": "Lag",
+      "category": "Exploit",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/lag.md"
+    },
+    {
+      "id": "lagdetector",
+      "name": "LagDetector",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/lagdetector.md"
+    },
+    {
+      "id": "lagnotifier",
+      "name": "LagNotifier",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/lagnotifier.md"
+    },
+    {
+      "id": "lagreducer",
+      "name": "LagReducer",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/lagreducer.md"
+    },
+    {
+      "id": "language",
+      "name": "Language",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/language.md"
+    },
+    {
+      "id": "legacyhud",
+      "name": "LegacyHud",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/legacyhud.md"
+    },
+    {
+      "id": "legithelper",
+      "name": "LegitHelper",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/legithelper.md"
+    },
+    {
+      "id": "levitationcontrol",
+      "name": "Levitation Control",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/levitationcontrol.md"
+    },
+    {
+      "id": "levitctrl",
+      "name": "LevitCtrl",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/levitctrl.md"
+    },
+    {
+      "id": "lightoverlay",
+      "name": "Light Overlay",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/lightoverlay.md"
+    },
+    {
+      "id": "liquidfiller",
+      "name": "LiquidFiller",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/liquidfiller.md"
+    },
+    {
+      "id": "liquidinteract",
+      "name": "Liquid Interact",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/liquidinteract.md"
+    },
+    {
+      "id": "liquidplace",
+      "name": "LiquidPlace",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/liquidplace.md"
+    },
+    {
+      "id": "liquids",
+      "name": "Liquids",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/liquids.md"
+    },
+    {
+      "id": "liquidwalk",
+      "name": "LiquidWalk",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/liquidwalk.md"
+    },
+    {
+      "id": "logoffspot",
+      "name": "LogoffSpot",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/logoffspot.md"
+    },
+    {
+      "id": "logoutspots",
+      "name": "Logout Spots",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/logoutspots.md"
+    },
+    {
+      "id": "logposition",
+      "name": "Log Position",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/logposition.md"
+    },
+    {
+      "id": "longjump",
+      "name": "LongJump",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/longjump.md"
+    },
+    {
+      "id": "lsd",
+      "name": "Lsd",
+      "category": "Fun",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/lsd.md"
+    },
+    {
+      "id": "macedmg",
+      "name": "MaceDmg",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/macedmg.md"
+    },
+    {
+      "id": "macekill",
+      "name": "MaceKill",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/macekill.md"
+    },
+    {
+      "id": "macros",
+      "name": "Macros",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/macros.md"
+    },
+    {
+      "id": "mainmenu",
+      "name": "Main Menu",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/mainmenu.md"
+    },
+    {
+      "id": "marker",
+      "name": "Marker",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/marker.md"
+    },
+    {
+      "id": "masstpa",
+      "name": "MassTpa",
+      "category": "Exploit",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/masstpa.md"
+    },
+    {
+      "id": "media",
+      "name": "Media",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/media.md"
+    },
+    {
+      "id": "memoryhud",
+      "name": "MemoryHud",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/memoryhud.md"
+    },
+    {
+      "id": "messageappend",
+      "name": "MessageAppend",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/messageappend.md"
+    },
+    {
+      "id": "messageaura",
+      "name": "Message Aura",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/messageaura.md"
+    },
+    {
+      "id": "middleclick",
+      "name": "MiddleClick",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/middleclick.md"
+    },
+    {
+      "id": "middleclickaction",
+      "name": "MiddleClickAction",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/middleclickaction.md"
+    },
+    {
+      "id": "middleclickextra",
+      "name": "Middle Click Extra",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/middleclickextra.md"
+    },
+    {
+      "id": "middleclickfriend",
+      "name": "Middle Click Friend",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/middleclickfriend.md"
+    },
+    {
+      "id": "mileycyrus",
+      "name": "MileyCyrus",
+      "category": "Fun",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/mileycyrus.md"
+    },
+    {
+      "id": "minestrike",
+      "name": "Minestrike",
+      "category": "Fun",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/minestrike.md"
+    },
+    {
+      "id": "mobesp",
+      "name": "MobEsp",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/mobesp.md"
+    },
+    {
+      "id": "mobowner",
+      "name": "MobOwners",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/mobowner.md"
+    },
+    {
+      "id": "mobspawnesp",
+      "name": "MobSpawnEsp",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/mobspawnesp.md"
+    },
+    {
+      "id": "modulelist",
+      "name": "ModuleList",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/modulelist.md"
+    },
+    {
+      "id": "morecarry",
+      "name": "MoreCarry",
+      "category": "Exploit",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/morecarry.md"
+    },
+    {
+      "id": "moreknockback",
+      "name": "MoreKnockback",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/moreknockback.md"
+    },
+    {
+      "id": "mouseelytrafix",
+      "name": "MouseElytraFix",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/mouseelytrafix.md"
+    },
+    {
+      "id": "multiactions",
+      "name": "MultiActions",
+      "category": "Exploit",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/multiactions.md"
+    },
+    {
+      "id": "multiaura",
+      "name": "MultiAura",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/multiaura.md"
+    },
+    {
+      "id": "multitask",
+      "name": "Multitask",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/multitask.md"
+    },
+    {
+      "id": "murder",
+      "name": "Murder",
+      "category": "Fun",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/murder.md"
+    },
+    {
+      "id": "murdermystery",
+      "name": "MurderMystery",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/murdermystery.md"
+    },
+    {
+      "id": "namecollector",
+      "name": "NameCollector",
+      "category": "Exploit",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/namecollector.md"
+    },
+    {
+      "id": "nameprotect",
+      "name": "NameProtect",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nameprotect.md"
+    },
+    {
+      "id": "nametags",
+      "name": "Nametags",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nametags.md"
+    },
+    {
+      "id": "navigator",
+      "name": "Navigator",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/navigator.md"
+    },
+    {
+      "id": "newchunks",
+      "name": "NewChunks",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/newchunks.md"
+    },
+    {
+      "id": "nobackground",
+      "name": "NoBackground",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nobackground.md"
+    },
+    {
+      "id": "noblockinteract",
+      "name": "NoBlockInteract",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noblockinteract.md"
+    },
+    {
+      "id": "nobob",
+      "name": "NoBob",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nobob.md"
+    },
+    {
+      "id": "noclip",
+      "name": "NoClip",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noclip.md"
+    },
+    {
+      "id": "nocommentexploit",
+      "name": "NoCommentExploit",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nocommentexploit.md"
+    },
+    {
+      "id": "noentityinteract",
+      "name": "NoEntityInteract",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noentityinteract.md"
+    },
+    {
+      "id": "noentitytrace",
+      "name": "NoEntityTrace",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noentitytrace.md"
+    },
+    {
+      "id": "nofall",
+      "name": "NoFall",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nofall.md"
+    },
+    {
+      "id": "nofireoverlay",
+      "name": "NoFireOverlay",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nofireoverlay.md"
+    },
+    {
+      "id": "nofog",
+      "name": "NoFog",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nofog.md"
+    },
+    {
+      "id": "nofov",
+      "name": "NoFOV",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nofov.md"
+    },
+    {
+      "id": "noghostblocks",
+      "name": "No Ghost Blocks",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noghostblocks.md"
+    },
+    {
+      "id": "noglitchblocks",
+      "name": "NoGlitchBlocks",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noglitchblocks.md"
+    },
+    {
+      "id": "nohurtcam",
+      "name": "NoHurtCam",
+      "category": "Render",
+      "status": "coded",
+      "module": "NoHurtCam",
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nohurtcam.md"
+    },
+    {
+      "id": "nointeract",
+      "name": "No Interact",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nointeract.md"
+    },
+    {
+      "id": "nointerpolation",
+      "name": "NoInterpolation",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nointerpolation.md"
+    },
+    {
+      "id": "nojumpdelay",
+      "name": "NoJumpDelay",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nojumpdelay.md"
+    },
+    {
+      "id": "nomineanimation",
+      "name": "NoMineAnimation",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nomineanimation.md"
+    },
+    {
+      "id": "nominingtrace",
+      "name": "No Mining Trace",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nominingtrace.md"
+    },
+    {
+      "id": "nomisscooldown",
+      "name": "NoMissCooldown",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nomisscooldown.md"
+    },
+    {
+      "id": "nooverlay",
+      "name": "NoOverlay",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nooverlay.md"
+    },
+    {
+      "id": "nopacketexception",
+      "name": "NoPacketException",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nopacketexception.md"
+    },
+    {
+      "id": "nopitchlimit",
+      "name": "NoPitchLimit",
+      "category": "Exploit",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nopitchlimit.md"
+    },
+    {
+      "id": "nopose",
+      "name": "NoPose",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nopose.md"
+    },
+    {
+      "id": "nopumpkin",
+      "name": "NoPumpkin",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nopumpkin.md"
+    },
+    {
+      "id": "nopush",
+      "name": "NoPush",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nopush.md"
+    },
+    {
+      "id": "norender",
+      "name": "No Render",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/norender.md"
+    },
+    {
+      "id": "norotate",
+      "name": "NoRotateSet",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/norotate.md"
+    },
+    {
+      "id": "noserverrotate",
+      "name": "NoServerRotate",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noserverrotate.md"
+    },
+    {
+      "id": "noserverslot",
+      "name": "NoServerSlot",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noserverslot.md"
+    },
+    {
+      "id": "noslotset",
+      "name": "NoSlotSet",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noslotset.md"
+    },
+    {
+      "id": "noslow",
+      "name": "NoSlow",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noslow.md"
+    },
+    {
+      "id": "noslowbreak",
+      "name": "NoSlowBreak",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noslowbreak.md"
+    },
+    {
+      "id": "nosoundlag",
+      "name": "NoSoundLag",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nosoundlag.md"
+    },
+    {
+      "id": "nosrp",
+      "name": "No SRP",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nosrp.md"
+    },
+    {
+      "id": "nostatuseffects",
+      "name": "No Status Effects",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nostatuseffects.md"
+    },
+    {
+      "id": "noswing",
+      "name": "NoSwing",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noswing.md"
+    },
+    {
+      "id": "notebot",
+      "name": "Notebot",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/notebot.md"
+    },
+    {
+      "id": "notetuner",
+      "name": "NoteTuner",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/notetuner.md"
+    },
+    {
+      "id": "notifications",
+      "name": "Notifications",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/notifications.md"
+    },
+    {
+      "id": "notifier",
+      "name": "Notifier",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/notifier.md"
+    },
+    {
+      "id": "novignette",
+      "name": "NoVignette",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/novignette.md"
+    },
+    {
+      "id": "nowatercollision",
+      "name": "NoWaterCollision",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nowatercollision.md"
+    },
+    {
+      "id": "noweather",
+      "name": "NoWeather",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noweather.md"
+    },
+    {
+      "id": "noweb",
+      "name": "NoWeb",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noweb.md"
+    },
+    {
+      "id": "nuker",
+      "name": "Nuker",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nuker.md"
+    },
+    {
+      "id": "nukerlegit",
+      "name": "NukerLegit",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nukerlegit.md"
+    },
+    {
+      "id": "offhand",
+      "name": "Offhand",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/offhand.md"
+    },
+    {
+      "id": "oldpotions",
+      "name": "OldPotions",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/oldpotions.md"
+    },
+    {
+      "id": "openwateresp",
+      "name": "OpenWaterEsp",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/openwateresp.md"
+    },
+    {
+      "id": "optifinecapes",
+      "name": "OptifineCapes",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/optifinecapes.md"
+    },
+    {
+      "id": "orebfuscator",
+      "name": "Orebfuscator",
+      "category": "Exploit",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/orebfuscator.md"
+    },
+    {
+      "id": "overlay",
+      "name": "Overlay",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/overlay.md"
+    },
+    {
+      "id": "packetcanceler",
+      "name": "Packet Canceller",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/packetcanceler.md"
+    },
+    {
+      "id": "packetfly",
+      "name": "PacketFly",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/packetfly.md"
+    },
+    {
+      "id": "packetlogger",
+      "name": "PacketLogger",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/packetlogger.md"
+    },
+    {
+      "id": "packetmine",
+      "name": "PacketMine",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/packetmine.md"
+    },
+    {
+      "id": "panic",
+      "name": "Panic",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/panic.md"
+    },
+    {
+      "id": "parkour",
+      "name": "Parkour",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/parkour.md"
+    },
+    {
+      "id": "particles",
+      "name": "Particles",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/particles.md"
+    },
+    {
+      "id": "pearlbait",
+      "name": "PearlBait",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/pearlbait.md"
+    },
+    {
+      "id": "pearlblockthrow",
+      "name": "PearlBlockThrow",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/pearlblockthrow.md"
+    },
+    {
+      "id": "pearlchaser",
+      "name": "PearlChaser",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/pearlchaser.md"
+    },
+    {
+      "id": "penisesp",
+      "name": "PenisESP",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/penisesp.md"
+    },
+    {
+      "id": "perfectdelay",
+      "name": "PerfectDelay",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/perfectdelay.md"
+    },
+    {
+      "id": "phase",
+      "name": "Phase",
+      "category": "Exploit",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/phase.md"
+    },
+    {
+      "id": "pinghud",
+      "name": "PingHud",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/pinghud.md"
+    },
+    {
+      "id": "pingspoof",
+      "name": "PingSpoof",
+      "category": "Exploit",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/pingspoof.md"
+    },
+    {
+      "id": "pistonaura",
+      "name": "PistonAura",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/pistonaura.md"
+    },
+    {
+      "id": "pistonpush",
+      "name": "PistonPush",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/pistonpush.md"
+    },
+    {
+      "id": "playeresp",
+      "name": "PlayerEsp",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/playeresp.md"
+    },
+    {
+      "id": "plugins",
+      "name": "Plugins",
+      "category": "Exploit",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/plugins.md"
+    },
+    {
+      "id": "popchams",
+      "name": "Pop Chams",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/popchams.md"
+    },
+    {
+      "id": "portalesp",
+      "name": "PortalEsp",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/portalesp.md"
+    },
+    {
+      "id": "portalgodmode",
+      "name": "PortalGodMode",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/portalgodmode.md"
+    },
+    {
+      "id": "portalgui",
+      "name": "PortalGui",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/portalgui.md"
+    },
+    {
+      "id": "portalinventory",
+      "name": "PortalInventory",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/portalinventory.md"
+    },
+    {
+      "id": "portalmenu",
+      "name": "PortalMenu",
+      "category": "Exploit",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/portalmenu.md"
+    },
+    {
+      "id": "portals",
+      "name": "Portals",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/portals.md"
+    },
+    {
+      "id": "pot",
+      "name": "Pot",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/pot.md"
+    },
+    {
+      "id": "potionfx",
+      "name": "PotionFX",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/potionfx.md"
+    },
+    {
+      "id": "potionhud",
+      "name": "PotionHud",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/potionhud.md"
+    },
+    {
+      "id": "potionsaver",
+      "name": "Potion Saver",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/potionsaver.md"
+    },
+    {
+      "id": "potionspoof",
+      "name": "PotionSpoof",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/potionspoof.md"
+    },
+    {
+      "id": "projectileaimbot",
+      "name": "ProjectileAimbot",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/projectileaimbot.md"
+    },
+    {
+      "id": "projectilepuncher",
+      "name": "ProjectilePuncher",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/projectilepuncher.md"
+    },
+    {
+      "id": "prophunt",
+      "name": "ProphuntESP",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/prophunt.md"
+    },
+    {
+      "id": "protect",
+      "name": "Protect",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/protect.md"
+    },
+    {
+      "id": "protectionzones",
+      "name": "ProtectionZones",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/protectionzones.md"
+    },
+    {
+      "id": "pvpinfo",
+      "name": "PvpInfo",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/pvpinfo.md"
+    },
+    {
+      "id": "pvpresources",
+      "name": "PVPResources",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/pvpresources.md"
+    },
+    {
+      "id": "quakecraft",
+      "name": "QuakeCraft",
+      "category": "Fun",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/quakecraft.md"
+    },
+    {
+      "id": "quickperspectiveswap",
+      "name": "QuickPerspectiveSwap",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/quickperspectiveswap.md"
+    },
+    {
+      "id": "quiver",
+      "name": "Quiver",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/quiver.md"
+    },
+    {
+      "id": "radar",
+      "name": "Radar",
+      "category": "Render",
+      "status": "partial",
+      "module": "PlayerRadar",
+      "note": "Lists loaded players in ClickGUI; no world or HUD arrows yet.",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/radar.md"
+    },
+    {
+      "id": "radarrewrite",
+      "name": "RadarRewrite",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/radarrewrite.md"
+    },
+    {
+      "id": "rainbowenchant",
+      "name": "RainbowEnchant",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/rainbowenchant.md"
+    },
+    {
+      "id": "rainbowui",
+      "name": "RainbowUi",
+      "category": "Fun",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/rainbowui.md"
+    },
+    {
+      "id": "rangecircle",
+      "name": "RangeCircle",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/rangecircle.md"
+    },
+    {
+      "id": "reach",
+      "name": "Reach",
+      "category": "Player",
+      "status": "coded",
+      "module": "Reach",
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/reach.md"
+    },
+    {
+      "id": "rearview",
+      "name": "Rearview",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/rearview.md"
+    },
+    {
+      "id": "refill",
+      "name": "Refill",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/refill.md"
+    },
+    {
+      "id": "regen",
+      "name": "Regen",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/regen.md"
+    },
+    {
+      "id": "remoteview",
+      "name": "RemoteView",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/remoteview.md"
+    },
+    {
+      "id": "replenish",
+      "name": "Replenish",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/replenish.md"
+    },
+    {
+      "id": "reporthelper",
+      "name": "ReportHelper",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/reporthelper.md"
+    },
+    {
+      "id": "resetvl",
+      "name": "ResetVL",
+      "category": "Exploit",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/resetvl.md"
+    },
+    {
+      "id": "respawn",
+      "name": "Respawn",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/respawn.md"
+    },
+    {
+      "id": "reversestep",
+      "name": "ReverseStep",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/reversestep.md"
+    },
+    {
+      "id": "richpresence",
+      "name": "RichPresence",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/richpresence.md"
+    },
+    {
+      "id": "riding",
+      "name": "Riding",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/riding.md"
+    },
+    {
+      "id": "rotation",
+      "name": "Rotation",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/rotation.md"
+    },
+    {
+      "id": "rotationlock",
+      "name": "RotationLock",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/rotationlock.md"
+    },
+    {
+      "id": "rotations",
+      "name": "Rotations",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/rotations.md"
+    },
+    {
+      "id": "rushercrypt",
+      "name": "RusherCrypt",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/rushercrypt.md"
+    },
+    {
+      "id": "safewalk",
+      "name": "SafeWalk",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/safewalk.md"
+    },
+    {
+      "id": "scaffold",
+      "name": "Scaffold",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/scaffold.md"
+    },
+    {
+      "id": "search",
+      "name": "Search",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/search.md"
+    },
+    {
+      "id": "selfanvil",
+      "name": "Self Anvil",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/selfanvil.md"
+    },
+    {
+      "id": "selfblock",
+      "name": "SelfBlock",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/selfblock.md"
+    },
+    {
+      "id": "selfdestruct",
+      "name": "Self Destruct",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/selfdestruct.md"
+    },
+    {
+      "id": "selffill",
+      "name": "SelfFill",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/selffill.md"
+    },
+    {
+      "id": "selftrap",
+      "name": "Self Trap",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/selftrap.md"
+    },
+    {
+      "id": "selfweb",
+      "name": "Self Web",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/selfweb.md"
+    },
+    {
+      "id": "servercrasher",
+      "name": "ServerCrasher",
+      "category": "Exploit",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/servercrasher.md"
+    },
+    {
+      "id": "serverhelper",
+      "name": "ServerHelper",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/serverhelper.md"
+    },
+    {
+      "id": "serverspoof",
+      "name": "Server Spoof",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/serverspoof.md"
+    },
+    {
+      "id": "shader",
+      "name": "Shaders",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/shader.md"
+    },
+    {
+      "id": "signs",
+      "name": "Signs",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/signs.md"
+    },
+    {
+      "id": "silenthotbar",
+      "name": "SilentHotbar",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/silenthotbar.md"
+    },
+    {
+      "id": "skeleton",
+      "name": "Skeleton",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/skeleton.md"
+    },
+    {
+      "id": "skinblinker",
+      "name": "Skin Blinker",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/skinblinker.md"
+    },
+    {
+      "id": "skinchanger",
+      "name": "SkinChanger",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/skinchanger.md"
+    },
+    {
+      "id": "skinderp",
+      "name": "SkinDerp",
+      "category": "Fun",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/skinderp.md"
+    },
+    {
+      "id": "skybox",
+      "name": "Skybox",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/skybox.md"
+    },
+    {
+      "id": "sleepwalker",
+      "name": "SleepWalker",
+      "category": "Exploit",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/sleepwalker.md"
+    },
+    {
+      "id": "slippy",
+      "name": "Slippy",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/slippy.md"
+    },
+    {
+      "id": "smallshield",
+      "name": "SmallShield",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/smallshield.md"
+    },
+    {
+      "id": "smarteat",
+      "name": "SmartEat",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/smarteat.md"
+    },
+    {
+      "id": "smoothaim",
+      "name": "SmoothAim",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/smoothaim.md"
+    },
+    {
+      "id": "smoothcamera",
+      "name": "SmoothCamera",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/smoothcamera.md"
+    },
+    {
+      "id": "snaptap",
+      "name": "SnapTap",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/snaptap.md"
+    },
+    {
+      "id": "sneakyassassins",
+      "name": "SneakyAssassins",
+      "category": "Fun",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/sneakyassassins.md"
+    },
+    {
+      "id": "snowshoe",
+      "name": "SnowShoe",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/snowshoe.md"
+    },
+    {
+      "id": "songstealer",
+      "name": "SongStealer",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/songstealer.md"
+    },
+    {
+      "id": "soundblocker",
+      "name": "Sound Blocker",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/soundblocker.md"
+    },
+    {
+      "id": "soundesp",
+      "name": "SoundESP",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/soundesp.md"
+    },
+    {
+      "id": "soundfx",
+      "name": "SoundFX",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/soundfx.md"
+    },
+    {
+      "id": "soup",
+      "name": "Soup",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/soup.md"
+    },
+    {
+      "id": "sourceremover",
+      "name": "SourceRemover",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/sourceremover.md"
+    },
+    {
+      "id": "spam",
+      "name": "Spam",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/spam.md"
+    },
+    {
+      "id": "spammer",
+      "name": "Spammer",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/spammer.md"
+    },
+    {
+      "id": "spawnproofer",
+      "name": "Spawn Proofer",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/spawnproofer.md"
+    },
+    {
+      "id": "spearkill",
+      "name": "SpearKill",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/spearkill.md"
+    },
+    {
+      "id": "speed",
+      "name": "Speed",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/speed.md"
+    },
+    {
+      "id": "speednuker",
+      "name": "SpeedNuker",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/speednuker.md"
+    },
+    {
+      "id": "speedometer",
+      "name": "Speedometer",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/speedometer.md"
+    },
+    {
+      "id": "spider",
+      "name": "Spider",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/spider.md"
+    },
+    {
+      "id": "sprint",
+      "name": "Sprint",
+      "category": "Movement",
+      "status": "coded",
+      "module": "AutoSprint",
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/sprint.md"
+    },
+    {
+      "id": "sprintreset",
+      "name": "SprintReset",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/sprintreset.md"
+    },
+    {
+      "id": "staffboard",
+      "name": "StaffBoard",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/staffboard.md"
+    },
+    {
+      "id": "stashfinder",
+      "name": "Stash Finder",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/stashfinder.md"
+    },
+    {
+      "id": "stashlogger",
+      "name": "StashLogger",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/stashlogger.md"
+    },
+    {
+      "id": "step",
+      "name": "Step",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/step.md"
+    },
+    {
+      "id": "storageesp",
+      "name": "StorageESP",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/storageesp.md"
+    },
+    {
+      "id": "strafe",
+      "name": "Strafe",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/strafe.md"
+    },
+    {
+      "id": "strongholdfinder",
+      "name": "StrongholdFinder",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/strongholdfinder.md"
+    },
+    {
+      "id": "superknockback",
+      "name": "SuperKnockback",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/superknockback.md"
+    },
+    {
+      "id": "surround",
+      "name": "Surround",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/surround.md"
+    },
+    {
+      "id": "swarm",
+      "name": "Swarm",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/swarm.md"
+    },
+    {
+      "id": "swing",
+      "name": "Swing",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/swing.md"
+    },
+    {
+      "id": "swordblock",
+      "name": "SwordBlock",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/swordblock.md"
+    },
+    {
+      "id": "tapemouse",
+      "name": "TapeMouse",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tapemouse.md"
+    },
+    {
+      "id": "targethud",
+      "name": "TargetHud",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/targethud.md"
+    },
+    {
+      "id": "targetlock",
+      "name": "TargetLock",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/targetlock.md"
+    },
+    {
+      "id": "targetstrafe",
+      "name": "TargetStrafe",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/targetstrafe.md"
+    },
+    {
+      "id": "teams",
+      "name": "Teams",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/teams.md"
+    },
+    {
+      "id": "teleport",
+      "name": "Teleport",
+      "category": "Exploit",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/teleport.md"
+    },
+    {
+      "id": "templatetool",
+      "name": "TemplateTool",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/templatetool.md"
+    },
+    {
+      "id": "terrain",
+      "name": "Terrain",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/terrain.md"
+    },
+    {
+      "id": "terrainspeed",
+      "name": "TerrainSpeed",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/terrainspeed.md"
+    },
+    {
+      "id": "textfieldprotect",
+      "name": "TextFieldProtect",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/textfieldprotect.md"
+    },
+    {
+      "id": "theme",
+      "name": "Theme",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/theme.md"
+    },
+    {
+      "id": "throw",
+      "name": "Throw",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/throw.md"
+    },
+    {
+      "id": "throwpot",
+      "name": "ThrowPot",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/throwpot.md"
+    },
+    {
+      "id": "thundergui",
+      "name": "ThunderGui",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/thundergui.md"
+    },
+    {
+      "id": "tickbase",
+      "name": "TickBase",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tickbase.md"
+    },
+    {
+      "id": "tickshift",
+      "name": "TickShift",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tickshift.md"
+    },
+    {
+      "id": "tillaura",
+      "name": "Tillaura",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tillaura.md"
+    },
+    {
+      "id": "timechanger",
+      "name": "Time Changer",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/timechanger.md"
+    },
+    {
+      "id": "timer",
+      "name": "Timer",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/timer.md"
+    },
+    {
+      "id": "timerindicator",
+      "name": "TimerIndicator",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/timerindicator.md"
+    },
+    {
+      "id": "timerrange",
+      "name": "TimerRange",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/timerrange.md"
+    },
+    {
+      "id": "timeshift",
+      "name": "TimeShift",
+      "category": "Exploit",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/timeshift.md"
+    },
+    {
+      "id": "timestamps",
+      "name": "Timestamps",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/timestamps.md"
+    },
+    {
+      "id": "tired",
+      "name": "Tired",
+      "category": "Fun",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tired.md"
+    },
+    {
+      "id": "tntaura",
+      "name": "TNTAura",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tntaura.md"
+    },
+    {
+      "id": "tnttimer",
+      "name": "TNTTimer",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tnttimer.md"
+    },
+    {
+      "id": "toolsaver",
+      "name": "ToolSaver",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/toolsaver.md"
+    },
+    {
+      "id": "tooltips",
+      "name": "Tooltips",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tooltips.md"
+    },
+    {
+      "id": "toomanyhax",
+      "name": "TooManyHax",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/toomanyhax.md"
+    },
+    {
+      "id": "totemanimation",
+      "name": "TotemAnimation",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/totemanimation.md"
+    },
+    {
+      "id": "totemcounter",
+      "name": "TotemCounter",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/totemcounter.md"
+    },
+    {
+      "id": "totemeffect",
+      "name": "TotemEffect",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/totemeffect.md"
+    },
+    {
+      "id": "totempopcounter",
+      "name": "TotemPopCounter",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/totempopcounter.md"
+    },
+    {
+      "id": "tpaura",
+      "name": "TpAura",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tpaura.md"
+    },
+    {
+      "id": "tpscounter",
+      "name": "TPSCounter",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tpscounter.md"
+    },
+    {
+      "id": "tpssync",
+      "name": "TpsSync",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tpssync.md"
+    },
+    {
+      "id": "tracers",
+      "name": "Tracers",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tracers.md"
+    },
+    {
+      "id": "tracker",
+      "name": "Tracker",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tracker.md"
+    },
+    {
+      "id": "trail",
+      "name": "Trail",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/trail.md"
+    },
+    {
+      "id": "trails",
+      "name": "Trails",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/trails.md"
+    },
+    {
+      "id": "trajectories",
+      "name": "Trajectories",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/trajectories.md"
+    },
+    {
+      "id": "translate",
+      "name": "Translate",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/translate.md"
+    },
+    {
+      "id": "treebot",
+      "name": "TreeBot",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/treebot.md"
+    },
+    {
+      "id": "tridentboost",
+      "name": "TridentBoost",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tridentboost.md"
+    },
+    {
+      "id": "tridentfly",
+      "name": "TridentFly",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tridentfly.md"
+    },
+    {
+      "id": "tridenttweaks",
+      "name": "TridentTweaks",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tridenttweaks.md"
+    },
+    {
+      "id": "triggerbot",
+      "name": "TriggerBot",
+      "category": "Combat",
+      "status": "coded",
+      "module": "TriggerBot",
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/triggerbot.md"
+    },
+    {
+      "id": "trollpotion",
+      "name": "TrollPotion",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/trollpotion.md"
+    },
+    {
+      "id": "truesight",
+      "name": "TrueSight",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/truesight.md"
+    },
+    {
+      "id": "tunnelesp",
+      "name": "Tunnel Esp",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tunnelesp.md"
+    },
+    {
+      "id": "tunneller",
+      "name": "Tunneller",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tunneller.md"
+    },
+    {
+      "id": "twerk",
+      "name": "Twerk",
+      "category": "Fun",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/twerk.md"
+    },
+    {
+      "id": "unfocusedfps",
+      "name": "UnfocusedFPS",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/unfocusedfps.md"
+    },
+    {
+      "id": "unhook",
+      "name": "UnHook",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/unhook.md"
+    },
+    {
+      "id": "unpack",
+      "name": "Unpack",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/unpack.md"
+    },
+    {
+      "id": "vehicleboost",
+      "name": "VehicleBoost",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/vehicleboost.md"
+    },
+    {
+      "id": "vehiclecontrol",
+      "name": "VehicleControl",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/vehiclecontrol.md"
+    },
+    {
+      "id": "vehicleonehit",
+      "name": "VehicleOneHit",
+      "category": "Exploit",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/vehicleonehit.md"
+    },
+    {
+      "id": "veinminer",
+      "name": "Vein Miner",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/veinminer.md"
+    },
+    {
+      "id": "velocity",
+      "name": "Velocity",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/velocity.md"
+    },
+    {
+      "id": "viewclip",
+      "name": "ViewClip",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/viewclip.md"
+    },
+    {
+      "id": "viewlock",
+      "name": "ViewLock",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/viewlock.md"
+    },
+    {
+      "id": "viewmodel",
+      "name": "ViewModel",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/viewmodel.md"
+    },
+    {
+      "id": "visualrange",
+      "name": "VisualRange",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/visualrange.md"
+    },
+    {
+      "id": "voidesp",
+      "name": "VoidESP",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/voidesp.md"
+    },
+    {
+      "id": "vomit",
+      "name": "Vomit",
+      "category": "Fun",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/vomit.md"
+    },
+    {
+      "id": "wallhack",
+      "name": "Wall Hack",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/wallhack.md"
+    },
+    {
+      "id": "watermark",
+      "name": "WaterMark",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/watermark.md"
+    },
+    {
+      "id": "waterspeed",
+      "name": "WaterSpeed",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/waterspeed.md"
+    },
+    {
+      "id": "waypoints",
+      "name": "Waypoints",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/waypoints.md"
+    },
+    {
+      "id": "weather",
+      "name": "Weather",
+      "category": "World",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/weather.md"
+    },
+    {
+      "id": "weatherchanger",
+      "name": "Weather Changer",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/weatherchanger.md"
+    },
+    {
+      "id": "windows",
+      "name": "Windows",
+      "category": "Misc",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/windows.md"
+    },
+    {
+      "id": "wireframe",
+      "name": "Wireframe",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/wireframe.md"
+    },
+    {
+      "id": "worldtweaks",
+      "name": "WorldTweaks",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/worldtweaks.md"
+    },
+    {
+      "id": "wtap",
+      "name": "WTap",
+      "category": "Combat",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/wtap.md"
+    },
+    {
+      "id": "xcarry",
+      "name": "XCarry",
+      "category": "Player",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/xcarry.md"
+    },
+    {
+      "id": "xray",
+      "name": "XRay",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/xray.md"
+    },
+    {
+      "id": "yaw",
+      "name": "Yaw",
+      "category": "Movement",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/yaw.md"
+    },
+    {
+      "id": "yggdrasilsignaturefix",
+      "name": "YggdrasilSignatureFix",
+      "category": "Exploit",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/yggdrasilsignaturefix.md"
+    },
+    {
+      "id": "zoom",
+      "name": "Zoom",
+      "category": "Render",
+      "status": "backlog",
+      "module": null,
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/zoom.md"
+    },
+    {
+      "id": "anomoly_spear_assist",
+      "name": "Spear Assist",
+      "category": "Combat",
+      "status": "coded",
+      "module": "SpearAssist",
+      "doc": "hacks/spear-assist.md",
+      "note": "",
+      "url": "https://github.com/DistilledSlop/anomoly/blob/main/hacks/spear-assist.md"
+    }
+  ]
+}

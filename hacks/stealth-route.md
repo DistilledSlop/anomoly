@@ -1,0 +1,7 @@
+# Vibration-aware stealth route
+
+**Value:** Move around sculk sensors and wardens with a 26.3-specific material choice. The new wool slabs and stairs are included in `#minecraft:dampens_vibrations`, alongside full wool and carpet. They are **not** in `#minecraft:occludes_vibration_signals`, whose vanilla data lists only full wool. Thus a slab/stair can damp vibrations from activity on it, but should not be assumed to shield a sensor from vibrations traveling through it like a full wool barrier.
+
+**Design:** Add vibration sources and sensor/warden positions to the navigator's cost map. Prefer routes over wool, carpet, and the new wool slabs/stairs; model the exact collision shape and whether the player actually contacts the dampening surface. For a constructed barrier, choose full wool and verify the occlusion geometry. Warn when a path crosses an active sensor's likely range. Combine with crouch and projectile distraction plans, but keep assumptions about unknown sensors explicit.
+
+**Constraints:** Received chunks reveal sculk positions in vanilla, but unloaded chunks and plugin mechanics remain unknown. A quiet route is only as good as the server's vibration events and current sensor state. Evidence: `data/minecraft/tags/block/dampens_vibrations.json` and `occludes_vibration_signals.json` in the 26.3 common jar; [official 26.3 notes](https://www.minecraft.net/en-us/article/minecraft-java-edition-26-3).

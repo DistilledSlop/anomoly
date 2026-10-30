@@ -1,0 +1,4 @@
+[07:12:12] [Server thread/INFO] (modid) TP_PROBE clean_roundtrip_mid=(8.5, 100.0, 0.5) pending=null
+[07:12:12] [Server thread/INFO] (modid) TP_PROBE clean_roundtrip_chest=ChestMenu pos=(8.5, 100.0, 0.5)
+[07:12:12] [Server thread/INFO] (modid) TP_PROBE clean_roundtrip_end=(0.5, 100.0, 0.5) pending=null
+[07:12:12] [Server thread/INFO] (modid) TP_PROBE clean_roundtrip_next_tick=(0.5, 100.0, 0.5)

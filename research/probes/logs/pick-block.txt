@@ -1,0 +1,3 @@
+[13:17:23] [Server thread/INFO] (modid) PICK_PROBE ready pos=(0.5, 100.0, 0.5) chest=Block{minecraft:chest} selected=0 has_infinite=false
+[13:17:24] [Server thread/INFO] (modid) PICK_PROBE hidden_chest_selected=3 held=1 minecraft:chest
+[13:17:24] [Server thread/INFO] (modid) PICK_PROBE hidden_stone_selected=3 held=1 minecraft:chest

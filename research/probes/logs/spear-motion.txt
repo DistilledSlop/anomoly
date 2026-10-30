@@ -1,0 +1,13 @@
+[13:13:10] [Server thread/INFO] (modid) TP_PROBE spear_spawn added=true entity_id=166
+[13:13:10] [Server thread/INFO] (modid) TP_PROBE spear_advance pos=(8.5, 100.0, 0.5) known=(8.0, 0.0, 0.0) target_health=10.0
+[13:13:10] [Server thread/INFO] (modid) TP_PROBE spear_ray head=-90.0 look=(0.9925497770309448, -0.121839739382267, 1.215522984254259E-16) target=(17.5, 100.0, 0.5) box=AABB[17.05000001192093, 100.0, 0.050000011920928955] -> [17.94999998807907, 100.89999997615814, 0.949999988079071] live=true registered=true reach=4.5 block=Optional.empty entities=Optional[2]
+[13:13:10] [Server thread/INFO] (modid) TP_PROBE spear_stab pos=(8.5, 100.0, 0.5) target_health=7.0
+[13:13:10] [Server thread/INFO] (modid) TP_PROBE spear_zero_known=(0.0, 0.0, 0.0) zero_ray_entities=Optional.empty
+[13:13:10] [Server thread/INFO] (modid) TP_PROBE spear_return pos=(0.5, 100.0, 0.5) pending=null
+[13:13:10] [Server thread/INFO] (modid) TP_PROBE spear_next_tick_pos=(0.5, 100.0, 0.5) target_health=7.0
+[13:13:10] [Server thread/INFO] (modid) TP_PROBE kinetic_started pos=(0.5, 100.0, 0.5) using=true player_tick=30 remaining=72000
+[13:13:10] [Server thread/INFO] (modid) TP_PROBE kinetic_timer server_tick=35 player_tick=35 remaining=71995 using=true
+[13:13:10] [Server thread/INFO] (modid) TP_PROBE kinetic_timer server_tick=40 player_tick=40 remaining=71990 using=true
+[13:13:11] [Server thread/INFO] (modid) TP_PROBE kinetic_spawn added=true id=186
+[13:13:11] [Server thread/INFO] (modid) TP_PROBE kinetic_advance pos=(8.5, 100.0, 0.5) known=(8.0, 0.0, 0.0) target_health=500.0 player_tick=44 remaining=71986 head=-90.0 ray_entities=Optional[3]
+[13:13:11] [Server thread/INFO] (modid) TP_PROBE kinetic_next_tick target_health=349.0 alive=true player_known=(8.0, 0.0, 0.0) using=true player_tick=45 remaining=71985 head=-90.0

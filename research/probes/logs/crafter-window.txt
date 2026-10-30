@@ -1,0 +1,5 @@
+[13:24:13] [Server thread/INFO] (modid) CRAFTER_PROBE ready player=(0.5, 100.0, 0.5) crafter=BlockPos{x=-2, y=100, z=0} disabled=false
+[13:24:13] [Server thread/INFO] (modid) CRAFTER_PROBE opened=CrafterMenu at=(0.5, 100.0, 0.5)
+[13:24:13] [Server thread/INFO] (modid) CRAFTER_PROBE remote_pos=(8.5, 100.0, 0.5) valid=false disabled_before=false
+[13:24:13] [Server thread/INFO] (modid) CRAFTER_PROBE disabled_after=true menu=CrafterMenu
+[13:24:13] [Server thread/INFO] (modid) CRAFTER_PROBE next_tick_menu=InventoryMenu disabled=true

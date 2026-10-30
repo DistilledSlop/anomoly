@@ -1,0 +1,705 @@
+<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Anomoly hack progress</title>
+<style>body{font:16px system-ui,sans-serif;background:#0b1220;color:#e7f2ff;max-width:1220px;margin:auto;padding:18px}a{color:#82c7fa}img{width:100%;height:auto}table{border-collapse:collapse;width:100%}th,td{border-bottom:1px solid #344054;padding:8px;text-align:left}input{background:#172235;color:#fff;border:1px solid #52657d;border-radius:5px;padding:10px;font:inherit;width:min(100%,450px)}.coded{color:#49a8e8}.partial{color:#f2b544}.verified{color:#4bd598}.backlog{color:#a9bacd}</style>
+</head><body><h1>Anomoly hack progress</h1>
+<p>One tile per researched feature. Tile area is proportional to category size. Blue means coded and compiled, amber means partial, green means gameplay verified, and gray means backlog. Startup validation alone does not count as gameplay verification.</p>
+<img src="progress.svg" alt="Treemap of Anomoly hack progress">
+<p>13 coded, 2 partial, 0 gameplay verified, 668 backlog, 683 total. <a href="progress.json">Raw data</a>.</p>
+<h2>By category</h2><table><thead><tr><th>Category</th><th>Verified</th><th>Coded</th><th>Partial</th><th>Backlog</th><th>Total</th></tr></thead><tbody>
+<tr><td>Combat</td><td>0</td><td>3</td><td>0</td><td>92</td><td>95</td></tr>
+<tr><td>Exploit</td><td>0</td><td>0</td><td>0</td><td>34</td><td>34</td></tr>
+<tr><td>Fun</td><td>0</td><td>0</td><td>0</td><td>17</td><td>17</td></tr>
+<tr><td>Misc</td><td>0</td><td>0</td><td>0</td><td>122</td><td>122</td></tr>
+<tr><td>Movement</td><td>0</td><td>4</td><td>0</td><td>86</td><td>90</td></tr>
+<tr><td>Player</td><td>0</td><td>3</td><td>0</td><td>84</td><td>87</td></tr>
+<tr><td>Render</td><td>0</td><td>1</td><td>2</td><td>163</td><td>166</td></tr>
+<tr><td>World</td><td>0</td><td>2</td><td>0</td><td>70</td><td>72</td></tr>
+</tbody></table>
+<h2>Features</h2><label for="filter">Filter features</label><br><input id="filter" type="search" placeholder="Search name, category, or status">
+<table id="features"><thead><tr><th>Category</th><th>Feature</th><th>Status</th><th>Implementation</th></tr></thead><tbody>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/aimassist.md">AimAssist</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/aimbot.md">Aimbot</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/anchoraura.md">Anchor Aura</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antianvil.md">Anti Anvil</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antibed.md">Anti Bed</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antibot.md">AntiBot</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antilegitmiss.md">AntiLegitMiss</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/arrowdodge.md">Arrow Dodge</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/arrowdmg.md">ArrowDmg</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/attributeswap.md">Attribute Swap</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoanvil.md">Auto Anvil</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autocity.md">Auto City</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoexp.md">Auto Exp</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autototem.md">Auto Totem</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoweb.md">Auto Web</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoanchor.md">AutoAnchor</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoarmor.md">AutoArmor</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autobed.md">AutoBed</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autobow.md">AutoBow</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autobowrelease.md">AutoBowRelease</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoclicker.md">AutoClicker</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autocrystalbase.md">AutoCrystalBase</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autododge.md">AutoDodge</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autogapple.md">AutoGApple</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autohole.md">AutoHole</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autodisconnect.md">AutoLeave</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autopearl.md">AutoPearl</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autopot.md">AutoPot</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autopotion.md">AutoPotion</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autorod.md">AutoRod</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoshoot.md">AutoShoot</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autosoup.md">AutoSoup</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autosurround.md">AutoSurround</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autosword.md">AutoSword</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autotrap.md">AutoTrap</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoweapon.md">AutoWeapon</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/backtrack.md">Backtrack</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bedaura.md">Bed Aura</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blocker.md">Blocker</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bonemealaura.md">BonemealAura</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bowaimbot.md">Bow Aimbot</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bowspam.md">Bow Spam</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bowpop.md">BowPop</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/burrow.md">Burrow</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/clickaura.md">ClickAura</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/criticals.md">Criticals</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/crystalaura.md">CrystalAura</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/dronecontrol.md">DroneControl</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytratarget.md">ElytraTarget</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fakelag.md">FakeLag</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/feedaura.md">FeedAura</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/feettrap.md">FeetTrap</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fightbot.md">FightBot</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/hitbox.md">Hitbox</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/hitboxignore.md">HitboxIgnore</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/holefill.md">HoleFiller</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/hunt.md">Hunt</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/keepsprint.md">KeepSprint</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/killaura.md">KillAura</a></td><td class="coded">coded</td><td>KillAura</td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/killauralegit.md">KillauraLegit</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/killpotion.md">KillPotion</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/legithelper.md">LegitHelper</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/macedmg.md">MaceDmg</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/macekill.md">MaceKill</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/moreknockback.md">MoreKnockback</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/multiaura.md">MultiAura</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nomisscooldown.md">NoMissCooldown</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/pistonaura.md">PistonAura</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/pistonpush.md">PistonPush</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/pot.md">Pot</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/projectileaimbot.md">ProjectileAimbot</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/protect.md">Protect</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/pvpinfo.md">PvpInfo</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/quiver.md">Quiver</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/selfanvil.md">Self Anvil</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/selftrap.md">Self Trap</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/selfweb.md">Self Web</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/selffill.md">SelfFill</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/smoothaim.md">SmoothAim</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/soup.md">Soup</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/hacks/spear-assist.md">Spear Assist</a></td><td class="coded">coded</td><td>SpearAssist</td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/spearkill.md">SpearKill</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/sprintreset.md">SprintReset</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/superknockback.md">SuperKnockback</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/surround.md">Surround</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/swordblock.md">SwordBlock</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/throwpot.md">ThrowPot</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tickbase.md">TickBase</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tillaura.md">Tillaura</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/timerrange.md">TimerRange</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tntaura.md">TNTAura</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tpaura.md">TpAura</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/triggerbot.md">TriggerBot</a></td><td class="coded">coded</td><td>TriggerBot</td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/trollpotion.md">TrollPotion</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/wtap.md">WTap</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/abortbreaking.md">AbortBreaking</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antifire.md">Anti Fire</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antihunger.md">AntiHunger</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antipacket.md">AntiPacket</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antireduceddebuginfo.md">AntiReducedDebugInfo</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bookbot.md">BookBot</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/colorsigns.md">ColorSigns</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/damage.md">Damage</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/disabler.md">Disabler</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/dupe.md">Dupe</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastprojectile.md">FastProjectile</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/franky.md">Franky</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/ghosthand.md">GhostHand</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/ignite.md">Ignite</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/kaboom.md">Kaboom</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/kick.md">Kick</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/lag.md">Lag</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/masstpa.md">MassTpa</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/morecarry.md">MoreCarry</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/multiactions.md">MultiActions</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/namecollector.md">NameCollector</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nopitchlimit.md">NoPitchLimit</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/orebfuscator.md">Orebfuscator</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/phase.md">Phase</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/pingspoof.md">PingSpoof</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/plugins.md">Plugins</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/portalmenu.md">PortalMenu</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/resetvl.md">ResetVL</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/servercrasher.md">ServerCrasher</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/sleepwalker.md">SleepWalker</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/teleport.md">Teleport</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/timeshift.md">TimeShift</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/vehicleonehit.md">VehicleOneHit</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/yggdrasilsignaturefix.md">YggdrasilSignatureFix</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Fun</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/breaker.md">Breaker</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Fun</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/copsandcrims.md">CopsAndCrims</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Fun</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/dankbobbing.md">DankBobbing</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Fun</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/derp.md">Derp</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Fun</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/handderp.md">HandDerp</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Fun</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/headroll.md">HeadRoll</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Fun</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/lsd.md">Lsd</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Fun</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/mileycyrus.md">MileyCyrus</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Fun</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/minestrike.md">Minestrike</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Fun</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/murder.md">Murder</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Fun</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/quakecraft.md">QuakeCraft</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Fun</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/rainbowui.md">RainbowUi</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Fun</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/skinderp.md">SkinDerp</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Fun</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/sneakyassassins.md">SneakyAssassins</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Fun</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tired.md">Tired</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Fun</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/twerk.md">Twerk</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Fun</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/vomit.md">Vomit</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/announcer.md">Announcer</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiaim.md">Anti Aim</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antidesync.md">Anti Desync</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antipacketkick.md">Anti Packet Kick</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antisoundlag.md">Anti Sound Lag</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antivanish.md">Anti Vanish</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antibookban.md">AntiBookBan</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/anticheatdetect.md">AntiCheatDetect</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/anticrash.md">AntiCrash</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiquit.md">AntiQuit</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiserveradd.md">AntiServerAdd</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiserverrp.md">AntiServerRP</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antispam.md">AntiSpam</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antistaff.md">AntiStaff</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/armoralert.md">ArmorAlert</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autocheat.md">Auto Cheat</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoreconnect.md">Auto Reconnect</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoaccept.md">AutoAccept</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoaccount.md">AutoAccount</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoauth.md">AutoAuth</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autochatgame.md">AutoChatGame</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autocomplete.md">AutoComplete</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoconfig.md">AutoConfig</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoez.md">AutoEZ</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoflyme.md">AutoFlyme</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autogear.md">AutoGear</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autotrader.md">AutoTrader</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/background.md">Background</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/baritone.md">Baritone</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/baritonesettings.md">BaritoneSettings</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/beaconselector.md">BeaconSelector</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/betterbeacons.md">Better Beacons</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/capes.md">Capes</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/chat.md">Chat</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/chatappend.md">ChatAppend</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/chatcolors.md">ChatColors</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/chattranslator.md">ChatTranslator</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/chatutils.md">ChatUtils</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/chestaura.md">ChestAura</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/chorusexploit.md">ChorusExploit</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/clickgui.md">ClickGUI</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/clientsettings.md">ClientSettings</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/clientspoof.md">ClientSpoof</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/colors.md">Colors</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/config.md">Config</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/customfont.md">CustomFont</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/debugrecorder.md">DebugRecorder</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/discordpresence.md">Discord Presence</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/discordrpc.md">Discord RPC</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/easypearl.md">EasyPearl</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/ebattesratte.md">EbatteSratte</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/entities.md">Entities</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/extrachat.md">ExtraChat</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fancychat.md">Fancy Chat</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastlatency.md">FastLatency</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/flagcheck.md">FlagCheck</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/font.md">Font</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/ghost.md">Ghost</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/greentext.md">GreenText</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/greeter.md">Greeter</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/guicloser.md">GUICloser</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/heaven.md">Heaven</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/hudeditor.md">HudEditor</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/infinichat.md">InfiniChat</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/invcleaner.md">InvCleaner</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/inventorytweaks.md">Inventory Tweaks</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/itemscroller.md">ItemScroller</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/lagnotifier.md">LagNotifier</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/language.md">Language</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/logposition.md">Log Position</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/macros.md">Macros</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/media.md">Media</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/messageaura.md">Message Aura</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/messageappend.md">MessageAppend</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/middleclickfriend.md">Middle Click Friend</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/middleclick.md">MiddleClick</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/middleclickaction.md">MiddleClickAction</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nameprotect.md">NameProtect</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nosrp.md">No SRP</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nocommentexploit.md">NoCommentExploit</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nopacketexception.md">NoPacketException</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nosoundlag.md">NoSoundLag</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/notebot.md">Notebot</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/notetuner.md">NoteTuner</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/notifications.md">Notifications</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/notifier.md">Notifier</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/optifinecapes.md">OptifineCapes</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/packetcanceler.md">Packet Canceller</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/packetlogger.md">PacketLogger</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/panic.md">Panic</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/pearlchaser.md">PearlChaser</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/richpresence.md">RichPresence</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/rotations.md">Rotations</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/rushercrypt.md">RusherCrypt</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/selfdestruct.md">Self Destruct</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/serverspoof.md">Server Spoof</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/serverhelper.md">ServerHelper</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/signs.md">Signs</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/songstealer.md">SongStealer</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/soundblocker.md">Sound Blocker</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/soundfx.md">SoundFX</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/spam.md">Spam</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/spammer.md">Spammer</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/stashlogger.md">StashLogger</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/swarm.md">Swarm</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tapemouse.md">TapeMouse</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/targetlock.md">TargetLock</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/teams.md">Teams</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/textfieldprotect.md">TextFieldProtect</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/theme.md">Theme</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/thundergui.md">ThunderGui</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/timestamps.md">Timestamps</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tooltips.md">Tooltips</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/toomanyhax.md">TooManyHax</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/totempopcounter.md">TotemPopCounter</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tracker.md">Tracker</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/translate.md">Translate</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/unfocusedfps.md">UnfocusedFPS</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/unhook.md">UnHook</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/unpack.md">Unpack</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/visualrange.md">VisualRange</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/windows.md">Windows</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/airjump.md">AirJump</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/anchor.md">Anchor</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antihazard.md">Anti Hazard</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antibounce.md">AntiBounce</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/anticactus.md">AntiCactus</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antilevitation.md">AntiLevitation</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antivoid.md">AntiVoid</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiwaterpush.md">AntiWaterPush</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiweb.md">AntiWeb</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autojump.md">Auto Jump</a></td><td class="coded">coded</td><td>AutoJump</td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autowasp.md">Auto Wasp</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoswim.md">AutoSwim</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autowalk.md">AutoWalk</a></td><td class="coded">coded</td><td>AutoWalk</td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/avoidhazards.md">AvoidHazards</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blockbounce.md">BlockBounce</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blockwalk.md">BlockWalk</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/boatfly.md">BoatFly</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bunnyhop.md">BunnyHop</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/clicktp.md">ClickTp</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/clip.md">Clip</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/dolphin.md">Dolphin</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytraboost.md">Elytra Boost</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytra.md">Elytra+</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytrafly.md">ElytraFly</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytrarecast.md">ElytraRecast</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytratweaks.md">ElytraTweaks</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/entitycontrol.md">EntityControl</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/entityspeed.md">EntitySpeed</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/extendedfirework.md">ExtendedFirework</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/extraelytra.md">ExtraElytra</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastclimb.md">Fast Climb</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastfall.md">Fast Fall</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastaccel.md">FastAccel</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastladder.md">FastLadder</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastswim.md">FastSwim</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fish.md">Fish</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/flight.md">Fly</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/follow.md">Follow</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/freeze.md">Freeze</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/glide.md">Glide</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/guimove.md">Gui Move</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/handnoclip.md">HandNoClip</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/highjump.md">HighJump</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/holeanchor.md">HoleAnchor</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/holesnap.md">HoleSnap</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/icespeed.md">IceSpeed</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/invwalk.md">InventoryMove</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/jesus.md">Jesus</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/jetpack.md">Jetpack</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/levitationcontrol.md">Levitation Control</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/levitctrl.md">LevitCtrl</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/liquids.md">Liquids</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/liquidwalk.md">LiquidWalk</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/longjump.md">LongJump</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/navigator.md">Navigator</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noclip.md">NoClip</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nofall.md">NoFall</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nojumpdelay.md">NoJumpDelay</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nopose.md">NoPose</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nopush.md">NoPush</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noslow.md">NoSlow</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nowatercollision.md">NoWaterCollision</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noweb.md">NoWeb</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/packetfly.md">PacketFly</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/parkour.md">Parkour</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/portalgui.md">PortalGui</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/reversestep.md">ReverseStep</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/riding.md">Riding</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/safewalk.md">SafeWalk</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/slippy.md">Slippy</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/snaptap.md">SnapTap</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autosneak.md">Sneak</a></td><td class="coded">coded</td><td>AutoSneak</td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/snowshoe.md">SnowShoe</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/speed.md">Speed</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/spider.md">Spider</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/sprint.md">Sprint</a></td><td class="coded">coded</td><td>AutoSprint</td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/step.md">Step</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/strafe.md">Strafe</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/targetstrafe.md">TargetStrafe</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/terrain.md">Terrain</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/terrainspeed.md">TerrainSpeed</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tickshift.md">TickShift</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tridentboost.md">TridentBoost</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tridentfly.md">TridentFly</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tridenttweaks.md">TridentTweaks</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/vehicleboost.md">VehicleBoost</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/vehiclecontrol.md">VehicleControl</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/velocity.md">Velocity</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/waterspeed.md">WaterSpeed</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/yaw.md">Yaw</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiafk.md">AntiAFK</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiattack.md">AntiAttack</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antibadeffects.md">AntiBadEffects</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiballplace.md">AntiBallPlace</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiexploit.md">AntiExploit</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/armorswitch.md">ArmorSwitch</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoeat.md">Auto Eat</a></td><td class="coded">coded</td><td>AutoEat</td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoeject.md">Auto Eject</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autogap.md">Auto Gap</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/automend.md">Auto Mend</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/automine.md">Auto Mine</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoreplenish.md">Auto Replenish</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autobreak.md">AutoBreak</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autobuff.md">AutoBuff</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autocrafter.md">AutoCrafter</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autodeposit.md">AutoDeposit</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autodrop.md">AutoDrop</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autofish.md">AutoFish</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autolibrarian.md">AutoLibrarian</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoqueue.md">AutoQueue</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoreply.md">AutoReply</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autorespawn.md">AutoRespawn</a></td><td class="coded">coded</td><td>AutoRespawn</td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autosex.md">AutoSex</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoshop.md">AutoShop</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autosorter.md">AutoSorter</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoswitch.md">AutoSwitch</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autotool.md">AutoTool</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autowindcharge.md">AutoWindCharge</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autowither.md">AutoWither</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blink.md">Blink</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/breakdelay.md">Break Delay</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/chestswap.md">Chest Swap</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/chestcleaner.md">ChestCleaner</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/cheststealer.md">ChestStealer</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/choruscontrol.md">ChorusControl</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/durabilityalert.md">DurabilityAlert</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/eagle.md">Eagle</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytrareplace.md">ElytraReplace</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytraswap.md">ElytraSwap</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/expthrower.md">Exp Thrower</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fakeplayer.md">Fake Player</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastinteract.md">Fast Interact</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastexp.md">FastExp</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastuse.md">FastUse</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/instantrebreak.md">Instant Rebreak</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/inventory.md">Inventory</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/inventorycleaner.md">InventoryCleaner</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/itemsaver.md">Item Saver</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/liquidinteract.md">Liquid Interact</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/middleclickextra.md">Middle Click Extra</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/mouseelytrafix.md">MouseElytraFix</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/multitask.md">Multitask</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nointeract.md">No Interact</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nominingtrace.md">No Mining Trace</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nostatuseffects.md">No Status Effects</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noblockinteract.md">NoBlockInteract</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noentityinteract.md">NoEntityInteract</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noentitytrace.md">NoEntityTrace</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/norotate.md">NoRotateSet</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noserverrotate.md">NoServerRotate</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noserverslot.md">NoServerSlot</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noslotset.md">NoSlotSet</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/offhand.md">Offhand</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/pearlbait.md">PearlBait</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/pearlblockthrow.md">PearlBlockThrow</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/perfectdelay.md">PerfectDelay</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/portalgodmode.md">PortalGodMode</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/portalinventory.md">PortalInventory</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/portals.md">Portals</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/potionsaver.md">Potion Saver</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/potionspoof.md">PotionSpoof</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/reach.md">Reach</a></td><td class="coded">coded</td><td>Reach</td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/refill.md">Refill</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/regen.md">Regen</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/replenish.md">Replenish</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/reporthelper.md">ReportHelper</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/respawn.md">Respawn</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/rotation.md">Rotation</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/rotationlock.md">RotationLock</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/skinblinker.md">Skin Blinker</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/smarteat.md">SmartEat</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/swing.md">Swing</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/throw.md">Throw</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/toolsaver.md">ToolSaver</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tpssync.md">TpsSync</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/viewlock.md">ViewLock</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/xcarry.md">XCarry</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/animations.md">Animations</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antioverlay.md">Anti Overlay</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiblind.md">AntiBlind</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antinausea.md">AntiWobble</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/armorhud.md">ArmorHud</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/aspect.md">Aspect</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/aspectratio.md">AspectRatio</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autocrystalinfo.md">AutoCrystalInfo</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autof5.md">AutoF5</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/barrieresp.md">BarrierEsp</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bedplates.md">BedPlates</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bettertooltips.md">Better Tooltips</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/betterchat.md">BetterChat</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/betterinventory.md">BetterInventory</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bettertab.md">BetterTab</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bettertitle.md">BetterTitle</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blockselection.md">Block Selection</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blockesp.md">BlockESP</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blockhighlight.md">BlockHighLight</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blockoutline.md">BlockOutline</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blur.md">Blur</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/borders.md">Borders</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bossstack.md">Boss Stack</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/breadcrumbs.md">Breadcrumbs</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/breakindicators.md">Break Indicators</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/breakesp.md">BreakESP</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/breakhighlight.md">BreakHighLight</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/cameratweaks.md">Camera Tweaks</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/cameraclip.md">CameraClip</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/candlehud.md">CandleHud</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/cavefinder.md">CaveFinder</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/chams.md">Chams</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/chestcounter.md">ChestCounter</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/cityesp.md">City Esp</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/combinemobs.md">CombineMobs</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/companion.md">Companion</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/cooldowns.md">Cooldowns</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/coords.md">Coords</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/crosshair.md">Crosshair</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/crosshairarrows.md">CrosshairArrows</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/crystalview.md">CrystalView</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/customambience.md">CustomAmbience</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/damageparticles.md">DamageParticles</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/damagetint.md">DamageTint</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/debug.md">Debug</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/enchantcolor.md">Enchant Color</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/entityowner.md">Entity Owner</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/esp.md">ESP</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/extrascreenshot.md">ExtraScreenshot</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/extratab.md">ExtraTab</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/extratooltips.md">ExtraTooltips</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fov.md">FOV</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fovmodifier.md">FOVModifier</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fpscounter.md">FpsCounter</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/freecam.md">FreeCam</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/freelook.md">FreeLook</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fullbright.md">FullBright</a></td><td class="partial">partial</td><td>Only raises vanilla gamma to its maximum.</td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/gappleshud.md">GapplesHud</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/handview.md">Hand View</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/hats.md">Hats</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/healthtags.md">HealthTags</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/hitbubbles.md">HitBubbles</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/hitfx.md">HitFX</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/hitmarkers.md">Hitmarkers</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/hitparticles.md">HitParticles</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/holeesp.md">HoleESP</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/hotbar.md">Hotbar</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/hud.md">HUD</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/inventoryinfo.md">InventoryInfo</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/itemhighlight.md">Item Highlight</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/itemphysics.md">Item Physics</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/itemchams.md">ItemChams</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/itemesp.md">ItemESP</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/itemtags.md">ItemTags</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/jumpcircle.md">JumpCircle</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/jumpeffect.md">JumpEffect</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/keybinds.md">KeyBinds</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/killeffect.md">KillEffect</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/killfeed.md">KillFeed</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/killstats.md">KillStats</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/lagdetector.md">LagDetector</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/lagreducer.md">LagReducer</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/legacyhud.md">LegacyHud</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/lightoverlay.md">Light Overlay</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/logoffspot.md">LogoffSpot</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/logoutspots.md">Logout Spots</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/mainmenu.md">Main Menu</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/marker.md">Marker</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/memoryhud.md">MemoryHud</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/mobesp.md">MobEsp</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/mobowner.md">MobOwners</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/mobspawnesp.md">MobSpawnEsp</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/modulelist.md">ModuleList</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/murdermystery.md">MurderMystery</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nametags.md">Nametags</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/newchunks.md">NewChunks</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/norender.md">No Render</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nobackground.md">NoBackground</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nobob.md">NoBob</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nofireoverlay.md">NoFireOverlay</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nofog.md">NoFog</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nofov.md">NoFOV</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nohurtcam.md">NoHurtCam</a></td><td class="coded">coded</td><td>NoHurtCam</td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nooverlay.md">NoOverlay</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nopumpkin.md">NoPumpkin</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noswing.md">NoSwing</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/novignette.md">NoVignette</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noweather.md">NoWeather</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/oldpotions.md">OldPotions</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/openwateresp.md">OpenWaterEsp</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/overlay.md">Overlay</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/particles.md">Particles</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/penisesp.md">PenisESP</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/pinghud.md">PingHud</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/playeresp.md">PlayerEsp</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/popchams.md">Pop Chams</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/portalesp.md">PortalEsp</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/potionfx.md">PotionFX</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/potionhud.md">PotionHud</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/prophunt.md">ProphuntESP</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/protectionzones.md">ProtectionZones</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/pvpresources.md">PVPResources</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/quickperspectiveswap.md">QuickPerspectiveSwap</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/radar.md">Radar</a></td><td class="partial">partial</td><td>Lists loaded players in ClickGUI; no world or HUD arrows yet.</td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/radarrewrite.md">RadarRewrite</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/rainbowenchant.md">RainbowEnchant</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/rangecircle.md">RangeCircle</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/rearview.md">Rearview</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/remoteview.md">RemoteView</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/search.md">Search</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/shader.md">Shaders</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/silenthotbar.md">SilentHotbar</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/skeleton.md">Skeleton</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/skinchanger.md">SkinChanger</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/skybox.md">Skybox</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/smallshield.md">SmallShield</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/smoothcamera.md">SmoothCamera</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/soundesp.md">SoundESP</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/speedometer.md">Speedometer</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/staffboard.md">StaffBoard</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/storageesp.md">StorageESP</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/targethud.md">TargetHud</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/timechanger.md">Time Changer</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/timerindicator.md">TimerIndicator</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tnttimer.md">TNTTimer</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/totemanimation.md">TotemAnimation</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/totemcounter.md">TotemCounter</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/totemeffect.md">TotemEffect</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tpscounter.md">TPSCounter</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tracers.md">Tracers</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/trail.md">Trail</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/trails.md">Trails</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/trajectories.md">Trajectories</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/truesight.md">TrueSight</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tunnelesp.md">Tunnel Esp</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/viewclip.md">ViewClip</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/viewmodel.md">ViewModel</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/voidesp.md">VoidESP</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/wallhack.md">Wall Hack</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/watermark.md">WaterMark</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/waypoints.md">Waypoints</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/weatherchanger.md">Weather Changer</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/wireframe.md">Wireframe</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/worldtweaks.md">WorldTweaks</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/xray.md">XRay</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/zoom.md">Zoom</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/airplace.md">AirPlace</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/ambience.md">Ambience</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiinteract.md">AntiInteract</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autobreed.md">Auto Breed</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autobrewer.md">Auto Brewer</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/automount.md">Auto Mount</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autonametag.md">Auto Nametag</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoshear.md">Auto Shearer</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autosign.md">Auto Sign</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autosmelter.md">Auto Smelter</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autobuild.md">AutoBuild</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autodisable.md">AutoDisable</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autofarm.md">AutoFarm</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/automobheal.md">AutoMobHeal</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autotunnel.md">AutoTunnel</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/avoid.md">Avoid</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/basefinder.md">BaseFinder</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/beddefender.md">BedDefender</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blockin.md">BlockIn</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blocktrap.md">BlockTrap</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blocktweaks.md">BlockTweaks</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/build.md">Build</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/buildheight.md">Build Height</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/buildrandom.md">BuildRandom</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/clientsidetime.md">ClientSideTime</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/collisions.md">Collisions</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/crashchest.md">CrashChest</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/echestfarmer.md">Echest Farmer</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/endermanlook.md">Enderman Look</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/environment.md">Environment</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/excavator.md">Excavator</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/extinguish.md">Extinguish</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/extrachest.md">ExtraChest</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/extracraft.md">ExtraCraft</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/extrasign.md">ExtraSign</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastbreak.md">FastBreak</a></td><td class="coded">coded</td><td>FastBreak</td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastplace.md">FastPlace</a></td><td class="coded">coded</td><td>FastPlace</td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/flamethrower.md">Flamethrower</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/forceop.md">ForceOp</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/forceplace.md">ForcePlace</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fucker.md">Fucker</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/gamemode.md">Gamemode</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/highwaybuilder.md">Highway Builder</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/infinityminer.md">Infinity Miner</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/instabuild.md">InstaBuild</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/instantbunker.md">InstantBunker</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/inventorytracker.md">InventoryTracker</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/itemgenerator.md">ItemGenerator</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/liquidfiller.md">LiquidFiller</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/liquidplace.md">LiquidPlace</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noghostblocks.md">No Ghost Blocks</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noglitchblocks.md">NoGlitchBlocks</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nointerpolation.md">NoInterpolation</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nomineanimation.md">NoMineAnimation</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noslowbreak.md">NoSlowBreak</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nuker.md">Nuker</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nukerlegit.md">NukerLegit</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/packetmine.md">PacketMine</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/projectilepuncher.md">ProjectilePuncher</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/scaffold.md">Scaffold</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/selfblock.md">SelfBlock</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/sourceremover.md">SourceRemover</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/spawnproofer.md">Spawn Proofer</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/speednuker.md">SpeedNuker</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/stashfinder.md">Stash Finder</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/strongholdfinder.md">StrongholdFinder</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/templatetool.md">TemplateTool</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/timer.md">Timer</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/treebot.md">TreeBot</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tunneller.md">Tunneller</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/veinminer.md">Vein Miner</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/weather.md">Weather</a></td><td class="backlog">backlog</td><td></td></tr>
+</tbody></table>
+<script>const input=document.querySelector("#filter");input.addEventListener("input",()=>{const q=input.value.toLowerCase();for(const row of document.querySelectorAll("#features tbody tr"))row.hidden=!row.textContent.toLowerCase().includes(q)})</script>
+</body></html>

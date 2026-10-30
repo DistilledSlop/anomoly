@@ -1,0 +1,21 @@
+{
+  "catalog": {
+    "triggerbot": {"status": "coded", "module": "TriggerBot"},
+    "killaura": {"status": "coded", "module": "KillAura"},
+    "reach": {"status": "coded", "module": "Reach"},
+    "sprint": {"status": "coded", "module": "AutoSprint"},
+    "autowalk": {"status": "coded", "module": "AutoWalk"},
+    "autojump": {"status": "coded", "module": "AutoJump"},
+    "autosneak": {"status": "coded", "module": "AutoSneak"},
+    "autorespawn": {"status": "coded", "module": "AutoRespawn"},
+    "autoeat": {"status": "coded", "module": "AutoEat"},
+    "fastplace": {"status": "coded", "module": "FastPlace"},
+    "fastbreak": {"status": "coded", "module": "FastBreak"},
+    "nohurtcam": {"status": "coded", "module": "NoHurtCam"},
+    "fullbright": {"status": "partial", "module": "MaxBrightness", "note": "Only raises vanilla gamma to its maximum."},
+    "radar": {"status": "partial", "module": "PlayerRadar", "note": "Lists loaded players in ClickGUI; no world or HUD arrows yet."}
+  },
+  "additions": [
+    {"id": "anomoly_spear_assist", "name": "Spear Assist", "category": "Combat", "status": "coded", "module": "SpearAssist", "doc": "hacks/spear-assist.md"}
+  ]
+}
