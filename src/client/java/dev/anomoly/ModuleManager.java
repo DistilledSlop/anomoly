@@ -96,6 +96,7 @@ import dev.anomoly.modules.PluginInspector;
 import dev.anomoly.modules.Reach;
 import dev.anomoly.modules.SpearAssist;
 import dev.anomoly.modules.SafeWalk;
+import dev.anomoly.modules.Scaffold;
 import dev.anomoly.modules.Step;
 import dev.anomoly.modules.TriggerBot;
 import dev.anomoly.modules.Zoom;
@@ -115,7 +116,7 @@ public final class ModuleManager {
         new AutoTool(), new AutoReplenish(),
         new AutoDeposit(), new AutoDrop(),
         new ChestStealer(), new ChestCleaner(),
-        new FastPlace(), new FastBreak(), new FastLadder(),
+        new FastPlace(), new FastBreak(), new FastLadder(), new Scaffold(),
         new NoFall(), new NoSlow(), new SafeWalk(), new Step(), new AntiWeb(), new FastFall(), new Velocity(), new NoPush(), new MaxBrightness(), new NoHurtCam(), new NoBob(), new AutoF5(),
         new FovOverride(), new NoFov(), new Zoom(), new CameraClip(), new CameraTweaks(), new FreeLook(),
         new Fullbright(), new NoFog(), new NoOverlay(), new NoFireOverlay(), new AntiOverlay(), new AntiWobble(), new NoPumpkin(), new AntiBlind(), new PlayerRadar(), new WeatherChanger(), new TimeChanger(),

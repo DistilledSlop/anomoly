@@ -4,16 +4,16 @@
 </head><body><h1>Anomoly hack progress</h1>
 <p>One tile per catalogued feature. Tile area is proportional to category size. Blue means coded and compiled, amber means partial, green means gameplay verified, and gray means backlog. Startup validation alone does not count as gameplay verification.</p>
 <img src="progress.svg" alt="Treemap of Anomoly hack progress">
-<p>69 coded, 1 partial, 40 gameplay verified, 573 backlog, 683 total. <a href="progress.json">Raw data</a>.</p>
+<p>68 coded, 1 partial, 42 gameplay verified, 572 backlog, 683 total. <a href="progress.json">Raw data</a>.</p>
 <h2>By category</h2><table><thead><tr><th>Category</th><th>Verified</th><th>Coded</th><th>Partial</th><th>Backlog</th><th>Total</th></tr></thead><tbody>
 <tr><td>Combat</td><td>34</td><td>12</td><td>1</td><td>48</td><td>95</td></tr>
 <tr><td>Exploit</td><td>0</td><td>3</td><td>0</td><td>31</td><td>34</td></tr>
 <tr><td>Fun</td><td>0</td><td>1</td><td>0</td><td>16</td><td>17</td></tr>
 <tr><td>Misc</td><td>0</td><td>1</td><td>0</td><td>121</td><td>122</td></tr>
-<tr><td>Movement</td><td>1</td><td>13</td><td>0</td><td>76</td><td>90</td></tr>
+<tr><td>Movement</td><td>2</td><td>12</td><td>0</td><td>76</td><td>90</td></tr>
 <tr><td>Player</td><td>5</td><td>14</td><td>0</td><td>68</td><td>87</td></tr>
 <tr><td>Render</td><td>0</td><td>22</td><td>0</td><td>144</td><td>166</td></tr>
-<tr><td>World</td><td>0</td><td>3</td><td>0</td><td>69</td><td>72</td></tr>
+<tr><td>World</td><td>1</td><td>3</td><td>0</td><td>68</td><td>72</td></tr>
 </tbody></table>
 <h2>Features</h2><label for="filter">Filter features</label><br><input id="filter" type="search" placeholder="Search name, category, or status">
 <table id="features"><thead><tr><th>Category</th><th>Feature</th><th>Status</th><th>Implementation</th></tr></thead><tbody>
@@ -353,7 +353,7 @@
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/portalgui.md">PortalGui</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/reversestep.md">ReverseStep</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/riding.md">Riding</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/safewalk.md">SafeWalk</a></td><td class="coded">coded</td><td>SafeWalk</td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/safewalk.md">SafeWalk</a></td><td class="verified">verified</td><td>After registering its existing mixin, a local vanilla 26.3 server kept an Auto Walk player at y=100 and a fixed X position at an air edge with Safe Walk enabled and Scaffold disabled. See docs/test-evidence/2026-10-30-scaffold.md.</td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/slippy.md">Slippy</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/snaptap.md">SnapTap</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autosneak.md">Sneak</a></td><td class="coded">coded</td><td>AutoSneak</td></tr>
@@ -687,7 +687,7 @@
 <tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nukerlegit.md">NukerLegit</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/packetmine.md">PacketMine</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/projectilepuncher.md">ProjectilePuncher</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/scaffold.md">Scaffold</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/scaffold.md">Scaffold</a></td><td class="verified">verified</td><td>On a local vanilla 26.3 server, Scaffold built a continuous 16-block stone bridge from hotbar material and three more blocks from offhand, restored the selected sword, stopped safely when blocks ran out, and refused to use sand. Optional tower mode built a four-block vertical column and stopped after consuming its material. See docs/test-evidence/2026-10-30-scaffold.md.</td></tr>
 <tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/selfblock.md">SelfBlock</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/sourceremover.md">SourceRemover</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/spawnproofer.md">Spawn Proofer</a></td><td class="backlog">backlog</td><td></td></tr>

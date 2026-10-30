@@ -1,9 +1,9 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 573,
-    "verified": 40,
-    "coded": 69,
+    "backlog": 572,
+    "verified": 42,
+    "coded": 68,
     "partial": 1
   },
   "total": 683,
@@ -4908,18 +4908,18 @@
       "id": "safewalk",
       "name": "SafeWalk",
       "category": "Movement",
-      "status": "coded",
+      "status": "verified",
       "module": "SafeWalk",
-      "note": "",
+      "note": "After registering its existing mixin, a local vanilla 26.3 server kept an Auto Walk player at y=100 and a fixed X position at an air edge with Safe Walk enabled and Scaffold disabled. See docs/test-evidence/2026-10-30-scaffold.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/safewalk.md"
     },
     {
       "id": "scaffold",
       "name": "Scaffold",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "Scaffold",
+      "note": "On a local vanilla 26.3 server, Scaffold built a continuous 16-block stone bridge from hotbar material and three more blocks from offhand, restored the selected sword, stopped safely when blocks ran out, and refused to use sand. Optional tower mode built a four-block vertical column and stopped after consuming its material. See docs/test-evidence/2026-10-30-scaffold.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/scaffold.md"
     },
     {
