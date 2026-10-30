@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 553,
-    "verified": 61,
+    "backlog": 552,
+    "verified": 62,
     "coded": 68,
     "partial": 1
   },
@@ -687,9 +687,9 @@
       "id": "autocrafter",
       "name": "AutoCrafter",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "AutoCrafter",
+      "note": "On a local vanilla 26.3 server, Auto Crafter made eight sticks in a crafting table and eight torches in the inventory 2x2 grid, cooked and collected iron in furnace and blast furnace menus and beef in a smoker, and respected the Recipe Book-open gate. All four full-inventory actions and an ordered-target loop guard were tested. See docs/test-evidence/2026-10-30-autocrafter.md. Cooking requires preloaded fuel; custom recipes and third-party anticheats remain untested.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autocrafter.md"
     },
     {
