@@ -235,6 +235,17 @@ import dev.anomoly.modules.HoleEsp;
 import dev.anomoly.modules.MultiAura;
 import dev.anomoly.modules.ClickAura;
 import dev.anomoly.modules.AntiLegitMiss;
+import dev.anomoly.modules.TpsCounter;
+import dev.anomoly.modules.LagNotifier;
+import dev.anomoly.modules.VisualRange;
+import dev.anomoly.modules.TotemPopCounter;
+import dev.anomoly.modules.StashFinder;
+import dev.anomoly.modules.PvpInfo;
+import dev.anomoly.modules.Gamemode;
+import dev.anomoly.modules.Clip;
+import dev.anomoly.modules.ClickTp;
+import dev.anomoly.modules.SpawnProofer;
+import dev.anomoly.modules.FakePlayer;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -343,6 +354,17 @@ public final class ModuleManager {
         new MultiAura(),
         new ClickAura(),
         new AntiLegitMiss(),
+        new TpsCounter(),
+        new LagNotifier(),
+        new VisualRange(),
+        new TotemPopCounter(),
+        new StashFinder(),
+        new PvpInfo(),
+        new Gamemode(),
+        new Clip(),
+        new ClickTp(),
+        new SpawnProofer(),
+        new FakePlayer(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 

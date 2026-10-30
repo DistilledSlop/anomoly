@@ -1,9 +1,9 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 396,
+    "backlog": 379,
     "verified": 84,
-    "coded": 200,
+    "coded": 217,
     "partial": 3
   },
   "total": 683,
@@ -435,9 +435,9 @@
       "id": "armoralert",
       "name": "ArmorAlert",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "DurabilityAlert",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/armoralert.md"
     },
     {
@@ -1857,9 +1857,9 @@
       "id": "clicktp",
       "name": "ClickTp",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "ClickTp",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/clicktp.md"
     },
     {
@@ -1875,9 +1875,9 @@
       "id": "clientsidetime",
       "name": "ClientSideTime",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "TimeChanger",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/clientsidetime.md"
     },
     {
@@ -1893,9 +1893,9 @@
       "id": "clip",
       "name": "Clip",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Clip",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/clip.md"
     },
     {
@@ -2478,9 +2478,9 @@
       "id": "fakeplayer",
       "name": "Fake Player",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "FakePlayer",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fakeplayer.md"
     },
     {
@@ -2784,9 +2784,9 @@
       "id": "gamemode",
       "name": "Gamemode",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Gamemode",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/gamemode.md"
     },
     {
@@ -3405,18 +3405,18 @@
       "id": "lagdetector",
       "name": "LagDetector",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "LagNotifier",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/lagdetector.md"
     },
     {
       "id": "lagnotifier",
       "name": "LagNotifier",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "LagNotifier",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/lagnotifier.md"
     },
     {
@@ -3504,9 +3504,9 @@
       "id": "liquidplace",
       "name": "LiquidPlace",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "LiquidInteract",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/liquidplace.md"
     },
     {
@@ -4674,9 +4674,9 @@
       "id": "pvpinfo",
       "name": "PvpInfo",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "PvpInfo",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/pvpinfo.md"
     },
     {
@@ -4836,9 +4836,9 @@
       "id": "respawn",
       "name": "Respawn",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "AutoRespawn",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/respawn.md"
     },
     {
@@ -5241,9 +5241,9 @@
       "id": "spawnproofer",
       "name": "Spawn Proofer",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "SpawnProofer",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/spawnproofer.md"
     },
     {
@@ -5322,18 +5322,18 @@
       "id": "stashfinder",
       "name": "Stash Finder",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "StashFinder",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/stashfinder.md"
     },
     {
       "id": "stashlogger",
       "name": "StashLogger",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "StashFinder",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/stashlogger.md"
     },
     {
@@ -5709,9 +5709,9 @@
       "id": "totempopcounter",
       "name": "TotemPopCounter",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "TotemPopCounter",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/totempopcounter.md"
     },
     {
@@ -5727,9 +5727,9 @@
       "id": "tpscounter",
       "name": "TPSCounter",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "TpsCounter",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tpscounter.md"
     },
     {
@@ -5988,9 +5988,9 @@
       "id": "visualrange",
       "name": "VisualRange",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "VisualRange",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/visualrange.md"
     },
     {
