@@ -4,7 +4,7 @@
 </head><body><h1>Anomoly hack progress</h1>
 <p>One tile per catalogued feature. Tile area is proportional to category size. Blue means coded and compiled, amber means partial, green means gameplay verified, and gray means backlog. Startup validation alone does not count as gameplay verification.</p>
 <img src="progress.svg" alt="Treemap of Anomoly hack progress">
-<p>85 coded, 3 partial, 84 gameplay verified, 511 backlog, 683 total. <a href="progress.json">Raw data</a>.</p>
+<p>102 coded, 3 partial, 84 gameplay verified, 494 backlog, 683 total. <a href="progress.json">Raw data</a>.</p>
 <h2>By category</h2><table><thead><tr><th>Category</th><th>Verified</th><th>Coded</th><th>Partial</th><th>Backlog</th><th>Total</th></tr></thead><tbody>
 <tr><td>Combat</td><td>34</td><td>12</td><td>1</td><td>48</td><td>95</td></tr>
 <tr><td>Exploit</td><td>0</td><td>3</td><td>0</td><td>31</td><td>34</td></tr>
@@ -12,7 +12,7 @@
 <tr><td>Misc</td><td>0</td><td>2</td><td>0</td><td>120</td><td>122</td></tr>
 <tr><td>Movement</td><td>13</td><td>28</td><td>2</td><td>47</td><td>90</td></tr>
 <tr><td>Player</td><td>19</td><td>14</td><td>0</td><td>54</td><td>87</td></tr>
-<tr><td>Render</td><td>0</td><td>22</td><td>0</td><td>144</td><td>166</td></tr>
+<tr><td>Render</td><td>0</td><td>39</td><td>0</td><td>127</td><td>166</td></tr>
 <tr><td>World</td><td>18</td><td>3</td><td>0</td><td>51</td><td>72</td></tr>
 </tbody></table>
 <h2>Features</h2><label for="filter">Filter features</label><br><input id="filter" type="search" placeholder="Search name, category, or status">
@@ -466,7 +466,7 @@
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antioverlay.md">Anti Overlay</a></td><td class="coded">coded</td><td>AntiOverlay</td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiblind.md">AntiBlind</a></td><td class="coded">coded</td><td>AntiBlind</td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antinausea.md">AntiWobble</a></td><td class="coded">coded</td><td>AntiWobble</td></tr>
-<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/armorhud.md">ArmorHud</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/armorhud.md">ArmorHud</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/aspect.md">Aspect</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/aspectratio.md">AspectRatio</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autocrystalinfo.md">AutoCrystalInfo</a></td><td class="backlog">backlog</td><td></td></tr>
@@ -499,7 +499,7 @@
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/combinemobs.md">CombineMobs</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/companion.md">Companion</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/cooldowns.md">Cooldowns</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/coords.md">Coords</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/coords.md">Coords</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/crosshair.md">Crosshair</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/crosshairarrows.md">CrosshairArrows</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/crystalview.md">CrystalView</a></td><td class="backlog">backlog</td><td></td></tr>
@@ -509,17 +509,17 @@
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/debug.md">Debug</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/enchantcolor.md">Enchant Color</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/entityowner.md">Entity Owner</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/esp.md">ESP</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/esp.md">ESP</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/extrascreenshot.md">ExtraScreenshot</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/extratab.md">ExtraTab</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/extratooltips.md">ExtraTooltips</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fov.md">FOV</a></td><td class="coded">coded</td><td>FovOverride</td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fovmodifier.md">FOVModifier</a></td><td class="coded">coded</td><td>FovOverride</td></tr>
-<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fpscounter.md">FpsCounter</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fpscounter.md">FpsCounter</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/freecam.md">FreeCam</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/freelook.md">FreeLook</a></td><td class="coded">coded</td><td>FreeLook</td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fullbright.md">FullBright</a></td><td class="coded">coded</td><td>Fullbright</td></tr>
-<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/gappleshud.md">GapplesHud</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/gappleshud.md">GapplesHud</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/handview.md">Hand View</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/hats.md">Hats</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/healthtags.md">HealthTags</a></td><td class="backlog">backlog</td><td></td></tr>
@@ -534,7 +534,7 @@
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/itemhighlight.md">Item Highlight</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/itemphysics.md">Item Physics</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/itemchams.md">ItemChams</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/itemesp.md">ItemESP</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/itemesp.md">ItemESP</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/itemtags.md">ItemTags</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/jumpcircle.md">JumpCircle</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/jumpeffect.md">JumpEffect</a></td><td class="backlog">backlog</td><td></td></tr>
@@ -550,11 +550,11 @@
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/logoutspots.md">Logout Spots</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/mainmenu.md">Main Menu</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/marker.md">Marker</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/memoryhud.md">MemoryHud</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/mobesp.md">MobEsp</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/memoryhud.md">MemoryHud</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/mobesp.md">MobEsp</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/mobowner.md">MobOwners</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/mobspawnesp.md">MobSpawnEsp</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/modulelist.md">ModuleList</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/modulelist.md">ModuleList</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/murdermystery.md">MurderMystery</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nametags.md">Nametags</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/newchunks.md">NewChunks</a></td><td class="backlog">backlog</td><td></td></tr>
@@ -575,12 +575,12 @@
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/overlay.md">Overlay</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/particles.md">Particles</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/penisesp.md">PenisESP</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/pinghud.md">PingHud</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/playeresp.md">PlayerEsp</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/pinghud.md">PingHud</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/playeresp.md">PlayerEsp</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/popchams.md">Pop Chams</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/portalesp.md">PortalEsp</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/potionfx.md">PotionFX</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/potionhud.md">PotionHud</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/potionhud.md">PotionHud</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/prophunt.md">ProphuntESP</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/protectionzones.md">ProtectionZones</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/pvpresources.md">PVPResources</a></td><td class="backlog">backlog</td><td></td></tr>
@@ -600,7 +600,7 @@
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/smallshield.md">SmallShield</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/smoothcamera.md">SmoothCamera</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/soundesp.md">SoundESP</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/speedometer.md">Speedometer</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/speedometer.md">Speedometer</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/staffboard.md">StaffBoard</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/storageesp.md">StorageESP</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/targethud.md">TargetHud</a></td><td class="backlog">backlog</td><td></td></tr>
@@ -608,20 +608,20 @@
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/timerindicator.md">TimerIndicator</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tnttimer.md">TNTTimer</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/totemanimation.md">TotemAnimation</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/totemcounter.md">TotemCounter</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/totemcounter.md">TotemCounter</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/totemeffect.md">TotemEffect</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tpscounter.md">TPSCounter</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tracers.md">Tracers</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/trail.md">Trail</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/trails.md">Trails</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/trajectories.md">Trajectories</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/truesight.md">TrueSight</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/truesight.md">TrueSight</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tunnelesp.md">Tunnel Esp</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/viewclip.md">ViewClip</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/viewmodel.md">ViewModel</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/voidesp.md">VoidESP</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/wallhack.md">Wall Hack</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/watermark.md">WaterMark</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/wallhack.md">Wall Hack</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
+<tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/watermark.md">WaterMark</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/waypoints.md">Waypoints</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/weatherchanger.md">Weather Changer</a></td><td class="coded">coded</td><td>WeatherChanger</td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/wireframe.md">Wireframe</a></td><td class="backlog">backlog</td><td></td></tr>

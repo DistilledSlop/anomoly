@@ -159,6 +159,22 @@ import dev.anomoly.modules.AntiVoid;
 import dev.anomoly.modules.AntiLevitation;
 import dev.anomoly.modules.IceSpeed;
 import dev.anomoly.modules.Yaw;
+import dev.anomoly.modules.WaterMark;
+import dev.anomoly.modules.FpsCounter;
+import dev.anomoly.modules.PingHud;
+import dev.anomoly.modules.MemoryHud;
+import dev.anomoly.modules.Coords;
+import dev.anomoly.modules.Speedometer;
+import dev.anomoly.modules.ModuleList;
+import dev.anomoly.modules.PotionHud;
+import dev.anomoly.modules.ArmorHud;
+import dev.anomoly.modules.TotemCounter;
+import dev.anomoly.modules.GapplesHud;
+import dev.anomoly.modules.PlayerEsp;
+import dev.anomoly.modules.MobEsp;
+import dev.anomoly.modules.ItemEsp;
+import dev.anomoly.modules.Esp;
+import dev.anomoly.modules.TrueSight;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -191,6 +207,22 @@ public final class ModuleManager {
         new AntiLevitation(),
         new IceSpeed(),
         new Yaw(),
+        new WaterMark(),
+        new FpsCounter(),
+        new PingHud(),
+        new MemoryHud(),
+        new Coords(),
+        new Speedometer(),
+        new ModuleList(),
+        new PotionHud(),
+        new ArmorHud(),
+        new TotemCounter(),
+        new GapplesHud(),
+        new PlayerEsp(),
+        new MobEsp(),
+        new ItemEsp(),
+        new Esp(),
+        new TrueSight(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 

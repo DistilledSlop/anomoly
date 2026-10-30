@@ -1,9 +1,9 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 511,
+    "backlog": 494,
     "verified": 84,
-    "coded": 85,
+    "coded": 102,
     "partial": 3
   },
   "total": 683,
@@ -444,9 +444,9 @@
       "id": "armorhud",
       "name": "ArmorHud",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "ArmorHud",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/armorhud.md"
     },
     {
@@ -1965,9 +1965,9 @@
       "id": "coords",
       "name": "Coords",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Coords",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/coords.md"
     },
     {
@@ -2352,9 +2352,9 @@
       "id": "esp",
       "name": "ESP",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Esp",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/esp.md"
     },
     {
@@ -2721,9 +2721,9 @@
       "id": "fpscounter",
       "name": "FpsCounter",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "FpsCounter",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fpscounter.md"
     },
     {
@@ -2793,9 +2793,9 @@
       "id": "gappleshud",
       "name": "GapplesHud",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "GapplesHud",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/gappleshud.md"
     },
     {
@@ -3207,9 +3207,9 @@
       "id": "itemesp",
       "name": "ItemESP",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "ItemEsp",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/itemesp.md"
     },
     {
@@ -3639,9 +3639,9 @@
       "id": "memoryhud",
       "name": "MemoryHud",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "MemoryHud",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/memoryhud.md"
     },
     {
@@ -3720,9 +3720,9 @@
       "id": "mobesp",
       "name": "MobEsp",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "MobEsp",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/mobesp.md"
     },
     {
@@ -3747,9 +3747,9 @@
       "id": "modulelist",
       "name": "ModuleList",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "ModuleList",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/modulelist.md"
     },
     {
@@ -4467,9 +4467,9 @@
       "id": "pinghud",
       "name": "PingHud",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "PingHud",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/pinghud.md"
     },
     {
@@ -4503,9 +4503,9 @@
       "id": "playeresp",
       "name": "PlayerEsp",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "PlayerEsp",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/playeresp.md"
     },
     {
@@ -4602,9 +4602,9 @@
       "id": "potionhud",
       "name": "PotionHud",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "PotionHud",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/potionhud.md"
     },
     {
@@ -5277,9 +5277,9 @@
       "id": "speedometer",
       "name": "Speedometer",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Speedometer",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/speedometer.md"
     },
     {
@@ -5691,9 +5691,9 @@
       "id": "totemcounter",
       "name": "TotemCounter",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "TotemCounter",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/totemcounter.md"
     },
     {
@@ -5853,9 +5853,9 @@
       "id": "truesight",
       "name": "TrueSight",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "TrueSight",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/truesight.md"
     },
     {
@@ -6015,18 +6015,18 @@
       "id": "wallhack",
       "name": "Wall Hack",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Esp",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/wallhack.md"
     },
     {
       "id": "watermark",
       "name": "WaterMark",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "WaterMark",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/watermark.md"
     },
     {

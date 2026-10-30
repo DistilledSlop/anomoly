@@ -21,5 +21,6 @@ public abstract class HudRadarMixin {
     private void anomoly$drawRadar(GuiGraphicsExtractor graphics, DeltaTracker deltaTracker, CallbackInfo ci) {
         if (!isHidden) AnomolyClient.MODULES.get(PlayerRadar.class).drawHud(Minecraft.getInstance(), graphics);
         if (!isHidden) AnomolyClient.MODULES.get(SmartEat.class).drawPreview(Minecraft.getInstance(), graphics);
+        if (!isHidden) dev.anomoly.modules.TextHud.drawAll(Minecraft.getInstance(), graphics);
     }
 }
