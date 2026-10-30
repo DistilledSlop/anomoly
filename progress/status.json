@@ -370,7 +370,14 @@
     "flagcheck": {"status": "coded", "module": "FlagCheck", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
     "packetlogger": {"status": "coded", "module": "PacketLogger", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
     "chestaura": {"status": "coded", "module": "ChestAura", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
-    "moreknockback": {"status": "partial", "module": "SuperKnockback", "note": "Shares SuperKnockback, which is itself only partly complete; no separate gameplay test is recorded."}
+    "moreknockback": {"status": "partial", "module": "SuperKnockback", "note": "Shares SuperKnockback, which is itself only partly complete; no separate gameplay test is recorded."},
+    "panic": {"status": "coded", "module": "Panic", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "selfdestruct": {"status": "coded", "module": "Panic", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "fish": {"status": "coded", "module": "Fish", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "messageaura": {"status": "coded", "module": "MessageAura", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "autocheat": {"status": "coded", "module": "AntiCheatDetect", "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded."},
+    "hitboxignore": {"status": "coded", "module": "NoEntityTrace", "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded."},
+    "unhook": {"status": "partial", "module": "Panic", "note": "Panic switches every module off but does not hide the client's other traces."}
   },
   "additions": [
     {"id": "anomoly_spear_assist", "name": "Spear Assist", "category": "Combat", "status": "coded", "module": "SpearAssist", "doc": "hacks/spear-assist.md"}

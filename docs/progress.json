@@ -1,10 +1,10 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "coded": 281,
+    "coded": 287,
     "verified": 84,
-    "backlog": 311,
-    "partial": 7
+    "backlog": 304,
+    "partial": 8
   },
   "total": 683,
   "features": [
@@ -642,9 +642,9 @@
       "id": "autocheat",
       "name": "Auto Cheat",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "AntiCheatDetect",
+      "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autocheat.md"
     },
     {
@@ -2631,9 +2631,9 @@
       "id": "fish",
       "name": "Fish",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Fish",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fish.md"
     },
     {
@@ -2955,9 +2955,9 @@
       "id": "hitboxignore",
       "name": "HitboxIgnore",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "NoEntityTrace",
+      "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/hitboxignore.md"
     },
     {
@@ -3657,9 +3657,9 @@
       "id": "messageaura",
       "name": "Message Aura",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "MessageAura",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/messageaura.md"
     },
     {
@@ -4386,9 +4386,9 @@
       "id": "panic",
       "name": "Panic",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Panic",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/panic.md"
     },
     {
@@ -4953,9 +4953,9 @@
       "id": "selfdestruct",
       "name": "Self Destruct",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Panic",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/selfdestruct.md"
     },
     {
@@ -5898,9 +5898,9 @@
       "id": "unhook",
       "name": "UnHook",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "Panic",
+      "note": "Panic switches every module off but does not hide the client's other traces.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/unhook.md"
     },
     {

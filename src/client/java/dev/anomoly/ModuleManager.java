@@ -286,6 +286,9 @@ import dev.anomoly.modules.Notifier;
 import dev.anomoly.modules.FlagCheck;
 import dev.anomoly.modules.PacketLogger;
 import dev.anomoly.modules.ChestAura;
+import dev.anomoly.modules.Panic;
+import dev.anomoly.modules.Fish;
+import dev.anomoly.modules.MessageAura;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -445,6 +448,9 @@ public final class ModuleManager {
         new FlagCheck(),
         new PacketLogger(),
         new ChestAura(),
+        new Panic(),
+        new Fish(),
+        new MessageAura(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 
