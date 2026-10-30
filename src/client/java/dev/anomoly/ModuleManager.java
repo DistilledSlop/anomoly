@@ -8,6 +8,7 @@ import dev.anomoly.modules.AutoRespawn;
 import dev.anomoly.modules.AutoSneak;
 import dev.anomoly.modules.AutoSprint;
 import dev.anomoly.modules.AutoWalk;
+import dev.anomoly.modules.AutoTool;
 import dev.anomoly.modules.FastBreak;
 import dev.anomoly.modules.FastLadder;
 import dev.anomoly.modules.FastPlace;
@@ -24,7 +25,7 @@ import net.minecraft.client.Minecraft;
 public final class ModuleManager {
     private final List<Module> modules = List.of(
         new TriggerBot(), new KillAura(), new SpearAssist(), new Reach(), new AutoSprint(), new AutoWalk(), new AutoJump(),
-        new AutoSneak(), new AutoRespawn(), new AutoEat(), new AutoFish(), new AntiAFK(), new FastPlace(), new FastBreak(), new FastLadder(),
+        new AutoSneak(), new AutoRespawn(), new AutoEat(), new AutoFish(), new AntiAFK(), new AutoTool(), new FastPlace(), new FastBreak(), new FastLadder(),
         new MaxBrightness(), new NoHurtCam(), new PlayerRadar()
     );
 

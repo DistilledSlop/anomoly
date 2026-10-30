@@ -11,6 +11,7 @@
     "autoeat": {"status": "coded", "module": "AutoEat"},
     "autofish": {"status": "coded", "module": "AutoFish"},
     "antiafk": {"status": "coded", "module": "AntiAFK"},
+    "autotool": {"status": "coded", "module": "AutoTool"},
     "fastladder": {"status": "coded", "module": "FastLadder"},
     "fastplace": {"status": "coded", "module": "FastPlace"},
     "fastbreak": {"status": "coded", "module": "FastBreak"},
