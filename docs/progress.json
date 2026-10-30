@@ -1,9 +1,9 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 449,
+    "backlog": 439,
     "verified": 84,
-    "coded": 147,
+    "coded": 157,
     "partial": 3
   },
   "total": 683,
@@ -1497,9 +1497,9 @@
       "id": "boatfly",
       "name": "BoatFly",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "BoatFly",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/boatfly.md"
     },
     {
@@ -2226,27 +2226,27 @@
       "id": "elytraboost",
       "name": "Elytra Boost",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "ElytraFly",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytraboost.md"
     },
     {
       "id": "elytrafly",
       "name": "ElytraFly",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "ElytraFly",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytrafly.md"
     },
     {
       "id": "elytrarecast",
       "name": "ElytraRecast",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "ElytraRecast",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytrarecast.md"
     },
     {
@@ -2334,9 +2334,9 @@
       "id": "entityspeed",
       "name": "EntitySpeed",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "EntitySpeed",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/entityspeed.md"
     },
     {
@@ -2667,9 +2667,9 @@
       "id": "follow",
       "name": "Follow",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Follow",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/follow.md"
     },
     {
@@ -3459,18 +3459,18 @@
       "id": "levitationcontrol",
       "name": "Levitation Control",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "LevitationControl",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/levitationcontrol.md"
     },
     {
       "id": "levitctrl",
       "name": "LevitCtrl",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "LevitationControl",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/levitctrl.md"
     },
     {
@@ -5160,9 +5160,9 @@
       "id": "snowshoe",
       "name": "SnowShoe",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "SnowShoe",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/snowshoe.md"
     },
     {
@@ -5916,9 +5916,9 @@
       "id": "vehicleboost",
       "name": "VehicleBoost",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "EntitySpeed",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/vehicleboost.md"
     },
     {

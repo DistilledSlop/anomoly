@@ -201,6 +201,13 @@ import dev.anomoly.modules.PacketCanceller;
 import dev.anomoly.modules.NoServerSlot;
 import dev.anomoly.modules.RotationLock;
 import dev.anomoly.modules.ToolSaver;
+import dev.anomoly.modules.ElytraFly;
+import dev.anomoly.modules.ElytraRecast;
+import dev.anomoly.modules.EntitySpeed;
+import dev.anomoly.modules.BoatFly;
+import dev.anomoly.modules.LevitationControl;
+import dev.anomoly.modules.Follow;
+import dev.anomoly.modules.SnowShoe;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -275,6 +282,13 @@ public final class ModuleManager {
         new NoServerSlot(),
         new RotationLock(),
         new ToolSaver(),
+        new ElytraFly(),
+        new ElytraRecast(),
+        new EntitySpeed(),
+        new BoatFly(),
+        new LevitationControl(),
+        new Follow(),
+        new SnowShoe(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 

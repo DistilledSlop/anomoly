@@ -3,14 +3,14 @@
 <style>body{font:16px system-ui,sans-serif;background:#0b1220;color:#e7f2ff;max-width:1220px;margin:auto;padding:18px}a{color:#82c7fa}img{width:100%;height:auto}table{border-collapse:collapse;width:100%}th,td{border-bottom:1px solid #344054;padding:8px;text-align:left}input{background:#172235;color:#fff;border:1px solid #52657d;border-radius:5px;padding:10px;font:inherit;width:min(100%,450px)}.coded{color:#49a8e8}.partial{color:#f2b544}.verified{color:#4bd598}.backlog{color:#a9bacd}</style>
 </head><body><h1>Anomoly hack progress</h1>
 <p>One tile per catalogued feature. Tile area is proportional to category size. Blue means coded and compiled, amber means partial, green means gameplay verified, and gray means backlog. Startup validation alone does not count as gameplay verification.</p>
-<img src="progress.svg?v=e87159a4a9" alt="Treemap of Anomoly hack progress">
-<p>147 coded, 3 partial, 84 gameplay verified, 449 backlog, 683 total. <a href="progress.json">Raw data</a>.</p>
+<img src="progress.svg?v=ed97597f4f" alt="Treemap of Anomoly hack progress">
+<p>157 coded, 3 partial, 84 gameplay verified, 439 backlog, 683 total. <a href="progress.json">Raw data</a>.</p>
 <h2>By category</h2><table><thead><tr><th>Category</th><th>Verified</th><th>Coded</th><th>Partial</th><th>Backlog</th><th>Total</th></tr></thead><tbody>
 <tr><td>Combat</td><td>34</td><td>20</td><td>1</td><td>40</td><td>95</td></tr>
 <tr><td>Exploit</td><td>0</td><td>5</td><td>0</td><td>29</td><td>34</td></tr>
 <tr><td>Fun</td><td>0</td><td>1</td><td>0</td><td>16</td><td>17</td></tr>
 <tr><td>Misc</td><td>0</td><td>8</td><td>0</td><td>114</td><td>122</td></tr>
-<tr><td>Movement</td><td>13</td><td>28</td><td>2</td><td>47</td><td>90</td></tr>
+<tr><td>Movement</td><td>13</td><td>38</td><td>2</td><td>37</td><td>90</td></tr>
 <tr><td>Player</td><td>19</td><td>25</td><td>0</td><td>43</td><td>87</td></tr>
 <tr><td>Render</td><td>0</td><td>54</td><td>0</td><td>112</td><td>166</td></tr>
 <tr><td>World</td><td>18</td><td>6</td><td>0</td><td>48</td><td>72</td></tr>
@@ -301,18 +301,18 @@
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/avoidhazards.md">AvoidHazards</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blockbounce.md">BlockBounce</a></td><td class="verified">verified</td><td>On a local vanilla 26.3 server, a slime jump reached sampled y=101.89 with BlockBounce off and y=104.27 with it on. With it still on, a stone jump reached y=102.25, while honey and bed jumps reached y=103.53 and y=104.51. See docs/test-evidence/2026-10-30-blockbounce.md. Third-party anticheats remain untested.</td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blockwalk.md">BlockWalk</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/boatfly.md">BoatFly</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/boatfly.md">BoatFly</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bunnyhop.md">BunnyHop</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/clicktp.md">ClickTp</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/clip.md">Clip</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/dolphin.md">Dolphin</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
-<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytraboost.md">Elytra Boost</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytraboost.md">Elytra Boost</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytra.md">Elytra+</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytrafly.md">ElytraFly</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytrarecast.md">ElytraRecast</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytrafly.md">ElytraFly</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytrarecast.md">ElytraRecast</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytratweaks.md">ElytraTweaks</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/entitycontrol.md">EntityControl</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/entityspeed.md">EntitySpeed</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/entityspeed.md">EntitySpeed</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/extendedfirework.md">ExtendedFirework</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/extraelytra.md">ExtraElytra</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastclimb.md">Fast Climb</a></td><td class="backlog">backlog</td><td></td></tr>
@@ -322,7 +322,7 @@
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastswim.md">FastSwim</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fish.md">Fish</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/flight.md">Fly</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
-<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/follow.md">Follow</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/follow.md">Follow</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/freeze.md">Freeze</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/glide.md">Glide</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/guimove.md">Gui Move</a></td><td class="verified">verified</td><td>On a local vanilla 26.3 server, GUI Move forwarded walking and jumping while the inventory was visible, rotated the view with arrow keys, and forwarded sideways movement while a chest stayed open. It respected a rebound forward key, preserved chat typing behavior, and stopped movement when disabled. See docs/test-evidence/2026-10-30-guimove.md. Optional sneak and All-screen modes and third-party anticheats remain untested.</td></tr>
@@ -334,8 +334,8 @@
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/invwalk.md">InventoryMove</a></td><td class="verified">verified</td><td>Inventory Move is exposed as GUI Move. On a local vanilla 26.3 server, the open inventory and chest screens allowed normal movement, an inventory jump, and a rebound forward key; chat and a disabled control did not move. See docs/test-evidence/2026-10-30-guimove.md. Advanced server-side-close and packet-queue modes from other clients are not implemented.</td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/jesus.md">Jesus</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/jetpack.md">Jetpack</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
-<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/levitationcontrol.md">Levitation Control</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/levitctrl.md">LevitCtrl</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/levitationcontrol.md">Levitation Control</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/levitctrl.md">LevitCtrl</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/liquids.md">Liquids</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/liquidwalk.md">LiquidWalk</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/longjump.md">LongJump</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
@@ -357,7 +357,7 @@
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/slippy.md">Slippy</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/snaptap.md">SnapTap</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autosneak.md">Sneak</a></td><td class="coded">coded</td><td>AutoSneak</td></tr>
-<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/snowshoe.md">SnowShoe</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/snowshoe.md">SnowShoe</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/speed.md">Speed</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/spider.md">Spider</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/sprint.md">Sprint</a></td><td class="coded">coded</td><td>AutoSprint</td></tr>
@@ -370,7 +370,7 @@
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tridentboost.md">TridentBoost</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tridentfly.md">TridentFly</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tridenttweaks.md">TridentTweaks</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/vehicleboost.md">VehicleBoost</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/vehicleboost.md">VehicleBoost</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/vehiclecontrol.md">VehicleControl</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/velocity.md">Velocity</a></td><td class="coded">coded</td><td>Velocity</td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/waterspeed.md">WaterSpeed</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>

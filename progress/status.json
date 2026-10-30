@@ -232,7 +232,17 @@
     "rotationlock": {"status": "coded", "module": "RotationLock", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
     "viewlock": {"status": "coded", "module": "RotationLock", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
     "toolsaver": {"status": "coded", "module": "ToolSaver", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
-    "itemsaver": {"status": "coded", "module": "ToolSaver", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."}
+    "itemsaver": {"status": "coded", "module": "ToolSaver", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "elytrafly": {"status": "coded", "module": "ElytraFly", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "elytraboost": {"status": "coded", "module": "ElytraFly", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "elytrarecast": {"status": "coded", "module": "ElytraRecast", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "entityspeed": {"status": "coded", "module": "EntitySpeed", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "vehicleboost": {"status": "coded", "module": "EntitySpeed", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "boatfly": {"status": "coded", "module": "BoatFly", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "levitationcontrol": {"status": "coded", "module": "LevitationControl", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "levitctrl": {"status": "coded", "module": "LevitationControl", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "follow": {"status": "coded", "module": "Follow", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "snowshoe": {"status": "coded", "module": "SnowShoe", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."}
   },
   "additions": [
     {"id": "anomoly_spear_assist", "name": "Spear Assist", "category": "Combat", "status": "coded", "module": "SpearAssist", "doc": "hacks/spear-assist.md"}
