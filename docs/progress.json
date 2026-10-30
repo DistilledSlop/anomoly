@@ -1,10 +1,10 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "coded": 304,
+    "coded": 312,
     "verified": 84,
-    "backlog": 284,
-    "partial": 11
+    "backlog": 275,
+    "partial": 12
   },
   "total": 683,
   "features": [
@@ -129,9 +129,9 @@
       "id": "antiattack",
       "name": "AntiAttack",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "AntiAttack",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiattack.md"
     },
     {
@@ -516,9 +516,9 @@
       "id": "autoaccount",
       "name": "AutoAccount",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "AutoAuth",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoaccount.md"
     },
     {
@@ -552,9 +552,9 @@
       "id": "autoauth",
       "name": "AutoAuth",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "AutoAuth",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoauth.md"
     },
     {
@@ -651,9 +651,9 @@
       "id": "autocity",
       "name": "Auto City",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "AutoCity",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autocity.md"
     },
     {
@@ -1461,9 +1461,9 @@
       "id": "blocktrap",
       "name": "BlockTrap",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "AutoTrap",
+      "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blocktrap.md"
     },
     {
@@ -1713,9 +1713,9 @@
       "id": "chams",
       "name": "Chams",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "PlayerEsp",
+      "note": "PlayerEsp shows players through walls as an outline, not as the filled see-through model Chams draws; no gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/chams.md"
     },
     {
@@ -2496,9 +2496,9 @@
       "id": "fastaccel",
       "name": "FastAccel",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "FastAccel",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastaccel.md"
     },
     {
@@ -2622,9 +2622,9 @@
       "id": "fightbot",
       "name": "FightBot",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "FightBot",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fightbot.md"
     },
     {
@@ -2847,9 +2847,9 @@
       "id": "guicloser",
       "name": "GUICloser",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "GuiCloser",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/guicloser.md"
     },
     {

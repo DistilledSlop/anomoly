@@ -304,6 +304,12 @@ import dev.anomoly.modules.Hats;
 import dev.anomoly.modules.Skeleton;
 import dev.anomoly.modules.NoSlowBreak;
 import dev.anomoly.modules.ElytraReplace;
+import dev.anomoly.modules.AutoCity;
+import dev.anomoly.modules.FightBot;
+import dev.anomoly.modules.AutoAuth;
+import dev.anomoly.modules.GuiCloser;
+import dev.anomoly.modules.FastAccel;
+import dev.anomoly.modules.AntiAttack;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -481,6 +487,12 @@ public final class ModuleManager {
         new Skeleton(),
         new NoSlowBreak(),
         new ElytraReplace(),
+        new AutoCity(),
+        new FightBot(),
+        new AutoAuth(),
+        new GuiCloser(),
+        new FastAccel(),
+        new AntiAttack(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 
