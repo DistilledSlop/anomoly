@@ -58,7 +58,7 @@
     "fastbreak": {"status": "coded", "module": "FastBreak"},
     "breakdelay": {"status": "coded", "module": "FastBreak"},
     "nohurtcam": {"status": "coded", "module": "NoHurtCam"},
-    "fullbright": {"status": "partial", "module": "MaxBrightness", "note": "Only raises vanilla gamma to its maximum."},
+    "fullbright": {"status": "coded", "module": "Fullbright"},
     "radar": {"status": "partial", "module": "PlayerRadar", "note": "Lists loaded players in ClickGUI; no world or HUD arrows yet."}
   },
   "additions": [

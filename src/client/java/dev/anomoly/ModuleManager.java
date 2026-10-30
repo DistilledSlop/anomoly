@@ -37,6 +37,7 @@ import dev.anomoly.modules.FastLadder;
 import dev.anomoly.modules.FastPlace;
 import dev.anomoly.modules.FastFall;
 import dev.anomoly.modules.FovOverride;
+import dev.anomoly.modules.Fullbright;
 import dev.anomoly.modules.KillAura;
 import dev.anomoly.modules.MaxBrightness;
 import dev.anomoly.modules.NoHurtCam;
@@ -73,7 +74,7 @@ public final class ModuleManager {
         new FastPlace(), new FastBreak(), new FastLadder(),
         new NoFall(), new NoSlow(), new SafeWalk(), new Step(), new AntiWeb(), new FastFall(), new Velocity(), new NoPush(), new MaxBrightness(), new NoHurtCam(), new NoBob(), new AutoF5(),
         new FovOverride(), new NoFov(), new Zoom(), new CameraClip(), new CameraTweaks(),
-        new NoFog(), new NoOverlay(), new NoFireOverlay(), new AntiOverlay(), new PlayerRadar(),
+        new Fullbright(), new NoFog(), new NoOverlay(), new NoFireOverlay(), new AntiOverlay(), new PlayerRadar(),
         new AntiReducedDebugInfo(), new PortalMenu(), new Twerk()
     );
 

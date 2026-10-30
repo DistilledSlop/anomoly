@@ -2,8 +2,8 @@
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
     "backlog": 622,
-    "coded": 58,
-    "partial": 3
+    "coded": 59,
+    "partial": 2
   },
   "total": 683,
   "features": [
@@ -2774,9 +2774,9 @@
       "id": "fullbright",
       "name": "FullBright",
       "category": "Render",
-      "status": "partial",
-      "module": "MaxBrightness",
-      "note": "Only raises vanilla gamma to its maximum.",
+      "status": "coded",
+      "module": "Fullbright",
+      "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fullbright.md"
     },
     {
