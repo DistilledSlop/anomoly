@@ -1,9 +1,9 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "coded": 247,
+    "coded": 253,
     "verified": 84,
-    "backlog": 347,
+    "backlog": 341,
     "partial": 5
   },
   "total": 683,
@@ -111,9 +111,9 @@
       "id": "antiaim",
       "name": "Anti Aim",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "AntiAim",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiaim.md"
     },
     {
@@ -2865,9 +2865,9 @@
       "id": "handderp",
       "name": "HandDerp",
       "category": "Fun",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "HandDerp",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/handderp.md"
     },
     {
@@ -3162,9 +3162,9 @@
       "id": "inventoryinfo",
       "name": "InventoryInfo",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "InventoryInfo",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/inventoryinfo.md"
     },
     {
@@ -3549,9 +3549,9 @@
       "id": "logposition",
       "name": "Log Position",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "LogPosition",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/logposition.md"
     },
     {
@@ -5592,9 +5592,9 @@
       "id": "timerindicator",
       "name": "TimerIndicator",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "TimerIndicator",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/timerindicator.md"
     },
     {
@@ -6006,9 +6006,9 @@
       "id": "vomit",
       "name": "Vomit",
       "category": "Fun",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Vomit",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/vomit.md"
     },
     {

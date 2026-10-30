@@ -10,7 +10,11 @@ abstract class SilentRotation extends Module implements PacketRewriter {
     private int step;
 
     protected SilentRotation(String id, String name, String description) {
-        super(id, name, description, Category.FUN);
+        this(id, name, description, Category.FUN);
+    }
+
+    protected SilentRotation(String id, String name, String description, Category category) {
+        super(id, name, description, category);
     }
 
     /** Returns {yaw, pitch} for the next movement packet. */

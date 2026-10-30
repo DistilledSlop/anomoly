@@ -334,7 +334,13 @@
     "arrowdodge": {"status": "coded", "module": "AutoDodge", "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded."},
     "smoothaim": {"status": "coded", "module": "AimAssist", "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded."},
     "morecarry": {"status": "coded", "module": "XCarry", "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded."},
-    "fucker": {"status": "partial", "module": "Nuker", "note": "Nuker's whitelist-only block list can target specific blocks such as beds; there is no separate Fucker preset, and no gameplay test is recorded."}
+    "fucker": {"status": "partial", "module": "Nuker", "note": "Nuker's whitelist-only block list can target specific blocks such as beds; there is no separate Fucker preset, and no gameplay test is recorded."},
+    "antiaim": {"status": "coded", "module": "AntiAim", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "inventoryinfo": {"status": "coded", "module": "InventoryInfo", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "timerindicator": {"status": "coded", "module": "TimerIndicator", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "logposition": {"status": "coded", "module": "LogPosition", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "vomit": {"status": "coded", "module": "Vomit", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "handderp": {"status": "coded", "module": "HandDerp", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."}
   },
   "additions": [
     {"id": "anomoly_spear_assist", "name": "Spear Assist", "category": "Combat", "status": "coded", "module": "SpearAssist", "doc": "hacks/spear-assist.md"}

@@ -263,6 +263,12 @@ import dev.anomoly.modules.AutoDisable;
 import dev.anomoly.modules.ProjectilePuncher;
 import dev.anomoly.modules.CityEsp;
 import dev.anomoly.modules.TargetStrafe;
+import dev.anomoly.modules.AntiAim;
+import dev.anomoly.modules.InventoryInfo;
+import dev.anomoly.modules.TimerIndicator;
+import dev.anomoly.modules.LogPosition;
+import dev.anomoly.modules.Vomit;
+import dev.anomoly.modules.HandDerp;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -399,6 +405,12 @@ public final class ModuleManager {
         new ProjectilePuncher(),
         new CityEsp(),
         new TargetStrafe(),
+        new AntiAim(),
+        new InventoryInfo(),
+        new TimerIndicator(),
+        new LogPosition(),
+        new Vomit(),
+        new HandDerp(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 
