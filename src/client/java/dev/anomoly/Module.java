@@ -6,7 +6,7 @@ import java.util.List;
 import dev.anomoly.setting.Setting;
 
 public abstract class Module {
-    public enum Category { COMBAT, MOVEMENT, PLAYER, WORLD, RENDER }
+    public enum Category { COMBAT, MOVEMENT, PLAYER, WORLD, RENDER, EXPLOIT, FUN, MISC }
 
     private final String id;
     private final String name;
