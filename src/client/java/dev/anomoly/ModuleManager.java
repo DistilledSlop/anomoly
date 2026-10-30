@@ -342,6 +342,7 @@ import dev.anomoly.modules.QuickPerspectiveSwap;
 import dev.anomoly.modules.AutoFlyme;
 import dev.anomoly.modules.AntiStaff;
 import dev.anomoly.modules.Quiver;
+import dev.anomoly.modules.InfiniChat;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -557,6 +558,7 @@ public final class ModuleManager {
         new AutoFlyme(),
         new AntiStaff(),
         new Quiver(),
+        new InfiniChat(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 

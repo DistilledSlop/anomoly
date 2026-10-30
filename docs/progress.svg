@@ -3,7 +3,7 @@
 <desc id="desc">Each tile is a catalogued feature. Blue is coded, amber partial, green gameplay verified, and gray backlog.</desc>
 <rect width="1200" height="720" rx="15" fill="#0b1220"/>
 <text x="20" y="37" fill="#e7f2ff" font-family="system-ui,sans-serif" font-size="25" font-weight="700">ANOMOLY / HACK PROGRESS</text>
-<text x="20" y="61" fill="#a9bacd" font-family="system-ui,sans-serif" font-size="14">347 coded · 24 partial · 84 gameplay verified · 228 backlog / 683 total</text>
+<text x="20" y="61" fill="#a9bacd" font-family="system-ui,sans-serif" font-size="14">348 coded · 24 partial · 84 gameplay verified · 227 backlog / 683 total</text>
 <rect x="14.00" y="84.00" width="281.82" height="621.00" rx="7" fill="#172235" stroke="#52657d" stroke-width="1"/>
 <text x="22.00" y="103.00" fill="#e7f2ff" font-family="system-ui,sans-serif" font-size="14" font-weight="600">Render  122/166 coded</text>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antioverlay.md" target="_blank">
@@ -671,7 +671,7 @@
 <rect x="110.94" y="669.11" width="27.98" height="28.89" rx="2" fill="#344054"/>
 </a>
 <rect x="299.82" y="84.00" width="369.63" height="347.38" rx="7" fill="#172235" stroke="#52657d" stroke-width="1"/>
-<text x="307.82" y="103.00" fill="#e7f2ff" font-family="system-ui,sans-serif" font-size="14" font-weight="600">Misc  49/122 coded</text>
+<text x="307.82" y="103.00" fill="#e7f2ff" font-family="system-ui,sans-serif" font-size="14" font-weight="600">Misc  50/122 coded</text>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/announcer.md" target="_blank">
 <title>Announcer — coded: Implemented as a build-checked module. Gameplay testing is not yet recorded.</title>
 <rect x="306.82" y="113.00" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
@@ -760,288 +760,288 @@
 <title>GUICloser — coded: Implemented as a build-checked module. Gameplay testing is not yet recorded.</title>
 <rect x="575.05" y="141.49" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
 </a>
+<a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/infinichat.md" target="_blank">
+<title>InfiniChat — coded: Implemented as a build-checked module. Gameplay testing is not yet recorded.</title>
+<rect x="604.85" y="141.49" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
+</a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/invcleaner.md" target="_blank">
 <title>InvCleaner — coded: Shares the existing module&#x27;s behavior for this catalog entry; no separate gameplay test is recorded.</title>
-<rect x="604.85" y="141.49" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
+<rect x="634.65" y="141.49" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/lagnotifier.md" target="_blank">
 <title>LagNotifier — coded: Implemented as a build-checked module. Gameplay testing is not yet recorded.</title>
-<rect x="634.65" y="141.49" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
+<rect x="306.82" y="169.98" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/logposition.md" target="_blank">
 <title>Log Position — coded: Implemented as a build-checked module. Gameplay testing is not yet recorded.</title>
-<rect x="306.82" y="169.98" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
+<rect x="336.62" y="169.98" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/messageaura.md" target="_blank">
 <title>Message Aura — coded: Implemented as a build-checked module. Gameplay testing is not yet recorded.</title>
-<rect x="336.62" y="169.98" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
+<rect x="366.43" y="169.98" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/messageappend.md" target="_blank">
 <title>MessageAppend — coded: Implemented as a build-checked module. Gameplay testing is not yet recorded.</title>
-<rect x="366.43" y="169.98" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
+<rect x="396.23" y="169.98" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/middleclickfriend.md" target="_blank">
 <title>Middle Click Friend — coded: Implemented as a build-checked module. Gameplay testing is not yet recorded.</title>
-<rect x="396.23" y="169.98" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
+<rect x="426.03" y="169.98" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/middleclick.md" target="_blank">
 <title>MiddleClick — coded: Implemented as a build-checked module. Gameplay testing is not yet recorded.</title>
-<rect x="426.03" y="169.98" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
+<rect x="455.84" y="169.98" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/middleclickaction.md" target="_blank">
 <title>MiddleClickAction — coded: Implemented as a build-checked module. Gameplay testing is not yet recorded.</title>
-<rect x="455.84" y="169.98" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
+<rect x="485.64" y="169.98" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nameprotect.md" target="_blank">
 <title>NameProtect — coded: Implemented as a build-checked module. Gameplay testing is not yet recorded.</title>
-<rect x="485.64" y="169.98" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
+<rect x="515.44" y="169.98" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nosrp.md" target="_blank">
 <title>No SRP — coded: Implemented as a build-checked module. Gameplay testing is not yet recorded.</title>
-<rect x="515.44" y="169.98" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
+<rect x="545.24" y="169.98" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/notifier.md" target="_blank">
 <title>Notifier — coded: Implemented as a build-checked module. Gameplay testing is not yet recorded.</title>
-<rect x="545.24" y="169.98" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
+<rect x="575.05" y="169.98" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/packetcanceler.md" target="_blank">
 <title>Packet Canceller — coded: Implemented as a build-checked module. Gameplay testing is not yet recorded.</title>
-<rect x="575.05" y="169.98" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
+<rect x="604.85" y="169.98" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/packetlogger.md" target="_blank">
 <title>PacketLogger — coded: Implemented as a build-checked module. Gameplay testing is not yet recorded.</title>
-<rect x="604.85" y="169.98" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
+<rect x="634.65" y="169.98" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/panic.md" target="_blank">
 <title>Panic — coded: Implemented as a build-checked module. Gameplay testing is not yet recorded.</title>
-<rect x="634.65" y="169.98" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
+<rect x="306.82" y="198.47" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/selfdestruct.md" target="_blank">
 <title>Self Destruct — coded: Implemented as a build-checked module. Gameplay testing is not yet recorded.</title>
-<rect x="306.82" y="198.47" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
+<rect x="336.62" y="198.47" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/soundblocker.md" target="_blank">
 <title>Sound Blocker — coded: Implemented as a build-checked module. Gameplay testing is not yet recorded.</title>
-<rect x="336.62" y="198.47" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
+<rect x="366.43" y="198.47" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/spam.md" target="_blank">
 <title>Spam — coded: Implemented as a build-checked module. Gameplay testing is not yet recorded.</title>
-<rect x="366.43" y="198.47" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
+<rect x="396.23" y="198.47" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/spammer.md" target="_blank">
 <title>Spammer — coded: Implemented as a build-checked module. Gameplay testing is not yet recorded.</title>
-<rect x="396.23" y="198.47" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
+<rect x="426.03" y="198.47" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/stashlogger.md" target="_blank">
 <title>StashLogger — coded: Implemented as a build-checked module. Gameplay testing is not yet recorded.</title>
-<rect x="426.03" y="198.47" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
+<rect x="455.84" y="198.47" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tapemouse.md" target="_blank">
 <title>TapeMouse — coded: Implemented as a build-checked module. Gameplay testing is not yet recorded.</title>
-<rect x="455.84" y="198.47" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
+<rect x="485.64" y="198.47" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/targetlock.md" target="_blank">
 <title>TargetLock — coded: Implemented as a build-checked module. Gameplay testing is not yet recorded.</title>
-<rect x="485.64" y="198.47" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
+<rect x="515.44" y="198.47" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/teams.md" target="_blank">
 <title>Teams — coded: Implemented as a build-checked module. Gameplay testing is not yet recorded.</title>
-<rect x="515.44" y="198.47" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
+<rect x="545.24" y="198.47" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/timestamps.md" target="_blank">
 <title>Timestamps — coded: Implemented as a build-checked module. Gameplay testing is not yet recorded.</title>
-<rect x="545.24" y="198.47" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
+<rect x="575.05" y="198.47" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tooltips.md" target="_blank">
 <title>Tooltips — coded: Implemented as a build-checked module. Gameplay testing is not yet recorded.</title>
-<rect x="575.05" y="198.47" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
+<rect x="604.85" y="198.47" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/totempopcounter.md" target="_blank">
 <title>TotemPopCounter — coded: Implemented as a build-checked module. Gameplay testing is not yet recorded.</title>
-<rect x="604.85" y="198.47" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
+<rect x="634.65" y="198.47" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/unfocusedfps.md" target="_blank">
 <title>UnfocusedFPS — coded: Implemented as a build-checked module. Gameplay testing is not yet recorded.</title>
-<rect x="634.65" y="198.47" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
+<rect x="306.82" y="226.96" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/visualrange.md" target="_blank">
 <title>VisualRange — coded: Implemented as a build-checked module. Gameplay testing is not yet recorded.</title>
-<rect x="306.82" y="226.96" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
+<rect x="336.62" y="226.96" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/armoralert.md" target="_blank">
 <title>ArmorAlert — partial: Durability Alert covers only your own gear; warning about other players&#x27; armor is not implemented.</title>
-<rect x="336.62" y="226.96" width="27.80" height="26.49" rx="2" fill="#f2b544"/>
+<rect x="366.43" y="226.96" width="27.80" height="26.49" rx="2" fill="#f2b544"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/serverspoof.md" target="_blank">
 <title>Server Spoof — partial: Spoofs the reported client brand only; it does not forge the full handshake, resource-pack or plugin-channel behavior Server Spoof describes.</title>
-<rect x="366.43" y="226.96" width="27.80" height="26.49" rx="2" fill="#f2b544"/>
+<rect x="396.23" y="226.96" width="27.80" height="26.49" rx="2" fill="#f2b544"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/unhook.md" target="_blank">
 <title>UnHook — partial: Panic switches every module off but does not hide the client&#x27;s other traces.</title>
-<rect x="396.23" y="226.96" width="27.80" height="26.49" rx="2" fill="#f2b544"/>
+<rect x="426.03" y="226.96" width="27.80" height="26.49" rx="2" fill="#f2b544"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antidesync.md" target="_blank">
 <title>Anti Desync — backlog</title>
-<rect x="426.03" y="226.96" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="455.84" y="226.96" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antipacketkick.md" target="_blank">
 <title>Anti Packet Kick — backlog</title>
-<rect x="455.84" y="226.96" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="485.64" y="226.96" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antisoundlag.md" target="_blank">
 <title>Anti Sound Lag — backlog</title>
-<rect x="485.64" y="226.96" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="515.44" y="226.96" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antivanish.md" target="_blank">
 <title>Anti Vanish — backlog</title>
-<rect x="515.44" y="226.96" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="545.24" y="226.96" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antibookban.md" target="_blank">
 <title>AntiBookBan — backlog</title>
-<rect x="545.24" y="226.96" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="575.05" y="226.96" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/anticrash.md" target="_blank">
 <title>AntiCrash — backlog</title>
-<rect x="575.05" y="226.96" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="604.85" y="226.96" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiquit.md" target="_blank">
 <title>AntiQuit — backlog</title>
-<rect x="604.85" y="226.96" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="634.65" y="226.96" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiserveradd.md" target="_blank">
 <title>AntiServerAdd — backlog</title>
-<rect x="634.65" y="226.96" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="306.82" y="255.45" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autochatgame.md" target="_blank">
 <title>AutoChatGame — backlog</title>
-<rect x="306.82" y="255.45" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="336.62" y="255.45" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autocomplete.md" target="_blank">
 <title>AutoComplete — backlog</title>
-<rect x="336.62" y="255.45" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="366.43" y="255.45" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoconfig.md" target="_blank">
 <title>AutoConfig — backlog</title>
-<rect x="366.43" y="255.45" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="396.23" y="255.45" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autogear.md" target="_blank">
 <title>AutoGear — backlog</title>
-<rect x="396.23" y="255.45" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="426.03" y="255.45" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autotrader.md" target="_blank">
 <title>AutoTrader — backlog</title>
-<rect x="426.03" y="255.45" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="455.84" y="255.45" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/background.md" target="_blank">
 <title>Background — backlog</title>
-<rect x="455.84" y="255.45" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="485.64" y="255.45" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/baritone.md" target="_blank">
 <title>Baritone — backlog</title>
-<rect x="485.64" y="255.45" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="515.44" y="255.45" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/baritonesettings.md" target="_blank">
 <title>BaritoneSettings — backlog</title>
-<rect x="515.44" y="255.45" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="545.24" y="255.45" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/beaconselector.md" target="_blank">
 <title>BeaconSelector — backlog</title>
-<rect x="545.24" y="255.45" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="575.05" y="255.45" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/betterbeacons.md" target="_blank">
 <title>Better Beacons — backlog</title>
-<rect x="575.05" y="255.45" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="604.85" y="255.45" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/capes.md" target="_blank">
 <title>Capes — backlog</title>
-<rect x="604.85" y="255.45" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="634.65" y="255.45" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/chat.md" target="_blank">
 <title>Chat — backlog</title>
-<rect x="634.65" y="255.45" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="306.82" y="283.94" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/chattranslator.md" target="_blank">
 <title>ChatTranslator — backlog</title>
-<rect x="306.82" y="283.94" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="336.62" y="283.94" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/chatutils.md" target="_blank">
 <title>ChatUtils — backlog</title>
-<rect x="336.62" y="283.94" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="366.43" y="283.94" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/chorusexploit.md" target="_blank">
 <title>ChorusExploit — backlog</title>
-<rect x="366.43" y="283.94" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="396.23" y="283.94" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/clickgui.md" target="_blank">
 <title>ClickGUI — backlog</title>
-<rect x="396.23" y="283.94" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="426.03" y="283.94" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/clientsettings.md" target="_blank">
 <title>ClientSettings — backlog</title>
-<rect x="426.03" y="283.94" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="455.84" y="283.94" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/colors.md" target="_blank">
 <title>Colors — backlog</title>
-<rect x="455.84" y="283.94" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="485.64" y="283.94" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/config.md" target="_blank">
 <title>Config — backlog</title>
-<rect x="485.64" y="283.94" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="515.44" y="283.94" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/customfont.md" target="_blank">
 <title>CustomFont — backlog</title>
-<rect x="515.44" y="283.94" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="545.24" y="283.94" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/debugrecorder.md" target="_blank">
 <title>DebugRecorder — backlog</title>
-<rect x="545.24" y="283.94" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="575.05" y="283.94" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/discordpresence.md" target="_blank">
 <title>Discord Presence — backlog</title>
-<rect x="575.05" y="283.94" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="604.85" y="283.94" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/discordrpc.md" target="_blank">
 <title>Discord RPC — backlog</title>
-<rect x="604.85" y="283.94" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="634.65" y="283.94" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/easypearl.md" target="_blank">
 <title>EasyPearl — backlog</title>
-<rect x="634.65" y="283.94" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="306.82" y="312.43" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/ebattesratte.md" target="_blank">
 <title>EbatteSratte — backlog</title>
-<rect x="306.82" y="312.43" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="336.62" y="312.43" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/entities.md" target="_blank">
 <title>Entities — backlog</title>
-<rect x="336.62" y="312.43" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="366.43" y="312.43" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/extrachat.md" target="_blank">
 <title>ExtraChat — backlog</title>
-<rect x="366.43" y="312.43" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="396.23" y="312.43" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastlatency.md" target="_blank">
 <title>FastLatency — backlog</title>
-<rect x="396.23" y="312.43" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="426.03" y="312.43" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/font.md" target="_blank">
 <title>Font — backlog</title>
-<rect x="426.03" y="312.43" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="455.84" y="312.43" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/ghost.md" target="_blank">
 <title>Ghost — backlog</title>
-<rect x="455.84" y="312.43" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="485.64" y="312.43" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/heaven.md" target="_blank">
 <title>Heaven — backlog</title>
-<rect x="485.64" y="312.43" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="515.44" y="312.43" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/hudeditor.md" target="_blank">
 <title>HudEditor — backlog</title>
-<rect x="515.44" y="312.43" width="27.80" height="26.49" rx="2" fill="#344054"/>
-</a>
-<a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/infinichat.md" target="_blank">
-<title>InfiniChat — backlog</title>
 <rect x="545.24" y="312.43" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/inventorytweaks.md" target="_blank">

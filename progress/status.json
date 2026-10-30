@@ -453,7 +453,8 @@
     "autoflyme": {"status": "coded", "module": "AutoFlyme", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
     "antistaff": {"status": "coded", "module": "AntiStaff", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
     "quiver": {"status": "coded", "module": "Quiver", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
-    "blockin": {"status": "partial", "module": "Surround", "note": "Shares Surround for the side walls; the overhead cover of the original BlockIn is the separate Self Trap module. No gameplay test is recorded."}
+    "blockin": {"status": "partial", "module": "Surround", "note": "Shares Surround for the side walls; the overhead cover of the original BlockIn is the separate Self Trap module. No gameplay test is recorded."},
+    "infinichat": {"status": "coded", "module": "InfiniChat", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."}
   },
   "additions": [
     {"id": "anomoly_spear_assist", "name": "Spear Assist", "category": "Combat", "status": "coded", "module": "SpearAssist", "doc": "hacks/spear-assist.md"}

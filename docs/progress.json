@@ -1,9 +1,9 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "coded": 347,
+    "coded": 348,
     "verified": 84,
-    "backlog": 228,
+    "backlog": 227,
     "partial": 24
   },
   "total": 683,
@@ -3090,9 +3090,9 @@
       "id": "infinichat",
       "name": "InfiniChat",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "InfiniChat",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/infinichat.md"
     },
     {
