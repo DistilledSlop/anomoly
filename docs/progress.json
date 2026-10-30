@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 588,
-    "verified": 24,
+    "backlog": 587,
+    "verified": 25,
     "coded": 70,
     "partial": 1
   },
@@ -2019,9 +2019,9 @@
       "id": "crystalaura",
       "name": "CrystalAura",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "CrystalAura",
+      "note": "On a local vanilla 26.3 server, Crystal Aura placed and detonated end crystals from hotbar and offhand against a 100-health pig: the first explosion left 25.208336 health, matching its 74.79 raw-damage estimate; a second detonation killed the pig after the player returned to range. Default survival safety settings placed nothing in the same exposed setup. See docs/test-evidence/2026-10-30-crystalaura.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/crystalaura.md"
     },
     {
