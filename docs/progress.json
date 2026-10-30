@@ -1,9 +1,9 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 535,
-    "verified": 78,
-    "coded": 69,
+    "backlog": 534,
+    "verified": 80,
+    "coded": 68,
     "partial": 1
   },
   "total": 683,
@@ -417,9 +417,9 @@
       "id": "antiwaterpush",
       "name": "AntiWaterPush",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "NoPush",
+      "note": "The No Push module's Water and lava currents setting covers AntiWaterPush. In a local vanilla 26.3 channel, the player drifted from z=92.5 to 94.88 with No Push off, stayed at z=92.5 with it on, and drifted to z=94.74 after switching it off. See docs/test-evidence/2026-10-30-waterpush.md. Lava and third-party anticheats remain untested.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiwaterpush.md"
     },
     {
@@ -4098,9 +4098,9 @@
       "id": "nopush",
       "name": "NoPush",
       "category": "Movement",
-      "status": "coded",
+      "status": "verified",
       "module": "NoPush",
-      "note": "",
+      "note": "A paired local vanilla 26.3 water-current test showed server position moving from z=92.5 to 94.88 with No Push off, remaining at z=92.5 with it on, and moving to z=94.74 after disabling it. See docs/test-evidence/2026-10-30-waterpush.md. Entity collision, lava currents, and third-party anticheats remain untested.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nopush.md"
     },
     {
