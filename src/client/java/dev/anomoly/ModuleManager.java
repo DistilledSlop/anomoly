@@ -80,6 +80,8 @@ public final class ModuleManager {
     }
 
     public void disableAll() {
-        for (Module module : modules) module.setEnabled(false);
+        AnomolyClient.batchConfigChanges(() -> {
+            for (Module module : modules) module.setEnabled(false);
+        });
     }
 }

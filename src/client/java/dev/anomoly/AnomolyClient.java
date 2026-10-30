@@ -11,6 +11,8 @@ import dev.anomoly.setting.Setting;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
+import java.nio.file.AtomicMoveNotSupportedException;
+import java.nio.file.StandardCopyOption;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keymapping.v1.KeyMappingHelper;
@@ -28,6 +30,8 @@ public final class AnomolyClient implements ClientModInitializer {
     private static final Gson GSON = new GsonBuilder().setPrettyPrinting().create();
     private static final Path CONFIG = FabricLoader.getInstance().getConfigDir().resolve("anomoly.json");
     private static boolean loading;
+    private static int configBatchDepth;
+    private static boolean configDirty;
     private static KeyMapping guiKey;
     private static KeyMapping panicKey;
     private static KeyMapping zoomKey;
@@ -90,6 +94,7 @@ public final class AnomolyClient implements ClientModInitializer {
 
     public static void saveConfig() {
         if (loading) return;
+        if (configBatchDepth > 0) { configDirty = true; return; }
         JsonObject root = new JsonObject();
         JsonObject states = new JsonObject();
         for (Module module : MODULES.all()) states.addProperty(module.id(), module.enabled());
@@ -102,11 +107,29 @@ public final class AnomolyClient implements ClientModInitializer {
         }
         root.add("settings", settings);
         root.addProperty("profileRecording", PROFILE.enabled());
+        Path temporary = CONFIG.resolveSibling(CONFIG.getFileName() + ".tmp");
         try {
             Files.createDirectories(CONFIG.getParent());
-            Files.writeString(CONFIG, GSON.toJson(root));
+            Files.writeString(temporary, GSON.toJson(root));
+            try {
+                Files.move(temporary, CONFIG, StandardCopyOption.ATOMIC_MOVE, StandardCopyOption.REPLACE_EXISTING);
+            } catch (AtomicMoveNotSupportedException unsupported) {
+                Files.move(temporary, CONFIG, StandardCopyOption.REPLACE_EXISTING);
+            }
         } catch (IOException e) {
             LOGGER.warn("Could not save Anomoly config", e);
+        }
+    }
+
+    public static void batchConfigChanges(Runnable changes) {
+        configBatchDepth++;
+        try { changes.run(); }
+        finally {
+            configBatchDepth--;
+            if (configBatchDepth == 0 && configDirty) {
+                configDirty = false;
+                saveConfig();
+            }
         }
     }
 }
