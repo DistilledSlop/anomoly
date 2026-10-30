@@ -14,6 +14,8 @@ Use Java 25 and run `./gradlew build`. The distributable is `build/libs/anomoly-
 
 The Dear ImGui ClickGUI currently uses the OpenGL backend. Choose **OpenGL** in Minecraft's video settings before starting the game, or launch with `--graphicsBackend opengl`. Minecraft can fall back to Vulkan if OpenGL initialization fails; Anomoly then shows an explanation in the GUI. Right Shift opens the GUI while playing, and End disables every module. Both keys appear in Minecraft's key controls.
 
+The ClickGUI has a category sidebar, module search, expandable settings, and a server profile page.
+
 ## Implemented modules
 
 | Category | Modules |

@@ -12,6 +12,7 @@ import imgui.ImGuiStyle;
 import imgui.flag.ImGuiCol;
 import imgui.flag.ImGuiCond;
 import imgui.gl3.ImGuiImplGl3;
+import imgui.type.ImString;
 import net.minecraft.client.Minecraft;
 import java.util.Comparator;
 import java.util.Locale;
@@ -22,6 +23,9 @@ public final class ImGuiRenderer {
     private static boolean initialized;
     private static boolean failed;
     private static long lastFrame;
+    private static final ImString SEARCH = new ImString(96);
+    private static Module.Category selectedCategory = Module.Category.COMBAT;
+    private static boolean profilePage;
 
     private ImGuiRenderer() { }
 
@@ -84,63 +88,95 @@ public final class ImGuiRenderer {
     }
 
     private static void drawUi() {
-        ImGui.setNextWindowSize(760, 515, ImGuiCond.Once);
+        ImGui.setNextWindowSize(900, 600, ImGuiCond.Once);
         if (ImGui.begin("ANOMOLY  /  Minecraft 26.3")) {
             ImGui.textColored(0.38F, 0.94F, 0.79F, 1F, "ANOMOLY");
             ImGui.sameLine();
             ImGui.textDisabled("  Right Shift: close   |   End: disable all modules");
             ImGui.separator();
-            if (ImGui.beginTabBar("anomoly-categories")) {
-                for (Module.Category category : Module.Category.values()) {
-                    if (ImGui.beginTabItem(category.name())) {
-                        for (Module module : AnomolyClient.MODULES.all()) {
-                            if (module.category() != category) continue;
-                            if (ImGui.checkbox(module.name() + "##" + module.id(), module.enabled())) {
-                                module.setEnabled(!module.enabled());
-                            }
-                            ImGui.sameLine();
-                            ImGui.textDisabled(module.description());
-                            for (Setting setting : module.settings()) {
-                                if (setting instanceof BooleanSetting toggle) {
-                                    if (ImGui.checkbox("    " + toggle.name() + "##" + module.id() + setting.id(), toggle.get())) {
-                                        toggle.set(!toggle.get());
-                                        AnomolyClient.saveConfig();
-                                    }
-                                } else if (setting instanceof FloatSetting slider) {
-                                    float[] value = {slider.get()};
-                                    if (ImGui.sliderFloat("    " + slider.name() + "##" + module.id() + setting.id(), value, slider.min(), slider.max())) {
-                                        slider.set(value[0]);
-                                        AnomolyClient.saveConfig();
-                                    }
-                                }
-                            }
-                            if (module.id().equals("player_radar") && module.enabled()) drawRadar();
-                            ImGui.spacing();
-                        }
-                        ImGui.endTabItem();
-                    }
+            ImGui.setNextItemWidth(300);
+            ImGui.inputTextWithHint("##module-search", "Search modules or descriptions", SEARCH);
+            ImGui.sameLine();
+            long active = AnomolyClient.MODULES.all().stream().filter(Module::enabled).count();
+            ImGui.textDisabled(active + " active / " + AnomolyClient.MODULES.all().size() + " modules");
+            ImGui.separator();
+
+            ImGui.beginChild("navigation", 170, -48, true);
+            ImGui.textDisabled("CATEGORIES");
+            for (Module.Category category : Module.Category.values()) {
+                long count = AnomolyClient.MODULES.all().stream().filter(module -> module.category() == category).count();
+                if (ImGui.selectable(category.name() + "  " + count, !profilePage && selectedCategory == category)) {
+                    selectedCategory = category;
+                    profilePage = false;
                 }
-                if (ImGui.beginTabItem("PROFILE")) {
-                    boolean recording = AnomolyClient.PROFILE.enabled();
-                    if (ImGui.checkbox("Record passive server profile", recording)) {
-                        AnomolyClient.PROFILE.setEnabled(!recording);
-                        AnomolyClient.saveConfig();
-                    }
-                    ImGui.text("Server: " + AnomolyClient.PROFILE.server());
-                    ImGui.text("Brand: " + AnomolyClient.PROFILE.brand());
-                    ImGui.text("Position corrections: " + AnomolyClient.PROFILE.corrections());
-                    ImGui.textWrapped("Log: " + AnomolyClient.PROFILE.path());
-                    ImGui.spacing();
-                    ImGui.textDisabled("Records normal movement, server brand, corrections and disconnects.");
-                    ImGui.textDisabled("No active anticheat probes or plugin enumeration packets are sent.");
-                    ImGui.endTabItem();
-                }
-                ImGui.endTabBar();
             }
+            ImGui.separator();
+            if (ImGui.selectable("SERVER PROFILE", profilePage)) profilePage = true;
+            ImGui.endChild();
+            ImGui.sameLine();
+            ImGui.beginChild("module-content", 0, -48, true);
+            if (profilePage) drawProfile();
+            else {
+                String query = SEARCH.get().trim().toLowerCase(Locale.ROOT);
+                ImGui.textColored(0.38F, 0.94F, 0.79F, 1F, query.isEmpty() ? selectedCategory.name() : "SEARCH RESULTS");
+                ImGui.separator();
+                int matches = 0;
+                for (Module module : AnomolyClient.MODULES.all()) {
+                    if (query.isEmpty() && module.category() != selectedCategory) continue;
+                    if (!query.isEmpty() && !module.name().toLowerCase(Locale.ROOT).contains(query)
+                        && !module.description().toLowerCase(Locale.ROOT).contains(query)) continue;
+                    matches++;
+                    drawModule(module);
+                }
+                if (matches == 0) ImGui.textDisabled("No modules found.");
+            }
+            ImGui.endChild();
             ImGui.separator();
             if (ImGui.button("PANIC  /  disable all modules")) AnomolyClient.MODULES.disableAll();
         }
         ImGui.end();
+    }
+
+    private static void drawModule(Module module) {
+        if (ImGui.checkbox("##enabled-" + module.id(), module.enabled())) module.setEnabled(!module.enabled());
+        ImGui.sameLine();
+        if (ImGui.collapsingHeader(module.name() + "##details-" + module.id())) {
+            ImGui.textWrapped(module.description());
+            for (Setting setting : module.settings()) {
+                if (setting instanceof BooleanSetting toggle) {
+                    if (ImGui.checkbox(toggle.name() + "##" + module.id() + setting.id(), toggle.get())) {
+                        toggle.set(!toggle.get());
+                        AnomolyClient.saveConfig();
+                    }
+                } else if (setting instanceof FloatSetting slider) {
+                    float[] value = {slider.get()};
+                    ImGui.setNextItemWidth(240);
+                    if (ImGui.sliderFloat(slider.name() + "##" + module.id() + setting.id(), value, slider.min(), slider.max())) {
+                        slider.set(value[0]);
+                        AnomolyClient.saveConfig();
+                    }
+                }
+            }
+            if (module.id().equals("player_radar") && module.enabled()) drawRadar();
+            ImGui.spacing();
+        }
+    }
+
+    private static void drawProfile() {
+        ImGui.textColored(0.38F, 0.94F, 0.79F, 1F, "SERVER PROFILE");
+        ImGui.separator();
+        boolean recording = AnomolyClient.PROFILE.enabled();
+        if (ImGui.checkbox("Record passive server profile", recording)) {
+            AnomolyClient.PROFILE.setEnabled(!recording);
+            AnomolyClient.saveConfig();
+        }
+        ImGui.text("Server: " + AnomolyClient.PROFILE.server());
+        ImGui.text("Brand: " + AnomolyClient.PROFILE.brand());
+        ImGui.text("Position corrections: " + AnomolyClient.PROFILE.corrections());
+        ImGui.textWrapped("Log: " + AnomolyClient.PROFILE.path());
+        ImGui.spacing();
+        ImGui.textDisabled("Records normal movement, server brand, corrections and disconnects.");
+        ImGui.textDisabled("No active anticheat probes or plugin enumeration packets are sent.");
     }
 
     private static void drawRadar() {
