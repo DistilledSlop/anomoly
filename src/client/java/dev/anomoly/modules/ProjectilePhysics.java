@@ -53,4 +53,10 @@ final class ProjectilePhysics {
         if (item instanceof WindChargeItem) return new Profile(1.5F, 0.0, 1F, true, true, 0F, 0.0);
         return null;
     }
+
+    static Profile atFullCharge(Minecraft client, ItemStack stack) {
+        if (stack.getItem() instanceof BowItem)
+            return new Profile(3F, 0.05, 0.99F, false, true, 0F, 0.1);
+        return forStack(client, stack, false);
+    }
 }

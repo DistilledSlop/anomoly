@@ -1,6 +1,7 @@
 package dev.anomoly.modules;
 
 import dev.anomoly.Module;
+import dev.anomoly.AnomolyClient;
 import dev.anomoly.setting.FloatSetting;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.item.BowItem;
@@ -13,7 +14,8 @@ public final class AutoBowRelease extends Module {
     }
 
     @Override public void tick(Minecraft client) {
-        if (client.gui.screen() != null || client.gameMode == null || !client.player.isUsingItem()
+        if (AnomolyClient.MODULES.get(AutoBow.class).active(client)
+            || client.gui.screen() != null || client.gameMode == null || !client.player.isUsingItem()
             || !(client.player.getUseItem().getItem() instanceof BowItem)) return;
         if (client.player.getTicksUsingItem() >= (int)chargeTicks.get()) {
             client.gameMode.releaseUsingItem(client.player);

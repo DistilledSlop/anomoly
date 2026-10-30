@@ -1,6 +1,7 @@
 package dev.anomoly.modules;
 
 import dev.anomoly.Module;
+import dev.anomoly.AnomolyClient;
 import dev.anomoly.setting.BooleanSetting;
 import dev.anomoly.setting.FloatSetting;
 import java.util.List;
@@ -35,7 +36,8 @@ public final class AutoShoot extends Module {
     }
 
     public boolean active(Minecraft client) {
-        if (!enabled() || client.player == null || client.gameMode == null || client.gui.screen() != null
+        if (!enabled() || AnomolyClient.MODULES.get(AutoBow.class).active(client)
+            || client.player == null || client.gameMode == null || client.gui.screen() != null
             || client.player.isSpectator() || client.player.isHandsBusy()
             || client.player.isUsingItem() || client.options.keyUse.isDown()) return false;
         boolean available = throwable(client.player.getMainHandItem()) || throwable(client.player.getOffhandItem());
@@ -53,7 +55,8 @@ public final class AutoShoot extends Module {
             observedPlayer = client.player;
         }
         if (cooldown > 0) cooldown--;
-        if (client.gui.screen() != null || client.gameMode == null || client.player.isSpectator()
+        if (AnomolyClient.MODULES.get(AutoBow.class).active(client)
+            || client.gui.screen() != null || client.gameMode == null || client.player.isSpectator()
             || client.player.isUsingItem() || client.player.isHandsBusy() || client.options.keyUse.isDown()) {
             stableTicks = 0;
             restore(client);

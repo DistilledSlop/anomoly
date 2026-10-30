@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 605,
-    "verified": 8,
+    "backlog": 604,
+    "verified": 9,
     "coded": 70
   },
   "total": 683,
@@ -569,9 +569,9 @@
       "id": "autobow",
       "name": "AutoBow",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "AutoBow",
+      "note": "Auto Bow selected weapons from the hotbar, charged and fired a bow and crossbow, and threw a trident without manual input. Both shots killed pigs at 16 blocks; the trident reduced a pig to 2 health. Each run restored the stone slot. See docs/test-evidence/2026-10-30-autobow.md. Reduced bow charge, pre-charged crossbows, and moving targets remain untested.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autobow.md"
     },
     {

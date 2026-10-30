@@ -21,6 +21,7 @@ public final class AimAssist extends Module {
         if (client.gui.screen() != null || client.player.isSpectator() || !client.options.keyAttack.isDown()
             || AnomolyClient.MODULES.get(KillAura.class).enabled() || AnomolyClient.MODULES.get(Aimbot.class).enabled()
             || AnomolyClient.MODULES.get(AutoShoot.class).active(client)
+            || AnomolyClient.MODULES.get(AutoBow.class).active(client)
             || AnomolyClient.MODULES.get(BowAimbot.class).active(client)
             || AnomolyClient.MODULES.get(ProjectileAimbot.class).active(client)) return;
         AimTargeting.turn(client, AimTargeting.find(client, range.get(), fieldOfView.get(), targetMobs.get(), targetInvisible.get()),
