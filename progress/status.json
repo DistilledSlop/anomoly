@@ -464,7 +464,10 @@
     "extrachat": {"status": "partial", "module": "AntiSpam", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."},
     "chatutils": {"status": "partial", "module": "ChatAppend", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."},
     "tickshift": {"status": "partial", "module": "Blink", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."},
-    "timerrange": {"status": "partial", "module": "Timer", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."}
+    "timerrange": {"status": "partial", "module": "Timer", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."},
+    "viewmodel": {"status": "coded", "module": "ViewModel", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "smallshield": {"status": "coded", "module": "ViewModel", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "handview": {"status": "coded", "module": "ViewModel", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."}
   },
   "additions": [
     {"id": "anomoly_spear_assist", "name": "Spear Assist", "category": "Combat", "status": "coded", "module": "SpearAssist", "doc": "hacks/spear-assist.md"}
