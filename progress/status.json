@@ -194,7 +194,20 @@
     "announcer": {"status": "coded", "module": "Announcer", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
     "noswing": {"status": "coded", "module": "NoSwing", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
     "timer": {"status": "coded", "module": "Timer", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
-    "hitbox": {"status": "coded", "module": "Hitbox", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."}
+    "hitbox": {"status": "coded", "module": "Hitbox", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "replenish": {"status": "coded", "module": "AutoReplenish", "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded."},
+    "autogap": {"status": "coded", "module": "AutoGApple", "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded."},
+    "expthrower": {"status": "coded", "module": "AutoExp", "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded."},
+    "invcleaner": {"status": "coded", "module": "InventoryCleaner", "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded."},
+    "chestswap": {"status": "coded", "module": "ElytraSwap", "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded."},
+    "speednuker": {"status": "coded", "module": "Nuker", "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded."},
+    "autosurround": {"status": "coded", "module": "Surround", "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded."},
+    "feettrap": {"status": "coded", "module": "Surround", "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded."},
+    "autobed": {"status": "coded", "module": "BedAura", "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded."},
+    "autoanchor": {"status": "coded", "module": "AnchorAura", "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded."},
+    "tillaura": {"status": "coded", "module": "Tillaura", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "bonemealaura": {"status": "coded", "module": "BonemealAura", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "liquidfiller": {"status": "coded", "module": "LiquidFiller", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."}
   },
   "additions": [
     {"id": "anomoly_spear_assist", "name": "Spear Assist", "category": "Combat", "status": "coded", "module": "SpearAssist", "doc": "hacks/spear-assist.md"}

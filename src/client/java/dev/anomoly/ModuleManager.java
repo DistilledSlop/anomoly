@@ -181,6 +181,9 @@ import dev.anomoly.modules.Announcer;
 import dev.anomoly.modules.NoSwing;
 import dev.anomoly.modules.Timer;
 import dev.anomoly.modules.Hitbox;
+import dev.anomoly.modules.Tillaura;
+import dev.anomoly.modules.BonemealAura;
+import dev.anomoly.modules.LiquidFiller;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -235,6 +238,9 @@ public final class ModuleManager {
         new NoSwing(),
         new Timer(),
         new Hitbox(),
+        new Tillaura(),
+        new BonemealAura(),
+        new LiquidFiller(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 

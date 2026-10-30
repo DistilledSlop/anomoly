@@ -1,9 +1,9 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 487,
+    "backlog": 474,
     "verified": 84,
-    "coded": 109,
+    "coded": 122,
     "partial": 3
   },
   "total": 683,
@@ -525,9 +525,9 @@
       "id": "autoanchor",
       "name": "AutoAnchor",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "AnchorAura",
+      "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoanchor.md"
     },
     {
@@ -561,9 +561,9 @@
       "id": "autobed",
       "name": "AutoBed",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "BedAura",
+      "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autobed.md"
     },
     {
@@ -831,9 +831,9 @@
       "id": "autogap",
       "name": "Auto Gap",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "AutoGApple",
+      "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autogap.md"
     },
     {
@@ -1092,9 +1092,9 @@
       "id": "autosurround",
       "name": "AutoSurround",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Surround",
+      "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autosurround.md"
     },
     {
@@ -1506,9 +1506,9 @@
       "id": "bonemealaura",
       "name": "BonemealAura",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "BonemealAura",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bonemealaura.md"
     },
     {
@@ -1803,9 +1803,9 @@
       "id": "chestswap",
       "name": "Chest Swap",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "ElytraSwap",
+      "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/chestswap.md"
     },
     {
@@ -2370,9 +2370,9 @@
       "id": "expthrower",
       "name": "Exp Thrower",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "AutoExp",
+      "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/expthrower.md"
     },
     {
@@ -2613,9 +2613,9 @@
       "id": "feettrap",
       "name": "FeetTrap",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Surround",
+      "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/feettrap.md"
     },
     {
@@ -3135,9 +3135,9 @@
       "id": "invcleaner",
       "name": "InvCleaner",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "InventoryCleaner",
+      "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/invcleaner.md"
     },
     {
@@ -3486,9 +3486,9 @@
       "id": "liquidfiller",
       "name": "LiquidFiller",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "LiquidFiller",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/liquidfiller.md"
     },
     {
@@ -4809,9 +4809,9 @@
       "id": "replenish",
       "name": "Replenish",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "AutoReplenish",
+      "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/replenish.md"
     },
     {
@@ -5268,9 +5268,9 @@
       "id": "speednuker",
       "name": "SpeedNuker",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Nuker",
+      "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/speednuker.md"
     },
     {
@@ -5565,9 +5565,9 @@
       "id": "tillaura",
       "name": "Tillaura",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Tillaura",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tillaura.md"
     },
     {
