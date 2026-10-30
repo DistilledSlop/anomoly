@@ -467,7 +467,17 @@
     "timerrange": {"status": "partial", "module": "Timer", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."},
     "viewmodel": {"status": "coded", "module": "ViewModel", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
     "smallshield": {"status": "coded", "module": "ViewModel", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
-    "handview": {"status": "coded", "module": "ViewModel", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."}
+    "handview": {"status": "coded", "module": "ViewModel", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "clickgui": {"status": "coded", "module": "ClickGui", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "notifications": {"status": "coded", "module": "Notifications", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "media": {"status": "partial", "module": "Media", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."},
+    "thundergui": {"status": "partial", "module": "ClickGui", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."},
+    "swing": {"status": "partial", "module": "NoSwing", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."},
+    "protect": {"status": "partial", "module": "Follow", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."},
+    "excavator": {"status": "partial", "module": "Nuker", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."},
+    "instabuild": {"status": "partial", "module": "AutoBuild", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."},
+    "killauralegit": {"status": "partial", "module": "KillAura", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."},
+    "pearlchaser": {"status": "coded", "module": "AutoPearl", "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded."}
   },
   "additions": [
     {"id": "anomoly_spear_assist", "name": "Spear Assist", "category": "Combat", "status": "coded", "module": "SpearAssist", "doc": "hacks/spear-assist.md"}

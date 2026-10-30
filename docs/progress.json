@@ -1,10 +1,10 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "coded": 353,
+    "coded": 356,
     "verified": 84,
-    "backlog": 214,
-    "partial": 32
+    "backlog": 204,
+    "partial": 39
   },
   "total": 683,
   "features": [
@@ -1848,9 +1848,9 @@
       "id": "clickgui",
       "name": "ClickGUI",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "ClickGui",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/clickgui.md"
     },
     {
@@ -2361,9 +2361,9 @@
       "id": "excavator",
       "name": "Excavator",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "Nuker",
+      "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/excavator.md"
     },
     {
@@ -3108,9 +3108,9 @@
       "id": "instabuild",
       "name": "InstaBuild",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "AutoBuild",
+      "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/instabuild.md"
     },
     {
@@ -3351,9 +3351,9 @@
       "id": "killauralegit",
       "name": "KillauraLegit",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "KillAura",
+      "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/killauralegit.md"
     },
     {
@@ -3630,9 +3630,9 @@
       "id": "media",
       "name": "Media",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "Media",
+      "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/media.md"
     },
     {
@@ -4224,9 +4224,9 @@
       "id": "notifications",
       "name": "Notifications",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Notifications",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/notifications.md"
     },
     {
@@ -4431,9 +4431,9 @@
       "id": "pearlchaser",
       "name": "PearlChaser",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "AutoPearl",
+      "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/pearlchaser.md"
     },
     {
@@ -4656,9 +4656,9 @@
       "id": "protect",
       "name": "Protect",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "Follow",
+      "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/protect.md"
     },
     {
@@ -5403,9 +5403,9 @@
       "id": "swing",
       "name": "Swing",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "NoSwing",
+      "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/swing.md"
     },
     {
@@ -5538,9 +5538,9 @@
       "id": "thundergui",
       "name": "ThunderGui",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "ClickGui",
+      "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/thundergui.md"
     },
     {

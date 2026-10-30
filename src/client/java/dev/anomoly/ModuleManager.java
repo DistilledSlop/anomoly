@@ -346,6 +346,9 @@ import dev.anomoly.modules.InfiniChat;
 import dev.anomoly.modules.AntiBallPlace;
 import dev.anomoly.modules.NoPacketException;
 import dev.anomoly.modules.ViewModel;
+import dev.anomoly.modules.ClickGui;
+import dev.anomoly.modules.Notifications;
+import dev.anomoly.modules.Media;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -565,6 +568,9 @@ public final class ModuleManager {
         new AntiBallPlace(),
         new NoPacketException(),
         new ViewModel(),
+        new ClickGui(),
+        new Notifications(),
+        new Media(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 
