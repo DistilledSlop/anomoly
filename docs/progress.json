@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 603,
-    "verified": 10,
+    "backlog": 602,
+    "verified": 11,
     "coded": 70
   },
   "total": 683,
@@ -776,9 +776,9 @@
       "id": "autoexp",
       "name": "Auto Exp",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "AutoExp",
+      "note": "On a local vanilla 26.3 server, six XP bottles repaired a Mending iron helmet from damage 100 to 24, then stopped; a non-Mending helmet consumed none. Six offhand bottles repaired a held Mending iron pickaxe from damage 100 to 20. See docs/test-evidence/2026-10-30-autoexp.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoexp.md"
     },
     {
