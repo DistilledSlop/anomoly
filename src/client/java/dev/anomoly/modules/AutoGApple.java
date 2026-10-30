@@ -4,7 +4,6 @@ import dev.anomoly.Module;
 import dev.anomoly.AnomolyClient;
 import dev.anomoly.setting.BooleanSetting;
 import dev.anomoly.setting.FloatSetting;
-import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.effect.MobEffects;
 import net.minecraft.world.item.ItemStack;
@@ -59,7 +58,7 @@ public final class AutoGApple extends Module {
     }
 
     private void finish(Minecraft client) {
-        KeyMapping.setAll();
+        client.options.keyUse.setDown(false);
         if (client.player != null && client.player.getInventory().getSelectedSlot() == appleSlot) {
             client.player.getInventory().setSelectedSlot(originalSlot);
         }

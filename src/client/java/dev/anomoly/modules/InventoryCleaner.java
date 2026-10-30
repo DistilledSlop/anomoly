@@ -60,6 +60,7 @@ public final class InventoryCleaner extends Module {
         if (cooldown > 0) { cooldown--; return; }
         var player = client.player;
         if (client.gameMode == null || player.isSpectator() || player.isUsingItem()
+            || AnomolyClient.MODULES.get(AutoBuff.class).busy()
             || !player.containerMenu.getCarried().isEmpty()) return;
         boolean inventory = player.containerMenu instanceof InventoryMenu;
         if (!inventory && !containers.get()) return;

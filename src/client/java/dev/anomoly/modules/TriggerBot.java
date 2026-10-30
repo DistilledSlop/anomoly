@@ -15,6 +15,7 @@ public final class TriggerBot extends Module {
 
     @Override public void tick(Minecraft client) {
         if (client.gui.screen() != null || client.gameMode == null || client.player.isSpectator()
+            || AnomolyClient.MODULES.get(AutoBuff.class).combatPaused(client)
             || AnomolyClient.MODULES.get(AutoRod.class).active(client)
             || AnomolyClient.MODULES.get(AutoPearl.class).active(client)
             || SoupUse.busy(client)

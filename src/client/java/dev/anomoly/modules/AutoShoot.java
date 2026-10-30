@@ -37,6 +37,7 @@ public final class AutoShoot extends Module {
 
     public boolean active(Minecraft client) {
         if (!enabled() || SoupUse.busy(client)
+            || AnomolyClient.MODULES.get(AutoBuff.class).combatPaused(client)
             || AnomolyClient.MODULES.get(AutoPearl.class).active(client)
             || AnomolyClient.MODULES.get(AutoRod.class).ownsHook(client)
             || AnomolyClient.MODULES.get(AutoBow.class).active(client)
@@ -59,6 +60,7 @@ public final class AutoShoot extends Module {
         }
         if (cooldown > 0) cooldown--;
         if (SoupUse.busy(client)
+            || AnomolyClient.MODULES.get(AutoBuff.class).combatPaused(client)
             || AnomolyClient.MODULES.get(AutoPearl.class).active(client)
             || AnomolyClient.MODULES.get(AutoRod.class).ownsHook(client)
             || AnomolyClient.MODULES.get(AutoBow.class).active(client)

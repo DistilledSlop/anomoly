@@ -11,6 +11,7 @@ import dev.anomoly.modules.AutoReconnect;
 import dev.anomoly.modules.FreeLook;
 import dev.anomoly.modules.Offhand;
 import dev.anomoly.modules.ElytraSwap;
+import dev.anomoly.modules.AutoBuff;
 import dev.anomoly.setting.Setting;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -76,6 +77,7 @@ public final class AnomolyClient implements ClientModInitializer {
             MODULES.get(dev.anomoly.modules.AutoSoup.class).finishTick(client);
             MODULES.get(dev.anomoly.modules.Soup.class).finishTick(client);
             MODULES.get(dev.anomoly.modules.WTap.class).finishTick(client);
+            MODULES.get(AutoBuff.class).finishTick(client);
             MODULES.get(AutoReconnect.class).tickDisconnected(client);
             if (client.gui.screen() instanceof ClickGuiScreen
                 && (ImGuiRenderer.failed() || !ImGuiRenderer.supported())) {
@@ -110,6 +112,7 @@ public final class AnomolyClient implements ClientModInitializer {
         ClientPlayConnectionEvents.DISCONNECT.register((handler, client) -> {
             MODULES.get(FreeLook.class).reset(client);
             MODULES.get(ElytraSwap.class).disconnect();
+            MODULES.get(AutoBuff.class).disconnect();
             PROFILE.leave("connection closed");
         });
         LOGGER.info("Anomoly initialized");

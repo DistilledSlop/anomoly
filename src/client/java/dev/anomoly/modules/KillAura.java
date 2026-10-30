@@ -25,8 +25,13 @@ public final class KillAura extends Module {
         super("kill_aura", "Kill Aura", "Face and attack the nearest eligible target at full cooldown.", Category.COMBAT);
     }
 
+    public boolean hasTarget(Minecraft client) {
+        return enabled() && client.player != null && client.level != null && findTarget(client) != null;
+    }
+
     @Override public void tick(Minecraft client) {
         if (client.gui.screen() != null || client.gameMode == null || client.player.isSpectator()
+            || AnomolyClient.MODULES.get(AutoBuff.class).combatPaused(client)
             || AnomolyClient.MODULES.get(Criticals.class).pending(client)
             || AnomolyClient.MODULES.get(CrystalAura.class).engaged(client)
             || client.player.isHandsBusy() || client.player.getMainHandItem().has(DataComponents.PIERCING_WEAPON)

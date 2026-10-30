@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 545,
-    "verified": 68,
+    "backlog": 544,
+    "verified": 69,
     "coded": 69,
     "partial": 1
   },
@@ -615,9 +615,9 @@
       "id": "autobuff",
       "name": "AutoBuff",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "AutoBuff",
+      "note": "On a local vanilla 26.3 server, Auto Buff refilled a splash Strength potion from main inventory and applied the effect while preserving the selected stone, ignored a Poison splash, used a healing splash to raise health from 6 to 10, drank a Speed potion, ate golden apples for absorption, ate soup at zero hunger and dropped its bowl, consumed a custom edible player head for Instant Health, and temporarily swapped a potion through a full nine-slot hotbar before restoring all stone. See docs/test-evidence/2026-10-30-autobuff.md. Combat pause timing, nearby-player protection, lingering potions, conditional combat suppression, and third-party anticheats remain unverified.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autobuff.md"
     },
     {
