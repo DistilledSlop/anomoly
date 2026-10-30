@@ -1,9 +1,9 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 365,
+    "backlog": 359,
     "verified": 84,
-    "coded": 230,
+    "coded": 236,
     "partial": 4
   },
   "total": 683,
@@ -786,9 +786,9 @@
       "id": "autoez",
       "name": "AutoEZ",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "AutoEZ",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoez.md"
     },
     {
@@ -3387,9 +3387,9 @@
       "id": "killstats",
       "name": "KillStats",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "KillStats",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/killstats.md"
     },
     {
@@ -3666,18 +3666,18 @@
       "id": "middleclick",
       "name": "MiddleClick",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "MiddleClick",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/middleclick.md"
     },
     {
       "id": "middleclickaction",
       "name": "MiddleClickAction",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "MiddleClick",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/middleclickaction.md"
     },
     {
@@ -5142,9 +5142,9 @@
       "id": "snaptap",
       "name": "SnapTap",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "SnapTap",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/snaptap.md"
     },
     {
@@ -5421,9 +5421,9 @@
       "id": "tapemouse",
       "name": "TapeMouse",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "AutoClicker",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tapemouse.md"
     },
     {

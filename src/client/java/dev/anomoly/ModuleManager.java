@@ -254,6 +254,10 @@ import dev.anomoly.modules.XRay;
 import dev.anomoly.modules.ExtraTooltips;
 import dev.anomoly.modules.MurderMystery;
 import dev.anomoly.modules.Extinguish;
+import dev.anomoly.modules.AutoEZ;
+import dev.anomoly.modules.KillStats;
+import dev.anomoly.modules.MiddleClick;
+import dev.anomoly.modules.SnapTap;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -381,6 +385,10 @@ public final class ModuleManager {
         new ExtraTooltips(),
         new MurderMystery(),
         new Extinguish(),
+        new AutoEZ(),
+        new KillStats(),
+        new MiddleClick(),
+        new SnapTap(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 

@@ -316,7 +316,13 @@
     "tooltips": {"status": "coded", "module": "ExtraTooltips", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
     "murdermystery": {"status": "coded", "module": "MurderMystery", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
     "extinguish": {"status": "coded", "module": "Extinguish", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
-    "sourceremover": {"status": "coded", "module": "LiquidFiller", "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded."}
+    "sourceremover": {"status": "coded", "module": "LiquidFiller", "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded."},
+    "autoez": {"status": "coded", "module": "AutoEZ", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "killstats": {"status": "coded", "module": "KillStats", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "middleclick": {"status": "coded", "module": "MiddleClick", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "middleclickaction": {"status": "coded", "module": "MiddleClick", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "snaptap": {"status": "coded", "module": "SnapTap", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "tapemouse": {"status": "coded", "module": "AutoClicker", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."}
   },
   "additions": [
     {"id": "anomoly_spear_assist", "name": "Spear Assist", "category": "Combat", "status": "coded", "module": "SpearAssist", "doc": "hacks/spear-assist.md"}
