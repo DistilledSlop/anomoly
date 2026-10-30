@@ -1,9 +1,9 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 614,
-    "coded": 68,
-    "verified": 1
+    "backlog": 612,
+    "verified": 3,
+    "coded": 68
   },
   "total": 683,
   "features": [
@@ -20,18 +20,18 @@
       "id": "aimassist",
       "name": "AimAssist",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "AimAssist",
+      "note": "In a local 26.3 multiplayer world, yaw/pitch changed from 0/0 to -14.04/11.72 while attack was held and a visible mob was within FOV. See docs/test-evidence/2026-10-30-local-gameplay.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/aimassist.md"
     },
     {
       "id": "aimbot",
       "name": "Aimbot",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "Aimbot",
+      "note": "In a local 26.3 multiplayer world, yaw/pitch changed from 0/0 to -26.57/10.82 toward a stationary visible mob, without an attack key press. See docs/test-evidence/2026-10-30-local-gameplay.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/aimbot.md"
     },
     {

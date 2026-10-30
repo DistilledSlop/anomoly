@@ -3,7 +3,7 @@
 <desc id="desc">Each tile is a researched feature. Blue is coded, amber partial, green gameplay verified, and gray backlog.</desc>
 <rect width="1200" height="720" rx="15" fill="#0b1220"/>
 <text x="20" y="37" fill="#e7f2ff" font-family="system-ui,sans-serif" font-size="25" font-weight="700">ANOMOLY / HACK PROGRESS</text>
-<text x="20" y="61" fill="#a9bacd" font-family="system-ui,sans-serif" font-size="14">68 coded · 0 partial · 1 gameplay verified · 614 backlog / 683 total</text>
+<text x="20" y="61" fill="#a9bacd" font-family="system-ui,sans-serif" font-size="14">68 coded · 0 partial · 3 gameplay verified · 612 backlog / 683 total</text>
 <rect x="14.00" y="84.00" width="281.82" height="621.00" rx="7" fill="#172235" stroke="#52657d" stroke-width="1"/>
 <text x="22.00" y="103.00" fill="#e7f2ff" font-family="system-ui,sans-serif" font-size="14" font-weight="600">Render  22/166 coded</text>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antioverlay.md" target="_blank">
@@ -1161,58 +1161,58 @@
 <rect x="336.62" y="397.89" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <rect x="299.82" y="435.38" width="369.63" height="269.62" rx="7" fill="#172235" stroke="#52657d" stroke-width="1"/>
-<text x="307.82" y="454.38" fill="#e7f2ff" font-family="system-ui,sans-serif" font-size="14" font-weight="600">Combat  11/95 coded</text>
+<text x="307.82" y="454.38" fill="#e7f2ff" font-family="system-ui,sans-serif" font-size="14" font-weight="600">Combat  13/95 coded</text>
+<a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/aimassist.md" target="_blank">
+<title>AimAssist — verified: In a local 26.3 multiplayer world, yaw/pitch changed from 0/0 to -14.04/11.72 while attack was held and a visible mob was within FOV. See docs/test-evidence/2026-10-30-local-gameplay.md.</title>
+<rect x="306.82" y="464.38" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
+</a>
+<a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/aimbot.md" target="_blank">
+<title>Aimbot — verified: In a local 26.3 multiplayer world, yaw/pitch changed from 0/0 to -26.57/10.82 toward a stationary visible mob, without an attack key press. See docs/test-evidence/2026-10-30-local-gameplay.md.</title>
+<rect x="334.33" y="464.38" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
+</a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autototem.md" target="_blank">
 <title>Auto Totem — coded</title>
-<rect x="306.82" y="464.38" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
+<rect x="361.84" y="464.38" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoarmor.md" target="_blank">
 <title>AutoArmor — coded</title>
-<rect x="334.33" y="464.38" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
+<rect x="389.35" y="464.38" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autobowrelease.md" target="_blank">
 <title>AutoBowRelease — coded</title>
-<rect x="361.84" y="464.38" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
+<rect x="416.86" y="464.38" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoclicker.md" target="_blank">
 <title>AutoClicker — coded</title>
-<rect x="389.35" y="464.38" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
+<rect x="444.37" y="464.38" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autogapple.md" target="_blank">
 <title>AutoGApple — coded</title>
-<rect x="416.86" y="464.38" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
+<rect x="471.88" y="464.38" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autodisconnect.md" target="_blank">
 <title>AutoLeave — coded</title>
-<rect x="444.37" y="464.38" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
+<rect x="499.39" y="464.38" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autosword.md" target="_blank">
 <title>AutoSword — coded</title>
-<rect x="471.88" y="464.38" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
+<rect x="526.90" y="464.38" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoweapon.md" target="_blank">
 <title>AutoWeapon — coded</title>
-<rect x="499.39" y="464.38" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
+<rect x="554.41" y="464.38" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/killaura.md" target="_blank">
 <title>KillAura — coded</title>
-<rect x="526.90" y="464.38" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
+<rect x="581.92" y="464.38" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/hacks/spear-assist.md" target="_blank">
 <title>Spear Assist — coded</title>
-<rect x="554.41" y="464.38" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
+<rect x="609.43" y="464.38" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/triggerbot.md" target="_blank">
 <title>TriggerBot — coded</title>
-<rect x="581.92" y="464.38" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
-</a>
-<a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/aimassist.md" target="_blank">
-<title>AimAssist — backlog</title>
-<rect x="609.43" y="464.38" width="25.51" height="27.45" rx="2" fill="#344054"/>
-</a>
-<a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/aimbot.md" target="_blank">
-<title>Aimbot — backlog</title>
-<rect x="636.95" y="464.38" width="25.51" height="27.45" rx="2" fill="#344054"/>
+<rect x="636.95" y="464.38" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/anchoraura.md" target="_blank">
 <title>Anchor Aura — backlog</title>

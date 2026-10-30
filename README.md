@@ -6,7 +6,7 @@ Anomoly is a full Minecraft Java 26.3 hacked client built as a Fabric mod, with 
 
 [![Anomoly hack progress treemap](docs/progress.svg)](https://distilledslop.github.io/anomoly/progress.html)
 
-The [searchable progress report](https://distilledslop.github.io/anomoly/progress.html) is generated from the 682 catalog entries plus Anomoly's Spear Assist. It currently tracks <!-- anomoly-progress:start -->**68 coded**, **0 partial**, **1 gameplay verified**, and **614 backlog**<!-- anomoly-progress:end --> features. Blue tiles are coded modules, amber tiles are partial implementations, green tiles have gameplay test evidence, and gray tiles are backlog. Run `python3 tools/progress.py` after changing a module's status; CI runs `python3 tools/progress.py --check` to verify the treemap and [raw data](docs/progress.json).
+The [searchable progress report](https://distilledslop.github.io/anomoly/progress.html) is generated from the 682 catalog entries plus Anomoly's Spear Assist. It currently tracks <!-- anomoly-progress:start -->**68 coded**, **0 partial**, **3 gameplay verified**, and **612 backlog**<!-- anomoly-progress:end --> features. Blue tiles are coded modules, amber tiles are partial implementations, green tiles have gameplay test evidence, and gray tiles are backlog. Run `python3 tools/progress.py` after changing a module's status; CI runs `python3 tools/progress.py --check` to verify the treemap and [raw data](docs/progress.json).
 
 ## Build and run
 
@@ -18,13 +18,13 @@ The ClickGUI has a category sidebar, module search, expandable settings, and a s
 
 ![Anomoly ImGui ClickGUI showing the Movement category in a live Minecraft world](docs/screenshots/clickgui-opengl-960x600.png)
 
-The [local gameplay test](docs/test-evidence/2026-10-30-local-gameplay.md) verifies Auto Walk movement, the panic key, ClickGUI rendering and input, and passive profile collection in a Minecraft 26.3 multiplayer world.
+The [local gameplay test](docs/test-evidence/2026-10-30-local-gameplay.md) verifies Auto Walk movement, Aimbot and Aim Assist rotation, the panic key, ClickGUI rendering and input, and passive profile collection in a Minecraft 26.3 multiplayer world.
 
 ## Implemented modules
 
 | Category | Modules |
 | --- | --- |
-| Combat | Auto Weapon, Auto Sword, Auto Clicker, Trigger Bot, Kill Aura, Spear Assist, Reach, Auto Leave, Auto Armor, Auto Bow Release, Auto GApple, Auto Totem |
+| Combat | Auto Weapon, Auto Sword, Auto Clicker, Trigger Bot, Kill Aura, Aimbot, Aim Assist, Spear Assist, Reach, Auto Leave, Auto Armor, Auto Bow Release, Auto GApple, Auto Totem |
 | Movement | Auto Sprint, Auto Walk, Auto Jump, Air Jump, Auto Sneak, Fast Ladder, Fast Fall, No Fall, Safe Walk, Step, Anti Web, Velocity, No Push, No Slow |
 | Player | Auto Respawn, Auto Eat, Auto Fish, Anti AFK, Auto Break, Auto Switch, Auto Tool, Auto Replenish, Auto Deposit, Auto Drop (also Auto Eject), Chest Stealer, Chest Cleaner |
 | World | Fast Place, Fast Break (also Break Delay) |
@@ -35,6 +35,8 @@ The [local gameplay test](docs/test-evidence/2026-10-30-local-gameplay.md) verif
 
 Modules default to off. Their states and settings are saved in `config/anomoly.json`. The current Kill Aura defaults to visible targets within three blocks and full attack cooldown; its range and other settings are adjustable in the GUI. Server anticheats can reject or punish module behavior, so the passive profiler makes no guarantee of compatibility.
 
+Aimbot turns toward the visible entity closest to your crosshair within its configured range and field of view. Aim Assist makes smaller corrections while you hold attack. Both default to player targets, can optionally include mobs or invisible entities, and yield to Kill Aura when it is enabled. Neither module attacks on its own.
+
 Weather Changer defaults to a clear local sky and can also set rain, thunder, time, and moon phase. Time Changer controls time and moon phase independently; Weather Changer takes priority when its time override is on.
 
 Auto Reconnect retries only after an unexpected disconnect from a multiplayer server observed while the module was enabled. Its delay and maximum attempt count are configurable; manual disconnects and Auto Leave do not trigger retries.
@@ -43,7 +45,7 @@ Chest Stealer, Chest Cleaner, Auto Deposit, and Auto Drop accept comma-separated
 
 ## Passive anticheat profile
 
-The profiler is on by default. Each joined session creates a JSONL log in `config/anomoly/profiles/`. It records the server brand, observed custom payload channel names, one movement sample per second, latency, position corrections, active module names, and the disconnect reason. It sends no test packets or plugin enumeration requests. This means it can show behavioral evidence but may not identify the exact anticheat plugin.
+The profiler is on by default. Each joined session creates a JSONL log in `config/anomoly/profiles/`. It records the server brand, observed custom payload channel names, one movement sample per second including view rotation, latency, position corrections, active module names, and the disconnect reason. It sends no test packets or plugin enumeration requests. This means it can show behavioral evidence but may not identify the exact anticheat plugin.
 
 After a session, run:
 

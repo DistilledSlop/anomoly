@@ -131,6 +131,8 @@ public final class ProfileCollector {
         event.addProperty("x", player.getX());
         event.addProperty("y", player.getY());
         event.addProperty("z", player.getZ());
+        event.addProperty("yaw", player.getYRot());
+        event.addProperty("pitch", player.getXRot());
         event.addProperty("velocityX", player.getDeltaMovement().x);
         event.addProperty("velocityY", player.getDeltaMovement().y);
         event.addProperty("velocityZ", player.getDeltaMovement().z);

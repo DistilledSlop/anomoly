@@ -20,6 +20,14 @@ The player then reached an obstacle and stopped. After pressing End, the profile
 
 The same profile recorded server brand `vanilla`, one initial join position correction at tick 0, and no later position corrections during the observed period. The test logs are generated locally under `run/config/anomoly/profiles/`; they are ignored by Git because they contain coordinates and server addresses.
 
+## Aimbot and Aim Assist
+
+In a later joined session, I enabled Aimbot with mob targeting and spawned a stationary, invulnerable pig about four blocks forward and two blocks to the side using the local server console. The passive samples showed player yaw/pitch at `0°/0°` before the pig spawned and `−26.57°/10.82°` afterward while `aimbot` was active. No attack key was pressed for this test.
+
+I then disabled Aimbot, enabled Aim Assist with mob targeting, and reset the player view to `0°/0°` through the local server console. The first pig was outside Aim Assist's default 50° horizontal field of view; the logged view stayed at `0°/0°`. I spawned a second stationary pig within that field and held attack for four seconds. Samples changed from `0°/0°` at tick 1740 to `−14.04°/11.72°` at tick 1760 while `aim_assist` was active. The server issued a manual teleport correction when I reset the view, so this session is not suitable for measuring natural anticheat correction rates.
+
+These tests verify client view rotation and the Aim Assist attack-key gate against visible mobs on the local vanilla server. They do not establish performance against moving targets, players, or remote anticheats.
+
 ## Reproduction
 
 Start a local 26.3 server, then run:
