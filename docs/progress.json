@@ -4153,7 +4153,7 @@
       "category": "Movement",
       "status": "partial",
       "module": "NoSlow",
-      "note": "Removes item-use and block speed-factor penalties; web and honey collision effects remain.",
+      "note": "Removes item-use, block speed-factor and web-like stuck penalties; honey wall sliding remains.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noslow.md"
     },
     {

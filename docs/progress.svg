@@ -1573,7 +1573,7 @@
 <rect x="844.89" y="113.00" width="25.41" height="31.08" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noslow.md" target="_blank">
-<title>NoSlow — partial: Removes item-use and block speed-factor penalties; web and honey collision effects remain.</title>
+<title>NoSlow — partial: Removes item-use, block speed-factor and web-like stuck penalties; honey wall sliding remains.</title>
 <rect x="872.29" y="113.00" width="25.41" height="31.08" rx="2" fill="#f2b544"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/airjump.md" target="_blank">
