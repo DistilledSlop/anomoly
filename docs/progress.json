@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 597,
-    "verified": 16,
+    "backlog": 596,
+    "verified": 17,
     "coded": 70
   },
   "total": 683,
@@ -929,9 +929,9 @@
       "id": "autopearl",
       "name": "AutoPearl",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "AutoPearl",
+      "note": "In a local two-player 26.3 test, AutoPearl followed another player's ender pearl, consumed one pearl, landed about 1.4 blocks from that player, and restored the original hotbar slot. See docs/test-evidence/2026-10-30-autopearl.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autopearl.md"
     },
     {

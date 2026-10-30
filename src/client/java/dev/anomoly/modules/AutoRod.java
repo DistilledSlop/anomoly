@@ -43,7 +43,8 @@ public final class AutoRod extends Module {
     public boolean ownsHook(Minecraft client) { return enabled() && ownsHook && observedPlayer == client.player; }
 
     public boolean active(Minecraft client) {
-        if (!enabled() || client.player == null || client.gameMode == null || client.gui.screen() != null
+        if (!enabled() || AnomolyClient.MODULES.get(AutoPearl.class).active(client)
+            || client.player == null || client.gameMode == null || client.gui.screen() != null
             || client.player.isSpectator() || AnomolyClient.MODULES.get(AutoBow.class).active(client)
             || AnomolyClient.MODULES.get(AutoShoot.class).active(client)) return false;
         if (ownsHook) return true;
@@ -63,7 +64,8 @@ public final class AutoRod extends Module {
             maintainHook(client);
             return;
         }
-        if (cooldown > 0 || client.player.fishing != null || client.player.isUsingItem()
+        if (cooldown > 0 || AnomolyClient.MODULES.get(AutoPearl.class).active(client)
+            || client.player.fishing != null || client.player.isUsingItem()
             || client.player.isHandsBusy() || client.options.keyUse.isDown()
             || AnomolyClient.MODULES.get(AutoBow.class).active(client)
             || AnomolyClient.MODULES.get(AutoShoot.class).active(client)) return;

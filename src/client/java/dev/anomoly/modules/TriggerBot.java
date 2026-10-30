@@ -16,6 +16,7 @@ public final class TriggerBot extends Module {
     @Override public void tick(Minecraft client) {
         if (client.gui.screen() != null || client.gameMode == null || client.player.isSpectator()
             || AnomolyClient.MODULES.get(AutoRod.class).active(client)
+            || AnomolyClient.MODULES.get(AutoPearl.class).active(client)
             || !(client.hitResult instanceof EntityHitResult hit)
             || !(hit.getEntity() instanceof LivingEntity target) || !target.isAlive()
             || target instanceof Player player && AnomolyClient.MODULES.get(AntiBot.class).reject(client, player)

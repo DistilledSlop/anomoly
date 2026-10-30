@@ -66,6 +66,7 @@ public final class AnomolyClient implements ClientModInitializer {
         });
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
             MODULES.get(dev.anomoly.modules.AutoBow.class).finishTick(client);
+            MODULES.get(dev.anomoly.modules.AutoPearl.class).finishTick(client);
             MODULES.get(AutoReconnect.class).tickDisconnected(client);
             if (client.gui.screen() instanceof ClickGuiScreen
                 && (ImGuiRenderer.failed() || !ImGuiRenderer.supported())) {

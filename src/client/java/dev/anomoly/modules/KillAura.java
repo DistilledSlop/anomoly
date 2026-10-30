@@ -31,6 +31,7 @@ public final class KillAura extends Module {
             || AnomolyClient.MODULES.get(AutoShoot.class).active(client)
             || AnomolyClient.MODULES.get(AutoBow.class).active(client)
             || AnomolyClient.MODULES.get(AutoRod.class).active(client)
+            || AnomolyClient.MODULES.get(AutoPearl.class).active(client)
             || AnomolyClient.MODULES.get(BowAimbot.class).active(client)
             || AnomolyClient.MODULES.get(ProjectileAimbot.class).active(client)
             || client.player.cannotAttackWithItem(client.player.getMainHandItem(), 0)) return;

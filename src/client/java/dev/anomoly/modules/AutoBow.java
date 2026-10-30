@@ -44,7 +44,8 @@ public final class AutoBow extends Module {
     }
 
     public boolean active(Minecraft client) {
-        if (!enabled() || AnomolyClient.MODULES.get(AutoRod.class).ownsHook(client)
+        if (!enabled() || AnomolyClient.MODULES.get(AutoPearl.class).active(client)
+            || AnomolyClient.MODULES.get(AutoRod.class).ownsHook(client)
             || client.player == null || client.gameMode == null || client.gui.screen() != null
             || client.player.isSpectator()) return false;
         if (autoUsing) return true;
@@ -62,7 +63,8 @@ public final class AutoBow extends Module {
         }
         if (cooldown > 0) cooldown--;
         if (reloadDelay > 0) reloadDelay--;
-        if (AnomolyClient.MODULES.get(AutoRod.class).ownsHook(client)
+        if (AnomolyClient.MODULES.get(AutoPearl.class).active(client)
+            || AnomolyClient.MODULES.get(AutoRod.class).ownsHook(client)
             || client.gui.screen() != null || client.gameMode == null || client.player.isSpectator()
             || client.player.isHandsBusy() || client.options.keyUse.isDown()) {
             stableTicks = 0;
