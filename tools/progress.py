@@ -147,7 +147,13 @@ def main():
     features = load_features()
     counts = Counter(feature["status"] for feature in features)
     report = {"counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test", "counts": dict(counts), "total": len(features), "features": features}
-    generated = {"progress.json": json.dumps(report, indent=2, ensure_ascii=False) + "\n", "progress.svg": svg(features, counts), "progress.html": webpage(features, counts)}
+    index = ('<!doctype html><html lang="en"><head><meta charset="utf-8">'
+             '<meta http-equiv="refresh" content="0;url=progress.html">'
+             '<title>Anomoly hack progress</title></head><body>'
+             '<p><a href="progress.html">Open the progress treemap</a></p></body></html>\n')
+    generated = {"progress.json": json.dumps(report, indent=2, ensure_ascii=False) + "\n",
+                 "progress.svg": svg(features, counts), "progress.html": webpage(features, counts),
+                 "index.html": index, ".nojekyll": ""}
     OUTPUT.mkdir(exist_ok=True)
     stale = []
     for name, content in generated.items():

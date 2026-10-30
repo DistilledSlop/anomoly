@@ -4,9 +4,9 @@ Anomoly is a Fabric client for Minecraft Java 26.3. This repository also contain
 
 ## Hack progress
 
-[![Anomoly hack progress treemap](docs/progress.svg)](docs/progress.html)
+[![Anomoly hack progress treemap](docs/progress.svg)](https://distilledslop.github.io/anomoly/progress.html)
 
-The [searchable progress report](docs/progress.html) is generated from the 682 catalog entries plus Anomoly's Spear Assist. It currently tracks **13 coded**, **2 partial**, **0 gameplay verified**, and **668 backlog** features. Blue tiles are coded modules, amber tiles are partial implementations, green tiles have gameplay test evidence, and gray tiles are backlog. Run `python3 tools/progress.py` after changing a module's status, then `python3 tools/progress.py --check` to verify the treemap and [raw data](docs/progress.json).
+The [searchable progress report](https://distilledslop.github.io/anomoly/progress.html) is generated from the 682 catalog entries plus Anomoly's Spear Assist. It currently tracks **13 coded**, **2 partial**, **0 gameplay verified**, and **668 backlog** features. Blue tiles are coded modules, amber tiles are partial implementations, green tiles have gameplay test evidence, and gray tiles are backlog. Run `python3 tools/progress.py` after changing a module's status; CI runs `python3 tools/progress.py --check` to verify the treemap and [raw data](docs/progress.json).
 
 ## Build and run
 
