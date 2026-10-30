@@ -6,13 +6,13 @@ Anomoly is a full Minecraft Java 26.3 hacked client built as a Fabric mod, with 
 
 [![Anomoly hack progress treemap](docs/progress.svg)](https://distilledslop.github.io/anomoly/progress.html)
 
-The [searchable progress report](https://distilledslop.github.io/anomoly/progress.html) is generated from the 682 catalog entries plus Anomoly's Spear Assist. It currently tracks <!-- anomoly-progress:start -->**47 coded**, **3 partial**, **0 gameplay verified**, and **633 backlog**<!-- anomoly-progress:end --> features. Blue tiles are coded modules, amber tiles are partial implementations, green tiles have gameplay test evidence, and gray tiles are backlog. Run `python3 tools/progress.py` after changing a module's status; CI runs `python3 tools/progress.py --check` to verify the treemap and [raw data](docs/progress.json).
+The [searchable progress report](https://distilledslop.github.io/anomoly/progress.html) is generated from the 682 catalog entries plus Anomoly's Spear Assist. It currently tracks <!-- anomoly-progress:start -->**48 coded**, **3 partial**, **0 gameplay verified**, and **632 backlog**<!-- anomoly-progress:end --> features. Blue tiles are coded modules, amber tiles are partial implementations, green tiles have gameplay test evidence, and gray tiles are backlog. Run `python3 tools/progress.py` after changing a module's status; CI runs `python3 tools/progress.py --check` to verify the treemap and [raw data](docs/progress.json).
 
 ## Build and run
 
 Use Java 25 and run `./gradlew build`. The distributable is `build/libs/anomoly-1.0.0.jar`; it includes ImGui Java and native libraries for Windows, Linux, and macOS. Install it with Fabric Loader 0.20.1 and Fabric API 0.165.0+26.3.
 
-The Dear ImGui ClickGUI uses the OpenGL backend. Choose **OpenGL** in Minecraft's video settings before starting the game, or launch with `--graphicsBackend opengl`. On Vulkan, Anomoly opens a functional native settings screen with the same modules and profile controls. Right Shift opens or closes the GUI, and End disables every module. Both keys appear in Minecraft's key controls.
+The Dear ImGui ClickGUI uses the OpenGL backend. Choose **OpenGL** in Minecraft's video settings before starting the game, or launch with `--graphicsBackend opengl`. On Vulkan, Anomoly opens a functional native settings screen with the same modules and profile controls. Right Shift opens or closes the GUI, End disables every module, and C holds Zoom when that module is enabled. These keys appear in Minecraft's key controls.
 
 The ClickGUI has a category sidebar, module search, expandable settings, and a server profile page.
 
@@ -24,7 +24,7 @@ The ClickGUI has a category sidebar, module search, expandable settings, and a s
 | Movement | Auto Sprint, Auto Walk, Auto Jump, Auto Sneak, Fast Ladder, Fast Fall, No Fall, Safe Walk, Step, Anti Web, No Slow (partial) |
 | Player | Auto Respawn, Auto Eat, Auto Fish, Anti AFK, Auto Tool, Auto Replenish, Auto Deposit, Auto Drop (also Auto Eject), Chest Stealer, Chest Cleaner |
 | World | Fast Place, Fast Break (also Break Delay) |
-| Render | Max Brightness, No Hurt Cam, No Bob, Auto F5, FOV Modifier, No FOV, No Overlay, No Fire Overlay, Anti Overlay, Player Radar |
+| Render | Max Brightness, No Hurt Cam, No Bob, Auto F5, FOV Modifier, No FOV, Zoom, No Overlay, No Fire Overlay, Anti Overlay, Player Radar |
 | Exploit | Anti Reduced Debug Info, Portal Menu |
 | Fun | Twerk |
 

@@ -46,6 +46,7 @@ import dev.anomoly.modules.SpearAssist;
 import dev.anomoly.modules.SafeWalk;
 import dev.anomoly.modules.Step;
 import dev.anomoly.modules.TriggerBot;
+import dev.anomoly.modules.Zoom;
 import dev.anomoly.modules.Twerk;
 import java.util.List;
 import net.minecraft.client.Minecraft;
@@ -60,7 +61,7 @@ public final class ModuleManager {
         new ChestStealer(), new ChestCleaner(),
         new FastPlace(), new FastBreak(), new FastLadder(),
         new NoFall(), new NoSlow(), new SafeWalk(), new Step(), new AntiWeb(), new FastFall(), new MaxBrightness(), new NoHurtCam(), new NoBob(), new AutoF5(),
-        new FovOverride(), new NoFov(), new NoOverlay(), new NoFireOverlay(), new AntiOverlay(), new PlayerRadar(),
+        new FovOverride(), new NoFov(), new Zoom(), new NoOverlay(), new NoFireOverlay(), new AntiOverlay(), new PlayerRadar(),
         new AntiReducedDebugInfo(), new PortalMenu(), new Twerk()
     );
 

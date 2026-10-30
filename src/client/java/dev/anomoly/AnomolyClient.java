@@ -30,12 +30,16 @@ public final class AnomolyClient implements ClientModInitializer {
     private static boolean loading;
     private static KeyMapping guiKey;
     private static KeyMapping panicKey;
+    private static KeyMapping zoomKey;
+
+    public static boolean zoomHeld() { return zoomKey != null && zoomKey.isDown(); }
 
     @Override public void onInitializeClient() {
         loadConfig();
         // SDL scancodes, not legacy GLFW key codes: right shift and End.
         guiKey = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.anomoly.gui", 229, KeyMapping.Category.MISC));
         panicKey = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.anomoly.panic", 77, KeyMapping.Category.MISC));
+        zoomKey = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.anomoly.zoom", 6, KeyMapping.Category.MISC));
         ClientTickEvents.START_CLIENT_TICK.register(client -> {
             MODULES.tick(client);
             PROFILE.tick(client);

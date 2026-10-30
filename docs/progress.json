@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 633,
-    "coded": 47,
+    "backlog": 632,
+    "coded": 48,
     "partial": 3
   },
   "total": 683,
@@ -6140,8 +6140,8 @@
       "id": "zoom",
       "name": "Zoom",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "Zoom",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/zoom.md"
     },
