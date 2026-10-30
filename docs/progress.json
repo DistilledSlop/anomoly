@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 659,
-    "coded": 21,
+    "backlog": 654,
+    "coded": 26,
     "partial": 3
   },
   "total": 683,
@@ -794,8 +794,8 @@
       "id": "autof5",
       "name": "AutoF5",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "AutoF5",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autof5.md"
     },
@@ -2702,8 +2702,8 @@
       "id": "fov",
       "name": "FOV",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "FovOverride",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fov.md"
     },
@@ -2711,8 +2711,8 @@
       "id": "fovmodifier",
       "name": "FOVModifier",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "FovOverride",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fovmodifier.md"
     },
@@ -3890,8 +3890,8 @@
       "id": "nobob",
       "name": "NoBob",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "NoBob",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nobob.md"
     },
@@ -3962,8 +3962,8 @@
       "id": "nofov",
       "name": "NoFOV",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "NoFov",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nofov.md"
     },

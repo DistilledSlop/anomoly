@@ -2,6 +2,7 @@ package dev.anomoly;
 
 import dev.anomoly.modules.AutoJump;
 import dev.anomoly.modules.AutoArmor;
+import dev.anomoly.modules.AutoF5;
 import dev.anomoly.modules.AntiAFK;
 import dev.anomoly.modules.AutoEat;
 import dev.anomoly.modules.AutoFish;
@@ -13,11 +14,14 @@ import dev.anomoly.modules.AutoTool;
 import dev.anomoly.modules.FastBreak;
 import dev.anomoly.modules.FastLadder;
 import dev.anomoly.modules.FastPlace;
+import dev.anomoly.modules.FovOverride;
 import dev.anomoly.modules.KillAura;
 import dev.anomoly.modules.MaxBrightness;
 import dev.anomoly.modules.NoHurtCam;
 import dev.anomoly.modules.NoFall;
 import dev.anomoly.modules.NoSlow;
+import dev.anomoly.modules.NoBob;
+import dev.anomoly.modules.NoFov;
 import dev.anomoly.modules.PlayerRadar;
 import dev.anomoly.modules.Reach;
 import dev.anomoly.modules.SpearAssist;
@@ -31,7 +35,8 @@ public final class ModuleManager {
     private final List<Module> modules = List.of(
         new TriggerBot(), new KillAura(), new SpearAssist(), new Reach(), new AutoArmor(), new AutoSprint(), new AutoWalk(), new AutoJump(),
         new AutoSneak(), new AutoRespawn(), new AutoEat(), new AutoFish(), new AntiAFK(), new AutoTool(), new FastPlace(), new FastBreak(), new FastLadder(),
-        new NoFall(), new NoSlow(), new SafeWalk(), new Step(), new MaxBrightness(), new NoHurtCam(), new PlayerRadar()
+        new NoFall(), new NoSlow(), new SafeWalk(), new Step(), new MaxBrightness(), new NoHurtCam(), new NoBob(), new AutoF5(),
+        new FovOverride(), new NoFov(), new PlayerRadar()
     );
 
     public List<Module> all() { return modules; }

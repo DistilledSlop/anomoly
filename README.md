@@ -6,7 +6,7 @@ Anomoly is a full Minecraft Java 26.3 hacked client built as a Fabric mod, with 
 
 [![Anomoly hack progress treemap](docs/progress.svg)](https://distilledslop.github.io/anomoly/progress.html)
 
-The [searchable progress report](https://distilledslop.github.io/anomoly/progress.html) is generated from the 682 catalog entries plus Anomoly's Spear Assist. It currently tracks <!-- anomoly-progress:start -->**21 coded**, **3 partial**, **0 gameplay verified**, and **659 backlog**<!-- anomoly-progress:end --> features. Blue tiles are coded modules, amber tiles are partial implementations, green tiles have gameplay test evidence, and gray tiles are backlog. Run `python3 tools/progress.py` after changing a module's status; CI runs `python3 tools/progress.py --check` to verify the treemap and [raw data](docs/progress.json).
+The [searchable progress report](https://distilledslop.github.io/anomoly/progress.html) is generated from the 682 catalog entries plus Anomoly's Spear Assist. It currently tracks <!-- anomoly-progress:start -->**26 coded**, **3 partial**, **0 gameplay verified**, and **654 backlog**<!-- anomoly-progress:end --> features. Blue tiles are coded modules, amber tiles are partial implementations, green tiles have gameplay test evidence, and gray tiles are backlog. Run `python3 tools/progress.py` after changing a module's status; CI runs `python3 tools/progress.py --check` to verify the treemap and [raw data](docs/progress.json).
 
 ## Build and run
 
@@ -22,7 +22,7 @@ The Dear ImGui ClickGUI currently uses the OpenGL backend. Choose **OpenGL** in 
 | Movement | Auto Sprint, Auto Walk, Auto Jump, Auto Sneak, Fast Ladder, No Fall, Safe Walk, Step, No Slow (partial) |
 | Player | Auto Respawn, Auto Eat, Auto Fish, Anti AFK, Auto Tool |
 | World | Fast Place, Fast Break |
-| Render | Max Brightness, No Hurt Cam, Player Radar |
+| Render | Max Brightness, No Hurt Cam, No Bob, Auto F5, FOV Modifier, No FOV, Player Radar |
 
 Modules default to off. Their states and settings are saved in `config/anomoly.json`. The current Kill Aura defaults to visible targets within three blocks and full attack cooldown; its range and other settings are adjustable in the GUI. Server anticheats can reject or punish module behavior, so the passive profiler makes no guarantee of compatibility.
 
