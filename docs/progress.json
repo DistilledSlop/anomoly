@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 570,
-    "verified": 44,
+    "backlog": 569,
+    "verified": 45,
     "coded": 68,
     "partial": 1
   },
@@ -5943,9 +5943,9 @@
       "id": "veinminer",
       "name": "Vein Miner",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "VeinMiner",
+      "note": "On a local vanilla 26.3 server, a real mouse break triggered Vein Miner to mine the clicked coal ore and three face-connected neighbors, while adjacent stone and disconnected coal ore remained. A new cluster stayed untouched without a click, and max_blocks=2 limited a three-block chain to two mined blocks. See docs/test-evidence/2026-10-30-veinminer.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/veinminer.md"
     },
     {
