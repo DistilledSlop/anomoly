@@ -4,9 +4,9 @@
 </head><body><h1>Anomoly hack progress</h1>
 <p>One tile per researched feature. Tile area is proportional to category size. Blue means coded and compiled, amber means partial, green means gameplay verified, and gray means backlog. Startup validation alone does not count as gameplay verification.</p>
 <img src="progress.svg" alt="Treemap of Anomoly hack progress">
-<p>70 coded, 0 partial, 19 gameplay verified, 594 backlog, 683 total. <a href="progress.json">Raw data</a>.</p>
+<p>70 coded, 1 partial, 21 gameplay verified, 591 backlog, 683 total. <a href="progress.json">Raw data</a>.</p>
 <h2>By category</h2><table><thead><tr><th>Category</th><th>Verified</th><th>Coded</th><th>Partial</th><th>Backlog</th><th>Total</th></tr></thead><tbody>
-<tr><td>Combat</td><td>16</td><td>12</td><td>0</td><td>67</td><td>95</td></tr>
+<tr><td>Combat</td><td>18</td><td>12</td><td>1</td><td>64</td><td>95</td></tr>
 <tr><td>Exploit</td><td>0</td><td>3</td><td>0</td><td>31</td><td>34</td></tr>
 <tr><td>Fun</td><td>0</td><td>1</td><td>0</td><td>16</td><td>17</td></tr>
 <tr><td>Misc</td><td>0</td><td>1</td><td>0</td><td>121</td><td>122</td></tr>
@@ -74,7 +74,7 @@
 <tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/hitboxignore.md">HitboxIgnore</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/holefill.md">HoleFiller</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/hunt.md">Hunt</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/keepsprint.md">KeepSprint</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/keepsprint.md">KeepSprint</a></td><td class="verified">verified</td><td>A local two-player 26.3 test showed the server&#x27;s sprint predicate true after a hit with Keep Sprint enabled; the paired control went from true before the hit to false afterward. Local horizontal velocity restoration is implemented but not separately measured. See docs/test-evidence/2026-10-30-sprint-combat.md.</td></tr>
 <tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/killaura.md">KillAura</a></td><td class="coded">coded</td><td>KillAura</td></tr>
 <tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/killauralegit.md">KillauraLegit</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/killpotion.md">KillPotion</a></td><td class="backlog">backlog</td><td></td></tr>
@@ -99,8 +99,8 @@
 <tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/soup.md">Soup</a></td><td class="verified">verified</td><td>A K key toggle selected and consumed mushroom stew from hotbar slot 3, raised food from 8 to 14, restored stone in slot 0, and disabled the one-shot module on a vanilla 26.3 server. See docs/test-evidence/2026-10-30-soup.md.</td></tr>
 <tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/hacks/spear-assist.md">Spear Assist</a></td><td class="coded">coded</td><td>SpearAssist</td></tr>
 <tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/spearkill.md">SpearKill</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/sprintreset.md">SprintReset</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/superknockback.md">SuperKnockback</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/sprintreset.md">SprintReset</a></td><td class="verified">verified</td><td>A local two-player 26.3 test showed the server&#x27;s sprint predicate true immediately after a player hit with Sprint Reset enabled, versus false in the paired control. See docs/test-evidence/2026-10-30-sprint-combat.md.</td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/superknockback.md">SuperKnockback</a></td><td class="partial">partial</td><td>The sprint bonus is gameplay verified: a target player moved about 3.62 blocks after the hit versus 1.99 blocks in a paired unsprinted control, with equal damage. Vanilla&#x27;s damage cooldown still blocks knockback during immune hits; that catalog behavior remains unresolved. See docs/test-evidence/2026-10-30-sprint-combat.md.</td></tr>
 <tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/surround.md">Surround</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/swordblock.md">SwordBlock</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/throwpot.md">ThrowPot</a></td><td class="verified">verified</td><td>A low-health toggle consumed two healing potions and restored stone; a higher-health toggle consumed one. The module disabled itself after each sequence. See docs/test-evidence/2026-10-30-potions.md.</td></tr>

@@ -1,9 +1,10 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 594,
-    "verified": 19,
-    "coded": 70
+    "backlog": 591,
+    "verified": 21,
+    "coded": 70,
+    "partial": 1
   },
   "total": 683,
   "features": [
@@ -3314,9 +3315,9 @@
       "id": "keepsprint",
       "name": "KeepSprint",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "KeepSprint",
+      "note": "A local two-player 26.3 test showed the server's sprint predicate true after a hit with Keep Sprint enabled; the paired control went from true before the hit to false afterward. Local horizontal velocity restoration is implemented but not separately measured. See docs/test-evidence/2026-10-30-sprint-combat.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/keepsprint.md"
     },
     {
@@ -5303,9 +5304,9 @@
       "id": "sprintreset",
       "name": "SprintReset",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "SprintReset",
+      "note": "A local two-player 26.3 test showed the server's sprint predicate true immediately after a player hit with Sprint Reset enabled, versus false in the paired control. See docs/test-evidence/2026-10-30-sprint-combat.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/sprintreset.md"
     },
     {
@@ -5375,9 +5376,9 @@
       "id": "superknockback",
       "name": "SuperKnockback",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "SuperKnockback",
+      "note": "The sprint bonus is gameplay verified: a target player moved about 3.62 blocks after the hit versus 1.99 blocks in a paired unsprinted control, with equal damage. Vanilla's damage cooldown still blocks knockback during immune hits; that catalog behavior remains unresolved. See docs/test-evidence/2026-10-30-sprint-combat.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/superknockback.md"
     },
     {
