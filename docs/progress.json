@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 559,
-    "verified": 55,
+    "backlog": 558,
+    "verified": 56,
     "coded": 68,
     "partial": 1
   },
@@ -273,9 +273,9 @@
       "id": "antiinteract",
       "name": "AntiInteract",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "AntiInteract",
+      "note": "On a local vanilla 26.3 server, right-clicking a chest, barrel, or blue shulker box left each container-open score at 0. An unlisted crafting table opened, raising its score from 0 to 1. Sneaking placed cobblestone against a chest without opening it. See docs/test-evidence/2026-10-30-antiinteract.md. Other default containers, custom IDs, and third-party anticheats remain untested.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiinteract.md"
     },
     {
