@@ -1,9 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 620,
-    "coded": 62,
-    "partial": 1
+    "backlog": 618,
+    "coded": 65
   },
   "total": 683,
   "features": [
@@ -4259,9 +4258,9 @@
       "id": "noweather",
       "name": "NoWeather",
       "category": "Render",
-      "status": "partial",
+      "status": "coded",
       "module": "WeatherChanger",
-      "note": "Rain and thunder override are implemented; Wurst-style time and moon phase controls remain.",
+      "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noweather.md"
     },
     {
@@ -5573,8 +5572,8 @@
       "id": "timechanger",
       "name": "Time Changer",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "TimeChanger",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/timechanger.md"
     },
@@ -6050,9 +6049,9 @@
       "id": "weather",
       "name": "Weather",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "WeatherChanger",
+      "note": "Controls the local weather view; server weather remains authoritative.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/weather.md"
     },
     {
