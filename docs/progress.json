@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 532,
-    "verified": 82,
+    "backlog": 531,
+    "verified": 83,
     "coded": 68,
     "partial": 1
   },
@@ -2928,9 +2928,9 @@
       "id": "highjump",
       "name": "HighJump",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "HighJump",
+      "note": "On a local vanilla 26.3 server, the ordinary jump sampled y=122.25, Vanilla motion 0.8 sampled y=124.42, and Vulcan motion 1.2 sampled above y=128. Glide on extended descent compared with glide off at the same motion. See docs/test-evidence/2026-10-30-highjump.md. Anticheat bypass, flag avoidance, and higher motion values remain untested.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/highjump.md"
     },
     {

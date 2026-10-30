@@ -6,7 +6,7 @@ Anomoly is a full Minecraft Java 26.3 Fabric hacked client. Its working Dear ImG
 
 [![Anomoly hack progress treemap](docs/progress.svg)](https://distilledslop.github.io/anomoly/progress.html)
 
-The [searchable progress report](https://distilledslop.github.io/anomoly/progress.html) is generated from the 682 catalog entries plus Anomoly's Spear Assist. It currently tracks <!-- anomoly-progress:start -->**68 coded**, **1 partial**, **82 gameplay verified**, and **532 backlog**<!-- anomoly-progress:end --> features. Blue tiles are coded modules, amber tiles are partial implementations, green tiles have gameplay test evidence, and gray tiles are backlog. Run `python3 tools/progress.py` after changing a module's status; CI runs `python3 tools/progress.py --check` to verify the treemap and [raw data](docs/progress.json).
+The [searchable progress report](https://distilledslop.github.io/anomoly/progress.html) is generated from the 682 catalog entries plus Anomoly's Spear Assist. It currently tracks <!-- anomoly-progress:start -->**68 coded**, **1 partial**, **83 gameplay verified**, and **531 backlog**<!-- anomoly-progress:end --> features. Blue tiles are coded modules, amber tiles are partial implementations, green tiles have gameplay test evidence, and gray tiles are backlog. Run `python3 tools/progress.py` after changing a module's status; CI runs `python3 tools/progress.py --check` to verify the treemap and [raw data](docs/progress.json).
 
 ## Build and run
 
@@ -27,7 +27,7 @@ The [local gameplay test](docs/test-evidence/2026-10-30-local-gameplay.md) verif
 | Category | Modules |
 | --- | --- |
 | Combat | Auto Pearl, Auto Soup, Soup, Keep Sprint, Sprint Reset, W Tap, Criticals, Surround, Hole Filler, Self Trap, Self Web, Self Anvil, Anti Anvil, Anti Bed, Auto Anvil, Auto Trap, Auto Dodge, Auto Crystal Base, Crystal Aura, Anchor Aura, Bed Aura, Super Knockback (partial), Auto Weapon, Auto Sword, Auto Clicker, Trigger Bot, Anti Bot, Kill Aura, Aimbot, Aim Assist, Bow Aimbot, Projectile Aimbot, Auto Shoot, Auto Bow, Bow Spam, Auto Rod, Spear Assist, Reach, Auto Leave, Auto Armor, Auto Bow Release, Auto Potion, Throw Pot, Pot, Auto Exp, Auto GApple, Auto Totem |
-| Movement | Auto Sprint, Auto Walk, Auto Jump, NoJumpDelay, Auto Swim, Air Jump, Auto Sneak, GUI Move (also Inventory Move), AntiBounce, BlockBounce, Parkour, Fast Ladder, Fast Fall, No Fall, Safe Walk, Step, Anti Web, Velocity, No Push (also AntiWaterPush), No Slow |
+| Movement | Auto Sprint, Auto Walk, Auto Jump, NoJumpDelay, Auto Swim, Air Jump, Auto Sneak, GUI Move (also Inventory Move), AntiBounce, BlockBounce, Parkour, HighJump, Fast Ladder, Fast Fall, No Fall, Safe Walk, Step, Anti Web, Velocity, No Push (also AntiWaterPush), No Slow |
 | Player | Auto Respawn, Auto Eat, SmartEat, FastExp, Auto Fish, Auto Mend, Offhand, Eagle, Elytra Swap, Auto Buff, NoBlockInteract, NoEntityInteract, No Interact, LiquidInteract, Fast Interact, Auto Crafter, Inventory Cleaner, Anti AFK, Auto Break (also Auto Mine), Durability Alert, Auto Switch, Auto Tool, Auto Replenish, Auto Deposit, Auto Drop (also Auto Eject), Chest Stealer, Chest Cleaner, No Rotate (also No Server Rotate) |
 | World | Fast Place, Fast Break (also Break Delay), AirPlace, AntiInteract, Auto Brewer, AutoBuild, Auto Smelter, Scaffold, Nuker, Nuker Legit, Vein Miner, Auto Tunnel (also Tunneller), Auto Shearer, Auto Breed, Auto Mob Heal, Auto Farm, Auto Mount, Auto Nametag, Enderman Look |
 | Render | Fullbright, Max Brightness, No Hurt Cam, No Bob, Auto F5, FOV Modifier, No FOV, Zoom, Camera Clip, Camera Tweaks, Free Look, No Fog, No Overlay, No Fire Overlay, Anti Overlay, Anti Wobble, No Pumpkin, Anti Blind, Player Radar, Weather Changer, Time Changer |
@@ -46,6 +46,8 @@ AntiBounce keeps the local player grounded after landing on a springy block. In 
 BlockBounce adds configurable upward motion to a grounded jump from slime, honey, or a bed. In [local server tests](docs/test-evidence/2026-10-30-blockbounce.md), a slime jump rose substantially higher with it enabled, honey and bed jumps received the boost, and a stone jump stayed at ordinary height.
 
 Parkour jumps when the next step would leave the current block. In [local server tests](docs/test-evidence/2026-10-30-parkour.md), it jumped at the edge, crossed a one-block gap, and kept ordinary walking flat on continuous ground.
+
+HighJump sets the upward launch strength of a normal jump. Its Vanilla and Vulcan modes share a configurable motion value; Vulcan mode has an optional descent glide. [Local server tests](docs/test-evidence/2026-10-30-highjump.md) confirm the stronger launch and glide behavior. Anticheat evasion remains untested.
 
 No Push can suppress entity collision pushes and water or lava currents separately. Its fluid setting also covers AntiWaterPush. In a [paired water-current test](docs/test-evidence/2026-10-30-waterpush.md), the server saw the player drift about 2.4 blocks with No Push off and remain at the starting position with it on.
 
