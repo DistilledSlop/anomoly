@@ -103,6 +103,7 @@ import dev.anomoly.modules.VeinMiner;
 import dev.anomoly.modules.AutoTunnel;
 import dev.anomoly.modules.AutoShearer;
 import dev.anomoly.modules.AutoBreed;
+import dev.anomoly.modules.AutoMobHeal;
 import dev.anomoly.modules.Step;
 import dev.anomoly.modules.TriggerBot;
 import dev.anomoly.modules.Zoom;
@@ -122,7 +123,7 @@ public final class ModuleManager {
         new AutoTool(), new AutoReplenish(),
         new AutoDeposit(), new AutoDrop(),
         new ChestStealer(), new ChestCleaner(),
-        new FastPlace(), new FastBreak(), new FastLadder(), new Scaffold(), new Nuker(), new NukerLegit(), new VeinMiner(), new AutoTunnel(), new AutoShearer(), new AutoBreed(),
+        new FastPlace(), new FastBreak(), new FastLadder(), new Scaffold(), new Nuker(), new NukerLegit(), new VeinMiner(), new AutoTunnel(), new AutoShearer(), new AutoBreed(), new AutoMobHeal(),
         new NoFall(), new NoSlow(), new SafeWalk(), new Step(), new AntiWeb(), new FastFall(), new Velocity(), new NoPush(), new MaxBrightness(), new NoHurtCam(), new NoBob(), new AutoF5(),
         new FovOverride(), new NoFov(), new Zoom(), new CameraClip(), new CameraTweaks(), new FreeLook(),
         new Fullbright(), new NoFog(), new NoOverlay(), new NoFireOverlay(), new AntiOverlay(), new AntiWobble(), new NoPumpkin(), new AntiBlind(), new PlayerRadar(), new WeatherChanger(), new TimeChanger(),

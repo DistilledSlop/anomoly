@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 565,
-    "verified": 49,
+    "backlog": 564,
+    "verified": 50,
     "coded": 68,
     "partial": 1
   },
@@ -903,9 +903,9 @@
       "id": "automobheal",
       "name": "AutoMobHeal",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "AutoMobHeal",
+      "note": "On a local vanilla 26.3 server, Auto Mob Heal repaired an iron golem from 50 to 100 with two hotbar ingots, fed a tamed horse from 10 to 16 with offhand wheat, an owned wolf from 10 to 40 with offhand beef, and an owned cat from 4 to 8 with offhand cod. It preserved the selected slot, ignored a 99-health golem and another owner's wolf, and respected a stone wall. See docs/test-evidence/2026-10-30-automobheal.md. Other mount variants and third-party anticheats remain untested.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/automobheal.md"
     },
     {
