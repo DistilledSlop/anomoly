@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 590,
-    "verified": 22,
+    "backlog": 589,
+    "verified": 23,
     "coded": 70,
     "partial": 1
   },
@@ -1992,9 +1992,9 @@
       "id": "criticals",
       "name": "Criticals",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "Criticals",
+      "note": "A local vanilla 26.3 server recorded an iron sword hit on a stationary pig for 9 damage with Criticals, versus 6 without it; a low ceiling fell back to 6 damage. Combined with Kill Aura, one isolated hit dealt 9 damage after fixing its early punch packet. See docs/test-evidence/2026-10-30-criticals.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/criticals.md"
     },
     {

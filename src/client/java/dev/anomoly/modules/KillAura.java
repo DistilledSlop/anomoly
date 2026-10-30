@@ -27,6 +27,7 @@ public final class KillAura extends Module {
 
     @Override public void tick(Minecraft client) {
         if (client.gui.screen() != null || client.gameMode == null || client.player.isSpectator()
+            || AnomolyClient.MODULES.get(Criticals.class).pending(client)
             || client.player.isHandsBusy() || client.player.getMainHandItem().has(DataComponents.PIERCING_WEAPON)
             || AnomolyClient.MODULES.get(AutoShoot.class).active(client)
             || AnomolyClient.MODULES.get(AutoBow.class).active(client)
@@ -49,6 +50,9 @@ public final class KillAura extends Module {
         if (Math.abs(yawDifference) <= 3F && Math.abs(pitchDifference) <= 3F
             && client.player.getAttackStrengthScale(0F) >= 1F) {
             client.gameMode.attack(client.player, target);
+            // Criticals owns the attack until descent. An early punch packet would
+            // reset the server-side cooldown before that delayed hit lands.
+            if (AnomolyClient.MODULES.get(Criticals.class).pending(client)) return;
             client.player.swing(InteractionHand.MAIN_HAND, client.player.getMainHandItem().getAttackAnimation(), false);
             client.player.connection.send(ServerboundPunchPacket.INSTANCE);
         }

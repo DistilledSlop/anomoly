@@ -20,7 +20,8 @@ public final class AttackHooks {
         boolean wasSprinting = player.isSprinting();
         Vec3 movement = player.getDeltaMovement();
         float strength = player.getAttackStrengthScale(0F);
-        boolean primed = AnomolyClient.MODULES.get(SuperKnockback.class).prime(client, living);
+        boolean primed = !AnomolyClient.MODULES.get(Criticals.class).suppressesSprintPrime(client)
+            && AnomolyClient.MODULES.get(SuperKnockback.class).prime(client, living);
         return new Context(wasSprinting, movement, strength, primed);
     }
 

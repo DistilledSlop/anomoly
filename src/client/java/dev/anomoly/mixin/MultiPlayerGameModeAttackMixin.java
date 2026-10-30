@@ -1,6 +1,8 @@
 package dev.anomoly.mixin;
 
 import dev.anomoly.modules.AttackHooks;
+import dev.anomoly.AnomolyClient;
+import dev.anomoly.modules.Criticals;
 import net.minecraft.client.multiplayer.MultiPlayerGameMode;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.player.Player;
@@ -14,8 +16,13 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 public abstract class MultiPlayerGameModeAttackMixin {
     @Unique private AttackHooks.Context anomoly$attackContext;
 
-    @Inject(method = "attack", at = @At("HEAD"))
+    @Inject(method = "attack", at = @At("HEAD"), cancellable = true)
     private void anomoly$beforeAttack(Player player, Entity entity, CallbackInfo ci) {
+        if (AnomolyClient.MODULES.get(Criticals.class).intercept(player, entity)) {
+            anomoly$attackContext = null;
+            ci.cancel();
+            return;
+        }
         anomoly$attackContext = AttackHooks.before(player, entity);
     }
 
