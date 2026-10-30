@@ -1,9 +1,9 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 529,
+    "backlog": 511,
     "verified": 84,
-    "coded": 67,
+    "coded": 85,
     "partial": 3
   },
   "total": 683,
@@ -291,9 +291,9 @@
       "id": "antilevitation",
       "name": "AntiLevitation",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "AntiLevitation",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antilevitation.md"
     },
     {
@@ -408,9 +408,9 @@
       "id": "antivoid",
       "name": "AntiVoid",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "AntiVoid",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antivoid.md"
     },
     {
@@ -1650,9 +1650,9 @@
       "id": "bunnyhop",
       "name": "BunnyHop",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "BunnyHop",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bunnyhop.md"
     },
     {
@@ -2145,9 +2145,9 @@
       "id": "dolphin",
       "name": "Dolphin",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Dolphin",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/dolphin.md"
     },
     {
@@ -2586,9 +2586,9 @@
       "id": "fastswim",
       "name": "FastSwim",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "FastSwim",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastswim.md"
     },
     {
@@ -2658,9 +2658,9 @@
       "id": "flight",
       "name": "Fly",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Fly",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/flight.md"
     },
     {
@@ -2757,9 +2757,9 @@
       "id": "freeze",
       "name": "Freeze",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Freeze",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/freeze.md"
     },
     {
@@ -2820,9 +2820,9 @@
       "id": "glide",
       "name": "Glide",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Glide",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/glide.md"
     },
     {
@@ -3072,9 +3072,9 @@
       "id": "icespeed",
       "name": "IceSpeed",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "IceSpeed",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/icespeed.md"
     },
     {
@@ -3270,18 +3270,18 @@
       "id": "jesus",
       "name": "Jesus",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Jesus",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/jesus.md"
     },
     {
       "id": "jetpack",
       "name": "Jetpack",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Jetpack",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/jetpack.md"
     },
     {
@@ -3522,9 +3522,9 @@
       "id": "liquidwalk",
       "name": "LiquidWalk",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Jesus",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/liquidwalk.md"
     },
     {
@@ -3558,9 +3558,9 @@
       "id": "longjump",
       "name": "LongJump",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "LongJump",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/longjump.md"
     },
     {
@@ -5259,9 +5259,9 @@
       "id": "speed",
       "name": "Speed",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Speed",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/speed.md"
     },
     {
@@ -5286,9 +5286,9 @@
       "id": "spider",
       "name": "Spider",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Spider",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/spider.md"
     },
     {
@@ -5358,9 +5358,9 @@
       "id": "strafe",
       "name": "Strafe",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Strafe",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/strafe.md"
     },
     {
@@ -6033,9 +6033,9 @@
       "id": "waterspeed",
       "name": "WaterSpeed",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "FastSwim",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/waterspeed.md"
     },
     {
@@ -6123,9 +6123,9 @@
       "id": "yaw",
       "name": "Yaw",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Yaw",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/yaw.md"
     },
     {

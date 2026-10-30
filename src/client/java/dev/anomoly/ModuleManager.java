@@ -143,6 +143,22 @@ import dev.anomoly.modules.Twerk;
 import dev.anomoly.modules.TimeChanger;
 import dev.anomoly.modules.Velocity;
 import dev.anomoly.modules.WeatherChanger;
+import dev.anomoly.modules.Fly;
+import dev.anomoly.modules.Glide;
+import dev.anomoly.modules.Jetpack;
+import dev.anomoly.modules.Speed;
+import dev.anomoly.modules.BunnyHop;
+import dev.anomoly.modules.Strafe;
+import dev.anomoly.modules.Spider;
+import dev.anomoly.modules.Jesus;
+import dev.anomoly.modules.Dolphin;
+import dev.anomoly.modules.FastSwim;
+import dev.anomoly.modules.Freeze;
+import dev.anomoly.modules.LongJump;
+import dev.anomoly.modules.AntiVoid;
+import dev.anomoly.modules.AntiLevitation;
+import dev.anomoly.modules.IceSpeed;
+import dev.anomoly.modules.Yaw;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -159,6 +175,22 @@ public final class ModuleManager {
         new NoFall(), new NoSlow(), new SafeWalk(), new Step(), new AntiWeb(), new FastFall(), new Velocity(), new NoPush(), new MaxBrightness(), new NoHurtCam(), new NoBob(), new AutoF5(),
         new FovOverride(), new NoFov(), new Zoom(), new CameraClip(), new CameraTweaks(), new FreeLook(),
         new Fullbright(), new NoFog(), new NoOverlay(), new NoFireOverlay(), new AntiOverlay(), new AntiWobble(), new NoPumpkin(), new AntiBlind(), new PlayerRadar(), new WeatherChanger(), new TimeChanger(),
+        new Fly(),
+        new Glide(),
+        new Jetpack(),
+        new Speed(),
+        new BunnyHop(),
+        new Strafe(),
+        new Spider(),
+        new Jesus(),
+        new Dolphin(),
+        new FastSwim(),
+        new Freeze(),
+        new LongJump(),
+        new AntiVoid(),
+        new AntiLevitation(),
+        new IceSpeed(),
+        new Yaw(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 
