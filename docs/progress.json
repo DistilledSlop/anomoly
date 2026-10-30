@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 542,
-    "verified": 71,
+    "backlog": 541,
+    "verified": 72,
     "coded": 69,
     "partial": 1
   },
@@ -2523,9 +2523,9 @@
       "id": "fastexp",
       "name": "FastExp",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "FastExp",
+      "note": "On a local vanilla 26.3 server, holding the bound FastExp key with NoWaste enabled used seven bottles to repair a Mending helmet from damage 120 to 6, then stopped on a second hold; a non-Mending helmet used none. Offhand bottles repaired a held Mending iron pickaxe from damage 200 to 18 while keeping it selected. Fast mode without NoWaste used 51 bottles during a brief hold and restored the selected stone; Fast mode with NoWaste used nine bottles to repair a helmet from damage 120 to 2 and stopped. A server kick disabled FastExp in saved config. See docs/test-evidence/2026-10-30-fastexp.md. Exact combat pause and slot-reset timing and third-party anticheats remain untested.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastexp.md"
     },
     {

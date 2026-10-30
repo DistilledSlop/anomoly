@@ -37,6 +37,7 @@ public final class AutoExp extends Module {
             || AnomolyClient.MODULES.get(ThrowPot.class).active(client)
             || AnomolyClient.MODULES.get(AutoPotion.class).active(client)
             || AnomolyClient.MODULES.get(Pot.class).active(client)) return;
+        if (AnomolyClient.MODULES.get(FastExp.class).busy(client)) return;
         LocalPlayer player = client.player;
         InteractionHand hand = null;
         int originalSlot = -1;

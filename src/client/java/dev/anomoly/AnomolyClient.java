@@ -12,6 +12,7 @@ import dev.anomoly.modules.FreeLook;
 import dev.anomoly.modules.Offhand;
 import dev.anomoly.modules.ElytraSwap;
 import dev.anomoly.modules.AutoBuff;
+import dev.anomoly.modules.FastExp;
 import dev.anomoly.setting.Setting;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -44,11 +45,13 @@ public final class AnomolyClient implements ClientModInitializer {
     private static KeyMapping panicKey;
     private static KeyMapping zoomKey;
     private static KeyMapping freeLookKey;
+    private static KeyMapping fastExpKey;
     private static final Map<Module, KeyMapping> MODULE_KEYS = new LinkedHashMap<>();
     private static final Map<String, KeyMapping> OFFHAND_KEYS = new LinkedHashMap<>();
 
     public static boolean zoomHeld() { return zoomKey != null && zoomKey.isDown(); }
     public static boolean freeLookHeld() { return freeLookKey != null && freeLookKey.isDown(); }
+    public static boolean fastExpHeld() { return fastExpKey != null && fastExpKey.isDown(); }
     public static KeyMapping moduleKey(Module module) { return MODULE_KEYS.get(module); }
 
     @Override public void onInitializeClient() {
@@ -64,6 +67,8 @@ public final class AnomolyClient implements ClientModInitializer {
                 "key.anomoly.toggle." + module.id(), 0, moduleCategory));
             MODULE_KEYS.put(module, key);
         }
+        fastExpKey = KeyMappingHelper.registerKeyMapping(new KeyMapping(
+            "key.anomoly.fast_exp_hold", 0, moduleCategory));
         for (String mode : new String[] {"cycle", "auto", "totem", "crystal", "gapple", "strength", "block"})
             OFFHAND_KEYS.put(mode, KeyMappingHelper.registerKeyMapping(new KeyMapping(
                 "key.anomoly.offhand." + mode, 0, moduleCategory)));
@@ -115,6 +120,7 @@ public final class AnomolyClient implements ClientModInitializer {
             MODULES.get(ElytraSwap.class).disconnect();
             MODULES.get(AutoBuff.class).disconnect();
             MODULES.get(dev.anomoly.modules.SmartEat.class).disconnect();
+            MODULES.get(FastExp.class).disconnect();
             PROFILE.leave("connection closed");
         });
         LOGGER.info("Anomoly initialized");

@@ -119,6 +119,7 @@ public final class AutoBuff extends Module {
             || client.options.keyUse.isDown() || client.options.keyAttack.isDown()
             || player.containerMenu != player.inventoryMenu || !player.inventoryMenu.getCarried().isEmpty()
             || AnomolyClient.MODULES.get(SmartEat.class).busy()
+            || AnomolyClient.MODULES.get(FastExp.class).busy(client)
             || AnomolyClient.MODULES.get(ThrowPot.class).active(client)
             || AnomolyClient.MODULES.get(Pot.class).active(client)
             || AnomolyClient.MODULES.get(AutoPotion.class).active(client)

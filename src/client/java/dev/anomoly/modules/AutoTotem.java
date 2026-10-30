@@ -23,6 +23,7 @@ public final class AutoTotem extends Module {
         if (client.gameMode == null || client.gui.screen() != null || player.isUsingItem()
             || player.containerMenu != player.inventoryMenu || !player.inventoryMenu.getCarried().isEmpty()
             || AnomolyClient.MODULES.get(SmartEat.class).busy()
+            || AnomolyClient.MODULES.get(FastExp.class).busy(client)
             || player.getOffhandItem().is(Items.TOTEM_OF_UNDYING)
             || !replaceExisting.get() && !player.getOffhandItem().isEmpty()) return;
         var menu = player.inventoryMenu;

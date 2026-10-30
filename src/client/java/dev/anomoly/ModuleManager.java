@@ -4,6 +4,7 @@ import dev.anomoly.modules.AutoJump;
 import dev.anomoly.modules.AutoShoot;
 import dev.anomoly.modules.AutoBow;
 import dev.anomoly.modules.AutoExp;
+import dev.anomoly.modules.FastExp;
 import dev.anomoly.modules.AutoPotion;
 import dev.anomoly.modules.ThrowPot;
 import dev.anomoly.modules.Pot;
@@ -138,7 +139,7 @@ import net.minecraft.client.Minecraft;
 public final class ModuleManager {
     private final List<Module> modules = List.of(
         new AutoPearl(), new AutoSoup(), new Soup(), new Criticals(), new Surround(), new HoleFiller(), new SelfTrap(), new SelfWeb(), new SelfAnvil(), new AntiAnvil(), new AntiBed(), new AutoAnvil(), new AutoTrap(), new AutoCrystalBase(), new CrystalAura(), new AnchorAura(), new BedAura(), new KeepSprint(), new SprintReset(), new SuperKnockback(), new WTap(), new AutoWeapon(), new AutoSword(), new AutoClicker(), new TriggerBot(), new AntiBot(), new KillAura(), new Aimbot(), new AimAssist(), new SpearAssist(), new Reach(), new AutoLeave(),
-        new AutoArmor(), new BowAimbot(), new ProjectileAimbot(), new AutoShoot(), new AutoBow(), new AutoRod(), new BowSpam(), new AutoBowRelease(), new ThrowPot(), new AutoPotion(), new AutoExp(), new AutoGApple(), new AutoTotem(), new Pot(),
+        new AutoArmor(), new BowAimbot(), new ProjectileAimbot(), new AutoShoot(), new AutoBow(), new AutoRod(), new BowSpam(), new AutoBowRelease(), new ThrowPot(), new AutoPotion(), new AutoExp(), new FastExp(), new AutoGApple(), new AutoTotem(), new Pot(),
         new AutoSprint(), new AutoWalk(), new AutoJump(), new NoJumpDelay(), new AutoDodge(), new AirJump(), new AutoSwim(), new GuiMove(),
         new AutoSneak(), new AutoRespawn(), new AutoEat(), new AutoFish(), new AutoMend(), new Offhand(), new Eagle(), new ElytraSwap(), new AutoBuff(), new SmartEat(), new AutoCrafter(), new InventoryCleaner(), new AntiAFK(), new AutoBreak(), new DurabilityAlert(), new AutoSwitch(), new AutoReconnect(), new AntiCheatDetect(), new NoRotate(),
         new AutoTool(), new AutoReplenish(),

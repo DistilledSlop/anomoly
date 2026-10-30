@@ -45,6 +45,7 @@ public final class AutoMend extends Module {
         if (client.gui.screen() != null || player.isSpectator() || player.isUsingItem()
             || player.containerMenu != player.inventoryMenu || !player.inventoryMenu.getCarried().isEmpty()
             || AnomolyClient.MODULES.get(SmartEat.class).busy()
+            || AnomolyClient.MODULES.get(FastExp.class).busy(client)
             || AnomolyClient.MODULES.get(AutoTotem.class).enabled()) return;
 
         ItemStack offhand = player.getOffhandItem();

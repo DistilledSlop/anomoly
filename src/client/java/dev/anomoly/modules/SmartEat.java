@@ -79,6 +79,7 @@ public final class SmartEat extends Module {
             || player.containerMenu != player.inventoryMenu || !player.inventoryMenu.getCarried().isEmpty()
             || !tool(player.getMainHandItem())
             || SoupUse.busy(client) || AnomolyClient.MODULES.get(AutoBuff.class).busy()
+            || AnomolyClient.MODULES.get(FastExp.class).busy(client)
             || avoidCombat.get() && (player.hurtTime > 0
                 || AnomolyClient.MODULES.get(KillAura.class).hasTarget(client))) return false;
         Candidate candidate = best(player, true);
@@ -123,6 +124,7 @@ public final class SmartEat extends Module {
             || client.options.keyUse.isDown() || client.options.keyAttack.isDown()
             || player.containerMenu != player.inventoryMenu || !player.inventoryMenu.getCarried().isEmpty()
             || AnomolyClient.MODULES.get(AutoBuff.class).busy()
+            || AnomolyClient.MODULES.get(FastExp.class).busy(client)
             || AnomolyClient.MODULES.get(AutoBow.class).active(client)
             || AnomolyClient.MODULES.get(AutoShoot.class).active(client)
             || AnomolyClient.MODULES.get(AutoRod.class).active(client)
