@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 664,
-    "coded": 17,
+    "backlog": 663,
+    "coded": 18,
     "partial": 2
   },
   "total": 683,
@@ -542,8 +542,8 @@
       "id": "autoarmor",
       "name": "AutoArmor",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "AutoArmor",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoarmor.md"
     },

@@ -12,6 +12,7 @@
     "autofish": {"status": "coded", "module": "AutoFish"},
     "antiafk": {"status": "coded", "module": "AntiAFK"},
     "autotool": {"status": "coded", "module": "AutoTool"},
+    "autoarmor": {"status": "coded", "module": "AutoArmor"},
     "fastladder": {"status": "coded", "module": "FastLadder"},
     "fastplace": {"status": "coded", "module": "FastPlace"},
     "fastbreak": {"status": "coded", "module": "FastBreak"},
