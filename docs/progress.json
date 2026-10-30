@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 643,
-    "coded": 37,
+    "backlog": 642,
+    "coded": 38,
     "partial": 3
   },
   "total": 683,
@@ -1136,8 +1136,8 @@
       "id": "autototem",
       "name": "Auto Totem",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "AutoTotem",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autototem.md"
     },

@@ -32,6 +32,7 @@
     "nooverlay": {"status": "coded", "module": "NoOverlay"},
     "nofireoverlay": {"status": "coded", "module": "NoFireOverlay"},
     "antioverlay": {"status": "coded", "module": "AntiOverlay"},
+    "autototem": {"status": "coded", "module": "AutoTotem"},
     "fastladder": {"status": "coded", "module": "FastLadder"},
     "fastplace": {"status": "coded", "module": "FastPlace"},
     "fastbreak": {"status": "coded", "module": "FastBreak"},
