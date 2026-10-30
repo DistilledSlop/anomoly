@@ -322,6 +322,9 @@ import dev.anomoly.modules.MiddleClickFriend;
 import dev.anomoly.modules.TargetLock;
 import dev.anomoly.modules.MaceKill;
 import dev.anomoly.modules.ArrowDmg;
+import dev.anomoly.modules.TpAura;
+import dev.anomoly.modules.AntiHunger;
+import dev.anomoly.modules.Damage;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -517,6 +520,9 @@ public final class ModuleManager {
         new TargetLock(),
         new MaceKill(),
         new ArrowDmg(),
+        new TpAura(),
+        new AntiHunger(),
+        new Damage(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 

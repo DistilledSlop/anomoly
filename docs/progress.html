@@ -3,11 +3,11 @@
 <style>body{font:16px system-ui,sans-serif;background:#0b1220;color:#e7f2ff;max-width:1220px;margin:auto;padding:18px}a{color:#82c7fa}img{width:100%;height:auto}table{border-collapse:collapse;width:100%}th,td{border-bottom:1px solid #344054;padding:8px;text-align:left}input{background:#172235;color:#fff;border:1px solid #52657d;border-radius:5px;padding:10px;font:inherit;width:min(100%,450px)}.coded{color:#49a8e8}.partial{color:#f2b544}.verified{color:#4bd598}.backlog{color:#a9bacd}</style>
 </head><body><h1>Anomoly hack progress</h1>
 <p>One tile per catalogued feature. Tile area is proportional to category size. Blue means coded and compiled, amber means partial, green means gameplay verified, and gray means backlog. Startup validation alone does not count as gameplay verification.</p>
-<img src="progress.svg?v=6cde973463" alt="Treemap of Anomoly hack progress">
-<p>327 coded, 13 partial, 84 gameplay verified, 259 backlog, 683 total. <a href="progress.json">Raw data</a>.</p>
+<img src="progress.svg?v=d47fee8d98" alt="Treemap of Anomoly hack progress">
+<p>329 coded, 14 partial, 84 gameplay verified, 256 backlog, 683 total. <a href="progress.json">Raw data</a>.</p>
 <h2>By category</h2><table><thead><tr><th>Category</th><th>Verified</th><th>Coded</th><th>Partial</th><th>Backlog</th><th>Total</th></tr></thead><tbody>
-<tr><td>Combat</td><td>34</td><td>37</td><td>2</td><td>22</td><td>95</td></tr>
-<tr><td>Exploit</td><td>0</td><td>9</td><td>0</td><td>25</td><td>34</td></tr>
+<tr><td>Combat</td><td>34</td><td>38</td><td>2</td><td>21</td><td>95</td></tr>
+<tr><td>Exploit</td><td>0</td><td>10</td><td>1</td><td>23</td><td>34</td></tr>
 <tr><td>Fun</td><td>0</td><td>9</td><td>0</td><td>8</td><td>17</td></tr>
 <tr><td>Misc</td><td>0</td><td>47</td><td>3</td><td>72</td><td>122</td></tr>
 <tr><td>Movement</td><td>13</td><td>55</td><td>3</td><td>19</td><td>90</td></tr>
@@ -108,18 +108,18 @@
 <tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tillaura.md">Tillaura</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/timerrange.md">TimerRange</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tntaura.md">TNTAura</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tpaura.md">TpAura</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tpaura.md">TpAura</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/triggerbot.md">TriggerBot</a></td><td class="coded">coded</td><td>TriggerBot</td></tr>
 <tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/trollpotion.md">TrollPotion</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/wtap.md">WTap</a></td><td class="verified">verified</td><td>A local paired two-player test showed a server-observed sprint stop and restart and about 0.94 fewer blocks of forward movement at the matched mid-test sample; releasing W during the tap prevented sprint restart. Tested with an 8-tick release for observability; the 2-tick default remains untested. See docs/test-evidence/2026-10-30-wtap.md.</td></tr>
 <tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/abortbreaking.md">AbortBreaking</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antifire.md">Anti Fire</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antihunger.md">AntiHunger</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antihunger.md">AntiHunger</a></td><td class="partial">partial</td><td>Cancels the sprint-start packet so sprinting is invisible to the server; it does not alter other hunger sources. No gameplay test is recorded.</td></tr>
 <tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antipacket.md">AntiPacket</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antireduceddebuginfo.md">AntiReducedDebugInfo</a></td><td class="coded">coded</td><td>AntiReducedDebugInfo</td></tr>
 <tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bookbot.md">BookBot</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/colorsigns.md">ColorSigns</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/damage.md">Damage</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/damage.md">Damage</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/disabler.md">Disabler</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/dupe.md">Dupe</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Exploit</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastprojectile.md">FastProjectile</a></td><td class="backlog">backlog</td><td></td></tr>
