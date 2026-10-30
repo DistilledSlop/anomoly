@@ -23,6 +23,7 @@ import dev.anomoly.modules.AutoDrop;
 import dev.anomoly.modules.AutoWeapon;
 import dev.anomoly.modules.AutoSword;
 import dev.anomoly.modules.AutoClicker;
+import dev.anomoly.modules.AutoLeave;
 import dev.anomoly.modules.AutoBreak;
 import dev.anomoly.modules.AirJump;
 import dev.anomoly.modules.AutoSwitch;
@@ -59,7 +60,7 @@ import net.minecraft.client.Minecraft;
 
 public final class ModuleManager {
     private final List<Module> modules = List.of(
-        new AutoWeapon(), new AutoSword(), new AutoClicker(), new TriggerBot(), new KillAura(), new SpearAssist(), new Reach(),
+        new AutoWeapon(), new AutoSword(), new AutoClicker(), new TriggerBot(), new KillAura(), new SpearAssist(), new Reach(), new AutoLeave(),
         new AutoArmor(), new AutoBowRelease(), new AutoGApple(), new AutoTotem(),
         new AutoSprint(), new AutoWalk(), new AutoJump(), new AirJump(),
         new AutoSneak(), new AutoRespawn(), new AutoEat(), new AutoFish(), new AntiAFK(), new AutoBreak(), new AutoSwitch(),
@@ -83,6 +84,7 @@ public final class ModuleManager {
     public void tick(Minecraft client) {
         if (client.player == null || client.level == null) return;
         for (Module module : modules) {
+            if (client.player == null || client.level == null) break;
             if (module.enabled()) module.tick(client);
         }
     }

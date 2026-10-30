@@ -1,5 +1,6 @@
 {
   "catalog": {
+    "autodisconnect": {"status": "coded", "module": "AutoLeave"},
     "triggerbot": {"status": "coded", "module": "TriggerBot"},
     "killaura": {"status": "coded", "module": "KillAura"},
     "reach": {"status": "coded", "module": "Reach"},

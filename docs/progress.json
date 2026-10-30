@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 626,
-    "coded": 54,
+    "backlog": 625,
+    "coded": 55,
     "partial": 3
   },
   "total": 683,
@@ -731,8 +731,8 @@
       "id": "autodisconnect",
       "name": "AutoLeave",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "AutoLeave",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autodisconnect.md"
     },
