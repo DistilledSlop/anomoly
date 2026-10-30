@@ -129,7 +129,8 @@
     "breakdelay": {"status": "coded", "module": "FastBreak"},
     "nohurtcam": {"status": "coded", "module": "NoHurtCam"},
     "fullbright": {"status": "coded", "module": "Fullbright"},
-    "radar": {"status": "coded", "module": "PlayerRadar"}
+    "radar": {"status": "coded", "module": "PlayerRadar"},
+    "inventorycleaner": {"status": "verified", "module": "InventoryCleaner", "note": "On a local vanilla 26.3 server, Inventory Cleaner sorted a sword, food, and blocks into configured hotbar slots; merged partial stone stacks; discarded blacklisted rotten flesh and non-whitelisted dirt; replaced a wooden sword with a netherite sword; moved a shield to offhand; and reduced a protected hotbar stack to a 32-block cap. The cap and filter also worked with the inventory screen open, while an ignored hotbar slot stayed untouched. See docs/test-evidence/2026-10-30-inventorycleaner.md. Container screens, all category choices and caps, and third-party anticheats remain untested."}
   },
   "additions": [
     {"id": "anomoly_spear_assist", "name": "Spear Assist", "category": "Combat", "status": "coded", "module": "SpearAssist", "doc": "hacks/spear-assist.md"}

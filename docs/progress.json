@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 552,
-    "verified": 62,
+    "backlog": 551,
+    "verified": 63,
     "coded": 68,
     "partial": 1
   },
@@ -3153,9 +3153,9 @@
       "id": "inventorycleaner",
       "name": "InventoryCleaner",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "InventoryCleaner",
+      "note": "On a local vanilla 26.3 server, Inventory Cleaner sorted a sword, food, and blocks into configured hotbar slots; merged partial stone stacks; discarded blacklisted rotten flesh and non-whitelisted dirt; replaced a wooden sword with a netherite sword; moved a shield to offhand; and reduced a protected hotbar stack to a 32-block cap. The cap and filter also worked with the inventory screen open, while an ignored hotbar slot stayed untouched. See docs/test-evidence/2026-10-30-inventorycleaner.md. Container screens, all category choices and caps, and third-party anticheats remain untested.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/inventorycleaner.md"
     },
     {
