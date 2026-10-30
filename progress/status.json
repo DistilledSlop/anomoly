@@ -322,7 +322,19 @@
     "middleclick": {"status": "coded", "module": "MiddleClick", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
     "middleclickaction": {"status": "coded", "module": "MiddleClick", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
     "snaptap": {"status": "coded", "module": "SnapTap", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
-    "tapemouse": {"status": "coded", "module": "AutoClicker", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."}
+    "tapemouse": {"status": "coded", "module": "AutoClicker", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "abortbreaking": {"status": "coded", "module": "AbortBreaking", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "autodisable": {"status": "coded", "module": "AutoDisable", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "projectilepuncher": {"status": "coded", "module": "ProjectilePuncher", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "cityesp": {"status": "coded", "module": "CityEsp", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "targetstrafe": {"status": "coded", "module": "TargetStrafe", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "portalgui": {"status": "coded", "module": "PortalMenu", "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded."},
+    "portalinventory": {"status": "coded", "module": "PortalMenu", "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded."},
+    "portals": {"status": "coded", "module": "PortalMenu", "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded."},
+    "arrowdodge": {"status": "coded", "module": "AutoDodge", "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded."},
+    "smoothaim": {"status": "coded", "module": "AimAssist", "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded."},
+    "morecarry": {"status": "coded", "module": "XCarry", "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded."},
+    "fucker": {"status": "partial", "module": "Nuker", "note": "Nuker's whitelist-only block list can target specific blocks such as beds; there is no separate Fucker preset, and no gameplay test is recorded."}
   },
   "additions": [
     {"id": "anomoly_spear_assist", "name": "Spear Assist", "category": "Combat", "status": "coded", "module": "SpearAssist", "doc": "hacks/spear-assist.md"}

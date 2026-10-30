@@ -258,6 +258,11 @@ import dev.anomoly.modules.AutoEZ;
 import dev.anomoly.modules.KillStats;
 import dev.anomoly.modules.MiddleClick;
 import dev.anomoly.modules.SnapTap;
+import dev.anomoly.modules.AbortBreaking;
+import dev.anomoly.modules.AutoDisable;
+import dev.anomoly.modules.ProjectilePuncher;
+import dev.anomoly.modules.CityEsp;
+import dev.anomoly.modules.TargetStrafe;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -389,6 +394,11 @@ public final class ModuleManager {
         new KillStats(),
         new MiddleClick(),
         new SnapTap(),
+        new AbortBreaking(),
+        new AutoDisable(),
+        new ProjectilePuncher(),
+        new CityEsp(),
+        new TargetStrafe(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 

@@ -1,10 +1,10 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 359,
+    "coded": 247,
     "verified": 84,
-    "coded": 236,
-    "partial": 4
+    "backlog": 347,
+    "partial": 5
   },
   "total": 683,
   "features": [
@@ -12,9 +12,9 @@
       "id": "abortbreaking",
       "name": "AbortBreaking",
       "category": "Exploit",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "AbortBreaking",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/abortbreaking.md"
     },
     {
@@ -471,9 +471,9 @@
       "id": "arrowdodge",
       "name": "Arrow Dodge",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "AutoDodge",
+      "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/arrowdodge.md"
     },
     {
@@ -723,9 +723,9 @@
       "id": "autodisable",
       "name": "AutoDisable",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "AutoDisable",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autodisable.md"
     },
     {
@@ -1830,9 +1830,9 @@
       "id": "cityesp",
       "name": "City Esp",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "CityEsp",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/cityesp.md"
     },
     {
@@ -2766,9 +2766,9 @@
       "id": "fucker",
       "name": "Fucker",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "Nuker",
+      "note": "Nuker's whitelist-only block list can target specific blocks such as beds; there is no separate Fucker preset, and no gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fucker.md"
     },
     {
@@ -3756,9 +3756,9 @@
       "id": "morecarry",
       "name": "MoreCarry",
       "category": "Exploit",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "XCarry",
+      "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/morecarry.md"
     },
     {
@@ -4548,18 +4548,18 @@
       "id": "portalgui",
       "name": "PortalGui",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "PortalMenu",
+      "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/portalgui.md"
     },
     {
       "id": "portalinventory",
       "name": "PortalInventory",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "PortalMenu",
+      "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/portalinventory.md"
     },
     {
@@ -4575,9 +4575,9 @@
       "id": "portals",
       "name": "Portals",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "PortalMenu",
+      "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/portals.md"
     },
     {
@@ -4638,9 +4638,9 @@
       "id": "projectilepuncher",
       "name": "ProjectilePuncher",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "ProjectilePuncher",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/projectilepuncher.md"
     },
     {
@@ -5124,9 +5124,9 @@
       "id": "smoothaim",
       "name": "SmoothAim",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "AimAssist",
+      "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/smoothaim.md"
     },
     {
@@ -5448,9 +5448,9 @@
       "id": "targetstrafe",
       "name": "TargetStrafe",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "TargetStrafe",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/targetstrafe.md"
     },
     {
