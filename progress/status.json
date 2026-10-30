@@ -1,5 +1,6 @@
 {
   "catalog": {
+    "autoreconnect": {"status": "coded", "module": "AutoReconnect"},
     "nopush": {"status": "coded", "module": "NoPush"},
     "velocity": {"status": "coded", "module": "Velocity"},
     "autodisconnect": {"status": "coded", "module": "AutoLeave"},

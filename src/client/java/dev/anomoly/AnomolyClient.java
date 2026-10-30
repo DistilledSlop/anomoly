@@ -7,6 +7,7 @@ import dev.anomoly.gui.ClickGuiScreen;
 import dev.anomoly.gui.FallbackClickGuiScreen;
 import dev.anomoly.gui.ImGuiRenderer;
 import dev.anomoly.profile.ProfileCollector;
+import dev.anomoly.modules.AutoReconnect;
 import dev.anomoly.setting.Setting;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -49,6 +50,7 @@ public final class AnomolyClient implements ClientModInitializer {
             PROFILE.tick(client);
         });
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
+            MODULES.get(AutoReconnect.class).tickDisconnected(client);
             if (client.gui.screen() instanceof ClickGuiScreen
                 && (ImGuiRenderer.failed() || !ImGuiRenderer.supported())) {
                 client.gui.setScreen(new FallbackClickGuiScreen());

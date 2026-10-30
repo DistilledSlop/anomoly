@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 623,
-    "coded": 57,
+    "backlog": 622,
+    "coded": 58,
     "partial": 3
   },
   "total": 683,
@@ -965,8 +965,8 @@
       "id": "autoreconnect",
       "name": "Auto Reconnect",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "AutoReconnect",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoreconnect.md"
     },

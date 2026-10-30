@@ -12,6 +12,7 @@ import dev.anomoly.modules.AntiAFK;
 import dev.anomoly.modules.AutoEat;
 import dev.anomoly.modules.AutoFish;
 import dev.anomoly.modules.AutoRespawn;
+import dev.anomoly.modules.AutoReconnect;
 import dev.anomoly.modules.AutoSneak;
 import dev.anomoly.modules.AutoSprint;
 import dev.anomoly.modules.AutoWalk;
@@ -65,7 +66,7 @@ public final class ModuleManager {
         new AutoWeapon(), new AutoSword(), new AutoClicker(), new TriggerBot(), new KillAura(), new SpearAssist(), new Reach(), new AutoLeave(),
         new AutoArmor(), new AutoBowRelease(), new AutoGApple(), new AutoTotem(),
         new AutoSprint(), new AutoWalk(), new AutoJump(), new AirJump(),
-        new AutoSneak(), new AutoRespawn(), new AutoEat(), new AutoFish(), new AntiAFK(), new AutoBreak(), new AutoSwitch(),
+        new AutoSneak(), new AutoRespawn(), new AutoEat(), new AutoFish(), new AntiAFK(), new AutoBreak(), new AutoSwitch(), new AutoReconnect(),
         new AutoTool(), new AutoReplenish(),
         new AutoDeposit(), new AutoDrop(),
         new ChestStealer(), new ChestCleaner(),
