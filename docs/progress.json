@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 574,
-    "verified": 39,
+    "backlog": 573,
+    "verified": 40,
     "coded": 69,
     "partial": 1
   },
@@ -2172,9 +2172,9 @@
       "id": "durabilityalert",
       "name": "DurabilityAlert",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "DurabilityAlert",
+      "note": "On a local vanilla 26.3 server, a 9%-durability iron helmet caused one chat/log warning, did not repeat immediately, and warned again after a healthy helmet was observed before re-equipping the damaged one. A low-durability held pickaxe did not warn under the armor-only default. See docs/test-evidence/2026-10-30-durabilityalert.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/durabilityalert.md"
     },
     {

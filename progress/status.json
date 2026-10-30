@@ -99,6 +99,7 @@
     "nofog": {"status": "coded", "module": "NoFog"},
     "autobreak": {"status": "verified", "module": "AutoBreak", "note": "On a local vanilla 26.3 server, Auto Break mined a dirt block under the crosshair without a held attack key and left a replacement block intact after the player looked away. See docs/test-evidence/2026-10-30-autobreak.md."},
     "automine": {"status": "verified", "module": "AutoBreak", "note": "Auto Mine's targeted-block behavior is exposed as Auto Break. It mined a dirt block without held attack and stopped after the player looked away on a local vanilla 26.3 server. See docs/test-evidence/2026-10-30-autobreak.md."},
+    "durabilityalert": {"status": "verified", "module": "DurabilityAlert", "note": "On a local vanilla 26.3 server, a 9%-durability iron helmet caused one chat/log warning, did not repeat immediately, and warned again after a healthy helmet was observed before re-equipping the damaged one. A low-durability held pickaxe did not warn under the armor-only default. See docs/test-evidence/2026-10-30-durabilityalert.md."},
     "airjump": {"status": "coded", "module": "AirJump"},
     "autoswitch": {"status": "coded", "module": "AutoSwitch"},
     "fastladder": {"status": "coded", "module": "FastLadder"},
