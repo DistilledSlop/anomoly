@@ -153,6 +153,8 @@ public final class ImGuiRenderer {
         ImGui.sameLine();
         if (ImGui.collapsingHeader(module.name() + "##details-" + module.id())) {
             ImGui.textWrapped(module.description());
+            var key = AnomolyClient.moduleKey(module);
+            if (key != null) ImGui.textDisabled("Toggle key: " + key.getTranslatedKeyMessage().getString() + "  (Minecraft Controls)");
             for (Setting setting : module.settings()) {
                 if (setting instanceof BooleanSetting toggle) {
                     if (ImGui.checkbox(toggle.name() + "##" + module.id() + setting.id(), toggle.get())) {

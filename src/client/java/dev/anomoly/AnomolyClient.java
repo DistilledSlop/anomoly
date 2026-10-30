@@ -15,6 +15,8 @@ import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.AtomicMoveNotSupportedException;
 import java.nio.file.StandardCopyOption;
+import java.util.LinkedHashMap;
+import java.util.Map;
 import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.fabric.api.client.event.lifecycle.v1.ClientTickEvents;
 import net.fabricmc.fabric.api.client.keymapping.v1.KeyMappingHelper;
@@ -22,6 +24,7 @@ import net.fabricmc.fabric.api.client.networking.v1.ClientPlayConnectionEvents;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.KeyMapping;
 import net.minecraft.client.Minecraft;
+import net.minecraft.resources.Identifier;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -38,9 +41,11 @@ public final class AnomolyClient implements ClientModInitializer {
     private static KeyMapping panicKey;
     private static KeyMapping zoomKey;
     private static KeyMapping freeLookKey;
+    private static final Map<Module, KeyMapping> MODULE_KEYS = new LinkedHashMap<>();
 
     public static boolean zoomHeld() { return zoomKey != null && zoomKey.isDown(); }
     public static boolean freeLookHeld() { return freeLookKey != null && freeLookKey.isDown(); }
+    public static KeyMapping moduleKey(Module module) { return MODULE_KEYS.get(module); }
 
     @Override public void onInitializeClient() {
         loadConfig();
@@ -49,6 +54,12 @@ public final class AnomolyClient implements ClientModInitializer {
         panicKey = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.anomoly.panic", 77, KeyMapping.Category.MISC));
         zoomKey = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.anomoly.zoom", 6, KeyMapping.Category.MISC));
         freeLookKey = KeyMappingHelper.registerKeyMapping(new KeyMapping("key.anomoly.free_look", 11, KeyMapping.Category.MISC));
+        KeyMapping.Category moduleCategory = KeyMapping.Category.register(Identifier.fromNamespaceAndPath("anomoly", "modules"));
+        for (Module module : MODULES.all()) {
+            KeyMapping key = KeyMappingHelper.registerKeyMapping(new KeyMapping(
+                "key.anomoly.toggle." + module.id(), 0, moduleCategory));
+            MODULE_KEYS.put(module, key);
+        }
         ClientTickEvents.START_CLIENT_TICK.register(client -> {
             MODULES.tick(client);
             PROFILE.tick(client);
@@ -60,12 +71,21 @@ public final class AnomolyClient implements ClientModInitializer {
                 && (ImGuiRenderer.failed() || !ImGuiRenderer.supported())) {
                 client.gui.setScreen(new FallbackClickGuiScreen());
             }
-            while (panicKey.consumeClick()) MODULES.disableAll();
+            boolean panicPressed = false;
+            while (panicKey.consumeClick()) { MODULES.disableAll(); panicPressed = true; }
+            boolean guiPressed = false;
             while (guiKey.consumeClick()) {
+                guiPressed = true;
                 if (client.gui.screen() instanceof ClickGuiScreen || client.gui.screen() instanceof FallbackClickGuiScreen) {
                     client.gui.setScreen(null);
                 } else client.gui.setScreen(ImGuiRenderer.supported() && !ImGuiRenderer.failed()
                     ? new ClickGuiScreen() : new FallbackClickGuiScreen());
+            }
+            for (var entry : MODULE_KEYS.entrySet()) {
+                while (entry.getValue().consumeClick()) {
+                    if (!panicPressed && !guiPressed && client.player != null && client.gui.screen() == null)
+                        entry.getKey().setEnabled(!entry.getKey().enabled());
+                }
             }
         });
         ClientPlayConnectionEvents.JOIN.register((handler, sender, client) -> PROFILE.join(client));

@@ -197,6 +197,8 @@ public final class FallbackClickGuiScreen extends Screen {
         } else if (detail != null) {
             graphics.text(font, detail.name(), x, 16, 0xFF61EBC6);
             graphics.text(font, detail.description(), x, 76, 0xFFAAC0D0);
+            var key = AnomolyClient.moduleKey(detail);
+            if (key != null) graphics.text(font, "Toggle key: " + key.getTranslatedKeyMessage().getString(), x, 88, 0xFF8199A6);
             List<Setting> settings = detail.settings();
             int pageSize = Math.max(4, (height - 165) / 32);
             int start = Math.min(page * pageSize, Math.max(0, settings.size() - 1));

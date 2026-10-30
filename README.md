@@ -14,6 +14,8 @@ Use Java 25 and run `./gradlew build`. The distributable is `build/libs/anomoly-
 
 The Dear ImGui ClickGUI uses the OpenGL backend. Choose **OpenGL** in Minecraft's video settings before starting the game, or launch with `--graphicsBackend opengl`. On Vulkan, Anomoly opens a functional native settings screen with the same modules and profile controls. Right Shift opens or closes the GUI, End disables every module, C holds Zoom, and H holds Free Look when those modules are enabled. These keys appear in Minecraft's key controls.
 
+Every module also has an optional toggle key under **Minecraft Controls → Anomoly Modules**. They start unbound; assign a key in Controls, then use it in the world to toggle the module or trigger a one-shot module such as Pot. An expanded module in the ImGui ClickGUI shows its current key. The key mappings are saved by Minecraft in `options.txt`, while module states and settings remain in Anomoly's config. A [local input test](docs/test-evidence/2026-10-30-module-keys.md) confirms a bound Pot key performed the one-shot action.
+
 The ClickGUI has a category sidebar, module search, expandable settings, and a server profile page. Player Radar also shows nearby loaded players on the HUD with relative direction and distance.
 
 ![Anomoly ImGui ClickGUI showing the Movement category in a live Minecraft world](docs/screenshots/clickgui-opengl-960x600.png)
