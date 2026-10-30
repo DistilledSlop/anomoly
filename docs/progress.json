@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 563,
-    "verified": 51,
+    "backlog": 562,
+    "verified": 52,
     "coded": 68,
     "partial": 1
   },
@@ -912,9 +912,9 @@
       "id": "automount",
       "name": "Auto Mount",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "AutoMount",
+      "note": "On a local vanilla 26.3 server, Auto Mount boarded an oak boat, bamboo raft, minecart, tamed saddled horse, saddled pig and strider, camel, and tamed llama. It ignored a chest boat, unsaddled horse and pig, occluded boat, occupied boat, and a boat when both hands and every hotbar slot were full. See docs/test-evidence/2026-10-30-automount.md. Moving entities and third-party anticheats remain untested.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/automount.md"
     },
     {
