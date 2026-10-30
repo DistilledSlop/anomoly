@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 564,
-    "verified": 50,
+    "backlog": 563,
+    "verified": 51,
     "coded": 68,
     "partial": 1
   },
@@ -804,9 +804,9 @@
       "id": "autofarm",
       "name": "AutoFarm",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "AutoFarm",
+      "note": "On a local vanilla 26.3 server, Auto Farm harvested and replanted mature wheat, carrots, potatoes, beetroot, nether wart, and cocoa; picked sweet berries; mined melons and pumpkins; cut upper cane, cactus, bamboo, and kelp while preserving each base; planted empty farmland; advanced wheat from age 0 to 5 with one bone meal; and left wheat behind a wall untouched until exposed. See docs/test-evidence/2026-10-30-autofarm.md. Protected-region and third-party anticheat behavior remains untested.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autofarm.md"
     },
     {

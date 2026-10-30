@@ -4,7 +4,7 @@
 </head><body><h1>Anomoly hack progress</h1>
 <p>One tile per catalogued feature. Tile area is proportional to category size. Blue means coded and compiled, amber means partial, green means gameplay verified, and gray means backlog. Startup validation alone does not count as gameplay verification.</p>
 <img src="progress.svg" alt="Treemap of Anomoly hack progress">
-<p>68 coded, 1 partial, 50 gameplay verified, 564 backlog, 683 total. <a href="progress.json">Raw data</a>.</p>
+<p>68 coded, 1 partial, 51 gameplay verified, 563 backlog, 683 total. <a href="progress.json">Raw data</a>.</p>
 <h2>By category</h2><table><thead><tr><th>Category</th><th>Verified</th><th>Coded</th><th>Partial</th><th>Backlog</th><th>Total</th></tr></thead><tbody>
 <tr><td>Combat</td><td>34</td><td>12</td><td>1</td><td>48</td><td>95</td></tr>
 <tr><td>Exploit</td><td>0</td><td>3</td><td>0</td><td>31</td><td>34</td></tr>
@@ -13,7 +13,7 @@
 <tr><td>Movement</td><td>2</td><td>12</td><td>0</td><td>76</td><td>90</td></tr>
 <tr><td>Player</td><td>5</td><td>14</td><td>0</td><td>68</td><td>87</td></tr>
 <tr><td>Render</td><td>0</td><td>22</td><td>0</td><td>144</td><td>166</td></tr>
-<tr><td>World</td><td>9</td><td>3</td><td>0</td><td>60</td><td>72</td></tr>
+<tr><td>World</td><td>10</td><td>3</td><td>0</td><td>59</td><td>72</td></tr>
 </tbody></table>
 <h2>Features</h2><label for="filter">Filter features</label><br><input id="filter" type="search" placeholder="Search name, category, or status">
 <table id="features"><thead><tr><th>Category</th><th>Feature</th><th>Status</th><th>Implementation</th></tr></thead><tbody>
@@ -640,7 +640,7 @@
 <tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autosmelter.md">Auto Smelter</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autobuild.md">AutoBuild</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autodisable.md">AutoDisable</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autofarm.md">AutoFarm</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autofarm.md">AutoFarm</a></td><td class="verified">verified</td><td>On a local vanilla 26.3 server, Auto Farm harvested and replanted mature wheat, carrots, potatoes, beetroot, nether wart, and cocoa; picked sweet berries; mined melons and pumpkins; cut upper cane, cactus, bamboo, and kelp while preserving each base; planted empty farmland; advanced wheat from age 0 to 5 with one bone meal; and left wheat behind a wall untouched until exposed. See docs/test-evidence/2026-10-30-autofarm.md. Protected-region and third-party anticheat behavior remains untested.</td></tr>
 <tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/automobheal.md">AutoMobHeal</a></td><td class="verified">verified</td><td>On a local vanilla 26.3 server, Auto Mob Heal repaired an iron golem from 50 to 100 with two hotbar ingots, fed a tamed horse from 10 to 16 with offhand wheat, an owned wolf from 10 to 40 with offhand beef, and an owned cat from 4 to 8 with offhand cod. It preserved the selected slot, ignored a 99-health golem and another owner&#x27;s wolf, and respected a stone wall. See docs/test-evidence/2026-10-30-automobheal.md. Other mount variants and third-party anticheats remain untested.</td></tr>
 <tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autotunnel.md">AutoTunnel</a></td><td class="verified">verified</td><td>Auto Tunnel mined a 2x2x3 stone corridor, repaired two floor gaps, paused before lava, a chest, and overhead sand, resumed after sand removal, and placed a torch at the third segment on a local vanilla 26.3 server. See docs/test-evidence/2026-10-30-autotunnel.md. Longer tunnels and third-party anticheats remain untested.</td></tr>
 <tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/avoid.md">Avoid</a></td><td class="backlog">backlog</td><td></td></tr>
