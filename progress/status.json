@@ -19,7 +19,7 @@
     "autoarmor": {"status": "coded", "module": "AutoArmor"},
     "nofall": {"status": "coded", "module": "NoFall"},
     "safewalk": {"status": "coded", "module": "SafeWalk"},
-    "noslow": {"status": "partial", "module": "NoSlow", "note": "Removes item-use, block speed-factor and web-like stuck penalties; honey wall sliding remains."},
+    "noslow": {"status": "coded", "module": "NoSlow"},
     "step": {"status": "coded", "module": "Step"},
     "nobob": {"status": "coded", "module": "NoBob"},
     "autof5": {"status": "coded", "module": "AutoF5"},
