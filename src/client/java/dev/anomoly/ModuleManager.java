@@ -46,6 +46,7 @@ import dev.anomoly.modules.NoFov;
 import dev.anomoly.modules.NoFog;
 import dev.anomoly.modules.NoFireOverlay;
 import dev.anomoly.modules.NoOverlay;
+import dev.anomoly.modules.NoPush;
 import dev.anomoly.modules.PlayerRadar;
 import dev.anomoly.modules.PortalMenu;
 import dev.anomoly.modules.Reach;
@@ -69,7 +70,7 @@ public final class ModuleManager {
         new AutoDeposit(), new AutoDrop(),
         new ChestStealer(), new ChestCleaner(),
         new FastPlace(), new FastBreak(), new FastLadder(),
-        new NoFall(), new NoSlow(), new SafeWalk(), new Step(), new AntiWeb(), new FastFall(), new Velocity(), new MaxBrightness(), new NoHurtCam(), new NoBob(), new AutoF5(),
+        new NoFall(), new NoSlow(), new SafeWalk(), new Step(), new AntiWeb(), new FastFall(), new Velocity(), new NoPush(), new MaxBrightness(), new NoHurtCam(), new NoBob(), new AutoF5(),
         new FovOverride(), new NoFov(), new Zoom(), new CameraClip(), new CameraTweaks(),
         new NoFog(), new NoOverlay(), new NoFireOverlay(), new AntiOverlay(), new PlayerRadar(),
         new AntiReducedDebugInfo(), new PortalMenu(), new Twerk()

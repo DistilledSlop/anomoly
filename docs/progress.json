@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 624,
-    "coded": 56,
+    "backlog": 623,
+    "coded": 57,
     "partial": 3
   },
   "total": 683,
@@ -4097,8 +4097,8 @@
       "id": "nopush",
       "name": "NoPush",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "NoPush",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nopush.md"
     },
