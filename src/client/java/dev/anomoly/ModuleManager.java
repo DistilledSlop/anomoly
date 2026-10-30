@@ -23,6 +23,7 @@ import dev.anomoly.modules.AutoDrop;
 import dev.anomoly.modules.AutoWeapon;
 import dev.anomoly.modules.AutoSword;
 import dev.anomoly.modules.AutoClicker;
+import dev.anomoly.modules.AutoBreak;
 import dev.anomoly.modules.CameraClip;
 import dev.anomoly.modules.CameraTweaks;
 import dev.anomoly.modules.ChestStealer;
@@ -59,7 +60,7 @@ public final class ModuleManager {
         new AutoWeapon(), new AutoSword(), new AutoClicker(), new TriggerBot(), new KillAura(), new SpearAssist(), new Reach(),
         new AutoArmor(), new AutoBowRelease(), new AutoGApple(), new AutoTotem(),
         new AutoSprint(), new AutoWalk(), new AutoJump(),
-        new AutoSneak(), new AutoRespawn(), new AutoEat(), new AutoFish(), new AntiAFK(), new AutoTool(), new AutoReplenish(),
+        new AutoSneak(), new AutoRespawn(), new AutoEat(), new AutoFish(), new AntiAFK(), new AutoBreak(), new AutoTool(), new AutoReplenish(),
         new AutoDeposit(), new AutoDrop(),
         new ChestStealer(), new ChestCleaner(),
         new FastPlace(), new FastBreak(), new FastLadder(),

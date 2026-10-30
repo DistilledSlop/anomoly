@@ -46,6 +46,7 @@
     "cameraclip": {"status": "coded", "module": "CameraClip"},
     "cameratweaks": {"status": "coded", "module": "CameraTweaks"},
     "nofog": {"status": "coded", "module": "NoFog"},
+    "autobreak": {"status": "coded", "module": "AutoBreak"},
     "fastladder": {"status": "coded", "module": "FastLadder"},
     "fastplace": {"status": "coded", "module": "FastPlace"},
     "fastbreak": {"status": "coded", "module": "FastBreak"},

@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 629,
-    "coded": 51,
+    "backlog": 628,
+    "coded": 52,
     "partial": 3
   },
   "total": 683,
@@ -587,8 +587,8 @@
       "id": "autobreak",
       "name": "AutoBreak",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "AutoBreak",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autobreak.md"
     },
