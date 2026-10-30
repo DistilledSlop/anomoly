@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 558,
-    "verified": 56,
+    "backlog": 557,
+    "verified": 57,
     "coded": 68,
     "partial": 1
   },
@@ -606,9 +606,9 @@
       "id": "autobrewer",
       "name": "Auto Brewer",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "AutoBrewer",
+      "note": "On a local vanilla 26.3 server, Auto Brewer loaded and brewed three strength potions from water bottles, resumed a single awkward potion, left an unrelated healing potion untouched, brewed three splash weakness potions, and turned a preloaded splash weakness potion into a lingering potion while cleaning up the glass-bottle remainder. Its 44 chosen ingredient edges match the vanilla 26.3 recipe provider. See docs/test-evidence/2026-10-30-autobrewer.md. Custom recipes and third-party anticheats remain untested.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autobrewer.md"
     },
     {
