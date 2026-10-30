@@ -1,10 +1,10 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "coded": 275,
+    "coded": 281,
     "verified": 84,
-    "backlog": 318,
-    "partial": 6
+    "backlog": 311,
+    "partial": 7
   },
   "total": 683,
   "features": [
@@ -1767,9 +1767,9 @@
       "id": "chestaura",
       "name": "ChestAura",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "ChestAura",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/chestaura.md"
     },
     {
@@ -2604,9 +2604,9 @@
       "id": "feedaura",
       "name": "FeedAura",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "FeedAura",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/feedaura.md"
     },
     {
@@ -2640,9 +2640,9 @@
       "id": "flagcheck",
       "name": "FlagCheck",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "FlagCheck",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/flagcheck.md"
     },
     {
@@ -3765,9 +3765,9 @@
       "id": "moreknockback",
       "name": "MoreKnockback",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "SuperKnockback",
+      "note": "Shares SuperKnockback, which is itself only partly complete; no separate gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/moreknockback.md"
     },
     {
@@ -4233,9 +4233,9 @@
       "id": "notifier",
       "name": "Notifier",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Notifier",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/notifier.md"
     },
     {
@@ -4368,9 +4368,9 @@
       "id": "packetlogger",
       "name": "PacketLogger",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "PacketLogger",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/packetlogger.md"
     },
     {
@@ -4620,9 +4620,9 @@
       "id": "potionspoof",
       "name": "PotionSpoof",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "PotionSpoof",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/potionspoof.md"
     },
     {

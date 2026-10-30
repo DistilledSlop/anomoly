@@ -21,6 +21,11 @@ public abstract class ClientPacketListenerEventsMixin {
         ServerClock.timeUpdate();
     }
 
+    @Inject(method = "handleMovePlayer", at = @At("HEAD"))
+    private void anomoly$flagCheck(net.minecraft.network.protocol.game.ClientboundPlayerPositionPacket packet, CallbackInfo ci) {
+        AnomolyClient.MODULES.get(dev.anomoly.modules.FlagCheck.class).flagged(Minecraft.getInstance());
+    }
+
     @Inject(method = "handleEntityEvent", at = @At("HEAD"))
     private void anomoly$entityEvent(ClientboundEntityEventPacket packet, CallbackInfo ci) {
         Minecraft client = Minecraft.getInstance();

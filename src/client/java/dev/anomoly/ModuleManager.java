@@ -280,6 +280,12 @@ import dev.anomoly.modules.LagReducer;
 import dev.anomoly.modules.SoundBlocker;
 import dev.anomoly.modules.ChatColors;
 import dev.anomoly.modules.FancyChat;
+import dev.anomoly.modules.FeedAura;
+import dev.anomoly.modules.PotionSpoof;
+import dev.anomoly.modules.Notifier;
+import dev.anomoly.modules.FlagCheck;
+import dev.anomoly.modules.PacketLogger;
+import dev.anomoly.modules.ChestAura;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -433,6 +439,12 @@ public final class ModuleManager {
         new SoundBlocker(),
         new ChatColors(),
         new FancyChat(),
+        new FeedAura(),
+        new PotionSpoof(),
+        new Notifier(),
+        new FlagCheck(),
+        new PacketLogger(),
+        new ChestAura(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 

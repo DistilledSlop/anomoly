@@ -363,7 +363,14 @@
     "anticactus": {"status": "coded", "module": "AvoidHazards", "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded."},
     "liquids": {"status": "coded", "module": "LiquidInteract", "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded."},
     "vehiclecontrol": {"status": "coded", "module": "BoatFly", "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded."},
-    "terrainspeed": {"status": "partial", "module": "IceSpeed", "note": "TerrainSpeed's ice behavior is covered by IceSpeed; its ladder and water parts are the separate Fast Ladder and FastSwim modules."}
+    "terrainspeed": {"status": "partial", "module": "IceSpeed", "note": "TerrainSpeed's ice behavior is covered by IceSpeed; its ladder and water parts are the separate Fast Ladder and FastSwim modules."},
+    "feedaura": {"status": "coded", "module": "FeedAura", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "potionspoof": {"status": "coded", "module": "PotionSpoof", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "notifier": {"status": "coded", "module": "Notifier", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "flagcheck": {"status": "coded", "module": "FlagCheck", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "packetlogger": {"status": "coded", "module": "PacketLogger", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "chestaura": {"status": "coded", "module": "ChestAura", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "moreknockback": {"status": "partial", "module": "SuperKnockback", "note": "Shares SuperKnockback, which is itself only partly complete; no separate gameplay test is recorded."}
   },
   "additions": [
     {"id": "anomoly_spear_assist", "name": "Spear Assist", "category": "Combat", "status": "coded", "module": "SpearAssist", "doc": "hacks/spear-assist.md"}

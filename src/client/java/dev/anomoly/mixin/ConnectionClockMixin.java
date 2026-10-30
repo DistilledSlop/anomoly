@@ -14,5 +14,6 @@ public abstract class ConnectionClockMixin {
     @Inject(method = "channelRead0(Lio/netty/channel/ChannelHandlerContext;Lnet/minecraft/network/protocol/Packet;)V", at = @At("HEAD"))
     private void anomoly$packetReceived(ChannelHandlerContext context, Packet<?> packet, CallbackInfo ci) {
         ServerClock.packetReceived();
+        dev.anomoly.AnomolyClient.MODULES.get(dev.anomoly.modules.PacketLogger.class).received(packet);
     }
 }
