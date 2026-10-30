@@ -8,4 +8,7 @@ import org.spongepowered.asm.mixin.gen.Accessor;
 public interface MultiPlayerGameModeAccessor {
     @Accessor("destroyDelay") int anomoly$getDestroyDelay();
     @Accessor("destroyDelay") void anomoly$setDestroyDelay(int ticks);
+    @Accessor("destroyBlockPos") net.minecraft.core.BlockPos anomoly$getDestroyBlockPos();
+    @Accessor("destroyProgress") float anomoly$getDestroyProgress();
+    @Accessor("isDestroying") boolean anomoly$isDestroying();
 }

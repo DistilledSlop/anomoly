@@ -269,6 +269,9 @@ import dev.anomoly.modules.TimerIndicator;
 import dev.anomoly.modules.LogPosition;
 import dev.anomoly.modules.Vomit;
 import dev.anomoly.modules.HandDerp;
+import dev.anomoly.modules.Trajectories;
+import dev.anomoly.modules.BlockOutline;
+import dev.anomoly.modules.BreakIndicators;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -411,6 +414,9 @@ public final class ModuleManager {
         new LogPosition(),
         new Vomit(),
         new HandDerp(),
+        new Trajectories(),
+        new BlockOutline(),
+        new BreakIndicators(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 

@@ -1,9 +1,9 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "coded": 253,
+    "coded": 260,
     "verified": 84,
-    "backlog": 341,
+    "backlog": 334,
     "partial": 5
   },
   "total": 683,
@@ -1425,9 +1425,9 @@
       "id": "blockhighlight",
       "name": "BlockHighLight",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "BlockOutline",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blockhighlight.md"
     },
     {
@@ -1443,18 +1443,18 @@
       "id": "blockoutline",
       "name": "BlockOutline",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "BlockOutline",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blockoutline.md"
     },
     {
       "id": "blockselection",
       "name": "Block Selection",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "BlockOutline",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blockselection.md"
     },
     {
@@ -1596,27 +1596,27 @@
       "id": "breakesp",
       "name": "BreakESP",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "BreakIndicators",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/breakesp.md"
     },
     {
       "id": "breakhighlight",
       "name": "BreakHighLight",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "BreakIndicators",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/breakhighlight.md"
     },
     {
       "id": "breakindicators",
       "name": "Break Indicators",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "BreakIndicators",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/breakindicators.md"
     },
     {
@@ -5781,9 +5781,9 @@
       "id": "trajectories",
       "name": "Trajectories",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Trajectories",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/trajectories.md"
     },
     {

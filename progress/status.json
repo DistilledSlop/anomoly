@@ -340,7 +340,14 @@
     "timerindicator": {"status": "coded", "module": "TimerIndicator", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
     "logposition": {"status": "coded", "module": "LogPosition", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
     "vomit": {"status": "coded", "module": "Vomit", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
-    "handderp": {"status": "coded", "module": "HandDerp", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."}
+    "handderp": {"status": "coded", "module": "HandDerp", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "trajectories": {"status": "coded", "module": "Trajectories", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "blockoutline": {"status": "coded", "module": "BlockOutline", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "blockhighlight": {"status": "coded", "module": "BlockOutline", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "blockselection": {"status": "coded", "module": "BlockOutline", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "breakindicators": {"status": "coded", "module": "BreakIndicators", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "breakesp": {"status": "coded", "module": "BreakIndicators", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "breakhighlight": {"status": "coded", "module": "BreakIndicators", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."}
   },
   "additions": [
     {"id": "anomoly_spear_assist", "name": "Spear Assist", "category": "Combat", "status": "coded", "module": "SpearAssist", "doc": "hacks/spear-assist.md"}
