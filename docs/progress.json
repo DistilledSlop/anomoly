@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 551,
-    "verified": 63,
+    "backlog": 549,
+    "verified": 65,
     "coded": 68,
     "partial": 1
   },
@@ -2856,9 +2856,9 @@
       "id": "guimove",
       "name": "Gui Move",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "GuiMove",
+      "note": "On a local vanilla 26.3 server, GUI Move forwarded walking and jumping while the inventory was visible, rotated the view with arrow keys, and forwarded sideways movement while a chest stayed open. It respected a rebound forward key, preserved chat typing behavior, and stopped movement when disabled. See docs/test-evidence/2026-10-30-guimove.md. Optional sneak and All-screen modes and third-party anticheats remain untested.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/guimove.md"
     },
     {
@@ -3189,9 +3189,9 @@
       "id": "invwalk",
       "name": "InventoryMove",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "GuiMove",
+      "note": "Inventory Move is exposed as GUI Move. On a local vanilla 26.3 server, the open inventory and chest screens allowed normal movement, an inventory jump, and a rebound forward key; chat and a disabled control did not move. See docs/test-evidence/2026-10-30-guimove.md. Advanced server-side-close and packet-queue modes from other clients are not implemented.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/invwalk.md"
     },
     {
