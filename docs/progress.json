@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 589,
-    "verified": 23,
+    "backlog": 588,
+    "verified": 24,
     "coded": 70,
     "partial": 1
   },
@@ -5385,9 +5385,9 @@
       "id": "surround",
       "name": "Surround",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "Surround",
+      "note": "On a local vanilla 26.3 server, Surround placed all four cardinal obsidian blocks beside PlayerA, repaired a removed side from hotbar and offhand, restored the stone slot, and centered an offset player from (5.8,100,5.3) to (5.5,100,5.5) before placement. See docs/test-evidence/2026-10-30-surround.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/surround.md"
     },
     {
