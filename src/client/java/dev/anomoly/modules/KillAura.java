@@ -1,5 +1,6 @@
 package dev.anomoly.modules;
 
+import dev.anomoly.AnomolyClient;
 import dev.anomoly.Module;
 import dev.anomoly.setting.BooleanSetting;
 import dev.anomoly.setting.FloatSetting;
@@ -52,7 +53,8 @@ public final class KillAura extends Module {
         for (Entity entity : client.level.entitiesForRendering()) {
             if (!(entity instanceof LivingEntity living) || entity == client.player || !living.isAlive()) continue;
             if (!(living instanceof Player) && !targetMobs.get()) continue;
-            if (living instanceof Player player && !client.player.canHarmPlayer(player)) continue;
+            if (living instanceof Player player && (!client.player.canHarmPlayer(player)
+                || AnomolyClient.MODULES.get(AntiBot.class).reject(client, player))) continue;
             if (!throughWalls.get() && !client.player.hasLineOfSight(living)) continue;
             double distance = client.player.distanceToSqr(living);
             if (distance > best) continue;

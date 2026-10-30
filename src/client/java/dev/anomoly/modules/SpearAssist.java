@@ -1,5 +1,6 @@
 package dev.anomoly.modules;
 
+import dev.anomoly.AnomolyClient;
 import dev.anomoly.Module;
 import dev.anomoly.setting.BooleanSetting;
 import dev.anomoly.setting.FloatSetting;
@@ -64,6 +65,7 @@ public final class SpearAssist extends Module {
         for (Entity entity : client.level.entitiesForRendering()) {
             if (!(entity instanceof LivingEntity living) || entity == client.player || !PiercingWeapon.canHitEntity(client.player, living)) continue;
             if (!(living instanceof Player) && !targetMobs.get()) continue;
+            if (living instanceof Player player && AnomolyClient.MODULES.get(AntiBot.class).reject(client, player)) continue;
             if (!client.player.hasLineOfSight(living) || !attackRange.isInRange(client.player, living.getBoundingBox(), 0.0)) continue;
             Vec3 aim = living.getEyePosition().subtract(client.player.getEyePosition());
             float yaw = (float) (Math.toDegrees(Math.atan2(aim.z, aim.x)) - 90.0);

@@ -1,11 +1,14 @@
 package dev.anomoly.modules;
 
+import dev.anomoly.AnomolyClient;
 import dev.anomoly.Module;
 import dev.anomoly.mixin.MinecraftAccessor;
 import dev.anomoly.setting.BooleanSetting;
 import dev.anomoly.setting.FloatSetting;
 import net.minecraft.client.Minecraft;
 import net.minecraft.world.phys.BlockHitResult;
+import net.minecraft.world.phys.EntityHitResult;
+import net.minecraft.world.entity.player.Player;
 
 public final class AutoClicker extends Module {
     private final BooleanSetting attack = add(new BooleanSetting("attack", "Repeat attack", true));
@@ -24,7 +27,9 @@ public final class AutoClicker extends Module {
 
     @Override public void tick(Minecraft client) {
         if (client.gui.screen() != null || client.gameMode == null) { reset(); return; }
-        if (attack.get() && client.options.keyAttack.isDown() && !(client.hitResult instanceof BlockHitResult)) {
+        if (attack.get() && client.options.keyAttack.isDown() && !(client.hitResult instanceof BlockHitResult)
+            && !(client.hitResult instanceof EntityHitResult hit && hit.getEntity() instanceof Player player
+                && AnomolyClient.MODULES.get(AntiBot.class).reject(client, player))) {
             if (!attackHeld) { attackHeld = true; attackTicks = 0; }
             else if (++attackTicks >= interval(attackCps.get())) {
                 ((MinecraftAccessor)client).anomoly$startAttack();

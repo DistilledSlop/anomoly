@@ -1,9 +1,9 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 612,
+    "backlog": 611,
     "verified": 3,
-    "coded": 68
+    "coded": 69
   },
   "total": 683,
   "features": [
@@ -182,9 +182,9 @@
       "id": "antibot",
       "name": "AntiBot",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "AntiBot",
+      "note": "Conservative player-list, entity-age, and optional invisibility filters shared by automatic combat modules; detection against a real anticheat decoy is unverified.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antibot.md"
     },
     {

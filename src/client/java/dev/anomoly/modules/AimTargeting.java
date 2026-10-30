@@ -1,5 +1,6 @@
 package dev.anomoly.modules;
 
+import dev.anomoly.AnomolyClient;
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.Entity;
@@ -22,7 +23,8 @@ final class AimTargeting {
         for (Entity entity : client.level.entitiesForRendering()) {
             if (!(entity instanceof LivingEntity living) || entity == client.player || !living.isAlive()) continue;
             if (!(living instanceof Player) && !targetMobs) continue;
-            if (living instanceof Player player && !client.player.canHarmPlayer(player)) continue;
+            if (living instanceof Player player && (!client.player.canHarmPlayer(player)
+                || AnomolyClient.MODULES.get(AntiBot.class).reject(client, player))) continue;
             if (!targetInvisible && living.isInvisible()) continue;
             double distance = client.player.distanceToSqr(living);
             if (distance > maxDistance || !client.player.hasLineOfSight(living)) continue;
