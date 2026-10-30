@@ -1,0 +1,17 @@
+# Anchor Aura gameplay test — 2026-10-30
+
+Tested with Anomoly on a local vanilla Minecraft Java 26.3 server. PlayerC stood near `(80.5,100,50.5)` on a stone floor and targeted a stationary pig near `(85.5,100,50.5)` with 300 maximum health. Anchor Aura's `target_mobs` setting was enabled. The server console queried block states, inventory, selected item, and health. The positive survival probes used `max_self_damage=60`, `health_reserve=10`, and `min_advantage=0` so the exposed player could survive the blast; the safety probe restored the default 8, 4, and 2 values.
+
+| Probe | Server observation |
+| --- | --- |
+| No target | In creative mode, before the pig was summoned, the candidate anchor cell remained air. |
+| Initial full cycle | With a pig present, creative-mode Anchor Aura produced blasts that reduced its health from 300 to 158.91248; stone remained selected. Creative items were unlimited, so the survival probe below measured consumption. |
+| Anchor without glowstone | In survival with one anchor but no glowstone, the candidate cell remained air, the anchor remained in inventory, and the fresh pig stayed at 300 health. |
+| One anchor and one glowstone | Supplying one glowstone triggered one place, charge, and detonate cycle. Both items were consumed, stone was reselected, the pig fell from 300 to 240.30185 health, and PlayerC fell from 100 to 81.81968. The pig's health remained 240.30185 afterward with no material left. |
+| Existing charged anchor | With no anchor or glowstone item, a server-placed anchor at `(84,100,50)` with one charge was detonated. The block became air, the pig fell from 240.30185 to 180.6037, and PlayerC fell from 81.81968 to 63.63936. |
+| Existing uncharged anchor | With no anchor item, one glowstone in the hotbar, and an uncharged anchor at the same position, Anchor Aura consumed the glowstone and detonated the anchor. The pig fell from 180.6037 to 120.905556 and PlayerC fell from 63.63936 to 45.459038. |
+| Default safety | After resetting the floor and restoring the normal self-damage settings, one anchor and one glowstone remained untouched in the same exposed position. The pig stayed at 120.905556 health. |
+| Nether guard | With a pig and a clear floor in the Nether, the anchor cell stayed air, the pig stayed at 300 health, and the anchor and glowstone items remained in inventory. |
+| Offhand glowstone after a dimension change | After a one-second post-dimension-change action delay was added, PlayerC crossed from the Nether to the Overworld with one glowstone in the offhand and no anchor item. Anchor Aura charged and detonated an existing uncharged anchor; the offhand glowstone was consumed, the pig fell from 300 to 240.30185, and PlayerC fell from 100 to 78.81968. |
+
+Minecraft 26.3's anchor interaction charges an anchor with glowstone, then explodes a charged anchor when used in a dimension where it cannot set spawn. The scorer uses the vanilla radius-five damage formula and treats the anchor as absent during exposure sampling because the server removes it before the explosion. One earlier offhand setup immediately after a dimension transition lost its glowstone without a blast; a stable Overworld retry and the delayed transition probe both completed normally. Target armor and enchantment reductions, moving targets, offhand anchor placement, protected regions, and third-party anticheats still need separate gameplay tests.

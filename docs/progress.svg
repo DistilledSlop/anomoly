@@ -3,7 +3,7 @@
 <desc id="desc">Each tile is a catalogued feature. Blue is coded, amber partial, green gameplay verified, and gray backlog.</desc>
 <rect width="1200" height="720" rx="15" fill="#0b1220"/>
 <text x="20" y="37" fill="#e7f2ff" font-family="system-ui,sans-serif" font-size="25" font-weight="700">ANOMOLY / HACK PROGRESS</text>
-<text x="20" y="61" fill="#a9bacd" font-family="system-ui,sans-serif" font-size="14">70 coded · 1 partial · 35 gameplay verified · 577 backlog / 683 total</text>
+<text x="20" y="61" fill="#a9bacd" font-family="system-ui,sans-serif" font-size="14">70 coded · 1 partial · 36 gameplay verified · 576 backlog / 683 total</text>
 <rect x="14.00" y="84.00" width="281.82" height="621.00" rx="7" fill="#172235" stroke="#52657d" stroke-width="1"/>
 <text x="22.00" y="103.00" fill="#e7f2ff" font-family="system-ui,sans-serif" font-size="14" font-weight="600">Render  22/166 coded</text>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antioverlay.md" target="_blank">
@@ -1161,7 +1161,7 @@
 <rect x="336.62" y="397.89" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <rect x="299.82" y="435.38" width="369.63" height="269.62" rx="7" fill="#172235" stroke="#52657d" stroke-width="1"/>
-<text x="307.82" y="454.38" fill="#e7f2ff" font-family="system-ui,sans-serif" font-size="14" font-weight="600">Combat  44/95 coded</text>
+<text x="307.82" y="454.38" fill="#e7f2ff" font-family="system-ui,sans-serif" font-size="14" font-weight="600">Combat  45/95 coded</text>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/aimassist.md" target="_blank">
 <title>AimAssist — verified: In a local 26.3 multiplayer world, yaw/pitch changed from 0/0 to -14.04/11.72 while attack was held and a visible mob was within FOV. See docs/test-evidence/2026-10-30-local-gameplay.md.</title>
 <rect x="306.82" y="464.38" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
@@ -1170,181 +1170,181 @@
 <title>Aimbot — verified: In a local 26.3 multiplayer world, yaw/pitch changed from 0/0 to -26.57/10.82 toward a stationary visible mob, without an attack key press. See docs/test-evidence/2026-10-30-local-gameplay.md.</title>
 <rect x="334.33" y="464.38" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
 </a>
+<a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/anchoraura.md" target="_blank">
+<title>Anchor Aura — verified: On a local vanilla 26.3 server, Anchor Aura placed, charged, and detonated one respawn anchor with one glowstone, reducing a pig from 300 to 240.30185 health and consuming both items. It detonated a precharged anchor without items, charged then detonated an uncharged anchor using hotbar or offhand glowstone, and restored the selected stone slot. Default self-damage limits and the Nether dimension guard placed nothing. See docs/test-evidence/2026-10-30-anchoraura.md.</title>
+<rect x="361.84" y="464.38" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
+</a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antianvil.md" target="_blank">
 <title>Anti Anvil — verified: On a local vanilla 26.3 server, Anti Anvil built an obsidian support and roof at (5,102,5) before a falling anvil landed on top at (5,103,5), keeping PlayerA at 20 health. The disabled control left the roof empty and reduced health to 10; an off-axis anvil triggered no roof. See docs/test-evidence/2026-10-30-antianvil.md.</title>
-<rect x="361.84" y="464.38" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
+<rect x="389.35" y="464.38" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antibed.md" target="_blank">
 <title>Anti Bed — verified: On a local vanilla 26.3 server, Anti Bed placed string as tripwire at PlayerC&#x27;s feet and all four cardinal cells, restored stone, repaired a removed cell from offhand string, and stopped without material. A normal red-bed click failed while two target cells held tripwire, then placed the bed across those cells after the string was cleared. See docs/test-evidence/2026-10-30-antibed.md.</title>
-<rect x="389.35" y="464.38" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
+<rect x="416.86" y="464.38" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoanvil.md" target="_blank">
 <title>Auto Anvil — verified: On a local vanilla 26.3 server, Auto Anvil built a side scaffold and dropped an anvil on a helmeted player. A nearly broken helmet disappeared and health fell from 20 to 16; a fresh helmet took 3 durability damage from an offhand anvil and health fell from 20 to 14.096. No-helmet and no-anvil controls placed nothing. See docs/test-evidence/2026-10-30-autoanvil.md.</title>
-<rect x="416.86" y="464.38" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
+<rect x="444.37" y="464.38" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoexp.md" target="_blank">
 <title>Auto Exp — verified: On a local vanilla 26.3 server, six XP bottles repaired a Mending iron helmet from damage 100 to 24, then stopped; a non-Mending helmet consumed none. Six offhand bottles repaired a held Mending iron pickaxe from damage 100 to 20. See docs/test-evidence/2026-10-30-autoexp.md.</title>
-<rect x="444.37" y="464.38" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
+<rect x="471.88" y="464.38" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autobow.md" target="_blank">
 <title>AutoBow — verified: Auto Bow selected weapons from the hotbar, charged and fired a bow and crossbow, and threw a trident without manual input. Both shots killed pigs at 16 blocks; the trident reduced a pig to 2 health. Each run restored the stone slot. See docs/test-evidence/2026-10-30-autobow.md. Reduced bow charge, pre-charged crossbows, and moving targets remain untested.</title>
-<rect x="471.88" y="464.38" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
+<rect x="499.39" y="464.38" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autocrystalbase.md" target="_blank">
 <title>AutoCrystalBase — verified: On a local vanilla 26.3 server, Auto Crystal Base selected obsidian from the hotbar, placed one useful base at (8,100,5) beside an elevated target, kept stone selected, and Crystal Aura then used it to kill a 100-health pig. Its projected blast score refused a flat-floor base that would shield a ground-level target, and default survival settings refused a dangerous elevated setup. See docs/test-evidence/2026-10-30-autocrystalbase.md.</title>
-<rect x="499.39" y="464.38" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
+<rect x="526.90" y="464.38" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autododge.md" target="_blank">
 <title>AutoDodge — verified: On a local vanilla 26.3 server, a no-gravity arrow shot at a stationary survival player caused a 2.15-block Z sidestep and no health loss with Auto Dodge enabled; the paired disabled control dealt 1 damage and X knockback. With one lateral floor missing, the dodge chose the safe side; with both sides missing, it refused the dodge. See docs/test-evidence/2026-10-30-autododge.md.</title>
-<rect x="526.90" y="464.38" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
+<rect x="554.41" y="464.38" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autopearl.md" target="_blank">
 <title>AutoPearl — verified: In a local two-player 26.3 test, AutoPearl followed another player&#x27;s ender pearl, consumed one pearl, landed about 1.4 blocks from that player, and restored the original hotbar slot. See docs/test-evidence/2026-10-30-autopearl.md.</title>
-<rect x="554.41" y="464.38" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
+<rect x="581.92" y="464.38" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autopot.md" target="_blank">
 <title>AutoPot — verified: AutoPotion implements the AutoPot behavior: at 8 health, it selected and threw one healing splash potion, raising health to 16.5 and restoring the stone slot. Harming potions were ignored. See docs/test-evidence/2026-10-30-potions.md.</title>
-<rect x="581.92" y="464.38" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
+<rect x="609.43" y="464.38" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autopotion.md" target="_blank">
 <title>AutoPotion — verified: At 8 health, AutoPotion selected and threw one healing splash potion, raising health to 16.5 and restoring the stone slot. Harming potions were ignored. See docs/test-evidence/2026-10-30-potions.md.</title>
-<rect x="609.43" y="464.38" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
+<rect x="636.95" y="464.38" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autorod.md" target="_blank">
 <title>AutoRod — verified: With stone selected and a rod in the next hotbar slot, Auto Rod repeatedly hooked and reeled a stationary pig six blocks away. Server rod damage reached 30, consistent with six entity-hook reels at five durability each; the stone slot was restored. See docs/test-evidence/2026-10-30-autorod.md.</title>
-<rect x="636.95" y="464.38" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
+<rect x="306.82" y="493.83" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoshoot.md" target="_blank">
 <title>AutoShoot — verified: With stone selected and snowballs in the next hotbar slot, Auto Shoot selected, aimed, and threw without user input until it killed a stationary blaze at about 12 blocks; see docs/test-evidence/2026-10-30-autoshoot.md.</title>
-<rect x="306.82" y="493.83" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
+<rect x="334.33" y="493.83" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autosoup.md" target="_blank">
 <title>AutoSoup — verified: At 10 health and 11 food on a vanilla 26.3 server, Auto Soup selected mushroom stew, consumed it into a bowl, raised food to 17, and restored the stone slot. Stock soup did not directly heal; soup PvP plugin behavior remains untested. See docs/test-evidence/2026-10-30-soup.md.</title>
-<rect x="334.33" y="493.83" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
+<rect x="361.84" y="493.83" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autotrap.md" target="_blank">
 <title>AutoTrap — verified: On a local vanilla 26.3 server, Auto Trap built a 12-block obsidian perimeter plus roof around a stationary pig, placed cobweb, fire, and lava in its occupied feet cell in separate runs, restored the selected stone slot, and left a wall gap open after the target was removed. See docs/test-evidence/2026-10-30-autotrap.md.</title>
-<rect x="361.84" y="493.83" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
+<rect x="389.35" y="493.83" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bowaimbot.md" target="_blank">
 <title>Bow Aimbot — verified: Bow and arrow-loaded crossbow modes each hit and killed a stationary pig at about 16 blocks in a local 26.3 multiplayer world. Firework mode remains untested; see docs/test-evidence/2026-10-30-projectile-aim.md.</title>
-<rect x="389.35" y="493.83" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
+<rect x="416.86" y="493.83" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bowspam.md" target="_blank">
 <title>Bow Spam — verified: On a local vanilla 26.3 server, six seconds of held use consumed 15 arrows with an 8-tick bow charge; seven seconds consumed four arrows with a crossbow. See docs/test-evidence/2026-10-30-bowspam.md.</title>
-<rect x="416.86" y="493.83" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
+<rect x="444.37" y="493.83" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/criticals.md" target="_blank">
 <title>Criticals — verified: A local vanilla 26.3 server recorded an iron sword hit on a stationary pig for 9 damage with Criticals, versus 6 without it; a low ceiling fell back to 6 damage. Combined with Kill Aura, one isolated hit dealt 9 damage after fixing its early punch packet. See docs/test-evidence/2026-10-30-criticals.md.</title>
-<rect x="444.37" y="493.83" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
+<rect x="471.88" y="493.83" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/crystalaura.md" target="_blank">
 <title>CrystalAura — verified: On a local vanilla 26.3 server, Crystal Aura placed and detonated end crystals from hotbar and offhand against a 100-health pig: the first explosion left 25.208336 health, matching its 74.79 raw-damage estimate; a second detonation killed the pig after the player returned to range. Default survival safety settings placed nothing in the same exposed setup. See docs/test-evidence/2026-10-30-crystalaura.md.</title>
-<rect x="471.88" y="493.83" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
+<rect x="499.39" y="493.83" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/holefill.md" target="_blank">
 <title>HoleFiller — verified: On a local vanilla 26.3 server, Hole Filler placed obsidian at (8,100,5) in a visible safe hole near a pig and restored the selected stone slot. It left the hole empty without a target, with one ordinary-stone wall, and while a pig occupied it. See docs/test-evidence/2026-10-30-holefiller.md.</title>
-<rect x="499.39" y="493.83" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
+<rect x="526.90" y="493.83" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/keepsprint.md" target="_blank">
 <title>KeepSprint — verified: A local two-player 26.3 test showed the server&#x27;s sprint predicate true after a hit with Keep Sprint enabled; the paired control went from true before the hit to false afterward. Local horizontal velocity restoration is implemented but not separately measured. See docs/test-evidence/2026-10-30-sprint-combat.md.</title>
-<rect x="526.90" y="493.83" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
+<rect x="554.41" y="493.83" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/pot.md" target="_blank">
 <title>Pot — verified: The one-shot hotbar swap threw healing and poison splash potions and a slowness lingering potion on a local 26.3 server, restored stone, and disabled itself. See docs/test-evidence/2026-10-30-pot.md.</title>
-<rect x="554.41" y="493.83" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
+<rect x="581.92" y="493.83" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/projectileaimbot.md" target="_blank">
 <title>ProjectileAimbot — verified: Snowball mode hit a stationary blaze at about 12 blocks, reducing health from 20 to 17. Other weapon modes remain untested in gameplay; see docs/test-evidence/2026-10-30-projectile-aim.md.</title>
-<rect x="581.92" y="493.83" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
+<rect x="609.43" y="493.83" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/selfanvil.md" target="_blank">
 <title>Self Anvil — verified: On a local vanilla 26.3 server, Self Anvil refused an open floor, then built two support blocks and dropped an anvil into PlayerC&#x27;s one-block obsidian hole while restoring stone. At 9.33 health it placed nothing; a cobweb in the feet cell also blocked placement. Removing the cobweb let an anvil land, consuming the item and reducing health from 18 to 16. Offhand use was verified separately. See docs/test-evidence/2026-10-30-selfanvil.md.</title>
-<rect x="609.43" y="493.83" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
+<rect x="636.95" y="493.83" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/selftrap.md" target="_blank">
 <title>Self Trap — verified: On a local vanilla 26.3 server, Self Trap built a three-block north support column and an obsidian roof at (20,102,20), restored the selected stone slot, rebuilt the roof from offhand obsidian after removal, and left it empty without obsidian. See docs/test-evidence/2026-10-30-selftrap.md.</title>
-<rect x="636.95" y="493.83" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
+<rect x="306.82" y="523.29" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/selfweb.md" target="_blank">
 <title>Self Web — verified: On a local vanilla 26.3 server, Self Web placed a cobweb in PlayerC&#x27;s feet cell from the hotbar, restored the selected stone slot, replaced a removed web from offhand, and left the cell air after both sources were cleared. See docs/test-evidence/2026-10-30-selfweb.md.</title>
-<rect x="306.82" y="523.29" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
+<rect x="334.33" y="523.29" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/soup.md" target="_blank">
 <title>Soup — verified: A K key toggle selected and consumed mushroom stew from hotbar slot 3, raised food from 8 to 14, restored stone in slot 0, and disabled the one-shot module on a vanilla 26.3 server. See docs/test-evidence/2026-10-30-soup.md.</title>
-<rect x="334.33" y="523.29" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
+<rect x="361.84" y="523.29" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/sprintreset.md" target="_blank">
 <title>SprintReset — verified: A local two-player 26.3 test showed the server&#x27;s sprint predicate true immediately after a player hit with Sprint Reset enabled, versus false in the paired control. See docs/test-evidence/2026-10-30-sprint-combat.md.</title>
-<rect x="361.84" y="523.29" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
+<rect x="389.35" y="523.29" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/surround.md" target="_blank">
 <title>Surround — verified: On a local vanilla 26.3 server, Surround placed all four cardinal obsidian blocks beside PlayerA, repaired a removed side from hotbar and offhand, restored the stone slot, and centered an offset player from (5.8,100,5.3) to (5.5,100,5.5) before placement. See docs/test-evidence/2026-10-30-surround.md.</title>
-<rect x="389.35" y="523.29" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
+<rect x="416.86" y="523.29" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/throwpot.md" target="_blank">
 <title>ThrowPot — verified: A low-health toggle consumed two healing potions and restored stone; a higher-health toggle consumed one. The module disabled itself after each sequence. See docs/test-evidence/2026-10-30-potions.md.</title>
-<rect x="416.86" y="523.29" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
+<rect x="444.37" y="523.29" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/wtap.md" target="_blank">
 <title>WTap — verified: A local paired two-player test showed a server-observed sprint stop and restart and about 0.94 fewer blocks of forward movement at the matched mid-test sample; releasing W during the tap prevented sprint restart. Tested with an 8-tick release for observability; the 2-tick default remains untested. See docs/test-evidence/2026-10-30-wtap.md.</title>
-<rect x="444.37" y="523.29" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
+<rect x="471.88" y="523.29" width="25.51" height="27.45" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antibot.md" target="_blank">
 <title>AntiBot — coded: Conservative player-list, entity-age, and optional invisibility filters shared by automatic combat modules; detection against a real anticheat decoy is unverified.</title>
-<rect x="471.88" y="523.29" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
+<rect x="499.39" y="523.29" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autototem.md" target="_blank">
 <title>Auto Totem — coded</title>
-<rect x="499.39" y="523.29" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
+<rect x="526.90" y="523.29" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoarmor.md" target="_blank">
 <title>AutoArmor — coded</title>
-<rect x="526.90" y="523.29" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
+<rect x="554.41" y="523.29" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autobowrelease.md" target="_blank">
 <title>AutoBowRelease — coded</title>
-<rect x="554.41" y="523.29" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
+<rect x="581.92" y="523.29" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoclicker.md" target="_blank">
 <title>AutoClicker — coded</title>
-<rect x="581.92" y="523.29" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
+<rect x="609.43" y="523.29" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autogapple.md" target="_blank">
 <title>AutoGApple — coded</title>
-<rect x="609.43" y="523.29" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
+<rect x="636.95" y="523.29" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autodisconnect.md" target="_blank">
 <title>AutoLeave — coded</title>
-<rect x="636.95" y="523.29" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
+<rect x="306.82" y="552.74" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autosword.md" target="_blank">
 <title>AutoSword — coded</title>
-<rect x="306.82" y="552.74" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
+<rect x="334.33" y="552.74" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoweapon.md" target="_blank">
 <title>AutoWeapon — coded</title>
-<rect x="334.33" y="552.74" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
+<rect x="361.84" y="552.74" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/killaura.md" target="_blank">
 <title>KillAura — coded</title>
-<rect x="361.84" y="552.74" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
+<rect x="389.35" y="552.74" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/hacks/spear-assist.md" target="_blank">
 <title>Spear Assist — coded</title>
-<rect x="389.35" y="552.74" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
+<rect x="416.86" y="552.74" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/triggerbot.md" target="_blank">
 <title>TriggerBot — coded</title>
-<rect x="416.86" y="552.74" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
+<rect x="444.37" y="552.74" width="25.51" height="27.45" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/superknockback.md" target="_blank">
 <title>SuperKnockback — partial: The sprint bonus is gameplay verified: a target player moved about 3.62 blocks after the hit versus 1.99 blocks in a paired unsprinted control, with equal damage. Vanilla&#x27;s damage cooldown still blocks knockback during immune hits; that catalog behavior remains unresolved. See docs/test-evidence/2026-10-30-sprint-combat.md.</title>
-<rect x="444.37" y="552.74" width="25.51" height="27.45" rx="2" fill="#f2b544"/>
-</a>
-<a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/anchoraura.md" target="_blank">
-<title>Anchor Aura — backlog</title>
-<rect x="471.88" y="552.74" width="25.51" height="27.45" rx="2" fill="#344054"/>
+<rect x="471.88" y="552.74" width="25.51" height="27.45" rx="2" fill="#f2b544"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antilegitmiss.md" target="_blank">
 <title>AntiLegitMiss — backlog</title>

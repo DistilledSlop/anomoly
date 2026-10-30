@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 577,
-    "verified": 35,
+    "backlog": 576,
+    "verified": 36,
     "coded": 70,
     "partial": 1
   },
@@ -75,9 +75,9 @@
       "id": "anchoraura",
       "name": "Anchor Aura",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "AnchorAura",
+      "note": "On a local vanilla 26.3 server, Anchor Aura placed, charged, and detonated one respawn anchor with one glowstone, reducing a pig from 300 to 240.30185 health and consuming both items. It detonated a precharged anchor without items, charged then detonated an uncharged anchor using hotbar or offhand glowstone, and restored the selected stone slot. Default self-damage limits and the Nether dimension guard placed nothing. See docs/test-evidence/2026-10-30-anchoraura.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/anchoraura.md"
     },
     {
