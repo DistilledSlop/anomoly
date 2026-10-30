@@ -71,6 +71,7 @@
   "key.anomoly.toggle.block_bounce": "Toggle Anomoly BlockBounce",
   "key.anomoly.toggle.parkour": "Toggle Anomoly Parkour",
   "key.anomoly.toggle.high_jump": "Toggle Anomoly HighJump",
+  "key.anomoly.toggle.reverse_step": "Toggle Anomoly ReverseStep",
   "key.anomoly.toggle.auto_sneak": "Toggle Anomoly Auto Sneak",
   "key.anomoly.toggle.auto_respawn": "Toggle Anomoly Auto Respawn",
   "key.anomoly.toggle.auto_eat": "Toggle Anomoly Auto Eat",

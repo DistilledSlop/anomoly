@@ -3,7 +3,7 @@
 <desc id="desc">Each tile is a catalogued feature. Blue is coded, amber partial, green gameplay verified, and gray backlog.</desc>
 <rect width="1200" height="720" rx="15" fill="#0b1220"/>
 <text x="20" y="37" fill="#e7f2ff" font-family="system-ui,sans-serif" font-size="25" font-weight="700">ANOMOLY / HACK PROGRESS</text>
-<text x="20" y="61" fill="#a9bacd" font-family="system-ui,sans-serif" font-size="14">68 coded · 1 partial · 83 gameplay verified · 531 backlog / 683 total</text>
+<text x="20" y="61" fill="#a9bacd" font-family="system-ui,sans-serif" font-size="14">68 coded · 1 partial · 84 gameplay verified · 530 backlog / 683 total</text>
 <rect x="14.00" y="84.00" width="281.82" height="621.00" rx="7" fill="#172235" stroke="#52657d" stroke-width="1"/>
 <text x="22.00" y="103.00" fill="#e7f2ff" font-family="system-ui,sans-serif" font-size="14" font-weight="600">Render  22/166 coded</text>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antioverlay.md" target="_blank">
@@ -1543,7 +1543,7 @@
 <rect x="389.35" y="670.55" width="25.51" height="27.45" rx="2" fill="#344054"/>
 </a>
 <rect x="673.46" y="84.00" width="258.65" height="364.75" rx="7" fill="#172235" stroke="#52657d" stroke-width="1"/>
-<text x="681.46" y="103.00" fill="#e7f2ff" font-family="system-ui,sans-serif" font-size="14" font-weight="600">Movement  23/90 coded</text>
+<text x="681.46" y="103.00" fill="#e7f2ff" font-family="system-ui,sans-serif" font-size="14" font-weight="600">Movement  24/90 coded</text>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antibounce.md" target="_blank">
 <title>AntiBounce — verified: In three matched local vanilla 26.3 drops from y=106 onto a slime block, server position samples rebounded above y=103 with AntiBounce off, stayed at the landed y=101 with it on, and rebounded again after switching it off. See docs/test-evidence/2026-10-30-antibounce.md. Other bouncy blocks and third-party anticheats remain untested.</title>
 <rect x="680.46" y="113.00" width="25.41" height="31.08" rx="2" fill="#4bd598"/>
@@ -1588,248 +1588,248 @@
 <title>Parkour — verified: On a local vanilla 26.3 server, walking off a single-block platform fell below y=121 with Parkour off, while the enabled run rose to y=122.02 at the edge. With a landing path across a one-block gap, the player landed and stayed at y=121; walking on a continuous path kept y=121. See docs/test-evidence/2026-10-30-parkour.md. Sneaking and third-party anticheats remain untested.</title>
 <rect x="707.86" y="146.07" width="25.41" height="31.08" rx="2" fill="#4bd598"/>
 </a>
+<a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/reversestep.md" target="_blank">
+<title>ReverseStep — verified: Per-tick local vanilla 26.3 traces show a one-block drop took five movement ticks with the module off, one in Instant mode, two in Strict mode, and three in Accelerator mode. Gradual Instant descent used four ticks and kept the server connection. Slime, maximum-distance, and intentional-jump guards were checked. See docs/test-evidence/2026-10-30-reversestep.md. Other hazards and third-party anticheats remain untested.</title>
+<rect x="735.27" y="146.07" width="25.41" height="31.08" rx="2" fill="#4bd598"/>
+</a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/safewalk.md" target="_blank">
 <title>SafeWalk — verified: After registering its existing mixin, a local vanilla 26.3 server kept an Auto Walk player at y=100 and a fixed X position at an air edge with Safe Walk enabled and Scaffold disabled. See docs/test-evidence/2026-10-30-scaffold.md.</title>
-<rect x="735.27" y="146.07" width="25.41" height="31.08" rx="2" fill="#4bd598"/>
+<rect x="762.67" y="146.07" width="25.41" height="31.08" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/airjump.md" target="_blank">
 <title>AirJump — coded</title>
-<rect x="762.67" y="146.07" width="25.41" height="31.08" rx="2" fill="#49a8e8"/>
+<rect x="790.08" y="146.07" width="25.41" height="31.08" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiweb.md" target="_blank">
 <title>AntiWeb — coded</title>
-<rect x="790.08" y="146.07" width="25.41" height="31.08" rx="2" fill="#49a8e8"/>
+<rect x="817.48" y="146.07" width="25.41" height="31.08" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autojump.md" target="_blank">
 <title>Auto Jump — coded</title>
-<rect x="817.48" y="146.07" width="25.41" height="31.08" rx="2" fill="#49a8e8"/>
+<rect x="844.89" y="146.07" width="25.41" height="31.08" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastfall.md" target="_blank">
 <title>Fast Fall — coded</title>
-<rect x="844.89" y="146.07" width="25.41" height="31.08" rx="2" fill="#49a8e8"/>
+<rect x="872.29" y="146.07" width="25.41" height="31.08" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastladder.md" target="_blank">
 <title>FastLadder — coded</title>
-<rect x="872.29" y="146.07" width="25.41" height="31.08" rx="2" fill="#49a8e8"/>
+<rect x="899.70" y="146.07" width="25.41" height="31.08" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nofall.md" target="_blank">
 <title>NoFall — coded</title>
-<rect x="899.70" y="146.07" width="25.41" height="31.08" rx="2" fill="#49a8e8"/>
+<rect x="680.46" y="179.15" width="25.41" height="31.08" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noslow.md" target="_blank">
 <title>NoSlow — coded</title>
-<rect x="680.46" y="179.15" width="25.41" height="31.08" rx="2" fill="#49a8e8"/>
+<rect x="707.86" y="179.15" width="25.41" height="31.08" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autosneak.md" target="_blank">
 <title>Sneak — coded</title>
-<rect x="707.86" y="179.15" width="25.41" height="31.08" rx="2" fill="#49a8e8"/>
+<rect x="735.27" y="179.15" width="25.41" height="31.08" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/sprint.md" target="_blank">
 <title>Sprint — coded</title>
-<rect x="735.27" y="179.15" width="25.41" height="31.08" rx="2" fill="#49a8e8"/>
+<rect x="762.67" y="179.15" width="25.41" height="31.08" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/step.md" target="_blank">
 <title>Step — coded</title>
-<rect x="762.67" y="179.15" width="25.41" height="31.08" rx="2" fill="#49a8e8"/>
+<rect x="790.08" y="179.15" width="25.41" height="31.08" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/velocity.md" target="_blank">
 <title>Velocity — coded</title>
-<rect x="790.08" y="179.15" width="25.41" height="31.08" rx="2" fill="#49a8e8"/>
+<rect x="817.48" y="179.15" width="25.41" height="31.08" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/anchor.md" target="_blank">
 <title>Anchor — backlog</title>
-<rect x="817.48" y="179.15" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="844.89" y="179.15" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antihazard.md" target="_blank">
 <title>Anti Hazard — backlog</title>
-<rect x="844.89" y="179.15" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="872.29" y="179.15" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/anticactus.md" target="_blank">
 <title>AntiCactus — backlog</title>
-<rect x="872.29" y="179.15" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="899.70" y="179.15" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antilevitation.md" target="_blank">
 <title>AntiLevitation — backlog</title>
-<rect x="899.70" y="179.15" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="680.46" y="212.23" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antivoid.md" target="_blank">
 <title>AntiVoid — backlog</title>
-<rect x="680.46" y="212.23" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="707.86" y="212.23" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autowasp.md" target="_blank">
 <title>Auto Wasp — backlog</title>
-<rect x="707.86" y="212.23" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="735.27" y="212.23" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/avoidhazards.md" target="_blank">
 <title>AvoidHazards — backlog</title>
-<rect x="735.27" y="212.23" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="762.67" y="212.23" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blockwalk.md" target="_blank">
 <title>BlockWalk — backlog</title>
-<rect x="762.67" y="212.23" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="790.08" y="212.23" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/boatfly.md" target="_blank">
 <title>BoatFly — backlog</title>
-<rect x="790.08" y="212.23" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="817.48" y="212.23" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bunnyhop.md" target="_blank">
 <title>BunnyHop — backlog</title>
-<rect x="817.48" y="212.23" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="844.89" y="212.23" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/clicktp.md" target="_blank">
 <title>ClickTp — backlog</title>
-<rect x="844.89" y="212.23" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="872.29" y="212.23" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/clip.md" target="_blank">
 <title>Clip — backlog</title>
-<rect x="872.29" y="212.23" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="899.70" y="212.23" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/dolphin.md" target="_blank">
 <title>Dolphin — backlog</title>
-<rect x="899.70" y="212.23" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="680.46" y="245.30" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytraboost.md" target="_blank">
 <title>Elytra Boost — backlog</title>
-<rect x="680.46" y="245.30" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="707.86" y="245.30" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytra.md" target="_blank">
 <title>Elytra+ — backlog</title>
-<rect x="707.86" y="245.30" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="735.27" y="245.30" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytrafly.md" target="_blank">
 <title>ElytraFly — backlog</title>
-<rect x="735.27" y="245.30" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="762.67" y="245.30" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytrarecast.md" target="_blank">
 <title>ElytraRecast — backlog</title>
-<rect x="762.67" y="245.30" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="790.08" y="245.30" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytratweaks.md" target="_blank">
 <title>ElytraTweaks — backlog</title>
-<rect x="790.08" y="245.30" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="817.48" y="245.30" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/entitycontrol.md" target="_blank">
 <title>EntityControl — backlog</title>
-<rect x="817.48" y="245.30" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="844.89" y="245.30" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/entityspeed.md" target="_blank">
 <title>EntitySpeed — backlog</title>
-<rect x="844.89" y="245.30" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="872.29" y="245.30" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/extendedfirework.md" target="_blank">
 <title>ExtendedFirework — backlog</title>
-<rect x="872.29" y="245.30" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="899.70" y="245.30" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/extraelytra.md" target="_blank">
 <title>ExtraElytra — backlog</title>
-<rect x="899.70" y="245.30" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="680.46" y="278.38" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastclimb.md" target="_blank">
 <title>Fast Climb — backlog</title>
-<rect x="680.46" y="278.38" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="707.86" y="278.38" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastaccel.md" target="_blank">
 <title>FastAccel — backlog</title>
-<rect x="707.86" y="278.38" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="735.27" y="278.38" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastswim.md" target="_blank">
 <title>FastSwim — backlog</title>
-<rect x="735.27" y="278.38" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="762.67" y="278.38" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fish.md" target="_blank">
 <title>Fish — backlog</title>
-<rect x="762.67" y="278.38" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="790.08" y="278.38" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/flight.md" target="_blank">
 <title>Fly — backlog</title>
-<rect x="790.08" y="278.38" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="817.48" y="278.38" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/follow.md" target="_blank">
 <title>Follow — backlog</title>
-<rect x="817.48" y="278.38" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="844.89" y="278.38" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/freeze.md" target="_blank">
 <title>Freeze — backlog</title>
-<rect x="844.89" y="278.38" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="872.29" y="278.38" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/glide.md" target="_blank">
 <title>Glide — backlog</title>
-<rect x="872.29" y="278.38" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="899.70" y="278.38" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/handnoclip.md" target="_blank">
 <title>HandNoClip — backlog</title>
-<rect x="899.70" y="278.38" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="680.46" y="311.45" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/holeanchor.md" target="_blank">
 <title>HoleAnchor — backlog</title>
-<rect x="680.46" y="311.45" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="707.86" y="311.45" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/holesnap.md" target="_blank">
 <title>HoleSnap — backlog</title>
-<rect x="707.86" y="311.45" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="735.27" y="311.45" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/icespeed.md" target="_blank">
 <title>IceSpeed — backlog</title>
-<rect x="735.27" y="311.45" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="762.67" y="311.45" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/jesus.md" target="_blank">
 <title>Jesus — backlog</title>
-<rect x="762.67" y="311.45" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="790.08" y="311.45" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/jetpack.md" target="_blank">
 <title>Jetpack — backlog</title>
-<rect x="790.08" y="311.45" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="817.48" y="311.45" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/levitationcontrol.md" target="_blank">
 <title>Levitation Control — backlog</title>
-<rect x="817.48" y="311.45" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="844.89" y="311.45" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/levitctrl.md" target="_blank">
 <title>LevitCtrl — backlog</title>
-<rect x="844.89" y="311.45" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="872.29" y="311.45" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/liquids.md" target="_blank">
 <title>Liquids — backlog</title>
-<rect x="872.29" y="311.45" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="899.70" y="311.45" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/liquidwalk.md" target="_blank">
 <title>LiquidWalk — backlog</title>
-<rect x="899.70" y="311.45" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="680.46" y="344.53" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/longjump.md" target="_blank">
 <title>LongJump — backlog</title>
-<rect x="680.46" y="344.53" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="707.86" y="344.53" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/navigator.md" target="_blank">
 <title>Navigator — backlog</title>
-<rect x="707.86" y="344.53" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="735.27" y="344.53" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noclip.md" target="_blank">
 <title>NoClip — backlog</title>
-<rect x="735.27" y="344.53" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="762.67" y="344.53" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nopose.md" target="_blank">
 <title>NoPose — backlog</title>
-<rect x="762.67" y="344.53" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="790.08" y="344.53" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nowatercollision.md" target="_blank">
 <title>NoWaterCollision — backlog</title>
-<rect x="790.08" y="344.53" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="817.48" y="344.53" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noweb.md" target="_blank">
 <title>NoWeb — backlog</title>
-<rect x="817.48" y="344.53" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="844.89" y="344.53" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/packetfly.md" target="_blank">
 <title>PacketFly — backlog</title>
-<rect x="844.89" y="344.53" width="25.41" height="31.08" rx="2" fill="#344054"/>
+<rect x="872.29" y="344.53" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/portalgui.md" target="_blank">
 <title>PortalGui — backlog</title>
-<rect x="872.29" y="344.53" width="25.41" height="31.08" rx="2" fill="#344054"/>
-</a>
-<a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/reversestep.md" target="_blank">
-<title>ReverseStep — backlog</title>
 <rect x="899.70" y="344.53" width="25.41" height="31.08" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/riding.md" target="_blank">

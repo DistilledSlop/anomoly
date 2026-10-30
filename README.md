@@ -6,7 +6,7 @@ Anomoly is a full Minecraft Java 26.3 Fabric hacked client. Its working Dear ImG
 
 [![Anomoly hack progress treemap](docs/progress.svg)](https://distilledslop.github.io/anomoly/progress.html)
 
-The [searchable progress report](https://distilledslop.github.io/anomoly/progress.html) is generated from the 682 catalog entries plus Anomoly's Spear Assist. It currently tracks <!-- anomoly-progress:start -->**68 coded**, **1 partial**, **83 gameplay verified**, and **531 backlog**<!-- anomoly-progress:end --> features. Blue tiles are coded modules, amber tiles are partial implementations, green tiles have gameplay test evidence, and gray tiles are backlog. Run `python3 tools/progress.py` after changing a module's status; CI runs `python3 tools/progress.py --check` to verify the treemap and [raw data](docs/progress.json).
+The [searchable progress report](https://distilledslop.github.io/anomoly/progress.html) is generated from the 682 catalog entries plus Anomoly's Spear Assist. It currently tracks <!-- anomoly-progress:start -->**68 coded**, **1 partial**, **84 gameplay verified**, and **530 backlog**<!-- anomoly-progress:end --> features. Blue tiles are coded modules, amber tiles are partial implementations, green tiles have gameplay test evidence, and gray tiles are backlog. Run `python3 tools/progress.py` after changing a module's status; CI runs `python3 tools/progress.py --check` to verify the treemap and [raw data](docs/progress.json).
 
 ## Build and run
 
@@ -27,7 +27,7 @@ The [local gameplay test](docs/test-evidence/2026-10-30-local-gameplay.md) verif
 | Category | Modules |
 | --- | --- |
 | Combat | Auto Pearl, Auto Soup, Soup, Keep Sprint, Sprint Reset, W Tap, Criticals, Surround, Hole Filler, Self Trap, Self Web, Self Anvil, Anti Anvil, Anti Bed, Auto Anvil, Auto Trap, Auto Dodge, Auto Crystal Base, Crystal Aura, Anchor Aura, Bed Aura, Super Knockback (partial), Auto Weapon, Auto Sword, Auto Clicker, Trigger Bot, Anti Bot, Kill Aura, Aimbot, Aim Assist, Bow Aimbot, Projectile Aimbot, Auto Shoot, Auto Bow, Bow Spam, Auto Rod, Spear Assist, Reach, Auto Leave, Auto Armor, Auto Bow Release, Auto Potion, Throw Pot, Pot, Auto Exp, Auto GApple, Auto Totem |
-| Movement | Auto Sprint, Auto Walk, Auto Jump, NoJumpDelay, Auto Swim, Air Jump, Auto Sneak, GUI Move (also Inventory Move), AntiBounce, BlockBounce, Parkour, HighJump, Fast Ladder, Fast Fall, No Fall, Safe Walk, Step, Anti Web, Velocity, No Push (also AntiWaterPush), No Slow |
+| Movement | Auto Sprint, Auto Walk, Auto Jump, NoJumpDelay, Auto Swim, Air Jump, Auto Sneak, GUI Move (also Inventory Move), AntiBounce, BlockBounce, Parkour, HighJump, ReverseStep, Fast Ladder, Fast Fall, No Fall, Safe Walk, Step, Anti Web, Velocity, No Push (also AntiWaterPush), No Slow |
 | Player | Auto Respawn, Auto Eat, SmartEat, FastExp, Auto Fish, Auto Mend, Offhand, Eagle, Elytra Swap, Auto Buff, NoBlockInteract, NoEntityInteract, No Interact, LiquidInteract, Fast Interact, Auto Crafter, Inventory Cleaner, Anti AFK, Auto Break (also Auto Mine), Durability Alert, Auto Switch, Auto Tool, Auto Replenish, Auto Deposit, Auto Drop (also Auto Eject), Chest Stealer, Chest Cleaner, No Rotate (also No Server Rotate) |
 | World | Fast Place, Fast Break (also Break Delay), AirPlace, AntiInteract, Auto Brewer, AutoBuild, Auto Smelter, Scaffold, Nuker, Nuker Legit, Vein Miner, Auto Tunnel (also Tunneller), Auto Shearer, Auto Breed, Auto Mob Heal, Auto Farm, Auto Mount, Auto Nametag, Enderman Look |
 | Render | Fullbright, Max Brightness, No Hurt Cam, No Bob, Auto F5, FOV Modifier, No FOV, Zoom, Camera Clip, Camera Tweaks, Free Look, No Fog, No Overlay, No Fire Overlay, Anti Overlay, Anti Wobble, No Pumpkin, Anti Blind, Player Radar, Weather Changer, Time Changer |
@@ -48,6 +48,8 @@ BlockBounce adds configurable upward motion to a grounded jump from slime, honey
 Parkour jumps when the next step would leave the current block. In [local server tests](docs/test-evidence/2026-10-30-parkour.md), it jumped at the edge, crossed a one-block gap, and kept ordinary walking flat on continuous ground.
 
 HighJump sets the upward launch strength of a normal jump. Its Vanilla and Vulcan modes share a configurable motion value; Vulcan mode has an optional descent glide. [Local server tests](docs/test-evidence/2026-10-30-highjump.md) confirm the stronger launch and glide behavior. Anticheat evasion remains untested.
+
+ReverseStep speeds up nearby drops through Instant, Strict, or Accelerator mode. It avoids known hazardous landings and deliberately started jumps, and it limits activation to a configurable fall distance. Its gradual Instant option spreads movement across client ticks so Minecraft sends its normal position packets. [Per-tick local tests](docs/test-evidence/2026-10-30-reversestep.md) cover all three modes and three guards.
 
 No Push can suppress entity collision pushes and water or lava currents separately. Its fluid setting also covers AntiWaterPush. In a [paired water-current test](docs/test-evidence/2026-10-30-waterpush.md), the server saw the player drift about 2.4 blocks with No Push off and remain at the starting position with it on.
 
@@ -184,6 +186,8 @@ Chest Stealer, Chest Cleaner, Auto Deposit, and Auto Drop accept comma-separated
 ## Passive anticheat profile
 
 The profiler is on by default. Each joined session creates a JSONL log in `config/anomoly/profiles/`. It records the server brand, observed custom payload channel names, root commands and namespaces exposed in the server command tree, one movement sample per second including view rotation, latency, position corrections, active module names, and the disconnect reason. It sends no test packets or plugin enumeration requests. This means it can show behavioral evidence but may not identify the exact anticheat plugin.
+
+For developer gameplay tests, set the JVM property `-Danomoly.profile.sampleIntervalTicks=1` to record movement every tick; the default is 20 ticks. This only changes local logging. `tools/local_rcon_probe.py` can sample a local server through RCON; frequent `data get entity` calls can delay gameplay, so the profile log is better for per-tick movement traces.
 
 AntiCheat Detect compares those already exposed commands and payload names with a [source-backed signature list](src/main/resources/assets/anomoly/anticheat_signatures.json). The server profile page shows possible matches and their exact evidence; enabling the module adds one-time chat notices. A bare command is a weak hint, while a matching namespace is a plausible hint. Hidden or spoofed commands can make either result wrong. Position corrections are shown separately and never identify a plugin by themselves. The [local test](docs/test-evidence/2026-10-30-anticheatdetect.md) confirms the classifier's known and unknown cases and the live vanilla profile UI; identification on a real anticheat server remains untested.
 

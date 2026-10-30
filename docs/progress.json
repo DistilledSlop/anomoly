@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 531,
-    "verified": 83,
+    "backlog": 530,
+    "verified": 84,
     "coded": 68,
     "partial": 1
   },
@@ -4845,9 +4845,9 @@
       "id": "reversestep",
       "name": "ReverseStep",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "ReverseStep",
+      "note": "Per-tick local vanilla 26.3 traces show a one-block drop took five movement ticks with the module off, one in Instant mode, two in Strict mode, and three in Accelerator mode. Gradual Instant descent used four ticks and kept the server connection. Slime, maximum-distance, and intentional-jump guards were checked. See docs/test-evidence/2026-10-30-reversestep.md. Other hazards and third-party anticheats remain untested.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/reversestep.md"
     },
     {

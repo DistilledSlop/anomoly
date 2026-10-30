@@ -6,6 +6,7 @@ import dev.anomoly.Module;
 import dev.anomoly.setting.BooleanSetting;
 import dev.anomoly.setting.ChoiceSetting;
 import dev.anomoly.setting.FloatSetting;
+import dev.anomoly.setting.IntSetting;
 import dev.anomoly.setting.Setting;
 import dev.anomoly.setting.StringSetting;
 import dev.anomoly.modules.PluginInspector;
@@ -166,6 +167,13 @@ public final class ImGuiRenderer {
                     float[] value = {slider.get()};
                     ImGui.setNextItemWidth(240);
                     if (ImGui.sliderFloat(slider.name() + "##" + module.id() + setting.id(), value, slider.min(), slider.max())) {
+                        slider.set(value[0]);
+                        AnomolyClient.saveConfig();
+                    }
+                } else if (setting instanceof IntSetting slider) {
+                    int[] value = {slider.get()};
+                    ImGui.setNextItemWidth(240);
+                    if (ImGui.sliderInt(slider.name() + "##" + module.id() + setting.id(), value, slider.min(), slider.max())) {
                         slider.set(value[0]);
                         AnomolyClient.saveConfig();
                     }

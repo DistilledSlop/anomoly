@@ -5,6 +5,7 @@ import dev.anomoly.Module;
 import dev.anomoly.setting.BooleanSetting;
 import dev.anomoly.setting.ChoiceSetting;
 import dev.anomoly.setting.FloatSetting;
+import dev.anomoly.setting.IntSetting;
 import dev.anomoly.setting.Setting;
 import dev.anomoly.setting.StringSetting;
 import dev.anomoly.modules.PluginInspector;
@@ -129,6 +130,19 @@ public final class FallbackClickGuiScreen extends Screen {
                     }
                     @Override protected void applyValue() {
                         slider.set(slider.min() + (slider.max() - slider.min()) * (float)value);
+                        AnomolyClient.saveConfig();
+                    }
+                });
+            } else if (setting instanceof IntSetting slider) {
+                double initial = (double)(slider.get() - slider.min()) / (slider.max() - slider.min());
+                addRenderableWidget(new AbstractSliderButton(x, rowY, Math.min(contentWidth, 320), 24,
+                    Component.literal(slider.name()), initial) {
+                    { updateMessage(); }
+                    @Override protected void updateMessage() {
+                        setMessage(Component.literal(slider.name() + ": " + slider.get()));
+                    }
+                    @Override protected void applyValue() {
+                        slider.set(slider.min() + (int)Math.round((slider.max() - slider.min()) * value));
                         AnomolyClient.saveConfig();
                     }
                 });

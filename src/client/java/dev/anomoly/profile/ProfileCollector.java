@@ -25,6 +25,7 @@ import net.minecraft.world.phys.Vec3;
 public final class ProfileCollector {
     private static final Gson GSON = new Gson();
     private static final DateTimeFormatter FILE_TIME = DateTimeFormatter.ofPattern("yyyyMMdd-HHmmss").withZone(ZoneOffset.UTC);
+    private static final int MOVEMENT_SAMPLE_TICKS = Math.max(1, Integer.getInteger("anomoly.profile.sampleIntervalTicks", 20));
     private boolean enabled = true;
     private BufferedWriter writer;
     private Path path;
@@ -98,10 +99,12 @@ public final class ProfileCollector {
             event.addProperty("value", brand);
             record(event);
         }
-        if (ticks % 20 == 0) {
+        if (ticks % MOVEMENT_SAMPLE_TICKS == 0) {
             JsonObject event = event("movement_sample");
             addPlayer(event, player);
             record(event);
+        }
+        if (ticks % 20 == 0) {
             for (String command : PluginInspector.visibleCommands(client)) {
                 if (!observedCommands.add(command)) continue;
                 JsonObject discovered = event("command_literal");
