@@ -349,6 +349,7 @@ import dev.anomoly.modules.ViewModel;
 import dev.anomoly.modules.ClickGui;
 import dev.anomoly.modules.Notifications;
 import dev.anomoly.modules.Media;
+import dev.anomoly.modules.NoBackground;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -571,6 +572,7 @@ public final class ModuleManager {
         new ClickGui(),
         new Notifications(),
         new Media(),
+        new NoBackground(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 
