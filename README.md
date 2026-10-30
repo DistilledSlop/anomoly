@@ -1,12 +1,12 @@
 # Anomoly
 
-Anomoly is a full Minecraft Java 26.3 hacked client built as a Fabric mod, with an ImGui ClickGUI, modules, configuration, and passive anticheat profiling. Module coverage is expanding. The [cheat catalog](cheats/README.md) and source audit support implementation; the treemap below shows what is currently coded and tested.
+Anomoly is a Minecraft Java 26.3 hacked client. It runs as a Fabric mod and includes a Dear ImGui ClickGUI, combat and utility hacks, configurable keybinds, saved settings, and passive anticheat profiling. The client is under active development across its full feature catalog; the treemap below shows which hacks are implemented and gameplay tested.
 
 ## Hack progress
 
 [![Anomoly hack progress treemap](docs/progress.svg)](https://distilledslop.github.io/anomoly/progress.html)
 
-The [searchable progress report](https://distilledslop.github.io/anomoly/progress.html) is generated from the 682 catalog entries plus Anomoly's Spear Assist. It currently tracks <!-- anomoly-progress:start -->**70 coded**, **1 partial**, **26 gameplay verified**, and **586 backlog**<!-- anomoly-progress:end --> features. Blue tiles are coded modules, amber tiles are partial implementations, green tiles have gameplay test evidence, and gray tiles are backlog. Run `python3 tools/progress.py` after changing a module's status; CI runs `python3 tools/progress.py --check` to verify the treemap and [raw data](docs/progress.json).
+The [searchable progress report](https://distilledslop.github.io/anomoly/progress.html) is generated from the 682 catalog entries plus Anomoly's Spear Assist. It currently tracks <!-- anomoly-progress:start -->**70 coded**, **1 partial**, **27 gameplay verified**, and **585 backlog**<!-- anomoly-progress:end --> features. Blue tiles are coded modules, amber tiles are partial implementations, green tiles have gameplay test evidence, and gray tiles are backlog. Run `python3 tools/progress.py` after changing a module's status; CI runs `python3 tools/progress.py --check` to verify the treemap and [raw data](docs/progress.json).
 
 ## Build and run
 
@@ -26,7 +26,7 @@ The [local gameplay test](docs/test-evidence/2026-10-30-local-gameplay.md) verif
 
 | Category | Modules |
 | --- | --- |
-| Combat | Auto Pearl, Auto Soup, Soup, Keep Sprint, Sprint Reset, W Tap, Criticals, Surround, Auto Crystal Base, Crystal Aura, Super Knockback (partial), Auto Weapon, Auto Sword, Auto Clicker, Trigger Bot, Anti Bot, Kill Aura, Aimbot, Aim Assist, Bow Aimbot, Projectile Aimbot, Auto Shoot, Auto Bow, Bow Spam, Auto Rod, Spear Assist, Reach, Auto Leave, Auto Armor, Auto Bow Release, Auto Potion, Throw Pot, Pot, Auto Exp, Auto GApple, Auto Totem |
+| Combat | Auto Pearl, Auto Soup, Soup, Keep Sprint, Sprint Reset, W Tap, Criticals, Surround, Hole Filler, Auto Crystal Base, Crystal Aura, Super Knockback (partial), Auto Weapon, Auto Sword, Auto Clicker, Trigger Bot, Anti Bot, Kill Aura, Aimbot, Aim Assist, Bow Aimbot, Projectile Aimbot, Auto Shoot, Auto Bow, Bow Spam, Auto Rod, Spear Assist, Reach, Auto Leave, Auto Armor, Auto Bow Release, Auto Potion, Throw Pot, Pot, Auto Exp, Auto GApple, Auto Totem |
 | Movement | Auto Sprint, Auto Walk, Auto Jump, Air Jump, Auto Sneak, Fast Ladder, Fast Fall, No Fall, Safe Walk, Step, Anti Web, Velocity, No Push, No Slow |
 | Player | Auto Respawn, Auto Eat, Auto Fish, Anti AFK, Auto Break, Auto Switch, Auto Tool, Auto Replenish, Auto Deposit, Auto Drop (also Auto Eject), Chest Stealer, Chest Cleaner, No Rotate (also No Server Rotate) |
 | World | Fast Place, Fast Break (also Break Delay) |
@@ -66,6 +66,8 @@ W Tap briefly releases forward movement after a full-strength player hit, stops 
 Criticals defers a melee hit until the player descends from an ordinary jump, then sends the normal attack and swing packets. It falls back to a normal hit when there is no headroom and cancels a delayed hit if the target, held item, or world changes. The [local gameplay test](docs/test-evidence/2026-10-30-criticals.md) records 9 damage from an iron sword critical versus 6 from a normal hit, including a combined Kill Aura run.
 
 Surround selects obsidian from the offhand or hotbar and places it on the four sides of your feet using normal block interactions. It repairs missing sides and can center you within your current block on activation when the path is clear. Its [local gameplay test](docs/test-evidence/2026-10-30-surround.md) verifies all four placements, repair, offhand use, hotbar restoration, and the center option.
+
+Hole Filler finds empty one-block holes with obsidian, bedrock, or crying obsidian below and on every side, then places a configured block when an opponent is nearby. It skips occupied holes and uses normal block interactions with line-of-sight and reach checks enabled by default. The [local gameplay test](docs/test-evidence/2026-10-30-holefiller.md) confirms placement, hotbar restoration, and three rejection cases.
 
 Crystal Aura scans visible obsidian and bedrock bases, predicts blast damage using Minecraft 26.3's exposure calculation, and places or attacks end crystals only when target damage and conservative self-damage limits permit. It can select crystals from the hotbar or offhand, and pauses for the target's damage cooldown. A [local gameplay test](docs/test-evidence/2026-10-30-crystalaura.md) records automated placement and two detonations against a pig, plus a survival safety control that placed nothing in an exposed position. Armor and enchantment effects on target damage are not modeled by its score; the self-damage limit uses raw damage before reductions.
 
