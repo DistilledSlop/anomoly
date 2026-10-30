@@ -33,6 +33,8 @@
     "nofireoverlay": {"status": "coded", "module": "NoFireOverlay"},
     "antioverlay": {"status": "coded", "module": "AntiOverlay"},
     "autototem": {"status": "coded", "module": "AutoTotem"},
+    "cheststealer": {"status": "coded", "module": "ChestStealer"},
+    "chestcleaner": {"status": "coded", "module": "ChestCleaner"},
     "fastladder": {"status": "coded", "module": "FastLadder"},
     "fastplace": {"status": "coded", "module": "FastPlace"},
     "fastbreak": {"status": "coded", "module": "FastBreak"},

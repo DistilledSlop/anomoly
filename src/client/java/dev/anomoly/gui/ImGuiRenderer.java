@@ -6,6 +6,7 @@ import dev.anomoly.Module;
 import dev.anomoly.setting.BooleanSetting;
 import dev.anomoly.setting.FloatSetting;
 import dev.anomoly.setting.Setting;
+import dev.anomoly.setting.StringSetting;
 import imgui.ImGui;
 import imgui.ImGuiIO;
 import imgui.ImGuiStyle;
@@ -15,7 +16,9 @@ import imgui.gl3.ImGuiImplGl3;
 import imgui.type.ImString;
 import net.minecraft.client.Minecraft;
 import java.util.Comparator;
+import java.util.HashMap;
 import java.util.Locale;
+import java.util.Map;
 import org.lwjgl.opengl.GL;
 
 public final class ImGuiRenderer {
@@ -24,6 +27,7 @@ public final class ImGuiRenderer {
     private static boolean failed;
     private static long lastFrame;
     private static final ImString SEARCH = new ImString(96);
+    private static final Map<Setting, ImString> TEXT_BUFFERS = new HashMap<>();
     private static Module.Category selectedCategory = Module.Category.COMBAT;
     private static boolean profilePage;
 
@@ -153,6 +157,14 @@ public final class ImGuiRenderer {
                     ImGui.setNextItemWidth(240);
                     if (ImGui.sliderFloat(slider.name() + "##" + module.id() + setting.id(), value, slider.min(), slider.max())) {
                         slider.set(value[0]);
+                        AnomolyClient.saveConfig();
+                    }
+                } else if (setting instanceof StringSetting string) {
+                    ImString buffer = TEXT_BUFFERS.computeIfAbsent(setting, unused -> new ImString(string.get(), 256));
+                    ImGui.setNextItemWidth(360);
+                    if (ImGui.inputTextWithHint(string.name() + "##" + module.id() + setting.id(),
+                        "minecraft:item, minecraft:other_item", buffer)) {
+                        string.set(buffer.get());
                         AnomolyClient.saveConfig();
                     }
                 }

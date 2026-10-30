@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 642,
-    "coded": 38,
+    "backlog": 640,
+    "coded": 40,
     "partial": 3
   },
   "total": 683,
@@ -1775,8 +1775,8 @@
       "id": "chestcleaner",
       "name": "ChestCleaner",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "ChestCleaner",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/chestcleaner.md"
     },
@@ -1793,8 +1793,8 @@
       "id": "cheststealer",
       "name": "ChestStealer",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "ChestStealer",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/cheststealer.md"
     },
