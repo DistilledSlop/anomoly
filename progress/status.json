@@ -16,6 +16,7 @@
     "nofall": {"status": "coded", "module": "NoFall"},
     "safewalk": {"status": "coded", "module": "SafeWalk"},
     "noslow": {"status": "partial", "module": "NoSlow", "note": "Removes item-use, block speed-factor and web-like stuck penalties; honey wall sliding remains."},
+    "step": {"status": "coded", "module": "Step"},
     "fastladder": {"status": "coded", "module": "FastLadder"},
     "fastplace": {"status": "coded", "module": "FastPlace"},
     "fastbreak": {"status": "coded", "module": "FastBreak"},

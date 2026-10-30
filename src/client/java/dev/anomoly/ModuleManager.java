@@ -22,6 +22,7 @@ import dev.anomoly.modules.PlayerRadar;
 import dev.anomoly.modules.Reach;
 import dev.anomoly.modules.SpearAssist;
 import dev.anomoly.modules.SafeWalk;
+import dev.anomoly.modules.Step;
 import dev.anomoly.modules.TriggerBot;
 import java.util.List;
 import net.minecraft.client.Minecraft;
@@ -30,7 +31,7 @@ public final class ModuleManager {
     private final List<Module> modules = List.of(
         new TriggerBot(), new KillAura(), new SpearAssist(), new Reach(), new AutoArmor(), new AutoSprint(), new AutoWalk(), new AutoJump(),
         new AutoSneak(), new AutoRespawn(), new AutoEat(), new AutoFish(), new AntiAFK(), new AutoTool(), new FastPlace(), new FastBreak(), new FastLadder(),
-        new NoFall(), new NoSlow(), new SafeWalk(), new MaxBrightness(), new NoHurtCam(), new PlayerRadar()
+        new NoFall(), new NoSlow(), new SafeWalk(), new Step(), new MaxBrightness(), new NoHurtCam(), new PlayerRadar()
     );
 
     public List<Module> all() { return modules; }

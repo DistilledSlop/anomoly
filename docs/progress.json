@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 660,
-    "coded": 20,
+    "backlog": 659,
+    "coded": 21,
     "partial": 3
   },
   "total": 683,
@@ -5339,8 +5339,8 @@
       "id": "step",
       "name": "Step",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "Step",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/step.md"
     },
