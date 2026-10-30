@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 598,
-    "verified": 15,
+    "backlog": 597,
+    "verified": 16,
     "coded": 70
   },
   "total": 683,
@@ -1001,9 +1001,9 @@
       "id": "autorod",
       "name": "AutoRod",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "AutoRod",
+      "note": "With stone selected and a rod in the next hotbar slot, Auto Rod repeatedly hooked and reeled a stationary pig six blocks away. Server rod damage reached 30, consistent with six entity-hook reels at five durability each; the stone slot was restored. See docs/test-evidence/2026-10-30-autorod.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autorod.md"
     },
     {

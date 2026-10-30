@@ -29,7 +29,8 @@ abstract class RangedAim extends Module {
     @Override public void tick(Minecraft client) {
         if (client.gui.screen() != null || client.player.isSpectator()
             || AnomolyClient.MODULES.get(AutoShoot.class).active(client)
-            || AnomolyClient.MODULES.get(AutoBow.class).active(client)) return;
+            || AnomolyClient.MODULES.get(AutoBow.class).active(client)
+            || AnomolyClient.MODULES.get(AutoRod.class).active(client)) return;
         ProjectilePhysics.Profile physics = ProjectilePhysics.held(client, bowsOnly);
         if (physics == null) return;
         for (AimTargeting.Solution candidate : AimTargeting.candidates(client, range.get(), fieldOfView.get(), targetMobs.get(), targetInvisible.get())) {

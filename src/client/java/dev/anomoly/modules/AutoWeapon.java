@@ -11,7 +11,8 @@ public final class AutoWeapon extends Module {
     }
 
     @Override public void tick(Minecraft client) {
-        if (client.gui.screen() != null || AnomolyClient.MODULES.get(AutoSword.class).enabled()) return;
+        if (client.gui.screen() != null || AnomolyClient.MODULES.get(AutoSword.class).enabled()
+            || AnomolyClient.MODULES.get(AutoRod.class).active(client)) return;
         if (client.options.keyAttack.isDown() && client.hitResult instanceof EntityHitResult
             || !client.options.keyAttack.isDown() && AnomolyClient.MODULES.get(KillAura.class).enabled()) {
             WeaponSelector.selectBest(client, false);

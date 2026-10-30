@@ -28,7 +28,8 @@ public final class SpearAssist extends Module {
     }
 
     @Override public void tick(Minecraft client) {
-        if (client.gui.screen() != null || client.gameMode == null || client.player.isSpectator() || client.player.isHandsBusy()) {
+        if (client.gui.screen() != null || client.gameMode == null || client.player.isSpectator() || client.player.isHandsBusy()
+            || AnomolyClient.MODULES.get(AutoRod.class).active(client)) {
             stableTicks = 0;
             return;
         }

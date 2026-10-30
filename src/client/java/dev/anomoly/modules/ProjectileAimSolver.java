@@ -57,9 +57,9 @@ final class ProjectileAimSolver {
             gravityDrop = physics.gravity() * ticks * (ticks + (physics.gravityBeforeMove() ? 1 : -1)) / 2;
         } else {
             double series = -Math.expm1(ticks * Math.log(drag)) / (1.0 - drag);
-            distanceFactor = physics.gravityBeforeMove() ? drag * series : series;
-            gravityDrop = physics.gravity() * (physics.gravityBeforeMove() ? drag : 1.0)
-                / (1.0 - drag) * (ticks - distanceFactor);
+            distanceFactor = physics.dragBeforeMove() ? drag * series : series;
+            gravityDrop = physics.gravity() * (physics.dragBeforeMove() ? drag : 1.0)
+                / (1.0 - drag) * (ticks - (physics.gravityBeforeMove() ? drag * series : series));
         }
         Vec3 delta = destination.add(targetVelocity.scale(ticks)).subtract(origin);
         return delta.add(0, gravityDrop, 0).scale(1.0 / distanceFactor).subtract(shooterVelocity);
@@ -72,7 +72,8 @@ final class ProjectileAimSolver {
         Vec3 velocity = launchVelocity.add(shooterVelocity);
         int steps = (int)Math.ceil(flightTicks);
         for (int step = 1; step <= steps; step++) {
-            if (physics.gravityBeforeMove()) velocity = velocity.add(0, -physics.gravity(), 0).scale(physics.drag());
+            if (physics.gravityBeforeMove()) velocity = velocity.add(0, -physics.gravity(), 0);
+            if (physics.dragBeforeMove()) velocity = velocity.scale(physics.drag());
             Vec3 next = position.add(velocity);
             var targetHit = target.getBoundingBox().move(targetVelocity.scale(step)).inflate(0.2).clip(position, next);
             BlockHitResult blockHit = client.level.clip(new ClipContext(position, next,
@@ -81,7 +82,8 @@ final class ProjectileAimSolver {
                 || position.distanceToSqr(targetHit.get()) <= position.distanceToSqr(blockHit.getLocation()))) return true;
             if (blockHit.getType() != net.minecraft.world.phys.HitResult.Type.MISS) return false;
             position = next;
-            if (!physics.gravityBeforeMove()) velocity = velocity.scale(physics.drag()).add(0, -physics.gravity(), 0);
+            if (!physics.dragBeforeMove()) velocity = velocity.scale(physics.drag());
+            if (!physics.gravityBeforeMove()) velocity = velocity.add(0, -physics.gravity(), 0);
         }
         return true;
     }

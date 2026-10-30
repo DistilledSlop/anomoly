@@ -1,6 +1,7 @@
 package dev.anomoly.modules;
 
 import dev.anomoly.Module;
+import dev.anomoly.AnomolyClient;
 import dev.anomoly.setting.BooleanSetting;
 import dev.anomoly.setting.FloatSetting;
 import java.util.List;
@@ -43,7 +44,8 @@ public final class AutoBow extends Module {
     }
 
     public boolean active(Minecraft client) {
-        if (!enabled() || client.player == null || client.gameMode == null || client.gui.screen() != null
+        if (!enabled() || AnomolyClient.MODULES.get(AutoRod.class).ownsHook(client)
+            || client.player == null || client.gameMode == null || client.gui.screen() != null
             || client.player.isSpectator()) return false;
         if (autoUsing) return true;
         if (AimTargeting.find(client, range.get(), fieldOfView.get(), targetMobs.get(), targetInvisible.get()) == null) return false;
@@ -60,7 +62,8 @@ public final class AutoBow extends Module {
         }
         if (cooldown > 0) cooldown--;
         if (reloadDelay > 0) reloadDelay--;
-        if (client.gui.screen() != null || client.gameMode == null || client.player.isSpectator()
+        if (AnomolyClient.MODULES.get(AutoRod.class).ownsHook(client)
+            || client.gui.screen() != null || client.gameMode == null || client.player.isSpectator()
             || client.player.isHandsBusy() || client.options.keyUse.isDown()) {
             stableTicks = 0;
             if (!autoUsing) restore(client);
