@@ -41,6 +41,7 @@
     "autoeject": {"status": "coded", "module": "AutoDrop"},
     "autoweapon": {"status": "coded", "module": "AutoWeapon"},
     "autosword": {"status": "coded", "module": "AutoSword"},
+    "autoclicker": {"status": "coded", "module": "AutoClicker"},
     "fastladder": {"status": "coded", "module": "FastLadder"},
     "fastplace": {"status": "coded", "module": "FastPlace"},
     "fastbreak": {"status": "coded", "module": "FastBreak"},

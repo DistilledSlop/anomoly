@@ -2,6 +2,6 @@
   "required": true,
   "package": "dev.anomoly.mixin",
   "compatibilityLevel": "JAVA_25",
-  "client": ["MinecraftRenderMixin", "MinecraftAccessor", "MultiPlayerGameModeAccessor", "MultiPlayerGameModeFastBreakMixin", "LocalPlayerReachMixin", "LocalPlayerNoFallMixin", "LocalPlayerNoSlowMixin", "EntityNoSlowMixin", "LivingEntityStepMixin", "PlayerSafeWalkMixin", "CameraFovMixin", "MinecraftDebugMixin", "ScreenPortalMixin", "LevelExtractorOverlayMixin", "FishingHookAccessor", "ClientPacketListenerMixin", "ClientCommonPacketListenerMixin"],
+  "client": ["MinecraftRenderMixin", "MinecraftAccessor", "MinecraftAutoClickerMixin", "MultiPlayerGameModeAccessor", "MultiPlayerGameModeFastBreakMixin", "LocalPlayerReachMixin", "LocalPlayerNoFallMixin", "LocalPlayerNoSlowMixin", "EntityNoSlowMixin", "LivingEntityStepMixin", "PlayerSafeWalkMixin", "CameraFovMixin", "MinecraftDebugMixin", "ScreenPortalMixin", "LevelExtractorOverlayMixin", "FishingHookAccessor", "ClientPacketListenerMixin", "ClientCommonPacketListenerMixin"],
   "injectors": {"defaultRequire": 1}
 }

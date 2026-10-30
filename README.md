@@ -6,7 +6,7 @@ Anomoly is a full Minecraft Java 26.3 hacked client built as a Fabric mod, with 
 
 [![Anomoly hack progress treemap](docs/progress.svg)](https://distilledslop.github.io/anomoly/progress.html)
 
-The [searchable progress report](https://distilledslop.github.io/anomoly/progress.html) is generated from the 682 catalog entries plus Anomoly's Spear Assist. It currently tracks <!-- anomoly-progress:start -->**46 coded**, **3 partial**, **0 gameplay verified**, and **634 backlog**<!-- anomoly-progress:end --> features. Blue tiles are coded modules, amber tiles are partial implementations, green tiles have gameplay test evidence, and gray tiles are backlog. Run `python3 tools/progress.py` after changing a module's status; CI runs `python3 tools/progress.py --check` to verify the treemap and [raw data](docs/progress.json).
+The [searchable progress report](https://distilledslop.github.io/anomoly/progress.html) is generated from the 682 catalog entries plus Anomoly's Spear Assist. It currently tracks <!-- anomoly-progress:start -->**47 coded**, **3 partial**, **0 gameplay verified**, and **633 backlog**<!-- anomoly-progress:end --> features. Blue tiles are coded modules, amber tiles are partial implementations, green tiles have gameplay test evidence, and gray tiles are backlog. Run `python3 tools/progress.py` after changing a module's status; CI runs `python3 tools/progress.py --check` to verify the treemap and [raw data](docs/progress.json).
 
 ## Build and run
 
@@ -20,7 +20,7 @@ The ClickGUI has a category sidebar, module search, expandable settings, and a s
 
 | Category | Modules |
 | --- | --- |
-| Combat | Auto Weapon, Auto Sword, Trigger Bot, Kill Aura, Spear Assist, Reach, Auto Armor, Auto Bow Release, Auto GApple, Auto Totem |
+| Combat | Auto Weapon, Auto Sword, Auto Clicker, Trigger Bot, Kill Aura, Spear Assist, Reach, Auto Armor, Auto Bow Release, Auto GApple, Auto Totem |
 | Movement | Auto Sprint, Auto Walk, Auto Jump, Auto Sneak, Fast Ladder, Fast Fall, No Fall, Safe Walk, Step, Anti Web, No Slow (partial) |
 | Player | Auto Respawn, Auto Eat, Auto Fish, Anti AFK, Auto Tool, Auto Replenish, Auto Deposit, Auto Drop (also Auto Eject), Chest Stealer, Chest Cleaner |
 | World | Fast Place, Fast Break (also Break Delay) |
