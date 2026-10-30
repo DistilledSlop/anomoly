@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 649,
-    "coded": 31,
+    "backlog": 648,
+    "coded": 32,
     "partial": 3
   },
   "total": 683,
@@ -1577,8 +1577,8 @@
       "id": "breakdelay",
       "name": "Break Delay",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "FastBreak",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/breakdelay.md"
     },
