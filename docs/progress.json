@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 566,
-    "verified": 48,
+    "backlog": 565,
+    "verified": 49,
     "coded": 68,
     "partial": 1
   },
@@ -597,9 +597,9 @@
       "id": "autobreed",
       "name": "Auto Breed",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "AutoBreed",
+      "note": "On a local vanilla 26.3 server, Auto Breed used two wheat from hotbar to breed sheep and two from offhand to breed cows. Both runs produced a newborn, put the parents in breeding cooldown, and preserved the selected slot; one wheat and a cow-excluding species filter caused no feed. See docs/test-evidence/2026-10-30-autobreed.md. Other species and third-party anticheats remain untested.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autobreed.md"
     },
     {

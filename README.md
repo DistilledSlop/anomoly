@@ -6,7 +6,7 @@ Anomoly is a full Minecraft Java 26.3 hacked client built on Fabric. Its Dear Im
 
 [![Anomoly hack progress treemap](docs/progress.svg)](https://distilledslop.github.io/anomoly/progress.html)
 
-The [searchable progress report](https://distilledslop.github.io/anomoly/progress.html) is generated from the 682 catalog entries plus Anomoly's Spear Assist. It currently tracks <!-- anomoly-progress:start -->**68 coded**, **1 partial**, **48 gameplay verified**, and **566 backlog**<!-- anomoly-progress:end --> features. Blue tiles are coded modules, amber tiles are partial implementations, green tiles have gameplay test evidence, and gray tiles are backlog. Run `python3 tools/progress.py` after changing a module's status; CI runs `python3 tools/progress.py --check` to verify the treemap and [raw data](docs/progress.json).
+The [searchable progress report](https://distilledslop.github.io/anomoly/progress.html) is generated from the 682 catalog entries plus Anomoly's Spear Assist. It currently tracks <!-- anomoly-progress:start -->**68 coded**, **1 partial**, **49 gameplay verified**, and **565 backlog**<!-- anomoly-progress:end --> features. Blue tiles are coded modules, amber tiles are partial implementations, green tiles have gameplay test evidence, and gray tiles are backlog. Run `python3 tools/progress.py` after changing a module's status; CI runs `python3 tools/progress.py --check` to verify the treemap and [raw data](docs/progress.json).
 
 ## Build and run
 
@@ -29,7 +29,7 @@ The [local gameplay test](docs/test-evidence/2026-10-30-local-gameplay.md) verif
 | Combat | Auto Pearl, Auto Soup, Soup, Keep Sprint, Sprint Reset, W Tap, Criticals, Surround, Hole Filler, Self Trap, Self Web, Self Anvil, Anti Anvil, Anti Bed, Auto Anvil, Auto Trap, Auto Dodge, Auto Crystal Base, Crystal Aura, Anchor Aura, Bed Aura, Super Knockback (partial), Auto Weapon, Auto Sword, Auto Clicker, Trigger Bot, Anti Bot, Kill Aura, Aimbot, Aim Assist, Bow Aimbot, Projectile Aimbot, Auto Shoot, Auto Bow, Bow Spam, Auto Rod, Spear Assist, Reach, Auto Leave, Auto Armor, Auto Bow Release, Auto Potion, Throw Pot, Pot, Auto Exp, Auto GApple, Auto Totem |
 | Movement | Auto Sprint, Auto Walk, Auto Jump, Air Jump, Auto Sneak, Fast Ladder, Fast Fall, No Fall, Safe Walk, Step, Anti Web, Velocity, No Push, No Slow |
 | Player | Auto Respawn, Auto Eat, Auto Fish, Anti AFK, Auto Break (also Auto Mine), Durability Alert, Auto Switch, Auto Tool, Auto Replenish, Auto Deposit, Auto Drop (also Auto Eject), Chest Stealer, Chest Cleaner, No Rotate (also No Server Rotate) |
-| World | Fast Place, Fast Break (also Break Delay), Scaffold, Nuker, Nuker Legit, Vein Miner, Auto Tunnel (also Tunneller), Auto Shearer |
+| World | Fast Place, Fast Break (also Break Delay), Scaffold, Nuker, Nuker Legit, Vein Miner, Auto Tunnel (also Tunneller), Auto Shearer, Auto Breed |
 | Render | Fullbright, Max Brightness, No Hurt Cam, No Bob, Auto F5, FOV Modifier, No FOV, Zoom, Camera Clip, Camera Tweaks, Free Look, No Fog, No Overlay, No Fire Overlay, Anti Overlay, Anti Wobble, No Pumpkin, Anti Blind, Player Radar, Weather Changer, Time Changer |
 | Exploit | Anti Reduced Debug Info, Portal Menu, Plugins |
 | Fun | Twerk |
@@ -46,6 +46,8 @@ Vein Miner starts when you break an ore or log and continues through connected b
 Auto Tunnel mines and walks through a corridor of configurable width, height, and length. It can repair missing floor blocks, place torches at an interval, and pause near fluids, falling blocks, or protected block entities. The [local gameplay test](docs/test-evidence/2026-10-30-autotunnel.md) confirms a three-block 2×2 tunnel, floor repair, hazard pauses, recovery, and torch placement. No automated tunneling is guaranteed safe on every server or terrain.
 
 Auto Shearer finds adult sheep in reach, checks line of sight by default, and uses shears from the selected slot, another hotbar slot, or the offhand. Its [local gameplay test](docs/test-evidence/2026-10-30-autoshearer.md) confirms hotbar and offhand shearing, slot restoration, and controls for babies, walls, and missing shears.
+
+Auto Breed feeds reachable pairs of selected adult animals with their vanilla breeding food. It requires enough food for both and remembers recent feeds to avoid repeatedly using food on the same animal. The [local gameplay test](docs/test-evidence/2026-10-30-autobreed.md) confirms newborn sheep and cows from hotbar and offhand wheat, slot restoration, and a one-wheat control.
 
 Aimbot turns toward the visible entity closest to your crosshair within its configured range and field of view. Aim Assist makes smaller corrections while you hold attack. Both default to player targets, can optionally include mobs or invisible entities, and yield to Kill Aura when it is enabled. Neither module attacks on its own.
 
