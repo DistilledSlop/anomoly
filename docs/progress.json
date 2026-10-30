@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 582,
-    "verified": 30,
+    "backlog": 581,
+    "verified": 31,
     "coded": 70,
     "partial": 1
   },
@@ -120,9 +120,9 @@
       "id": "antianvil",
       "name": "Anti Anvil",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "AntiAnvil",
+      "note": "On a local vanilla 26.3 server, Anti Anvil built an obsidian support and roof at (5,102,5) before a falling anvil landed on top at (5,103,5), keeping PlayerA at 20 health. The disabled control left the roof empty and reduced health to 10; an off-axis anvil triggered no roof. See docs/test-evidence/2026-10-30-antianvil.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antianvil.md"
     },
     {

@@ -25,7 +25,7 @@ import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
 
 /** Builds a short support beside the player, then caps the space above their head. */
-public final class SelfTrap extends Module {
+public class SelfTrap extends Module {
     private static final Direction[] SIDES = {
         Direction.NORTH, Direction.EAST, Direction.SOUTH, Direction.WEST
     };
@@ -44,6 +44,10 @@ public final class SelfTrap extends Module {
 
     public SelfTrap() {
         super("self_trap", "Self Trap", "Build an overhead block and repair it when removed.", Category.COMBAT);
+    }
+
+    protected SelfTrap(String id, String name, String description) {
+        super(id, name, description, Category.COMBAT);
     }
 
     @Override public void tick(Minecraft client) {
