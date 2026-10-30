@@ -156,6 +156,20 @@ def main():
                  "index.html": index, ".nojekyll": ""}
     OUTPUT.mkdir(exist_ok=True)
     stale = []
+    readme = ROOT / "README.md"
+    begin, end = "<!-- anomoly-progress:start -->", "<!-- anomoly-progress:end -->"
+    original = readme.read_text(encoding="utf-8")
+    if original.count(begin) != 1 or original.count(end) != 1:
+        raise ValueError("README progress marker missing or duplicated")
+    count_text = (f'**{counts["coded"]} coded**, **{counts["partial"]} partial**, '
+                  f'**{counts["verified"]} gameplay verified**, and **{counts["backlog"]} backlog**')
+    before, tail = original.split(begin, 1)
+    _, after = tail.split(end, 1)
+    updated = before + begin + count_text + end + after
+    if args.check:
+        if updated != original: stale.append("README.md")
+    elif updated != original:
+        readme.write_text(updated, encoding="utf-8")
     for name, content in generated.items():
         path = OUTPUT / name
         if args.check:

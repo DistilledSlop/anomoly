@@ -9,6 +9,7 @@
     "autosneak": {"status": "coded", "module": "AutoSneak"},
     "autorespawn": {"status": "coded", "module": "AutoRespawn"},
     "autoeat": {"status": "coded", "module": "AutoEat"},
+    "autofish": {"status": "coded", "module": "AutoFish"},
     "fastplace": {"status": "coded", "module": "FastPlace"},
     "fastbreak": {"status": "coded", "module": "FastBreak"},
     "nohurtcam": {"status": "coded", "module": "NoHurtCam"},

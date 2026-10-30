@@ -1,12 +1,12 @@
 # Anomoly
 
-Anomoly is a Fabric client for Minecraft Java 26.3. This repository also contains the local 26.3 source audit and a much larger [cheat catalog](cheats/README.md). The catalog is a work queue, not a list of implemented modules.
+Anomoly is a full Minecraft Java 26.3 hacked client built as a Fabric mod, with an ImGui ClickGUI, modules, configuration, and passive anticheat profiling. Module coverage is expanding. The [cheat catalog](cheats/README.md) and source audit support implementation; the treemap below shows what is currently coded and tested.
 
 ## Hack progress
 
 [![Anomoly hack progress treemap](docs/progress.svg)](https://distilledslop.github.io/anomoly/progress.html)
 
-The [searchable progress report](https://distilledslop.github.io/anomoly/progress.html) is generated from the 682 catalog entries plus Anomoly's Spear Assist. It currently tracks **13 coded**, **2 partial**, **0 gameplay verified**, and **668 backlog** features. Blue tiles are coded modules, amber tiles are partial implementations, green tiles have gameplay test evidence, and gray tiles are backlog. Run `python3 tools/progress.py` after changing a module's status; CI runs `python3 tools/progress.py --check` to verify the treemap and [raw data](docs/progress.json).
+The [searchable progress report](https://distilledslop.github.io/anomoly/progress.html) is generated from the 682 catalog entries plus Anomoly's Spear Assist. It currently tracks <!-- anomoly-progress:start -->**14 coded**, **2 partial**, **0 gameplay verified**, and **667 backlog**<!-- anomoly-progress:end --> features. Blue tiles are coded modules, amber tiles are partial implementations, green tiles have gameplay test evidence, and gray tiles are backlog. Run `python3 tools/progress.py` after changing a module's status; CI runs `python3 tools/progress.py --check` to verify the treemap and [raw data](docs/progress.json).
 
 ## Build and run
 
@@ -20,7 +20,7 @@ The Dear ImGui ClickGUI currently uses the OpenGL backend. Choose **OpenGL** in 
 | --- | --- |
 | Combat | Trigger Bot, Kill Aura, Spear Assist, Reach |
 | Movement | Auto Sprint, Auto Walk, Auto Jump, Auto Sneak |
-| Player | Auto Respawn, Auto Eat |
+| Player | Auto Respawn, Auto Eat, Auto Fish |
 | World | Fast Place, Fast Break |
 | Render | Max Brightness, No Hurt Cam, Player Radar |
 

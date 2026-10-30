@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 668,
-    "coded": 13,
+    "backlog": 667,
+    "coded": 14,
     "partial": 2
   },
   "total": 683,
@@ -812,8 +812,8 @@
       "id": "autofish",
       "name": "AutoFish",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "AutoFish",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autofish.md"
     },
