@@ -43,6 +43,8 @@
     "autosword": {"status": "coded", "module": "AutoSword"},
     "autoclicker": {"status": "coded", "module": "AutoClicker"},
     "zoom": {"status": "coded", "module": "Zoom"},
+    "cameraclip": {"status": "coded", "module": "CameraClip"},
+    "cameratweaks": {"status": "coded", "module": "CameraTweaks"},
     "fastladder": {"status": "coded", "module": "FastLadder"},
     "fastplace": {"status": "coded", "module": "FastPlace"},
     "fastbreak": {"status": "coded", "module": "FastBreak"},

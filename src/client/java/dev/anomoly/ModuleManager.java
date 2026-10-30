@@ -23,6 +23,8 @@ import dev.anomoly.modules.AutoDrop;
 import dev.anomoly.modules.AutoWeapon;
 import dev.anomoly.modules.AutoSword;
 import dev.anomoly.modules.AutoClicker;
+import dev.anomoly.modules.CameraClip;
+import dev.anomoly.modules.CameraTweaks;
 import dev.anomoly.modules.ChestStealer;
 import dev.anomoly.modules.ChestCleaner;
 import dev.anomoly.modules.FastBreak;
@@ -61,7 +63,8 @@ public final class ModuleManager {
         new ChestStealer(), new ChestCleaner(),
         new FastPlace(), new FastBreak(), new FastLadder(),
         new NoFall(), new NoSlow(), new SafeWalk(), new Step(), new AntiWeb(), new FastFall(), new MaxBrightness(), new NoHurtCam(), new NoBob(), new AutoF5(),
-        new FovOverride(), new NoFov(), new Zoom(), new NoOverlay(), new NoFireOverlay(), new AntiOverlay(), new PlayerRadar(),
+        new FovOverride(), new NoFov(), new Zoom(), new CameraClip(), new CameraTweaks(),
+        new NoOverlay(), new NoFireOverlay(), new AntiOverlay(), new PlayerRadar(),
         new AntiReducedDebugInfo(), new PortalMenu(), new Twerk()
     );
 

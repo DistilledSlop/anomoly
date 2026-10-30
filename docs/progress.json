@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 632,
-    "coded": 48,
+    "backlog": 630,
+    "coded": 50,
     "partial": 3
   },
   "total": 683,
@@ -1667,8 +1667,8 @@
       "id": "cameraclip",
       "name": "CameraClip",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "CameraClip",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/cameraclip.md"
     },
@@ -1676,8 +1676,8 @@
       "id": "cameratweaks",
       "name": "Camera Tweaks",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "CameraTweaks",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/cameratweaks.md"
     },
