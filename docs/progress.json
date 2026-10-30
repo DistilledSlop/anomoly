@@ -1,10 +1,10 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "coded": 330,
+    "coded": 333,
     "verified": 84,
-    "backlog": 251,
-    "partial": 18
+    "backlog": 243,
+    "partial": 23
   },
   "total": 683,
   "features": [
@@ -1209,9 +1209,9 @@
       "id": "autowindcharge",
       "name": "AutoWindCharge",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "AutoWindCharge",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autowindcharge.md"
     },
     {
@@ -1659,9 +1659,9 @@
       "id": "burrow",
       "name": "Burrow",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "SelfFill",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/burrow.md"
     },
     {
@@ -2217,9 +2217,9 @@
       "id": "elytra",
       "name": "Elytra+",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "ElytraRecast",
+      "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytra.md"
     },
     {
@@ -2280,9 +2280,9 @@
       "id": "elytratweaks",
       "name": "ElytraTweaks",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "ElytraRecast",
+      "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/elytratweaks.md"
     },
     {
@@ -2424,9 +2424,9 @@
       "id": "extraelytra",
       "name": "ExtraElytra",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "ElytraRecast",
+      "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/extraelytra.md"
     },
     {
@@ -3126,9 +3126,9 @@
       "id": "instantrebreak",
       "name": "Instant Rebreak",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "FastBreak",
+      "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/instantrebreak.md"
     },
     {
@@ -4863,9 +4863,9 @@
       "id": "riding",
       "name": "Riding",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "EntitySpeed",
+      "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/riding.md"
     },
     {
@@ -4962,9 +4962,9 @@
       "id": "selffill",
       "name": "SelfFill",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "SelfFill",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/selffill.md"
     },
     {

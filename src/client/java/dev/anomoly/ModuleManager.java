@@ -327,6 +327,8 @@ import dev.anomoly.modules.AntiHunger;
 import dev.anomoly.modules.Damage;
 import dev.anomoly.modules.TridentFly;
 import dev.anomoly.modules.PacketFly;
+import dev.anomoly.modules.SelfFill;
+import dev.anomoly.modules.AutoWindCharge;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -527,6 +529,8 @@ public final class ModuleManager {
         new Damage(),
         new TridentFly(),
         new PacketFly(),
+        new SelfFill(),
+        new AutoWindCharge(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 

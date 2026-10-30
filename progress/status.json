@@ -430,7 +430,15 @@
     "tridentboost": {"status": "partial", "module": "TridentFly", "note": "Changes only the client-side water check; vanilla servers also check, so the dash may not happen. No gameplay test is recorded."},
     "tridenttweaks": {"status": "partial", "module": "TridentFly", "note": "Changes only the client-side water check; vanilla servers also check, so the dash may not happen. No gameplay test is recorded."},
     "packetfly": {"status": "coded", "module": "PacketFly", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
-    "phase": {"status": "partial", "module": "PacketFly", "note": "Walking through blocks is covered by PacketFly and NoClip; the server-side exploit details Phase refers to are not implemented."}
+    "phase": {"status": "partial", "module": "PacketFly", "note": "Walking through blocks is covered by PacketFly and NoClip; the server-side exploit details Phase refers to are not implemented."},
+    "selffill": {"status": "coded", "module": "SelfFill", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "burrow": {"status": "coded", "module": "SelfFill", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "autowindcharge": {"status": "coded", "module": "AutoWindCharge", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "instantrebreak": {"status": "partial", "module": "FastBreak", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."},
+    "extraelytra": {"status": "partial", "module": "ElytraRecast", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."},
+    "elytra": {"status": "partial", "module": "ElytraRecast", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."},
+    "elytratweaks": {"status": "partial", "module": "ElytraRecast", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."},
+    "riding": {"status": "partial", "module": "EntitySpeed", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."}
   },
   "additions": [
     {"id": "anomoly_spear_assist", "name": "Spear Assist", "category": "Combat", "status": "coded", "module": "SpearAssist", "doc": "hacks/spear-assist.md"}

@@ -335,6 +335,8 @@
   "key.anomoly.toggle.damage": "Toggle Anomoly Damage",
   "key.anomoly.toggle.trident_fly": "Toggle Anomoly TridentFly",
   "key.anomoly.toggle.packet_fly": "Toggle Anomoly PacketFly",
+  "key.anomoly.toggle.self_fill": "Toggle Anomoly SelfFill",
+  "key.anomoly.toggle.auto_wind_charge": "Toggle Anomoly AutoWindCharge",
   "key.anomoly.toggle.anti_reduced_debug_info": "Toggle Anomoly Anti Reduced Debug Info",
   "key.anomoly.toggle.portal_menu": "Toggle Anomoly Portal Menu",
   "key.anomoly.toggle.plugins": "Toggle Anomoly Plugins",
