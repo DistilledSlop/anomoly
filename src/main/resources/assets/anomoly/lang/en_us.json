@@ -79,6 +79,7 @@
   "key.anomoly.toggle.smart_eat": "Toggle Anomoly SmartEat",
   "key.anomoly.toggle.no_block_interact": "Toggle Anomoly NoBlockInteract",
   "key.anomoly.toggle.no_entity_interact": "Toggle Anomoly NoEntityInteract",
+  "key.anomoly.toggle.no_interact": "Toggle Anomoly No Interact",
   "key.anomoly.toggle.liquid_interact": "Toggle Anomoly LiquidInteract",
   "key.anomoly.toggle.fast_interact": "Toggle Anomoly Fast Interact",
   "key.anomoly.toggle.auto_crafter": "Toggle Anomoly Auto Crafter",

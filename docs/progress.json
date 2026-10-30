@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 537,
-    "verified": 76,
+    "backlog": 536,
+    "verified": 77,
     "coded": 69,
     "partial": 1
   },
@@ -3999,9 +3999,9 @@
       "id": "nointeract",
       "name": "No Interact",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "NoInteract",
+      "note": "Paired local vanilla 26.3 tests covered all four guards: stone mining, chest use, pig hits, and villager interactions. Separate tests confirmed whitelist inversion, both-hand block use, baby-hit and named-interaction rules, and main-hand suppression while offhand dye still worked. See docs/test-evidence/2026-10-30-nointeract.md. Friend-name filtering and third-party anticheats remain untested.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nointeract.md"
     },
     {

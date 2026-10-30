@@ -4,14 +4,14 @@
 </head><body><h1>Anomoly hack progress</h1>
 <p>One tile per catalogued feature. Tile area is proportional to category size. Blue means coded and compiled, amber means partial, green means gameplay verified, and gray means backlog. Startup validation alone does not count as gameplay verification.</p>
 <img src="progress.svg" alt="Treemap of Anomoly hack progress">
-<p>69 coded, 1 partial, 76 gameplay verified, 537 backlog, 683 total. <a href="progress.json">Raw data</a>.</p>
+<p>69 coded, 1 partial, 77 gameplay verified, 536 backlog, 683 total. <a href="progress.json">Raw data</a>.</p>
 <h2>By category</h2><table><thead><tr><th>Category</th><th>Verified</th><th>Coded</th><th>Partial</th><th>Backlog</th><th>Total</th></tr></thead><tbody>
 <tr><td>Combat</td><td>34</td><td>12</td><td>1</td><td>48</td><td>95</td></tr>
 <tr><td>Exploit</td><td>0</td><td>3</td><td>0</td><td>31</td><td>34</td></tr>
 <tr><td>Fun</td><td>0</td><td>1</td><td>0</td><td>16</td><td>17</td></tr>
 <tr><td>Misc</td><td>0</td><td>2</td><td>0</td><td>120</td><td>122</td></tr>
 <tr><td>Movement</td><td>6</td><td>12</td><td>0</td><td>72</td><td>90</td></tr>
-<tr><td>Player</td><td>18</td><td>14</td><td>0</td><td>55</td><td>87</td></tr>
+<tr><td>Player</td><td>19</td><td>14</td><td>0</td><td>54</td><td>87</td></tr>
 <tr><td>Render</td><td>0</td><td>22</td><td>0</td><td>144</td><td>166</td></tr>
 <tr><td>World</td><td>18</td><td>3</td><td>0</td><td>51</td><td>72</td></tr>
 </tbody></table>
@@ -427,7 +427,7 @@
 <tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/middleclickextra.md">Middle Click Extra</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/mouseelytrafix.md">MouseElytraFix</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/multitask.md">Multitask</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nointeract.md">No Interact</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nointeract.md">No Interact</a></td><td class="verified">verified</td><td>Paired local vanilla 26.3 tests covered all four guards: stone mining, chest use, pig hits, and villager interactions. Separate tests confirmed whitelist inversion, both-hand block use, baby-hit and named-interaction rules, and main-hand suppression while offhand dye still worked. See docs/test-evidence/2026-10-30-nointeract.md. Friend-name filtering and third-party anticheats remain untested.</td></tr>
 <tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nominingtrace.md">No Mining Trace</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nostatuseffects.md">No Status Effects</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noblockinteract.md">NoBlockInteract</a></td><td class="verified">verified</td><td>A physical right-click at a chest opened it with the module off; with the module on, the same click consumed a golden apple, granted four absorption health, and kept the chest closed on a local vanilla 26.3 server. See docs/test-evidence/2026-10-30-interactions.md. Other block types and third-party anticheats remain untested.</td></tr>
