@@ -1,10 +1,10 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 530,
+    "backlog": 529,
     "verified": 84,
-    "coded": 68,
-    "partial": 1
+    "coded": 67,
+    "partial": 3
   },
   "total": 683,
   "features": [
@@ -426,9 +426,9 @@
       "id": "antiweb",
       "name": "AntiWeb",
       "category": "Movement",
-      "status": "coded",
+      "status": "partial",
       "module": "AntiWeb",
-      "note": "",
+      "note": "Air and Strafe modes tested on a local vanilla 26.3 server; Timer, Solid, and Fly variants remain unfinished. See docs/test-evidence/2026-10-30-antiweb.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiweb.md"
     },
     {
@@ -4269,9 +4269,9 @@
       "id": "noweb",
       "name": "NoWeb",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "AntiWeb",
+      "note": "Air and Strafe modes tested on a local vanilla 26.3 server; Grim2365, Intave14, and PlaceWater variants remain unfinished. See docs/test-evidence/2026-10-30-antiweb.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noweb.md"
     },
     {

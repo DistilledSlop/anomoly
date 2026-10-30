@@ -4,13 +4,13 @@
 </head><body><h1>Anomoly hack progress</h1>
 <p>One tile per catalogued feature. Tile area is proportional to category size. Blue means coded and compiled, amber means partial, green means gameplay verified, and gray means backlog. Startup validation alone does not count as gameplay verification.</p>
 <img src="progress.svg" alt="Treemap of Anomoly hack progress">
-<p>68 coded, 1 partial, 84 gameplay verified, 530 backlog, 683 total. <a href="progress.json">Raw data</a>.</p>
+<p>67 coded, 3 partial, 84 gameplay verified, 529 backlog, 683 total. <a href="progress.json">Raw data</a>.</p>
 <h2>By category</h2><table><thead><tr><th>Category</th><th>Verified</th><th>Coded</th><th>Partial</th><th>Backlog</th><th>Total</th></tr></thead><tbody>
 <tr><td>Combat</td><td>34</td><td>12</td><td>1</td><td>48</td><td>95</td></tr>
 <tr><td>Exploit</td><td>0</td><td>3</td><td>0</td><td>31</td><td>34</td></tr>
 <tr><td>Fun</td><td>0</td><td>1</td><td>0</td><td>16</td><td>17</td></tr>
 <tr><td>Misc</td><td>0</td><td>2</td><td>0</td><td>120</td><td>122</td></tr>
-<tr><td>Movement</td><td>13</td><td>11</td><td>0</td><td>66</td><td>90</td></tr>
+<tr><td>Movement</td><td>13</td><td>10</td><td>2</td><td>65</td><td>90</td></tr>
 <tr><td>Player</td><td>19</td><td>14</td><td>0</td><td>54</td><td>87</td></tr>
 <tr><td>Render</td><td>0</td><td>22</td><td>0</td><td>144</td><td>166</td></tr>
 <tr><td>World</td><td>18</td><td>3</td><td>0</td><td>51</td><td>72</td></tr>
@@ -293,7 +293,7 @@
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antilevitation.md">AntiLevitation</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antivoid.md">AntiVoid</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiwaterpush.md">AntiWaterPush</a></td><td class="verified">verified</td><td>The No Push module&#x27;s Water and lava currents setting covers AntiWaterPush. In a local vanilla 26.3 channel, the player drifted from z=92.5 to 94.88 with No Push off, stayed at z=92.5 with it on, and drifted to z=94.74 after switching it off. See docs/test-evidence/2026-10-30-waterpush.md. Lava and third-party anticheats remain untested.</td></tr>
-<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiweb.md">AntiWeb</a></td><td class="coded">coded</td><td>AntiWeb</td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiweb.md">AntiWeb</a></td><td class="partial">partial</td><td>Air and Strafe modes tested on a local vanilla 26.3 server; Timer, Solid, and Fly variants remain unfinished. See docs/test-evidence/2026-10-30-antiweb.md.</td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autojump.md">Auto Jump</a></td><td class="coded">coded</td><td>AutoJump</td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autowasp.md">Auto Wasp</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoswim.md">AutoSwim</a></td><td class="verified">verified</td><td>In a local vanilla 26.3 water tunnel, a server-side swimming predicate reported false while Auto Walk moved the player forward with Auto Swim off, true with Auto Swim on, and false again after forward input stopped. See docs/test-evidence/2026-10-30-autoswim.md. Surface behavior and third-party anticheats remain untested.</td></tr>
@@ -347,7 +347,7 @@
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nopush.md">NoPush</a></td><td class="verified">verified</td><td>A paired local vanilla 26.3 water-current test showed server position moving from z=92.5 to 94.88 with No Push off, remaining at z=92.5 with it on, and moving to z=94.74 after disabling it. See docs/test-evidence/2026-10-30-waterpush.md. Entity collision, lava currents, and third-party anticheats remain untested.</td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noslow.md">NoSlow</a></td><td class="coded">coded</td><td>NoSlow</td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nowatercollision.md">NoWaterCollision</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noweb.md">NoWeb</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noweb.md">NoWeb</a></td><td class="partial">partial</td><td>Air and Strafe modes tested on a local vanilla 26.3 server; Grim2365, Intave14, and PlaceWater variants remain unfinished. See docs/test-evidence/2026-10-30-antiweb.md.</td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/packetfly.md">PacketFly</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/parkour.md">Parkour</a></td><td class="verified">verified</td><td>On a local vanilla 26.3 server, walking off a single-block platform fell below y=121 with Parkour off, while the enabled run rose to y=122.02 at the edge. With a landing path across a one-block gap, the player landed and stayed at y=121; walking on a continuous path kept y=121. See docs/test-evidence/2026-10-30-parkour.md. Sneaking and third-party anticheats remain untested.</td></tr>
 <tr><td>Movement</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/portalgui.md">PortalGui</a></td><td class="backlog">backlog</td><td></td></tr>

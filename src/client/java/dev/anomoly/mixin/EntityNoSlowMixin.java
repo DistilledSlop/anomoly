@@ -6,6 +6,7 @@ import dev.anomoly.modules.NoSlow;
 import dev.anomoly.modules.AntiWeb;
 import net.minecraft.client.player.LocalPlayer;
 import net.minecraft.world.entity.Entity;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.state.BlockState;
 import net.minecraft.world.phys.Vec3;
 import org.spongepowered.asm.mixin.Mixin;
@@ -27,7 +28,7 @@ public abstract class EntityNoSlowMixin {
     @Inject(method = "makeStuckInBlock", at = @At("TAIL"))
     private void anomoly$blockCollision(BlockState state, Vec3 speedMultiplier, CallbackInfo ci) {
         if ((Object)this instanceof LocalPlayer && (AnomolyClient.MODULES.get(NoSlow.class).blockFactor()
-            || AnomolyClient.MODULES.get(AntiWeb.class).enabled())) {
+            || state.is(Blocks.COBWEB) && AnomolyClient.MODULES.get(AntiWeb.class).airMode())) {
             stuckSpeedMultiplier = Vec3.ZERO;
         }
     }
