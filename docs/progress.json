@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 543,
-    "verified": 70,
+    "backlog": 542,
+    "verified": 71,
     "coded": 69,
     "partial": 1
   },
@@ -4017,9 +4017,9 @@
       "id": "nojumpdelay",
       "name": "NoJumpDelay",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "NoJumpDelay",
+      "note": "On a local vanilla Minecraft 26.3 server, a four-second held-jump run under a two-block ceiling produced 8 jumps with NoJumpDelay off, 28 with it on, and 8 again after toggling it off. The player remained at x=50.5, y=120, z=50.5. See docs/test-evidence/2026-10-30-nojumpdelay.md. The module clears the client ground-jump cooldown; it does not create midair jumps. Third-party anticheats remain untested.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nojumpdelay.md"
     },
     {

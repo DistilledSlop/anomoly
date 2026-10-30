@@ -81,6 +81,7 @@ import dev.anomoly.modules.FreeLook;
 import dev.anomoly.modules.KillAura;
 import dev.anomoly.modules.MaxBrightness;
 import dev.anomoly.modules.NoHurtCam;
+import dev.anomoly.modules.NoJumpDelay;
 import dev.anomoly.modules.NoFall;
 import dev.anomoly.modules.NoSlow;
 import dev.anomoly.modules.NoBob;
@@ -138,7 +139,7 @@ public final class ModuleManager {
     private final List<Module> modules = List.of(
         new AutoPearl(), new AutoSoup(), new Soup(), new Criticals(), new Surround(), new HoleFiller(), new SelfTrap(), new SelfWeb(), new SelfAnvil(), new AntiAnvil(), new AntiBed(), new AutoAnvil(), new AutoTrap(), new AutoCrystalBase(), new CrystalAura(), new AnchorAura(), new BedAura(), new KeepSprint(), new SprintReset(), new SuperKnockback(), new WTap(), new AutoWeapon(), new AutoSword(), new AutoClicker(), new TriggerBot(), new AntiBot(), new KillAura(), new Aimbot(), new AimAssist(), new SpearAssist(), new Reach(), new AutoLeave(),
         new AutoArmor(), new BowAimbot(), new ProjectileAimbot(), new AutoShoot(), new AutoBow(), new AutoRod(), new BowSpam(), new AutoBowRelease(), new ThrowPot(), new AutoPotion(), new AutoExp(), new AutoGApple(), new AutoTotem(), new Pot(),
-        new AutoSprint(), new AutoWalk(), new AutoJump(), new AutoDodge(), new AirJump(), new AutoSwim(), new GuiMove(),
+        new AutoSprint(), new AutoWalk(), new AutoJump(), new NoJumpDelay(), new AutoDodge(), new AirJump(), new AutoSwim(), new GuiMove(),
         new AutoSneak(), new AutoRespawn(), new AutoEat(), new AutoFish(), new AutoMend(), new Offhand(), new Eagle(), new ElytraSwap(), new AutoBuff(), new SmartEat(), new AutoCrafter(), new InventoryCleaner(), new AntiAFK(), new AutoBreak(), new DurabilityAlert(), new AutoSwitch(), new AutoReconnect(), new AntiCheatDetect(), new NoRotate(),
         new AutoTool(), new AutoReplenish(),
         new AutoDeposit(), new AutoDrop(),
