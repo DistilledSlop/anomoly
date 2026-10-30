@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 562,
-    "verified": 52,
+    "backlog": 561,
+    "verified": 53,
     "coded": 68,
     "partial": 1
   },
@@ -921,9 +921,9 @@
       "id": "autonametag",
       "name": "Auto Nametag",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "AutoNametag",
+      "note": "On a local vanilla 26.3 server, Auto Nametag named a sheep and cow with two tags from a hotbar stack, preserved an already named pig, ignored an unnamed tag, named a sheep from the offhand, and left a sheep behind a wall unnamed until the wall was removed. It restored the selected hotbar slot. See docs/test-evidence/2026-10-30-autonametag.md. Moving entities and third-party anticheats remain untested.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autonametag.md"
     },
     {
