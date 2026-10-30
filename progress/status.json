@@ -1,5 +1,7 @@
 {
   "catalog": {
+    "noweather": {"status": "partial", "module": "WeatherChanger", "note": "Rain and thunder override are implemented; Wurst-style time and moon phase controls remain."},
+    "weatherchanger": {"status": "coded", "module": "WeatherChanger"},
     "autoreconnect": {"status": "coded", "module": "AutoReconnect"},
     "nopush": {"status": "coded", "module": "NoPush"},
     "velocity": {"status": "coded", "module": "Velocity"},

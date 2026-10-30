@@ -1,8 +1,9 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 622,
-    "coded": 61
+    "backlog": 620,
+    "coded": 62,
+    "partial": 1
   },
   "total": 683,
   "features": [
@@ -4258,9 +4259,9 @@
       "id": "noweather",
       "name": "NoWeather",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "WeatherChanger",
+      "note": "Rain and thunder override are implemented; Wurst-style time and moon phase controls remain.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noweather.md"
     },
     {
@@ -6058,8 +6059,8 @@
       "id": "weatherchanger",
       "name": "Weather Changer",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "WeatherChanger",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/weatherchanger.md"
     },
