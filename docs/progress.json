@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 591,
-    "verified": 21,
+    "backlog": 590,
+    "verified": 22,
     "coded": 70,
     "partial": 1
   },
@@ -6096,9 +6096,9 @@
       "id": "wtap",
       "name": "WTap",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "WTap",
+      "note": "A local paired two-player test showed a server-observed sprint stop and restart and about 0.94 fewer blocks of forward movement at the matched mid-test sample; releasing W during the tap prevented sprint restart. Tested with an 8-tick release for observability; the 2-tick default remains untested. See docs/test-evidence/2026-10-30-wtap.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/wtap.md"
     },
     {

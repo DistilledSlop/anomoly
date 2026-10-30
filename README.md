@@ -6,7 +6,7 @@ Anomoly is a full Minecraft Java 26.3 hacked client built as a Fabric mod, with 
 
 [![Anomoly hack progress treemap](docs/progress.svg)](https://distilledslop.github.io/anomoly/progress.html)
 
-The [searchable progress report](https://distilledslop.github.io/anomoly/progress.html) is generated from the 682 catalog entries plus Anomoly's Spear Assist. It currently tracks <!-- anomoly-progress:start -->**70 coded**, **1 partial**, **21 gameplay verified**, and **591 backlog**<!-- anomoly-progress:end --> features. Blue tiles are coded modules, amber tiles are partial implementations, green tiles have gameplay test evidence, and gray tiles are backlog. Run `python3 tools/progress.py` after changing a module's status; CI runs `python3 tools/progress.py --check` to verify the treemap and [raw data](docs/progress.json).
+The [searchable progress report](https://distilledslop.github.io/anomoly/progress.html) is generated from the 682 catalog entries plus Anomoly's Spear Assist. It currently tracks <!-- anomoly-progress:start -->**70 coded**, **1 partial**, **22 gameplay verified**, and **590 backlog**<!-- anomoly-progress:end --> features. Blue tiles are coded modules, amber tiles are partial implementations, green tiles have gameplay test evidence, and gray tiles are backlog. Run `python3 tools/progress.py` after changing a module's status; CI runs `python3 tools/progress.py --check` to verify the treemap and [raw data](docs/progress.json).
 
 ## Build and run
 
@@ -26,7 +26,7 @@ The [local gameplay test](docs/test-evidence/2026-10-30-local-gameplay.md) verif
 
 | Category | Modules |
 | --- | --- |
-| Combat | Auto Pearl, Auto Soup, Soup, Keep Sprint, Sprint Reset, Super Knockback (partial), Auto Weapon, Auto Sword, Auto Clicker, Trigger Bot, Anti Bot, Kill Aura, Aimbot, Aim Assist, Bow Aimbot, Projectile Aimbot, Auto Shoot, Auto Bow, Bow Spam, Auto Rod, Spear Assist, Reach, Auto Leave, Auto Armor, Auto Bow Release, Auto Potion, Throw Pot, Pot, Auto Exp, Auto GApple, Auto Totem |
+| Combat | Auto Pearl, Auto Soup, Soup, Keep Sprint, Sprint Reset, W Tap, Super Knockback (partial), Auto Weapon, Auto Sword, Auto Clicker, Trigger Bot, Anti Bot, Kill Aura, Aimbot, Aim Assist, Bow Aimbot, Projectile Aimbot, Auto Shoot, Auto Bow, Bow Spam, Auto Rod, Spear Assist, Reach, Auto Leave, Auto Armor, Auto Bow Release, Auto Potion, Throw Pot, Pot, Auto Exp, Auto GApple, Auto Totem |
 | Movement | Auto Sprint, Auto Walk, Auto Jump, Air Jump, Auto Sneak, Fast Ladder, Fast Fall, No Fall, Safe Walk, Step, Anti Web, Velocity, No Push, No Slow |
 | Player | Auto Respawn, Auto Eat, Auto Fish, Anti AFK, Auto Break, Auto Switch, Auto Tool, Auto Replenish, Auto Deposit, Auto Drop (also Auto Eject), Chest Stealer, Chest Cleaner, No Rotate (also No Server Rotate) |
 | World | Fast Place, Fast Break (also Break Delay) |
@@ -60,6 +60,8 @@ Auto Pearl watches pearls thrown by other players, simulates their landing, and 
 Auto Soup selects and uses mushroom stew when health is low; Soup is a one-shot toggle that uses one stew regardless of health. Both wait for the item to finish consuming, restore the previous hotbar slot, and can optionally use rabbit or beetroot stew. The [local gameplay test](docs/test-evidence/2026-10-30-soup.md) confirms both consumed stew and restored the slot. Vanilla stew restores hunger, not health. Auto Soup also sends the normal use interaction at full hunger for servers with instant soup healing, but that plugin behavior has not been tested.
 
 Keep Sprint preserves local horizontal movement and restores server sprint state after a sprint attack. Sprint Reset restarts sprint after a player hit when forward movement continues. Super Knockback primes sprint before a full-strength hit, including from a standstill. A [paired two-player test](docs/test-evidence/2026-10-30-sprint-combat.md) confirms sprint state restoration and the increased target displacement. Super Knockback remains partial: the vanilla server rejects damage and extra knockback during its damage cooldown when the new hit is no stronger than the previous one.
+
+W Tap briefly releases forward movement after a full-strength player hit, stops sprint, then resumes both if the forward key remains physically held. Its release duration and minimum interval are configurable. A [paired two-player test](docs/test-evidence/2026-10-30-wtap.md) confirms the server-observed sprint stop and restart and reduced movement during the tap. W Tap takes priority over Keep Sprint and Sprint Reset during that hit.
 
 Anti Bot is a shared filter for automatic attacks and aiming. When enabled, it excludes player entities without a player-list entry; optional settings can also exclude newly spawned or invisible players. These are conservative signals and cannot identify every decoy. The module is coded but still needs a decoy-specific gameplay test.
 

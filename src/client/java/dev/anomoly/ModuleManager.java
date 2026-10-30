@@ -12,6 +12,7 @@ import dev.anomoly.modules.AutoPearl;
 import dev.anomoly.modules.KeepSprint;
 import dev.anomoly.modules.SprintReset;
 import dev.anomoly.modules.SuperKnockback;
+import dev.anomoly.modules.WTap;
 import dev.anomoly.modules.AutoSoup;
 import dev.anomoly.modules.Soup;
 import dev.anomoly.modules.BowAimbot;
@@ -91,7 +92,7 @@ import net.minecraft.client.Minecraft;
 
 public final class ModuleManager {
     private final List<Module> modules = List.of(
-        new AutoPearl(), new AutoSoup(), new Soup(), new KeepSprint(), new SprintReset(), new SuperKnockback(), new AutoWeapon(), new AutoSword(), new AutoClicker(), new TriggerBot(), new AntiBot(), new KillAura(), new Aimbot(), new AimAssist(), new SpearAssist(), new Reach(), new AutoLeave(),
+        new AutoPearl(), new AutoSoup(), new Soup(), new KeepSprint(), new SprintReset(), new SuperKnockback(), new WTap(), new AutoWeapon(), new AutoSword(), new AutoClicker(), new TriggerBot(), new AntiBot(), new KillAura(), new Aimbot(), new AimAssist(), new SpearAssist(), new Reach(), new AutoLeave(),
         new AutoArmor(), new BowAimbot(), new ProjectileAimbot(), new AutoShoot(), new AutoBow(), new AutoRod(), new BowSpam(), new AutoBowRelease(), new ThrowPot(), new AutoPotion(), new AutoExp(), new AutoGApple(), new AutoTotem(), new Pot(),
         new AutoSprint(), new AutoWalk(), new AutoJump(), new AirJump(),
         new AutoSneak(), new AutoRespawn(), new AutoEat(), new AutoFish(), new AntiAFK(), new AutoBreak(), new AutoSwitch(), new AutoReconnect(), new NoRotate(),
