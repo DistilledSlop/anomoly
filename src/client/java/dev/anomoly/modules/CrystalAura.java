@@ -4,7 +4,6 @@ import dev.anomoly.AnomolyClient;
 import dev.anomoly.Module;
 import dev.anomoly.setting.BooleanSetting;
 import dev.anomoly.setting.FloatSetting;
-import java.util.ArrayList;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
@@ -18,13 +17,10 @@ import net.minecraft.world.InteractionResult;
 import net.minecraft.world.entity.Entity;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.entity.boss.enderdragon.EndCrystal;
-import net.minecraft.world.entity.player.Player;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
-import net.minecraft.world.level.ServerExplosion;
 import net.minecraft.world.level.ClipContext;
 import net.minecraft.world.level.block.Blocks;
-import net.minecraft.world.phys.AABB;
 import net.minecraft.world.phys.BlockHitResult;
 import net.minecraft.world.phys.HitResult;
 import net.minecraft.world.phys.Vec3;
@@ -63,6 +59,7 @@ public final class CrystalAura extends Module {
 
     @Override public void tick(Minecraft client) {
         engaged = false;
+        if (AnomolyClient.MODULES.get(AutoCrystalBase.class).placedThisTick(client)) return;
         if (client.gameMode == null || client.gui.screen() != null || !client.player.isAlive()
             || client.player.isSpectator() || client.player.isHandsBusy() || client.player.isUsingItem()
             || client.options.keyUse.isDown() || client.options.keyAttack.isDown()
@@ -79,7 +76,7 @@ public final class CrystalAura extends Module {
         }
         if (placeCooldown > 0) placeCooldown--;
         if (breakCooldown > 0) breakCooldown--;
-        List<LivingEntity> targets = targets(client);
+        List<LivingEntity> targets = planningTargets(client);
         if (targets.isEmpty()) return;
 
         EndCrystal bestCrystal = null;
@@ -89,7 +86,7 @@ public final class CrystalAura extends Module {
                 || !inAttackRange(player, crystal)
                 || player.getEyePosition().distanceToSqr(crystal.position()) > square(breakRange.get())
                 || lineOfSight.get() && !player.hasLineOfSight(crystal)) continue;
-            double score = score(client, crystal.position(), targets);
+            double score = scorePlacement(client, crystal.position(), targets);
             if (score > bestScore) { bestScore = score; bestCrystal = crystal; }
         }
         if (bestCrystal != null) {
@@ -128,21 +125,11 @@ public final class CrystalAura extends Module {
         }
     }
 
-    private List<LivingEntity> targets(Minecraft client) {
-        List<LivingEntity> result = new ArrayList<>();
-        double range = square(targetRange.get());
-        for (Entity entity : client.level.entitiesForRendering()) {
-            if (!(entity instanceof LivingEntity living) || living == client.player || !living.isAlive()
-                || living.damageCooldownTime > 10 || client.player.distanceToSqr(living) > range) continue;
-            if (living instanceof Player player) {
-                if (!client.player.canHarmPlayer(player) || AnomolyClient.MODULES.get(AntiBot.class).reject(client, player)) continue;
-            } else if (!targetMobs.get()) continue;
-            result.add(living);
-        }
-        return result;
+    List<LivingEntity> planningTargets(Minecraft client) {
+        return CrystalCombat.targets(client, targetRange.get(), targetMobs.get());
     }
 
-    private BlockPos bestBase(Minecraft client, List<LivingEntity> targets) {
+    BlockPos bestBase(Minecraft client, List<LivingEntity> targets) {
         LocalPlayer player = client.player;
         BlockPos origin = player.blockPosition();
         int radius = (int)Math.ceil(placeRange.get());
@@ -155,9 +142,7 @@ public final class CrystalAura extends Module {
                     BlockPos base = new BlockPos(x, y, z);
                     if (!client.level.getBlockState(base).is(Blocks.OBSIDIAN)
                         && !client.level.getBlockState(base).is(Blocks.BEDROCK)) continue;
-                    BlockPos above = base.above();
-                    if (!client.level.isEmptyBlock(above)
-                        || !client.level.getEntities(null, new AABB(x, y + 1, z, x + 1, y + 3, z + 1)).isEmpty()) continue;
+                    if (!CrystalCombat.freeCrystalVolume(client, base)) continue;
                     Vec3 hit = Vec3.atCenterOf(base).add(0, 0.5, 0);
                     if (eyes.distanceToSqr(hit) > square(placeRange.get())) continue;
                     if (lineOfSight.get()) {
@@ -167,30 +152,20 @@ public final class CrystalAura extends Module {
                         if (!(ray instanceof BlockHitResult block) || !block.getBlockPos().equals(base)) continue;
                     }
                     Vec3 explosion = new Vec3(x + 0.5, y + 1.0, z + 0.5);
-                    double score = score(client, explosion, targets);
+                    double score = scorePlacement(client, explosion, targets);
                     if (score > bestScore) { bestScore = score; best = base; }
                 }
         return best;
     }
 
-    private double score(Minecraft client, Vec3 explosion, List<LivingEntity> targets) {
-        boolean invulnerable = client.player.getAbilities().invulnerable;
-        float self = invulnerable ? 0F : rawDamage(explosion, client.player);
-        if (!invulnerable && (self > maxSelfDamage.get()
-            || client.player.getHealth() + client.player.getAbsorptionAmount() - self <= healthReserve.get()))
-            return Double.NEGATIVE_INFINITY;
-        float targetDamage = 0F;
-        for (LivingEntity target : targets) targetDamage = Math.max(targetDamage, rawDamage(explosion, target));
-        if (targetDamage < minTargetDamage.get() || targetDamage - self < minAdvantage.get())
-            return Double.NEGATIVE_INFINITY;
-        return targetDamage - self * 1.25;
+    double scorePlacement(Minecraft client, Vec3 explosion, List<LivingEntity> targets) {
+        return CrystalCombat.score(client, explosion, targets, minTargetDamage.get(),
+            maxSelfDamage.get(), minAdvantage.get(), healthReserve.get());
     }
 
-    private static float rawDamage(Vec3 explosion, LivingEntity entity) {
-        double distance = Math.sqrt(entity.distanceToSqr(explosion)) / 12.0;
-        if (distance > 1.0) return 0F;
-        double power = (1.0 - distance) * ServerExplosion.getSeenPercent(explosion, entity);
-        return (float)((power * power + power) / 2.0 * 84.0 + 1.0);
+    double projectedScore(Minecraft client, Vec3 explosion, List<LivingEntity> targets, BlockPos futureBase) {
+        return CrystalCombat.projectedScore(client, explosion, targets, minTargetDamage.get(),
+            maxSelfDamage.get(), minAdvantage.get(), healthReserve.get(), futureBase);
     }
 
     private static boolean inAttackRange(LocalPlayer player, EndCrystal crystal) {

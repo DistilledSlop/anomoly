@@ -6,7 +6,7 @@ Anomoly is a full Minecraft Java 26.3 hacked client built as a Fabric mod, with 
 
 [![Anomoly hack progress treemap](docs/progress.svg)](https://distilledslop.github.io/anomoly/progress.html)
 
-The [searchable progress report](https://distilledslop.github.io/anomoly/progress.html) is generated from the 682 catalog entries plus Anomoly's Spear Assist. It currently tracks <!-- anomoly-progress:start -->**70 coded**, **1 partial**, **25 gameplay verified**, and **587 backlog**<!-- anomoly-progress:end --> features. Blue tiles are coded modules, amber tiles are partial implementations, green tiles have gameplay test evidence, and gray tiles are backlog. Run `python3 tools/progress.py` after changing a module's status; CI runs `python3 tools/progress.py --check` to verify the treemap and [raw data](docs/progress.json).
+The [searchable progress report](https://distilledslop.github.io/anomoly/progress.html) is generated from the 682 catalog entries plus Anomoly's Spear Assist. It currently tracks <!-- anomoly-progress:start -->**70 coded**, **1 partial**, **26 gameplay verified**, and **586 backlog**<!-- anomoly-progress:end --> features. Blue tiles are coded modules, amber tiles are partial implementations, green tiles have gameplay test evidence, and gray tiles are backlog. Run `python3 tools/progress.py` after changing a module's status; CI runs `python3 tools/progress.py --check` to verify the treemap and [raw data](docs/progress.json).
 
 ## Build and run
 
@@ -26,7 +26,7 @@ The [local gameplay test](docs/test-evidence/2026-10-30-local-gameplay.md) verif
 
 | Category | Modules |
 | --- | --- |
-| Combat | Auto Pearl, Auto Soup, Soup, Keep Sprint, Sprint Reset, W Tap, Criticals, Surround, Crystal Aura, Super Knockback (partial), Auto Weapon, Auto Sword, Auto Clicker, Trigger Bot, Anti Bot, Kill Aura, Aimbot, Aim Assist, Bow Aimbot, Projectile Aimbot, Auto Shoot, Auto Bow, Bow Spam, Auto Rod, Spear Assist, Reach, Auto Leave, Auto Armor, Auto Bow Release, Auto Potion, Throw Pot, Pot, Auto Exp, Auto GApple, Auto Totem |
+| Combat | Auto Pearl, Auto Soup, Soup, Keep Sprint, Sprint Reset, W Tap, Criticals, Surround, Auto Crystal Base, Crystal Aura, Super Knockback (partial), Auto Weapon, Auto Sword, Auto Clicker, Trigger Bot, Anti Bot, Kill Aura, Aimbot, Aim Assist, Bow Aimbot, Projectile Aimbot, Auto Shoot, Auto Bow, Bow Spam, Auto Rod, Spear Assist, Reach, Auto Leave, Auto Armor, Auto Bow Release, Auto Potion, Throw Pot, Pot, Auto Exp, Auto GApple, Auto Totem |
 | Movement | Auto Sprint, Auto Walk, Auto Jump, Air Jump, Auto Sneak, Fast Ladder, Fast Fall, No Fall, Safe Walk, Step, Anti Web, Velocity, No Push, No Slow |
 | Player | Auto Respawn, Auto Eat, Auto Fish, Anti AFK, Auto Break, Auto Switch, Auto Tool, Auto Replenish, Auto Deposit, Auto Drop (also Auto Eject), Chest Stealer, Chest Cleaner, No Rotate (also No Server Rotate) |
 | World | Fast Place, Fast Break (also Break Delay) |
@@ -68,6 +68,8 @@ Criticals defers a melee hit until the player descends from an ordinary jump, th
 Surround selects obsidian from the offhand or hotbar and places it on the four sides of your feet using normal block interactions. It repairs missing sides and can center you within your current block on activation when the path is clear. Its [local gameplay test](docs/test-evidence/2026-10-30-surround.md) verifies all four placements, repair, offhand use, hotbar restoration, and the center option.
 
 Crystal Aura scans visible obsidian and bedrock bases, predicts blast damage using Minecraft 26.3's exposure calculation, and places or attacks end crystals only when target damage and conservative self-damage limits permit. It can select crystals from the hotbar or offhand, and pauses for the target's damage cooldown. A [local gameplay test](docs/test-evidence/2026-10-30-crystalaura.md) records automated placement and two detonations against a pig, plus a survival safety control that placed nothing in an exposed position. Armor and enchantment effects on target damage are not modeled by its score; the self-damage limit uses raw damage before reductions.
+
+Auto Crystal Base prepares obsidian beneath a viable crystal position when crystals are available. It predicts how the newly placed obsidian will block the blast, applies Crystal Aura's safety settings when both modules are enabled, and waits a tick before Crystal Aura uses the base. The [local gameplay test](docs/test-evidence/2026-10-30-autocrystalbase.md) confirms a single useful base, the handoff to Crystal Aura, and refusal of two unsafe or ineffective setups. It places into replaceable space; it does not mine existing floor blocks.
 
 Anti Bot is a shared filter for automatic attacks and aiming. When enabled, it excludes player entities without a player-list entry; optional settings can also exclude newly spawned or invisible players. These are conservative signals and cannot identify every decoy. The module is coded but still needs a decoy-specific gameplay test.
 

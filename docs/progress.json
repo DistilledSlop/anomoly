@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 587,
-    "verified": 25,
+    "backlog": 586,
+    "verified": 26,
     "coded": 70,
     "partial": 1
   },
@@ -696,9 +696,9 @@
       "id": "autocrystalbase",
       "name": "AutoCrystalBase",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "AutoCrystalBase",
+      "note": "On a local vanilla 26.3 server, Auto Crystal Base selected obsidian from the hotbar, placed one useful base at (8,100,5) beside an elevated target, kept stone selected, and Crystal Aura then used it to kill a 100-health pig. Its projected blast score refused a flat-floor base that would shield a ground-level target, and default survival settings refused a dangerous elevated setup. See docs/test-evidence/2026-10-30-autocrystalbase.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autocrystalbase.md"
     },
     {
