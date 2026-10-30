@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 599,
-    "verified": 14,
+    "backlog": 598,
+    "verified": 15,
     "coded": 70
   },
   "total": 683,
@@ -4583,9 +4583,9 @@
       "id": "pot",
       "name": "Pot",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "Pot",
+      "note": "The one-shot hotbar swap threw healing and poison splash potions and a slowness lingering potion on a local 26.3 server, restored stone, and disabled itself. See docs/test-evidence/2026-10-30-pot.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/pot.md"
     },
     {

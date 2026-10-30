@@ -27,6 +27,7 @@ public final class ThrowPot extends Module {
             || !HealingPotions.available(client.player, true)) { setEnabled(false); return; }
         if (cooldown > 0) { cooldown--; return; }
         if (client.player.isUsingItem() || client.player.isHandsBusy()
+            || AnomolyClient.MODULES.get(Pot.class).active(client)
             || client.options.keyUse.isDown() || client.options.keyAttack.isDown()
             || AnomolyClient.MODULES.get(AutoBow.class).active(client)
             || AnomolyClient.MODULES.get(AutoShoot.class).active(client)) return;

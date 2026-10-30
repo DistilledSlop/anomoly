@@ -30,6 +30,7 @@ public final class AutoPotion extends Module {
         if (!active(client) || client.player.isUsingItem() || client.player.isHandsBusy()
             || client.options.keyUse.isDown() || client.options.keyAttack.isDown()
             || AnomolyClient.MODULES.get(ThrowPot.class).active(client)
+            || AnomolyClient.MODULES.get(Pot.class).active(client)
             || AnomolyClient.MODULES.get(AutoBow.class).active(client)
             || AnomolyClient.MODULES.get(AutoShoot.class).active(client)) return;
         HealingPotions.Selection selection = HealingPotions.select(client.player, selectHotbar.get());

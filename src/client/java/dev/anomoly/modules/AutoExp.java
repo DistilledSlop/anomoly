@@ -34,7 +34,8 @@ public final class AutoExp extends Module {
             || AnomolyClient.MODULES.get(AutoBow.class).active(client)
             || AnomolyClient.MODULES.get(AutoShoot.class).active(client)
             || AnomolyClient.MODULES.get(ThrowPot.class).active(client)
-            || AnomolyClient.MODULES.get(AutoPotion.class).active(client)) return;
+            || AnomolyClient.MODULES.get(AutoPotion.class).active(client)
+            || AnomolyClient.MODULES.get(Pot.class).active(client)) return;
         LocalPlayer player = client.player;
         InteractionHand hand = null;
         int originalSlot = -1;

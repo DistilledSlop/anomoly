@@ -37,6 +37,7 @@ public final class AutoGApple extends Module {
         if (cooldown > 0 || client.gui.screen() != null || client.player.isUsingItem()
             || AnomolyClient.MODULES.get(ThrowPot.class).active(client)
             || AnomolyClient.MODULES.get(AutoPotion.class).active(client)
+            || AnomolyClient.MODULES.get(Pot.class).active(client)
             || client.player.hasEffect(MobEffects.ABSORPTION) || client.player.getHealth() > health.get()) return;
         var inventory = client.player.getInventory();
         int slot = -1;
