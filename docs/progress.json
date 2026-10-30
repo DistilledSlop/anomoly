@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 585,
-    "verified": 27,
+    "backlog": 584,
+    "verified": 28,
     "coded": 70,
     "partial": 1
   },
@@ -4971,9 +4971,9 @@
       "id": "selftrap",
       "name": "Self Trap",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "SelfTrap",
+      "note": "On a local vanilla 26.3 server, Self Trap built a three-block north support column and an obsidian roof at (20,102,20), restored the selected stone slot, rebuilt the roof from offhand obsidian after removal, and left it empty without obsidian. See docs/test-evidence/2026-10-30-selftrap.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/selftrap.md"
     },
     {
