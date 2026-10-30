@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 534,
-    "verified": 80,
+    "backlog": 533,
+    "verified": 81,
     "coded": 68,
     "partial": 1
   },
@@ -1398,9 +1398,9 @@
       "id": "blockbounce",
       "name": "BlockBounce",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "BlockBounce",
+      "note": "On a local vanilla 26.3 server, a slime jump reached sampled y=101.89 with BlockBounce off and y=104.27 with it on. With it still on, a stone jump reached y=102.25, while honey and bed jumps reached y=103.53 and y=104.51. See docs/test-evidence/2026-10-30-blockbounce.md. Third-party anticheats remain untested.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blockbounce.md"
     },
     {
