@@ -230,6 +230,11 @@ import dev.anomoly.modules.XCarry;
 import dev.anomoly.modules.NoStatusEffects;
 import dev.anomoly.modules.AvoidHazards;
 import dev.anomoly.modules.SkinBlinker;
+import dev.anomoly.modules.HoleSnap;
+import dev.anomoly.modules.HoleEsp;
+import dev.anomoly.modules.MultiAura;
+import dev.anomoly.modules.ClickAura;
+import dev.anomoly.modules.AntiLegitMiss;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -333,6 +338,11 @@ public final class ModuleManager {
         new NoStatusEffects(),
         new AvoidHazards(),
         new SkinBlinker(),
+        new HoleSnap(),
+        new HoleEsp(),
+        new MultiAura(),
+        new ClickAura(),
+        new AntiLegitMiss(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 

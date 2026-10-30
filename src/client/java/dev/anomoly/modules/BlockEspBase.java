@@ -24,6 +24,11 @@ abstract class BlockEspBase extends Module {
 
     protected abstract boolean matches(Minecraft client, BlockPos pos, BlockState state);
 
+    /** Subclasses that outline empty space (holes) override these instead. */
+    protected boolean includeAir() { return false; }
+
+    protected boolean matchesAir(Minecraft client, BlockPos pos) { return false; }
+
     @Override protected void onEnable(Minecraft client) { found.clear(); ticks = 0; }
 
     @Override public void tick(Minecraft client) {
@@ -42,7 +47,8 @@ abstract class BlockEspBase extends Module {
         int maxY = Math.min(client.level.getMaxY(), origin.getY() + r);
         for (BlockPos pos : BlockPos.betweenClosed(origin.getX() - r, minY, origin.getZ() - r, origin.getX() + r, maxY, origin.getZ() + r)) {
             BlockState state = client.level.getBlockState(pos);
-            if (!state.isAir() && matches(client, pos, state) && found.size() < 2048) found.add(pos.immutable());
+            boolean hit = state.isAir() ? includeAir() && matchesAir(client, pos) : matches(client, pos, state);
+            if (hit && found.size() < 2048) found.add(pos.immutable());
         }
     }
 }

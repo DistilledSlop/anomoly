@@ -276,7 +276,16 @@
     "skinderp": {"status": "coded", "module": "SkinBlinker", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
     "mileycyrus": {"status": "coded", "module": "Twerk", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
     "fastclimb": {"status": "coded", "module": "FastLadder", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
-    "rotation": {"status": "coded", "module": "RotationLock", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."}
+    "rotation": {"status": "coded", "module": "RotationLock", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "holesnap": {"status": "coded", "module": "HoleSnap", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "autohole": {"status": "coded", "module": "HoleSnap", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "holeanchor": {"status": "coded", "module": "HoleSnap", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "holeesp": {"status": "coded", "module": "HoleEsp", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "multiaura": {"status": "coded", "module": "MultiAura", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "clickaura": {"status": "coded", "module": "ClickAura", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "antilegitmiss": {"status": "coded", "module": "AntiLegitMiss", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "hunt": {"status": "coded", "module": "Follow", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "autoweb": {"status": "coded", "module": "AutoTrap", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."}
   },
   "additions": [
     {"id": "anomoly_spear_assist", "name": "Spear Assist", "category": "Combat", "status": "coded", "module": "SpearAssist", "doc": "hacks/spear-assist.md"}

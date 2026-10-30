@@ -1,9 +1,9 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 405,
+    "backlog": 396,
     "verified": 84,
-    "coded": 191,
+    "coded": 200,
     "partial": 3
   },
   "total": 683,
@@ -282,9 +282,9 @@
       "id": "antilegitmiss",
       "name": "AntiLegitMiss",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "AntiLegitMiss",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antilegitmiss.md"
     },
     {
@@ -858,9 +858,9 @@
       "id": "autohole",
       "name": "AutoHole",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "HoleSnap",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autohole.md"
     },
     {
@@ -1200,9 +1200,9 @@
       "id": "autoweb",
       "name": "Auto Web",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "AutoTrap",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoweb.md"
     },
     {
@@ -1839,9 +1839,9 @@
       "id": "clickaura",
       "name": "ClickAura",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "ClickAura",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/clickaura.md"
     },
     {
@@ -3000,18 +3000,18 @@
       "id": "holeanchor",
       "name": "HoleAnchor",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "HoleSnap",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/holeanchor.md"
     },
     {
       "id": "holeesp",
       "name": "HoleESP",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "HoleEsp",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/holeesp.md"
     },
     {
@@ -3027,9 +3027,9 @@
       "id": "holesnap",
       "name": "HoleSnap",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "HoleSnap",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/holesnap.md"
     },
     {
@@ -3063,9 +3063,9 @@
       "id": "hunt",
       "name": "Hunt",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Follow",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/hunt.md"
     },
     {
@@ -3792,9 +3792,9 @@
       "id": "multiaura",
       "name": "MultiAura",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "MultiAura",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/multiaura.md"
     },
     {
