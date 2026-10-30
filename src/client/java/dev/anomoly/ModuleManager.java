@@ -343,6 +343,8 @@ import dev.anomoly.modules.AutoFlyme;
 import dev.anomoly.modules.AntiStaff;
 import dev.anomoly.modules.Quiver;
 import dev.anomoly.modules.InfiniChat;
+import dev.anomoly.modules.AntiBallPlace;
+import dev.anomoly.modules.NoPacketException;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -559,6 +561,8 @@ public final class ModuleManager {
         new AntiStaff(),
         new Quiver(),
         new InfiniChat(),
+        new AntiBallPlace(),
+        new NoPacketException(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 

@@ -1,10 +1,10 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "coded": 348,
+    "coded": 350,
     "verified": 84,
-    "backlog": 227,
-    "partial": 24
+    "backlog": 217,
+    "partial": 32
   },
   "total": 683,
   "features": [
@@ -147,9 +147,9 @@
       "id": "antiballplace",
       "name": "AntiBallPlace",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "AntiBallPlace",
+      "note": "The upstream source registers this module with no behavior, so Anomoly mirrors it as an empty module.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiballplace.md"
     },
     {
@@ -372,9 +372,9 @@
       "id": "antisoundlag",
       "name": "Anti Sound Lag",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "SoundBlocker",
+      "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antisoundlag.md"
     },
     {
@@ -1290,9 +1290,9 @@
       "id": "basefinder",
       "name": "BaseFinder",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "StashFinder",
+      "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/basefinder.md"
     },
     {
@@ -1344,9 +1344,9 @@
       "id": "betterchat",
       "name": "BetterChat",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "Timestamps",
+      "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/betterchat.md"
     },
     {
@@ -1758,9 +1758,9 @@
       "id": "chatutils",
       "name": "ChatUtils",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "ChatAppend",
+      "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/chatutils.md"
     },
     {
@@ -2397,9 +2397,9 @@
       "id": "extrachat",
       "name": "ExtraChat",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "AntiSpam",
+      "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/extrachat.md"
     },
     {
@@ -4062,9 +4062,9 @@
       "id": "nopacketexception",
       "name": "NoPacketException",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "NoPacketException",
+      "note": "The upstream source registers this module with no behavior, so Anomoly mirrors it as an empty module.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nopacketexception.md"
     },
     {
@@ -4170,9 +4170,9 @@
       "id": "nosoundlag",
       "name": "NoSoundLag",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "SoundBlocker",
+      "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nosoundlag.md"
     },
     {
@@ -5556,9 +5556,9 @@
       "id": "tickshift",
       "name": "TickShift",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "Blink",
+      "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tickshift.md"
     },
     {
@@ -5601,9 +5601,9 @@
       "id": "timerrange",
       "name": "TimerRange",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "Timer",
+      "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/timerrange.md"
     },
     {

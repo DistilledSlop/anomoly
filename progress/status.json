@@ -454,7 +454,17 @@
     "antistaff": {"status": "coded", "module": "AntiStaff", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
     "quiver": {"status": "coded", "module": "Quiver", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
     "blockin": {"status": "partial", "module": "Surround", "note": "Shares Surround for the side walls; the overhead cover of the original BlockIn is the separate Self Trap module. No gameplay test is recorded."},
-    "infinichat": {"status": "coded", "module": "InfiniChat", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."}
+    "infinichat": {"status": "coded", "module": "InfiniChat", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "antiballplace": {"status": "coded", "module": "AntiBallPlace", "note": "The upstream source registers this module with no behavior, so Anomoly mirrors it as an empty module."},
+    "nopacketexception": {"status": "coded", "module": "NoPacketException", "note": "The upstream source registers this module with no behavior, so Anomoly mirrors it as an empty module."},
+    "antisoundlag": {"status": "partial", "module": "SoundBlocker", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."},
+    "nosoundlag": {"status": "partial", "module": "SoundBlocker", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."},
+    "basefinder": {"status": "partial", "module": "StashFinder", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."},
+    "betterchat": {"status": "partial", "module": "Timestamps", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."},
+    "extrachat": {"status": "partial", "module": "AntiSpam", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."},
+    "chatutils": {"status": "partial", "module": "ChatAppend", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."},
+    "tickshift": {"status": "partial", "module": "Blink", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."},
+    "timerrange": {"status": "partial", "module": "Timer", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."}
   },
   "additions": [
     {"id": "anomoly_spear_assist", "name": "Spear Assist", "category": "Combat", "status": "coded", "module": "SpearAssist", "doc": "hacks/spear-assist.md"}
