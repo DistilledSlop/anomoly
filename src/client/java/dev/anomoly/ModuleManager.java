@@ -24,6 +24,8 @@ import dev.anomoly.modules.AutoWeapon;
 import dev.anomoly.modules.AutoSword;
 import dev.anomoly.modules.AutoClicker;
 import dev.anomoly.modules.AutoBreak;
+import dev.anomoly.modules.AirJump;
+import dev.anomoly.modules.AutoSwitch;
 import dev.anomoly.modules.CameraClip;
 import dev.anomoly.modules.CameraTweaks;
 import dev.anomoly.modules.ChestStealer;
@@ -59,8 +61,9 @@ public final class ModuleManager {
     private final List<Module> modules = List.of(
         new AutoWeapon(), new AutoSword(), new AutoClicker(), new TriggerBot(), new KillAura(), new SpearAssist(), new Reach(),
         new AutoArmor(), new AutoBowRelease(), new AutoGApple(), new AutoTotem(),
-        new AutoSprint(), new AutoWalk(), new AutoJump(),
-        new AutoSneak(), new AutoRespawn(), new AutoEat(), new AutoFish(), new AntiAFK(), new AutoBreak(), new AutoTool(), new AutoReplenish(),
+        new AutoSprint(), new AutoWalk(), new AutoJump(), new AirJump(),
+        new AutoSneak(), new AutoRespawn(), new AutoEat(), new AutoFish(), new AntiAFK(), new AutoBreak(), new AutoSwitch(),
+        new AutoTool(), new AutoReplenish(),
         new AutoDeposit(), new AutoDrop(),
         new ChestStealer(), new ChestCleaner(),
         new FastPlace(), new FastBreak(), new FastLadder(),

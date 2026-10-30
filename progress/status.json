@@ -47,6 +47,8 @@
     "cameratweaks": {"status": "coded", "module": "CameraTweaks"},
     "nofog": {"status": "coded", "module": "NoFog"},
     "autobreak": {"status": "coded", "module": "AutoBreak"},
+    "airjump": {"status": "coded", "module": "AirJump"},
+    "autoswitch": {"status": "coded", "module": "AutoSwitch"},
     "fastladder": {"status": "coded", "module": "FastLadder"},
     "fastplace": {"status": "coded", "module": "FastPlace"},
     "fastbreak": {"status": "coded", "module": "FastBreak"},
