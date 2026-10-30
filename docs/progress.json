@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 536,
-    "verified": 77,
+    "backlog": 535,
+    "verified": 78,
     "coded": 69,
     "partial": 1
   },
@@ -192,9 +192,9 @@
       "id": "antibounce",
       "name": "AntiBounce",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "AntiBounce",
+      "note": "In three matched local vanilla 26.3 drops from y=106 onto a slime block, server position samples rebounded above y=103 with AntiBounce off, stayed at the landed y=101 with it on, and rebounded again after switching it off. See docs/test-evidence/2026-10-30-antibounce.md. Other bouncy blocks and third-party anticheats remain untested.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antibounce.md"
     },
     {

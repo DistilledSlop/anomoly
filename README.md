@@ -6,7 +6,7 @@ Anomoly is a full Minecraft Java 26.3 Fabric hacked client. Its working Dear ImG
 
 [![Anomoly hack progress treemap](docs/progress.svg)](https://distilledslop.github.io/anomoly/progress.html)
 
-The [searchable progress report](https://distilledslop.github.io/anomoly/progress.html) is generated from the 682 catalog entries plus Anomoly's Spear Assist. It currently tracks <!-- anomoly-progress:start -->**69 coded**, **1 partial**, **77 gameplay verified**, and **536 backlog**<!-- anomoly-progress:end --> features. Blue tiles are coded modules, amber tiles are partial implementations, green tiles have gameplay test evidence, and gray tiles are backlog. Run `python3 tools/progress.py` after changing a module's status; CI runs `python3 tools/progress.py --check` to verify the treemap and [raw data](docs/progress.json).
+The [searchable progress report](https://distilledslop.github.io/anomoly/progress.html) is generated from the 682 catalog entries plus Anomoly's Spear Assist. It currently tracks <!-- anomoly-progress:start -->**69 coded**, **1 partial**, **78 gameplay verified**, and **535 backlog**<!-- anomoly-progress:end --> features. Blue tiles are coded modules, amber tiles are partial implementations, green tiles have gameplay test evidence, and gray tiles are backlog. Run `python3 tools/progress.py` after changing a module's status; CI runs `python3 tools/progress.py --check` to verify the treemap and [raw data](docs/progress.json).
 
 ## Build and run
 
@@ -27,7 +27,7 @@ The [local gameplay test](docs/test-evidence/2026-10-30-local-gameplay.md) verif
 | Category | Modules |
 | --- | --- |
 | Combat | Auto Pearl, Auto Soup, Soup, Keep Sprint, Sprint Reset, W Tap, Criticals, Surround, Hole Filler, Self Trap, Self Web, Self Anvil, Anti Anvil, Anti Bed, Auto Anvil, Auto Trap, Auto Dodge, Auto Crystal Base, Crystal Aura, Anchor Aura, Bed Aura, Super Knockback (partial), Auto Weapon, Auto Sword, Auto Clicker, Trigger Bot, Anti Bot, Kill Aura, Aimbot, Aim Assist, Bow Aimbot, Projectile Aimbot, Auto Shoot, Auto Bow, Bow Spam, Auto Rod, Spear Assist, Reach, Auto Leave, Auto Armor, Auto Bow Release, Auto Potion, Throw Pot, Pot, Auto Exp, Auto GApple, Auto Totem |
-| Movement | Auto Sprint, Auto Walk, Auto Jump, NoJumpDelay, Auto Swim, Air Jump, Auto Sneak, GUI Move (also Inventory Move), Fast Ladder, Fast Fall, No Fall, Safe Walk, Step, Anti Web, Velocity, No Push, No Slow |
+| Movement | Auto Sprint, Auto Walk, Auto Jump, NoJumpDelay, Auto Swim, Air Jump, Auto Sneak, GUI Move (also Inventory Move), AntiBounce, Fast Ladder, Fast Fall, No Fall, Safe Walk, Step, Anti Web, Velocity, No Push, No Slow |
 | Player | Auto Respawn, Auto Eat, SmartEat, FastExp, Auto Fish, Auto Mend, Offhand, Eagle, Elytra Swap, Auto Buff, NoBlockInteract, NoEntityInteract, No Interact, LiquidInteract, Fast Interact, Auto Crafter, Inventory Cleaner, Anti AFK, Auto Break (also Auto Mine), Durability Alert, Auto Switch, Auto Tool, Auto Replenish, Auto Deposit, Auto Drop (also Auto Eject), Chest Stealer, Chest Cleaner, No Rotate (also No Server Rotate) |
 | World | Fast Place, Fast Break (also Break Delay), AirPlace, AntiInteract, Auto Brewer, AutoBuild, Auto Smelter, Scaffold, Nuker, Nuker Legit, Vein Miner, Auto Tunnel (also Tunneller), Auto Shearer, Auto Breed, Auto Mob Heal, Auto Farm, Auto Mount, Auto Nametag, Enderman Look |
 | Render | Fullbright, Max Brightness, No Hurt Cam, No Bob, Auto F5, FOV Modifier, No FOV, Zoom, Camera Clip, Camera Tweaks, Free Look, No Fog, No Overlay, No Fire Overlay, Anti Overlay, Anti Wobble, No Pumpkin, Anti Blind, Player Radar, Weather Changer, Time Changer |
@@ -40,6 +40,8 @@ Modules default to off. Their states and settings are saved in `config/anomoly.j
 Auto Swim enters the swimming pose when moving forward underwater, while leaving normal surface movement alone. A [paired local gameplay test](docs/test-evidence/2026-10-30-autoswim.md) confirmed the server's swimming flag with the module enabled and its absence with the module disabled.
 
 NoJumpDelay removes the local ten-tick gate between ground jumps while jump is held. In a two-block-high local test corridor, the server counted 8 jumps in four seconds with the module off, 28 with it on, and 8 after switching it off again. It does not add midair jumps. See the [paired gameplay test](docs/test-evidence/2026-10-30-nojumpdelay.md).
+
+AntiBounce keeps the local player grounded after landing on a springy block. In a [paired slime-block test](docs/test-evidence/2026-10-30-antibounce.md), the server saw rebounds with the module off, a stable landing with it on, and rebounds again after disabling it.
 
 GUI Move forwards your configured movement keys while an inventory or container screen is open. It can pass through jump, sprint, and sneak separately, rotate the view with arrow keys, or cover other non-text screens. Chat, text editors, and the ClickGUI keep their normal typing behavior. The [paired local gameplay test](docs/test-evidence/2026-10-30-guimove.md) confirms movement with inventory and chest screens open, jumping, view rotation, a rebound forward key, a chat guard, and a disabled-module control.
 
