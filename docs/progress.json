@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 583,
-    "verified": 29,
+    "backlog": 582,
+    "verified": 30,
     "coded": 70,
     "partial": 1
   },
@@ -741,9 +741,9 @@
       "id": "autododge",
       "name": "AutoDodge",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "AutoDodge",
+      "note": "On a local vanilla 26.3 server, a no-gravity arrow shot at a stationary survival player caused a 2.15-block Z sidestep and no health loss with Auto Dodge enabled; the paired disabled control dealt 1 damage and X knockback. With one lateral floor missing, the dodge chose the safe side; with both sides missing, it refused the dodge. See docs/test-evidence/2026-10-30-autododge.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autododge.md"
     },
     {
