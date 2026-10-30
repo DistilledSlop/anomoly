@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 651,
-    "coded": 29,
+    "backlog": 649,
+    "coded": 31,
     "partial": 3
   },
   "total": 683,
@@ -578,8 +578,8 @@
       "id": "autobowrelease",
       "name": "AutoBowRelease",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "AutoBowRelease",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autobowrelease.md"
     },
@@ -839,8 +839,8 @@
       "id": "autogapple",
       "name": "AutoGApple",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "AutoGApple",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autogapple.md"
     },

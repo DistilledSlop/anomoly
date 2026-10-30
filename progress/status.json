@@ -25,6 +25,8 @@
     "antireduceddebuginfo": {"status": "coded", "module": "AntiReducedDebugInfo"},
     "portalmenu": {"status": "coded", "module": "PortalMenu"},
     "twerk": {"status": "coded", "module": "Twerk"},
+    "autobowrelease": {"status": "coded", "module": "AutoBowRelease"},
+    "autogapple": {"status": "coded", "module": "AutoGApple"},
     "fastladder": {"status": "coded", "module": "FastLadder"},
     "fastplace": {"status": "coded", "module": "FastPlace"},
     "fastbreak": {"status": "coded", "module": "FastBreak"},
