@@ -480,7 +480,13 @@
     "pearlchaser": {"status": "coded", "module": "AutoPearl", "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded."},
     "nobackground": {"status": "coded", "module": "NoBackground", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
     "ambience": {"status": "partial", "module": "TimeChanger", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."},
-    "environment": {"status": "partial", "module": "WeatherChanger", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."}
+    "environment": {"status": "partial", "module": "WeatherChanger", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."},
+    "attributeswap": {"status": "coded", "module": "AttributeSwap", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "beddefender": {"status": "coded", "module": "BedDefender", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "breaker": {"status": "partial", "module": "Nuker", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."},
+    "refill": {"status": "partial", "module": "AutoReplenish", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."},
+    "quakecraft": {"status": "partial", "module": "Aimbot", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."},
+    "minestrike": {"status": "partial", "module": "Aimbot", "note": "Shares an existing module for part of this behavior; the rest is not implemented and no gameplay test is recorded."}
   },
   "additions": [
     {"id": "anomoly_spear_assist", "name": "Spear Assist", "category": "Combat", "status": "coded", "module": "SpearAssist", "doc": "hacks/spear-assist.md"}

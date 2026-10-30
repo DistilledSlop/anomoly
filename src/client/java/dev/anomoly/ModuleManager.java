@@ -350,6 +350,8 @@ import dev.anomoly.modules.ClickGui;
 import dev.anomoly.modules.Notifications;
 import dev.anomoly.modules.Media;
 import dev.anomoly.modules.NoBackground;
+import dev.anomoly.modules.AttributeSwap;
+import dev.anomoly.modules.BedDefender;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -573,6 +575,8 @@ public final class ModuleManager {
         new Notifications(),
         new Media(),
         new NoBackground(),
+        new AttributeSwap(),
+        new BedDefender(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 

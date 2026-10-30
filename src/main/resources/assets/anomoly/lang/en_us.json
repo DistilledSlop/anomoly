@@ -358,6 +358,8 @@
   "key.anomoly.toggle.notifications": "Toggle Anomoly Notifications",
   "key.anomoly.toggle.media": "Toggle Anomoly Media",
   "key.anomoly.toggle.no_background": "Toggle Anomoly NoBackground",
+  "key.anomoly.toggle.attribute_swap": "Toggle Anomoly Attribute Swap",
+  "key.anomoly.toggle.bed_defender": "Toggle Anomoly BedDefender",
   "key.anomoly.toggle.anti_reduced_debug_info": "Toggle Anomoly Anti Reduced Debug Info",
   "key.anomoly.toggle.portal_menu": "Toggle Anomoly Portal Menu",
   "key.anomoly.toggle.plugins": "Toggle Anomoly Plugins",
