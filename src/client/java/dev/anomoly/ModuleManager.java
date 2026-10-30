@@ -113,6 +113,7 @@ import dev.anomoly.modules.AntiInteract;
 import dev.anomoly.modules.AutoBrewer;
 import dev.anomoly.modules.AutoBuild;
 import dev.anomoly.modules.AutoSwim;
+import dev.anomoly.modules.AutoMend;
 import dev.anomoly.modules.Step;
 import dev.anomoly.modules.TriggerBot;
 import dev.anomoly.modules.Zoom;
@@ -128,7 +129,7 @@ public final class ModuleManager {
         new AutoPearl(), new AutoSoup(), new Soup(), new Criticals(), new Surround(), new HoleFiller(), new SelfTrap(), new SelfWeb(), new SelfAnvil(), new AntiAnvil(), new AntiBed(), new AutoAnvil(), new AutoTrap(), new AutoCrystalBase(), new CrystalAura(), new AnchorAura(), new BedAura(), new KeepSprint(), new SprintReset(), new SuperKnockback(), new WTap(), new AutoWeapon(), new AutoSword(), new AutoClicker(), new TriggerBot(), new AntiBot(), new KillAura(), new Aimbot(), new AimAssist(), new SpearAssist(), new Reach(), new AutoLeave(),
         new AutoArmor(), new BowAimbot(), new ProjectileAimbot(), new AutoShoot(), new AutoBow(), new AutoRod(), new BowSpam(), new AutoBowRelease(), new ThrowPot(), new AutoPotion(), new AutoExp(), new AutoGApple(), new AutoTotem(), new Pot(),
         new AutoSprint(), new AutoWalk(), new AutoJump(), new AutoDodge(), new AirJump(), new AutoSwim(),
-        new AutoSneak(), new AutoRespawn(), new AutoEat(), new AutoFish(), new AntiAFK(), new AutoBreak(), new DurabilityAlert(), new AutoSwitch(), new AutoReconnect(), new NoRotate(),
+        new AutoSneak(), new AutoRespawn(), new AutoEat(), new AutoFish(), new AutoMend(), new AntiAFK(), new AutoBreak(), new DurabilityAlert(), new AutoSwitch(), new AutoReconnect(), new NoRotate(),
         new AutoTool(), new AutoReplenish(),
         new AutoDeposit(), new AutoDrop(),
         new ChestStealer(), new ChestCleaner(),
