@@ -1,5 +1,6 @@
 package dev.anomoly.modules;
 
+import dev.anomoly.AnomolyClient;
 import dev.anomoly.Module;
 import dev.anomoly.setting.BooleanSetting;
 import dev.anomoly.setting.FloatSetting;
@@ -17,6 +18,7 @@ public final class AntiBot extends Module {
     }
 
     public boolean reject(Minecraft client, Player player) {
+        if (AnomolyClient.MODULES.get(Teams.class).protects(client, player) || AnomolyClient.MODULES.get(TargetLock.class).excludes(player)) return true;
         if (!enabled()) return false;
         if (requirePlayerInfo.get() && client.getConnection() != null
             && client.getConnection().getPlayerInfo(player.getUUID()) == null) return true;

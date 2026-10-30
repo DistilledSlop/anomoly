@@ -317,6 +317,9 @@ import dev.anomoly.modules.PopChams;
 import dev.anomoly.modules.NameProtect;
 import dev.anomoly.modules.ClientSpoof;
 import dev.anomoly.modules.ExtraTab;
+import dev.anomoly.modules.Teams;
+import dev.anomoly.modules.MiddleClickFriend;
+import dev.anomoly.modules.TargetLock;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -507,6 +510,9 @@ public final class ModuleManager {
         new NameProtect(),
         new ClientSpoof(),
         new ExtraTab(),
+        new Teams(),
+        new MiddleClickFriend(),
+        new TargetLock(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 
