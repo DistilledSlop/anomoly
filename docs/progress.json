@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 554,
-    "verified": 60,
+    "backlog": 553,
+    "verified": 61,
     "coded": 68,
     "partial": 1
   },
@@ -1056,9 +1056,9 @@
       "id": "autosmelter",
       "name": "Auto Smelter",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "AutoSmelter",
+      "note": "On a local vanilla 26.3 server, Auto Smelter loaded and collected three iron ingots from a furnace, two gold ingots from a blast furnace, and two cooked beef from a smoker. It preserved raw iron when fuel was missing, then resumed with a two-coal refill, closed the menu, and stayed enabled as configured. See docs/test-evidence/2026-10-30-autosmelter.md. Custom recipes, full inventories, and third-party anticheats remain untested.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autosmelter.md"
     },
     {
