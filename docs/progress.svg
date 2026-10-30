@@ -3,7 +3,7 @@
 <desc id="desc">Each tile is a researched feature. Blue is coded, amber partial, green gameplay verified, and gray backlog.</desc>
 <rect width="1200" height="720" rx="15" fill="#0b1220"/>
 <text x="20" y="37" fill="#e7f2ff" font-family="system-ui,sans-serif" font-size="25" font-weight="700">ANOMOLY / HACK PROGRESS</text>
-<text x="20" y="61" fill="#a9bacd" font-family="system-ui,sans-serif" font-size="14">69 coded · 0 partial · 0 gameplay verified · 614 backlog / 683 total</text>
+<text x="20" y="61" fill="#a9bacd" font-family="system-ui,sans-serif" font-size="14">68 coded · 0 partial · 1 gameplay verified · 614 backlog / 683 total</text>
 <rect x="14.00" y="84.00" width="281.82" height="621.00" rx="7" fill="#172235" stroke="#52657d" stroke-width="1"/>
 <text x="22.00" y="103.00" fill="#e7f2ff" font-family="system-ui,sans-serif" font-size="14" font-weight="600">Render  22/166 coded</text>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antioverlay.md" target="_blank">
@@ -1544,20 +1544,20 @@
 </a>
 <rect x="673.46" y="84.00" width="258.65" height="364.75" rx="7" fill="#172235" stroke="#52657d" stroke-width="1"/>
 <text x="681.46" y="103.00" fill="#e7f2ff" font-family="system-ui,sans-serif" font-size="14" font-weight="600">Movement  14/90 coded</text>
+<a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autowalk.md" target="_blank">
+<title>AutoWalk — verified: Enabled through ImGui in a local Minecraft 26.3 multiplayer world; passive movement samples show Z advancing from -78.5 to -65.3 without manual forward input. See docs/test-evidence/2026-10-30-local-gameplay.md.</title>
+<rect x="680.46" y="113.00" width="25.41" height="31.08" rx="2" fill="#4bd598"/>
+</a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/airjump.md" target="_blank">
 <title>AirJump — coded</title>
-<rect x="680.46" y="113.00" width="25.41" height="31.08" rx="2" fill="#49a8e8"/>
+<rect x="707.86" y="113.00" width="25.41" height="31.08" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiweb.md" target="_blank">
 <title>AntiWeb — coded</title>
-<rect x="707.86" y="113.00" width="25.41" height="31.08" rx="2" fill="#49a8e8"/>
+<rect x="735.27" y="113.00" width="25.41" height="31.08" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autojump.md" target="_blank">
 <title>Auto Jump — coded</title>
-<rect x="735.27" y="113.00" width="25.41" height="31.08" rx="2" fill="#49a8e8"/>
-</a>
-<a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autowalk.md" target="_blank">
-<title>AutoWalk — coded</title>
 <rect x="762.67" y="113.00" width="25.41" height="31.08" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastfall.md" target="_blank">

@@ -2,7 +2,8 @@
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
     "backlog": 614,
-    "coded": 69
+    "coded": 68,
+    "verified": 1
   },
   "total": 683,
   "features": [
@@ -1171,9 +1172,9 @@
       "id": "autowalk",
       "name": "AutoWalk",
       "category": "Movement",
-      "status": "coded",
+      "status": "verified",
       "module": "AutoWalk",
-      "note": "",
+      "note": "Enabled through ImGui in a local Minecraft 26.3 multiplayer world; passive movement samples show Z advancing from -78.5 to -65.3 without manual forward input. See docs/test-evidence/2026-10-30-local-gameplay.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autowalk.md"
     },
     {

@@ -92,7 +92,13 @@ public final class ImGuiRenderer {
     }
 
     private static void drawUi() {
-        ImGui.setNextWindowSize(900, 600, ImGuiCond.Once);
+        Minecraft client = Minecraft.getInstance();
+        int screenWidth = client.getWindow().getScreenWidth();
+        int screenHeight = client.getWindow().getScreenHeight();
+        int windowWidth = Math.max(1, Math.min(900, screenWidth - 24));
+        int windowHeight = Math.max(1, Math.min(600, screenHeight - 24));
+        ImGui.setNextWindowSize(windowWidth, windowHeight, ImGuiCond.Always);
+        ImGui.setNextWindowPos((screenWidth - windowWidth) / 2F, (screenHeight - windowHeight) / 2F, ImGuiCond.Always);
         if (ImGui.begin("ANOMOLY  /  Minecraft 26.3")) {
             ImGui.textColored(0.38F, 0.94F, 0.79F, 1F, "ANOMOLY");
             ImGui.sameLine();

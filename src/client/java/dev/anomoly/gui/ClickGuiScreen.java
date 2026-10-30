@@ -59,7 +59,11 @@ public final class ClickGuiScreen extends Screen {
     private static void feedButton(int sdlButton, boolean down) {
         if (!ImGuiRenderer.initialized()) return;
         int button = switch (sdlButton) { case 1 -> 0; case 3 -> 1; case 2 -> 2; default -> -1; };
-        if (button >= 0) ImGui.getIO().addMouseButtonEvent(button, down);
+        if (button >= 0) {
+            ImGui.getIO().addMousePosEvent((float) net.minecraft.client.Minecraft.getInstance().mouseHandler.xpos(),
+                (float) net.minecraft.client.Minecraft.getInstance().mouseHandler.ypos());
+            ImGui.getIO().addMouseButtonEvent(button, down);
+        }
     }
 
     private static void feedKey(int scanCode, boolean down) {
