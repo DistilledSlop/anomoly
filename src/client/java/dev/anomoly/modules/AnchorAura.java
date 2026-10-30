@@ -13,12 +13,12 @@ import net.minecraft.core.Direction;
 import net.minecraft.network.protocol.game.ServerboundSetCarriedItemPacket;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.InteractionResult;
-import net.minecraft.world.attribute.EnvironmentAttributes;
 import net.minecraft.world.entity.LivingEntity;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.level.ClipContext;
+import net.minecraft.world.level.Level;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.RespawnAnchorBlock;
 import net.minecraft.world.level.block.state.BlockState;
@@ -52,12 +52,18 @@ public final class AnchorAura extends Module {
     private ClientLevel observedLevel;
     private LocalPlayer observedPlayer;
     private int cooldown;
+    private boolean actedThisTick;
 
     public AnchorAura() {
         super("anchor_aura", "Anchor Aura", "Place, charge, and detonate safe respawn anchors near targets.", Category.COMBAT);
     }
 
+    public boolean actedThisTick(Minecraft client) {
+        return enabled() && actedThisTick && observedPlayer == client.player && observedLevel == client.level;
+    }
+
     @Override public void tick(Minecraft client) {
+        actedThisTick = false;
         if (client.gameMode == null || client.gui.screen() != null || !client.player.isAlive()
             || client.player.isSpectator() || client.player.isHandsBusy() || client.player.isUsingItem()
             || client.options.keyUse.isDown() || client.options.keyAttack.isDown()
@@ -72,8 +78,8 @@ public final class AnchorAura extends Module {
             return;
         }
         if (cooldown > 0) { cooldown--; return; }
-        if (client.level.environmentAttributes().getValue(
-            EnvironmentAttributes.RESPAWN_ANCHOR_WORKS, player.blockPosition())) return;
+        if (!client.level.dimension().equals(Level.OVERWORLD)
+            && !client.level.dimension().equals(Level.END)) return;
         List<LivingEntity> targets = CrystalCombat.targets(client, targetRange.get(), targetMobs.get());
         if (targets.isEmpty()) return;
         Action action = bestExisting(client, targets);
@@ -93,6 +99,7 @@ public final class AnchorAura extends Module {
             if (result.consumesAction()) {
                 player.swing(hand, stack.getInteractAnimation(), false);
                 player.itemUsed(hand);
+                actedThisTick = true;
             }
             cooldown = (int)interval.get();
         } finally {
@@ -236,6 +243,7 @@ public final class AnchorAura extends Module {
         observedLevel = null;
         observedPlayer = null;
         cooldown = 0;
+        actedThisTick = false;
     }
 
     private enum Stage { PLACE, CHARGE, DETONATE }

@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 576,
-    "verified": 36,
+    "backlog": 575,
+    "verified": 37,
     "coded": 70,
     "partial": 1
   },
@@ -1308,9 +1308,9 @@
       "id": "bedaura",
       "name": "Bed Aura",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "BedAura",
+      "note": "On a local vanilla 26.3 server, Bed Aura placed and detonated a bed in survival in both the Nether and End, reducing a 300-health pig to 240.30185 and consuming one bed while restoring the selected stone slot. It also detonated an existing bed without a bed item. In the Overworld or under default self-damage limits it placed nothing. See docs/test-evidence/2026-10-30-bedaura.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bedaura.md"
     },
     {
