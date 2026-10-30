@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 539,
-    "verified": 74,
+    "backlog": 538,
+    "verified": 75,
     "coded": 69,
     "partial": 1
   },
@@ -3495,9 +3495,9 @@
       "id": "liquidinteract",
       "name": "Liquid Interact",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "LiquidInteract",
+      "note": "In a paired local vanilla 26.3 test, right-clicking dirt through water placed it against a stone backing at z=53 with LiquidInteract off, while the same click replaced the water source at z=52 with it on. Both outcomes were read from server block states. See docs/test-evidence/2026-10-30-liquidinteract.md. Lava and third-party anticheats remain untested.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/liquidinteract.md"
     },
     {
