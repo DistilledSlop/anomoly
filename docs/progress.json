@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 579,
-    "verified": 33,
+    "backlog": 578,
+    "verified": 34,
     "coded": 70,
     "partial": 1
   },
@@ -4980,9 +4980,9 @@
       "id": "selfweb",
       "name": "Self Web",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "SelfWeb",
+      "note": "On a local vanilla 26.3 server, Self Web placed a cobweb in PlayerC's feet cell from the hotbar, restored the selected stone slot, replaced a removed web from offhand, and left the cell air after both sources were cleared. See docs/test-evidence/2026-10-30-selfweb.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/selfweb.md"
     },
     {
