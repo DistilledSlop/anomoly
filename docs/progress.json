@@ -1,9 +1,9 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 418,
+    "backlog": 405,
     "verified": 84,
-    "coded": 178,
+    "coded": 191,
     "partial": 3
   },
   "total": 683,
@@ -138,9 +138,9 @@
       "id": "antibadeffects",
       "name": "AntiBadEffects",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "NoStatusEffects",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antibadeffects.md"
     },
     {
@@ -255,9 +255,9 @@
       "id": "antihazard",
       "name": "Anti Hazard",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "AvoidHazards",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antihazard.md"
     },
     {
@@ -1236,9 +1236,9 @@
       "id": "avoidhazards",
       "name": "AvoidHazards",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "AvoidHazards",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/avoidhazards.md"
     },
     {
@@ -2109,9 +2109,9 @@
       "id": "derp",
       "name": "Derp",
       "category": "Fun",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Derp",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/derp.md"
     },
     {
@@ -2514,9 +2514,9 @@
       "id": "fastclimb",
       "name": "Fast Climb",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "FastLadder",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastclimb.md"
     },
     {
@@ -2901,9 +2901,9 @@
       "id": "headroll",
       "name": "HeadRoll",
       "category": "Fun",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "HeadRoll",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/headroll.md"
     },
     {
@@ -3702,9 +3702,9 @@
       "id": "mileycyrus",
       "name": "MileyCyrus",
       "category": "Fun",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Twerk",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/mileycyrus.md"
     },
     {
@@ -4188,9 +4188,9 @@
       "id": "nostatuseffects",
       "name": "No Status Effects",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "NoStatusEffects",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nostatuseffects.md"
     },
     {
@@ -4872,9 +4872,9 @@
       "id": "rotation",
       "name": "Rotation",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "RotationLock",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/rotation.md"
     },
     {
@@ -5052,9 +5052,9 @@
       "id": "skinblinker",
       "name": "Skin Blinker",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "SkinBlinker",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/skinblinker.md"
     },
     {
@@ -5070,9 +5070,9 @@
       "id": "skinderp",
       "name": "SkinDerp",
       "category": "Fun",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "SkinBlinker",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/skinderp.md"
     },
     {
@@ -5628,9 +5628,9 @@
       "id": "tired",
       "name": "Tired",
       "category": "Fun",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Tired",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tired.md"
     },
     {
@@ -6105,9 +6105,9 @@
       "id": "xcarry",
       "name": "XCarry",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "XCarry",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/xcarry.md"
     },
     {

@@ -223,6 +223,13 @@ import dev.anomoly.modules.NoRender;
 import dev.anomoly.modules.NoVignette;
 import dev.anomoly.modules.Waypoints;
 import dev.anomoly.modules.LogoutSpots;
+import dev.anomoly.modules.Derp;
+import dev.anomoly.modules.HeadRoll;
+import dev.anomoly.modules.Tired;
+import dev.anomoly.modules.XCarry;
+import dev.anomoly.modules.NoStatusEffects;
+import dev.anomoly.modules.AvoidHazards;
+import dev.anomoly.modules.SkinBlinker;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -319,6 +326,13 @@ public final class ModuleManager {
         new NoVignette(),
         new Waypoints(),
         new LogoutSpots(),
+        new Derp(),
+        new HeadRoll(),
+        new Tired(),
+        new XCarry(),
+        new NoStatusEffects(),
+        new AvoidHazards(),
+        new SkinBlinker(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 
