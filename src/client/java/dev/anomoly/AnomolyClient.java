@@ -4,6 +4,8 @@ import com.google.gson.Gson;
 import com.google.gson.GsonBuilder;
 import com.google.gson.JsonObject;
 import dev.anomoly.gui.ClickGuiScreen;
+import dev.anomoly.gui.FallbackClickGuiScreen;
+import dev.anomoly.gui.ImGuiRenderer;
 import dev.anomoly.profile.ProfileCollector;
 import dev.anomoly.setting.Setting;
 import java.io.IOException;
@@ -39,10 +41,16 @@ public final class AnomolyClient implements ClientModInitializer {
             PROFILE.tick(client);
         });
         ClientTickEvents.END_CLIENT_TICK.register(client -> {
+            if (client.gui.screen() instanceof ClickGuiScreen
+                && (ImGuiRenderer.failed() || !ImGuiRenderer.supported())) {
+                client.gui.setScreen(new FallbackClickGuiScreen());
+            }
             while (panicKey.consumeClick()) MODULES.disableAll();
             while (guiKey.consumeClick()) {
-                if (client.gui.screen() instanceof ClickGuiScreen) client.gui.setScreen(null);
-                else client.gui.setScreen(new ClickGuiScreen());
+                if (client.gui.screen() instanceof ClickGuiScreen || client.gui.screen() instanceof FallbackClickGuiScreen) {
+                    client.gui.setScreen(null);
+                } else client.gui.setScreen(ImGuiRenderer.supported() && !ImGuiRenderer.failed()
+                    ? new ClickGuiScreen() : new FallbackClickGuiScreen());
             }
         });
         ClientPlayConnectionEvents.JOIN.register((handler, sender, client) -> PROFILE.join(client));

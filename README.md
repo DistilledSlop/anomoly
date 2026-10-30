@@ -12,7 +12,7 @@ The [searchable progress report](https://distilledslop.github.io/anomoly/progres
 
 Use Java 25 and run `./gradlew build`. The distributable is `build/libs/anomoly-1.0.0.jar`; it includes ImGui Java and native libraries for Windows, Linux, and macOS. Install it with Fabric Loader 0.20.1 and Fabric API 0.165.0+26.3.
 
-The Dear ImGui ClickGUI currently uses the OpenGL backend. Choose **OpenGL** in Minecraft's video settings before starting the game, or launch with `--graphicsBackend opengl`. Minecraft can fall back to Vulkan if OpenGL initialization fails; Anomoly then shows an explanation in the GUI. Right Shift opens the GUI while playing, and End disables every module. Both keys appear in Minecraft's key controls.
+The Dear ImGui ClickGUI uses the OpenGL backend. Choose **OpenGL** in Minecraft's video settings before starting the game, or launch with `--graphicsBackend opengl`. On Vulkan, Anomoly opens a functional native settings screen with the same modules and profile controls. Right Shift opens or closes the GUI, and End disables every module. Both keys appear in Minecraft's key controls.
 
 The ClickGUI has a category sidebar, module search, expandable settings, and a server profile page.
 
