@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 581,
-    "verified": 31,
+    "backlog": 580,
+    "verified": 32,
     "coded": 70,
     "partial": 1
   },
@@ -156,9 +156,9 @@
       "id": "antibed",
       "name": "Anti Bed",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "AntiBed",
+      "note": "On a local vanilla 26.3 server, Anti Bed placed string as tripwire at PlayerC's feet and all four cardinal cells, restored stone, repaired a removed cell from offhand string, and stopped without material. A normal red-bed click failed while two target cells held tripwire, then placed the bed across those cells after the string was cleared. See docs/test-evidence/2026-10-30-antibed.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antibed.md"
     },
     {
