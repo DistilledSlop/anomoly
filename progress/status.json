@@ -35,6 +35,7 @@
     "autototem": {"status": "coded", "module": "AutoTotem"},
     "cheststealer": {"status": "coded", "module": "ChestStealer"},
     "chestcleaner": {"status": "coded", "module": "ChestCleaner"},
+    "autoreplenish": {"status": "coded", "module": "AutoReplenish"},
     "fastladder": {"status": "coded", "module": "FastLadder"},
     "fastplace": {"status": "coded", "module": "FastPlace"},
     "fastbreak": {"status": "coded", "module": "FastBreak"},

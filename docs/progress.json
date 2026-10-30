@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 640,
-    "coded": 40,
+    "backlog": 639,
+    "coded": 41,
     "partial": 3
   },
   "total": 683,
@@ -974,8 +974,8 @@
       "id": "autoreplenish",
       "name": "Auto Replenish",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "AutoReplenish",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoreplenish.md"
     },
