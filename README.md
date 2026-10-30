@@ -6,7 +6,7 @@ Anomoly is a full Minecraft Java 26.3 hacked client built on Fabric. Its Dear Im
 
 [![Anomoly hack progress treemap](docs/progress.svg)](https://distilledslop.github.io/anomoly/progress.html)
 
-The [searchable progress report](https://distilledslop.github.io/anomoly/progress.html) is generated from the 682 catalog entries plus Anomoly's Spear Assist. It currently tracks <!-- anomoly-progress:start -->**68 coded**, **1 partial**, **53 gameplay verified**, and **561 backlog**<!-- anomoly-progress:end --> features. Blue tiles are coded modules, amber tiles are partial implementations, green tiles have gameplay test evidence, and gray tiles are backlog. Run `python3 tools/progress.py` after changing a module's status; CI runs `python3 tools/progress.py --check` to verify the treemap and [raw data](docs/progress.json).
+The [searchable progress report](https://distilledslop.github.io/anomoly/progress.html) is generated from the 682 catalog entries plus Anomoly's Spear Assist. It currently tracks <!-- anomoly-progress:start -->**68 coded**, **1 partial**, **54 gameplay verified**, and **560 backlog**<!-- anomoly-progress:end --> features. Blue tiles are coded modules, amber tiles are partial implementations, green tiles have gameplay test evidence, and gray tiles are backlog. Run `python3 tools/progress.py` after changing a module's status; CI runs `python3 tools/progress.py --check` to verify the treemap and [raw data](docs/progress.json).
 
 ## Build and run
 
@@ -29,7 +29,7 @@ The [local gameplay test](docs/test-evidence/2026-10-30-local-gameplay.md) verif
 | Combat | Auto Pearl, Auto Soup, Soup, Keep Sprint, Sprint Reset, W Tap, Criticals, Surround, Hole Filler, Self Trap, Self Web, Self Anvil, Anti Anvil, Anti Bed, Auto Anvil, Auto Trap, Auto Dodge, Auto Crystal Base, Crystal Aura, Anchor Aura, Bed Aura, Super Knockback (partial), Auto Weapon, Auto Sword, Auto Clicker, Trigger Bot, Anti Bot, Kill Aura, Aimbot, Aim Assist, Bow Aimbot, Projectile Aimbot, Auto Shoot, Auto Bow, Bow Spam, Auto Rod, Spear Assist, Reach, Auto Leave, Auto Armor, Auto Bow Release, Auto Potion, Throw Pot, Pot, Auto Exp, Auto GApple, Auto Totem |
 | Movement | Auto Sprint, Auto Walk, Auto Jump, Air Jump, Auto Sneak, Fast Ladder, Fast Fall, No Fall, Safe Walk, Step, Anti Web, Velocity, No Push, No Slow |
 | Player | Auto Respawn, Auto Eat, Auto Fish, Anti AFK, Auto Break (also Auto Mine), Durability Alert, Auto Switch, Auto Tool, Auto Replenish, Auto Deposit, Auto Drop (also Auto Eject), Chest Stealer, Chest Cleaner, No Rotate (also No Server Rotate) |
-| World | Fast Place, Fast Break (also Break Delay), Scaffold, Nuker, Nuker Legit, Vein Miner, Auto Tunnel (also Tunneller), Auto Shearer, Auto Breed, Auto Mob Heal, Auto Farm, Auto Mount, Auto Nametag |
+| World | Fast Place, Fast Break (also Break Delay), Scaffold, Nuker, Nuker Legit, Vein Miner, Auto Tunnel (also Tunneller), Auto Shearer, Auto Breed, Auto Mob Heal, Auto Farm, Auto Mount, Auto Nametag, Enderman Look |
 | Render | Fullbright, Max Brightness, No Hurt Cam, No Bob, Auto F5, FOV Modifier, No FOV, Zoom, Camera Clip, Camera Tweaks, Free Look, No Fog, No Overlay, No Fire Overlay, Anti Overlay, Anti Wobble, No Pumpkin, Anti Blind, Player Radar, Weather Changer, Time Changer |
 | Exploit | Anti Reduced Debug Info, Portal Menu, Plugins |
 | Fun | Twerk |
@@ -56,6 +56,8 @@ Auto Farm harvests mature field crops, nether wart, cocoa, melons, pumpkins, ber
 Auto Mount boards nearby rideable animals, boats, rafts, and passenger minecarts with ordinary entity interactions. It can require a tamed mount, a saddle, an empty hand, and line of sight. The [local gameplay test](docs/test-evidence/2026-10-30-automount.md) covers eight rideable types and checks the saddle, visibility, occupancy, and hand guards.
 
 Auto Nametag uses named tags from either hand or the hotbar on every nearby unnamed living entity it can reach. The [local gameplay test](docs/test-evidence/2026-10-30-autonametag.md) confirms multiple targets, name preservation, tag consumption, offhand use, slot restoration, and a line-of-sight control.
+
+Enderman Look can turn toward a visible enderman or turn away when the player's gaze reaches its eyes. Its [local gameplay test](docs/test-evidence/2026-10-30-endermanlook.md) confirms both modes and a wall control.
 
 Aimbot turns toward the visible entity closest to your crosshair within its configured range and field of view. Aim Assist makes smaller corrections while you hold attack. Both default to player targets, can optionally include mobs or invisible entities, and yield to Kill Aura when it is enabled. Neither module attacks on its own.
 

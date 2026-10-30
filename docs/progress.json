@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 561,
-    "verified": 53,
+    "backlog": 560,
+    "verified": 54,
     "coded": 68,
     "partial": 1
   },
@@ -2298,9 +2298,9 @@
       "id": "endermanlook",
       "name": "Enderman Look",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "EndermanLook",
+      "note": "On a local vanilla 26.3 server, avoidance mode turned the player 90 degrees away when aimed at an enderman's eyes, while look-at mode turned toward its eyes. A stone wall stopped look-at rotation until removed. See docs/test-evidence/2026-10-30-endermanlook.md. Multiple or moving endermen and third-party anticheats remain untested.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/endermanlook.md"
     },
     {
