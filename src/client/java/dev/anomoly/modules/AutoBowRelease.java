@@ -15,6 +15,7 @@ public final class AutoBowRelease extends Module {
 
     @Override public void tick(Minecraft client) {
         if (AnomolyClient.MODULES.get(AutoBow.class).active(client)
+            || AnomolyClient.MODULES.get(BowSpam.class).active(client)
             || client.gui.screen() != null || client.gameMode == null || !client.player.isUsingItem()
             || !(client.player.getUseItem().getItem() instanceof BowItem)) return;
         if (client.player.getTicksUsingItem() >= (int)chargeTicks.get()) {

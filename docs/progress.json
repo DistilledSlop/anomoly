@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 604,
-    "verified": 9,
+    "backlog": 603,
+    "verified": 10,
     "coded": 70
   },
   "total": 683,
@@ -1559,9 +1559,9 @@
       "id": "bowspam",
       "name": "Bow Spam",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "BowSpam",
+      "note": "On a local vanilla 26.3 server, six seconds of held use consumed 15 arrows with an 8-tick bow charge; seven seconds consumed four arrows with a crossbow. See docs/test-evidence/2026-10-30-bowspam.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bowspam.md"
     },
     {
