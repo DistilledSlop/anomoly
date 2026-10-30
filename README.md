@@ -36,7 +36,7 @@ After a session, run:
 python3 research/analyze_anomoly_profile.py config/anomoly/profiles/<session>.jsonl
 ```
 
-The analyzer separates initial join corrections from later ones and reports correction rate, module correlation, observed channels, and disconnect details. Review the raw log before sharing it: it contains server addresses and player coordinates.
+The analyzer separates initial join corrections from later ones and reports correction rates by module exposure, observed channels, and disconnect details. Module rates overlap when several modules are enabled, so they are signals for controlled testing rather than proof of cause. Review the raw log before sharing it: it contains server addresses and player coordinates.
 
 ## Research
 

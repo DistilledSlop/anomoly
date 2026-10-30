@@ -23,6 +23,31 @@ def analyze(path: Path) -> dict:
     for event in post_join:
         for module in filter(None, event.get("modules", "").split(",")):
             module_counts[module] += 1
+    exposure_samples = Counter()
+    for event in samples:
+        if event.get("tick", 0) < 100:
+            continue
+        active = set(filter(None, event.get("modules", "").split(",")))
+        for module in active or {"(no modules)"}:
+            exposure_samples[module] += 1
+    correction_contexts = Counter()
+    for event in post_join:
+        active = set(filter(None, event.get("modules", "").split(",")))
+        for module in active or {"(no modules)"}:
+            correction_contexts[module] += 1
+    exposure = {
+        module: {
+            "minutes_observed": round(count / 60, 2),
+            "samples": count,
+            "corrections": correction_contexts[module],
+            "corrections_per_observed_minute": round(correction_contexts[module] * 60 / count, 2) if count >= 30 else None,
+        }
+        for module, count in sorted(exposure_samples.items())
+    }
+    for module, count in correction_contexts.items():
+        if module not in exposure:
+            exposure[module] = {"minutes_observed": 0, "samples": 0, "corrections": count,
+                                "corrections_per_observed_minute": None}
     distances = sorted(event["distanceFromLastTick"] for event in post_join if "distanceFromLastTick" in event)
     latencies = sorted(event["latencyMs"] for event in samples if "latencyMs" in event)
     return {
@@ -37,8 +62,15 @@ def analyze(path: Path) -> dict:
         "largest_correction_distance_from_last_tick": round(max(distances, default=0), 3),
         "median_latency_ms": latencies[len(latencies) // 2] if latencies else None,
         "modules_active_during_corrections": dict(module_counts.most_common()),
+        "correction_rate_by_module_exposure": exposure,
         "disconnect_reason": next((event.get("reason") for event in reversed(events) if event.get("type") == "leave"), None),
-        "interpretation": "This is behavioral evidence; brand and channels do not reliably identify the anticheat plugin.",
+        "behavioral_signal": (
+            "repeated post-join position corrections" if len(post_join) >= 3
+            else "two post-join position corrections" if len(post_join) == 2
+            else "isolated post-join position correction" if post_join
+            else "no post-join position corrections observed"
+        ),
+        "interpretation": "Exposure rates are observational and can overlap when multiple modules are enabled. Brand and channels do not reliably identify an anticheat plugin.",
     }
 
 
