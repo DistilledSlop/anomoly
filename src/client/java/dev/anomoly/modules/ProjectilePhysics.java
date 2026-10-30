@@ -30,7 +30,7 @@ final class ProjectilePhysics {
         return main != null ? main : forStack(client, client.player.getOffhandItem(), bowsOnly);
     }
 
-    private static Profile forStack(Minecraft client, ItemStack stack, boolean bowsOnly) {
+    static Profile forStack(Minecraft client, ItemStack stack, boolean bowsOnly) {
         if (stack.isEmpty()) return null;
         Item item = stack.getItem();
         if (item instanceof BowItem) {

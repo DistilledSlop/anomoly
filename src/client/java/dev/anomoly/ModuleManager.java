@@ -1,6 +1,7 @@
 package dev.anomoly;
 
 import dev.anomoly.modules.AutoJump;
+import dev.anomoly.modules.AutoShoot;
 import dev.anomoly.modules.BowAimbot;
 import dev.anomoly.modules.ProjectileAimbot;
 import dev.anomoly.modules.AimAssist;
@@ -78,7 +79,7 @@ import net.minecraft.client.Minecraft;
 public final class ModuleManager {
     private final List<Module> modules = List.of(
         new AutoWeapon(), new AutoSword(), new AutoClicker(), new TriggerBot(), new AntiBot(), new KillAura(), new Aimbot(), new AimAssist(), new SpearAssist(), new Reach(), new AutoLeave(),
-        new AutoArmor(), new BowAimbot(), new ProjectileAimbot(), new AutoBowRelease(), new AutoGApple(), new AutoTotem(),
+        new AutoArmor(), new BowAimbot(), new ProjectileAimbot(), new AutoShoot(), new AutoBowRelease(), new AutoGApple(), new AutoTotem(),
         new AutoSprint(), new AutoWalk(), new AutoJump(), new AirJump(),
         new AutoSneak(), new AutoRespawn(), new AutoEat(), new AutoFish(), new AntiAFK(), new AutoBreak(), new AutoSwitch(), new AutoReconnect(), new NoRotate(),
         new AutoTool(), new AutoReplenish(),

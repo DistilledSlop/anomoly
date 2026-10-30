@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 606,
-    "verified": 7,
+    "backlog": 605,
+    "verified": 8,
     "coded": 70
   },
   "total": 683,
@@ -1028,9 +1028,9 @@
       "id": "autoshoot",
       "name": "AutoShoot",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "AutoShoot",
+      "note": "With stone selected and snowballs in the next hotbar slot, Auto Shoot selected, aimed, and threw without user input until it killed a stationary blaze at about 12 blocks; see docs/test-evidence/2026-10-30-autoshoot.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoshoot.md"
     },
     {

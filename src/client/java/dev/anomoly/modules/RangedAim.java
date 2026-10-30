@@ -1,6 +1,7 @@
 package dev.anomoly.modules;
 
 import dev.anomoly.Module;
+import dev.anomoly.AnomolyClient;
 import dev.anomoly.setting.BooleanSetting;
 import dev.anomoly.setting.FloatSetting;
 import net.minecraft.client.Minecraft;
@@ -26,7 +27,8 @@ abstract class RangedAim extends Module {
     }
 
     @Override public void tick(Minecraft client) {
-        if (client.gui.screen() != null || client.player.isSpectator()) return;
+        if (client.gui.screen() != null || client.player.isSpectator()
+            || AnomolyClient.MODULES.get(AutoShoot.class).active(client)) return;
         ProjectilePhysics.Profile physics = ProjectilePhysics.held(client, bowsOnly);
         if (physics == null) return;
         for (AimTargeting.Solution candidate : AimTargeting.candidates(client, range.get(), fieldOfView.get(), targetMobs.get(), targetInvisible.get())) {

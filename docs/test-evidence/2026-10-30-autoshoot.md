@@ -1,0 +1,7 @@
+# AutoShoot gameplay test — 2026-10-30
+
+I ran Anomoly against a local Minecraft 26.3 vanilla multiplayer server on a level stone platform. Auto Shoot was the only enabled module. Its settings included mob targets, a 24-block range, a 12-tick minimum interval, hotbar selection, and slot restoration. The server gave the player one stone block first, then 16 snowballs, placing them in consecutive hotbar slots. The player was teleported to `(5.5, 100, 5.5)` and a stationary, no-AI blaze was summoned at `(7.5, 100, 17.5)`, about 12 blocks away.
+
+I did not press attack, use, movement, or hotbar keys after setup. Auto Shoot selected the snowballs, rotated toward the blaze, and threw them. The server reported the blaze at `8.0f` health shortly afterward, then recorded that it was killed by the player and awarded the Monster Hunter advancement. The [captured frame](../screenshots/autoshoot-blaze-kill.png) shows the advancement, blaze drops, five snowballs remaining, and stone selected again in the first hotbar slot. The profile recorded `auto_shoot` active with yaw `−9.46°` while the attacks occurred.
+
+This verifies automatic target acquisition, hotbar selection, aiming, rate-limited throws, and slot restoration in a local world. It does not establish performance against moving players or anticheat plugins. Egg mode uses the same trajectory and use path but was not separately tested here.

@@ -28,6 +28,7 @@ public final class KillAura extends Module {
     @Override public void tick(Minecraft client) {
         if (client.gui.screen() != null || client.gameMode == null || client.player.isSpectator()
             || client.player.isHandsBusy() || client.player.getMainHandItem().has(DataComponents.PIERCING_WEAPON)
+            || AnomolyClient.MODULES.get(AutoShoot.class).active(client)
             || AnomolyClient.MODULES.get(BowAimbot.class).active(client)
             || AnomolyClient.MODULES.get(ProjectileAimbot.class).active(client)
             || client.player.cannotAttackWithItem(client.player.getMainHandItem(), 0)) return;
