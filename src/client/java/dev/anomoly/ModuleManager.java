@@ -21,6 +21,7 @@ import dev.anomoly.modules.AntiAnvil;
 import dev.anomoly.modules.AntiBed;
 import dev.anomoly.modules.AutoAnvil;
 import dev.anomoly.modules.SelfWeb;
+import dev.anomoly.modules.SelfAnvil;
 import dev.anomoly.modules.AutoTrap;
 import dev.anomoly.modules.AutoDodge;
 import dev.anomoly.modules.CrystalAura;
@@ -104,7 +105,7 @@ import net.minecraft.client.Minecraft;
 
 public final class ModuleManager {
     private final List<Module> modules = List.of(
-        new AutoPearl(), new AutoSoup(), new Soup(), new Criticals(), new Surround(), new HoleFiller(), new SelfTrap(), new SelfWeb(), new AntiAnvil(), new AntiBed(), new AutoAnvil(), new AutoTrap(), new AutoCrystalBase(), new CrystalAura(), new KeepSprint(), new SprintReset(), new SuperKnockback(), new WTap(), new AutoWeapon(), new AutoSword(), new AutoClicker(), new TriggerBot(), new AntiBot(), new KillAura(), new Aimbot(), new AimAssist(), new SpearAssist(), new Reach(), new AutoLeave(),
+        new AutoPearl(), new AutoSoup(), new Soup(), new Criticals(), new Surround(), new HoleFiller(), new SelfTrap(), new SelfWeb(), new SelfAnvil(), new AntiAnvil(), new AntiBed(), new AutoAnvil(), new AutoTrap(), new AutoCrystalBase(), new CrystalAura(), new KeepSprint(), new SprintReset(), new SuperKnockback(), new WTap(), new AutoWeapon(), new AutoSword(), new AutoClicker(), new TriggerBot(), new AntiBot(), new KillAura(), new Aimbot(), new AimAssist(), new SpearAssist(), new Reach(), new AutoLeave(),
         new AutoArmor(), new BowAimbot(), new ProjectileAimbot(), new AutoShoot(), new AutoBow(), new AutoRod(), new BowSpam(), new AutoBowRelease(), new ThrowPot(), new AutoPotion(), new AutoExp(), new AutoGApple(), new AutoTotem(), new Pot(),
         new AutoSprint(), new AutoWalk(), new AutoJump(), new AutoDodge(), new AirJump(),
         new AutoSneak(), new AutoRespawn(), new AutoEat(), new AutoFish(), new AntiAFK(), new AutoBreak(), new AutoSwitch(), new AutoReconnect(), new NoRotate(),

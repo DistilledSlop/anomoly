@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 578,
-    "verified": 34,
+    "backlog": 577,
+    "verified": 35,
     "coded": 70,
     "partial": 1
   },
@@ -4935,9 +4935,9 @@
       "id": "selfanvil",
       "name": "Self Anvil",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "SelfAnvil",
+      "note": "On a local vanilla 26.3 server, Self Anvil refused an open floor, then built two support blocks and dropped an anvil into PlayerC's one-block obsidian hole while restoring stone. At 9.33 health it placed nothing; a cobweb in the feet cell also blocked placement. Removing the cobweb let an anvil land, consuming the item and reducing health from 18 to 16. Offhand use was verified separately. See docs/test-evidence/2026-10-30-selfanvil.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/selfanvil.md"
     },
     {
