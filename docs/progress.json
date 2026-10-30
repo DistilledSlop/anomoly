@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 617,
-    "coded": 66
+    "backlog": 615,
+    "coded": 68
   },
   "total": 683,
   "features": [
@@ -298,8 +298,8 @@
       "id": "antinausea",
       "name": "AntiWobble",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "AntiWobble",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antinausea.md"
     },
@@ -4087,8 +4087,8 @@
       "id": "nopumpkin",
       "name": "NoPumpkin",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "NoPumpkin",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nopumpkin.md"
     },

@@ -4,6 +4,7 @@ import dev.anomoly.modules.AutoJump;
 import dev.anomoly.modules.AntiReducedDebugInfo;
 import dev.anomoly.modules.AntiWeb;
 import dev.anomoly.modules.AntiOverlay;
+import dev.anomoly.modules.AntiWobble;
 import dev.anomoly.modules.AutoArmor;
 import dev.anomoly.modules.AutoF5;
 import dev.anomoly.modules.AutoBowRelease;
@@ -50,6 +51,7 @@ import dev.anomoly.modules.NoFog;
 import dev.anomoly.modules.NoFireOverlay;
 import dev.anomoly.modules.NoOverlay;
 import dev.anomoly.modules.NoPush;
+import dev.anomoly.modules.NoPumpkin;
 import dev.anomoly.modules.PlayerRadar;
 import dev.anomoly.modules.PortalMenu;
 import dev.anomoly.modules.Reach;
@@ -77,7 +79,7 @@ public final class ModuleManager {
         new FastPlace(), new FastBreak(), new FastLadder(),
         new NoFall(), new NoSlow(), new SafeWalk(), new Step(), new AntiWeb(), new FastFall(), new Velocity(), new NoPush(), new MaxBrightness(), new NoHurtCam(), new NoBob(), new AutoF5(),
         new FovOverride(), new NoFov(), new Zoom(), new CameraClip(), new CameraTweaks(), new FreeLook(),
-        new Fullbright(), new NoFog(), new NoOverlay(), new NoFireOverlay(), new AntiOverlay(), new PlayerRadar(), new WeatherChanger(), new TimeChanger(),
+        new Fullbright(), new NoFog(), new NoOverlay(), new NoFireOverlay(), new AntiOverlay(), new AntiWobble(), new NoPumpkin(), new PlayerRadar(), new WeatherChanger(), new TimeChanger(),
         new AntiReducedDebugInfo(), new PortalMenu(), new Twerk()
     );
 

@@ -1,5 +1,7 @@
 {
   "catalog": {
+    "antinausea": {"status": "coded", "module": "AntiWobble"},
+    "nopumpkin": {"status": "coded", "module": "NoPumpkin"},
     "freelook": {"status": "coded", "module": "FreeLook"},
     "timechanger": {"status": "coded", "module": "TimeChanger"},
     "noweather": {"status": "coded", "module": "WeatherChanger"},

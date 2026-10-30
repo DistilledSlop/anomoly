@@ -2,6 +2,7 @@ package dev.anomoly.mixin;
 
 import dev.anomoly.AnomolyClient;
 import dev.anomoly.modules.AntiOverlay;
+import dev.anomoly.modules.AntiWobble;
 import dev.anomoly.modules.NoFireOverlay;
 import dev.anomoly.modules.NoOverlay;
 import net.minecraft.client.Camera;
@@ -24,5 +25,8 @@ public abstract class LevelExtractorOverlayMixin {
             state.waterOverlay = null;
         }
         if (all || AnomolyClient.MODULES.get(NoFireOverlay.class).enabled()) state.isOnFire = false;
+        AntiWobble antiWobble = AnomolyClient.MODULES.get(AntiWobble.class);
+        if (antiWobble.portal()) state.portalEffectIntensity = 0.0F;
+        if (antiWobble.nausea()) state.nauseaEffectIntensity = 0.0F;
     }
 }
