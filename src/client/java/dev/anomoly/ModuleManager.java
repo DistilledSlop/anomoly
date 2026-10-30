@@ -272,6 +272,8 @@ import dev.anomoly.modules.HandDerp;
 import dev.anomoly.modules.Trajectories;
 import dev.anomoly.modules.BlockOutline;
 import dev.anomoly.modules.BreakIndicators;
+import dev.anomoly.modules.NoEntityTrace;
+import dev.anomoly.modules.Multitask;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -417,6 +419,8 @@ public final class ModuleManager {
         new Trajectories(),
         new BlockOutline(),
         new BreakIndicators(),
+        new NoEntityTrace(),
+        new Multitask(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 

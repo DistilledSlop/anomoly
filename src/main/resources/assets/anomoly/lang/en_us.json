@@ -280,6 +280,8 @@
   "key.anomoly.toggle.trajectories": "Toggle Anomoly Trajectories",
   "key.anomoly.toggle.block_outline": "Toggle Anomoly BlockOutline",
   "key.anomoly.toggle.break_indicators": "Toggle Anomoly Break Indicators",
+  "key.anomoly.toggle.no_entity_trace": "Toggle Anomoly NoEntityTrace",
+  "key.anomoly.toggle.multitask": "Toggle Anomoly Multitask",
   "key.anomoly.toggle.anti_reduced_debug_info": "Toggle Anomoly Anti Reduced Debug Info",
   "key.anomoly.toggle.portal_menu": "Toggle Anomoly Portal Menu",
   "key.anomoly.toggle.plugins": "Toggle Anomoly Plugins",

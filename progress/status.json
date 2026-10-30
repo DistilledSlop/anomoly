@@ -347,7 +347,10 @@
     "blockselection": {"status": "coded", "module": "BlockOutline", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
     "breakindicators": {"status": "coded", "module": "BreakIndicators", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
     "breakesp": {"status": "coded", "module": "BreakIndicators", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
-    "breakhighlight": {"status": "coded", "module": "BreakIndicators", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."}
+    "breakhighlight": {"status": "coded", "module": "BreakIndicators", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "noentitytrace": {"status": "coded", "module": "NoEntityTrace", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "nominingtrace": {"status": "coded", "module": "NoEntityTrace", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "multitask": {"status": "coded", "module": "Multitask", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."}
   },
   "additions": [
     {"id": "anomoly_spear_assist", "name": "Spear Assist", "category": "Combat", "status": "coded", "module": "SpearAssist", "doc": "hacks/spear-assist.md"}

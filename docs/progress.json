@@ -1,9 +1,9 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "coded": 260,
+    "coded": 263,
     "verified": 84,
-    "backlog": 334,
+    "backlog": 331,
     "partial": 5
   },
   "total": 683,
@@ -3801,9 +3801,9 @@
       "id": "multitask",
       "name": "Multitask",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Multitask",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/multitask.md"
     },
     {
@@ -3927,9 +3927,9 @@
       "id": "noentitytrace",
       "name": "NoEntityTrace",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "NoEntityTrace",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noentitytrace.md"
     },
     {
@@ -4035,9 +4035,9 @@
       "id": "nominingtrace",
       "name": "No Mining Trace",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "NoEntityTrace",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nominingtrace.md"
     },
     {
