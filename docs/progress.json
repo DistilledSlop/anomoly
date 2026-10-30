@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 567,
-    "verified": 47,
+    "backlog": 566,
+    "verified": 48,
     "coded": 68,
     "partial": 1
   },
@@ -1020,9 +1020,9 @@
       "id": "autoshear",
       "name": "Auto Shearer",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "AutoShearer",
+      "note": "On a local vanilla 26.3 server, Auto Shearer sheared one adult sheep from hotbar shears and again from offhand shears after a reset, leaving a baby untouched and restoring the selected slot. A stone wall and a no-shears control prevented interaction. See docs/test-evidence/2026-10-30-autoshearer.md. Moving targets and third-party anticheats remain untested.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoshear.md"
     },
     {
