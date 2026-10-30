@@ -3,6 +3,7 @@ package dev.anomoly.gui;
 import dev.anomoly.AnomolyClient;
 import dev.anomoly.Module;
 import dev.anomoly.setting.BooleanSetting;
+import dev.anomoly.setting.ChoiceSetting;
 import dev.anomoly.setting.FloatSetting;
 import dev.anomoly.setting.Setting;
 import dev.anomoly.setting.StringSetting;
@@ -131,6 +132,12 @@ public final class FallbackClickGuiScreen extends Screen {
                         AnomolyClient.saveConfig();
                     }
                 });
+            } else if (setting instanceof ChoiceSetting choice) {
+                addRenderableWidget(Button.builder(Component.literal(choice.name() + ": " + choice.get()), button -> {
+                    choice.next();
+                    button.setMessage(Component.literal(choice.name() + ": " + choice.get()));
+                    AnomolyClient.saveConfig();
+                }).bounds(x, rowY, Math.min(contentWidth, 320), 24).build());
             } else if (setting instanceof StringSetting string) {
                 EditBox box = new EditBox(font, x, rowY, Math.min(contentWidth, 370), 24, Component.literal(string.name()));
                 box.setMaxLength(256);

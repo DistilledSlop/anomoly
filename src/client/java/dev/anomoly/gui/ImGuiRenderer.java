@@ -4,6 +4,7 @@ import com.mojang.blaze3d.systems.RenderSystem;
 import dev.anomoly.AnomolyClient;
 import dev.anomoly.Module;
 import dev.anomoly.setting.BooleanSetting;
+import dev.anomoly.setting.ChoiceSetting;
 import dev.anomoly.setting.FloatSetting;
 import dev.anomoly.setting.Setting;
 import dev.anomoly.setting.StringSetting;
@@ -167,6 +168,16 @@ public final class ImGuiRenderer {
                     if (ImGui.sliderFloat(slider.name() + "##" + module.id() + setting.id(), value, slider.min(), slider.max())) {
                         slider.set(value[0]);
                         AnomolyClient.saveConfig();
+                    }
+                } else if (setting instanceof ChoiceSetting choice) {
+                    ImGui.setNextItemWidth(240);
+                    if (ImGui.beginCombo(choice.name() + "##" + module.id() + setting.id(), choice.get())) {
+                        for (String option : choice.choices())
+                            if (ImGui.selectable(option, option.equals(choice.get()))) {
+                                choice.set(option);
+                                AnomolyClient.saveConfig();
+                            }
+                        ImGui.endCombo();
                     }
                 } else if (setting instanceof StringSetting string) {
                     ImString buffer = TEXT_BUFFERS.computeIfAbsent(setting, unused -> new ImString(string.get(), 256));

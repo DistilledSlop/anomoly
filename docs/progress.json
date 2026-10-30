@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 557,
-    "verified": 57,
+    "backlog": 556,
+    "verified": 58,
     "coded": 68,
     "partial": 1
   },
@@ -624,9 +624,9 @@
       "id": "autobuild",
       "name": "AutoBuild",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "AutoBuild",
+      "note": "On a local vanilla 26.3 server, AutoBuild filled all 24 missing cells of a 5x5 stone platform, built and lit a 14-obsidian portal frame, restored the selected hotbar slot, and disabled itself after each build. With no obsidian, it placed nothing and disabled itself. See docs/test-evidence/2026-10-30-autobuild.md. Larger platform radii and third-party anticheats remain untested.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autobuild.md"
     },
     {

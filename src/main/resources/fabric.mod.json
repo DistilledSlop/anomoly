@@ -3,7 +3,7 @@
 	"id": "anomoly",
 	"version": "${version}",
 	"name": "Anomoly",
-	"description": "A modular Minecraft 26.3 client with a Dear ImGui ClickGUI.",
+	"description": "A full Minecraft 26.3 Fabric hacked client with a Dear ImGui ClickGUI, configurable hacks, and passive anticheat profiling.",
 	"authors": ["Anomoly contributors"],
 	"license": "CC0-1.0",
 	"environment": "client",

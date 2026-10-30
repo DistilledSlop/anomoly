@@ -6,7 +6,7 @@ Anomoly is a full Minecraft Java 26.3 hacked client built on Fabric. Its Dear Im
 
 [![Anomoly hack progress treemap](docs/progress.svg)](https://distilledslop.github.io/anomoly/progress.html)
 
-The [searchable progress report](https://distilledslop.github.io/anomoly/progress.html) is generated from the 682 catalog entries plus Anomoly's Spear Assist. It currently tracks <!-- anomoly-progress:start -->**68 coded**, **1 partial**, **57 gameplay verified**, and **557 backlog**<!-- anomoly-progress:end --> features. Blue tiles are coded modules, amber tiles are partial implementations, green tiles have gameplay test evidence, and gray tiles are backlog. Run `python3 tools/progress.py` after changing a module's status; CI runs `python3 tools/progress.py --check` to verify the treemap and [raw data](docs/progress.json).
+The [searchable progress report](https://distilledslop.github.io/anomoly/progress.html) is generated from the 682 catalog entries plus Anomoly's Spear Assist. It currently tracks <!-- anomoly-progress:start -->**68 coded**, **1 partial**, **58 gameplay verified**, and **556 backlog**<!-- anomoly-progress:end --> features. Blue tiles are coded modules, amber tiles are partial implementations, green tiles have gameplay test evidence, and gray tiles are backlog. Run `python3 tools/progress.py` after changing a module's status; CI runs `python3 tools/progress.py --check` to verify the treemap and [raw data](docs/progress.json).
 
 ## Build and run
 
@@ -29,7 +29,7 @@ The [local gameplay test](docs/test-evidence/2026-10-30-local-gameplay.md) verif
 | Combat | Auto Pearl, Auto Soup, Soup, Keep Sprint, Sprint Reset, W Tap, Criticals, Surround, Hole Filler, Self Trap, Self Web, Self Anvil, Anti Anvil, Anti Bed, Auto Anvil, Auto Trap, Auto Dodge, Auto Crystal Base, Crystal Aura, Anchor Aura, Bed Aura, Super Knockback (partial), Auto Weapon, Auto Sword, Auto Clicker, Trigger Bot, Anti Bot, Kill Aura, Aimbot, Aim Assist, Bow Aimbot, Projectile Aimbot, Auto Shoot, Auto Bow, Bow Spam, Auto Rod, Spear Assist, Reach, Auto Leave, Auto Armor, Auto Bow Release, Auto Potion, Throw Pot, Pot, Auto Exp, Auto GApple, Auto Totem |
 | Movement | Auto Sprint, Auto Walk, Auto Jump, Air Jump, Auto Sneak, Fast Ladder, Fast Fall, No Fall, Safe Walk, Step, Anti Web, Velocity, No Push, No Slow |
 | Player | Auto Respawn, Auto Eat, Auto Fish, Anti AFK, Auto Break (also Auto Mine), Durability Alert, Auto Switch, Auto Tool, Auto Replenish, Auto Deposit, Auto Drop (also Auto Eject), Chest Stealer, Chest Cleaner, No Rotate (also No Server Rotate) |
-| World | Fast Place, Fast Break (also Break Delay), AirPlace, AntiInteract, Auto Brewer, Scaffold, Nuker, Nuker Legit, Vein Miner, Auto Tunnel (also Tunneller), Auto Shearer, Auto Breed, Auto Mob Heal, Auto Farm, Auto Mount, Auto Nametag, Enderman Look |
+| World | Fast Place, Fast Break (also Break Delay), AirPlace, AntiInteract, Auto Brewer, AutoBuild, Scaffold, Nuker, Nuker Legit, Vein Miner, Auto Tunnel (also Tunneller), Auto Shearer, Auto Breed, Auto Mob Heal, Auto Farm, Auto Mount, Auto Nametag, Enderman Look |
 | Render | Fullbright, Max Brightness, No Hurt Cam, No Bob, Auto F5, FOV Modifier, No FOV, Zoom, Camera Clip, Camera Tweaks, Free Look, No Fog, No Overlay, No Fire Overlay, Anti Overlay, Anti Wobble, No Pumpkin, Anti Blind, Player Radar, Weather Changer, Time Changer |
 | Exploit | Anti Reduced Debug Info, Portal Menu, Plugins |
 | Fun | Twerk |
@@ -44,6 +44,8 @@ AirPlace changes a right-click aimed at empty space into an ordinary block-use i
 AntiInteract prevents right-clicking a configurable list of containers. Sneaking with an item can still place against one. The [local gameplay test](docs/test-evidence/2026-10-30-antiinteract.md) confirms chest, barrel, and colored shulker protection, an unlisted crafting-table control, and sneak placement.
 
 Auto Brewer makes a configured vanilla potion while a brewing stand is open. It fills the stand from inventory, supplies fuel and the next ingredient, waits for each brew, and returns finished bottles. The [local gameplay test](docs/test-evidence/2026-10-30-autobrewer.md) confirms three strength potions, splash and lingering weakness, partial-batch resume, unrelated-potion protection, and ingredient remainder cleanup.
+
+AutoBuild constructs a stone platform or a lit nether portal from hotbar or offhand materials, then turns itself off. It can filter platform blocks, limit reach and placement speed, and require visible support faces. The [local gameplay test](docs/test-evidence/2026-10-30-autobuild.md) confirms a complete 5×5 platform, a lit portal, hotbar restoration, and a missing-material guard.
 
 Nuker mines nearby blocks one at a time with ordinary mining actions. Its block-ID list can act as a whitelist or blacklist; it can select a suitable hotbar tool, keep the block under your feet, and skip block entities. Nuker Legit uses the same mining path but requires a visible block within its field of view and turns the crosshair onto its face before mining. The [local gameplay test](docs/test-evidence/2026-10-30-nuker.md) confirms three automatic dirt breaks, tool use and slot restoration, floor and filter controls, an occluded target, and a field-of-view control. These settings do not guarantee compatibility with a server anticheat.
 
