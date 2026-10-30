@@ -86,6 +86,8 @@ import dev.anomoly.modules.NoJumpDelay;
 import dev.anomoly.modules.NoFall;
 import dev.anomoly.modules.NoSlow;
 import dev.anomoly.modules.NoBob;
+import dev.anomoly.modules.NoBlockInteract;
+import dev.anomoly.modules.NoEntityInteract;
 import dev.anomoly.modules.NoFov;
 import dev.anomoly.modules.NoFog;
 import dev.anomoly.modules.NoFireOverlay;
@@ -141,7 +143,7 @@ public final class ModuleManager {
         new AutoPearl(), new AutoSoup(), new Soup(), new Criticals(), new Surround(), new HoleFiller(), new SelfTrap(), new SelfWeb(), new SelfAnvil(), new AntiAnvil(), new AntiBed(), new AutoAnvil(), new AutoTrap(), new AutoCrystalBase(), new CrystalAura(), new AnchorAura(), new BedAura(), new KeepSprint(), new SprintReset(), new SuperKnockback(), new WTap(), new AutoWeapon(), new AutoSword(), new AutoClicker(), new TriggerBot(), new AntiBot(), new KillAura(), new Aimbot(), new AimAssist(), new SpearAssist(), new Reach(), new AutoLeave(),
         new AutoArmor(), new BowAimbot(), new ProjectileAimbot(), new AutoShoot(), new AutoBow(), new AutoRod(), new BowSpam(), new AutoBowRelease(), new ThrowPot(), new AutoPotion(), new AutoExp(), new FastExp(), new AutoGApple(), new AutoTotem(), new Pot(),
         new AutoSprint(), new AutoWalk(), new AutoJump(), new NoJumpDelay(), new AutoDodge(), new AirJump(), new AutoSwim(), new GuiMove(),
-        new AutoSneak(), new AutoRespawn(), new AutoEat(), new AutoFish(), new AutoMend(), new Offhand(), new Eagle(), new ElytraSwap(), new AutoBuff(), new SmartEat(), new AutoCrafter(), new InventoryCleaner(), new AntiAFK(), new AutoBreak(), new DurabilityAlert(), new AutoSwitch(), new AutoReconnect(), new AntiCheatDetect(), new NoRotate(),
+        new AutoSneak(), new AutoRespawn(), new AutoEat(), new AutoFish(), new AutoMend(), new Offhand(), new Eagle(), new ElytraSwap(), new AutoBuff(), new SmartEat(), new NoBlockInteract(), new NoEntityInteract(), new AutoCrafter(), new InventoryCleaner(), new AntiAFK(), new AutoBreak(), new DurabilityAlert(), new AutoSwitch(), new AutoReconnect(), new AntiCheatDetect(), new NoRotate(),
         new AutoTool(), new AutoReplenish(),
         new AutoDeposit(), new AutoDrop(),
         new ChestStealer(), new ChestCleaner(),

@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 541,
-    "verified": 72,
+    "backlog": 539,
+    "verified": 74,
     "coded": 69,
     "partial": 1
   },
@@ -3882,9 +3882,9 @@
       "id": "noblockinteract",
       "name": "NoBlockInteract",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "NoBlockInteract",
+      "note": "A physical right-click at a chest opened it with the module off; with the module on, the same click consumed a golden apple, granted four absorption health, and kept the chest closed on a local vanilla 26.3 server. See docs/test-evidence/2026-10-30-interactions.md. Other block types and third-party anticheats remain untested.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noblockinteract.md"
     },
     {
@@ -3918,9 +3918,9 @@
       "id": "noentityinteract",
       "name": "NoEntityInteract",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "NoEntityInteract",
+      "note": "An empty-hand right-click opened a farmer's trade screen with the module off and did not open it with the module on. An iron sword, absent from the default held-item whitelist, still opened the screen with the module on. See docs/test-evidence/2026-10-30-interactions.md. Other entity and item filters remain untested.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noentityinteract.md"
     },
     {

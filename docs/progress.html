@@ -4,14 +4,14 @@
 </head><body><h1>Anomoly hack progress</h1>
 <p>One tile per catalogued feature. Tile area is proportional to category size. Blue means coded and compiled, amber means partial, green means gameplay verified, and gray means backlog. Startup validation alone does not count as gameplay verification.</p>
 <img src="progress.svg" alt="Treemap of Anomoly hack progress">
-<p>69 coded, 1 partial, 72 gameplay verified, 541 backlog, 683 total. <a href="progress.json">Raw data</a>.</p>
+<p>69 coded, 1 partial, 74 gameplay verified, 539 backlog, 683 total. <a href="progress.json">Raw data</a>.</p>
 <h2>By category</h2><table><thead><tr><th>Category</th><th>Verified</th><th>Coded</th><th>Partial</th><th>Backlog</th><th>Total</th></tr></thead><tbody>
 <tr><td>Combat</td><td>34</td><td>12</td><td>1</td><td>48</td><td>95</td></tr>
 <tr><td>Exploit</td><td>0</td><td>3</td><td>0</td><td>31</td><td>34</td></tr>
 <tr><td>Fun</td><td>0</td><td>1</td><td>0</td><td>16</td><td>17</td></tr>
 <tr><td>Misc</td><td>0</td><td>2</td><td>0</td><td>120</td><td>122</td></tr>
 <tr><td>Movement</td><td>6</td><td>12</td><td>0</td><td>72</td><td>90</td></tr>
-<tr><td>Player</td><td>14</td><td>14</td><td>0</td><td>59</td><td>87</td></tr>
+<tr><td>Player</td><td>16</td><td>14</td><td>0</td><td>57</td><td>87</td></tr>
 <tr><td>Render</td><td>0</td><td>22</td><td>0</td><td>144</td><td>166</td></tr>
 <tr><td>World</td><td>18</td><td>3</td><td>0</td><td>51</td><td>72</td></tr>
 </tbody></table>
@@ -430,8 +430,8 @@
 <tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nointeract.md">No Interact</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nominingtrace.md">No Mining Trace</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nostatuseffects.md">No Status Effects</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noblockinteract.md">NoBlockInteract</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noentityinteract.md">NoEntityInteract</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noblockinteract.md">NoBlockInteract</a></td><td class="verified">verified</td><td>A physical right-click at a chest opened it with the module off; with the module on, the same click consumed a golden apple, granted four absorption health, and kept the chest closed on a local vanilla 26.3 server. See docs/test-evidence/2026-10-30-interactions.md. Other block types and third-party anticheats remain untested.</td></tr>
+<tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noentityinteract.md">NoEntityInteract</a></td><td class="verified">verified</td><td>An empty-hand right-click opened a farmer&#x27;s trade screen with the module off and did not open it with the module on. An iron sword, absent from the default held-item whitelist, still opened the screen with the module on. See docs/test-evidence/2026-10-30-interactions.md. Other entity and item filters remain untested.</td></tr>
 <tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noentitytrace.md">NoEntityTrace</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/norotate.md">NoRotateSet</a></td><td class="verified">verified</td><td>Local 26.3 server /rotate and teleport commands left view unchanged with No Rotate enabled; paired control without the module changed view to the requested angles. See docs/test-evidence/2026-10-30-local-gameplay.md.</td></tr>
 <tr><td>Player</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noserverrotate.md">NoServerRotate</a></td><td class="verified">verified</td><td>Same gameplay-verified No Rotate implementation covers dedicated rotation packets and position corrections. See docs/test-evidence/2026-10-30-local-gameplay.md.</td></tr>
