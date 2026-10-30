@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 569,
-    "verified": 45,
+    "backlog": 567,
+    "verified": 47,
     "coded": 68,
     "partial": 1
   },
@@ -1164,9 +1164,9 @@
       "id": "autotunnel",
       "name": "AutoTunnel",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "AutoTunnel",
+      "note": "Auto Tunnel mined a 2x2x3 stone corridor, repaired two floor gaps, paused before lava, a chest, and overhead sand, resumed after sand removal, and placed a torch at the third segment on a local vanilla 26.3 server. See docs/test-evidence/2026-10-30-autotunnel.md. Longer tunnels and third-party anticheats remain untested.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autotunnel.md"
     },
     {
@@ -5871,9 +5871,9 @@
       "id": "tunneller",
       "name": "Tunneller",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "AutoTunnel",
+      "note": "Auto Tunnel mined a 2x2x3 stone corridor, repaired two floor gaps, paused before lava, a chest, and overhead sand, resumed after sand removal, and placed a torch at the third segment on a local vanilla 26.3 server. See docs/test-evidence/2026-10-30-autotunnel.md. Longer tunnels and third-party anticheats remain untested.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tunneller.md"
     },
     {

@@ -77,6 +77,7 @@ public class Nuker extends Module {
         if (client.gameMode == null || client.gui.screen() != null || !player.isAlive()
             || player.isSpectator() || player.isHandsBusy() || player.isUsingItem()
             || client.options.keyAttack.isDown() || client.options.keyUse.isDown()
+            || AnomolyClient.MODULES.get(AutoTunnel.class).enabled()
             || (!legit && AnomolyClient.MODULES.get(NukerLegit.class).enabled())) {
             stop(client);
             return;

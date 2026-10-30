@@ -58,6 +58,7 @@ public final class VeinMiner extends Module {
             || client.gui.screen() != null || !client.options.keyAttack.isDown()
             || AnomolyClient.MODULES.get(Nuker.class).enabled()
             || AnomolyClient.MODULES.get(NukerLegit.class).enabled()
+            || AnomolyClient.MODULES.get(AutoTunnel.class).enabled()
             || !(client.hitResult instanceof BlockHitResult hit)
             || !hit.getBlockPos().equals(pos)) return;
         BlockState state = client.level.getBlockState(pos);
@@ -116,7 +117,8 @@ public final class VeinMiner extends Module {
             || player.isSpectator() || player.isHandsBusy() || player.isUsingItem()
             || client.options.keyAttack.isDown() || client.options.keyUse.isDown()
             || AnomolyClient.MODULES.get(Nuker.class).enabled()
-            || AnomolyClient.MODULES.get(NukerLegit.class).enabled()) {
+            || AnomolyClient.MODULES.get(NukerLegit.class).enabled()
+            || AnomolyClient.MODULES.get(AutoTunnel.class).enabled()) {
             finishCurrent(client);
             return;
         }
