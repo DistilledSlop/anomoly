@@ -56,6 +56,7 @@
     "reach": {"status": "coded", "module": "Reach"},
     "sprint": {"status": "coded", "module": "AutoSprint"},
     "autowalk": {"status": "verified", "module": "AutoWalk", "note": "Enabled through ImGui in a local Minecraft 26.3 multiplayer world; passive movement samples show Z advancing from -78.5 to -65.3 without manual forward input. See docs/test-evidence/2026-10-30-local-gameplay.md."},
+    "autoswim": {"status": "verified", "module": "AutoSwim", "note": "In a local vanilla 26.3 water tunnel, a server-side swimming predicate reported false while Auto Walk moved the player forward with Auto Swim off, true with Auto Swim on, and false again after forward input stopped. See docs/test-evidence/2026-10-30-autoswim.md. Surface behavior and third-party anticheats remain untested."},
     "autojump": {"status": "coded", "module": "AutoJump"},
     "autosneak": {"status": "coded", "module": "AutoSneak"},
     "autorespawn": {"status": "coded", "module": "AutoRespawn"},

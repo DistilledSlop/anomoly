@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 556,
-    "verified": 58,
+    "backlog": 555,
+    "verified": 59,
     "coded": 68,
     "partial": 1
   },
@@ -1101,9 +1101,9 @@
       "id": "autoswim",
       "name": "AutoSwim",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "AutoSwim",
+      "note": "In a local vanilla 26.3 water tunnel, a server-side swimming predicate reported false while Auto Walk moved the player forward with Auto Swim off, true with Auto Swim on, and false again after forward input stopped. See docs/test-evidence/2026-10-30-autoswim.md. Surface behavior and third-party anticheats remain untested.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoswim.md"
     },
     {
