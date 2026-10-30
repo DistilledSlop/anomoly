@@ -63,7 +63,7 @@
     "autosneak": {"status": "coded", "module": "AutoSneak"},
     "autorespawn": {"status": "coded", "module": "AutoRespawn"},
     "autoeat": {"status": "coded", "module": "AutoEat"},
-    "smarteat": {"status": "partial", "module": "SmartEat", "note": "Automatic food selection was tested on a local vanilla 26.3 server: steak beat bread and rotten flesh, main-inventory food was consumed and the selected stone restored, one golden apple and then a healing potion were used at low health while a second apple remained, offhand steak was eaten, rotten flesh and pufferfish were rejected at hunger 1, and an enchanted apple took priority at health 2. See docs/test-evidence/2026-10-30-smarteat.md. Silent manual offhand eating and its HUD preview are not implemented; third-party anticheats remain untested."},
+    "smarteat": {"status": "verified", "module": "SmartEat", "note": "On a local vanilla 26.3 server, automatic eating chose steak over bread and rotten flesh, consumed main-inventory and offhand food, restored the selected stone, used one golden apple then a healing potion at low health, preserved a second apple, rejected rotten flesh and pufferfish at hunger 1, and used an enchanted apple first at health 2. Manual right-click with a pickaxe consumed steak from main inventory and bread from another hotbar slot through a temporary offhand swap; the selected pickaxe and displaced shield were restored. A food preview was observed on the HUD. See docs/test-evidence/2026-10-30-smarteat.md. Combat pause timing, custom foods, and third-party anticheats remain untested."},
     "autofish": {"status": "coded", "module": "AutoFish"},
     "antiafk": {"status": "coded", "module": "AntiAFK"},
     "autotool": {"status": "coded", "module": "AutoTool"},

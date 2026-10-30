@@ -79,6 +79,7 @@ public final class Offhand extends Module {
             || client.gui.screen() != null || player.containerMenu != player.inventoryMenu
             || !player.inventoryMenu.getCarried().isEmpty()
             || AnomolyClient.MODULES.get(AutoTotem.class).enabled()
+            || AnomolyClient.MODULES.get(SmartEat.class).busy()
             || AnomolyClient.MODULES.get(AutoMend.class).enabled()) return;
 
         boolean emergency = danger(client, player);

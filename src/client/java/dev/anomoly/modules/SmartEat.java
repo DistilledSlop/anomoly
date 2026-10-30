@@ -7,21 +7,33 @@ import dev.anomoly.setting.FloatSetting;
 import net.minecraft.client.Minecraft;
 import net.minecraft.client.multiplayer.ClientLevel;
 import net.minecraft.client.player.LocalPlayer;
+import net.minecraft.client.gui.GuiGraphicsExtractor;
+import net.minecraft.client.renderer.RenderPipelines;
 import net.minecraft.core.component.DataComponents;
+import net.minecraft.resources.Identifier;
+import net.minecraft.tags.ItemTags;
 import net.minecraft.world.InteractionHand;
 import net.minecraft.world.effect.MobEffects;
+import net.minecraft.world.effect.MobEffectCategory;
 import net.minecraft.world.inventory.ContainerInput;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.item.ItemStack;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.alchemy.PotionContents;
+import net.minecraft.world.item.component.Consumable;
+import net.minecraft.world.item.consume_effects.ApplyStatusEffectsConsumeEffect;
+import net.minecraft.world.item.consume_effects.TeleportRandomlyConsumeEffect;
 import net.minecraft.world.food.FoodProperties;
 
 /** Chooses food by hunger restored, with separate low-health emergency priorities. */
 public final class SmartEat extends Module {
+    private static final Identifier OFFHAND_FRAME = Identifier.withDefaultNamespace("hud/hotbar_offhand_left");
     private record Candidate(int slot, int priority, int nutrition, int preference) { }
 
     private final BooleanSetting autoEat = add(new BooleanSetting("auto_eat", "Eat automatically", true));
+    private final BooleanSetting silentOffhand = add(new BooleanSetting("silent_offhand", "Right-click with a tool to eat", true));
+    private final BooleanSetting renderSlot = add(new BooleanSetting("render_slot", "Show food preview beside hotbar", true));
+    private final FloatSetting renderOffset = add(new FloatSetting("render_offset", "Preview distance from hotbar", 40, 30, 70));
     private final FloatSetting minHunger = add(new FloatSetting("min_hunger", "Eat at or below hunger", 15, 0, 20));
     private final FloatSetting gappleHealth = add(new FloatSetting("prefer_gapple_health", "Golden apple at health", 9, 0, 20));
     private final FloatSetting notchHealth = add(new FloatSetting("prefer_notch_health", "Enchanted apple at health", 2, 0, 20));
@@ -40,6 +52,7 @@ public final class SmartEat extends Module {
     private int originalSlot = -1;
     private int selectedSlot = -1;
     private int inventorySlot = -1;
+    private int offhandSwapSlot = -1;
     private int preparation;
     private int restoreDelay;
     private int age;
@@ -47,6 +60,7 @@ public final class SmartEat extends Module {
     private boolean using;
     private boolean restoring;
     private boolean syntheticUse;
+    private boolean manual;
     private ClientLevel lastLevel;
     private long lastUseTick = -1;
 
@@ -55,6 +69,39 @@ public final class SmartEat extends Module {
     }
 
     public boolean busy() { return enabled() && active != null; }
+
+    /** Called before vanilla handles a physical right-click. */
+    public boolean manualClick(Minecraft client) {
+        LocalPlayer player = client.player;
+        if (!enabled() || !silentOffhand.get() || active != null || player == null
+            || client.gameMode == null || client.gui.screen() != null || !player.isAlive()
+            || player.isSpectator() || player.isUsingItem() || player.isHandsBusy()
+            || player.containerMenu != player.inventoryMenu || !player.inventoryMenu.getCarried().isEmpty()
+            || !tool(player.getMainHandItem())
+            || SoupUse.busy(client) || AnomolyClient.MODULES.get(AutoBuff.class).busy()
+            || avoidCombat.get() && (player.hurtTime > 0
+                || AnomolyClient.MODULES.get(KillAura.class).hasTarget(client))) return false;
+        Candidate candidate = best(player, true);
+        if (candidate == null) return false;
+        if (observedPlayer != player) observedPlayer = player;
+        begin(client, candidate, true);
+        return true;
+    }
+
+    public void drawPreview(Minecraft client, GuiGraphicsExtractor graphics) {
+        if (!enabled() || !silentOffhand.get() || !renderSlot.get() || client.player == null
+            || client.level == null || client.gui.screen() != null || client.player.isSpectator()
+            || !tool(client.player.getMainHandItem())) return;
+        Candidate candidate = active != null ? active : best(client.player, true);
+        if (candidate == null) return;
+        ItemStack stack = active != null ? expected : client.player.inventoryMenu.getSlot(candidate.slot()).getItem();
+        if (stack.isEmpty()) return;
+        int x = graphics.guiWidth() / 2 - 91 - 26 - (int)renderOffset.get();
+        int y = graphics.guiHeight() - 19;
+        graphics.blitSprite(RenderPipelines.GUI_TEXTURED, OFFHAND_FRAME, x - 3, y - 4, 29, 24);
+        graphics.item(stack, x, y);
+        graphics.itemDecorations(client.font, stack, x, y);
+    }
 
     public boolean combatPaused(Minecraft client) {
         return enabled() && combatPause.get() > 0 && client.level != null && client.level == lastLevel
@@ -81,14 +128,15 @@ public final class SmartEat extends Module {
             || AnomolyClient.MODULES.get(AutoRod.class).active(client)
             || avoidCombat.get() && (player.hurtTime > 0
                 || AnomolyClient.MODULES.get(KillAura.class).hasTarget(client))) return;
-        Candidate candidate = best(player);
-        if (candidate != null) begin(client, candidate);
+        Candidate candidate = best(player, false);
+        if (candidate != null) begin(client, candidate, false);
     }
 
-    private Candidate best(LocalPlayer player) {
+    private Candidate best(LocalPlayer player, boolean manualSelection) {
         Candidate best = null;
         int hunger = player.getFoodData().getFoodLevel();
-        boolean hungry = hunger <= (int)minHunger.get() && player.getFoodData().needsFood();
+        boolean hungry = player.getFoodData().needsFood()
+            && (manualSelection || hunger <= (int)minHunger.get());
         for (int slot = 9; slot <= 45; slot++) {
             if (slot < 36 && !inventory.get()) continue;
             ItemStack stack = player.inventoryMenu.getSlot(slot).getItem();
@@ -96,7 +144,8 @@ public final class SmartEat extends Module {
             if (priority < 0) continue;
             FoodProperties food = stack.get(DataComponents.FOOD);
             int nutrition = food == null ? 0 : food.nutrition();
-            int preference = slot == 36 + player.getInventory().getSelectedSlot() ? 0
+            int preference = manualSelection && slot == 45 ? 0
+                : slot == 36 + player.getInventory().getSelectedSlot() ? 0
                 : slot == 45 ? 1 : slot >= 36 ? 2 : 3;
             Candidate candidate = new Candidate(slot, priority, nutrition, preference);
             if (best == null || candidate.priority() < best.priority()
@@ -134,20 +183,40 @@ public final class SmartEat extends Module {
 
     private static boolean unsafeFood(ItemStack stack) {
         // These foods can inflict harmful effects, or have unknown stew effects.
-        return stack.is(Items.POISONOUS_POTATO) || stack.is(Items.PUFFERFISH)
+        if (stack.is(Items.POISONOUS_POTATO) || stack.is(Items.PUFFERFISH)
             || stack.is(Items.ROTTEN_FLESH) || stack.is(Items.SPIDER_EYE)
             || stack.is(Items.CHICKEN) || stack.is(Items.SUSPICIOUS_STEW)
-            || stack.is(Items.PLAYER_HEAD);
+            || stack.is(Items.PLAYER_HEAD)) return true;
+        Consumable consumable = stack.get(DataComponents.CONSUMABLE);
+        if (consumable == null) return true;
+        for (var effect : consumable.onConsumeEffects()) {
+            if (effect instanceof TeleportRandomlyConsumeEffect) return true;
+            if (effect instanceof ApplyStatusEffectsConsumeEffect applied)
+                for (var status : applied.effects())
+                    if (status.getEffect().value().getCategory() == MobEffectCategory.HARMFUL) return true;
+        }
+        return false;
     }
 
-    private void begin(Minecraft client, Candidate candidate) {
+    private static boolean tool(ItemStack stack) {
+        return stack.is(ItemTags.PICKAXES) || stack.is(ItemTags.AXES) || stack.is(ItemTags.SHOVELS)
+            || stack.is(ItemTags.HOES) || stack.is(ItemTags.SWORDS) || stack.is(ItemTags.SPEARS)
+            || stack.is(Items.SHEARS) || stack.is(Items.FISHING_ROD);
+    }
+
+    private void begin(Minecraft client, Candidate candidate, boolean manualSelection) {
         LocalPlayer player = client.player;
         active = candidate;
+        manual = manualSelection;
         expected = player.inventoryMenu.getSlot(candidate.slot()).getItem().copy();
         originalSlot = player.getInventory().getSelectedSlot();
         selectedSlot = originalSlot;
-        hand = candidate.slot() == 45 ? InteractionHand.OFF_HAND : InteractionHand.MAIN_HAND;
-        if (candidate.slot() >= 9 && candidate.slot() < 36) {
+        hand = manualSelection || candidate.slot() == 45 ? InteractionHand.OFF_HAND : InteractionHand.MAIN_HAND;
+        if (manualSelection && candidate.slot() != 45) {
+            offhandSwapSlot = candidate.slot();
+            swapOffhand(client, player, offhandSwapSlot);
+            preparation = 1;
+        } else if (candidate.slot() >= 9 && candidate.slot() < 36) {
             inventorySlot = candidate.slot();
             client.gameMode.handleContainerInput(player.inventoryMenu.containerId,
                 inventorySlot, selectedSlot, ContainerInput.SWAP, player);
@@ -157,6 +226,14 @@ public final class SmartEat extends Module {
             player.getInventory().setSelectedSlot(selectedSlot);
         }
         if (preparation == 0) use(client);
+    }
+
+    private static void swapOffhand(Minecraft client, LocalPlayer player, int source) {
+        int id = player.inventoryMenu.containerId;
+        client.gameMode.handleContainerInput(id, source, 0, ContainerInput.PICKUP, player);
+        client.gameMode.handleContainerInput(id, 45, 0, ContainerInput.PICKUP, player);
+        if (!player.inventoryMenu.getCarried().isEmpty())
+            client.gameMode.handleContainerInput(id, source, 0, ContainerInput.PICKUP, player);
     }
 
     private void advance(Minecraft client) {
@@ -181,6 +258,7 @@ public final class SmartEat extends Module {
         ItemStack current = player.getItemInHand(hand);
         if (!current.is(usedItem) || current.getCount() < usedCount) { finish(client, true); return; }
         if (player.isUsingItem() && player.getUsedItemHand() == hand && age <= 80) {
+            if (manual) return;
             client.options.keyUse.setDown(true);
             syntheticUse = true;
             return;
@@ -205,7 +283,7 @@ public final class SmartEat extends Module {
             lastLevel = client.level;
             lastUseTick = client.level.getGameTime();
         }
-        if (player.isUsingItem() && player.getUsedItemHand() == hand) {
+        if (!manual && player.isUsingItem() && player.getUsedItemHand() == hand) {
             client.options.keyUse.setDown(true);
             syntheticUse = true;
         }
@@ -224,6 +302,9 @@ public final class SmartEat extends Module {
 
     private void restore(Minecraft client) {
         LocalPlayer player = client.player;
+        if (player != null && player == observedPlayer && client.gameMode != null && offhandSwapSlot >= 0
+            && player.containerMenu == player.inventoryMenu && player.inventoryMenu.getCarried().isEmpty())
+            swapOffhand(client, player, offhandSwapSlot);
         if (player != null && player == observedPlayer && client.gameMode != null && inventorySlot >= 0
             && player.containerMenu == player.inventoryMenu && player.inventoryMenu.getCarried().isEmpty())
             client.gameMode.handleContainerInput(player.inventoryMenu.containerId,
@@ -238,10 +319,12 @@ public final class SmartEat extends Module {
         originalSlot = -1;
         selectedSlot = -1;
         inventorySlot = -1;
+        offhandSwapSlot = -1;
         preparation = 0;
         restoreDelay = 0;
         age = 0;
         restoring = false;
+        manual = false;
     }
 
     public void finishTick(Minecraft client) {
@@ -270,12 +353,14 @@ public final class SmartEat extends Module {
         originalSlot = -1;
         selectedSlot = -1;
         inventorySlot = -1;
+        offhandSwapSlot = -1;
         preparation = 0;
         restoreDelay = 0;
         age = 0;
         cooldown = 0;
         using = false;
         restoring = false;
+        manual = false;
         lastLevel = null;
         lastUseTick = -1;
         finishTick(client);

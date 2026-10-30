@@ -1,6 +1,7 @@
 package dev.anomoly.modules;
 
 import dev.anomoly.Module;
+import dev.anomoly.AnomolyClient;
 import dev.anomoly.setting.BooleanSetting;
 import dev.anomoly.setting.FloatSetting;
 import net.minecraft.client.Minecraft;
@@ -21,6 +22,7 @@ public final class AutoTotem extends Module {
         var player = client.player;
         if (client.gameMode == null || client.gui.screen() != null || player.isUsingItem()
             || player.containerMenu != player.inventoryMenu || !player.inventoryMenu.getCarried().isEmpty()
+            || AnomolyClient.MODULES.get(SmartEat.class).busy()
             || player.getOffhandItem().is(Items.TOTEM_OF_UNDYING)
             || !replaceExisting.get() && !player.getOffhandItem().isEmpty()) return;
         var menu = player.inventoryMenu;
