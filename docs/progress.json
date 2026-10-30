@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 625,
-    "coded": 55,
+    "backlog": 624,
+    "coded": 56,
     "partial": 3
   },
   "total": 683,
@@ -5951,8 +5951,8 @@
       "id": "velocity",
       "name": "Velocity",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "Velocity",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/velocity.md"
     },
