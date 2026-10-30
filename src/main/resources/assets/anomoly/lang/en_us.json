@@ -324,6 +324,7 @@
   "key.anomoly.toggle.pop_chams": "Toggle Anomoly Pop Chams",
   "key.anomoly.toggle.name_protect": "Toggle Anomoly NameProtect",
   "key.anomoly.toggle.client_spoof": "Toggle Anomoly ClientSpoof",
+  "key.anomoly.toggle.extra_tab": "Toggle Anomoly ExtraTab",
   "key.anomoly.toggle.anti_reduced_debug_info": "Toggle Anomoly Anti Reduced Debug Info",
   "key.anomoly.toggle.portal_menu": "Toggle Anomoly Portal Menu",
   "key.anomoly.toggle.plugins": "Toggle Anomoly Plugins",

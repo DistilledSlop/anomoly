@@ -316,6 +316,7 @@ import dev.anomoly.modules.KillFeed;
 import dev.anomoly.modules.PopChams;
 import dev.anomoly.modules.NameProtect;
 import dev.anomoly.modules.ClientSpoof;
+import dev.anomoly.modules.ExtraTab;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -505,6 +506,7 @@ public final class ModuleManager {
         new PopChams(),
         new NameProtect(),
         new ClientSpoof(),
+        new ExtraTab(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 

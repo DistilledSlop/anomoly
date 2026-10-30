@@ -1,9 +1,9 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "coded": 318,
+    "coded": 320,
     "verified": 84,
-    "backlog": 268,
+    "backlog": 266,
     "partial": 13
   },
   "total": 683,
@@ -1362,9 +1362,9 @@
       "id": "bettertab",
       "name": "BetterTab",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "ExtraTab",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bettertab.md"
     },
     {
@@ -2451,9 +2451,9 @@
       "id": "extratab",
       "name": "ExtraTab",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "ExtraTab",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/extratab.md"
     },
     {

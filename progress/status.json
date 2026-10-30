@@ -413,7 +413,9 @@
     "popchams": {"status": "coded", "module": "PopChams", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
     "nameprotect": {"status": "coded", "module": "NameProtect", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
     "clientspoof": {"status": "coded", "module": "ClientSpoof", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
-    "serverspoof": {"status": "partial", "module": "ClientSpoof", "note": "Spoofs the reported client brand only; it does not forge the full handshake, resource-pack or plugin-channel behavior Server Spoof describes."}
+    "serverspoof": {"status": "partial", "module": "ClientSpoof", "note": "Spoofs the reported client brand only; it does not forge the full handshake, resource-pack or plugin-channel behavior Server Spoof describes."},
+    "extratab": {"status": "coded", "module": "ExtraTab", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "bettertab": {"status": "coded", "module": "ExtraTab", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."}
   },
   "additions": [
     {"id": "anomoly_spear_assist", "name": "Spear Assist", "category": "Combat", "status": "coded", "module": "SpearAssist", "doc": "hacks/spear-assist.md"}
