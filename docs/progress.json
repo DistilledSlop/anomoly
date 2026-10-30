@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 610,
-    "verified": 3,
+    "backlog": 608,
+    "verified": 5,
     "coded": 70
   },
   "total": 683,
@@ -4115,18 +4115,18 @@
       "id": "norotate",
       "name": "NoRotateSet",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "NoRotate",
+      "note": "Local 26.3 server /rotate and teleport commands left view unchanged with No Rotate enabled; paired control without the module changed view to the requested angles. See docs/test-evidence/2026-10-30-local-gameplay.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/norotate.md"
     },
     {
       "id": "noserverrotate",
       "name": "NoServerRotate",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "NoRotate",
+      "note": "Same gameplay-verified No Rotate implementation covers dedicated rotation packets and position corrections. See docs/test-evidence/2026-10-30-local-gameplay.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noserverrotate.md"
     },
     {

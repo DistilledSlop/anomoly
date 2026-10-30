@@ -54,6 +54,7 @@ import dev.anomoly.modules.NoFov;
 import dev.anomoly.modules.NoFog;
 import dev.anomoly.modules.NoFireOverlay;
 import dev.anomoly.modules.NoOverlay;
+import dev.anomoly.modules.NoRotate;
 import dev.anomoly.modules.NoPush;
 import dev.anomoly.modules.NoPumpkin;
 import dev.anomoly.modules.PlayerRadar;
@@ -77,7 +78,7 @@ public final class ModuleManager {
         new AutoWeapon(), new AutoSword(), new AutoClicker(), new TriggerBot(), new AntiBot(), new KillAura(), new Aimbot(), new AimAssist(), new SpearAssist(), new Reach(), new AutoLeave(),
         new AutoArmor(), new AutoBowRelease(), new AutoGApple(), new AutoTotem(),
         new AutoSprint(), new AutoWalk(), new AutoJump(), new AirJump(),
-        new AutoSneak(), new AutoRespawn(), new AutoEat(), new AutoFish(), new AntiAFK(), new AutoBreak(), new AutoSwitch(), new AutoReconnect(),
+        new AutoSneak(), new AutoRespawn(), new AutoEat(), new AutoFish(), new AntiAFK(), new AutoBreak(), new AutoSwitch(), new AutoReconnect(), new NoRotate(),
         new AutoTool(), new AutoReplenish(),
         new AutoDeposit(), new AutoDrop(),
         new ChestStealer(), new ChestCleaner(),

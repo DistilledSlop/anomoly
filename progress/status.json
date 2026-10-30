@@ -4,6 +4,8 @@
     "aimbot": {"status": "verified", "module": "Aimbot", "note": "In a local 26.3 multiplayer world, yaw/pitch changed from 0/0 to -26.57/10.82 toward a stationary visible mob, without an attack key press. See docs/test-evidence/2026-10-30-local-gameplay.md."},
     "antibot": {"status": "coded", "module": "AntiBot", "note": "Conservative player-list, entity-age, and optional invisibility filters shared by automatic combat modules; detection against a real anticheat decoy is unverified."},
     "plugins": {"status": "coded", "module": "PluginInspector", "note": "Inventories root commands and namespaces already visible in the server command tree, with no extra packets; hidden commands cannot be seen."},
+    "norotate": {"status": "verified", "module": "NoRotate", "note": "Local 26.3 server /rotate and teleport commands left view unchanged with No Rotate enabled; paired control without the module changed view to the requested angles. See docs/test-evidence/2026-10-30-local-gameplay.md."},
+    "noserverrotate": {"status": "verified", "module": "NoRotate", "note": "Same gameplay-verified No Rotate implementation covers dedicated rotation packets and position corrections. See docs/test-evidence/2026-10-30-local-gameplay.md."},
     "antiblind": {"status": "coded", "module": "AntiBlind"},
     "antinausea": {"status": "coded", "module": "AntiWobble"},
     "nopumpkin": {"status": "coded", "module": "NoPumpkin"},

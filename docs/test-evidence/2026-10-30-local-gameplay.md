@@ -32,6 +32,12 @@ These tests verify client view rotation and the Aim Assist attack-key gate again
 
 With the Plugins module enabled on the local vanilla server as a non-operator, the client read ten root commands from the server-supplied command tree: `help`, `list`, `me`, `msg`, `random`, `teammsg`, `tell`, `tm`, `trigger`, and `w`. The profiler wrote ten `command_literal` events and the offline analyzer reported the same list. The [server profile screenshot](../screenshots/server-profile-opengl-960x600.png) shows the ImGui page with ten visible commands and no namespaced commands. The client sent no command enumeration request. This verifies passive command collection and display; it does not verify identification of a real server plugin.
 
+## No Rotate and control
+
+On the local server, I enabled No Rotate and issued two separate console commands to the joined player. `execute as Player480 at @s run tp @s ~ ~ ~ 90 20` sent a position correction with requested rotation; the profiler recorded correction ID 2 at tick 143, while yaw/pitch stayed at `−180°/0°` through subsequent samples. `rotate Player480 45 10` exercised the dedicated rotation packet; the view still sampled at `−180°/0°` afterward.
+
+In a second joined session with No Rotate disabled, the same `/rotate` command changed the sampled view from `0°/0°` to `45°/10°` by tick 160. The teleport command then changed it to `90°/20°`, recorded with correction ID 2 at tick 309. This paired control verifies that both server rotation paths normally affect the client and that No Rotate suppresses both in the local test. It does not establish compatibility with a remote anticheat.
+
 ## Reproduction
 
 Start a local 26.3 server, then run:
