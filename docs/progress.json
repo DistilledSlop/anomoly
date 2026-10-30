@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 662,
-    "coded": 19,
+    "backlog": 661,
+    "coded": 20,
     "partial": 2
   },
   "total": 683,
@@ -4907,8 +4907,8 @@
       "id": "safewalk",
       "name": "SafeWalk",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "SafeWalk",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/safewalk.md"
     },
