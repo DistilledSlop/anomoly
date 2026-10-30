@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 646,
-    "coded": 34,
+    "backlog": 643,
+    "coded": 37,
     "partial": 3
   },
   "total": 683,
@@ -308,8 +308,8 @@
       "id": "antioverlay",
       "name": "Anti Overlay",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "AntiOverlay",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antioverlay.md"
     },
@@ -3944,8 +3944,8 @@
       "id": "nofireoverlay",
       "name": "NoFireOverlay",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "NoFireOverlay",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nofireoverlay.md"
     },
@@ -4052,8 +4052,8 @@
       "id": "nooverlay",
       "name": "NoOverlay",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "NoOverlay",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nooverlay.md"
     },
