@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">
 <title id="title">Anomoly hack implementation treemap</title>
-<desc id="desc">Each tile is a researched feature. Blue is coded, amber partial, green gameplay verified, and gray backlog.</desc>
+<desc id="desc">Each tile is a catalogued feature. Blue is coded, amber partial, green gameplay verified, and gray backlog.</desc>
 <rect width="1200" height="720" rx="15" fill="#0b1220"/>
 <text x="20" y="37" fill="#e7f2ff" font-family="system-ui,sans-serif" font-size="25" font-weight="700">ANOMOLY / HACK PROGRESS</text>
 <text x="20" y="61" fill="#a9bacd" font-family="system-ui,sans-serif" font-size="14">70 coded · 1 partial · 32 gameplay verified · 580 backlog / 683 total</text>

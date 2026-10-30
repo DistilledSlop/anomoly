@@ -1,6 +1,6 @@
 # Anomoly
 
-Anomoly is a Minecraft Java 26.3 hacked client. It runs as a Fabric mod and includes a Dear ImGui ClickGUI, combat and utility hacks, configurable keybinds, saved settings, and passive anticheat profiling. The client is under active development across its full feature catalog; the treemap below shows which hacks are implemented and gameplay tested.
+Anomoly is a full Minecraft Java 26.3 hacked client built on Fabric. Its Dear ImGui ClickGUI gives you combat, movement, player, world, render, exploit, and utility modules with keybinds and saved settings. Passive anticheat profiling records what the server exposes and how it responds during play. The client is under active development across its full feature catalog; the treemap below shows which hacks are implemented and gameplay tested.
 
 ## Hack progress
 
@@ -109,6 +109,6 @@ python3 research/analyze_anomoly_profile.py config/anomoly/profiles/<session>.js
 
 The analyzer separates initial join corrections from later ones and reports correction rates by module exposure, observed channels, and disconnect details. Module rates overlap when several modules are enabled, so they are signals for controlled testing rather than proof of cause. Review the raw log before sharing it: it contains server addresses and player coordinates.
 
-## Research
+## Technical notes
 
 See [RESEARCH.md](RESEARCH.md), [hacks](hacks/README.md), and [exploits](exploits/README.md) for 26.3 source findings and feature designs. Their claims describe vanilla behavior in local probes; compatibility with a remote anticheat requires evidence from a real session.

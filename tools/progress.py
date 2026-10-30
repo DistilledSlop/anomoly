@@ -80,7 +80,7 @@ def svg(features, counts):
     parts = [
         '<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 720" role="img" aria-labelledby="title desc">',
         '<title id="title">Anomoly hack implementation treemap</title>',
-        '<desc id="desc">Each tile is a researched feature. Blue is coded, amber partial, green gameplay verified, and gray backlog.</desc>',
+        '<desc id="desc">Each tile is a catalogued feature. Blue is coded, amber partial, green gameplay verified, and gray backlog.</desc>',
         '<rect width="1200" height="720" rx="15" fill="#0b1220"/>',
         '<text x="20" y="37" fill="#e7f2ff" font-family="system-ui,sans-serif" font-size="25" font-weight="700">ANOMOLY / HACK PROGRESS</text>',
         f'<text x="20" y="61" fill="#a9bacd" font-family="system-ui,sans-serif" font-size="14">{counts["coded"]} coded · {counts["partial"]} partial · {counts["verified"]} gameplay verified · {counts["backlog"]} backlog / {len(features)} total</text>',
@@ -127,7 +127,7 @@ def webpage(features, counts):
         '<title>Anomoly hack progress</title>',
         '<style>body{font:16px system-ui,sans-serif;background:#0b1220;color:#e7f2ff;max-width:1220px;margin:auto;padding:18px}a{color:#82c7fa}img{width:100%;height:auto}table{border-collapse:collapse;width:100%}th,td{border-bottom:1px solid #344054;padding:8px;text-align:left}input{background:#172235;color:#fff;border:1px solid #52657d;border-radius:5px;padding:10px;font:inherit;width:min(100%,450px)}.coded{color:#49a8e8}.partial{color:#f2b544}.verified{color:#4bd598}.backlog{color:#a9bacd}</style>',
         '</head><body><h1>Anomoly hack progress</h1>',
-        '<p>One tile per researched feature. Tile area is proportional to category size. Blue means coded and compiled, amber means partial, green means gameplay verified, and gray means backlog. Startup validation alone does not count as gameplay verification.</p>',
+        '<p>One tile per catalogued feature. Tile area is proportional to category size. Blue means coded and compiled, amber means partial, green means gameplay verified, and gray means backlog. Startup validation alone does not count as gameplay verification.</p>',
         '<img src="progress.svg" alt="Treemap of Anomoly hack progress">',
         f'<p>{counts["coded"]} coded, {counts["partial"]} partial, {counts["verified"]} gameplay verified, {counts["backlog"]} backlog, {len(features)} total. <a href="progress.json">Raw data</a>.</p>',
         '<h2>By category</h2><table><thead><tr><th>Category</th><th>Verified</th><th>Coded</th><th>Partial</th><th>Backlog</th><th>Total</th></tr></thead><tbody>',
