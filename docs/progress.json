@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 639,
-    "coded": 41,
+    "backlog": 636,
+    "coded": 44,
     "partial": 3
   },
   "total": 683,
@@ -713,8 +713,8 @@
       "id": "autodeposit",
       "name": "AutoDeposit",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "AutoDeposit",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autodeposit.md"
     },
@@ -749,8 +749,8 @@
       "id": "autodrop",
       "name": "AutoDrop",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "AutoDrop",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autodrop.md"
     },
@@ -767,8 +767,8 @@
       "id": "autoeject",
       "name": "Auto Eject",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "AutoDrop",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoeject.md"
     },

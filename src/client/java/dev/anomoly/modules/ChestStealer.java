@@ -28,6 +28,8 @@ public final class ChestStealer extends Module {
         Set<String> excluded = StorageMenu.ids(skip.get());
         ChestCleaner cleaner = AnomolyClient.MODULES.get(ChestCleaner.class);
         if (cleaner.enabled()) excluded.addAll(cleaner.discardIds());
+        AutoDeposit deposit = AnomolyClient.MODULES.get(AutoDeposit.class);
+        if (deposit.enabled()) excluded.addAll(deposit.depositIds());
         for (int slot = 0; slot < sourceSlots; slot++) {
             ItemStack stack = menu.getSlot(slot).getItem();
             if (stack.isEmpty() || excluded.contains(StorageMenu.id(stack)) || !StorageMenu.hasSpace(menu, stack)) continue;

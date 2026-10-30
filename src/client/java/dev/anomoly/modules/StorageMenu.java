@@ -37,4 +37,14 @@ final class StorageMenu {
         }
         return false;
     }
+
+    static boolean hasStorageSpace(AbstractContainerMenu menu, ItemStack source) {
+        int count = storageSlots(menu);
+        for (int slot = 0; slot < count; slot++) {
+            ItemStack target = menu.getSlot(slot).getItem();
+            if (target.isEmpty() || ItemStack.isSameItemSameComponents(target, source)
+                && target.getCount() < target.getMaxStackSize()) return true;
+        }
+        return false;
+    }
 }
