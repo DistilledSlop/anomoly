@@ -1,9 +1,9 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 460,
+    "backlog": 449,
     "verified": 84,
-    "coded": 136,
+    "coded": 147,
     "partial": 3
   },
   "total": 683,
@@ -318,9 +318,9 @@
       "id": "antipacket",
       "name": "AntiPacket",
       "category": "Exploit",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "PacketCanceller",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antipacket.md"
     },
     {
@@ -1389,9 +1389,9 @@
       "id": "blink",
       "name": "Blink",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Blink",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blink.md"
     },
     {
@@ -2469,9 +2469,9 @@
       "id": "fakelag",
       "name": "FakeLag",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "FakeLag",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fakelag.md"
     },
     {
@@ -3243,9 +3243,9 @@
       "id": "itemsaver",
       "name": "Item Saver",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "ToolSaver",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/itemsaver.md"
     },
     {
@@ -4134,18 +4134,18 @@
       "id": "noserverslot",
       "name": "NoServerSlot",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "NoServerSlot",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noserverslot.md"
     },
     {
       "id": "noslotset",
       "name": "NoSlotSet",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "NoServerSlot",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noslotset.md"
     },
     {
@@ -4350,9 +4350,9 @@
       "id": "packetcanceler",
       "name": "Packet Canceller",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "PacketCanceller",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/packetcanceler.md"
     },
     {
@@ -4476,9 +4476,9 @@
       "id": "pingspoof",
       "name": "PingSpoof",
       "category": "Exploit",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "PingSpoof",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/pingspoof.md"
     },
     {
@@ -4881,9 +4881,9 @@
       "id": "rotationlock",
       "name": "RotationLock",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "RotationLock",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/rotationlock.md"
     },
     {
@@ -5655,9 +5655,9 @@
       "id": "toolsaver",
       "name": "ToolSaver",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "ToolSaver",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/toolsaver.md"
     },
     {
@@ -5970,9 +5970,9 @@
       "id": "viewlock",
       "name": "ViewLock",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "RotationLock",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/viewlock.md"
     },
     {

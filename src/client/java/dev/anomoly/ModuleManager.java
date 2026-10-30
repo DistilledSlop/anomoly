@@ -194,6 +194,13 @@ import dev.anomoly.modules.Breadcrumbs;
 import dev.anomoly.modules.RangeCircle;
 import dev.anomoly.modules.TntTimer;
 import dev.anomoly.modules.HealthTags;
+import dev.anomoly.modules.Blink;
+import dev.anomoly.modules.FakeLag;
+import dev.anomoly.modules.PingSpoof;
+import dev.anomoly.modules.PacketCanceller;
+import dev.anomoly.modules.NoServerSlot;
+import dev.anomoly.modules.RotationLock;
+import dev.anomoly.modules.ToolSaver;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -261,6 +268,13 @@ public final class ModuleManager {
         new RangeCircle(),
         new TntTimer(),
         new HealthTags(),
+        new Blink(),
+        new FakeLag(),
+        new PingSpoof(),
+        new PacketCanceller(),
+        new NoServerSlot(),
+        new RotationLock(),
+        new ToolSaver(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 
