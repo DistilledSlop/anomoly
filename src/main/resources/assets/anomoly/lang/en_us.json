@@ -11,6 +11,7 @@
   "key.anomoly.toggle.surround": "Toggle Anomoly Surround",
   "key.anomoly.toggle.hole_filler": "Toggle Anomoly Hole Filler",
   "key.anomoly.toggle.self_trap": "Toggle Anomoly Self Trap",
+  "key.anomoly.toggle.auto_trap": "Toggle Anomoly Auto Trap",
   "key.anomoly.toggle.auto_crystal_base": "Toggle Anomoly Auto Crystal Base",
   "key.anomoly.toggle.crystal_aura": "Toggle Anomoly Crystal Aura",
   "key.anomoly.toggle.keep_sprint": "Toggle Anomoly Keep Sprint",

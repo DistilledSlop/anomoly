@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 584,
-    "verified": 28,
+    "backlog": 583,
+    "verified": 29,
     "coded": 70,
     "partial": 1
   },
@@ -1155,9 +1155,9 @@
       "id": "autotrap",
       "name": "AutoTrap",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "AutoTrap",
+      "note": "On a local vanilla 26.3 server, Auto Trap built a 12-block obsidian perimeter plus roof around a stationary pig, placed cobweb, fire, and lava in its occupied feet cell in separate runs, restored the selected stone slot, and left a wall gap open after the target was removed. See docs/test-evidence/2026-10-30-autotrap.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autotrap.md"
     },
     {

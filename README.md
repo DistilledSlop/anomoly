@@ -6,7 +6,7 @@ Anomoly is a Minecraft Java 26.3 hacked client. It runs as a Fabric mod and incl
 
 [![Anomoly hack progress treemap](docs/progress.svg)](https://distilledslop.github.io/anomoly/progress.html)
 
-The [searchable progress report](https://distilledslop.github.io/anomoly/progress.html) is generated from the 682 catalog entries plus Anomoly's Spear Assist. It currently tracks <!-- anomoly-progress:start -->**70 coded**, **1 partial**, **28 gameplay verified**, and **584 backlog**<!-- anomoly-progress:end --> features. Blue tiles are coded modules, amber tiles are partial implementations, green tiles have gameplay test evidence, and gray tiles are backlog. Run `python3 tools/progress.py` after changing a module's status; CI runs `python3 tools/progress.py --check` to verify the treemap and [raw data](docs/progress.json).
+The [searchable progress report](https://distilledslop.github.io/anomoly/progress.html) is generated from the 682 catalog entries plus Anomoly's Spear Assist. It currently tracks <!-- anomoly-progress:start -->**70 coded**, **1 partial**, **29 gameplay verified**, and **583 backlog**<!-- anomoly-progress:end --> features. Blue tiles are coded modules, amber tiles are partial implementations, green tiles have gameplay test evidence, and gray tiles are backlog. Run `python3 tools/progress.py` after changing a module's status; CI runs `python3 tools/progress.py --check` to verify the treemap and [raw data](docs/progress.json).
 
 ## Build and run
 
@@ -26,7 +26,7 @@ The [local gameplay test](docs/test-evidence/2026-10-30-local-gameplay.md) verif
 
 | Category | Modules |
 | --- | --- |
-| Combat | Auto Pearl, Auto Soup, Soup, Keep Sprint, Sprint Reset, W Tap, Criticals, Surround, Hole Filler, Self Trap, Auto Crystal Base, Crystal Aura, Super Knockback (partial), Auto Weapon, Auto Sword, Auto Clicker, Trigger Bot, Anti Bot, Kill Aura, Aimbot, Aim Assist, Bow Aimbot, Projectile Aimbot, Auto Shoot, Auto Bow, Bow Spam, Auto Rod, Spear Assist, Reach, Auto Leave, Auto Armor, Auto Bow Release, Auto Potion, Throw Pot, Pot, Auto Exp, Auto GApple, Auto Totem |
+| Combat | Auto Pearl, Auto Soup, Soup, Keep Sprint, Sprint Reset, W Tap, Criticals, Surround, Hole Filler, Self Trap, Auto Trap, Auto Crystal Base, Crystal Aura, Super Knockback (partial), Auto Weapon, Auto Sword, Auto Clicker, Trigger Bot, Anti Bot, Kill Aura, Aimbot, Aim Assist, Bow Aimbot, Projectile Aimbot, Auto Shoot, Auto Bow, Bow Spam, Auto Rod, Spear Assist, Reach, Auto Leave, Auto Armor, Auto Bow Release, Auto Potion, Throw Pot, Pot, Auto Exp, Auto GApple, Auto Totem |
 | Movement | Auto Sprint, Auto Walk, Auto Jump, Air Jump, Auto Sneak, Fast Ladder, Fast Fall, No Fall, Safe Walk, Step, Anti Web, Velocity, No Push, No Slow |
 | Player | Auto Respawn, Auto Eat, Auto Fish, Anti AFK, Auto Break, Auto Switch, Auto Tool, Auto Replenish, Auto Deposit, Auto Drop (also Auto Eject), Chest Stealer, Chest Cleaner, No Rotate (also No Server Rotate) |
 | World | Fast Place, Fast Break (also Break Delay) |
@@ -70,6 +70,8 @@ Surround selects obsidian from the offhand or hotbar and places it on the four s
 Hole Filler finds empty one-block holes with obsidian, bedrock, or crying obsidian below and on every side, then places a configured block when an opponent is nearby. It skips occupied holes and uses normal block interactions with line-of-sight and reach checks enabled by default. The [local gameplay test](docs/test-evidence/2026-10-30-holefiller.md) confirms placement, hotbar restoration, and three rejection cases.
 
 Self Trap builds a short support column beside your feet, then places a block above your head. It can also use an existing support and repairs a missing roof while materials remain. The [local gameplay test](docs/test-evidence/2026-10-30-selftrap.md) confirms support building, roof placement, offhand repair, hotbar restoration, and a no-material control.
+
+Auto Trap offers `box`, `web`, `ignite`, and `lava` modes. Box builds a three-block-high perimeter and roof around a nearby target using the configured block; the other modes place cobweb, fire, or lava at the target's feet. Lava mode turns toward the placement floor for one tick before using the bucket. The [local gameplay test](docs/test-evidence/2026-10-30-autotrap.md) verifies all four modes against a stationary pig and hotbar restoration. It does not establish compatibility with third-party anticheats.
 
 Crystal Aura scans visible obsidian and bedrock bases, predicts blast damage using Minecraft 26.3's exposure calculation, and places or attacks end crystals only when target damage and conservative self-damage limits permit. It can select crystals from the hotbar or offhand, and pauses for the target's damage cooldown. A [local gameplay test](docs/test-evidence/2026-10-30-crystalaura.md) records automated placement and two detonations against a pig, plus a survival safety control that placed nothing in an exposed position. Armor and enchantment effects on target damage are not modeled by its score; the self-damage limit uses raw damage before reductions.
 
