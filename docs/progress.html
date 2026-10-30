@@ -4,7 +4,7 @@
 </head><body><h1>Anomoly hack progress</h1>
 <p>One tile per catalogued feature. Tile area is proportional to category size. Blue means coded and compiled, amber means partial, green means gameplay verified, and gray means backlog. Startup validation alone does not count as gameplay verification.</p>
 <img src="progress.svg" alt="Treemap of Anomoly hack progress">
-<p>68 coded, 1 partial, 54 gameplay verified, 560 backlog, 683 total. <a href="progress.json">Raw data</a>.</p>
+<p>68 coded, 1 partial, 55 gameplay verified, 559 backlog, 683 total. <a href="progress.json">Raw data</a>.</p>
 <h2>By category</h2><table><thead><tr><th>Category</th><th>Verified</th><th>Coded</th><th>Partial</th><th>Backlog</th><th>Total</th></tr></thead><tbody>
 <tr><td>Combat</td><td>34</td><td>12</td><td>1</td><td>48</td><td>95</td></tr>
 <tr><td>Exploit</td><td>0</td><td>3</td><td>0</td><td>31</td><td>34</td></tr>
@@ -13,7 +13,7 @@
 <tr><td>Movement</td><td>2</td><td>12</td><td>0</td><td>76</td><td>90</td></tr>
 <tr><td>Player</td><td>5</td><td>14</td><td>0</td><td>68</td><td>87</td></tr>
 <tr><td>Render</td><td>0</td><td>22</td><td>0</td><td>144</td><td>166</td></tr>
-<tr><td>World</td><td>13</td><td>3</td><td>0</td><td>56</td><td>72</td></tr>
+<tr><td>World</td><td>14</td><td>3</td><td>0</td><td>55</td><td>72</td></tr>
 </tbody></table>
 <h2>Features</h2><label for="filter">Filter features</label><br><input id="filter" type="search" placeholder="Search name, category, or status">
 <table id="features"><thead><tr><th>Category</th><th>Feature</th><th>Status</th><th>Implementation</th></tr></thead><tbody>
@@ -628,7 +628,7 @@
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/worldtweaks.md">WorldTweaks</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/xray.md">XRay</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Render</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/zoom.md">Zoom</a></td><td class="coded">coded</td><td>Zoom</td></tr>
-<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/airplace.md">AirPlace</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/airplace.md">AirPlace</a></td><td class="verified">verified</td><td>On a local vanilla 26.3 server, a real right-click placed floating obsidian, spawned a chicken from an egg, placed an armor stand, and launched a firework rocket at an aimed air position. Offhand placement preserved the selected slot; clicking a real block used its normal face; water remained intact; and fixed range 2 placed at the nearer position. See docs/test-evidence/2026-10-30-airplace.md. A three-dimensional preview and third-party anticheat behavior remain untested or unimplemented.</td></tr>
 <tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/ambience.md">Ambience</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiinteract.md">AntiInteract</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autobreed.md">Auto Breed</a></td><td class="verified">verified</td><td>On a local vanilla 26.3 server, Auto Breed used two wheat from hotbar to breed sheep and two from offhand to breed cows. Both runs produced a newborn, put the parents in breeding cooldown, and preserved the selected slot; one wheat and a cow-excluding species filter caused no feed. See docs/test-evidence/2026-10-30-autobreed.md. Other species and third-party anticheats remain untested.</td></tr>

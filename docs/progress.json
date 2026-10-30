@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 560,
-    "verified": 54,
+    "backlog": 559,
+    "verified": 55,
     "coded": 68,
     "partial": 1
   },
@@ -48,9 +48,9 @@
       "id": "airplace",
       "name": "AirPlace",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "AirPlace",
+      "note": "On a local vanilla 26.3 server, a real right-click placed floating obsidian, spawned a chicken from an egg, placed an armor stand, and launched a firework rocket at an aimed air position. Offhand placement preserved the selected slot; clicking a real block used its normal face; water remained intact; and fixed range 2 placed at the nearer position. See docs/test-evidence/2026-10-30-airplace.md. A three-dimensional preview and third-party anticheat behavior remain untested or unimplemented.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/airplace.md"
     },
     {

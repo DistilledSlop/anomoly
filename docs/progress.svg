@@ -3,7 +3,7 @@
 <desc id="desc">Each tile is a catalogued feature. Blue is coded, amber partial, green gameplay verified, and gray backlog.</desc>
 <rect width="1200" height="720" rx="15" fill="#0b1220"/>
 <text x="20" y="37" fill="#e7f2ff" font-family="system-ui,sans-serif" font-size="25" font-weight="700">ANOMOLY / HACK PROGRESS</text>
-<text x="20" y="61" fill="#a9bacd" font-family="system-ui,sans-serif" font-size="14">68 coded · 1 partial · 54 gameplay verified · 560 backlog / 683 total</text>
+<text x="20" y="61" fill="#a9bacd" font-family="system-ui,sans-serif" font-size="14">68 coded · 1 partial · 55 gameplay verified · 559 backlog / 683 total</text>
 <rect x="14.00" y="84.00" width="281.82" height="621.00" rx="7" fill="#172235" stroke="#52657d" stroke-width="1"/>
 <text x="22.00" y="103.00" fill="#e7f2ff" font-family="system-ui,sans-serif" font-size="14" font-weight="600">Render  22/166 coded</text>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antioverlay.md" target="_blank">
@@ -2255,74 +2255,74 @@
 <rect x="1121.53" y="413.68" width="27.74" height="28.07" rx="2" fill="#344054"/>
 </a>
 <rect x="673.46" y="452.75" width="298.37" height="252.25" rx="7" fill="#172235" stroke="#52657d" stroke-width="1"/>
-<text x="681.46" y="471.75" fill="#e7f2ff" font-family="system-ui,sans-serif" font-size="14" font-weight="600">World  16/72 coded</text>
+<text x="681.46" y="471.75" fill="#e7f2ff" font-family="system-ui,sans-serif" font-size="14" font-weight="600">World  17/72 coded</text>
+<a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/airplace.md" target="_blank">
+<title>AirPlace — verified: On a local vanilla 26.3 server, a real right-click placed floating obsidian, spawned a chicken from an egg, placed an armor stand, and launched a firework rocket at an aimed air position. Offhand placement preserved the selected slot; clicking a real block used its normal face; water remained intact; and fixed range 2 placed at the nearer position. See docs/test-evidence/2026-10-30-airplace.md. A three-dimensional preview and third-party anticheat behavior remain untested or unimplemented.</title>
+<rect x="680.46" y="481.75" width="26.64" height="25.28" rx="2" fill="#4bd598"/>
+</a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autobreed.md" target="_blank">
 <title>Auto Breed — verified: On a local vanilla 26.3 server, Auto Breed used two wheat from hotbar to breed sheep and two from offhand to breed cows. Both runs produced a newborn, put the parents in breeding cooldown, and preserved the selected slot; one wheat and a cow-excluding species filter caused no feed. See docs/test-evidence/2026-10-30-autobreed.md. Other species and third-party anticheats remain untested.</title>
-<rect x="680.46" y="481.75" width="26.64" height="25.28" rx="2" fill="#4bd598"/>
+<rect x="709.09" y="481.75" width="26.64" height="25.28" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/automount.md" target="_blank">
 <title>Auto Mount — verified: On a local vanilla 26.3 server, Auto Mount boarded an oak boat, bamboo raft, minecart, tamed saddled horse, saddled pig and strider, camel, and tamed llama. It ignored a chest boat, unsaddled horse and pig, occluded boat, occupied boat, and a boat when both hands and every hotbar slot were full. See docs/test-evidence/2026-10-30-automount.md. Moving entities and third-party anticheats remain untested.</title>
-<rect x="709.09" y="481.75" width="26.64" height="25.28" rx="2" fill="#4bd598"/>
+<rect x="737.73" y="481.75" width="26.64" height="25.28" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autonametag.md" target="_blank">
 <title>Auto Nametag — verified: On a local vanilla 26.3 server, Auto Nametag named a sheep and cow with two tags from a hotbar stack, preserved an already named pig, ignored an unnamed tag, named a sheep from the offhand, and left a sheep behind a wall unnamed until the wall was removed. It restored the selected hotbar slot. See docs/test-evidence/2026-10-30-autonametag.md. Moving entities and third-party anticheats remain untested.</title>
-<rect x="737.73" y="481.75" width="26.64" height="25.28" rx="2" fill="#4bd598"/>
+<rect x="766.37" y="481.75" width="26.64" height="25.28" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoshear.md" target="_blank">
 <title>Auto Shearer — verified: On a local vanilla 26.3 server, Auto Shearer sheared one adult sheep from hotbar shears and again from offhand shears after a reset, leaving a baby untouched and restoring the selected slot. A stone wall and a no-shears control prevented interaction. See docs/test-evidence/2026-10-30-autoshearer.md. Moving targets and third-party anticheats remain untested.</title>
-<rect x="766.37" y="481.75" width="26.64" height="25.28" rx="2" fill="#4bd598"/>
+<rect x="795.00" y="481.75" width="26.64" height="25.28" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autofarm.md" target="_blank">
 <title>AutoFarm — verified: On a local vanilla 26.3 server, Auto Farm harvested and replanted mature wheat, carrots, potatoes, beetroot, nether wart, and cocoa; picked sweet berries; mined melons and pumpkins; cut upper cane, cactus, bamboo, and kelp while preserving each base; planted empty farmland; advanced wheat from age 0 to 5 with one bone meal; and left wheat behind a wall untouched until exposed. See docs/test-evidence/2026-10-30-autofarm.md. Protected-region and third-party anticheat behavior remains untested.</title>
-<rect x="795.00" y="481.75" width="26.64" height="25.28" rx="2" fill="#4bd598"/>
+<rect x="823.64" y="481.75" width="26.64" height="25.28" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/automobheal.md" target="_blank">
 <title>AutoMobHeal — verified: On a local vanilla 26.3 server, Auto Mob Heal repaired an iron golem from 50 to 100 with two hotbar ingots, fed a tamed horse from 10 to 16 with offhand wheat, an owned wolf from 10 to 40 with offhand beef, and an owned cat from 4 to 8 with offhand cod. It preserved the selected slot, ignored a 99-health golem and another owner&#x27;s wolf, and respected a stone wall. See docs/test-evidence/2026-10-30-automobheal.md. Other mount variants and third-party anticheats remain untested.</title>
-<rect x="823.64" y="481.75" width="26.64" height="25.28" rx="2" fill="#4bd598"/>
+<rect x="852.28" y="481.75" width="26.64" height="25.28" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autotunnel.md" target="_blank">
 <title>AutoTunnel — verified: Auto Tunnel mined a 2x2x3 stone corridor, repaired two floor gaps, paused before lava, a chest, and overhead sand, resumed after sand removal, and placed a torch at the third segment on a local vanilla 26.3 server. See docs/test-evidence/2026-10-30-autotunnel.md. Longer tunnels and third-party anticheats remain untested.</title>
-<rect x="852.28" y="481.75" width="26.64" height="25.28" rx="2" fill="#4bd598"/>
+<rect x="880.91" y="481.75" width="26.64" height="25.28" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/endermanlook.md" target="_blank">
 <title>Enderman Look — verified: On a local vanilla 26.3 server, avoidance mode turned the player 90 degrees away when aimed at an enderman&#x27;s eyes, while look-at mode turned toward its eyes. A stone wall stopped look-at rotation until removed. See docs/test-evidence/2026-10-30-endermanlook.md. Multiple or moving endermen and third-party anticheats remain untested.</title>
-<rect x="880.91" y="481.75" width="26.64" height="25.28" rx="2" fill="#4bd598"/>
+<rect x="909.55" y="481.75" width="26.64" height="25.28" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nuker.md" target="_blank">
 <title>Nuker — verified: On a local vanilla 26.3 server, Nuker automatically mined three dirt blocks in range, used an iron shovel for exactly three durability points, restored the selected sword, and preserved the dirt underfoot and a stone block excluded by its filter. See docs/test-evidence/2026-10-30-nuker.md.</title>
-<rect x="909.55" y="481.75" width="26.64" height="25.28" rx="2" fill="#4bd598"/>
+<rect x="938.19" y="481.75" width="26.64" height="25.28" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nukerlegit.md" target="_blank">
 <title>NukerLegit — verified: On a local vanilla 26.3 server, NukerLegit left occluded and behind-view dirt untouched, then mined each after the obstruction was removed or the player turned toward it. It selected an iron shovel and restored the sword after each block. See docs/test-evidence/2026-10-30-nuker.md.</title>
-<rect x="938.19" y="481.75" width="26.64" height="25.28" rx="2" fill="#4bd598"/>
+<rect x="680.46" y="509.03" width="26.64" height="25.28" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/scaffold.md" target="_blank">
 <title>Scaffold — verified: On a local vanilla 26.3 server, Scaffold built a continuous 16-block stone bridge from hotbar material and three more blocks from offhand, restored the selected sword, stopped safely when blocks ran out, and refused to use sand. Optional tower mode built a four-block vertical column and stopped after consuming its material. See docs/test-evidence/2026-10-30-scaffold.md.</title>
-<rect x="680.46" y="509.03" width="26.64" height="25.28" rx="2" fill="#4bd598"/>
+<rect x="709.09" y="509.03" width="26.64" height="25.28" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tunneller.md" target="_blank">
 <title>Tunneller — verified: Auto Tunnel mined a 2x2x3 stone corridor, repaired two floor gaps, paused before lava, a chest, and overhead sand, resumed after sand removal, and placed a torch at the third segment on a local vanilla 26.3 server. See docs/test-evidence/2026-10-30-autotunnel.md. Longer tunnels and third-party anticheats remain untested.</title>
-<rect x="709.09" y="509.03" width="26.64" height="25.28" rx="2" fill="#4bd598"/>
+<rect x="737.73" y="509.03" width="26.64" height="25.28" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/veinminer.md" target="_blank">
 <title>Vein Miner — verified: On a local vanilla 26.3 server, a real mouse break triggered Vein Miner to mine the clicked coal ore and three face-connected neighbors, while adjacent stone and disconnected coal ore remained. A new cluster stayed untouched without a click, and max_blocks=2 limited a three-block chain to two mined blocks. See docs/test-evidence/2026-10-30-veinminer.md.</title>
-<rect x="737.73" y="509.03" width="26.64" height="25.28" rx="2" fill="#4bd598"/>
+<rect x="766.37" y="509.03" width="26.64" height="25.28" rx="2" fill="#4bd598"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastbreak.md" target="_blank">
 <title>FastBreak — coded</title>
-<rect x="766.37" y="509.03" width="26.64" height="25.28" rx="2" fill="#49a8e8"/>
+<rect x="795.00" y="509.03" width="26.64" height="25.28" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastplace.md" target="_blank">
 <title>FastPlace — coded</title>
-<rect x="795.00" y="509.03" width="26.64" height="25.28" rx="2" fill="#49a8e8"/>
+<rect x="823.64" y="509.03" width="26.64" height="25.28" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/weather.md" target="_blank">
 <title>Weather — coded: Controls the local weather view; server weather remains authoritative.</title>
-<rect x="823.64" y="509.03" width="26.64" height="25.28" rx="2" fill="#49a8e8"/>
-</a>
-<a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/airplace.md" target="_blank">
-<title>AirPlace — backlog</title>
-<rect x="852.28" y="509.03" width="26.64" height="25.28" rx="2" fill="#344054"/>
+<rect x="852.28" y="509.03" width="26.64" height="25.28" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/ambience.md" target="_blank">
 <title>Ambience — backlog</title>
