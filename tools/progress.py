@@ -2,6 +2,7 @@
 """Build Anomoly's catalog-linked progress treemap and searchable report."""
 
 import argparse
+import hashlib
 import html
 import json
 import math
@@ -55,6 +56,11 @@ def load_features():
         elif feature["status"] != "backlog":
             raise ValueError(f"Non-backlog feature has no module: {feature['id']}")
     return features
+
+
+def svg_version(features, counts):
+    """Short content hash appended to the image URL so browsers and Pages never serve a stale treemap."""
+    return hashlib.sha256(svg(features, counts).encode("utf-8")).hexdigest()[:10]
 
 
 def partition(groups, x, y, width, height):
@@ -128,7 +134,7 @@ def webpage(features, counts):
         '<style>body{font:16px system-ui,sans-serif;background:#0b1220;color:#e7f2ff;max-width:1220px;margin:auto;padding:18px}a{color:#82c7fa}img{width:100%;height:auto}table{border-collapse:collapse;width:100%}th,td{border-bottom:1px solid #344054;padding:8px;text-align:left}input{background:#172235;color:#fff;border:1px solid #52657d;border-radius:5px;padding:10px;font:inherit;width:min(100%,450px)}.coded{color:#49a8e8}.partial{color:#f2b544}.verified{color:#4bd598}.backlog{color:#a9bacd}</style>',
         '</head><body><h1>Anomoly hack progress</h1>',
         '<p>One tile per catalogued feature. Tile area is proportional to category size. Blue means coded and compiled, amber means partial, green means gameplay verified, and gray means backlog. Startup validation alone does not count as gameplay verification.</p>',
-        '<img src="progress.svg" alt="Treemap of Anomoly hack progress">',
+        f'<img src="progress.svg?v={svg_version(features, counts)}" alt="Treemap of Anomoly hack progress">',
         f'<p>{counts["coded"]} coded, {counts["partial"]} partial, {counts["verified"]} gameplay verified, {counts["backlog"]} backlog, {len(features)} total. <a href="progress.json">Raw data</a>.</p>',
         '<h2>By category</h2><table><thead><tr><th>Category</th><th>Verified</th><th>Coded</th><th>Partial</th><th>Backlog</th><th>Total</th></tr></thead><tbody>',
         *rows, '</tbody></table>',
@@ -166,6 +172,7 @@ def main():
     before, tail = original.split(begin, 1)
     _, after = tail.split(end, 1)
     updated = before + begin + count_text + end + after
+    updated = re.sub(r"\]\(docs/progress\.svg(\?v=\w+)?\)", f"](docs/progress.svg?v={svg_version(features, counts)})", updated)
     if args.check:
         if updated != original: stale.append("README.md")
     elif updated != original:

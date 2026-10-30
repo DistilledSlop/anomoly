@@ -187,7 +187,14 @@
     "itemesp": {"status": "coded", "module": "ItemEsp", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
     "esp": {"status": "coded", "module": "Esp", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
     "wallhack": {"status": "coded", "module": "Esp", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
-    "truesight": {"status": "coded", "module": "TrueSight", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."}
+    "truesight": {"status": "coded", "module": "TrueSight", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "spammer": {"status": "coded", "module": "Spammer", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "spam": {"status": "coded", "module": "Spammer", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "greeter": {"status": "coded", "module": "Greeter", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "announcer": {"status": "coded", "module": "Announcer", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "noswing": {"status": "coded", "module": "NoSwing", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "timer": {"status": "coded", "module": "Timer", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "hitbox": {"status": "coded", "module": "Hitbox", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."}
   },
   "additions": [
     {"id": "anomoly_spear_assist", "name": "Spear Assist", "category": "Combat", "status": "coded", "module": "SpearAssist", "doc": "hacks/spear-assist.md"}

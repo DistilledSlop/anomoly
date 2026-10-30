@@ -175,6 +175,12 @@ import dev.anomoly.modules.MobEsp;
 import dev.anomoly.modules.ItemEsp;
 import dev.anomoly.modules.Esp;
 import dev.anomoly.modules.TrueSight;
+import dev.anomoly.modules.Spammer;
+import dev.anomoly.modules.Greeter;
+import dev.anomoly.modules.Announcer;
+import dev.anomoly.modules.NoSwing;
+import dev.anomoly.modules.Timer;
+import dev.anomoly.modules.Hitbox;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -223,6 +229,12 @@ public final class ModuleManager {
         new ItemEsp(),
         new Esp(),
         new TrueSight(),
+        new Spammer(),
+        new Greeter(),
+        new Announcer(),
+        new NoSwing(),
+        new Timer(),
+        new Hitbox(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 

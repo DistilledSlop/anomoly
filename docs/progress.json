@@ -1,9 +1,9 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 494,
+    "backlog": 487,
     "verified": 84,
-    "coded": 102,
+    "coded": 109,
     "partial": 3
   },
   "total": 683,
@@ -93,9 +93,9 @@
       "id": "announcer",
       "name": "Announcer",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Announcer",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/announcer.md"
     },
     {
@@ -2838,9 +2838,9 @@
       "id": "greeter",
       "name": "Greeter",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Greeter",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/greeter.md"
     },
     {
@@ -2946,9 +2946,9 @@
       "id": "hitbox",
       "name": "Hitbox",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Hitbox",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/hitbox.md"
     },
     {
@@ -4197,9 +4197,9 @@
       "id": "noswing",
       "name": "NoSwing",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "NoSwing",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noswing.md"
     },
     {
@@ -5223,18 +5223,18 @@
       "id": "spam",
       "name": "Spam",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Spammer",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/spam.md"
     },
     {
       "id": "spammer",
       "name": "Spammer",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Spammer",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/spammer.md"
     },
     {
@@ -5583,9 +5583,9 @@
       "id": "timer",
       "name": "Timer",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Timer",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/timer.md"
     },
     {
