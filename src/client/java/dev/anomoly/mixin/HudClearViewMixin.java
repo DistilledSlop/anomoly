@@ -4,6 +4,7 @@ import com.llamalad7.mixinextras.injector.ModifyExpressionValue;
 import com.llamalad7.mixinextras.injector.wrapoperation.Operation;
 import com.llamalad7.mixinextras.injector.wrapoperation.WrapOperation;
 import dev.anomoly.AnomolyClient;
+import dev.anomoly.modules.AntiBlind;
 import dev.anomoly.modules.AntiWobble;
 import dev.anomoly.modules.NoPumpkin;
 import java.util.Optional;
@@ -18,7 +19,8 @@ public abstract class HudClearViewMixin {
     @ModifyExpressionValue(method = "extractCameraOverlays", at = @At(value = "INVOKE",
         target = "Lnet/minecraft/world/item/equipment/Equippable;cameraOverlay()Ljava/util/Optional;"))
     private Optional<Identifier> anomoly$hidePumpkin(Optional<Identifier> original) {
-        if (AnomolyClient.MODULES.get(NoPumpkin.class).enabled()
+        if ((AnomolyClient.MODULES.get(NoPumpkin.class).enabled()
+            || AnomolyClient.MODULES.get(AntiBlind.class).pumpkin())
             && original.isPresent() && original.get().equals(Identifier.withDefaultNamespace("misc/pumpkinblur"))) {
             return Optional.empty();
         }
@@ -28,12 +30,23 @@ public abstract class HudClearViewMixin {
     @WrapOperation(method = "extractCameraOverlays", at = @At(value = "INVOKE",
         target = "Lnet/minecraft/client/gui/Hud;extractPortalOverlay(Lnet/minecraft/client/gui/GuiGraphicsExtractor;F)V"))
     private void anomoly$hidePortal(Hud hud, GuiGraphicsExtractor graphics, float intensity, Operation<Void> original) {
-        if (!AnomolyClient.MODULES.get(AntiWobble.class).portal()) original.call(hud, graphics, intensity);
+        if (!AnomolyClient.MODULES.get(AntiWobble.class).portal()
+            && !AnomolyClient.MODULES.get(AntiBlind.class).portal()) original.call(hud, graphics, intensity);
     }
 
     @WrapOperation(method = "extractCameraOverlays", at = @At(value = "INVOKE",
         target = "Lnet/minecraft/client/gui/Hud;extractConfusionOverlay(Lnet/minecraft/client/gui/GuiGraphicsExtractor;F)V"))
     private void anomoly$hideNausea(Hud hud, GuiGraphicsExtractor graphics, float intensity, Operation<Void> original) {
-        if (!AnomolyClient.MODULES.get(AntiWobble.class).nausea()) original.call(hud, graphics, intensity);
+        if (!AnomolyClient.MODULES.get(AntiWobble.class).nausea()
+            && !AnomolyClient.MODULES.get(AntiBlind.class).nausea()) original.call(hud, graphics, intensity);
+    }
+
+    @WrapOperation(method = "extractCameraOverlays", at = @At(value = "INVOKE",
+        target = "Lnet/minecraft/client/gui/Hud;extractTextureOverlay(Lnet/minecraft/client/gui/GuiGraphicsExtractor;Lnet/minecraft/resources/Identifier;F)V"))
+    private void anomoly$hidePowderSnow(Hud hud, GuiGraphicsExtractor graphics, Identifier texture,
+        float alpha, Operation<Void> original) {
+        if (AnomolyClient.MODULES.get(AntiBlind.class).powderSnow()
+            && texture.equals(Identifier.withDefaultNamespace("textures/misc/powder_snow_outline.png"))) return;
+        original.call(hud, graphics, texture, alpha);
     }
 }

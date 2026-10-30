@@ -3,99 +3,99 @@
 <desc id="desc">Each tile is a researched feature. Blue is coded, amber partial, green gameplay verified, and gray backlog.</desc>
 <rect width="1200" height="720" rx="15" fill="#0b1220"/>
 <text x="20" y="37" fill="#e7f2ff" font-family="system-ui,sans-serif" font-size="25" font-weight="700">ANOMOLY / HACK PROGRESS</text>
-<text x="20" y="61" fill="#a9bacd" font-family="system-ui,sans-serif" font-size="14">68 coded · 0 partial · 0 gameplay verified · 615 backlog / 683 total</text>
+<text x="20" y="61" fill="#a9bacd" font-family="system-ui,sans-serif" font-size="14">69 coded · 0 partial · 0 gameplay verified · 614 backlog / 683 total</text>
 <rect x="14.00" y="84.00" width="281.82" height="621.00" rx="7" fill="#172235" stroke="#52657d" stroke-width="1"/>
-<text x="22.00" y="103.00" fill="#e7f2ff" font-family="system-ui,sans-serif" font-size="14" font-weight="600">Render  21/166 coded</text>
+<text x="22.00" y="103.00" fill="#e7f2ff" font-family="system-ui,sans-serif" font-size="14" font-weight="600">Render  22/166 coded</text>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antioverlay.md" target="_blank">
 <title>Anti Overlay — coded</title>
 <rect x="21.00" y="113.00" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
 </a>
+<a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiblind.md" target="_blank">
+<title>AntiBlind — coded</title>
+<rect x="50.98" y="113.00" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
+</a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antinausea.md" target="_blank">
 <title>AntiWobble — coded</title>
-<rect x="50.98" y="113.00" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
+<rect x="80.96" y="113.00" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autof5.md" target="_blank">
 <title>AutoF5 — coded</title>
-<rect x="80.96" y="113.00" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
+<rect x="110.94" y="113.00" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/cameratweaks.md" target="_blank">
 <title>Camera Tweaks — coded</title>
-<rect x="110.94" y="113.00" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
+<rect x="140.92" y="113.00" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/cameraclip.md" target="_blank">
 <title>CameraClip — coded</title>
-<rect x="140.92" y="113.00" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
+<rect x="170.90" y="113.00" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fov.md" target="_blank">
 <title>FOV — coded</title>
-<rect x="170.90" y="113.00" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
+<rect x="200.88" y="113.00" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fovmodifier.md" target="_blank">
 <title>FOVModifier — coded</title>
-<rect x="200.88" y="113.00" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
+<rect x="230.86" y="113.00" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/freelook.md" target="_blank">
 <title>FreeLook — coded</title>
-<rect x="230.86" y="113.00" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
+<rect x="260.84" y="113.00" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fullbright.md" target="_blank">
 <title>FullBright — coded</title>
-<rect x="260.84" y="113.00" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
+<rect x="21.00" y="143.89" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nobob.md" target="_blank">
 <title>NoBob — coded</title>
-<rect x="21.00" y="143.89" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
+<rect x="50.98" y="143.89" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nofireoverlay.md" target="_blank">
 <title>NoFireOverlay — coded</title>
-<rect x="50.98" y="143.89" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
+<rect x="80.96" y="143.89" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nofog.md" target="_blank">
 <title>NoFog — coded</title>
-<rect x="80.96" y="143.89" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
+<rect x="110.94" y="143.89" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nofov.md" target="_blank">
 <title>NoFOV — coded</title>
-<rect x="110.94" y="143.89" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
+<rect x="140.92" y="143.89" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nohurtcam.md" target="_blank">
 <title>NoHurtCam — coded</title>
-<rect x="140.92" y="143.89" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
+<rect x="170.90" y="143.89" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nooverlay.md" target="_blank">
 <title>NoOverlay — coded</title>
-<rect x="170.90" y="143.89" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
+<rect x="200.88" y="143.89" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nopumpkin.md" target="_blank">
 <title>NoPumpkin — coded</title>
-<rect x="200.88" y="143.89" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
+<rect x="230.86" y="143.89" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/noweather.md" target="_blank">
 <title>NoWeather — coded</title>
-<rect x="230.86" y="143.89" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
+<rect x="260.84" y="143.89" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/radar.md" target="_blank">
 <title>Radar — coded</title>
-<rect x="260.84" y="143.89" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
+<rect x="21.00" y="174.79" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/timechanger.md" target="_blank">
 <title>Time Changer — coded</title>
-<rect x="21.00" y="174.79" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
+<rect x="50.98" y="174.79" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/weatherchanger.md" target="_blank">
 <title>Weather Changer — coded</title>
-<rect x="50.98" y="174.79" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
+<rect x="80.96" y="174.79" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/zoom.md" target="_blank">
 <title>Zoom — coded</title>
-<rect x="80.96" y="174.79" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
+<rect x="110.94" y="174.79" width="27.98" height="28.89" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/animations.md" target="_blank">
 <title>Animations — backlog</title>
-<rect x="110.94" y="174.79" width="27.98" height="28.89" rx="2" fill="#344054"/>
-</a>
-<a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiblind.md" target="_blank">
-<title>AntiBlind — backlog</title>
 <rect x="140.92" y="174.79" width="27.98" height="28.89" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/armorhud.md" target="_blank">

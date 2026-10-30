@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 615,
-    "coded": 68
+    "backlog": 614,
+    "coded": 69
   },
   "total": 683,
   "features": [
@@ -163,8 +163,8 @@
       "id": "antiblind",
       "name": "AntiBlind",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "AntiBlind",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiblind.md"
     },

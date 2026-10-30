@@ -1,5 +1,6 @@
 {
   "catalog": {
+    "antiblind": {"status": "coded", "module": "AntiBlind"},
     "antinausea": {"status": "coded", "module": "AntiWobble"},
     "nopumpkin": {"status": "coded", "module": "NoPumpkin"},
     "freelook": {"status": "coded", "module": "FreeLook"},
