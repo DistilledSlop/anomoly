@@ -1,9 +1,9 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 549,
+    "backlog": 548,
     "verified": 65,
-    "coded": 68,
+    "coded": 69,
     "partial": 1
   },
   "total": 683,
@@ -210,9 +210,9 @@
       "id": "anticheatdetect",
       "name": "AntiCheatDetect",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "AntiCheatDetect",
+      "note": "AntiCheat Detect compares passive command-tree and payload names with five source-backed signatures, shows possible candidates and evidence in both profile GUIs, and can announce candidates in chat. A real vanilla 26.3 session with a deliberate post-join teleport stayed unknown while displaying the correction count; direct Java and Python probes covered positive signatures and generic negatives. See docs/test-evidence/2026-10-30-anticheatdetect.md. Identification against a real anticheat server remains unverified.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/anticheatdetect.md"
     },
     {

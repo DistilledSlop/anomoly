@@ -205,7 +205,18 @@ public final class ImGuiRenderer {
         ImGui.text("Server: " + AnomolyClient.PROFILE.server());
         ImGui.text("Brand: " + AnomolyClient.PROFILE.brand());
         ImGui.text("Position corrections: " + AnomolyClient.PROFILE.corrections());
+        ImGui.text("Corrections after 5 seconds: " + AnomolyClient.PROFILE.postJoinCorrections());
         ImGui.textWrapped("Log: " + AnomolyClient.PROFILE.path());
+        ImGui.spacing();
+        ImGui.textColored(0.38F, 0.94F, 0.79F, 1F, "POSSIBLE ANTICHEATS");
+        var candidates = AnomolyClient.PROFILE.candidates(Minecraft.getInstance());
+        if (candidates.isEmpty()) ImGui.textDisabled("No recognizable command or payload signature observed.");
+        else for (var candidate : candidates) {
+            ImGui.text(candidate.name() + "  /  " + candidate.confidence());
+            for (String evidence : candidate.evidence()) ImGui.bulletText(evidence);
+        }
+        ImGui.textDisabled("Hints only: commands can be hidden or spoofed. Corrections do not identify a plugin.");
+        ImGui.textDisabled("Enable AntiCheat Detect under Misc for one-time chat notices.");
         ImGui.spacing();
         ImGui.textDisabled("Records normal movement, server brand, corrections and disconnects.");
         ImGui.textDisabled("No active anticheat probes or plugin enumeration packets are sent.");

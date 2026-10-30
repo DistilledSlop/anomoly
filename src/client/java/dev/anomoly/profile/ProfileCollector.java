@@ -14,6 +14,7 @@ import java.time.Instant;
 import java.time.ZoneOffset;
 import java.time.format.DateTimeFormatter;
 import java.util.HashSet;
+import java.util.List;
 import java.util.Set;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.Minecraft;
@@ -30,6 +31,7 @@ public final class ProfileCollector {
     private String server = "not connected";
     private String brand = "unknown";
     private int corrections;
+    private int postJoinCorrections;
     private long ticks;
     private Vec3 lastPosition;
     private final Set<String> observedChannels = new HashSet<>();
@@ -39,7 +41,17 @@ public final class ProfileCollector {
     public String server() { return server; }
     public String brand() { return brand; }
     public int corrections() { return corrections; }
+    public int postJoinCorrections() { return postJoinCorrections; }
+    public Set<String> observedChannels() { return Set.copyOf(observedChannels); }
+    public Set<String> observedCommands() { return Set.copyOf(observedCommands); }
     public String path() { return path == null ? "No active session" : path.toAbsolutePath().toString(); }
+
+    public List<AnticheatClassifier.Candidate> candidates(Minecraft client) {
+        if (client.getConnection() == null) return List.of();
+        Set<String> commands = new HashSet<>(observedCommands);
+        commands.addAll(PluginInspector.visibleCommands(client));
+        return AnticheatClassifier.classify(commands, observedChannels);
+    }
 
     public void setEnabled(boolean enabled) {
         if (this.enabled == enabled) return;
@@ -54,6 +66,7 @@ public final class ProfileCollector {
         server = client.getCurrentServer() == null ? "singleplayer" : client.getCurrentServer().ip;
         brand = "unknown";
         corrections = 0;
+        postJoinCorrections = 0;
         ticks = 0;
         lastPosition = null;
         observedChannels.clear();
@@ -102,6 +115,7 @@ public final class ProfileCollector {
     public void correction(int teleportId, LocalPlayer player) {
         if (!enabled || writer == null || player == null) return;
         corrections++;
+        if (ticks >= 100) postJoinCorrections++;
         JsonObject event = event("position_correction");
         event.addProperty("teleportId", teleportId);
         if (lastPosition != null) event.addProperty("distanceFromLastTick", Math.sqrt(lastPosition.distanceToSqr(player.position())));
@@ -127,6 +141,8 @@ public final class ProfileCollector {
         server = "not connected";
         brand = "unknown";
         lastPosition = null;
+        observedChannels.clear();
+        observedCommands.clear();
     }
 
     private JsonObject event(String type) {

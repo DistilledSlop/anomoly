@@ -1,0 +1,35 @@
+{
+  "schema": 1,
+  "signatures": [
+    {
+      "name": "GrimAC",
+      "roots": ["grim", "grimac"],
+      "namespaces": ["grim", "grimac"],
+      "source": "https://github.com/GrimAnticheat/Grim/wiki/Commands"
+    },
+    {
+      "name": "NoCheatPlus",
+      "roots": ["nocheatplus", "ncp"],
+      "namespaces": ["nocheatplus"],
+      "source": "https://github.com/NoCheatPlus/NoCheatPlus/blob/master/NCPPlugin/src/main/resources/plugin.yml"
+    },
+    {
+      "name": "Spartan",
+      "roots": ["spartan"],
+      "namespaces": ["spartan"],
+      "source": "https://spartan.top/documentation/?page=commands-and-permissions"
+    },
+    {
+      "name": "Vulcan",
+      "roots": ["vulcan"],
+      "namespaces": ["vulcan"],
+      "source": "https://vulcanac.net/wiki/usage/commands/"
+    },
+    {
+      "name": "Intave",
+      "roots": ["intave"],
+      "namespaces": ["intave"],
+      "source": "https://docs.intave.ac/mechanics/permissions-01-overview.html"
+    }
+  ]
+}

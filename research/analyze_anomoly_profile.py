@@ -6,6 +6,36 @@ import json
 from collections import Counter
 from pathlib import Path
 
+SIGNATURES = Path(__file__).resolve().parents[1] / "src/main/resources/assets/anomoly/anticheat_signatures.json"
+
+
+def classify(commands: set[str], channels: set[str]) -> list[dict]:
+    signatures = json.loads(SIGNATURES.read_text(encoding="utf-8"))
+    if signatures.get("schema") != 1:
+        raise ValueError("Unsupported anticheat signature schema")
+    commands = {name.strip().lower().removeprefix("/") for name in commands}
+    channels = {name.strip().lower().removeprefix("/") for name in channels}
+    candidates = []
+    for signature in signatures["signatures"]:
+        roots = set(signature["roots"])
+        namespaces = set(signature["namespaces"])
+        evidence = []
+        namespaced = False
+        for command in sorted(commands):
+            if command in roots or ":" in command and command.split(":", 1)[0] in namespaces:
+                evidence.append(f"visible command /{command}")
+                if ":" in command:
+                    namespaced = True
+        for channel in sorted(channels):
+            if ":" in channel and channel.split(":", 1)[0] in namespaces:
+                evidence.append(f"observed payload {channel}")
+                namespaced = True
+        if evidence:
+            candidates.append({"name": signature["name"],
+                               "confidence": "plausible" if namespaced else "weak",
+                               "evidence": evidence, "source": signature["source"]})
+    return sorted(candidates, key=lambda candidate: (candidate["confidence"] != "plausible", candidate["name"]))
+
 
 def analyze(path: Path) -> dict:
     events = []
@@ -50,12 +80,15 @@ def analyze(path: Path) -> dict:
                                 "corrections_per_observed_minute": None}
     distances = sorted(event["distanceFromLastTick"] for event in post_join if "distanceFromLastTick" in event)
     latencies = sorted(event["latencyMs"] for event in samples if "latencyMs" in event)
+    channels = {event["id"] for event in events if event.get("type") == "custom_payload_channel"}
+    commands = {event["name"] for event in events if event.get("type") == "command_literal"}
     return {
         "server": next((event.get("server") for event in events if event.get("type") == "join"), "unknown"),
         "brand": next((event.get("value") for event in reversed(events) if event.get("type") == "brand"), "unknown"),
-        "observed_channels": sorted({event["id"] for event in events if event.get("type") == "custom_payload_channel"}),
+        "observed_channels": sorted(channels),
         "observed_command_namespaces": sorted({event["namespace"] for event in events if event.get("type") == "command_literal" and "namespace" in event}),
-        "observed_root_commands": sorted({event["name"] for event in events if event.get("type") == "command_literal"}),
+        "observed_root_commands": sorted(commands),
+        "possible_anticheats": classify(commands, channels),
         "duration_minutes": round(total_ticks / 1200, 2),
         "movement_samples": len(samples),
         "all_position_corrections": len(corrections),
@@ -72,7 +105,7 @@ def analyze(path: Path) -> dict:
             else "isolated post-join position correction" if post_join
             else "no post-join position corrections observed"
         ),
-        "interpretation": "Exposure rates are observational and can overlap when multiple modules are enabled. Brand and channels do not reliably identify an anticheat plugin.",
+        "interpretation": "Candidates are command or payload hints, not proof of installation. Hidden commands can yield no candidate. Corrections and exposure rates are observational, can reflect lag or server actions, and cannot identify a specific anticheat.",
     }
 
 

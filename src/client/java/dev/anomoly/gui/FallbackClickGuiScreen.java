@@ -201,6 +201,12 @@ public final class FallbackClickGuiScreen extends Screen {
             PluginInspector plugins = AnomolyClient.MODULES.get(PluginInspector.class);
             graphics.text(font, "Command namespaces: " + (plugins.enabled()
                 ? String.join(", ", plugins.namespaces()) : "Enable Plugins module"), x, 206, 0xFFAAC0D0);
+            var candidates = AnomolyClient.PROFILE.candidates(minecraft);
+            graphics.text(font, "Possible anticheat: " + (candidates.isEmpty() ? "unknown"
+                : candidates.getFirst().name() + " (" + candidates.getFirst().confidence() + ")"), x, 228, 0xFFE2EAF0);
+            graphics.text(font, "Corrections after 5s: " + AnomolyClient.PROFILE.postJoinCorrections(), x, 250, 0xFFAAC0D0);
+            graphics.text(font, "Command hints can be hidden or spoofed; corrections do not identify a plugin.",
+                x, 272, 0xFF8199A6);
         } else if (detail != null) {
             graphics.text(font, detail.name(), x, 16, 0xFF61EBC6);
             graphics.text(font, detail.description(), x, 76, 0xFFAAC0D0);

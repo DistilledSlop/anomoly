@@ -69,6 +69,7 @@
   "key.anomoly.toggle.durability_alert": "Toggle Anomoly Durability Alert",
   "key.anomoly.toggle.auto_switch": "Toggle Anomoly Auto Switch",
   "key.anomoly.toggle.auto_reconnect": "Toggle Anomoly Auto Reconnect",
+  "key.anomoly.toggle.anticheat_detect": "Toggle Anomoly AntiCheat Detect",
   "key.anomoly.toggle.no_rotate": "Toggle Anomoly No Rotate",
   "key.anomoly.toggle.auto_tool": "Toggle Anomoly Auto Tool",
   "key.anomoly.toggle.auto_replenish": "Toggle Anomoly Auto Replenish",

@@ -6,7 +6,7 @@ Anomoly is a full Minecraft Java 26.3 hacked client built on Fabric. Its Dear Im
 
 [![Anomoly hack progress treemap](docs/progress.svg)](https://distilledslop.github.io/anomoly/progress.html)
 
-The [searchable progress report](https://distilledslop.github.io/anomoly/progress.html) is generated from the 682 catalog entries plus Anomoly's Spear Assist. It currently tracks <!-- anomoly-progress:start -->**68 coded**, **1 partial**, **65 gameplay verified**, and **549 backlog**<!-- anomoly-progress:end --> features. Blue tiles are coded modules, amber tiles are partial implementations, green tiles have gameplay test evidence, and gray tiles are backlog. Run `python3 tools/progress.py` after changing a module's status; CI runs `python3 tools/progress.py --check` to verify the treemap and [raw data](docs/progress.json).
+The [searchable progress report](https://distilledslop.github.io/anomoly/progress.html) is generated from the 682 catalog entries plus Anomoly's Spear Assist. It currently tracks <!-- anomoly-progress:start -->**69 coded**, **1 partial**, **65 gameplay verified**, and **548 backlog**<!-- anomoly-progress:end --> features. Blue tiles are coded modules, amber tiles are partial implementations, green tiles have gameplay test evidence, and gray tiles are backlog. Run `python3 tools/progress.py` after changing a module's status; CI runs `python3 tools/progress.py --check` to verify the treemap and [raw data](docs/progress.json).
 
 ## Build and run
 
@@ -33,7 +33,7 @@ The [local gameplay test](docs/test-evidence/2026-10-30-local-gameplay.md) verif
 | Render | Fullbright, Max Brightness, No Hurt Cam, No Bob, Auto F5, FOV Modifier, No FOV, Zoom, Camera Clip, Camera Tweaks, Free Look, No Fog, No Overlay, No Fire Overlay, Anti Overlay, Anti Wobble, No Pumpkin, Anti Blind, Player Radar, Weather Changer, Time Changer |
 | Exploit | Anti Reduced Debug Info, Portal Menu, Plugins |
 | Fun | Twerk |
-| Misc | Auto Reconnect |
+| Misc | Auto Reconnect, AntiCheat Detect |
 
 Modules default to off. Their states and settings are saved in `config/anomoly.json`. The current Kill Aura defaults to visible targets within three blocks and full attack cooldown; its range and other settings are adjustable in the GUI. Server anticheats can reject or punish module behavior, so the passive profiler makes no guarantee of compatibility.
 
@@ -152,6 +152,8 @@ Chest Stealer, Chest Cleaner, Auto Deposit, and Auto Drop accept comma-separated
 ## Passive anticheat profile
 
 The profiler is on by default. Each joined session creates a JSONL log in `config/anomoly/profiles/`. It records the server brand, observed custom payload channel names, root commands and namespaces exposed in the server command tree, one movement sample per second including view rotation, latency, position corrections, active module names, and the disconnect reason. It sends no test packets or plugin enumeration requests. This means it can show behavioral evidence but may not identify the exact anticheat plugin.
+
+AntiCheat Detect compares those already exposed commands and payload names with a [source-backed signature list](src/main/resources/assets/anomoly/anticheat_signatures.json). The server profile page shows possible matches and their exact evidence; enabling the module adds one-time chat notices. A bare command is a weak hint, while a matching namespace is a plausible hint. Hidden or spoofed commands can make either result wrong. Position corrections are shown separately and never identify a plugin by themselves. The [local test](docs/test-evidence/2026-10-30-anticheatdetect.md) confirms the classifier's known and unknown cases and the live vanilla profile UI; identification on a real anticheat server remains untested.
 
 Enable the Plugins module to inspect visible root commands and command namespaces on the ClickGUI server profile page. This reads the command tree the server already sent. Commands hidden by server permissions or custom filtering cannot be discovered this way; a namespace alone does not prove which plugin implements a command.
 

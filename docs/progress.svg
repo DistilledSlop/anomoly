@@ -3,7 +3,7 @@
 <desc id="desc">Each tile is a catalogued feature. Blue is coded, amber partial, green gameplay verified, and gray backlog.</desc>
 <rect width="1200" height="720" rx="15" fill="#0b1220"/>
 <text x="20" y="37" fill="#e7f2ff" font-family="system-ui,sans-serif" font-size="25" font-weight="700">ANOMOLY / HACK PROGRESS</text>
-<text x="20" y="61" fill="#a9bacd" font-family="system-ui,sans-serif" font-size="14">68 coded · 1 partial · 65 gameplay verified · 549 backlog / 683 total</text>
+<text x="20" y="61" fill="#a9bacd" font-family="system-ui,sans-serif" font-size="14">69 coded · 1 partial · 65 gameplay verified · 548 backlog / 683 total</text>
 <rect x="14.00" y="84.00" width="281.82" height="621.00" rx="7" fill="#172235" stroke="#52657d" stroke-width="1"/>
 <text x="22.00" y="103.00" fill="#e7f2ff" font-family="system-ui,sans-serif" font-size="14" font-weight="600">Render  22/166 coded</text>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antioverlay.md" target="_blank">
@@ -671,41 +671,41 @@
 <rect x="110.94" y="669.11" width="27.98" height="28.89" rx="2" fill="#344054"/>
 </a>
 <rect x="299.82" y="84.00" width="369.63" height="347.38" rx="7" fill="#172235" stroke="#52657d" stroke-width="1"/>
-<text x="307.82" y="103.00" fill="#e7f2ff" font-family="system-ui,sans-serif" font-size="14" font-weight="600">Misc  1/122 coded</text>
+<text x="307.82" y="103.00" fill="#e7f2ff" font-family="system-ui,sans-serif" font-size="14" font-weight="600">Misc  2/122 coded</text>
+<a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/anticheatdetect.md" target="_blank">
+<title>AntiCheatDetect — coded: AntiCheat Detect compares passive command-tree and payload names with five source-backed signatures, shows possible candidates and evidence in both profile GUIs, and can announce candidates in chat. A real vanilla 26.3 session with a deliberate post-join teleport stayed unknown while displaying the correction count; direct Java and Python probes covered positive signatures and generic negatives. See docs/test-evidence/2026-10-30-anticheatdetect.md. Identification against a real anticheat server remains unverified.</title>
+<rect x="306.82" y="113.00" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
+</a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoreconnect.md" target="_blank">
 <title>Auto Reconnect — coded</title>
-<rect x="306.82" y="113.00" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
+<rect x="336.62" y="113.00" width="27.80" height="26.49" rx="2" fill="#49a8e8"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/announcer.md" target="_blank">
 <title>Announcer — backlog</title>
-<rect x="336.62" y="113.00" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="366.43" y="113.00" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiaim.md" target="_blank">
 <title>Anti Aim — backlog</title>
-<rect x="366.43" y="113.00" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="396.23" y="113.00" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antidesync.md" target="_blank">
 <title>Anti Desync — backlog</title>
-<rect x="396.23" y="113.00" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="426.03" y="113.00" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antipacketkick.md" target="_blank">
 <title>Anti Packet Kick — backlog</title>
-<rect x="426.03" y="113.00" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="455.84" y="113.00" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antisoundlag.md" target="_blank">
 <title>Anti Sound Lag — backlog</title>
-<rect x="455.84" y="113.00" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="485.64" y="113.00" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antivanish.md" target="_blank">
 <title>Anti Vanish — backlog</title>
-<rect x="485.64" y="113.00" width="27.80" height="26.49" rx="2" fill="#344054"/>
+<rect x="515.44" y="113.00" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antibookban.md" target="_blank">
 <title>AntiBookBan — backlog</title>
-<rect x="515.44" y="113.00" width="27.80" height="26.49" rx="2" fill="#344054"/>
-</a>
-<a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/anticheatdetect.md" target="_blank">
-<title>AntiCheatDetect — backlog</title>
 <rect x="545.24" y="113.00" width="27.80" height="26.49" rx="2" fill="#344054"/>
 </a>
 <a xlink:href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/anticrash.md" target="_blank">
