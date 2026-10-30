@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 538,
-    "verified": 75,
+    "backlog": 537,
+    "verified": 76,
     "coded": 69,
     "partial": 1
   },
@@ -2541,9 +2541,9 @@
       "id": "fastinteract",
       "name": "Fast Interact",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "FastInteract",
+      "note": "Paired local vanilla 26.3 tests of 1.2-second holds showed Fast Use consumed 24 XP bottles versus six with the module off; Fast Place made 12 dirt placements versus six; and Fast Break removed 11 repeatedly restored creative stone blocks versus four. See docs/test-evidence/2026-10-30-fastinteract.md. Nonzero interval settings and third-party anticheats remain untested.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/fastinteract.md"
     },
     {

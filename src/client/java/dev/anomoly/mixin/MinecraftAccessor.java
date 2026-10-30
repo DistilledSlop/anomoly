@@ -7,6 +7,7 @@ import org.spongepowered.asm.mixin.gen.Invoker;
 
 @Mixin(Minecraft.class)
 public interface MinecraftAccessor {
+    @Accessor("rightClickDelay") int anomoly$getRightClickDelay();
     @Accessor("rightClickDelay") void anomoly$setRightClickDelay(int ticks);
     @Invoker("startAttack") boolean anomoly$startAttack();
 }
