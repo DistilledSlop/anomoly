@@ -13,6 +13,7 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
 public abstract class SoundEngineBlockMixin {
     @Inject(method = "play", at = @At("HEAD"), cancellable = true)
     private void anomoly$blockSound(SoundInstance sound, CallbackInfoReturnable<SoundEngine.PlayResult> result) {
+        AnomolyClient.MODULES.get(dev.anomoly.modules.SoundEsp.class).heard(sound.getIdentifier(), sound.getX(), sound.getY(), sound.getZ());
         if (AnomolyClient.MODULES.get(SoundBlocker.class).blocks(sound.getIdentifier())) result.setReturnValue(SoundEngine.PlayResult.NOT_STARTED);
     }
 }

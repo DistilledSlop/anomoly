@@ -1,10 +1,10 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "coded": 287,
+    "coded": 297,
     "verified": 84,
-    "backlog": 304,
-    "partial": 8
+    "backlog": 292,
+    "partial": 10
   },
   "total": 683,
   "features": [
@@ -1524,9 +1524,9 @@
       "id": "borders",
       "name": "Borders",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Borders",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/borders.md"
     },
     {
@@ -1785,9 +1785,9 @@
       "id": "chestcounter",
       "name": "ChestCounter",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "ChestCounter",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/chestcounter.md"
     },
     {
@@ -1956,9 +1956,9 @@
       "id": "cooldowns",
       "name": "Cooldowns",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Cooldowns",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/cooldowns.md"
     },
     {
@@ -2037,9 +2037,9 @@
       "id": "customambience",
       "name": "CustomAmbience",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "WeatherChanger",
+      "note": "Weather is covered by Weather Changer; other ambience settings are not implemented.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/customambience.md"
     },
     {
@@ -3441,9 +3441,9 @@
       "id": "legacyhud",
       "name": "LegacyHud",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "LegacyHud",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/legacyhud.md"
     },
     {
@@ -3783,9 +3783,9 @@
       "id": "multiactions",
       "name": "MultiActions",
       "category": "Exploit",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Multitask",
+      "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/multiactions.md"
     },
     {
@@ -3810,9 +3810,9 @@
       "id": "murder",
       "name": "Murder",
       "category": "Fun",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "MurderMystery",
+      "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/murder.md"
     },
     {
@@ -3828,9 +3828,9 @@
       "id": "namecollector",
       "name": "NameCollector",
       "category": "Exploit",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "NameCollector",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/namecollector.md"
     },
     {
@@ -4683,9 +4683,9 @@
       "id": "pvpresources",
       "name": "PVPResources",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "PvpResources",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/pvpresources.md"
     },
     {
@@ -5187,9 +5187,9 @@
       "id": "soundesp",
       "name": "SoundESP",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "SoundEsp",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/soundesp.md"
     },
     {
@@ -5997,9 +5997,9 @@
       "id": "voidesp",
       "name": "VoidESP",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "VoidEsp",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/voidesp.md"
     },
     {
@@ -6087,9 +6087,9 @@
       "id": "worldtweaks",
       "name": "WorldTweaks",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "TimeChanger",
+      "note": "Time of day is covered by Time Changer; the fog half is the separate No Fog module.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/worldtweaks.md"
     },
     {

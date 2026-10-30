@@ -289,6 +289,14 @@ import dev.anomoly.modules.ChestAura;
 import dev.anomoly.modules.Panic;
 import dev.anomoly.modules.Fish;
 import dev.anomoly.modules.MessageAura;
+import dev.anomoly.modules.Borders;
+import dev.anomoly.modules.ChestCounter;
+import dev.anomoly.modules.Cooldowns;
+import dev.anomoly.modules.PvpResources;
+import dev.anomoly.modules.LegacyHud;
+import dev.anomoly.modules.VoidEsp;
+import dev.anomoly.modules.SoundEsp;
+import dev.anomoly.modules.NameCollector;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -451,6 +459,14 @@ public final class ModuleManager {
         new Panic(),
         new Fish(),
         new MessageAura(),
+        new Borders(),
+        new ChestCounter(),
+        new Cooldowns(),
+        new PvpResources(),
+        new LegacyHud(),
+        new VoidEsp(),
+        new SoundEsp(),
+        new NameCollector(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 
