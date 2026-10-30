@@ -9,6 +9,7 @@ import dev.anomoly.gui.ImGuiRenderer;
 import dev.anomoly.profile.ProfileCollector;
 import dev.anomoly.modules.AutoReconnect;
 import dev.anomoly.modules.FreeLook;
+import dev.anomoly.modules.Offhand;
 import dev.anomoly.setting.Setting;
 import java.io.IOException;
 import java.nio.file.Files;
@@ -42,6 +43,7 @@ public final class AnomolyClient implements ClientModInitializer {
     private static KeyMapping zoomKey;
     private static KeyMapping freeLookKey;
     private static final Map<Module, KeyMapping> MODULE_KEYS = new LinkedHashMap<>();
+    private static final Map<String, KeyMapping> OFFHAND_KEYS = new LinkedHashMap<>();
 
     public static boolean zoomHeld() { return zoomKey != null && zoomKey.isDown(); }
     public static boolean freeLookHeld() { return freeLookKey != null && freeLookKey.isDown(); }
@@ -60,6 +62,9 @@ public final class AnomolyClient implements ClientModInitializer {
                 "key.anomoly.toggle." + module.id(), 0, moduleCategory));
             MODULE_KEYS.put(module, key);
         }
+        for (String mode : new String[] {"cycle", "auto", "totem", "crystal", "gapple", "strength", "block"})
+            OFFHAND_KEYS.put(mode, KeyMappingHelper.registerKeyMapping(new KeyMapping(
+                "key.anomoly.offhand." + mode, 0, moduleCategory)));
         ClientTickEvents.START_CLIENT_TICK.register(client -> {
             MODULES.tick(client);
             PROFILE.tick(client);
@@ -89,6 +94,14 @@ public final class AnomolyClient implements ClientModInitializer {
                 while (entry.getValue().consumeClick()) {
                     if (!panicPressed && !guiPressed && client.player != null && client.gui.screen() == null)
                         entry.getKey().setEnabled(!entry.getKey().enabled());
+                }
+            }
+            Offhand offhand = MODULES.get(Offhand.class);
+            for (var entry : OFFHAND_KEYS.entrySet()) while (entry.getValue().consumeClick()) {
+                if (!panicPressed && !guiPressed && client.player != null && client.gui.screen() == null) {
+                    if (entry.getKey().equals("cycle")) offhand.cycleMode();
+                    else offhand.selectMode(Character.toUpperCase(entry.getKey().charAt(0))
+                        + entry.getKey().substring(1));
                 }
             }
         });

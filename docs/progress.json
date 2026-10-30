@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 548,
-    "verified": 65,
+    "backlog": 547,
+    "verified": 66,
     "coded": 69,
     "partial": 1
   },
@@ -4296,9 +4296,9 @@
       "id": "offhand",
       "name": "Offhand",
       "category": "Player",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "Offhand",
+      "note": "On a local vanilla 26.3 server, Offhand swapped a totem into the offhand, fell back to crystals without totems, restored a displaced shield after low health and nearby-crystal danger cleared, selected crystals, enchanted apples, strength potions, and non-falling blocks through bound mode keys, and moved from strength potion to golden apple when Strength became active during a Kill Aura sword context. See docs/test-evidence/2026-10-30-offhand.md. Fall prediction, primed creepers, Crystal Aura and Scaffold contexts, and third-party anticheats remain untested.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/offhand.md"
     },
     {

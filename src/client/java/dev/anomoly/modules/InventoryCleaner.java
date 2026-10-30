@@ -113,7 +113,8 @@ public final class InventoryCleaner extends Module {
         String want = offhand.get().toLowerCase(Locale.ROOT);
         if (want.equals("ignore") || want.equals("none")
             || AnomolyClient.MODULES.get(AutoTotem.class).enabled()
-            || AnomolyClient.MODULES.get(AutoMend.class).enabled()) return false;
+            || AnomolyClient.MODULES.get(AutoMend.class).enabled()
+            || AnomolyClient.MODULES.get(Offhand.class).enabled()) return false;
         ItemStack current = menu.getSlot(45).getItem();
         if (matches(current, want)) return false;
         List<String> wants = layout();
