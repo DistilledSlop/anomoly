@@ -1,0 +1,20 @@
+package dev.anomoly.mixin;
+
+import dev.anomoly.AnomolyClient;
+import dev.anomoly.modules.XRay;
+import net.minecraft.core.Direction;
+import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.state.BlockState;
+import org.spongepowered.asm.mixin.Mixin;
+import org.spongepowered.asm.mixin.injection.At;
+import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.callback.CallbackInfoReturnable;
+
+@Mixin(Block.class)
+public abstract class BlockXRayMixin {
+    @Inject(method = "shouldRenderFace", at = @At("HEAD"), cancellable = true)
+    private static void anomoly$xray(BlockState state, BlockState neighbor, Direction direction, CallbackInfoReturnable<Boolean> result) {
+        XRay xray = AnomolyClient.MODULES.get(XRay.class);
+        if (xray.enabled()) result.setReturnValue(xray.shows(state));
+    }
+}

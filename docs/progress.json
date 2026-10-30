@@ -1,10 +1,10 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 372,
+    "backlog": 365,
     "verified": 84,
-    "coded": 224,
-    "partial": 3
+    "coded": 230,
+    "partial": 4
   },
   "total": 683,
   "features": [
@@ -435,9 +435,9 @@
       "id": "armoralert",
       "name": "ArmorAlert",
       "category": "Misc",
-      "status": "coded",
+      "status": "partial",
       "module": "DurabilityAlert",
-      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
+      "note": "Durability Alert covers only your own gear; warning about other players' armor is not implemented.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/armoralert.md"
     },
     {
@@ -1380,9 +1380,9 @@
       "id": "bettertooltips",
       "name": "Better Tooltips",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "ExtraTooltips",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bettertooltips.md"
     },
     {
@@ -2388,9 +2388,9 @@
       "id": "extinguish",
       "name": "Extinguish",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Extinguish",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/extinguish.md"
     },
     {
@@ -2460,9 +2460,9 @@
       "id": "extratooltips",
       "name": "ExtraTooltips",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "ExtraTooltips",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/extratooltips.md"
     },
     {
@@ -3819,9 +3819,9 @@
       "id": "murdermystery",
       "name": "MurderMystery",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "MurderMystery",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/murdermystery.md"
     },
     {
@@ -5214,9 +5214,9 @@
       "id": "sourceremover",
       "name": "SourceRemover",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "LiquidFiller",
+      "note": "Shares the existing module's behavior for this catalog entry; no separate gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/sourceremover.md"
     },
     {
@@ -5664,9 +5664,9 @@
       "id": "tooltips",
       "name": "Tooltips",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "ExtraTooltips",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/tooltips.md"
     },
     {
@@ -6114,9 +6114,9 @@
       "id": "xray",
       "name": "XRay",
       "category": "Render",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "XRay",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/xray.md"
     },
     {

@@ -250,6 +250,10 @@ import dev.anomoly.modules.FreeCam;
 import dev.anomoly.modules.Hitmarkers;
 import dev.anomoly.modules.HitParticles;
 import dev.anomoly.modules.KillEffect;
+import dev.anomoly.modules.XRay;
+import dev.anomoly.modules.ExtraTooltips;
+import dev.anomoly.modules.MurderMystery;
+import dev.anomoly.modules.Extinguish;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -373,6 +377,10 @@ public final class ModuleManager {
         new Hitmarkers(),
         new HitParticles(),
         new KillEffect(),
+        new XRay(),
+        new ExtraTooltips(),
+        new MurderMystery(),
+        new Extinguish(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 
