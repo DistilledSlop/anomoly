@@ -2,6 +2,6 @@
   "required": true,
   "package": "dev.anomoly.mixin",
   "compatibilityLevel": "JAVA_25",
-  "client": ["MinecraftRenderMixin", "MinecraftAccessor", "MultiPlayerGameModeAccessor", "LocalPlayerReachMixin", "FishingHookAccessor", "ClientPacketListenerMixin", "ClientCommonPacketListenerMixin"],
+  "client": ["MinecraftRenderMixin", "MinecraftAccessor", "MultiPlayerGameModeAccessor", "LocalPlayerReachMixin", "LocalPlayerNoFallMixin", "FishingHookAccessor", "ClientPacketListenerMixin", "ClientCommonPacketListenerMixin"],
   "injectors": {"defaultRequire": 1}
 }

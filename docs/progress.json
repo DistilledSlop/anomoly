@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 663,
-    "coded": 18,
+    "backlog": 662,
+    "coded": 19,
     "partial": 2
   },
   "total": 683,
@@ -3935,8 +3935,8 @@
       "id": "nofall",
       "name": "NoFall",
       "category": "Movement",
-      "status": "backlog",
-      "module": null,
+      "status": "coded",
+      "module": "NoFall",
       "note": "",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/nofall.md"
     },
