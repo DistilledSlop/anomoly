@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 580,
-    "verified": 32,
+    "backlog": 579,
+    "verified": 33,
     "coded": 70,
     "partial": 1
   },
@@ -534,9 +534,9 @@
       "id": "autoanvil",
       "name": "Auto Anvil",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "AutoAnvil",
+      "note": "On a local vanilla 26.3 server, Auto Anvil built a side scaffold and dropped an anvil on a helmeted player. A nearly broken helmet disappeared and health fell from 20 to 16; a fresh helmet took 3 durability damage from an offhand anvil and health fell from 20 to 14.096. No-helmet and no-anvil controls placed nothing. See docs/test-evidence/2026-10-30-autoanvil.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoanvil.md"
     },
     {

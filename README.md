@@ -6,7 +6,7 @@ Anomoly is a full Minecraft Java 26.3 hacked client built on Fabric. Its Dear Im
 
 [![Anomoly hack progress treemap](docs/progress.svg)](https://distilledslop.github.io/anomoly/progress.html)
 
-The [searchable progress report](https://distilledslop.github.io/anomoly/progress.html) is generated from the 682 catalog entries plus Anomoly's Spear Assist. It currently tracks <!-- anomoly-progress:start -->**70 coded**, **1 partial**, **32 gameplay verified**, and **580 backlog**<!-- anomoly-progress:end --> features. Blue tiles are coded modules, amber tiles are partial implementations, green tiles have gameplay test evidence, and gray tiles are backlog. Run `python3 tools/progress.py` after changing a module's status; CI runs `python3 tools/progress.py --check` to verify the treemap and [raw data](docs/progress.json).
+The [searchable progress report](https://distilledslop.github.io/anomoly/progress.html) is generated from the 682 catalog entries plus Anomoly's Spear Assist. It currently tracks <!-- anomoly-progress:start -->**70 coded**, **1 partial**, **33 gameplay verified**, and **579 backlog**<!-- anomoly-progress:end --> features. Blue tiles are coded modules, amber tiles are partial implementations, green tiles have gameplay test evidence, and gray tiles are backlog. Run `python3 tools/progress.py` after changing a module's status; CI runs `python3 tools/progress.py --check` to verify the treemap and [raw data](docs/progress.json).
 
 ## Build and run
 
@@ -26,7 +26,7 @@ The [local gameplay test](docs/test-evidence/2026-10-30-local-gameplay.md) verif
 
 | Category | Modules |
 | --- | --- |
-| Combat | Auto Pearl, Auto Soup, Soup, Keep Sprint, Sprint Reset, W Tap, Criticals, Surround, Hole Filler, Self Trap, Anti Anvil, Anti Bed, Auto Trap, Auto Dodge, Auto Crystal Base, Crystal Aura, Super Knockback (partial), Auto Weapon, Auto Sword, Auto Clicker, Trigger Bot, Anti Bot, Kill Aura, Aimbot, Aim Assist, Bow Aimbot, Projectile Aimbot, Auto Shoot, Auto Bow, Bow Spam, Auto Rod, Spear Assist, Reach, Auto Leave, Auto Armor, Auto Bow Release, Auto Potion, Throw Pot, Pot, Auto Exp, Auto GApple, Auto Totem |
+| Combat | Auto Pearl, Auto Soup, Soup, Keep Sprint, Sprint Reset, W Tap, Criticals, Surround, Hole Filler, Self Trap, Anti Anvil, Anti Bed, Auto Anvil, Auto Trap, Auto Dodge, Auto Crystal Base, Crystal Aura, Super Knockback (partial), Auto Weapon, Auto Sword, Auto Clicker, Trigger Bot, Anti Bot, Kill Aura, Aimbot, Aim Assist, Bow Aimbot, Projectile Aimbot, Auto Shoot, Auto Bow, Bow Spam, Auto Rod, Spear Assist, Reach, Auto Leave, Auto Armor, Auto Bow Release, Auto Potion, Throw Pot, Pot, Auto Exp, Auto GApple, Auto Totem |
 | Movement | Auto Sprint, Auto Walk, Auto Jump, Air Jump, Auto Sneak, Fast Ladder, Fast Fall, No Fall, Safe Walk, Step, Anti Web, Velocity, No Push, No Slow |
 | Player | Auto Respawn, Auto Eat, Auto Fish, Anti AFK, Auto Break, Auto Switch, Auto Tool, Auto Replenish, Auto Deposit, Auto Drop (also Auto Eject), Chest Stealer, Chest Cleaner, No Rotate (also No Server Rotate) |
 | World | Fast Place, Fast Break (also Break Delay) |
@@ -74,6 +74,8 @@ Self Trap builds a short support column beside your feet, then places a block ab
 Anti Anvil predicts whether a nearby falling anvil will cross the player's position. When threatened, it uses its own Self Trap-style block and placement settings to build an overhead shield. The [paired local gameplay test](docs/test-evidence/2026-10-30-antianvil.md) shows the anvil landing on the shield with no player damage, versus 10 damage without the module, plus an off-axis control that placed nothing.
 
 Anti Bed places string at your feet and the four neighboring floor cells, with an option to cover diagonals. The resulting tripwire denies bed placement in those cells. Its [paired local gameplay test](docs/test-evidence/2026-10-30-antibed.md) confirms string placement, offhand repair, hotbar restoration, and a bed placement rejected by the protected cells but accepted after the string was removed.
+
+Auto Anvil builds a side scaffold and drops an anvil onto a nearby helmeted player. It checks the drop column, placement reach, and line of sight, then stops when an anvil has landed. Its [two-player gameplay test](docs/test-evidence/2026-10-30-autoanvil.md) confirms helmet damage and breakage, anvil damage, offhand use, hotbar restoration, and no placement without a helmet or anvil.
 
 Auto Trap offers `box`, `web`, `ignite`, and `lava` modes. Box builds a three-block-high perimeter and roof around a nearby target using the configured block; the other modes place cobweb, fire, or lava at the target's feet. Lava mode turns toward the placement floor for one tick before using the bucket. The [local gameplay test](docs/test-evidence/2026-10-30-autotrap.md) verifies all four modes against a stationary pig and hotbar restoration. It does not establish compatibility with third-party anticheats.
 
