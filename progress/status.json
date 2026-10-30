@@ -418,7 +418,11 @@
     "bettertab": {"status": "coded", "module": "ExtraTab", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
     "teams": {"status": "coded", "module": "Teams", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
     "middleclickfriend": {"status": "coded", "module": "MiddleClickFriend", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
-    "targetlock": {"status": "coded", "module": "TargetLock", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."}
+    "targetlock": {"status": "coded", "module": "TargetLock", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "macekill": {"status": "coded", "module": "MaceKill", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "macedmg": {"status": "coded", "module": "MaceKill", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "arrowdmg": {"status": "coded", "module": "ArrowDmg", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."},
+    "bowpop": {"status": "coded", "module": "ArrowDmg", "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded."}
   },
   "additions": [
     {"id": "anomoly_spear_assist", "name": "Spear Assist", "category": "Combat", "status": "coded", "module": "SpearAssist", "doc": "hacks/spear-assist.md"}

@@ -1,9 +1,9 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "coded": 323,
+    "coded": 327,
     "verified": 84,
-    "backlog": 263,
+    "backlog": 259,
     "partial": 13
   },
   "total": 683,
@@ -462,9 +462,9 @@
       "id": "arrowdmg",
       "name": "ArrowDmg",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "ArrowDmg",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/arrowdmg.md"
     },
     {
@@ -1551,9 +1551,9 @@
       "id": "bowpop",
       "name": "BowPop",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "ArrowDmg",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bowpop.md"
     },
     {
@@ -3576,18 +3576,18 @@
       "id": "macedmg",
       "name": "MaceDmg",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "MaceKill",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/macedmg.md"
     },
     {
       "id": "macekill",
       "name": "MaceKill",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "MaceKill",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/macekill.md"
     },
     {

@@ -320,6 +320,8 @@ import dev.anomoly.modules.ExtraTab;
 import dev.anomoly.modules.Teams;
 import dev.anomoly.modules.MiddleClickFriend;
 import dev.anomoly.modules.TargetLock;
+import dev.anomoly.modules.MaceKill;
+import dev.anomoly.modules.ArrowDmg;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -513,6 +515,8 @@ public final class ModuleManager {
         new Teams(),
         new MiddleClickFriend(),
         new TargetLock(),
+        new MaceKill(),
+        new ArrowDmg(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 

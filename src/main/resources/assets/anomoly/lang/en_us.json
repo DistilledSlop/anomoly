@@ -328,6 +328,8 @@
   "key.anomoly.toggle.teams": "Toggle Anomoly Teams",
   "key.anomoly.toggle.middle_click_friend": "Toggle Anomoly Middle Click Friend",
   "key.anomoly.toggle.target_lock": "Toggle Anomoly TargetLock",
+  "key.anomoly.toggle.mace_kill": "Toggle Anomoly MaceKill",
+  "key.anomoly.toggle.arrow_dmg": "Toggle Anomoly ArrowDmg",
   "key.anomoly.toggle.anti_reduced_debug_info": "Toggle Anomoly Anti Reduced Debug Info",
   "key.anomoly.toggle.portal_menu": "Toggle Anomoly Portal Menu",
   "key.anomoly.toggle.plugins": "Toggle Anomoly Plugins",
