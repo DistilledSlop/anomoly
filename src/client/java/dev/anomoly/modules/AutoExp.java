@@ -29,6 +29,7 @@ public final class AutoExp extends Module {
     @Override public void tick(Minecraft client) {
         if (cooldown > 0) { cooldown--; return; }
         if (client.gameMode == null || client.gui.screen() != null || client.player.isSpectator()
+            || SoupUse.busy(client)
             || client.player.isUsingItem() || client.player.isHandsBusy()
             || client.options.keyUse.isDown() || client.options.keyAttack.isDown()
             || AnomolyClient.MODULES.get(AutoBow.class).active(client)

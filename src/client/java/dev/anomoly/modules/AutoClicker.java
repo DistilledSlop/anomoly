@@ -26,7 +26,7 @@ public final class AutoClicker extends Module {
     }
 
     @Override public void tick(Minecraft client) {
-        if (client.gui.screen() != null || client.gameMode == null) { reset(); return; }
+        if (client.gui.screen() != null || client.gameMode == null || SoupUse.busy(client)) { reset(); return; }
         if (attack.get() && client.options.keyAttack.isDown() && !(client.hitResult instanceof BlockHitResult)
             && !(client.hitResult instanceof EntityHitResult hit && hit.getEntity() instanceof Player player
                 && AnomolyClient.MODULES.get(AntiBot.class).reject(client, player))) {
@@ -46,6 +46,7 @@ public final class AutoClicker extends Module {
     }
 
     public boolean allowHeldUse() {
+        if (SoupUse.busy(Minecraft.getInstance())) return true;
         if (!enabled() || !use.get()) return true;
         boolean allowed = usePulse;
         usePulse = false;

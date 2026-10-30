@@ -31,7 +31,8 @@ abstract class RangedAim extends Module {
             || AnomolyClient.MODULES.get(AutoShoot.class).active(client)
             || AnomolyClient.MODULES.get(AutoBow.class).active(client)
             || AnomolyClient.MODULES.get(AutoRod.class).active(client)
-            || AnomolyClient.MODULES.get(AutoPearl.class).active(client)) return;
+            || AnomolyClient.MODULES.get(AutoPearl.class).active(client)
+            || SoupUse.busy(client)) return;
         ProjectilePhysics.Profile physics = ProjectilePhysics.held(client, bowsOnly);
         if (physics == null) return;
         for (AimTargeting.Solution candidate : AimTargeting.candidates(client, range.get(), fieldOfView.get(), targetMobs.get(), targetInvisible.get())) {

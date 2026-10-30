@@ -34,7 +34,8 @@ public final class AutoGApple extends Module {
             } else client.options.keyUse.setDown(true);
             return;
         }
-        if (cooldown > 0 || client.gui.screen() != null || client.player.isUsingItem()
+        if (cooldown > 0 || client.gui.screen() != null || SoupUse.busy(client)
+            || client.player.isUsingItem()
             || AnomolyClient.MODULES.get(ThrowPot.class).active(client)
             || AnomolyClient.MODULES.get(AutoPotion.class).active(client)
             || AnomolyClient.MODULES.get(Pot.class).active(client)

@@ -56,6 +56,7 @@ public final class AutoPearl extends Module {
         }
         if (cooldown > 0) cooldown--;
         if (client.gameMode == null || client.gui.screen() != null || client.player.isSpectator()
+            || SoupUse.busy(client)
             || client.player.getHealth() < minimumHealth.get()) { pending = null; return; }
         if (pending == null && cooldown == 0) detect(client);
         if (pending == null) return;

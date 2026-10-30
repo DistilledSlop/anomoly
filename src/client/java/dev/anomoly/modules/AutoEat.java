@@ -13,7 +13,7 @@ public final class AutoEat extends Module {
     }
 
     @Override public void tick(Minecraft client) {
-        boolean shouldEat = client.gui.screen() == null
+        boolean shouldEat = client.gui.screen() == null && !SoupUse.busy(client)
             && client.player.getFoodData().needsFood()
             && client.player.getMainHandItem().has(DataComponents.FOOD);
         if (shouldEat) {

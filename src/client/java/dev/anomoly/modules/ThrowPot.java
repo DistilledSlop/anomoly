@@ -21,7 +21,8 @@ public final class ThrowPot extends Module {
     public boolean active(Minecraft client) { return enabled() && client.player != null && client.player.isAlive(); }
 
     @Override public void tick(Minecraft client) {
-        if (client.gameMode == null || client.gui.screen() != null || client.player.isSpectator()) return;
+        if (client.gameMode == null || client.gui.screen() != null || client.player.isSpectator()
+            || SoupUse.busy(client)) return;
         if (remaining < 0) remaining = client.player.getHealth() <= twoBelow.get() ? 2 : 1;
         if (client.player.getHealth() >= client.player.getMaxHealth() || remaining == 0
             || !HealingPotions.available(client.player, true)) { setEnabled(false); return; }

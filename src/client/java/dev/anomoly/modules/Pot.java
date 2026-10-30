@@ -20,6 +20,7 @@ public final class Pot extends Module {
 
     @Override public void tick(Minecraft client) {
         if (client.gameMode == null || client.gui.screen() != null || client.player.isSpectator()
+            || SoupUse.busy(client)
             || client.player.isUsingItem() || client.player.isHandsBusy() || client.options.keyUse.isDown()) return;
         var inventory = client.player.getInventory();
         int originalSlot = inventory.getSelectedSlot();

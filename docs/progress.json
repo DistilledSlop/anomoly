@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 596,
-    "verified": 17,
+    "backlog": 594,
+    "verified": 19,
     "coded": 70
   },
   "total": 683,
@@ -1082,9 +1082,9 @@
       "id": "autosoup",
       "name": "AutoSoup",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "AutoSoup",
+      "note": "At 10 health and 11 food on a vanilla 26.3 server, Auto Soup selected mushroom stew, consumed it into a bowl, raised food to 17, and restored the stone slot. Stock soup did not directly heal; soup PvP plugin behavior remains untested. See docs/test-evidence/2026-10-30-soup.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autosoup.md"
     },
     {
@@ -5204,9 +5204,9 @@
       "id": "soup",
       "name": "Soup",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "Soup",
+      "note": "A K key toggle selected and consumed mushroom stew from hotbar slot 3, raised food from 8 to 14, restored stone in slot 0, and disabled the one-shot module on a vanilla 26.3 server. See docs/test-evidence/2026-10-30-soup.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/soup.md"
     },
     {

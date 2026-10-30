@@ -11,7 +11,8 @@ public final class AutoWeapon extends Module {
     }
 
     @Override public void tick(Minecraft client) {
-        if (client.gui.screen() != null || AnomolyClient.MODULES.get(AutoPearl.class).active(client)
+        if (client.gui.screen() != null || SoupUse.busy(client)
+            || AnomolyClient.MODULES.get(AutoPearl.class).active(client)
             || AnomolyClient.MODULES.get(AutoSword.class).enabled()
             || AnomolyClient.MODULES.get(AutoRod.class).active(client)) return;
         if (client.options.keyAttack.isDown() && client.hitResult instanceof EntityHitResult

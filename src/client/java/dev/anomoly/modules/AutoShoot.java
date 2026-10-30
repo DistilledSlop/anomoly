@@ -36,7 +36,8 @@ public final class AutoShoot extends Module {
     }
 
     public boolean active(Minecraft client) {
-        if (!enabled() || AnomolyClient.MODULES.get(AutoPearl.class).active(client)
+        if (!enabled() || SoupUse.busy(client)
+            || AnomolyClient.MODULES.get(AutoPearl.class).active(client)
             || AnomolyClient.MODULES.get(AutoRod.class).ownsHook(client)
             || AnomolyClient.MODULES.get(AutoBow.class).active(client)
             || client.player == null || client.gameMode == null || client.gui.screen() != null
@@ -57,7 +58,8 @@ public final class AutoShoot extends Module {
             observedPlayer = client.player;
         }
         if (cooldown > 0) cooldown--;
-        if (AnomolyClient.MODULES.get(AutoPearl.class).active(client)
+        if (SoupUse.busy(client)
+            || AnomolyClient.MODULES.get(AutoPearl.class).active(client)
             || AnomolyClient.MODULES.get(AutoRod.class).ownsHook(client)
             || AnomolyClient.MODULES.get(AutoBow.class).active(client)
             || client.gui.screen() != null || client.gameMode == null || client.player.isSpectator()
