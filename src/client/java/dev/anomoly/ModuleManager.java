@@ -340,6 +340,8 @@ import dev.anomoly.modules.Lsd;
 import dev.anomoly.modules.TotemEffect;
 import dev.anomoly.modules.QuickPerspectiveSwap;
 import dev.anomoly.modules.AutoFlyme;
+import dev.anomoly.modules.AntiStaff;
+import dev.anomoly.modules.Quiver;
 import java.util.List;
 import net.minecraft.client.Minecraft;
 
@@ -553,6 +555,8 @@ public final class ModuleManager {
         new TotemEffect(),
         new QuickPerspectiveSwap(),
         new AutoFlyme(),
+        new AntiStaff(),
+        new Quiver(),
         new AntiReducedDebugInfo(), new PortalMenu(), new PluginInspector(), new Twerk()
     );
 

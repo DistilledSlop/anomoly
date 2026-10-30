@@ -3,17 +3,17 @@
 <style>body{font:16px system-ui,sans-serif;background:#0b1220;color:#e7f2ff;max-width:1220px;margin:auto;padding:18px}a{color:#82c7fa}img{width:100%;height:auto}table{border-collapse:collapse;width:100%}th,td{border-bottom:1px solid #344054;padding:8px;text-align:left}input{background:#172235;color:#fff;border:1px solid #52657d;border-radius:5px;padding:10px;font:inherit;width:min(100%,450px)}.coded{color:#49a8e8}.partial{color:#f2b544}.verified{color:#4bd598}.backlog{color:#a9bacd}</style>
 </head><body><h1>Anomoly hack progress</h1>
 <p>One tile per catalogued feature. Tile area is proportional to category size. Blue means coded and compiled, amber means partial, green means gameplay verified, and gray means backlog. Startup validation alone does not count as gameplay verification.</p>
-<img src="progress.svg?v=749038e37d" alt="Treemap of Anomoly hack progress">
-<p>345 coded, 23 partial, 84 gameplay verified, 231 backlog, 683 total. <a href="progress.json">Raw data</a>.</p>
+<img src="progress.svg?v=d0372f149f" alt="Treemap of Anomoly hack progress">
+<p>347 coded, 24 partial, 84 gameplay verified, 228 backlog, 683 total. <a href="progress.json">Raw data</a>.</p>
 <h2>By category</h2><table><thead><tr><th>Category</th><th>Verified</th><th>Coded</th><th>Partial</th><th>Backlog</th><th>Total</th></tr></thead><tbody>
-<tr><td>Combat</td><td>34</td><td>40</td><td>2</td><td>19</td><td>95</td></tr>
+<tr><td>Combat</td><td>34</td><td>41</td><td>2</td><td>18</td><td>95</td></tr>
 <tr><td>Exploit</td><td>0</td><td>10</td><td>2</td><td>22</td><td>34</td></tr>
 <tr><td>Fun</td><td>0</td><td>11</td><td>0</td><td>6</td><td>17</td></tr>
-<tr><td>Misc</td><td>0</td><td>48</td><td>3</td><td>71</td><td>122</td></tr>
+<tr><td>Misc</td><td>0</td><td>49</td><td>3</td><td>70</td><td>122</td></tr>
 <tr><td>Movement</td><td>13</td><td>56</td><td>10</td><td>11</td><td>90</td></tr>
 <tr><td>Player</td><td>19</td><td>42</td><td>1</td><td>25</td><td>87</td></tr>
 <tr><td>Render</td><td>0</td><td>122</td><td>3</td><td>41</td><td>166</td></tr>
-<tr><td>World</td><td>18</td><td>16</td><td>2</td><td>36</td><td>72</td></tr>
+<tr><td>World</td><td>18</td><td>16</td><td>3</td><td>35</td><td>72</td></tr>
 </tbody></table>
 <h2>Features</h2><label for="filter">Filter features</label><br><input id="filter" type="search" placeholder="Search name, category, or status">
 <table id="features"><thead><tr><th>Category</th><th>Feature</th><th>Status</th><th>Implementation</th></tr></thead><tbody>
@@ -90,7 +90,7 @@
 <tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/projectileaimbot.md">ProjectileAimbot</a></td><td class="verified">verified</td><td>Snowball mode hit a stationary blaze at about 12 blocks, reducing health from 20 to 17. Other weapon modes remain untested in gameplay; see docs/test-evidence/2026-10-30-projectile-aim.md.</td></tr>
 <tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/protect.md">Protect</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/pvpinfo.md">PvpInfo</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
-<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/quiver.md">Quiver</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/quiver.md">Quiver</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/selfanvil.md">Self Anvil</a></td><td class="verified">verified</td><td>On a local vanilla 26.3 server, Self Anvil refused an open floor, then built two support blocks and dropped an anvil into PlayerC&#x27;s one-block obsidian hole while restoring stone. At 9.33 health it placed nothing; a cobweb in the feet cell also blocked placement. Removing the cobweb let an anvil land, consuming the item and reducing health from 18 to 16. Offhand use was verified separately. See docs/test-evidence/2026-10-30-selfanvil.md.</td></tr>
 <tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/selftrap.md">Self Trap</a></td><td class="verified">verified</td><td>On a local vanilla 26.3 server, Self Trap built a three-block north support column and an obsidian roof at (20,102,20), restored the selected stone slot, rebuilt the roof from offhand obsidian after removal, and left it empty without obsidian. See docs/test-evidence/2026-10-30-selftrap.md.</td></tr>
 <tr><td>Combat</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/selfweb.md">Self Web</a></td><td class="verified">verified</td><td>On a local vanilla 26.3 server, Self Web placed a cobweb in PlayerC&#x27;s feet cell from the hotbar, restored the selected stone slot, replaced a removed web from offhand, and left the cell air after both sources were cleared. See docs/test-evidence/2026-10-30-selfweb.md.</td></tr>
@@ -176,7 +176,7 @@
 <tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiserveradd.md">AntiServerAdd</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antiserverrp.md">AntiServerRP</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antispam.md">AntiSpam</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
-<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antistaff.md">AntiStaff</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antistaff.md">AntiStaff</a></td><td class="coded">coded</td><td>Implemented as a build-checked module. Gameplay testing is not yet recorded.</td></tr>
 <tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/armoralert.md">ArmorAlert</a></td><td class="partial">partial</td><td>Durability Alert covers only your own gear; warning about other players&#x27; armor is not implemented.</td></tr>
 <tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autocheat.md">Auto Cheat</a></td><td class="coded">coded</td><td>Shares the existing module&#x27;s behavior for this catalog entry; no separate gameplay test is recorded.</td></tr>
 <tr><td>Misc</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/autoreconnect.md">Auto Reconnect</a></td><td class="coded">coded</td><td>AutoReconnect</td></tr>
@@ -646,7 +646,7 @@
 <tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/avoid.md">Avoid</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/basefinder.md">BaseFinder</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/beddefender.md">BedDefender</a></td><td class="backlog">backlog</td><td></td></tr>
-<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blockin.md">BlockIn</a></td><td class="backlog">backlog</td><td></td></tr>
+<tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blockin.md">BlockIn</a></td><td class="partial">partial</td><td>Shares Surround for the side walls; the overhead cover of the original BlockIn is the separate Self Trap module. No gameplay test is recorded.</td></tr>
 <tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blocktrap.md">BlockTrap</a></td><td class="coded">coded</td><td>Shares the existing module&#x27;s behavior for this catalog entry; no separate gameplay test is recorded.</td></tr>
 <tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blocktweaks.md">BlockTweaks</a></td><td class="backlog">backlog</td><td></td></tr>
 <tr><td>World</td><td><a href="https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/build.md">Build</a></td><td class="backlog">backlog</td><td></td></tr>

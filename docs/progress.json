@@ -1,10 +1,10 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "coded": 345,
+    "coded": 347,
     "verified": 84,
-    "backlog": 231,
-    "partial": 23
+    "backlog": 228,
+    "partial": 24
   },
   "total": 683,
   "features": [
@@ -390,9 +390,9 @@
       "id": "antistaff",
       "name": "AntiStaff",
       "category": "Misc",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "AntiStaff",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/antistaff.md"
     },
     {
@@ -1434,9 +1434,9 @@
       "id": "blockin",
       "name": "BlockIn",
       "category": "World",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "partial",
+      "module": "Surround",
+      "note": "Shares Surround for the side walls; the overhead cover of the original BlockIn is the separate Self Trap module. No gameplay test is recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/blockin.md"
     },
     {
@@ -4710,9 +4710,9 @@
       "id": "quiver",
       "name": "Quiver",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "coded",
+      "module": "Quiver",
+      "note": "Implemented as a build-checked module. Gameplay testing is not yet recorded.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/quiver.md"
     },
     {
