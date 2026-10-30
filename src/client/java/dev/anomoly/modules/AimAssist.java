@@ -19,7 +19,9 @@ public final class AimAssist extends Module {
 
     @Override public void tick(Minecraft client) {
         if (client.gui.screen() != null || client.player.isSpectator() || !client.options.keyAttack.isDown()
-            || AnomolyClient.MODULES.get(KillAura.class).enabled() || AnomolyClient.MODULES.get(Aimbot.class).enabled()) return;
+            || AnomolyClient.MODULES.get(KillAura.class).enabled() || AnomolyClient.MODULES.get(Aimbot.class).enabled()
+            || AnomolyClient.MODULES.get(BowAimbot.class).active(client)
+            || AnomolyClient.MODULES.get(ProjectileAimbot.class).active(client)) return;
         AimTargeting.turn(client, AimTargeting.find(client, range.get(), fieldOfView.get(), targetMobs.get(), targetInvisible.get()),
             turnSpeed.get(), 0.25F);
     }

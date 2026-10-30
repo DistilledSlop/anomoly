@@ -1,6 +1,9 @@
 package dev.anomoly.modules;
 
 import dev.anomoly.AnomolyClient;
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 import net.minecraft.client.Minecraft;
 import net.minecraft.util.Mth;
 import net.minecraft.world.entity.Entity;
@@ -15,10 +18,13 @@ final class AimTargeting {
     private AimTargeting() { }
 
     static Solution find(Minecraft client, float range, float fieldOfView, boolean targetMobs, boolean targetInvisible) {
-        if (client.player == null || client.level == null) return null;
-        Solution best = null;
-        double bestError = Double.POSITIVE_INFINITY;
-        double bestDistance = Double.POSITIVE_INFINITY;
+        List<Solution> candidates = candidates(client, range, fieldOfView, targetMobs, targetInvisible);
+        return candidates.isEmpty() ? null : candidates.getFirst();
+    }
+
+    static List<Solution> candidates(Minecraft client, float range, float fieldOfView, boolean targetMobs, boolean targetInvisible) {
+        if (client.player == null || client.level == null) return List.of();
+        List<Solution> candidates = new ArrayList<>();
         double maxDistance = range * range;
         for (Entity entity : client.level.entitiesForRendering()) {
             if (!(entity instanceof LivingEntity living) || entity == client.player || !living.isAlive()) continue;
@@ -34,14 +40,12 @@ final class AimTargeting {
             float yawError = Mth.wrapDegrees(yaw - client.player.getYRot());
             float pitchError = pitch - client.player.getXRot();
             if (Math.abs(yawError) > fieldOfView / 2F) continue;
-            double error = Math.hypot(yawError, pitchError);
-            if (error < bestError || error == bestError && distance < bestDistance) {
-                best = new Solution(living, yaw, pitch);
-                bestError = error;
-                bestDistance = distance;
-            }
+            candidates.add(new Solution(living, yaw, pitch));
         }
-        return best;
+        candidates.sort(Comparator.comparingDouble((Solution solution) -> Math.hypot(
+                Mth.wrapDegrees(solution.yaw() - client.player.getYRot()), solution.pitch() - client.player.getXRot()))
+            .thenComparingDouble(solution -> client.player.distanceToSqr(solution.entity())));
+        return candidates;
     }
 
     static void turn(Minecraft client, Solution target, float maxDegreesPerTick, float deadZone) {

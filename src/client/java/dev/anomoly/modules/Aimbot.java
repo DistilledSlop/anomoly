@@ -19,7 +19,9 @@ public final class Aimbot extends Module {
 
     @Override public void tick(Minecraft client) {
         if (client.gui.screen() != null || client.player.isSpectator()
-            || AnomolyClient.MODULES.get(KillAura.class).enabled()) return;
+            || AnomolyClient.MODULES.get(KillAura.class).enabled()
+            || AnomolyClient.MODULES.get(BowAimbot.class).active(client)
+            || AnomolyClient.MODULES.get(ProjectileAimbot.class).active(client)) return;
         AimTargeting.turn(client, AimTargeting.find(client, range.get(), fieldOfView.get(), targetMobs.get(), targetInvisible.get()),
             turnSpeed.get(), 0F);
     }

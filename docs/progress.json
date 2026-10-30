@@ -1,8 +1,8 @@
 {
   "counting_rule": "coded means a registered module exists; partial means the module covers only part of the catalog behavior; verified requires an in-game test",
   "counts": {
-    "backlog": 608,
-    "verified": 5,
+    "backlog": 606,
+    "verified": 7,
     "coded": 70
   },
   "total": 683,
@@ -1541,9 +1541,9 @@
       "id": "bowaimbot",
       "name": "Bow Aimbot",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "BowAimbot",
+      "note": "Bow and arrow-loaded crossbow modes each hit and killed a stationary pig at about 16 blocks in a local 26.3 multiplayer world. Firework mode remains untested; see docs/test-evidence/2026-10-30-projectile-aim.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/bowaimbot.md"
     },
     {
@@ -4628,9 +4628,9 @@
       "id": "projectileaimbot",
       "name": "ProjectileAimbot",
       "category": "Combat",
-      "status": "backlog",
-      "module": null,
-      "note": "",
+      "status": "verified",
+      "module": "ProjectileAimbot",
+      "note": "Snowball mode hit a stationary blaze at about 12 blocks, reducing health from 20 to 17. Other weapon modes remain untested in gameplay; see docs/test-evidence/2026-10-30-projectile-aim.md.",
       "url": "https://github.com/DistilledSlop/anomoly/blob/main/cheats/features/projectileaimbot.md"
     },
     {
